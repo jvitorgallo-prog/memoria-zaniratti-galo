@@ -46,4 +46,4 @@ REVISÃO DO CHANGELOG/DOCUMENTAÇÃO SUPABASE
 LIMITES
 - A execução comprova que o schema e lote SQL executam e que as restrições consultadas funcionam no PGlite. Ela não substitui revisão nem aplicação no Postgres hospedado escolhido pela família.
 - Capturas arquivísticas com bytes ainda empacotados não foram extraídas para este ensaio. Portanto os índices foram importados como ocorrência/indexação, não declarados recuperados.
-- Nada foi gravado em projeto Supabase remoto; a organização/projeto ainda depende de seleção e custo pela família.
+- Nada foi gravado em projeto Supabase remoto; o banco remoto ainda não foi criado. A organização verificada está no plano Free e já usa suas duas vagas ativas. A aplicação depende da escolha explícita da família de um projeto existente para receber o schema `editorial` separado. Não é necessário fazer upgrade, pausar ou excluir projetos; o schema editorial não é exposto ao navegador.

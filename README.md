@@ -27,7 +27,7 @@ O exportador requer explicitamente a base e os catálogos mantidos fora deste re
 
 ## Banco editorial
 
-Ver `docs/BANCO.md`, `docs/BANCO-VALIDACAO.txt` e `docs/BANCO-INSPECAO.sql`. A migration foi criada pela Supabase CLI; o schema e o importador foram executados em PGlite isolado. A criação do Supabase hospedado e a aplicação da migration dependem da escolha da organização e da confirmação de custo. Não alterar projetos clínicos existentes.
+Ver `docs/BANCO.md`, `docs/BANCO-VALIDACAO.txt` e `docs/BANCO-INSPECAO.sql`. A migration foi criada pela Supabase CLI; o schema e o importador foram executados em PGlite isolado. A organização Supabase verificada está no plano Free e já usa suas duas vagas ativas. O banco remoto ainda não foi criado; sua instalação depende da escolha explícita da família de um projeto existente para receber o schema `editorial` separado, sem expô-lo ao navegador.
 
 ## Conteúdo e documentos
 
@@ -37,4 +37,4 @@ As 26 fichas documentais incluem 22 referências de repositórios públicos e qu
 
 Implementação e ensaio local concluídos. A projeção foi revisada pela coordenação. O repositório público fornecido pela família é `jvitorgallo-prog/memoria-zaniratti-galo`; o workflow publica somente a versão editorial aprovada. Consulte a execução mais recente em Actions para confirmar o estado da publicação.
 
-O banco remoto deve permanecer gratuito. A organização já utiliza seus dois projetos Free ativos; a instalação da genealogia em um schema privado depende da escolha de um projeto existente pela família. O schema e os dados editoriais não são necessários para a leitura do site público.
+O banco remoto deve permanecer gratuito. A organização já utiliza suas duas vagas Free ativas; a instalação da genealogia em um schema privado depende da escolha explícita de um projeto existente pela família. Não é necessário fazer upgrade, pausar ou excluir projetos. O schema e os dados editoriais não são necessários para a leitura do site público.
