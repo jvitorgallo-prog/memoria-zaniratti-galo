@@ -1,7 +1,8 @@
--- CLI migration candidate generated 2026-10-11 with `supabase migration new`.
--- NOT APPLIED to Supabase or to the local Supabase stack; validated only with PGlite.
+-- Generated 2026-10-11 with `supabase migration new`; applied via MCP 2026-10-12.
+-- Validated in PGlite and in an existing Free Supabase project (PostgreSQL 17.6).
 -- Target: PostgreSQL 15+ em Supabase. Nenhum objeto em public/auth/storage/realtime.
--- Schema editorial permanece FORA dos exposed schemas; Data API desativada no MVP.
+-- Schema editorial permanece fora dos exposed schemas; esta migration não altera
+-- as configurações compartilhadas da Data API do projeto.
 -- Confirmar roles/configuração reais antes de a equipa aplicar a qualquer projeto.
 -- LOGIN/credencial backend, configurações Auth, buckets e grant do papel ao LOGIN
 -- serão provisionados separadamente. Não há secret, senha ou service_role no browser.
