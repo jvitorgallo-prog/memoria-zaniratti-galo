@@ -35,4 +35,6 @@ As 26 fichas documentais incluem 22 referências de repositórios públicos e qu
 
 ## Estado da entrega
 
-Implementação e ensaio local concluídos. A projeção foi revisada pela coordenação. Publicação GitHub Pages ainda depende de autenticação de escrita válida e de um repositório próprio; uma tentativa de criação retornou HTTP 401. Não há projeto Supabase remoto criado por esta entrega. A conexão de leitura do GitHub continua disponível.
+Implementação e ensaio local concluídos. A projeção foi revisada pela coordenação. O repositório público fornecido pela família é `jvitorgallo-prog/memoria-zaniratti-galo`; o workflow publica somente a versão editorial aprovada. Consulte a execução mais recente em Actions para confirmar o estado da publicação.
+
+O banco remoto deve permanecer gratuito. A organização já utiliza seus dois projetos Free ativos; a instalação da genealogia em um schema privado depende da escolha de um projeto existente pela família. O schema e os dados editoriais não são necessários para a leitura do site público.
