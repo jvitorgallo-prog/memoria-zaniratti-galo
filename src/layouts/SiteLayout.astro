@@ -1,6 +1,7 @@
 ---
 import "../styles/site.css";
 import { url } from "../lib/urls";
+import Favicon from "../components/Favicon.astro";
 const { title = "Memória das famílias Zaniratti e Galo", description = "Histórias, documentos e vínculos entre Itália e Brasil.", active = "" } = Astro.props;
 const nav = [
   ["Início", "/pt/", "inicio"], ["Pessoas", "/pt/pessoas/", "pessoas"],
@@ -17,6 +18,7 @@ const currentUrl = Astro.url.pathname;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <meta name="theme-color" content="#f7f5ef" />
+    <Favicon />
     <title>{title} · Memória Zaniratti e Galo</title>
   </head>
   <body>

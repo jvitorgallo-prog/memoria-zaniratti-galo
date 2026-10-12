@@ -1,6 +1,7 @@
 ---
 import "../styles/site.css";
 import { url } from "../lib/urls";
+import Favicon from "../components/Favicon.astro";
 const localeHome = url("/pt/");
 ---
 <!doctype html>
@@ -9,6 +10,7 @@ const localeHome = url("/pt/");
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Memória das famílias Zaniratti e Galo." />
+    <Favicon />
     <link rel="canonical" href={localeHome} />
     <meta http-equiv="refresh" content={"0;url=" + localeHome} />
     <title>Memória das famílias Zaniratti e Galo</title>

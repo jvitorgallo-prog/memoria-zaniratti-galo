@@ -35,6 +35,6 @@ As 26 fichas documentais incluem 22 referências de repositórios públicos e qu
 
 ## Estado da entrega
 
-Implementação, ensaio local e verificação do banco hospedado concluídos. A projeção foi revisada pela coordenação. O repositório público fornecido pela família é `jvitorgallo-prog/memoria-zaniratti-galo`; o workflow publica somente a versão editorial aprovada. GitHub Pages ainda não está ativado.
+Implementação, ensaio local, verificação do banco hospedado e deploy concluídos em 2026-10-12. A projeção foi revisada pela coordenação. O repositório público fornecido pela família é `jvitorgallo-prog/memoria-zaniratti-galo`; o workflow publica somente a versão editorial aprovada. O site está em [memoria-zaniratti-galo](https://jvitorgallo-prog.github.io/memoria-zaniratti-galo/). O GET da página inicial e da rota `/pt` respondeu HTTP 200; o QA em produção confirmou 12 rotas desktop e sete mobile com HTTP 200, busca por Reni e Custode, sem erros JavaScript nem overflow horizontal.
 
-O banco remoto está no plano Free e foi instalado em um projeto existente, sem upgrade, pausa ou exclusão. O schema e os dados editoriais não são necessários para a leitura do site público e não são acessíveis pelos papéis de navegador. A ativação do GitHub Pages continua pendente.
+O banco remoto está no plano Free e foi instalado em um projeto existente, sem upgrade, pausa ou exclusão. O schema e os dados editoriais não são necessários para a leitura do site público e não são acessíveis pelos papéis de navegador.
