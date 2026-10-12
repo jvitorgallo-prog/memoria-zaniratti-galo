@@ -1,0 +1,18 @@
+---
+import SiteLayout from "../../../layouts/SiteLayout.astro";
+import PageIntro from "../../../components/PageIntro.astro";
+import { publicData as snapshot } from "../../../lib/data";
+import { url } from "../../../lib/urls";
+const claims = snapshot.assertions || [];
+const places = [...new Set(claims.filter((claim) => ["place", "birth_place", "residence"].includes(claim.predicate)).map((claim) => claim.literal).filter(Boolean))].sort((a,b) => a.localeCompare(b, "pt-BR"));
+const citations = snapshot.citations || [];
+---
+<SiteLayout active="lugares" title="Lugares">
+  <PageIntro eyebrow="Geografia da pesquisa" title="Lugares" lede="Esta lista reúne apenas lugares nomeados em afirmações do conjunto público." />
+  {places.length ? <div class="source-list">{places.map((place) => {
+    const related = claims.filter((claim) => claim.literal === place);
+    const citation = citations.find((item) => related.some((claim) => (claim.citation_ids || []).includes(item.id)));
+    return <article class="source-card"><p class="eyebrow">Lugar citado</p><h2>{place}</h2><p>{related.length} {related.length === 1 ? "registro" : "registros"} no conjunto público.</p>{citation && <a href={url("/pt/fontes/" + encodeURIComponent(citation.source_id) + "/")}>Ver fonte citada →</a>}</article>;
+  })}</div> : <p class="empty-state">Nenhum lugar está nomeado nas afirmações deste recorte público.</p>}
+  <p class="section-note">Mapas e endereços particulares não fazem parte desta consulta.</p>
+</SiteLayout>

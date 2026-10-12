@@ -1,0 +1,32 @@
+---
+import type { PublicAssertion, PublicCitation, PublicPerson, PublicSource } from "../lib/data";
+import { url } from "../lib/urls";
+import EvidenceBadge from "./EvidenceBadge.astro";
+import PersonCard from "./PersonCard.astro";
+import type { PublicBranch } from "../lib/data";
+const { person, claims, branches, citations, sources } = Astro.props as {
+  person: PublicPerson;
+  claims: PublicAssertion[];
+  branches: PublicBranch[];
+  citations: PublicCitation[];
+  sources: PublicSource[];
+};
+const citationIds = [...new Set(claims.flatMap((claim) => claim.citation_ids))];
+const foundCitations = citationIds.map((id) => citations.find((citation) => citation.id === id)).filter((citation): citation is PublicCitation => Boolean(citation));
+const references = [...foundCitations.reduce((map, citation) => {
+  const group = map.get(citation.source_id) || { sourceId: citation.source_id, locators: [] as string[] };
+  if (citation.locator && !group.locators.includes(citation.locator)) group.locators.push(citation.locator);
+  map.set(citation.source_id, group);
+  return map;
+}, new Map<string, { sourceId: string; locators: string[] }>()).values()];
+---
+<article class="kinship-row">
+  <PersonCard person={person} branches={branches} />
+  <div class="claim-meta">
+    {[...new Set(claims.map((claim) => claim.evidence_class))].map((evidence) => <EvidenceBadge evidence={evidence} />)}
+    {references.map((reference) => {
+      const source = sources.find((item) => item.id === reference.sourceId);
+      return <a class="citation-link" href={url("/pt/fontes/" + encodeURIComponent(reference.sourceId) + "/")}>{source?.title || reference.sourceId}{reference.locators.length ? ", " + reference.locators.join("; ") : ""}</a>;
+    })}
+  </div>
+</article>

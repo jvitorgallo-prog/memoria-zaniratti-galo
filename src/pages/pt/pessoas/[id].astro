@@ -1,0 +1,62 @@
+---
+import SiteLayout from "../../../layouts/SiteLayout.astro";
+import ClaimList from "../../../components/ClaimList.astro";
+import KinshipRow from "../../../components/KinshipRow.astro";
+import Notice from "../../../components/Notice.astro";
+import { publicData as snapshot } from "../../../lib/data";
+import type { PublicAssertion } from "../../../lib/data";
+import { url } from "../../../lib/urls";
+const people = snapshot.people || [];
+const claims = snapshot.assertions || [];
+const citations = snapshot.citations || [];
+const sources = snapshot.sources || [];
+const branches = snapshot.branches || [];
+export function getStaticPaths() {
+  return (snapshot.people || []).map((person) => ({ params: { id: person.id }, props: { personId: person.id } }));
+}
+const person = people.find((item) => item.id === Astro.props.personId);
+if (!person) throw new Error("Ficha de pessoa sem registro correspondente no conjunto público.");
+const parentClaims = claims.filter((claim) => (claim.predicate === "child_of" && claim.subject_id === person.id) || (claim.predicate === "parent_of" && claim.object_person_id === person.id));
+const childClaims = claims.filter((claim) => (claim.predicate === "child_of" && claim.object_person_id === person.id) || (claim.predicate === "parent_of" && claim.subject_id === person.id));
+const groupEdges = (edges: PublicAssertion[], relatedId: (claim: PublicAssertion) => string | null) => {
+  const grouped = new Map<string, PublicAssertion[]>();
+  for (const claim of edges) {
+    const id = relatedId(claim);
+    if (!id) continue;
+    grouped.set(id, [...(grouped.get(id) || []), claim]);
+  }
+  return [...grouped.entries()].map(([id, relatedClaims]) => ({ person: people.find((item) => item.id === id), claims: relatedClaims })).filter((entry): entry is { person: (typeof people)[number]; claims: PublicAssertion[] } => Boolean(entry.person));
+};
+const parentRelations = groupEdges(parentClaims, (claim) => claim.predicate === "child_of" ? claim.object_person_id : claim.subject_id);
+const childRelations = groupEdges(childClaims, (claim) => claim.predicate === "child_of" ? claim.subject_id : claim.object_person_id);
+const relationClaims = [...new Map([...parentClaims, ...childClaims].map((claim) => [claim.id, claim])).values()];
+const personEvents = (snapshot.events || []).filter((event) => event.subject_kind === "person" && event.subject_id === person.id);
+const eventClaimIds = new Set(personEvents.flatMap((event) => event.claim_ids));
+const personClaims = [...new Map([...claims.filter((claim) => claim.subject_id === person.id || eventClaimIds.has(claim.id)), ...relationClaims].map((claim) => [claim.id, claim])).values()];
+const relatedCount = parentRelations.length + childRelations.length;
+const branchNames = (person.branch_ids || []).map((id) => branches.find((branch) => branch.id === id)?.label).filter(Boolean);
+const initials = person.label.trim().split(/\s+/).slice(0, 2).map((part) => part[0]).join("").toLocaleUpperCase("pt-BR");
+const nameClaims = personClaims.filter((claim) => ["preferred_name", "alternate_name", "name"].includes(claim.predicate) && claim.literal);
+const alternateNames = nameClaims.filter((claim) => claim.id !== person.preferred_name_assertion_id);
+---
+<SiteLayout active="pessoas" title={person.label} description={"Ficha pública de " + person.label + " com referências do conjunto aprovado."}>
+  <p class="breadcrumb"><a href={url("/pt/pessoas/")}>Pessoas</a> <span aria-hidden="true">/</span> {person.label}</p>
+  <header class="person-heading">
+    <span class="person-initials" aria-hidden="true">{initials}</span>
+    <div><p class="eyebrow">{branchNames.length ? branchNames.join(" · ") : "Ficha de pessoa"}</p><h1>{person.label}</h1>
+      {alternateNames.length > 0 && <p>Outras grafias citadas: {alternateNames.map((claim) => claim.literal).join(", ")}</p>}
+    </div>
+  </header>
+  <Notice><p>Esta ficha reúne somente registros incluídos no conjunto público. Cada afirmação tem sua própria referência e classe de evidência.</p></Notice>
+  {relatedCount > 0 && <section class="section">
+    <div class="section-heading"><div><p class="eyebrow">Relações citadas</p><h2>Miniárvore em lista</h2></div></div>
+    <p class="section-note">Os nomes abaixo aparecem em vínculos de filiação publicados nesta ficha ou em outra ficha relacionada. A fonte de cada vínculo está indicada junto às afirmações.</p>
+    {parentRelations.length > 0 && <><h3>Pais indicados nesta ficha</h3><div class="kinship-list">{parentRelations.map(({ person: relative, claims: edgeClaims }) => <KinshipRow person={relative} claims={edgeClaims} branches={branches} citations={citations} sources={sources} />)}</div></>}
+    {childRelations.length > 0 && <><h3 class="subsection-title">Filhos com vínculo para esta pessoa</h3><div class="kinship-list">{childRelations.map(({ person: relative, claims: edgeClaims }) => <KinshipRow person={relative} claims={edgeClaims} branches={branches} citations={citations} sources={sources} />)}</div></>}
+  </section>}
+  <section class="section">
+    <div class="section-heading"><div><p class="eyebrow">Com fontes próprias</p><h2>Afirmações e referências</h2></div></div>
+    <ClaimList claims={personClaims} citations={citations} sources={sources} people={people} />
+  </section>
+  {relatedCount === 0 && <section class="section"><p class="empty-state">Nenhum vínculo de filiação aparece nesta ficha do recorte público.</p></section>}
+</SiteLayout>

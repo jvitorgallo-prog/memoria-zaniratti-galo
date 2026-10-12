@@ -1,0 +1,49 @@
+---
+import "../styles/site.css";
+import { url } from "../lib/urls";
+const { title = "Memória das famílias Zaniratti e Galo", description = "Histórias, documentos e vínculos entre Itália e Brasil.", active = "" } = Astro.props;
+const nav = [
+  ["Início", "/pt/", "inicio"], ["Pessoas", "/pt/pessoas/", "pessoas"],
+  ["Árvores", "/pt/arvores/", "arvores"], ["Linha principal", "/pt/linha-luigi-joao-vitor/", "linha"],
+  ["Fontes", "/pt/fontes/", "fontes"], ["Lugares", "/pt/lugares/", "lugares"],
+  ["Histórias", "/pt/historias/", "historias"], ["Método", "/pt/metodo/", "metodo"],
+];
+const currentUrl = Astro.url.pathname;
+---
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#f7f5ef" />
+    <title>{title} · Memória Zaniratti e Galo</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href={url("/pt/")} aria-label="Memória das famílias Zaniratti e Galo — início">
+          <span class="brand-mark" aria-hidden="true"><span>Z</span><i>·</i><span>G</span></span>
+          <span class="brand-text"><strong>Memória das famílias</strong><span>Zaniratti e Galo</span></span>
+        </a>
+        <nav class="main-nav" aria-label="Navegação principal">
+          {nav.map(([label, path, id]) => <a href={url(path)} class:list={{ active: active === id || (id !== "inicio" && currentUrl.startsWith(url(path))) }}>{label}</a>)}
+        </nav>
+      </div>
+    </header>
+    <main id="conteudo" class="page-shell"><slot /></main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <a class="footer-brand" href={url("/pt/")}>Memória Zaniratti e Galo</a>
+        <p>Pesquisa familiar em andamento, com vínculos e histórias apresentados junto às suas fontes.</p>
+        <nav aria-label="Informações do site">
+          <a href={url("/pt/acervo-historico/")}>Acervo histórico</a>
+          <a href={url("/pt/revisoes/")}>Revisões</a>
+          <a href={url("/pt/sobre/")}>Sobre e uso</a>
+          <a href={url("/pt/colaborar/")}>Colaborar</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

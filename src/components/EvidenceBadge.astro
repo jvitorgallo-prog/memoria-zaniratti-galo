@@ -1,0 +1,6 @@
+---
+const { evidence = "", interpretation = "" } = Astro.props;
+const evidenceText = String(evidence || "Registro editorial");
+const interp = String(interpretation || "");
+---
+<span class="evidence-badge" title={interp ? "Interpretação: " + interp : undefined}>{evidenceText}</span>

@@ -1,0 +1,15 @@
+---
+import { url } from "../lib/urls";
+import type { PublicPerson, PublicBranch } from "../lib/data";
+const { person, branches = [] } = Astro.props as { person: PublicPerson; branches?: PublicBranch[] };
+const label = person.label || person.id;
+const branchNames = (person.branch_ids || []).map((id) => branches.find((b) => b.id === id)?.label).filter(Boolean);
+const initials = String(label).trim().split(/\s+/).slice(0, 2).map((part) => part[0]).join("").toLocaleUpperCase("pt-BR");
+---
+<article class="person-card">
+  <a href={url("/pt/pessoas/" + encodeURIComponent(person.id) + "/")} class="person-card-link">
+    <span class="person-initials" aria-hidden="true">{initials}</span>
+    <span class="person-card-copy"><strong>{label}</strong>{branchNames.length > 0 && <small>{branchNames.join(" · ")}</small>}</span>
+    <span class="arrow-mark" aria-hidden="true"></span>
+  </a>
+</article>

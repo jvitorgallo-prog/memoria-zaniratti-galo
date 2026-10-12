@@ -1,0 +1,7 @@
+---
+const { tone = "note", title } = Astro.props;
+---
+<aside class:list={["notice", "notice-" + tone]}>
+  {title && <h2>{title}</h2>}
+  <div><slot /></div>
+</aside>

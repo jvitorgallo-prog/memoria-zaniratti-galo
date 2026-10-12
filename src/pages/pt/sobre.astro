@@ -1,0 +1,16 @@
+---
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import PageIntro from "../../components/PageIntro.astro";
+import Notice from "../../components/Notice.astro";
+---
+<SiteLayout title="Sobre e uso">
+  <PageIntro eyebrow="Sobre o projeto" title="Memória das famílias Zaniratti e Galo" lede="Um espaço para organizar histórias, documentos e vínculos entre Itália e Brasil, preservando as fontes e indicando o que ainda está em pesquisa." />
+  <div class="prose">
+    <p>Este site apresenta uma seleção pública de material familiar. O acervo de pesquisa pode conter documentos, mensagens e dados que não aparecem aqui. O fato de uma informação estar citada não torna o documento integral público.</p>
+    <h2>Uso de conteúdo</h2>
+    <p>Referências podem pertencer a arquivos, autores ou familiares diferentes. Consulte a ficha da fonte e verifique a autorização antes de reproduzir qualquer imagem, transcrição ou trecho.</p>
+    <h2>Privacidade</h2>
+    <p>Não publicamos números de documentos, endereços, contatos ou outros detalhes pessoais sem finalidade pública. Informações de pessoas vivas são limitadas ao nome e às relações necessários para esta narrativa familiar.</p>
+    <Notice><p>Para apontar uma correção ou pedir revisão de uma página, use o canal familiar já combinado. Não envie documentos pessoais em espaço público.</p></Notice>
+  </div>
+</SiteLayout>

@@ -1,0 +1,52 @@
+---
+import { url } from "../lib/urls";
+import EvidenceBadge from "./EvidenceBadge.astro";
+import type { PublicAssertion, PublicCitation, PublicSource, PublicPerson, PublicDate } from "../lib/data";
+const { claims = [], citations = [], sources = [], people = [] } = Astro.props as { claims?: PublicAssertion[]; citations?: PublicCitation[]; sources?: PublicSource[]; people?: PublicPerson[] };
+const citationFor = (id: string) => citations.find((citation) => citation.id === id);
+const sourceFor = (id: string) => sources.find((source) => source.id === id);
+const predicateLabels: Record<string, string> = { birth: "Nascimento", death: "Falecimento", residence: "Residência", occupation: "Ocupação", parent_of: "Filiação", child_of: "Filiação", name: "Nome", preferred_name: "Nome selecionado", alternate_name: "Outra grafia", name_spelling_divergence: "Divergência de grafia", source_divergence: "Divergência entre fontes", birth_place: "Lugar de nascimento", place: "Lugar", marriage: "Casamento", travel_memory_not_confirmed: "Memória de viagem em pesquisa" };
+const monthNames = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"];
+const displayDate = (date: PublicDate | null) => {
+  if (!date) return "";
+  const { qualifier, precision, components, lower_bound, upper_bound, literal } = date;
+  const y = components?.year;
+  const m = components?.month;
+  const d = components?.day;
+  if (qualifier === "between" && lower_bound?.year && upper_bound?.year) return "entre " + lower_bound.year + " e " + upper_bound.year;
+  if (qualifier === "about" && y) return "por volta de " + y;
+  if (qualifier === "before" && y) return "antes de " + y;
+  if (qualifier === "after" && y) return "depois de " + y;
+  if (precision === "day" && d && m && y) return d + " de " + monthNames[m - 1] + " de " + y;
+  if (precision === "month" && m && y) return monthNames[m - 1] + " de " + y;
+  if (y) return String(y);
+  return literal || "";
+};
+---
+{claims.length ? <ol class="claim-list">
+  {claims.map((claim) => {
+    const cited = (claim.citation_ids || []).map(citationFor).filter((citation): citation is PublicCitation => Boolean(citation));
+    const citedBySource = [...cited.reduce((map, citation) => {
+      const group = map.get(citation.source_id) || { sourceId: citation.source_id, locators: [] as string[] };
+      if (citation.locator && !group.locators.includes(citation.locator)) group.locators.push(citation.locator);
+      map.set(citation.source_id, group);
+      return map;
+    }, new Map<string, { sourceId: string; locators: string[] }>()).values()];
+    const label = predicateLabels[claim.predicate] || claim.predicate || "Registro";
+    const objectPerson = people.find((person) => person.id === claim.object_person_id);
+    const dateText = displayDate(claim.date);
+    const value = dateText || claim.literal || (claim.object_person_id ? objectPerson?.label || claim.object_person_id : "");
+    return <li class="claim-item" id={claim.id}>
+      <div class="claim-main"><strong>{label}</strong>{value && <span>{value}</span>}
+        {claim.public_note && <p>{claim.public_note}</p>}
+        {claim.date?.literal && claim.date.literal !== value && <details class="literal-date"><summary>Literal da fonte</summary><code>{claim.date.literal}</code></details>}
+      </div>
+      <div class="claim-meta"><EvidenceBadge evidence={claim.evidence_class} interpretation={claim.interpretation} />
+        {citedBySource.map((group) => {
+          const source = sourceFor(group.sourceId);
+          return <a class="citation-link" href={url("/pt/fontes/" + encodeURIComponent(group.sourceId) + "/")}>{source?.title || group.sourceId}{group.locators.length ? ", " + group.locators.join("; ") : ""}</a>;
+        })}
+      </div>
+    </li>;
+  })}
+</ol> : <p class="empty-state">Esta página ainda não tem afirmações públicas cadastradas.</p>}

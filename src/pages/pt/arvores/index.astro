@@ -1,0 +1,29 @@
+---
+import SiteLayout from "../../../layouts/SiteLayout.astro";
+import PageIntro from "../../../components/PageIntro.astro";
+import Notice from "../../../components/Notice.astro";
+import { publicData as snapshot } from "../../../lib/data";
+import { url } from "../../../lib/urls";
+const branches = snapshot.branches || [];
+const people = snapshot.people || [];
+---
+<SiteLayout active="arvores" title="Árvores e ramos">
+  <PageIntro eyebrow="Ramos familiares" title="Árvores em construção" lede="Os vínculos aparecem em listas acessíveis, com a fonte e o tipo de evidência de cada relação." />
+  <Notice tone="warm" title="Limites da pesquisa">
+    <p>Salvatonica/San Biagio e Francesco/Bondeno seguem como ramos separados enquanto não houver uma ligação demonstrada pelas fontes.</p>
+  </Notice>
+  <section class="section">
+    <div class="section-heading"><div><p class="eyebrow">Escolha um percurso</p><h2>Ramos deste conjunto</h2></div></div>
+    {branches.length ? <div class="branch-list">
+      {branches.map((branch) => {
+        const members = (branch.person_ids || []).map((id) => people.find((person) => person.id === id)).filter((person): person is (typeof people)[number] => Boolean(person));
+        return <article class="branch-card">
+          <p class="eyebrow">Ramo · {members.length} {members.length === 1 ? "pessoa" : "pessoas"}</p>
+          <h3>{branch.label}</h3><p>{branch.description || branch.note || "Consulte a lista de pessoas e os vínculos citados neste ramo."}</p>
+          <a href={url("/pt/arvores/" + encodeURIComponent(branch.id) + "/")}>Abrir ramo →</a>
+        </article>;
+      })}
+    </div> : <p class="empty-state">Nenhum ramo está incluído neste conjunto público.</p>}
+  </section>
+  <section class="section"><a class="button" href={url("/pt/linha-luigi-joao-vitor/")}>Ver a linha principal</a></section>
+</SiteLayout>

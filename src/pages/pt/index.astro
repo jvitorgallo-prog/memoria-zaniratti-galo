@@ -1,0 +1,61 @@
+---
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import LocalSearch from "../../components/LocalSearch.astro";
+import PageIntro from "../../components/PageIntro.astro";
+import PersonCard from "../../components/PersonCard.astro";
+import Notice from "../../components/Notice.astro";
+import { publicData as snapshot } from "../../lib/data";
+import { url } from "../../lib/urls";
+const branches = snapshot.branches || [];
+const people = snapshot.people || [];
+const sources = snapshot.sources || [];
+const featuredBranches = branches.slice(0, 3);
+const featuredIds = ["luigi", "custode", "valentim", "reni", "rejane", "jv"];
+const selectedPeople = featuredIds.map((id) => people.find((person) => person.id === id)).filter((person): person is (typeof people)[number] => Boolean(person));
+---
+<SiteLayout active="inicio" title="Início">
+  <section class="hero-panel">
+    <PageIntro eyebrow="Memória familiar · Itália e Brasil" title="Histórias de família, junto às suas fontes" lede="Um percurso pelos vínculos entre Zaniratti e Galo, pelas lembranças compartilhadas e pelos documentos que ajudam a contar essa história." />
+    <LocalSearch people={people} branches={branches} assertions={snapshot.assertions || []} />
+    <div class="hero-actions">
+      <a class="button button-light" href={url("/pt/linha-luigi-joao-vitor/")}>Conheça a linha principal</a>
+      <a class="button button-quiet" href={url("/pt/pessoas/")}>Explorar pessoas</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <Notice title="Pesquisa em andamento">
+      <p>As páginas mostram o que está neste recorte público. Cada vínculo conserva sua própria fonte e seu tipo de evidência; dúvidas e lacunas permanecem visíveis.</p>
+    </Notice>
+  </section>
+
+  <section class="section">
+    <div class="section-heading"><div><p class="eyebrow">Por onde começar</p><h2>Um caminho pela memória</h2></div></div>
+    <div class="card-grid">
+      <article class="feature-card"><span class="card-number">01 · Pessoas</span><h3>Encontre um nome</h3><p>Consulte nomes e grafias presentes no conjunto publicado.</p><a href={url("/pt/pessoas/")}>Abrir índice de pessoas →</a></article>
+      <article class="feature-card"><span class="card-number">02 · Árvores</span><h3>Conheça os ramos</h3><p>Explore cada grupo familiar com limites e relações descritos pelas fontes.</p><a href={url("/pt/arvores/")}>Ver árvores e ramos →</a></article>
+      <article class="feature-card"><span class="card-number">03 · Fontes</span><h3>Leia a evidência</h3><p>Veja referências e metadados que dão contexto aos registros.</p><a href={url("/pt/fontes/")}>Consultar fontes →</a></article>
+    </div>
+  </section>
+
+  {featuredBranches.length > 0 && <section class="section">
+    <div class="section-heading"><div><p class="eyebrow">Percursos de pesquisa</p><h2>Ramos familiares</h2></div><a href={url("/pt/arvores/")}>Todos os ramos →</a></div>
+    <div class="card-grid">
+      {featuredBranches.map((branch) => <article class="feature-card"><span class="card-number">Ramo</span><h3>{branch.label}</h3><p>{branch.description || branch.note || "Consulte as pessoas e referências reunidas para este ramo."}</p><a href={url("/pt/arvores/" + encodeURIComponent(branch.id) + "/")}>Explorar este ramo →</a></article>)}
+    </div>
+  </section>}
+
+  {selectedPeople.length > 0 && <section class="section">
+    <div class="section-heading"><div><p class="eyebrow">No conjunto publicado</p><h2>Pessoas</h2></div><a href={url("/pt/pessoas/")}>Ver todas as pessoas →</a></div>
+    <div class="person-grid">{selectedPeople.map((person) => <PersonCard person={person} branches={branches} />)}</div>
+  </section>}
+
+  <section class="section">
+    <div class="content-card split-card">
+      <p class="eyebrow">Como ler este site</p><h2>Um nome pode ter mais de uma história</h2>
+      <p>Grafias e relatos diferentes aparecem com suas referências. Uma ligação desenhada na página não substitui a fonte que a sustenta.</p>
+      <a href={url("/pt/metodo/")}>Conheça o método de pesquisa →</a>
+      {sources.length > 0 && <p class="small-note">{sources.length} fontes no conjunto público atual.</p>}
+    </div>
+  </section>
+</SiteLayout>

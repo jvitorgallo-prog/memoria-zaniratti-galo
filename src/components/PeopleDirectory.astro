@@ -1,0 +1,53 @@
+---
+import PersonCard from "./PersonCard.astro";
+import type { PublicPerson, PublicBranch, PublicAssertion } from "../lib/data";
+const { people = [], branches = [], assertions = [] } = Astro.props as { people?: PublicPerson[]; branches?: PublicBranch[]; assertions?: PublicAssertion[] };
+const aliases = new Map();
+for (const claim of assertions) {
+  if (claim.subject_kind === "person" && ["name", "preferred_name", "alternate_name"].includes(claim.predicate) && claim.literal) {
+    const list = aliases.get(claim.subject_id) || [];
+    list.push(claim.literal);
+    aliases.set(claim.subject_id, list);
+  }
+}
+const index = Object.fromEntries(people.map((person) => [person.id, (aliases.get(person.id) || []).join(" ")]));
+const personPlaces = new Map<string, string[]>();
+for (const claim of assertions) {
+  if (claim.subject_kind === "person" && ["birth_place", "residence", "place"].includes(claim.predicate) && claim.literal) {
+    personPlaces.set(claim.subject_id, [...(personPlaces.get(claim.subject_id) || []), claim.literal]);
+  }
+}
+const placeOptions = [...new Set([...personPlaces.values()].flat())].sort((a, b) => a.localeCompare(b, "pt-BR"));
+const safeIndex = JSON.stringify(index).replace(/</g, "\\u003c");
+---
+<section class="people-directory" data-people-directory>
+  <div class="directory-controls">
+    <label>Filtrar por nome ou outra grafia
+      <input type="search" placeholder="Digite um nome" autocomplete="off" data-directory-query />
+    </label>
+    <label>Ramo
+      <select data-directory-branch>
+        <option value="">Todos os ramos</option>
+        {branches.map((branch) => <option value={branch.id}>{branch.label}</option>)}
+      </select>
+    </label>
+    <label>Lugar citado
+      <select data-directory-place>
+        <option value="">Todos os lugares</option>
+        {placeOptions.map((place) => <option value={place}>{place}</option>)}
+      </select>
+    </label>
+  </div>
+  <p class="result-count" data-directory-count aria-live="polite">{people.length} {people.length === 1 ? "pessoa" : "pessoas"} neste conjunto publicado.</p>
+  <div class="person-grid" data-directory-list>
+    {people.map((person) => {
+      const label = person.label || person.id;
+      const branchIds = (person.branch_ids || []).join(" ");
+      const places = personPlaces.get(person.id) || [];
+      const searchText = [label, index[person.id], ...places, ...(person.branch_ids || []).map((id) => branches.find((branch) => branch.id === id)?.label || "")].join(" ");
+      return <div data-person-entry data-branch-ids={branchIds} data-place-values={places.join("|")} data-search-text={searchText}><PersonCard person={person} branches={branches} /></div>;
+    })}
+  </div>
+  <script type="application/json" data-alias-index set:html={safeIndex}></script>
+  <script>import "../scripts/people-directory.js";</script>
+</section>

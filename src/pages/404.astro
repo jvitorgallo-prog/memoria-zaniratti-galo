@@ -1,0 +1,13 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+import { url } from "../lib/urls";
+---
+<SiteLayout title="Página não encontrada">
+  <section class="not-found">
+    <div><p class="eyebrow">Página não encontrada</p><h1>Este caminho não está disponível</h1>
+      <p>O endereço pode ter mudado ou o conteúdo pode não fazer parte do conjunto público atual.</p>
+      <p><a class="button" href={url("/pt/")}>Ir para o início</a> <a class="button button-quiet" href={url("/pt/pessoas/")}>Ver pessoas</a></p>
+    </div>
+    <span class="not-found-code" aria-hidden="true">404</span>
+  </section>
+</SiteLayout>

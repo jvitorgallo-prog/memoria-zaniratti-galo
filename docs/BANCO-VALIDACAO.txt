@@ -1,0 +1,49 @@
+VALIDAÇÃO LOCAL DO BANCO EDITORIAL
+Data: 2026-10-11
+Migration: supabase/migrations/20261011234306_editorial_private_core.sql
+Manifesto do lote: 7314ea42ed584f71dfc0c2d472d126be8e2299f6765fd7df15d04997be5384fc
+SQL de importação: /workspace/zaniratti-implementacao-2026-10-11/privado/editorial-import-7314ea42ed584f71dfc0c2d472d126be8e2299f6765fd7df15d04997be5384fc.sql
+
+AMBIENTE
+- Nenhum PostgreSQL, psql ou Supabase CLI estava instalado como comando do sistema.
+- `npx supabase --version` retornou 2.120.0. A CLI criou supabase/config.toml e o nome/timestamp da migration; a migration NÃO foi aplicada por Supabase CLI.
+- Execução real do DDL e do SQL de importação em banco PGlite 0.5.8 isolado, instalado em /workspace/zaniratti-implementacao-2026-10-11/privado/validador, fora do checkout.
+- Teste não conecta a projeto hospedado e não configura credencial ou serviço remoto.
+
+DADOS
+- 89 pessoas, 20 grupos parentais e 16 fontes do corpus editorial.
+- 118 arestas explícitas parent_of, com a classe original; não foram convertidas em casamento.
+- 533 afirmações = 326 afirmações do corpus + 118 arestas + 89 rótulos nominais legados. Os rótulos preservam nomes de navegação; não são 89 provas novas.
+- 819 citações; zero afirmações sem citação. 459 citações apontam também para uma ocorrência de captura/documento. Citações repetidas podem remeter à mesma fonte/ato.
+- 853 fontes após juntar as 16 fontes editoriais, 366 itens do catálogo do site, 44 itens documentais, 19 itens de custódia do site e referências de URL de arquivos.
+- 418 registros de hash/objeto. O SQL não contém bytes dos originais.
+
+OCORRÊNCIAS DE ACERVO
+- Wayback: 1.203 linhas no índice; 1.186 eventos únicos após chave origem + URL + timestamp + SHA-256 do payload. Capturas em timestamps diferentes permanecem independentes mesmo se o hash coincidir.
+- Common Crawl: 251 linhas e 251 ocorrências únicas.
+- O catálogo do site tem 803 referências a capturas; 779 coincidem com os índices detalhados e 24 não coincidem. Essas 24 foram preservadas como ocorrências `indexed_only` (2 Wayback e 22 other_archive).
+- No total há 1.461 ocorrências de índice: 1.188 Wayback, 251 Common Crawl e 22 other_archive.
+- Dos índices detalhados, 1.438 ocorrências permanecem `indexed_only` sem objeto verificado localmente e uma Wayback está `failed`. Hashes conhecidos ficam em `expected_payload_sha256`; não viram prova de que o corpo foi recuperado.
+- Há também 366 ocorrências locais derivadas do catálogo do site, 19 ocorrências de custódia dos arquivos do site e 44 ocorrências documentais. O ledger liga 42 dos 44 itens documentais a URLs/IDs Drive privados; o restante conserva localizador de acervo. Endereços e IDs estão apenas no SQL privado gerado.
+
+SEGURANÇA E INVARIANTES
+- `anon`, `authenticated` e `service_role`: sem USAGE no schema e sem SELECT em editorial.person. Tentativa de SELECT como anon foi negada.
+- Todas as tabelas editoriais estavam com RLS habilitada e forçada. O papel backend de ensaio tem USAGE e leitura via política, NOLOGIN/NOBYPASSRLS e sem DELETE.
+- `service_role` no ensaio também foi criado sem BYPASSRLS; no Supabase hospedado esse papel pode ter BYPASSRLS. A proteção principal aqui é que schema e tabelas não concedem acesso a ele.
+- Inserção de afirmação sem citação falhou ao commit.
+- Reni e `lourdes_esposito` continuam IDs distintos; Valentim não ganhou mãe; não há caminho de parentesco entre Giovanni16 e Francesco; literal de nascimento de Reni foi preservado.
+- Datas mantiveram o literal. 25 datas parciais não receberam mês/dia; a data de Reni foi estruturada como 20/03/1938 porque os três componentes aparecem no literal.
+
+IDEMPOTÊNCIA
+- Primeira aplicação: 2.444 linhas de auditoria.
+- Reaplicação do mesmo SQL/lote: 2.444 linhas de auditoria, sem duplicação.
+- Uma linha de manifesto foi registrada. O ID do lote deriva dos hashes dos arquivos de entrada e da versão do importador.
+
+REVISÃO DO CHANGELOG/DOCUMENTAÇÃO SUPABASE
+- O changelog consultado em 2026-10-11 e o exemplar arquivado no plano registram a mudança de 2026-04-28 que deixa de expor automaticamente novas tabelas públicas. `editorial` não aparece em `api.schemas`, fica fora de `public`, e a migration também revoga privilégios explicitamente.
+- O aviso Postgres 15.19/17.11 menciona índices/criptografia de ltree, btree_gist e pgcrypto. Esta migration não usa essas extensões.
+
+LIMITES
+- A execução comprova que o schema e lote SQL executam e que as restrições consultadas funcionam no PGlite. Ela não substitui revisão nem aplicação no Postgres hospedado escolhido pela família.
+- Capturas arquivísticas com bytes ainda empacotados não foram extraídas para este ensaio. Portanto os índices foram importados como ocorrência/indexação, não declarados recuperados.
+- Nada foi gravado em projeto Supabase remoto; a organização/projeto ainda depende de seleção e custo pela família.

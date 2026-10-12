@@ -1,0 +1,16 @@
+---
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import PageIntro from "../../components/PageIntro.astro";
+import Notice from "../../components/Notice.astro";
+---
+<SiteLayout title="Colaborar">
+  <PageIntro eyebrow="Contribuições" title="Ajude a ampliar a pesquisa" lede="Correções, referências e relatos podem ajudar a esclarecer uma grafia, um vínculo ou a história de um documento." />
+  <Notice title="Como enviar uma contribuição">
+    <p>Este site ainda não recebe arquivos nem mensagens por formulário. Para evitar expor documentos pessoais, compartilhe uma cópia somente com a pessoa da família que coordena a pesquisa, por um canal já combinado entre vocês.</p>
+  </Notice>
+  <section class="section prose">
+    <h2>O que ajuda</h2>
+    <ul><li>Indicar o nome da página e o trecho a revisar.</li><li>Explicar se a informação vem de documento, lembrança ou outra publicação.</li><li>Identificar a página, folha ou trecho da referência quando isso puder ser feito com segurança.</li></ul>
+    <p>Antes de publicar qualquer conteúdo recebido, é preciso revisar os fatos, a privacidade e os direitos de reprodução separadamente.</p>
+  </section>
+</SiteLayout>

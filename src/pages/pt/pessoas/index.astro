@@ -1,0 +1,12 @@
+---
+import SiteLayout from "../../../layouts/SiteLayout.astro";
+import PageIntro from "../../../components/PageIntro.astro";
+import PeopleDirectory from "../../../components/PeopleDirectory.astro";
+import { publicData as snapshot } from "../../../lib/data";
+const people = [...(snapshot.people || [])].sort((a, b) => a.label.localeCompare(b.label, "pt-BR"));
+const branches = snapshot.branches || [];
+---
+<SiteLayout active="pessoas" title="Pessoas" description="Índice de pessoas no conjunto público da memória familiar.">
+  <PageIntro eyebrow="Índice" title="Pessoas" lede="Encontre os nomes reunidos neste recorte público e siga até a ficha com afirmações e referências." />
+  {people.length ? <PeopleDirectory people={people} branches={branches} assertions={snapshot.assertions || []} /> : <p class="empty-state">Ainda não há fichas de pessoas aprovadas para este recorte.</p>}
+</SiteLayout>

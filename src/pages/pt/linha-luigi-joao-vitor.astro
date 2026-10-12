@@ -1,0 +1,55 @@
+---
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import PageIntro from "../../components/PageIntro.astro";
+import EvidenceBadge from "../../components/EvidenceBadge.astro";
+import Notice from "../../components/Notice.astro";
+import { publicData as snapshot } from "../../lib/data";
+import type { PublicAssertion, PublicCitation, PublicPerson, PublicSource } from "../../lib/data";
+import { url } from "../../lib/urls";
+const people = snapshot.people || [];
+const claims = snapshot.assertions || [];
+const citations = snapshot.citations || [];
+const sources = snapshot.sources || [];
+const personById = (id: string): PublicPerson | undefined => people.find((person) => person.id === id);
+const relationship = (parentId: string, childId: string): PublicAssertion[] => claims.filter((claim) =>
+  (claim.predicate === "child_of" && claim.object_person_id === parentId && claim.subject_id === childId)
+  || (claim.predicate === "parent_of" && claim.subject_id === parentId && claim.object_person_id === childId));
+const sourcesFor = (claim: PublicAssertion) => (claim.citation_ids || []).map((id) => citations.find((citation) => citation.id === id)).filter((citation): citation is PublicCitation => citation !== undefined).map((citation): { citation: PublicCitation; source: PublicSource | undefined } => {
+  const source = sources.find((item) => item.id === citation.source_id);
+  return { citation, source };
+});
+const stages = [
+  { parents: ["luigi", "pasqua"], child: "custode" },
+  { parents: ["custode"], child: "valentim" },
+  { parents: ["valentim", "elisa"], child: "reni" },
+  { parents: ["reni", "joao_galo"], child: "rejane" },
+  { parents: ["rejane"], child: "jv" },
+].map((stage) => ({ ...stage, links: stage.parents.map((parentId) => ({
+  parent: personById(parentId),
+  child: personById(stage.child),
+  claims: relationship(parentId, stage.child),
+})) }));
+---
+<SiteLayout active="linha" title="Linha principal">
+  <PageIntro eyebrow="Linha familiar" title="De Luigi a João Vítor" lede="Uma apresentação navegável dos vínculos incluídos neste recorte público. Cada relação mantém sua própria indicação de fonte." />
+  <Notice tone="warm" title="Relações com evidências distintas">
+    <p>A lista organiza os nomes para leitura. Ela não transforma relatos, transcrições e documentos em uma única classe de prova. A mãe de Valentim permanece não identificada.</p>
+  </Notice>
+  <ol class="line-list">
+    {stages.map((stage, index) => <li>
+      <span class="line-node" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
+      <div class="line-person">
+        <strong>{stage.parents.map((id) => { const person = personById(id); return person && <a href={url("/pt/pessoas/" + encodeURIComponent(person.id) + "/")}>{person.label}</a>; }).map((x) => x)}</strong>
+        <small>relação parental indicada para <a href={url("/pt/pessoas/" + encodeURIComponent(stage.child) + "/")}>{personById(stage.child)?.label || stage.child}</a></small>
+        <div class="line-evidence">
+          {stage.links.map(({ claims: edgeClaims }) => edgeClaims.length ? <span class="line-proof">
+            {edgeClaims.map((claim) => <EvidenceBadge evidence={claim.evidence_class} interpretation={claim.interpretation} />)}
+            {edgeClaims.flatMap(sourcesFor).map(({ citation, source }) => <a href={url("/pt/fontes/" + encodeURIComponent(source?.id || citation.source_id) + "/")}>{source?.title || citation.source_id}{citation.locator ? ", " + citation.locator : ""}</a>)}
+          </span> : <span class="line-unavailable">Este vínculo não consta no recorte público.</span>)}
+        </div>
+      </div>
+    </li>)}
+  </ol>
+  <div class="tree-key" aria-label="Como interpretar a linha"><span><i class="key-dot" aria-hidden="true"></i> Relação indicada em fonte</span><span><i class="key-dot report" aria-hidden="true"></i> A natureza da evidência aparece no rótulo</span></div>
+  <section class="section"><a class="button button-quiet" href={url("/pt/arvores/")}>Explorar todos os ramos</a></section>
+</SiteLayout>

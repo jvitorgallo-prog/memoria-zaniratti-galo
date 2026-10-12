@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+const snapshotText = await readFile(new URL('../content/public/snapshot.json', import.meta.url), 'utf8');
+const snapshot = JSON.parse(snapshotText);
+const manifest = JSON.parse(await readFile(new URL('../content/public/manifest.json', import.meta.url), 'utf8'));
+const sha256 = text => createHash('sha256').update(text).digest('hex');
+assert.equal(snapshot.release.state, 'approved', 'Publicação exige projeção revisada; candidatos são somente para preview local.');
+assert.equal(manifest.state, 'approved');
+assert.equal(manifest.snapshot_sha256, sha256(snapshotText));
+assert.equal(manifest.approval_decision?.reviewer_role, 'coordenação editorial');
+const candidate = structuredClone(snapshot);
+candidate.release.state = 'candidate';
+assert.equal(manifest.approval_decision.candidate_snapshot_sha256, sha256(`${JSON.stringify(candidate, null, 2)}\n`));
+console.log('Release aprovada e vinculada ao candidato revisado.');

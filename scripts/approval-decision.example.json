@@ -1,0 +1,7 @@
+{
+  "decision": "approved",
+  "release_id": "zaniratti-galo-candidate-2026-10-11",
+  "candidate_snapshot_sha256": "PASTE_HASH_FROM_CONTENT_PUBLIC_MANIFEST",
+  "reviewer_role": "coordenação editorial",
+  "reviewed_at": "YYYY-MM-DDTHH:mm:ssZ"
+}

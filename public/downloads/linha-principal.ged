@@ -1,0 +1,1110 @@
+0 HEAD
+1 SOUR ZanirattiGaloPublicExporter
+1 GEDC
+2 VERS 5.5.1
+1 CHAR UTF-8
+0 @giovanni16@ INDI
+1 NAME Giovanni
+1 _PUBID giovanni16
+1 FAMS @F-bartolomeo1@
+1 BIRT
+2 DATE BET 1601 AND 1700
+2 SOUR @S-PUBLIC@
+1 SOUR @S-PUBLIC@
+0 @bartolomeo1@ INDI
+1 NAME Bartolomeo
+1 _PUBID bartolomeo1
+1 FAMS @F-domenica1724@
+1 FAMS @F-giovanna1725@
+1 FAMS @F-giovanni1727@
+1 FAMS @F-cattarina1729@
+1 FAMS @F-angela1733@
+1 FAMS @F-giovanni1741@
+1 FAMC @F-bartolomeo1@
+1 BIRT
+2 DATE ABT 1700
+2 SOUR @S-PUBLIC@
+1 SOUR @S-PUBLIC@
+0 @domenica1724@ INDI
+1 NAME Domenica
+1 _PUBID domenica1724
+1 FAMC @F-domenica1724@
+1 BIRT
+2 DATE 1724
+2 SOUR @S-PUBLIC@
+1 SOUR @S-PUBLIC@
+0 @giovanna1725@ INDI
+1 NAME Giovanna
+1 _PUBID giovanna1725
+1 FAMC @F-giovanna1725@
+1 BIRT
+2 DATE 1725
+2 SOUR @S-PUBLIC@
+1 SOUR @S-PUBLIC@
+0 @giovanni1727@ INDI
+1 NAME Giovanni
+1 _PUBID giovanni1727
+1 FAMC @F-giovanni1727@
+1 BIRT
+2 DATE 1727
+2 SOUR @S-PUBLIC@
+1 SOUR @S-PUBLIC@
+0 @cattarina1729@ INDI
+1 NAME Cattarina
+1 _PUBID cattarina1729
+1 FAMC @F-cattarina1729@
+1 BIRT
+2 DATE 1729
+2 SOUR @S-PUBLIC@
+1 SOUR @S-PUBLIC@
+0 @angela1733@ INDI
+1 NAME Angela
+1 _PUBID angela1733
+1 FAMC @F-angela1733@
+1 BIRT
+2 DATE 1733
+2 SOUR @S-PUBLIC@
+1 SOUR @S-PUBLIC@
+0 @giovanni1741@ INDI
+1 NAME Giovanni
+1 _PUBID giovanni1741
+1 FAMS @F-bartolomeo1768@
+1 FAMS @F-giuseppe1770@
+1 FAMS @F-domenico1772@
+1 FAMS @F-domenica1775@
+1 FAMS @F-antonio1777@
+1 FAMS @F-barbara1778@
+1 FAMS @F-maria1780@
+1 FAMS @F-vittoria1782@
+1 FAMC @F-giovanni1741@
+1 BIRT
+2 DATE ABT 1741
+2 SOUR @S-PUBLIC@
+1 SOUR @S-PUBLIC@
+0 @bartolomeo1768@ INDI
+1 NAME Bartolomeo
+1 _PUBID bartolomeo1768
+1 FAMS @F-giovanni1803@
+1 FAMC @F-bartolomeo1768@
+1 BIRT
+2 DATE 1768
+2 SOUR @S-PUBLIC@
+1 SOUR @S-PUBLIC@
+0 @giuseppe1770@ INDI
+1 NAME Giuseppe
+1 _PUBID giuseppe1770
+1 FAMC @F-giuseppe1770@
+1 BIRT
+2 DATE 1770
+2 SOUR @S-PUBLIC@
+1 SOUR @S-PUBLIC@
+0 @domenico1772@ INDI
+1 NAME Domenico
+1 _PUBID domenico1772
+1 FAMC @F-domenico1772@
+1 BIRT
+2 DATE 1772
+2 SOUR @S-PUBLIC@
+1 SOUR @S-PUBLIC@
+0 @domenica1775@ INDI
+1 NAME Domenica
+1 _PUBID domenica1775
+1 FAMC @F-domenica1775@
+1 BIRT
+2 DATE 1775
+2 SOUR @S-PUBLIC@
+1 SOUR @S-PUBLIC@
+0 @antonio1777@ INDI
+1 NAME Antonio
+1 _PUBID antonio1777
+1 FAMC @F-antonio1777@
+1 BIRT
+2 DATE 1777
+2 SOUR @S-PUBLIC@
+1 SOUR @S-PUBLIC@
+0 @barbara1778@ INDI
+1 NAME Barbara
+1 _PUBID barbara1778
+1 FAMC @F-barbara1778@
+1 BIRT
+2 DATE 1778
+2 SOUR @S-PUBLIC@
+1 SOUR @S-PUBLIC@
+0 @maria1780@ INDI
+1 NAME Maria
+1 _PUBID maria1780
+1 FAMC @F-maria1780@
+1 BIRT
+2 DATE 1780
+2 SOUR @S-PUBLIC@
+1 SOUR @S-PUBLIC@
+0 @vittoria1782@ INDI
+1 NAME Vittoria
+1 _PUBID vittoria1782
+1 FAMC @F-vittoria1782@
+1 BIRT
+2 DATE 1782
+2 SOUR @S-PUBLIC@
+1 SOUR @S-PUBLIC@
+0 @giovanni1803@ INDI
+1 NAME Giovanni
+1 _PUBID giovanni1803
+1 FAMS @F-bartolomeo1829@
+1 FAMS @F-rosa1832@
+1 FAMS @F-francesco1833@
+1 FAMS @F-enrica1837@
+1 FAMC @F-giovanni1803@
+1 BIRT
+2 DATE 1803
+2 SOUR @S-PUBLIC@
+1 SOUR @S-PUBLIC@
+0 @bartolomeo1829@ INDI
+1 NAME Bartolomeo
+1 _PUBID bartolomeo1829
+1 FAMC @F-bartolomeo1829@
+1 BIRT
+2 DATE 1829
+2 SOUR @S-PUBLIC@
+1 SOUR @S-PUBLIC@
+0 @rosa1832@ INDI
+1 NAME Rosa
+1 _PUBID rosa1832
+1 FAMC @F-rosa1832@
+1 BIRT
+2 DATE 1832
+2 SOUR @S-PUBLIC@
+1 SOUR @S-PUBLIC@
+0 @francesco1833@ INDI
+1 NAME Francesco Antonio
+1 _PUBID francesco1833
+1 FAMC @F-francesco1833@
+1 BIRT
+2 DATE 1833
+2 SOUR @S-PUBLIC@
+1 SOUR @S-PUBLIC@
+0 @enrica1837@ INDI
+1 NAME Enrica Matilde
+1 _PUBID enrica1837
+1 FAMC @F-enrica1837@
+1 BIRT
+2 DATE 1837
+2 SOUR @S-PUBLIC@
+1 SOUR @S-PUBLIC@
+0 @francesco@ INDI
+1 NAME Francesco Zaniratti
+1 _PUBID francesco
+1 FAMS @F-luigi@
+1 BIRT
+2 DATE BET 1700 AND 1799
+2 SOUR @S-PUBLIC@
+1 SOUR @S-PUBLIC@
+0 @luigi@ INDI
+1 NAME Luigi Zaniratti
+1 _PUBID luigi
+1 FAMS @F-maria1839@
+1 FAMS @F-carlo1843@
+1 FAMS @F-antonio1846@
+1 FAMS @F-custode@
+1 FAMC @F-luigi@
+1 BIRT
+2 DATE 1803
+2 SOUR @S-PUBLIC@
+1 DEAT
+2 DATE 1886
+2 SOUR @S-PUBLIC@
+1 SOUR @S-PUBLIC@
+0 @maria1839@ INDI
+1 NAME Maria
+1 _PUBID maria1839
+1 FAMC @F-maria1839@
+1 SOUR @S-PUBLIC@
+0 @carlo1843@ INDI
+1 NAME Carlo
+1 _PUBID carlo1843
+1 FAMC @F-carlo1843@
+1 SOUR @S-PUBLIC@
+0 @antonio1846@ INDI
+1 NAME Antonio
+1 _PUBID antonio1846
+1 FAMC @F-antonio1846@
+1 BIRT
+2 DATE 16 JAN 1846
+2 SOUR @S-PUBLIC@
+1 DEAT
+2 DATE 7 MAR 1902
+2 SOUR @S-PUBLIC@
+1 SOUR @S-PUBLIC@
+0 @custode@ INDI
+1 NAME Custode Sante Zaniratti
+1 _PUBID custode
+1 FAMS @F-ermanno@
+1 FAMS @F-ugo@
+1 FAMS @F-umberto@
+1 FAMS @F-daniele@
+1 FAMS @F-dante1882@
+1 FAMS @F-maria1884@
+1 FAMS @F-luigi1886@
+1 FAMS @F-ulisse@
+1 FAMS @F-ernesto@
+1 FAMS @F-carlo1892@
+1 FAMS @F-zenaide@
+1 FAMS @F-grandilia@
+1 FAMS @F-valentim@
+1 FAMC @F-custode@
+1 BIRT
+2 DATE 23 SEP 1848
+2 PLAC Stellata, Bondeno, Ferrara, Itália
+2 SOUR @S-PUBLIC@
+1 SOUR @S-PUBLIC@
+0 @ermanno@ INDI
+1 NAME Ermanno
+1 _PUBID ermanno
+1 FAMC @F-ermanno@
+1 SOUR @S-PUBLIC@
+0 @ugo@ INDI
+1 NAME Ugo
+1 _PUBID ugo
+1 FAMC @F-ugo@
+1 SOUR @S-PUBLIC@
+0 @umberto@ INDI
+1 NAME Umberto
+1 _PUBID umberto
+1 FAMC @F-umberto@
+1 SOUR @S-PUBLIC@
+0 @daniele@ INDI
+1 NAME Daniele
+1 _PUBID daniele
+1 FAMC @F-daniele@
+1 SOUR @S-PUBLIC@
+0 @dante1882@ INDI
+1 NAME Dante
+1 _PUBID dante1882
+1 FAMC @F-dante1882@
+1 BIRT
+2 DATE 1882
+2 SOUR @S-PUBLIC@
+1 SOUR @S-PUBLIC@
+0 @maria1884@ INDI
+1 NAME Maria
+1 _PUBID maria1884
+1 FAMC @F-maria1884@
+1 SOUR @S-PUBLIC@
+0 @luigi1886@ INDI
+1 NAME Luigi
+1 _PUBID luigi1886
+1 FAMC @F-luigi1886@
+1 SOUR @S-PUBLIC@
+0 @grandilia@ INDI
+1 NAME Grandilia Zaniratti
+1 _PUBID grandilia
+1 FAMS @F-luzia@
+1 FAMS @F-ana_maria@
+1 FAMS @F-helia@
+1 FAMS @F-orestes@
+1 FAMS @F-santina@
+1 FAMS @F-maria_esposito@
+1 FAMS @F-valquiria@
+1 FAMS @F-lourdes_esposito@
+1 FAMS @F-carmen@
+1 FAMS @F-mafalda@
+1 FAMC @F-grandilia@
+1 BIRT
+2 DATE 19 JAN 1887
+2 SOUR @S-PUBLIC@
+1 DEAT
+2 DATE 17 JUL 1963
+2 SOUR @S-PUBLIC@
+1 SOUR @S-PUBLIC@
+0 @ulisse@ INDI
+1 NAME Ulisse
+1 _PUBID ulisse
+1 FAMC @F-ulisse@
+1 SOUR @S-PUBLIC@
+0 @ernesto@ INDI
+1 NAME Ernesto
+1 _PUBID ernesto
+1 FAMC @F-ernesto@
+1 SOUR @S-PUBLIC@
+0 @carlo1892@ INDI
+1 NAME Carlo
+1 _PUBID carlo1892
+1 FAMC @F-carlo1892@
+1 SOUR @S-PUBLIC@
+0 @zenaide@ INDI
+1 NAME Zenaide
+1 _PUBID zenaide
+1 FAMS @F-zenaide_child_1@
+1 FAMS @F-zenaide_child_2@
+1 FAMS @F-zenaide_child_3@
+1 FAMS @F-zenaide_child_4@
+1 FAMS @F-zenaide_child_5@
+1 FAMS @F-zenaide_child_6@
+1 FAMS @F-zenaide_child_7@
+1 FAMS @F-zenaide_child_8@
+1 FAMS @F-zenaide_child_9@
+1 FAMS @F-zenaide_child_10@
+1 FAMS @F-zenaide_child_11@
+1 FAMS @F-zenaide_child_12@
+1 FAMS @F-zenaide_child_13@
+1 FAMS @F-zenaide_child_14@
+1 FAMS @F-zenaide_child_15@
+1 FAMS @F-zenaide_child_16@
+1 FAMC @F-zenaide@
+1 BIRT
+2 DATE 2 JUN 1895
+2 SOUR @S-PUBLIC@
+1 SOUR @S-PUBLIC@
+0 @ernesta@ INDI
+1 NAME Ernesta Galliera
+1 _PUBID ernesta
+1 FAMS @F-zenaide@
+1 FAMS @F-grandilia@
+1 SOUR @S-PUBLIC@
+0 @nicola@ INDI
+1 NAME Nicola Esposito
+1 _PUBID nicola
+1 FAMS @F-luzia@
+1 FAMS @F-ana_maria@
+1 FAMS @F-helia@
+1 FAMS @F-orestes@
+1 FAMS @F-santina@
+1 FAMS @F-maria_esposito@
+1 FAMS @F-valquiria@
+1 FAMS @F-lourdes_esposito@
+1 FAMS @F-carmen@
+1 FAMS @F-mafalda@
+1 BIRT
+2 DATE 16 AUG 1888
+2 SOUR @S-PUBLIC@
+1 SOUR @S-PUBLIC@
+0 @luzia@ INDI
+1 NAME Luzia
+1 _PUBID luzia
+1 FAMC @F-luzia@
+1 SOUR @S-PUBLIC@
+0 @ana_maria@ INDI
+1 NAME Ana Maria
+1 _PUBID ana_maria
+1 FAMC @F-ana_maria@
+1 SOUR @S-PUBLIC@
+0 @helia@ INDI
+1 NAME Hélia
+1 _PUBID helia
+1 FAMC @F-helia@
+1 SOUR @S-PUBLIC@
+0 @orestes@ INDI
+1 NAME Orestes
+1 _PUBID orestes
+1 FAMC @F-orestes@
+1 SOUR @S-PUBLIC@
+0 @santina@ INDI
+1 NAME Santina
+1 _PUBID santina
+1 FAMC @F-santina@
+1 SOUR @S-PUBLIC@
+0 @maria_esposito@ INDI
+1 NAME Maria
+1 _PUBID maria_esposito
+1 FAMC @F-maria_esposito@
+1 SOUR @S-PUBLIC@
+0 @valquiria@ INDI
+1 NAME Valquíria
+1 _PUBID valquiria
+1 FAMC @F-valquiria@
+1 SOUR @S-PUBLIC@
+0 @lourdes_esposito@ INDI
+1 NAME Lourdes
+1 _PUBID lourdes_esposito
+1 FAMC @F-lourdes_esposito@
+1 SOUR @S-PUBLIC@
+0 @carmen@ INDI
+1 NAME Carmen
+1 _PUBID carmen
+1 FAMC @F-carmen@
+1 SOUR @S-PUBLIC@
+0 @mafalda@ INDI
+1 NAME Mafalda
+1 _PUBID mafalda
+1 FAMC @F-mafalda@
+1 SOUR @S-PUBLIC@
+0 @valentim@ INDI
+1 NAME Valentim Zaniratti
+1 _PUBID valentim
+1 FAMS @F-walter@
+1 FAMS @F-nedina@
+1 FAMS @F-reni@
+1 FAMS @F-antonio_filho@
+1 FAMC @F-valentim@
+1 SOUR @S-PUBLIC@
+0 @pasqua@ INDI
+1 NAME Pasqua Mellara
+1 _PUBID pasqua
+1 FAMS @F-custode@
+1 SOUR @S-PUBLIC@
+0 @maria_cavallini@ INDI
+1 NAME Maria Cavallini
+1 _PUBID maria_cavallini
+1 FAMS @F-antonio1846@
+1 SOUR @S-PUBLIC@
+0 @elisa@ INDI
+1 NAME Elisa Bernardino Zanirate
+1 _PUBID elisa
+1 FAMS @F-walter@
+1 FAMS @F-nedina@
+1 FAMS @F-reni@
+1 FAMS @F-antonio_filho@
+1 SOUR @S-PUBLIC@
+0 @walter@ INDI
+1 NAME Walter Zaniratti
+1 _PUBID walter
+1 FAMC @F-walter@
+1 SOUR @S-PUBLIC@
+0 @nedina@ INDI
+1 NAME Nedina Zaniratti
+1 _PUBID nedina
+1 FAMC @F-nedina@
+1 SOUR @S-PUBLIC@
+0 @reni@ INDI
+1 NAME Reni Zanirate Galo
+1 _PUBID reni
+1 FAMS @F-fernando@
+1 FAMS @F-vera@
+1 FAMS @F-elcio@
+1 FAMS @F-jose_airson@
+1 FAMS @F-rejane@
+1 FAMC @F-reni@
+1 BIRT
+2 DATE 20 MAR 1938
+2 PLAC Santa Clara, Porciúncula, Rio de Janeiro, Brasil
+2 SOUR @S-PUBLIC@
+1 DEAT
+2 DATE 23 DEC 1998
+2 SOUR @S-PUBLIC@
+1 SOUR @S-PUBLIC@
+0 @antonio_filho@ INDI
+1 NAME Antônio Zaniratti
+1 _PUBID antonio_filho
+1 FAMC @F-antonio_filho@
+1 SOUR @S-PUBLIC@
+0 @joao_galo@ INDI
+1 NAME João Galo
+1 _PUBID joao_galo
+1 FAMS @F-fernando@
+1 FAMS @F-vera@
+1 FAMS @F-elcio@
+1 FAMS @F-jose_airson@
+1 FAMS @F-rejane@
+1 FAMC @F-joao_galo@
+1 BIRT
+2 DATE 16 FEB 1938
+2 PLAC Varre-Sai, Rio de Janeiro, Brasil
+2 SOUR @S-PUBLIC@
+1 DEAT
+2 DATE 13 NOV 2017
+2 SOUR @S-PUBLIC@
+1 SOUR @S-PUBLIC@
+0 @fernando@ INDI
+1 NAME Fernando
+1 _PUBID fernando
+1 FAMC @F-fernando@
+1 SOUR @S-PUBLIC@
+0 @vera@ INDI
+1 NAME Vera
+1 _PUBID vera
+1 FAMC @F-vera@
+1 SOUR @S-PUBLIC@
+0 @elcio@ INDI
+1 NAME Elcio
+1 _PUBID elcio
+1 FAMC @F-elcio@
+1 SOUR @S-PUBLIC@
+0 @jose_airson@ INDI
+1 NAME José Airson Galo
+1 _PUBID jose_airson
+1 FAMC @F-jose_airson@
+1 SOUR @S-PUBLIC@
+0 @rejane@ INDI
+1 NAME Rejane Natalina Galo Esteves
+1 _PUBID rejane
+1 FAMS @F-jv@
+1 FAMC @F-rejane@
+1 SOUR @S-PUBLIC@
+0 @jv@ INDI
+1 NAME João Vítor Galo Esteves
+1 _PUBID jv
+1 FAMC @F-jv@
+1 SOUR @S-PUBLIC@
+0 @maria_gallo@ INDI
+1 NAME Maria Gallo
+1 _PUBID maria_gallo
+1 SOUR @S-PUBLIC@
+0 @luiz_claudio@ INDI
+1 NAME Luiz Cláudio Esteves
+1 _PUBID luiz_claudio
+1 FAMS @F-jv@
+1 FAMC @F-luiz_claudio@
+1 SOUR @S-PUBLIC@
+0 @jose_luiz@ INDI
+1 NAME José Luiz Esteves
+1 _PUBID jose_luiz
+1 FAMS @F-luiz_claudio@
+1 SOUR @S-PUBLIC@
+0 @mercelina@ INDI
+1 NAME Mercelina Lopes Muniz
+1 _PUBID mercelina
+1 FAMS @F-luiz_claudio@
+1 SOUR @S-PUBLIC@
+0 @joao_pai@ INDI
+1 NAME João Galo
+1 _PUBID joao_pai
+1 FAMS @F-joao_galo@
+1 SOUR @S-PUBLIC@
+0 @tereza@ INDI
+1 NAME Tereza Calidoni
+1 _PUBID tereza
+1 FAMS @F-joao_galo@
+1 SOUR @S-PUBLIC@
+0 @felipe_murucci@ INDI
+1 NAME Felipe Murucci
+1 _PUBID felipe_murucci
+1 FAMS @F-zenaide_child_1@
+1 FAMS @F-zenaide_child_2@
+1 FAMS @F-zenaide_child_3@
+1 FAMS @F-zenaide_child_4@
+1 FAMS @F-zenaide_child_5@
+1 FAMS @F-zenaide_child_6@
+1 FAMS @F-zenaide_child_7@
+1 FAMS @F-zenaide_child_8@
+1 FAMS @F-zenaide_child_9@
+1 FAMS @F-zenaide_child_10@
+1 FAMS @F-zenaide_child_11@
+1 FAMS @F-zenaide_child_12@
+1 FAMS @F-zenaide_child_13@
+1 FAMS @F-zenaide_child_14@
+1 FAMS @F-zenaide_child_15@
+1 FAMS @F-zenaide_child_16@
+1 SOUR @S-PUBLIC@
+0 @zenaide_child_1@ INDI
+1 NAME Zelmira
+1 _PUBID zenaide_child_1
+1 FAMC @F-zenaide_child_1@
+1 SOUR @S-PUBLIC@
+0 @zenaide_child_2@ INDI
+1 NAME Auresmina
+1 _PUBID zenaide_child_2
+1 FAMC @F-zenaide_child_2@
+1 SOUR @S-PUBLIC@
+0 @zenaide_child_3@ INDI
+1 NAME Conceição
+1 _PUBID zenaide_child_3
+1 FAMC @F-zenaide_child_3@
+1 SOUR @S-PUBLIC@
+0 @zenaide_child_4@ INDI
+1 NAME Darzina
+1 _PUBID zenaide_child_4
+1 FAMC @F-zenaide_child_4@
+1 SOUR @S-PUBLIC@
+0 @zenaide_child_5@ INDI
+1 NAME Maria
+1 _PUBID zenaide_child_5
+1 FAMC @F-zenaide_child_5@
+1 SOUR @S-PUBLIC@
+0 @zenaide_child_6@ INDI
+1 NAME Quita
+1 _PUBID zenaide_child_6
+1 FAMC @F-zenaide_child_6@
+1 SOUR @S-PUBLIC@
+0 @zenaide_child_7@ INDI
+1 NAME Geraldo
+1 _PUBID zenaide_child_7
+1 FAMC @F-zenaide_child_7@
+1 SOUR @S-PUBLIC@
+0 @zenaide_child_8@ INDI
+1 NAME Aurecil
+1 _PUBID zenaide_child_8
+1 FAMC @F-zenaide_child_8@
+1 SOUR @S-PUBLIC@
+0 @zenaide_child_9@ INDI
+1 NAME Pedro
+1 _PUBID zenaide_child_9
+1 FAMC @F-zenaide_child_9@
+1 SOUR @S-PUBLIC@
+0 @zenaide_child_10@ INDI
+1 NAME Aníbal
+1 _PUBID zenaide_child_10
+1 FAMC @F-zenaide_child_10@
+1 SOUR @S-PUBLIC@
+0 @zenaide_child_11@ INDI
+1 NAME Antônio
+1 _PUBID zenaide_child_11
+1 FAMC @F-zenaide_child_11@
+1 SOUR @S-PUBLIC@
+0 @zenaide_child_12@ INDI
+1 NAME Felipe
+1 _PUBID zenaide_child_12
+1 FAMC @F-zenaide_child_12@
+1 SOUR @S-PUBLIC@
+0 @zenaide_child_13@ INDI
+1 NAME Sebastião
+1 _PUBID zenaide_child_13
+1 FAMC @F-zenaide_child_13@
+1 SOUR @S-PUBLIC@
+0 @zenaide_child_14@ INDI
+1 NAME João
+1 _PUBID zenaide_child_14
+1 FAMC @F-zenaide_child_14@
+1 SOUR @S-PUBLIC@
+0 @zenaide_child_15@ INDI
+1 NAME José
+1 _PUBID zenaide_child_15
+1 FAMC @F-zenaide_child_15@
+1 SOUR @S-PUBLIC@
+0 @zenaide_child_16@ INDI
+1 NAME Gabriel
+1 _PUBID zenaide_child_16
+1 FAMC @F-zenaide_child_16@
+1 SOUR @S-PUBLIC@
+0 @F-bartolomeo1@ FAM
+1 _PARENT @giovanni16@
+1 CHIL @bartolomeo1@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-domenica1724@ FAM
+1 _PARENT @bartolomeo1@
+1 CHIL @domenica1724@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-giovanna1725@ FAM
+1 _PARENT @bartolomeo1@
+1 CHIL @giovanna1725@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-giovanni1727@ FAM
+1 _PARENT @bartolomeo1@
+1 CHIL @giovanni1727@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-cattarina1729@ FAM
+1 _PARENT @bartolomeo1@
+1 CHIL @cattarina1729@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-angela1733@ FAM
+1 _PARENT @bartolomeo1@
+1 CHIL @angela1733@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-giovanni1741@ FAM
+1 _PARENT @bartolomeo1@
+1 CHIL @giovanni1741@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-bartolomeo1768@ FAM
+1 _PARENT @giovanni1741@
+1 CHIL @bartolomeo1768@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-giuseppe1770@ FAM
+1 _PARENT @giovanni1741@
+1 CHIL @giuseppe1770@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-domenico1772@ FAM
+1 _PARENT @giovanni1741@
+1 CHIL @domenico1772@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-domenica1775@ FAM
+1 _PARENT @giovanni1741@
+1 CHIL @domenica1775@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-antonio1777@ FAM
+1 _PARENT @giovanni1741@
+1 CHIL @antonio1777@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-barbara1778@ FAM
+1 _PARENT @giovanni1741@
+1 CHIL @barbara1778@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-maria1780@ FAM
+1 _PARENT @giovanni1741@
+1 CHIL @maria1780@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-vittoria1782@ FAM
+1 _PARENT @giovanni1741@
+1 CHIL @vittoria1782@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-giovanni1803@ FAM
+1 _PARENT @bartolomeo1768@
+1 CHIL @giovanni1803@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-bartolomeo1829@ FAM
+1 _PARENT @giovanni1803@
+1 CHIL @bartolomeo1829@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-rosa1832@ FAM
+1 _PARENT @giovanni1803@
+1 CHIL @rosa1832@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-francesco1833@ FAM
+1 _PARENT @giovanni1803@
+1 CHIL @francesco1833@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-enrica1837@ FAM
+1 _PARENT @giovanni1803@
+1 CHIL @enrica1837@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-luigi@ FAM
+1 _PARENT @francesco@
+1 CHIL @luigi@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-maria1839@ FAM
+1 _PARENT @luigi@
+1 CHIL @maria1839@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-carlo1843@ FAM
+1 _PARENT @luigi@
+1 CHIL @carlo1843@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-antonio1846@ FAM
+1 _PARENT @luigi@
+1 _PARENT @maria_cavallini@
+1 CHIL @antonio1846@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-custode@ FAM
+1 _PARENT @luigi@
+1 _PARENT @pasqua@
+1 CHIL @custode@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-ermanno@ FAM
+1 _PARENT @custode@
+1 CHIL @ermanno@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-ugo@ FAM
+1 _PARENT @custode@
+1 CHIL @ugo@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-umberto@ FAM
+1 _PARENT @custode@
+1 CHIL @umberto@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-daniele@ FAM
+1 _PARENT @custode@
+1 CHIL @daniele@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-dante1882@ FAM
+1 _PARENT @custode@
+1 CHIL @dante1882@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-maria1884@ FAM
+1 _PARENT @custode@
+1 CHIL @maria1884@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-luigi1886@ FAM
+1 _PARENT @custode@
+1 CHIL @luigi1886@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-ulisse@ FAM
+1 _PARENT @custode@
+1 CHIL @ulisse@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-ernesto@ FAM
+1 _PARENT @custode@
+1 CHIL @ernesto@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-carlo1892@ FAM
+1 _PARENT @custode@
+1 CHIL @carlo1892@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-zenaide@ FAM
+1 _PARENT @custode@
+1 _PARENT @ernesta@
+1 CHIL @zenaide@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-grandilia@ FAM
+1 _PARENT @custode@
+1 _PARENT @ernesta@
+1 CHIL @grandilia@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-luzia@ FAM
+1 _PARENT @nicola@
+1 _PARENT @grandilia@
+1 CHIL @luzia@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-ana_maria@ FAM
+1 _PARENT @nicola@
+1 _PARENT @grandilia@
+1 CHIL @ana_maria@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-helia@ FAM
+1 _PARENT @nicola@
+1 _PARENT @grandilia@
+1 CHIL @helia@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-orestes@ FAM
+1 _PARENT @nicola@
+1 _PARENT @grandilia@
+1 CHIL @orestes@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-santina@ FAM
+1 _PARENT @nicola@
+1 _PARENT @grandilia@
+1 CHIL @santina@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-maria_esposito@ FAM
+1 _PARENT @nicola@
+1 _PARENT @grandilia@
+1 CHIL @maria_esposito@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-valquiria@ FAM
+1 _PARENT @nicola@
+1 _PARENT @grandilia@
+1 CHIL @valquiria@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-lourdes_esposito@ FAM
+1 _PARENT @nicola@
+1 _PARENT @grandilia@
+1 CHIL @lourdes_esposito@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-carmen@ FAM
+1 _PARENT @nicola@
+1 _PARENT @grandilia@
+1 CHIL @carmen@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-mafalda@ FAM
+1 _PARENT @nicola@
+1 _PARENT @grandilia@
+1 CHIL @mafalda@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-valentim@ FAM
+1 _PARENT @custode@
+1 CHIL @valentim@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-walter@ FAM
+1 _PARENT @valentim@
+1 _PARENT @elisa@
+1 CHIL @walter@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-nedina@ FAM
+1 _PARENT @valentim@
+1 _PARENT @elisa@
+1 CHIL @nedina@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-reni@ FAM
+1 _PARENT @valentim@
+1 _PARENT @elisa@
+1 CHIL @reni@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-antonio_filho@ FAM
+1 _PARENT @valentim@
+1 _PARENT @elisa@
+1 CHIL @antonio_filho@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-fernando@ FAM
+1 _PARENT @reni@
+1 _PARENT @joao_galo@
+1 CHIL @fernando@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-vera@ FAM
+1 _PARENT @reni@
+1 _PARENT @joao_galo@
+1 CHIL @vera@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-elcio@ FAM
+1 _PARENT @reni@
+1 _PARENT @joao_galo@
+1 CHIL @elcio@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-jose_airson@ FAM
+1 _PARENT @reni@
+1 _PARENT @joao_galo@
+1 CHIL @jose_airson@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-rejane@ FAM
+1 _PARENT @reni@
+1 _PARENT @joao_galo@
+1 CHIL @rejane@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-jv@ FAM
+1 _PARENT @rejane@
+1 _PARENT @luiz_claudio@
+1 CHIL @jv@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-luiz_claudio@ FAM
+1 _PARENT @jose_luiz@
+1 _PARENT @mercelina@
+1 CHIL @luiz_claudio@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-joao_galo@ FAM
+1 _PARENT @joao_pai@
+1 _PARENT @tereza@
+1 CHIL @joao_galo@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-zenaide_child_1@ FAM
+1 _PARENT @felipe_murucci@
+1 _PARENT @zenaide@
+1 CHIL @zenaide_child_1@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-zenaide_child_2@ FAM
+1 _PARENT @felipe_murucci@
+1 _PARENT @zenaide@
+1 CHIL @zenaide_child_2@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-zenaide_child_3@ FAM
+1 _PARENT @felipe_murucci@
+1 _PARENT @zenaide@
+1 CHIL @zenaide_child_3@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-zenaide_child_4@ FAM
+1 _PARENT @felipe_murucci@
+1 _PARENT @zenaide@
+1 CHIL @zenaide_child_4@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-zenaide_child_5@ FAM
+1 _PARENT @felipe_murucci@
+1 _PARENT @zenaide@
+1 CHIL @zenaide_child_5@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-zenaide_child_6@ FAM
+1 _PARENT @felipe_murucci@
+1 _PARENT @zenaide@
+1 CHIL @zenaide_child_6@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-zenaide_child_7@ FAM
+1 _PARENT @felipe_murucci@
+1 _PARENT @zenaide@
+1 CHIL @zenaide_child_7@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-zenaide_child_8@ FAM
+1 _PARENT @felipe_murucci@
+1 _PARENT @zenaide@
+1 CHIL @zenaide_child_8@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-zenaide_child_9@ FAM
+1 _PARENT @felipe_murucci@
+1 _PARENT @zenaide@
+1 CHIL @zenaide_child_9@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-zenaide_child_10@ FAM
+1 _PARENT @felipe_murucci@
+1 _PARENT @zenaide@
+1 CHIL @zenaide_child_10@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-zenaide_child_11@ FAM
+1 _PARENT @felipe_murucci@
+1 _PARENT @zenaide@
+1 CHIL @zenaide_child_11@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-zenaide_child_12@ FAM
+1 _PARENT @felipe_murucci@
+1 _PARENT @zenaide@
+1 CHIL @zenaide_child_12@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-zenaide_child_13@ FAM
+1 _PARENT @felipe_murucci@
+1 _PARENT @zenaide@
+1 CHIL @zenaide_child_13@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-zenaide_child_14@ FAM
+1 _PARENT @felipe_murucci@
+1 _PARENT @zenaide@
+1 CHIL @zenaide_child_14@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-zenaide_child_15@ FAM
+1 _PARENT @felipe_murucci@
+1 _PARENT @zenaide@
+1 CHIL @zenaide_child_15@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-zenaide_child_16@ FAM
+1 _PARENT @felipe_murucci@
+1 _PARENT @zenaide@
+1 CHIL @zenaide_child_16@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @union-custode-ernesta@ FAM
+1 _PARTNER @custode@
+1 _PARTNER @ernesta@
+1 MARR
+2 DATE 2 JUN 1880
+2 SOUR @S-PUBLIC@
+0 @union-grandilia-nicola@ FAM
+1 _PARTNER @grandilia@
+1 _PARTNER @nicola@
+1 MARR
+2 DATE 31 DEC 1910
+2 SOUR @S-PUBLIC@
+0 @union-reni-joao@ FAM
+1 _PARTNER @reni@
+1 _PARTNER @joao_galo@
+1 MARR
+2 DATE 6 JAN 1960
+2 SOUR @S-PUBLIC@
+0 @S-PUBLIC@ SOUR
+1 TITL Snapshot público candidato Zaniratti/Galo
+1 NOTE Citações mínimas no snapshot JSON público.
+0 TRLR

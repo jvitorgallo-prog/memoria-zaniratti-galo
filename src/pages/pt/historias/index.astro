@@ -1,0 +1,13 @@
+---
+import SiteLayout from "../../../layouts/SiteLayout.astro";
+import PageIntro from "../../../components/PageIntro.astro";
+import Notice from "../../../components/Notice.astro";
+import { url } from "../../../lib/urls";
+---
+<SiteLayout active="historias" title="Histórias">
+  <PageIntro eyebrow="Memórias e contexto" title="Histórias" lede="Textos narrativos devem distinguir lembranças familiares de contexto histórico e trazer referências para cada trecho." />
+  <Notice title="Conteúdo em pesquisa">
+    <p>Ainda não há artigos familiares incluídos neste recorte público. A lembrança sobre a viagem do Attività permanece uma pista, sem ano confirmado e sem ser apresentada como viagem comprovada.</p>
+  </Notice>
+  <section class="section"><div class="content-card"><h2>Uma história cresce com suas fontes</h2><p>Quando um texto for incorporado, esta área apresentará as fontes junto à narrativa e explicará o que ainda está em investigação.</p><a href={url("/pt/fontes/")}>Consultar as fontes públicas →</a></div></section>
+</SiteLayout>

@@ -1,0 +1,19 @@
+---
+import SiteLayout from "../../../layouts/SiteLayout.astro";
+import PageIntro from "../../../components/PageIntro.astro";
+import { publicData as snapshot } from "../../../lib/data";
+import { url } from "../../../lib/urls";
+const sources = snapshot.sources || [];
+const citationCounts = (id: string) => (snapshot.citations || []).filter((citation) => citation.source_id === id).length;
+---
+<SiteLayout active="fontes" title="Fontes e documentos" description="Referências e documentos citados no conjunto público.">
+  <PageIntro eyebrow="Referências" title="Fontes e documentos" lede="Uma relação publicada pode apontar para uma fonte sem expor o documento integral. As fichas registram apenas os metadados liberados para consulta." />
+  {sources.length ? <div class="source-list">
+    {sources.map((source) => <article class="source-card">
+      <p class="eyebrow">{source.kind || "Fonte"}</p><h2>{source.title}</h2>
+      <p>{source.public_reference || source.public_note || "Referência incluída no conjunto público."}</p>
+      <p class="meta">{citationCounts(source.id)} {citationCounts(source.id) === 1 ? "citação" : "citações"} no conjunto público</p>
+      <a href={url("/pt/fontes/" + encodeURIComponent(source.id) + "/")}>Abrir ficha da fonte →</a>
+    </article>)}
+  </div> : <p class="empty-state">Ainda não há fontes aprovadas para o recorte público.</p>}
+</SiteLayout>

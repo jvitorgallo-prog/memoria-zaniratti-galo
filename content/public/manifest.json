@@ -1,0 +1,31 @@
+{
+  "release_id": "zaniratti-galo-candidate-2026-10-11",
+  "state": "approved",
+  "source_revision": "rodada06-public-allowlist-v3",
+  "source_snapshot_sha256": "2c063f6e0050fa6a3bec42c856160eb4a9b83eb22ae0c4d5155da1de81a575f9",
+  "origin_asset": {
+    "catalog_path": "Foto/GeneaA3.gif",
+    "sha256": "27a3b8087c74cb2d6f1c435fe727d153b9f41dc03d34c102b536cb47486f9fda",
+    "capture_url": "https://web.archive.org/web/20041029160237id_/http://www.zaniratti.it:80/Foto/GeneaA3.gif"
+  },
+  "snapshot_sha256": "e3cbbe26e5b3d8ae39645059555d08165f1bce07084d1971f0ad0a412bc5e3c5",
+  "assets": [
+    {
+      "path": "assets/revisados/genea-a3-francesco-luigi-recorte.png",
+      "sha256": "6640354a5945db82955e70def228b162944543031d2c9af3cced6511d2143995",
+      "bytes": 23839
+    }
+  ],
+  "gedcom_sha256": "e083c1880a5411aab83b8781fea8bacb6fb1c89fa8d7142feae5f9f7a291da85",
+  "inventory_summary": {
+    "historical_site_records": 363,
+    "catalog_pdf_records": 26
+  },
+  "note": "Projeção pública revisada para disponibilização no site.",
+  "approval_decision": {
+    "candidate_snapshot_sha256": "f70710876417888c7e8eeca9c4aa7baf868a696f3fa54966064095647d7ffb29",
+    "reviewer_role": "coordenação editorial",
+    "reviewed_at": "2026-10-11T23:55:51.695156+00:00"
+  },
+  "inventory_sha256": "fbed8a0f26e1722dc7a65139af053e69e0212bb2cf926f1d776dba5cd97e940f"
+}

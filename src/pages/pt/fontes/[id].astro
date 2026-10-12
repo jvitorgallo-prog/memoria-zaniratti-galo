@@ -1,0 +1,36 @@
+---
+import SiteLayout from "../../../layouts/SiteLayout.astro";
+import PageIntro from "../../../components/PageIntro.astro";
+import ClaimList from "../../../components/ClaimList.astro";
+import Notice from "../../../components/Notice.astro";
+import { publicData as snapshot } from "../../../lib/data";
+import { url } from "../../../lib/urls";
+const sources = snapshot.sources || [];
+const citations = snapshot.citations || [];
+const claims = snapshot.assertions || [];
+export function getStaticPaths() {
+  return (snapshot.sources || []).map((source) => ({ params: { id: source.id }, props: { sourceId: source.id } }));
+}
+const source = sources.find((item) => item.id === Astro.props.sourceId);
+if (!source) throw new Error("Fonte sem registro correspondente no snapshot público.");
+const sourceCitations = citations.filter((citation) => citation.source_id === source.id);
+const citedIds = new Set(sourceCitations.map((citation) => citation.id));
+const sourceClaims = claims.filter((claim) => (claim.citation_ids || []).some((id) => citedIds.has(id)));
+---
+<SiteLayout active="fontes" title={source.title}>
+  <p class="breadcrumb"><a href={url("/pt/fontes/")}>Fontes</a> <span aria-hidden="true">/</span> {source.title}</p>
+  <PageIntro eyebrow={source.kind || "Fonte"} title={source.title} lede={source.public_reference || source.public_note} />
+  <div class="metadata-grid">
+    <div><small>Referência</small><strong>{source.public_reference}</strong></div>
+    {source.reproduction && <div><small>Disponibilidade</small><strong>{source.reproduction === "metadata_only" ? "Metadados e referência" : source.reproduction}</strong></div>}
+  </div>
+  {source.public_note && <section class="section"><Notice><p>{source.public_note}</p></Notice></section>}
+  {source.approved_external_url && <p class="section"><a class="button button-quiet" href={source.approved_external_url} rel="noopener noreferrer">Consultar referência externa aprovada ↗</a></p>}
+  {source.asset_ids?.length > 0 && <section class="section"><h2>Reprodução autorizada</h2>
+    <div class="approved-assets">{source.asset_ids.map((id) => { const asset = (snapshot.assets || []).find((item) => item.id === id); return asset?.public_path && <figure><img src={url(asset.public_path)} alt={asset.alt || "Reprodução de fonte histórica"} loading="lazy" /><figcaption>{asset.caption || source.title}</figcaption></figure>; })}</div>
+  </section>}
+  <section class="section">
+    <div class="section-heading"><div><p class="eyebrow">Citações do conjunto público</p><h2>Afirmações que citam esta fonte</h2></div></div>
+    <ClaimList claims={sourceClaims} citations={citations} sources={sources} people={snapshot.people || []} />
+  </section>
+</SiteLayout>

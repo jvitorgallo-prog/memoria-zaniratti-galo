@@ -1,0 +1,22 @@
+---
+import inventory from "../../content/public/legacy-inventory.json";
+const entries = inventory.entries || [];
+const formatCount = [...new Set(entries.map((entry) => entry.format))].sort().map((format) => ({ format, count: entries.filter((entry) => entry.format === format).length }));
+---
+<section class="section legacy-catalog" data-legacy-catalog>
+  <div class="section-heading"><div><p class="eyebrow">Catálogo de referências</p><h2>Itens identificados no inventário</h2></div><span>{entries.length} registros</span></div>
+  <p class="section-note">Este catálogo descreve caminhos e metadados do inventário recebido. Não serve as páginas antigas em HTML bruto, não indica que o acervo esteja completo e não substitui as fichas de fontes revisadas.</p>
+  <div class="format-tags">{formatCount.map(({ format, count }) => <span><strong>{count}</strong> {format.toUpperCase()}</span>)}</div>
+  <label class="catalog-search">Filtrar pelo caminho ou formato
+    <input type="search" data-catalog-query placeholder="Ex.: BRA/… ou htm" autocomplete="off" />
+  </label>
+  <p class="result-count" data-catalog-count aria-live="polite">{entries.length} itens listados.</p>
+  <div class="table-wrap catalog-table"><table>
+    <caption class="visually-hidden">Inventário de metadados do site histórico, sem servir os arquivos originais.</caption>
+    <thead><tr><th scope="col">Caminho histórico</th><th scope="col">Formato</th><th scope="col">Tamanho registrado</th><th scope="col">Referências no catálogo</th></tr></thead>
+    <tbody>{entries.map((entry) => <tr data-catalog-entry data-catalog-text={entry.legacy_path + " " + entry.format}>
+      <td><code>{entry.legacy_path}</code></td><td>{entry.format.toUpperCase()}</td><td>{entry.bytes} bytes</td><td>{entry.reference_count}</td>
+    </tr>)}</tbody>
+  </table></div>
+  <script>import "../scripts/legacy-catalog.js";</script>
+</section>

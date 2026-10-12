@@ -1,0 +1,46 @@
+---
+import SiteLayout from "../../../layouts/SiteLayout.astro";
+import PageIntro from "../../../components/PageIntro.astro";
+import PersonCard from "../../../components/PersonCard.astro";
+import ClaimList from "../../../components/ClaimList.astro";
+import Notice from "../../../components/Notice.astro";
+import { publicData as snapshot } from "../../../lib/data";
+import { url } from "../../../lib/urls";
+const branches = snapshot.branches || [];
+const people = snapshot.people || [];
+const assertions = snapshot.assertions || [];
+const groups = snapshot.groups || [];
+export function getStaticPaths() {
+  return (snapshot.branches || []).map((branch) => ({ params: { id: branch.id }, props: { branchId: branch.id } }));
+}
+const branch = branches.find((item) => item.id === Astro.props.branchId);
+if (!branch) throw new Error("Ramo sem registro correspondente no snapshot público.");
+const members = (branch.person_ids || []).map((id) => people.find((person) => person.id === id)).filter((person): person is (typeof people)[number] => Boolean(person));
+const memberIds = new Set(members.map((person) => person.id));
+const claims = assertions.filter((claim) => memberIds.has(claim.subject_id) && (!claim.object_person_id || memberIds.has(claim.object_person_id)));
+const memberGroups = groups.filter((group) => group.participant_ids.some((id) => memberIds.has(id)));
+---
+<SiteLayout active="arvores" title={branch.label}>
+  <p class="breadcrumb"><a href={url("/pt/arvores/")}>Árvores e ramos</a> <span aria-hidden="true">/</span> {branch.label}</p>
+  <PageIntro eyebrow="Ramo familiar" title={branch.label} lede={branch.description || branch.note} />
+  <Notice><p>Esta lista acompanha os registros incluídos neste ramo. A proximidade visual dos cartões não acrescenta evidência a uma relação.</p></Notice>
+  <section class="section">
+    <div class="section-heading"><div><p class="eyebrow">Pessoas</p><h2>Índice do ramo</h2></div><span>{members.length} {members.length === 1 ? "pessoa" : "pessoas"}</span></div>
+    {members.length ? <div class="person-grid">{members.map((person) => <PersonCard person={person} branches={branches} />)}</div> : <p class="empty-state">Nenhuma pessoa listada para este ramo.</p>}
+  </section>
+  <section class="section">
+    <div class="section-heading"><div><p class="eyebrow">Relações e fatos</p><h2>Registros com fonte</h2></div></div>
+    <ClaimList claims={claims} citations={snapshot.citations || []} sources={snapshot.sources || []} people={people} />
+  </section>
+  {memberGroups.length > 0 && <section class="section">
+    <div class="section-heading"><div><p class="eyebrow">Contexto de organização</p><h2>Agrupamentos familiares</h2></div></div>
+    <p class="section-note">Estes agrupamentos ajudam a navegar pelo material. Só um evento de casamento com fonte própria indica casamento.</p>
+    <div class="branch-list">{memberGroups.map((group) => {
+      const participants = group.participant_ids.map((id) => people.find((person) => person.id === id)).filter((person): person is (typeof people)[number] => Boolean(person));
+      return <article class="branch-card"><p class="eyebrow">{group.kind === "parental_group" ? "Agrupamento parental" : "Agrupamento familiar"}</p>
+        <div class="person-grid">{participants.map((person) => <PersonCard person={person} branches={branches} />)}</div>
+        <p>{group.note}</p>
+      </article>;
+    })}</div>
+  </section>}
+</SiteLayout>
