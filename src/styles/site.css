@@ -135,6 +135,9 @@ h4 { font-size: 1.05rem; }
 .line-person strong { display: block; }
 .line-person small { color: var(--muted); }
 .line-evidence { display: grid; gap: 6px; margin-top: 10px; }
+.line-edge { padding: 7px 0 7px 10px; border-left: 2px solid #d5ded4; }
+.line-edge-label { display: block; margin-bottom: 5px; color: var(--green-deep); font-size: 13px; }
+.parent-separator { color: var(--terra); }
 .line-proof { display: flex; align-items: baseline; flex-wrap: wrap; gap: 7px; }
 .line-proof a, .line-unavailable { color: var(--muted); font-size: 12px; }
 .line-unavailable { font-style: italic; }

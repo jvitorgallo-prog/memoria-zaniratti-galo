@@ -39,13 +39,16 @@ const stages = [
     {stages.map((stage, index) => <li>
       <span class="line-node" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
       <div class="line-person">
-        <strong>{stage.parents.map((id) => { const person = personById(id); return person && <a href={url("/pt/pessoas/" + encodeURIComponent(person.id) + "/")}>{person.label}</a>; }).map((x) => x)}</strong>
+        <strong>{stage.parents.map((id, parentIndex) => { const person = personById(id); return <span>{parentIndex > 0 && <span class="parent-separator"> + </span>}{person && <a href={url("/pt/pessoas/" + encodeURIComponent(person.id) + "/")}>{person.label}</a>}</span>; })}</strong>
         <small>relação parental indicada para <a href={url("/pt/pessoas/" + encodeURIComponent(stage.child) + "/")}>{personById(stage.child)?.label || stage.child}</a></small>
         <div class="line-evidence">
-          {stage.links.map(({ claims: edgeClaims }) => edgeClaims.length ? <span class="line-proof">
-            {edgeClaims.map((claim) => <EvidenceBadge evidence={claim.evidence_class} interpretation={claim.interpretation} />)}
-            {edgeClaims.flatMap(sourcesFor).map(({ citation, source }) => <a href={url("/pt/fontes/" + encodeURIComponent(source?.id || citation.source_id) + "/")}>{source?.title || citation.source_id}{citation.locator ? ", " + citation.locator : ""}</a>)}
-          </span> : <span class="line-unavailable">Este vínculo não consta no recorte público.</span>)}
+          {stage.links.map(({ parent, child, claims: edgeClaims }) => <div class="line-edge">
+            <strong class="line-edge-label">{parent?.label || "Pessoa"} → {child?.label || "Pessoa"}</strong>
+            {edgeClaims.length ? <div class="line-proof">
+              {edgeClaims.map((claim) => <EvidenceBadge evidence={claim.evidence_class} interpretation={claim.interpretation} />)}
+              {edgeClaims.flatMap(sourcesFor).map(({ citation, source }) => <a href={url("/pt/fontes/" + encodeURIComponent(source?.id || citation.source_id) + "/")}>{source?.title || citation.source_id}{citation.locator ? ", " + citation.locator : ""}</a>)}
+            </div> : <span class="line-unavailable">Este vínculo não consta no recorte público.</span>}
+          </div>)}
         </div>
       </div>
     </li>)}
