@@ -1,0 +1,130 @@
+---
+import { url } from "../lib/urls";
+import type { PublicPerson, PublicAssertion, PublicGroup, PublicBranch } from "../lib/data";
+
+type PersonWithAliases = PublicPerson & { aliases?: string[] };
+const { people, branches, assertions, groups, focusId = "custode" } = Astro.props as {
+  people: PersonWithAliases[]; branches: PublicBranch[]; assertions: PublicAssertion[]; groups: PublicGroup[]; focusId?: string;
+};
+const byId = new Map(people.map((person) => [person.id, person]));
+const parentMap = new Map<string, Set<string>>();
+const childMap = new Map<string, Set<string>>();
+for (const claim of assertions) {
+  if (claim.predicate !== "child_of" || !claim.object_person_id) continue;
+  const parents = parentMap.get(claim.subject_id) || new Set<string>(); parents.add(claim.object_person_id); parentMap.set(claim.subject_id, parents);
+  const children = childMap.get(claim.object_person_id) || new Set<string>(); children.add(claim.subject_id); childMap.set(claim.object_person_id, children);
+}
+const parents = [...(parentMap.get(focusId) || [])].map((id) => byId.get(id)).filter((person): person is PersonWithAliases => Boolean(person));
+const focusParents = parentMap.get(focusId) || new Set<string>();
+const siblings = people.filter((person) => person.id !== focusId && [...(parentMap.get(person.id) || [])].some((id) => focusParents.has(id)));
+const children = [...(childMap.get(focusId) || [])].map((id) => byId.get(id)).filter((person): person is PersonWithAliases => Boolean(person));
+const unionPartners = groups.filter((group) => group.kind === "union" && group.participant_ids.includes(focusId)).flatMap((group) => group.participant_ids.filter((id) => id !== focusId).map((id) => byId.get(id))).filter((person): person is PersonWithAliases => Boolean(person));
+const safeGraph = JSON.stringify({ people, branches, assertions, groups, events: Astro.props.events || [], citations: Astro.props.citations || [], sources: Astro.props.sources || [] }).replace(/</g, "\\u003c");
+const nameFor = (id: string) => byId.get(id)?.label || id;
+const initials = (label: string) => label.split(/\s+/).filter(Boolean).slice(0, 2).map((part) => part[0]).join("").toLocaleUpperCase("pt-BR");
+const personHref = (id: string) => url(`/pt/pessoas/${encodeURIComponent(id)}/`);
+---
+
+<section class="atlas" id="atlas" data-atlas data-person-base={url("/pt/pessoas/")} data-source-base={url("/pt/fontes/")} data-archive-base={url("/pt/acervo/")} data-home={url("/pt/")} aria-label="Árvore da família Zaniratti">
+  <script type="application/json" data-atlas-data set:html={safeGraph}></script>
+  <div class="atlas-toolbar">
+    <div class="atlas-identity">
+      <p class="atlas-kicker">Memória da família</p>
+      <h1>Árvore Zaniratti</h1>
+      <p>Explore pessoas, gerações e os vínculos que contam esta história.</p>
+    </div>
+    <div class="atlas-search-wrap">
+      <label for="atlas-search">Buscar na família</label>
+      <input id="atlas-search" type="search" autocomplete="off" placeholder="Nome ou outra grafia" data-atlas-search />
+      <ul class="atlas-search-results" data-atlas-results hidden aria-live="polite"></ul>
+    </div>
+  </div>
+
+  <div class="atlas-workspace">
+    <div class="atlas-explorer">
+      <div class="atlas-controls" aria-label="Controles da árvore">
+        <div class="atlas-modes" role="group" aria-label="Parte da família">
+          <button type="button" data-mode="ancestors">Ancestrais</button>
+          <button type="button" data-mode="family" aria-pressed="true">Família</button>
+          <button type="button" data-mode="descendants">Descendentes</button>
+        </div>
+        <label class="atlas-branch-label">Outros ramos
+          <select data-branch-select aria-label="Escolher outro ramo">
+            <option value="">Família de Luigi e Pasqua</option>
+            {branches.filter((branch) => !branch.person_ids.includes("custode")).map((branch) => <option value={branch.id}>{branch.label}</option>)}
+          </select>
+        </label>
+        <div class="atlas-view-controls" role="group" aria-label="Escala da árvore">
+          <button type="button" data-zoom="out" aria-label="Diminuir escala">−</button>
+          <span data-zoom-label>100%</span>
+          <button type="button" data-zoom="in" aria-label="Aumentar escala">+</button>
+          <button type="button" data-zoom="fit">Enquadrar</button>
+        </div>
+      </div>
+
+      <p class="atlas-focus-path" data-focus-path><span class="atlas-path-mark" aria-hidden="true"></span> Caminho até João Vítor <button type="button" data-line-focus>Ver percurso</button></p>
+      <div class="atlas-line-route" data-line-route hidden aria-label="Percurso destacado até João Vítor"></div>
+      <div class="atlas-canvas" data-atlas-canvas tabindex="0" aria-label="Árvore interativa. Use Tab para escolher uma pessoa.">
+        <div class="atlas-tree" data-atlas-tree>
+          <section class="atlas-ancestor-generation" data-zone="grandparents" aria-label="Geração anterior" hidden><h2>Geração anterior</h2><div data-grandparent-cards></div></section>
+          <section class="atlas-generation atlas-parents" data-zone="parents" aria-label="Pais">{parents.map((person) => <a class="atlas-node" href={personHref(person.id)} data-person-id={person.id}><span class="atlas-node-monogram">{initials(person.label)}</span><strong>{person.label}</strong></a>)}</section>
+          <div class="atlas-linker" data-parent-link aria-hidden="true"></div>
+          <section class="atlas-selected-generation" data-zone="selected">
+            <a class="atlas-node atlas-node-selected" href={personHref(focusId)} data-person-id={focusId}><span class="atlas-node-monogram">{initials(nameFor(focusId))}</span><strong>{nameFor(focusId)}</strong></a>
+            <div class="atlas-union-group" data-union>{unionPartners.map((person) => <div class="atlas-union-pair"><span class="atlas-union-mark" aria-label="União informada"></span><a class="atlas-node atlas-node-spouse" href={personHref(person.id)} data-person-id={person.id}><span class="atlas-node-monogram">{initials(person.label)}</span><strong>{person.label}</strong><small>União informada</small></a></div>)}</div>
+            <details class="atlas-sibling-group" data-zone="siblings">
+              <summary data-sibling-heading>Irmãos</summary>
+              <div class="atlas-sibling-cards" data-sibling-cards>{siblings.map((person) => <a class="atlas-node" href={personHref(person.id)} data-person-id={person.id}><span class="atlas-node-monogram">{initials(person.label)}</span><strong>{person.label}</strong></a>)}</div>
+            </details>
+          </section>
+          <div class="atlas-linker atlas-linker-down" data-child-link aria-hidden="true"></div>
+          <section class="atlas-children-group" data-zone="children">
+            <h2 data-child-heading>Filhos</h2>
+            <div class="atlas-child-cards" data-child-cards>{children.map((person) => <a class="atlas-node atlas-node-child" href={personHref(person.id)} data-person-id={person.id}><span class="atlas-node-monogram">{initials(person.label)}</span><strong>{person.label}</strong></a>)}</div>
+          </section>
+          <section class="atlas-grandchildren-group" data-zone="grandchildren" hidden>
+            <h2>Geração seguinte</h2><div data-grandchild-cards></div>
+          </section>
+        </div>
+      </div>
+      <div class="atlas-legend"><span><i class="atlas-legend-selected"></i> Pessoa selecionada</span><span><i class="atlas-legend-path"></i> Percurso destacado</span><span><i class="atlas-legend-union"></i> União informada</span></div>
+      <noscript><p class="atlas-no-script">A árvore interativa precisa de JavaScript; os links de pessoas permanecem acessíveis.</p></noscript>
+    </div>
+
+    <aside class="atlas-person-panel" data-person-panel aria-live="polite">
+      <div class="atlas-panel-monogram" data-panel-monogram aria-hidden="true">{initials(nameFor(focusId))}</div>
+      <p class="atlas-kicker">Pessoa selecionada</p>
+      <h2 data-panel-name>{nameFor(focusId)}</h2>
+      <p class="atlas-panel-meta" data-panel-meta>História da família Zaniratti</p>
+      <div class="atlas-panel-actions">
+        <a data-panel-story href={personHref(focusId)}>Abrir história <span class="atlas-external-mark" aria-hidden="true"></span></a>
+        <a data-panel-docs href={url("/pt/acervo/?pessoa=" + encodeURIComponent(focusId))}>Ver documentos</a>
+        <button type="button" data-panel-family>Ver família</button>
+      </div>
+      <section class="atlas-panel-relations" data-panel-relations>
+        <h3>Família próxima</h3>
+        <p data-panel-relation-copy>Selecione um nome na árvore para conhecer seus vínculos.</p>
+      </section>
+      <details class="atlas-provenance">
+        <summary>De onde vem esta história</summary>
+        <p>Informações da família e do site histórico são apresentadas junto de suas referências, sem exigir certidão para cada relato.</p>
+        <div data-panel-sources></div>
+      </details>
+    </aside>
+  </div>
+
+  <div class="atlas-mobile-family" data-mobile-family aria-label="Família da pessoa selecionada">
+    <h2 data-mobile-heading>Família de {nameFor(focusId)}</h2>
+    <section><h3>Pais</h3><div data-mobile-parents>{parents.map((person) => <a class="atlas-mini-person" href={personHref(person.id)} data-person-id={person.id}><span>{initials(person.label)}</span><strong>{person.label}</strong><small>Pai ou mãe</small></a>)}</div></section>
+    <section><h3>Pessoa e união</h3><div data-mobile-focus><a class="atlas-mini-person atlas-mini-selected" href={personHref(focusId)} data-person-id={focusId}><span>{initials(nameFor(focusId))}</span><strong>{nameFor(focusId)}</strong><small>Pessoa selecionada</small></a>{unionPartners.map((person) => <a class="atlas-mini-person" href={personHref(person.id)} data-person-id={person.id}><span>{initials(person.label)}</span><strong>{person.label}</strong><small>União informada</small></a>)}</div><a class="atlas-mobile-story" data-mobile-story href={personHref(focusId)}>Abrir história de {nameFor(focusId)}</a><a class="atlas-mobile-docs" data-mobile-docs href={url("/pt/acervo/?pessoa=" + encodeURIComponent(focusId))}>Ver documentos</a></section>
+    <section data-mobile-siblings-section hidden><h3 data-mobile-sibling-heading>Irmãos</h3><div data-mobile-siblings></div></section>
+    <section><h3 data-mobile-child-heading>Filhos</h3><div data-mobile-children>{children.map((person) => <a class="atlas-mini-person" href={personHref(person.id)} data-person-id={person.id}><span>{initials(person.label)}</span><strong>{person.label}</strong><small>Filho ou filha</small></a>)}</div></section>
+    <details class="atlas-mobile-overview" data-overview-toggle><summary>Ver a árvore ampla</summary><p>Arraste a árvore para os lados para explorar outros ramos; use o zoom para ajustar a leitura.</p></details>
+  </div>
+
+  <div class="atlas-note"><span aria-hidden="true">✦</span><p>Os nomes e grupos mostram as relações presentes nesta memória. Uma linha pode abrir caminhos para histórias diferentes; ramos sem ligação conhecida permanecem separados.</p></div>
+</section>
+
+<script>
+  import "../scripts/tree-atlas.js";
+</script>

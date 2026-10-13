@@ -1,12 +1,57 @@
 ---
 import SiteLayout from "../../../layouts/SiteLayout.astro";
-import PageIntro from "../../../components/PageIntro.astro";
-import PeopleDirectory from "../../../components/PeopleDirectory.astro";
 import { publicData as snapshot } from "../../../lib/data";
-const people = [...(snapshot.people || [])].sort((a, b) => a.label.localeCompare(b.label, "pt-BR"));
+import { url } from "../../../lib/urls";
+const people = [...(snapshot.people || [])].sort((a,b) => a.label.localeCompare(b.label,"pt-BR") || a.id.localeCompare(b.id));
 const branches = snapshot.branches || [];
+const initials = (name: string) => name.trim().split(/\s+/).slice(0,2).map((part) => part[0]).join("").toLocaleUpperCase("pt-BR");
 ---
-<SiteLayout active="pessoas" title="Pessoas" description="Índice de pessoas no conjunto público da memória familiar.">
-  <PageIntro eyebrow="Índice" title="Pessoas" lede="Encontre os nomes reunidos neste recorte público e siga até a ficha com afirmações e referências." />
-  {people.length ? <PeopleDirectory people={people} branches={branches} assertions={snapshot.assertions || []} /> : <p class="empty-state">Ainda não há fichas de pessoas aprovadas para este recorte.</p>}
+<SiteLayout active="pessoas" title="Pessoas da família" description="Encontre os nomes e histórias das pessoas ligadas à Família Zaniratti.">
+  <div class="people-page">
+    <nav class="people-breadcrumb" aria-label="Caminho de navegação"><a href={url("/pt/")}>Árvore</a><span>/</span><span aria-current="page">Pessoas</span></nav>
+    <header class="people-intro"><p class="people-kicker">Nomes e gerações</p><h1>Pessoas</h1><p>Encontre uma pessoa pelo nome atual ou por uma grafia registrada. Cada ficha reúne suas relações, histórias e documentos disponíveis.</p><div><strong>{people.length}</strong><span>pessoas no atlas</span></div></header>
+    <section class="people-controls" aria-label="Buscar pessoas">
+      <label>Buscar por nome ou variante<input type="search" id="people-search" placeholder="Ex.: Zanirati, Galo, Grandilia" /></label>
+      <label>Ramo<select id="people-branch"><option value="">Todos os ramos</option>{branches.map((branch) => <option value={branch.id}>{branch.label}</option>)}</select></label>
+      <p id="people-count" aria-live="polite">{people.length} pessoas</p>
+    </section>
+    {people.length ? <div class="people-grid" id="people-grid">{people.map((person) => {
+      const branchLabels = (person.branch_ids || []).map((id) => branches.find((branch) => branch.id === id)?.label).filter(Boolean);
+      const aliases = person.aliases || [];
+      const searchText = [person.label, ...aliases, ...branchLabels].join(" ").toLocaleLowerCase("pt-BR");
+      return <article class="person-tile" data-search={searchText} data-branches={(person.branch_ids || []).join(" ")}>
+        <a href={url("/pt/pessoas/" + encodeURIComponent(person.id) + "/")}>
+          <span class="person-mark" aria-hidden="true">{initials(person.label)}</span><span class="person-copy"><strong>{person.label}</strong>{branchLabels.length > 0 && <small>{branchLabels.join(" · ")}</small>}{aliases.length > 0 && <small class="person-aliases">{aliases.slice(0,2).join(" · ")}{aliases.length > 2 ? ` +${aliases.length - 2}` : ""}</small>}</span><span class="person-arrow" aria-hidden="true">↗</span>
+        </a>
+      </article>;
+    })}</div> : <p class="people-empty">As fichas estão sendo preparadas.</p>}
+    <noscript><p class="people-noscript">A busca e o filtro interativos precisam de JavaScript; todas as fichas seguem disponíveis na lista.</p></noscript>
+  </div>
 </SiteLayout>
+<script>
+  const search = document.querySelector<HTMLInputElement>("#people-search");
+  const branch = document.querySelector<HTMLSelectElement>("#people-branch");
+  const tiles = [...document.querySelectorAll<HTMLElement>("#people-grid .person-tile")];
+  const count = document.querySelector<HTMLElement>("#people-count");
+  const normalize = (value: string) => value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase("pt-BR").trim();
+  const filter = () => {
+    const query = normalize(search?.value || "");
+    const branchId = branch?.value || "";
+    let visible = 0;
+    for (const tile of tiles) {
+      const matches = (!query || normalize(tile.dataset.search || "").includes(query)) && (!branchId || (tile.dataset.branches || "").split(" ").includes(branchId));
+      tile.hidden = !matches;
+      if (matches) visible++;
+    }
+    if (count) count.textContent = `${visible} ${visible === 1 ? "pessoa" : "pessoas"}`;
+  };
+  search?.addEventListener("input", filter);
+  branch?.addEventListener("change", filter);
+</script>
+<style>
+  .people-page{--pp-ink:#172b3a;--pp-blue:#326bb0;--pp-pale:#edf3f8;--pp-line:#d8e0e6;--pp-muted:#5b6873;--pp-paper:#fffefa;color:var(--pp-ink)}.people-breadcrumb{display:flex;gap:9px;margin-bottom:24px;color:var(--pp-muted);font-size:.85rem}.people-breadcrumb a{color:inherit}
+  .people-intro{max-width:850px;padding:clamp(28px,6vw,62px);border-radius:16px;background:#18364b;color:white}.people-kicker{margin:0 0 8px;color:var(--pp-blue);font-size:.72rem;font-weight:750;letter-spacing:.11em;text-transform:uppercase}.people-intro .people-kicker{color:#9bc4ee}.people-intro h1{color:white;font-size:clamp(2.5rem,6vw,4.3rem)}.people-intro>p:not(.people-kicker){max-width:670px;color:#d7e2e9;font-size:1.07rem}.people-intro>div{display:flex;align-items:baseline;gap:9px;margin-top:22px;color:#d7e2e9}.people-intro strong{color:white;font:2rem Georgia,serif}
+  .people-controls{display:grid;grid-template-columns:minmax(240px,1fr) minmax(190px,.45fr) auto;gap:15px;align-items:end;margin:30px 0 14px}.people-controls label{display:grid;gap:6px;font-size:.84rem;font-weight:700}.people-controls input,.people-controls select{min-height:46px;padding:9px 12px;border:1px solid #bdcbd6;border-radius:7px;background:var(--pp-paper);font:inherit}.people-controls p{margin:0 0 10px;color:var(--pp-muted);font-size:.84rem}
+  .people-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.person-tile{border:1px solid var(--pp-line);border-radius:10px;background:var(--pp-paper)}.person-tile[hidden]{display:none}.person-tile>a{display:flex;align-items:center;gap:13px;min-height:78px;padding:12px 15px;color:var(--pp-ink);text-decoration:none}.person-tile>a:hover{background:var(--pp-pale)}.person-mark{display:grid;flex:0 0 43px;place-items:center;width:43px;height:43px;border-radius:50%;background:var(--pp-pale);color:var(--pp-blue);font:1rem Georgia,serif}.person-copy{display:grid;min-width:0;gap:3px}.person-copy strong{font-size:.94rem}.person-copy small{overflow:hidden;color:var(--pp-muted);font-size:.74rem;text-overflow:ellipsis;white-space:nowrap}.person-copy .person-aliases{font-style:italic}.person-arrow{margin-left:auto;color:var(--pp-blue)}.people-empty,.people-noscript{color:var(--pp-muted)}
+  @media(max-width:700px){.people-grid{grid-template-columns:1fr}.people-controls{grid-template-columns:1fr;gap:9px}.people-controls p{margin:0}}
+</style>

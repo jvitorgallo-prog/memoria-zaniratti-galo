@@ -1,40 +1,40 @@
-# Memória das famílias Zaniratti e Galo
+# Família Zaniratti — Memória da família
 
-Site estático em português para consultar pessoas, ramos, documentos e referências recuperadas do zaniratti.it. A primeira versão contém 89 pessoas e 118 vínculos citados. Relatos familiares, transcrições e documentos mantêm suas classes; ramos sem ponte demonstrada continuam separados.
+Atlas público para percorrer a árvore, abrir histórias pessoais e consultar documentos recuperados do zaniratti.it e da pesquisa familiar. Outros sobrenomes participam por casamento e descendência. A identidade e o foco são Zaniratti.
 
-## Executar
+## Conteúdo desta edição
 
-Requer Node.js 22.12 ou posterior (Node 24 usado na validação).
+89 pessoas, 118 vínculos parentais, 7 uniões explicitamente informadas, 46 acontecimentos e 40 biografias com texto factual. As fichas pessoais mostram pais, irmãos, cônjuges e filhos completos, inclusive 13 filhos de Custode, 4 de Valentim, 5 de Reni, 10 de Grandilia e 16 de Zenaide.
+
+O acervo reúne 389 itens; 388 têm arquivo de leitura disponível. Há páginas e imagens do website histórico, 22 PDFs de fontes públicas, o extrato original do casamento de Custode e Ernesta e três extratos genealógicos dos documentos fornecidos. Um registro possui captura indexada, sem bytes locais. A cobertura total do antigo domínio continua desconhecida.
+
+Reni aparece conforme a correção familiar; Lourdes Espósito permanece outra pessoa. Relatos familiares e conteúdo do site integram a história com a origem consultável. Não se inferem parentescos, mães, adoções ou componentes de data ausentes.
+
+## Executar e verificar
+
+Requer Node.js 22.12+; o workflow usa Node 24.
 
 ```sh
 npm ci
 npm run dev
-```
-
-Para publicar no GitHub Pages, use o workflow `.github/workflows/pages.yml`. Ele valida o conjunto público, exige sua aprovação editorial, verifica tipos e constrói o site antes do deploy. O caminho padrão é `/memoria-zaniratti-galo/`; `SITE_BASE=/` permite outra hospedagem. Não há chaves Supabase no navegador.
-
-## Verificar e construir
-
-```sh
 npm run validate:public
-npm run release:check
 npm run test:public
+npm run test:genealogy
+npm run release:check
 npm run check
 npm run build
 ```
 
-O exportador requer explicitamente a base e os catálogos mantidos fora deste repositório. Ele gera um candidato e só o aprova com uma decisão editorial externa vinculada ao seu hash. Nunca inserir o corpus editorial completo, certidões, e-mails ou SQL de importação com dados pessoais no Git. O conjunto aprovado fica em `content/public/`; derivados permitidos ficam em `public/`.
+O site é Astro estático, publicado pelo workflow Pages. A árvore usa uma camada interativa progressiva; as fichas e os links continuam acessíveis sem JavaScript. Fontes são hospedadas localmente, com licenças em `public/fonts/`.
 
-## Banco editorial
+A URL é https://jvitorgallo-prog.github.io/memoria-zaniratti-galo/. O caminho técnico do repositório foi mantido para preservar links existentes. `SITE_BASE=/` adapta a compilação a outra hospedagem.
 
-Ver `docs/BANCO.md`, `docs/BANCO-VALIDACAO.txt` e `docs/BANCO-INSPECAO.sql`. A migration foi criada pela Supabase CLI e aplicada via MCP ao projeto hospedado escolhido pela família. O lote privado foi carregado em partes com verificação de hash, promovido atomicamente e teve a tabela temporária removida. A organização permanece no plano Free; o schema editorial fica isolado e inacessível aos papéis de navegador.
+## Dados e preservação
 
-## Conteúdo e documentos
+O Supabase Free existente mantém o schema editorial privado. O navegador recebe somente a projeção pública versionada e nunca consulta esse schema ou recebe chave privilegiada. `content/public/manifest.json` vincula corpus, snapshot, inventário, imagens e GEDCOM por hashes. O exportador recebe explicitamente arquivos editoriais fora do checkout; não commitar documentos privados nem SQL de importação.
 
-As 26 fichas documentais incluem 22 referências de repositórios públicos e quatro referências mínimas a documentos fornecidos. As certidões integrais permanecem no acervo de pesquisa. O catálogo histórico reúne 363 itens com metadados; isso não define o universo do site original. A imagem do Attività com a família ainda não foi localizada ou comprovada. A mãe de Valentim permanece desconhecida; Reni e Lourdes Espósito são pessoas distintas.
+Páginas históricas têm versão de leitura sem scripts antigos. Links preservados apontam às cópias locais; recursos ausentes têm indicação legível. Os originais e o inventário de recuperação continuam no acervo de preservação independente.
 
-## Estado da entrega
+A revisão do snapshot é registrada pela coordenação, dentro da autorização já dada pela família para a publicação. Não existe aprovação adicional por pessoa ou vínculo já autorizado. A CI verifica a integridade dos dados e arquivos antes de publicar.
 
-Implementação, ensaio local, verificação do banco hospedado e deploy concluídos em 2026-10-12. A projeção foi revisada pela coordenação. O repositório público fornecido pela família é `jvitorgallo-prog/memoria-zaniratti-galo`; o workflow publica somente a versão editorial aprovada. O site está em [memoria-zaniratti-galo](https://jvitorgallo-prog.github.io/memoria-zaniratti-galo/). O GET da página inicial e da rota `/pt` respondeu HTTP 200; o QA em produção confirmou 12 rotas desktop e sete mobile com HTTP 200, busca por Reni e Custode, sem erros JavaScript nem overflow horizontal.
-
-O banco remoto está no plano Free e foi instalado em um projeto existente, sem upgrade, pausa ou exclusão. O schema e os dados editoriais não são necessários para a leitura do site público e não são acessíveis pelos papéis de navegador.
+Ver `docs/META-REDESENHO.md`, `docs/EDICAO-2026-10-13.md` e `docs/BANCO.md`.

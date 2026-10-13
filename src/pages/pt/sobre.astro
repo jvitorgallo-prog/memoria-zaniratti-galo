@@ -1,16 +1,22 @@
 ---
 import SiteLayout from "../../layouts/SiteLayout.astro";
 import PageIntro from "../../components/PageIntro.astro";
-import Notice from "../../components/Notice.astro";
+import { url } from "../../lib/urls";
 ---
-<SiteLayout title="Sobre e uso">
-  <PageIntro eyebrow="Sobre o projeto" title="Memória das famílias Zaniratti e Galo" lede="Um espaço para organizar histórias, documentos e vínculos entre Itália e Brasil, preservando as fontes e indicando o que ainda está em pesquisa." />
+<SiteLayout title="Sobre a família e o projeto">
+  <PageIntro eyebrow="Memória da família" title="A história continua" lede="Um lugar para percorrer a família Zaniratti, conhecer suas pessoas e preservar histórias que atravessaram gerações entre a Itália e o Brasil." />
   <div class="prose">
-    <p>Este site apresenta uma seleção pública de material familiar. O acervo de pesquisa pode conter documentos, mensagens e dados que não aparecem aqui. O fato de uma informação estar citada não torna o documento integral público.</p>
-    <h2>Uso de conteúdo</h2>
-    <p>Referências podem pertencer a arquivos, autores ou familiares diferentes. Consulte a ficha da fonte e verifique a autorização antes de reproduzir qualquer imagem, transcrição ou trecho.</p>
-    <h2>Privacidade</h2>
-    <p>Não publicamos números de documentos, endereços, contatos ou outros detalhes pessoais sem finalidade pública. Informações de pessoas vivas são limitadas ao nome e às relações necessários para esta narrativa familiar.</p>
-    <Notice><p>Para apontar uma correção ou pedir revisão de uma página, use o canal familiar já combinado. Não envie documentos pessoais em espaço público.</p></Notice>
+    <h2>O trabalho de Edmondo</h2>
+    <p>Edmondo Zaniratti reuniu árvores, biografias, fotografias e documentos no site zaniratti.it. Familiares contribuíram para esse trabalho, entre eles João Vitor Galo Esteves. O projeto atual reúne o conteúdo recuperado, documentos e relatos familiares para dar continuidade a essa memória.</p>
+    <p><a href={url("/pt/sobre/edmondo-e-o-site-original/")}>Conhecer o projeto original →</a></p>
+    <h2>Uma família, muitos caminhos</h2>
+    <p>O foco é a família Zaniratti. Galo, Gallo, Esposito e outros sobrenomes entram pelos casamentos e pela descendência. Um novo sobrenome não interrompe a ligação de uma pessoa com sua família.</p>
+    <h2>Documentos e histórias</h2>
+    <p>Informações compartilhadas pela família e recuperadas do site antigo integram as biografias. Cada história permite consultar sua origem. Quando uma data ou grafia apresenta uma divergência, a nota fica junto da informação correspondente.</p>
+    <p>O acervo conserva os originais e a procedência. A apresentação pública protege números de documentos, endereços atuais e outros campos pessoais sensíveis quando estão presentes.</p>
+    <p><a href={url("/pt/metodo/")}>Como organizamos as informações →</a></p>
+    <h2>Contribuir com a memória</h2>
+    <p>Uma fotografia identificada, uma história lembrada ou uma correção pode abrir um novo caminho. Use o contato familiar para compartilhar contribuições e indicar a pessoa, o lugar e a origem da informação.</p>
+    <p><a class="button button-primary" href={url("/pt/")}>Explorar a família</a> <a class="button button-quiet" href={url("/pt/acervo/")}>Visitar o acervo</a></p>
   </div>
 </SiteLayout>

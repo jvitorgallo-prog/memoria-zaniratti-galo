@@ -1,15 +1,15 @@
 ---
 import "../styles/site.css";
+import "../styles/atlas.css";
 import { url } from "../lib/urls";
 import Favicon from "../components/Favicon.astro";
-const { title = "Memória das famílias Zaniratti e Galo", description = "Histórias, documentos e vínculos entre Itália e Brasil.", active = "" } = Astro.props;
+const { title = "Árvore Zaniratti", description = "Árvore, histórias e memória da família Zaniratti.", active = "" } = Astro.props;
 const nav = [
-  ["Início", "/pt/", "inicio"], ["Pessoas", "/pt/pessoas/", "pessoas"],
-  ["Árvores", "/pt/arvores/", "arvores"], ["Linha principal", "/pt/linha-luigi-joao-vitor/", "linha"],
-  ["Fontes", "/pt/fontes/", "fontes"], ["Lugares", "/pt/lugares/", "lugares"],
-  ["Histórias", "/pt/historias/", "historias"], ["Método", "/pt/metodo/", "metodo"],
+  ["Árvore", "/pt/", "arvore"], ["Pessoas", "/pt/pessoas/", "pessoas"],
+  ["Histórias", "/pt/historias/", "historias"], ["Acervo", "/pt/acervo/", "acervo"], ["Lugares", "/pt/lugares/", "lugares"],
 ];
 const currentUrl = Astro.url.pathname;
+const fontFaceCss = `@font-face{font-family:'Atlas Serif';src:url('${url("/fonts/source-serif-4-latin.woff2")}') format('woff2');font-style:normal;font-weight:400 700;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Atlas Serif';src:url('${url("/fonts/source-serif-4-latin-ext.woff2")}') format('woff2');font-style:normal;font-weight:400 700;font-display:swap;unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Atlas Sans';src:url('${url("/fonts/source-sans-3-latin.woff2")}') format('woff2');font-style:normal;font-weight:300 700;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Atlas Sans';src:url('${url("/fonts/source-sans-3-latin-ext.woff2")}') format('woff2');font-style:normal;font-weight:300 700;font-display:swap;unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}`;
 ---
 <!doctype html>
 <html lang="pt-BR">
@@ -17,28 +17,34 @@ const currentUrl = Astro.url.pathname;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
-    <meta name="theme-color" content="#f7f5ef" />
+    <meta name="theme-color" content="#f5f2eb" />
     <Favicon />
-    <title>{title} · Memória Zaniratti e Galo</title>
+    <style is:global set:html={fontFaceCss}></style>
+    <title>{title} · ZANIRATTI — Memória da família</title>
   </head>
   <body>
     <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
     <header class="site-header">
       <div class="header-inner">
-        <a class="brand" href={url("/pt/")} aria-label="Memória das famílias Zaniratti e Galo — início">
-          <span class="brand-mark" aria-hidden="true"><span>Z</span><i>·</i><span>G</span></span>
-          <span class="brand-text"><strong>Memória das famílias</strong><span>Zaniratti e Galo</span></span>
+        <a class="brand atlas-brand" href={url("/pt/")} aria-label="Zaniratti — Memória da família">
+          <span class="atlas-brand-mark" aria-hidden="true">Z</span>
+          <span class="brand-text"><strong>ZANIRATTI</strong><span>Memória da família</span></span>
         </a>
         <nav class="main-nav" aria-label="Navegação principal">
-          {nav.map(([label, path, id]) => <a href={url(path)} class:list={{ active: active === id || (id !== "inicio" && currentUrl.startsWith(url(path))) }}>{label}</a>)}
+          {nav.map(([label, path, id]) => <a href={url(path)} class:list={{ active: active === id || (id === "arvore" ? currentUrl === url(path) || currentUrl === url("/pt") : currentUrl.startsWith(url(path))) }}>{label}</a>)}
         </nav>
       </div>
     </header>
+    <nav class="atlas-mobile-nav" aria-label="Navegação rápida">
+      <a href={url("/pt/")} class={currentUrl === url("/pt/") ? "active" : ""}><span class="atlas-nav-tree" aria-hidden="true"></span>Árvore</a>
+      <a href={url("/pt/pessoas/")}><span class="atlas-nav-people" aria-hidden="true"></span>Pessoas</a>
+      <a href={url("/pt/acervo/")}><span class="atlas-nav-archive" aria-hidden="true"></span>Acervo</a>
+    </nav>
     <main id="conteudo" class="page-shell"><slot /></main>
     <footer class="site-footer">
-      <div class="footer-inner">
-        <a class="footer-brand" href={url("/pt/")}>Memória Zaniratti e Galo</a>
-        <p>Pesquisa familiar em andamento, com vínculos e histórias apresentados junto às suas fontes.</p>
+      <div class="footer-inner atlas-footer-inner">
+        <a class="footer-brand" href={url("/pt/")}>ZANIRATTI <span>Memória da família</span></a>
+        <p>Uma memória familiar construída entre gerações, histórias e lugares.</p>
         <nav aria-label="Informações do site">
           <a href={url("/pt/acervo-historico/")}>Acervo histórico</a>
           <a href={url("/pt/revisoes/")}>Revisões</a>

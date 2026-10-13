@@ -1,9 +1,11 @@
 {
-  "name": "memoria-zaniratti-galo",
-  "version": "0.1.0",
+  "name": "familia-zaniratti",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
-  "engines": {"node": ">=22.12.0"},
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
     "dev": "astro dev --host 0.0.0.0",
     "check": "astro check",
@@ -12,8 +14,14 @@
     "export:public": "node scripts/export-public.mjs",
     "validate:public": "node scripts/validate-public.mjs",
     "release:check": "node scripts/verify-release.mjs",
-    "test:public": "node scripts/test-public.mjs"
+    "test:public": "node scripts/test-public.mjs",
+    "test:genealogy": "node scripts/test-genealogy.mjs"
   },
-  "dependencies": {"astro": "7.3.8"},
-  "devDependencies": {"@astrojs/check": "0.9.10", "typescript": "5.9.3"}
+  "dependencies": {
+    "astro": "7.3.8"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.10",
+    "typescript": "5.9.3"
+  }
 }

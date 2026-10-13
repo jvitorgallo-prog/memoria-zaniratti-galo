@@ -8,7 +8,11 @@ import { validatePublic } from './validate-public.mjs';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const snapshotText = await readFile(path.join(ROOT, 'content/public/snapshot.json'), 'utf8');
 const inventoryText = await readFile(path.join(ROOT, 'content/public/legacy-inventory.json'), 'utf8');
+const currentSnapshot = JSON.parse(snapshotText);
+const publicPaths = [...new Set([...currentSnapshot.assets.map(a => a.public_path), ...currentSnapshot.archive_items.map(a => a.public_path).filter(Boolean)])];
+const assetFiles = Object.fromEntries(await Promise.all(publicPaths.map(async p => [p, await readFile(path.join(ROOT, 'public', p))])));
 const base = {
+  assetFiles,
   snapshot: JSON.parse(snapshotText), inventory: JSON.parse(inventoryText),
   manifest: JSON.parse(await readFile(path.join(ROOT, 'content/public/manifest.json'), 'utf8')),
   gedcom: await readFile(path.join(ROOT, 'public/downloads/linha-principal.ged'), 'utf8'),
@@ -68,6 +72,23 @@ const missingCitation = clone();
 missingCitation.snapshot.assertions.find(a => a.predicate === 'child_of').citation_ids = [];
 assert.throws(() => validatePublic(missingCitation), /uncited assertion/);
 
+const editorialOpenings = clone();
+for (const [personId, pattern] of [
+  ['reni', /filha de Valentim Zaniratti e Elisa Bernardino.*cinco filhos: Fernando, Vera, Elcio, José Airson e Rejane/s],
+  ['custode', /filho de Luigi Zaniratti e Pasqua Mellara.*vapor Attività.*13 filhos registrados incluem Grandilia, Zenaide e Valentim/s],
+  ['valentim', /filho de Custode Sante.*viveu em Santa Clara.*Walter, Nedina, Reni e Antônio/s],
+]) {
+  const biography = editorialOpenings.snapshot.biographies.find(b => b.person_id === personId);
+  assert.match(biography.paragraphs[0].text, pattern);
+  assert(biography.paragraphs[0].source_ids.length > 0);
+}
+
+const biographyCitationMismatch = clone();
+const zenaideBiography = biographyCitationMismatch.snapshot.biographies.find(b => b.person_id === 'zenaide');
+const historicalParagraph = zenaideBiography.paragraphs.find(p => p.text.startsWith('Transcrição da biografia histórica:'));
+historicalParagraph.source_ids = ['S3'];
+assert.throws(() => validatePublic(biographyCitationMismatch), /must cite one of its declared sources/);
+
 const privateDocumentUrl = clone();
 privateDocumentUrl.snapshot.sources.find(s => s.id === 'P2').approved_external_url = 'https://drive.google.com/private/original.pdf';
 assert.throws(() => validatePublic(privateDocumentUrl), /private path/);
@@ -88,12 +109,16 @@ const impliedMarriage = clone();
 impliedMarriage.snapshot.groups.find(g => g.kind === 'parental_group').event_ids.push(impliedMarriage.snapshot.events.find(e => e.type === 'marriage').id);
 assert.throws(() => validatePublic(impliedMarriage), /parental group must not imply marriage/);
 
+const missingReportedMarriage = clone();
+missingReportedMarriage.snapshot.groups = missingReportedMarriage.snapshot.groups.filter(g => g.id !== 'union-luigi-pasqua');
+assert.throws(() => validatePublic(missingReportedMarriage));
+
 const badAsset = clone();
-badAsset.asset[0] ^= 0xff;
-assert.throws(() => validatePublic(badAsset), /asset hash does not match bytes/);
+badAsset.assetFiles[badAsset.snapshot.assets[0].public_path][0] ^= 0xff;
+assert.throws(() => validatePublic(badAsset), /asset hash mismatch|asset hash does not match bytes/);
 
 const badInventory = clone();
 badInventory.inventory.entries[0].legacy_path = '../../private/file.htm';
 assert.throws(() => validatePublic(badInventory));
 
-console.log('public data tests passed: privacy, endpoint closure, citation, living-person dates, marriage inference, asset integrity and legacy paths');
+console.log('Public export tests passed: privacy fields, endpoint closure, citations, date boundaries, explicit unions, all asset bytes and legacy paths.');

@@ -1,31 +1,755 @@
 {
-  "release_id": "zaniratti-galo-candidate-2026-10-11",
+  "release_id": "zaniratti-family-atlas-candidate-2026-10-13",
   "state": "approved",
-  "source_revision": "rodada06-public-allowlist-v3",
+  "source_revision": "family-atlas-2026-10-13-v1",
   "source_snapshot_sha256": "2c063f6e0050fa6a3bec42c856160eb4a9b83eb22ae0c4d5155da1de81a575f9",
   "origin_asset": {
     "catalog_path": "Foto/GeneaA3.gif",
     "sha256": "27a3b8087c74cb2d6f1c435fe727d153b9f41dc03d34c102b536cb47486f9fda",
     "capture_url": "https://web.archive.org/web/20041029160237id_/http://www.zaniratti.it:80/Foto/GeneaA3.gif"
   },
-  "snapshot_sha256": "e3cbbe26e5b3d8ae39645059555d08165f1bce07084d1971f0ad0a412bc5e3c5",
+  "snapshot_sha256": "ec6a3bd56735ae5719d7653b7cadc91ce54908481257b3e1a85e9698360a7dbc",
   "assets": [
     {
       "path": "assets/revisados/genea-a3-francesco-luigi-recorte.png",
       "sha256": "6640354a5945db82955e70def228b162944543031d2c9af3cced6511d2143995",
       "bytes": 23839
+    },
+    {
+      "path": "assets/acervo/Foto-AlbBiagio.gif",
+      "sha256": "428d09f388284eb6fc6032f2425a16288575bc550334a3abb211fd6f6bd7c332",
+      "bytes": 17931
+    },
+    {
+      "path": "assets/acervo/Foto-Albero1.gif",
+      "sha256": "23028fd5cf7e8d0a713ba39460692150aaa2b3819533267368921c02313ed7d3",
+      "bytes": 288
+    },
+    {
+      "path": "assets/acervo/Foto-Amanda.jpg",
+      "sha256": "1c29f06b723c3e408941764c083b5ab66264a143ed5e729e0db86a85c79ac167",
+      "bytes": 27486
+    },
+    {
+      "path": "assets/acervo/Foto-Ancilla61p.jpg",
+      "sha256": "ca2c3cf6ef7760bf12aad80d36740dfa4c8b38e015176ee436d26b44a7733095",
+      "bytes": 25588
+    },
+    {
+      "path": "assets/acervo/Foto-Anna62p.jpg",
+      "sha256": "d3a8654c2c69813add3490a3e46c866de5828a1af342fed79ca6ce406d723959",
+      "bytes": 23784
+    },
+    {
+      "path": "assets/acervo/Foto-Bianca80p.jpg",
+      "sha256": "669b722ef744e6cd3abec262a10e943c7d17e8e7a86be7be8b63837d75ebfb03",
+      "bytes": 25887
+    },
+    {
+      "path": "assets/acervo/Foto-Cris2003a.jpg",
+      "sha256": "6902681c5185ac4c541c89ee31c0a421e62981a39fae654e5aaadbb9a7fc2d42",
+      "bytes": 26712
+    },
+    {
+      "path": "assets/acervo/Foto-CynthiaBH.jpg",
+      "sha256": "513aea47136f064f72af7a4945af42adc98118e54d17f7a2e138b37f652390d3",
+      "bytes": 29190
+    },
+    {
+      "path": "assets/acervo/Foto-Debora0.jpg",
+      "sha256": "c29d71e20fe075514bdf83f7414319310aaef25aa94a05e2f2336cc98381bfdc",
+      "bytes": 25959
+    },
+    {
+      "path": "assets/acervo/Foto-Deulma1930Serena.jpg",
+      "sha256": "5672527009d6618155ec30e3675e5afc8c069b2aa29e4547de54e85f3436f550",
+      "bytes": 21797
+    },
+    {
+      "path": "assets/acervo/Foto-Ferrara5.jpg",
+      "sha256": "532e501c591da8bca6ab6619fed17306a8cd08e235f0d5845837de997a15db99",
+      "bytes": 19581
+    },
+    {
+      "path": "assets/acervo/Foto-Ferrara6.jpg",
+      "sha256": "13379da1a00945e3c93b9b5b5dafd4ee5c5344c0c6d5034476b39744187254a5",
+      "bytes": 24321
+    },
+    {
+      "path": "assets/acervo/Foto-Ferrara7.jpg",
+      "sha256": "1fe9bd4d6b2fcd74195cfe748b5df24e49f12419488f9138e85e00d7397762e7",
+      "bytes": 20212
+    },
+    {
+      "path": "assets/acervo/Foto-Ferrara8.jpg",
+      "sha256": "f925f206f80b8e6f38120b094092260f3d41615faa28959f0d04f35e5093e526",
+      "bytes": 24422
+    },
+    {
+      "path": "assets/acervo/Foto-Ferruccio1.jpg",
+      "sha256": "595617ed10fdc2f50988e688d3a7115855380483608573454b526083140686a7",
+      "bytes": 64011
+    },
+    {
+      "path": "assets/acervo/Foto-Ferruccio2.jpg",
+      "sha256": "4d2bc852d78b29e536a81fb115d86f71f4aa653884477dbf20f1c8d19a2ebc99",
+      "bytes": 32694
+    },
+    {
+      "path": "assets/acervo/Foto-GeneaA3.gif",
+      "sha256": "27a3b8087c74cb2d6f1c435fe727d153b9f41dc03d34c102b536cb47486f9fda",
+      "bytes": 33853
+    },
+    {
+      "path": "assets/acervo/Foto-Leonida42.jpg",
+      "sha256": "097f085803413db78af9485969b16e6afc1a3f142f4bb722851d2d81a40a43ec",
+      "bytes": 59206
+    },
+    {
+      "path": "assets/acervo/Foto-MiniAnc32.gif",
+      "sha256": "8832d41cadc7e611008f36ab7b89b49d354f1593ba52cdf1f4971a8c51bdfd0b",
+      "bytes": 2372
+    },
+    {
+      "path": "assets/acervo/Foto-MiniAnc43.gif",
+      "sha256": "082e731c42624fff1567abbbc4a31cbfa105fddf395628db022862310c30c177",
+      "bytes": 2650
+    },
+    {
+      "path": "assets/acervo/Foto-MiniAncLeo2003.gif",
+      "sha256": "417e5c8b71558ef8117a092eae03afc42e5df6920d888a98cb90330c51e131b6",
+      "bytes": 2784
+    },
+    {
+      "path": "assets/acervo/Foto-MiniAncilla2004a.gif",
+      "sha256": "80712e7196bb259562930b69f7499a8a107c08ce846659034e4ae4a1f7bfd836",
+      "bytes": 5961
+    },
+    {
+      "path": "assets/acervo/Foto-MiniAnnaAnc03.gif",
+      "sha256": "c12b021e1909171746cbb18a0009b5624979cc4322c399b60aada64cc44368d3",
+      "bytes": 3143
+    },
+    {
+      "path": "assets/acervo/Foto-MiniChiSiamo.gif",
+      "sha256": "5163f1baea5f7fe477a1d89d62c6a36e527495fb02972b6606c93355ee5892c1",
+      "bytes": 47915
+    },
+    {
+      "path": "assets/acervo/Foto-MiniClarAnc.gif",
+      "sha256": "eac27af16e99200cef8ae03e50f61cfe2ed310eb3384e5a76854b4c07c110ad2",
+      "bytes": 2288
+    },
+    {
+      "path": "assets/acervo/Foto-MiniCynCri.gif",
+      "sha256": "b83a52754297ba453a3257c843edafc3f7e1028a3c946aab76a4ff5da4dc4a7b",
+      "bytes": 4133
+    },
+    {
+      "path": "assets/acervo/Foto-MiniCynEdmIreCri.gif",
+      "sha256": "1ca735ab3dc3f2eefc6abbd85c1b13acff716f3987104152b380b24880cc5cde",
+      "bytes": 3607
+    },
+    {
+      "path": "assets/acervo/Foto-MiniCynIreCri1.gif",
+      "sha256": "94870f3e2d4a3c149fa89510f8db4c85d11342b3ddf7374850ced8a9382e7126",
+      "bytes": 3372
+    },
+    {
+      "path": "assets/acervo/Foto-MiniCynNanGerFelVin.gif",
+      "sha256": "92c220583a7218430143fb2ff9c9625da1d8135a89a6d02abc04090d2cde3fb2",
+      "bytes": 5364
+    },
+    {
+      "path": "assets/acervo/Foto-MiniCynNev1.gif",
+      "sha256": "7a5e41f973d9c3d6dfece08cdf89420afaf3ca31c02b8682dd057e0e89b0610f",
+      "bytes": 3817
+    },
+    {
+      "path": "assets/acervo/Foto-MiniCynOdi.gif",
+      "sha256": "9d5b03a723e2cf1ad8ffd63bb0c760ca5d89f5746c9b256be3f3b257f2826d69",
+      "bytes": 3140
+    },
+    {
+      "path": "assets/acervo/Foto-MiniCynTor.gif",
+      "sha256": "98691fc4fa9c5141d8c3db11c59021a5644cedbf51a4f2fd62f7800af172f5ea",
+      "bytes": 4311
+    },
+    {
+      "path": "assets/acervo/Foto-MiniCynthia86.gif",
+      "sha256": "755bb08430f9fa419568eb105512ac89a50ea2dcdddb999f47e5b1f71ae7e5e7",
+      "bytes": 2933
+    },
+    {
+      "path": "assets/acervo/Foto-MiniGuarapariConLaursen.gif",
+      "sha256": "5689c9fcece4bbf194d84c2f6047343775fe827b2b1d326a92418346d46778e2",
+      "bytes": 6891
+    },
+    {
+      "path": "assets/acervo/Foto-MiniLia-AncilDeulmo49.gif",
+      "sha256": "ced205684092c04357f0d31c75bae2aa99c7579b4504c3f0e173a4888d916d72",
+      "bytes": 5885
+    },
+    {
+      "path": "assets/acervo/Foto-MiniLuCynGerNanFelVin.gif",
+      "sha256": "7c27ea78eba801112d9294b86d216b773a8f325b7f18d013fe82b720ccddb6c3",
+      "bytes": 4876
+    },
+    {
+      "path": "assets/acervo/Foto-MiniMarAndrPatr.gif",
+      "sha256": "15171069da658b26efc99b91ddf36e74d5ca6f2a2955a183f7a835e29f4546c0",
+      "bytes": 4506
+    },
+    {
+      "path": "assets/acervo/Foto-MiniSalvatonica.gif",
+      "sha256": "0864a8daf21c9a35833d8f51c5df5bc772a37beadf84a56ceb18c98b3317801b",
+      "bytes": 4726
+    },
+    {
+      "path": "assets/acervo/Foto-MiniSanBiagioEXT.gif",
+      "sha256": "52498e1ef095e11d36e8956e779c373ff97b73f1b14e35d645d0e2070b23338c",
+      "bytes": 2670
+    },
+    {
+      "path": "assets/acervo/Foto-MiniSanBiagioINT.gif",
+      "sha256": "0c2fae57ef897eaa803d3690ba37ab21aed49fb28e001244667fcd5b978798fa",
+      "bytes": 3943
+    },
+    {
+      "path": "assets/acervo/Foto-Minifotolog4.gif",
+      "sha256": "ae31b495ea60e98791c5fc0196b2a81a73f0540f96b6d6a004b2ae3edcf88927",
+      "bytes": 2989
+    },
+    {
+      "path": "assets/acervo/Foto-Minifotolog5.gif",
+      "sha256": "805095dc4cc9b466f3eee19f12e75bda2c5589c1162d5ef17f73200744b75494",
+      "bytes": 1537
+    },
+    {
+      "path": "assets/acervo/Foto-bonifi1.jpg",
+      "sha256": "cdd886a62e7959eba52923ec3acfdb20c9671faa60808e9026edef372141a09c",
+      "bytes": 34921
+    },
+    {
+      "path": "assets/acervo/Foto-bonifi2.jpg",
+      "sha256": "e72e1cf90d6b0c28a7deec983f28fb459c302c4c513c019e5741f18afb27937b",
+      "bytes": 109427
+    },
+    {
+      "path": "assets/acervo/Foto-bonifi4.jpg",
+      "sha256": "be4ad52270839c1b27b8071010c901ca28ee45b926be5712963299ceb072a739",
+      "bytes": 78653
+    },
+    {
+      "path": "assets/acervo/Foto-bonifi5.jpg",
+      "sha256": "5250c16f077e69cfd8fe89ee103ac985c61f6dc6c3520431a369e99e21c7a3f1",
+      "bytes": 79189
+    },
+    {
+      "path": "assets/acervo/Foto-bonifi6.jpg",
+      "sha256": "9a662b315abf7fe20eefa87dcab0953c98b2271dbc33c5b3c5510ee4860dbb6d",
+      "bytes": 78524
+    },
+    {
+      "path": "assets/acervo/Foto-ci_botte.jpg",
+      "sha256": "5603fbae38eaa62b0b8fff7efd3649544caaa4df152d33c3f4a59c36f94a2cb1",
+      "bytes": 25556
+    },
+    {
+      "path": "assets/acervo/Foto-ci_sto_a.gif",
+      "sha256": "30b29d571f2129923002cb4e008335f1286e8f37b3f54e0ccfa0f57e41ffae5b",
+      "bytes": 13508
+    },
+    {
+      "path": "assets/acervo/Foto-ci_sto_b.jpg",
+      "sha256": "e77d99d67233eee72444f3519266091247a39b5a01d3ef947a163287649bfa48",
+      "bytes": 14108
+    },
+    {
+      "path": "assets/acervo/Foto-ci_sto_c.gif",
+      "sha256": "d641c9b3cb1288f7b90eb7eb0f979a814cb2fa19f71cd0df1ebdda3366742357",
+      "bytes": 9830
+    },
+    {
+      "path": "assets/acervo/Foto-ci_sto_d.gif",
+      "sha256": "adfa183a50ede02a6d838bf6fe248d50d0d38b7d4dc3286a978ff867047b5daf",
+      "bytes": 14225
+    },
+    {
+      "path": "assets/acervo/ITALY.gif",
+      "sha256": "3809a7cdb5785a5d0c2cf40530f003d0e8c2e913f50363258e5d5a24ca36bc0a",
+      "bytes": 198
+    },
+    {
+      "path": "assets/acervo/Mini-FerrGiov.gif",
+      "sha256": "818c92f2741a649354565a6a70516b8bdaf4ef7a74c6a12eae4967b365cf4679",
+      "bytes": 3035
+    },
+    {
+      "path": "assets/acervo/MiniAlvaro88.gif",
+      "sha256": "950c94fe837ef24b42cb26c8f57cfc999f3fcd5dd9a602ad0c8cf2e2d2f299a1",
+      "bytes": 2259
+    },
+    {
+      "path": "assets/acervo/MiniAlvaroMoglie.gif",
+      "sha256": "7d919e72099657f0d029805f210e78dbd75b1a7f449004ace9388c19730c25fc",
+      "bytes": 2366
+    },
+    {
+      "path": "assets/acervo/MiniAmaLou03.gif",
+      "sha256": "0b7bd49bc6e861ac3297a39d9d3452afa55540e9e8104a12c53f044dd7f55942",
+      "bytes": 4358
+    },
+    {
+      "path": "assets/acervo/MiniAnc32.gif",
+      "sha256": "8832d41cadc7e611008f36ab7b89b49d354f1593ba52cdf1f4971a8c51bdfd0b",
+      "bytes": 2372
+    },
+    {
+      "path": "assets/acervo/MiniAnc43.gif",
+      "sha256": "082e731c42624fff1567abbbc4a31cbfa105fddf395628db022862310c30c177",
+      "bytes": 2650
+    },
+    {
+      "path": "assets/acervo/MiniAncLeo2003.gif",
+      "sha256": "417e5c8b71558ef8117a092eae03afc42e5df6920d888a98cb90330c51e131b6",
+      "bytes": 2784
+    },
+    {
+      "path": "assets/acervo/MiniAncilla2004a.gif",
+      "sha256": "80712e7196bb259562930b69f7499a8a107c08ce846659034e4ae4a1f7bfd836",
+      "bytes": 5961
+    },
+    {
+      "path": "assets/acervo/MiniAngelica1950-04.gif",
+      "sha256": "b6b0a0b27b430c5d4daf86a2f781896436297409b8ebe42c2692e1c8f2b997d3",
+      "bytes": 3570
+    },
+    {
+      "path": "assets/acervo/MiniAnna-e-Gisella.gif",
+      "sha256": "a822e8afe6674a641fc488478eb44b93d6aed9a744b8e0f77b9781ffdc016070",
+      "bytes": 1982
+    },
+    {
+      "path": "assets/acervo/MiniAnna45.gif",
+      "sha256": "85e032253c863d69237e3ffbb50746acfd42922b8277b4e18d343b220709b0c8",
+      "bytes": 1872
+    },
+    {
+      "path": "assets/acervo/MiniAnna50.gif",
+      "sha256": "eb9cb8fc4010b8d1ef9ac52c47915461b13912b4245cca6fdc00b352ef4d4445",
+      "bytes": 3515
+    },
+    {
+      "path": "assets/acervo/MiniAnna75ca.gif",
+      "sha256": "acd74fee0dbb7c7f8a5ed8a99fcba21e3a8a492a130e428c415f4d61fb0a50c2",
+      "bytes": 3248
+    },
+    {
+      "path": "assets/acervo/MiniAnnaAnc03.gif",
+      "sha256": "c12b021e1909171746cbb18a0009b5624979cc4322c399b60aada64cc44368d3",
+      "bytes": 3143
+    },
+    {
+      "path": "assets/acervo/MiniBiancaMarAnna.gif",
+      "sha256": "d2d2fbe4931a6f2a6fc252c9eda5ca6ed6d525e6cc9c697ec5474869236e4fa9",
+      "bytes": 1671
+    },
+    {
+      "path": "assets/acervo/MiniBiancaQuinto.gif",
+      "sha256": "40c8272d08f5b30074e696b2ba3b9101ed6bd3182ad8cce208a46ef6f1fd7cc2",
+      "bytes": 1865
+    },
+    {
+      "path": "assets/acervo/MiniClarAnc.gif",
+      "sha256": "eac27af16e99200cef8ae03e50f61cfe2ed310eb3384e5a76854b4c07c110ad2",
+      "bytes": 2288
+    },
+    {
+      "path": "assets/acervo/MiniConfine.gif",
+      "sha256": "b97da722fdf5178e9cd60309792769923089a8627b70c66dcf6bc9bc9c164006",
+      "bytes": 2159
+    },
+    {
+      "path": "assets/acervo/MiniCris2003Camino.gif",
+      "sha256": "c352c3a41d90064d648e1fe04f246540e7f6f301197eab54e1126fccb37fc0d6",
+      "bytes": 4919
+    },
+    {
+      "path": "assets/acervo/MiniCris57.gif",
+      "sha256": "48a09334bd7f1175599adb15a517e6cb77a46eacb37c82dbc064bb94588c518d",
+      "bytes": 2298
+    },
+    {
+      "path": "assets/acervo/MiniCris71.gif",
+      "sha256": "b4cfa5f710635997e0bd730b1e787ad02841faeae2f875fb4b79e1af4c37ae19",
+      "bytes": 2110
+    },
+    {
+      "path": "assets/acervo/MiniCrisIre85.gif",
+      "sha256": "ab4acc0f378c6ad7ccfb5619d7625f1f0190e4c77b11a47d1b765e71ab42b8e4",
+      "bytes": 2854
+    },
+    {
+      "path": "assets/acervo/MiniCrisMir04.gif",
+      "sha256": "0cbda2752b305ed1568d6a6153cc9cb06c4c07cf1c6c6946f021e13cc83f6280",
+      "bytes": 4218
+    },
+    {
+      "path": "assets/acervo/MiniCynNanGerFelVin.gif",
+      "sha256": "92c220583a7218430143fb2ff9c9625da1d8135a89a6d02abc04090d2cde3fb2",
+      "bytes": 5364
+    },
+    {
+      "path": "assets/acervo/MiniCynthia86.gif",
+      "sha256": "755bb08430f9fa419568eb105512ac89a50ea2dcdddb999f47e5b1f71ae7e5e7",
+      "bytes": 2933
+    },
+    {
+      "path": "assets/acervo/MiniCynthia88.gif",
+      "sha256": "522dcf1302f9414e69004fed577f4c5d49d5e79057c3dac21177da64463e3df6",
+      "bytes": 2590
+    },
+    {
+      "path": "assets/acervo/MiniDante1878m.gif",
+      "sha256": "b45d60944a45a5a236a872be885b3591ed98d3e1aee2a4c274150b1e1040cf4f",
+      "bytes": 2388
+    },
+    {
+      "path": "assets/acervo/MiniDebCynGraViv.gif",
+      "sha256": "2c6e754f261af62901aa6ae16b0e8db200e86928219faaca1aad4278eeaf4111",
+      "bytes": 5204
+    },
+    {
+      "path": "assets/acervo/MiniDeulma1930-49.gif",
+      "sha256": "f83c0e4cad9ac88a0f4903b62bb7e9b4494dc5dd0b9f555874c4efc34b1c7e26",
+      "bytes": 2917
+    },
+    {
+      "path": "assets/acervo/MiniDeulma1930-52.gif",
+      "sha256": "ee69428a99edd44614a90cc6da44db096d39bca25a1571d3bc7fef935e5a2476",
+      "bytes": 3396
+    },
+    {
+      "path": "assets/acervo/MiniDeulma1930fam.gif",
+      "sha256": "4b08f9836bc6a93de2d3d7f0eb757f8f98f34625cd6b4b93c431eb3cfd106d6e",
+      "bytes": 4284
+    },
+    {
+      "path": "assets/acervo/MiniDeulma1930po.gif",
+      "sha256": "686d6e4e2acaabd270970dd1e8729932fad9c10e441f55ab8195d96685c8f59b",
+      "bytes": 2591
+    },
+    {
+      "path": "assets/acervo/MiniEdmDeuGerIva.gif",
+      "sha256": "be52c619d099c44b3b9a777a33f955741c695bdce71aa01b3d27d8c619b1d4cf",
+      "bytes": 4134
+    },
+    {
+      "path": "assets/acervo/MiniFerraraFE1.gif",
+      "sha256": "0df6e129281b2cfc58c193c0272553911edac6230f51be6669ea5f0d2be15024",
+      "bytes": 2580
+    },
+    {
+      "path": "assets/acervo/MiniGerHelAng.gif",
+      "sha256": "7eebc6605065101a6d52b1f8c0d4c62dbef27aa6c133b1ce414b5de17c7a9f4e",
+      "bytes": 6175
+    },
+    {
+      "path": "assets/acervo/MiniGeraldoFam.gif",
+      "sha256": "c3f6e179a2d37bac9fb3cd288df16d908d98bd29622f22b24428158173d0b0c6",
+      "bytes": 7814
+    },
+    {
+      "path": "assets/acervo/MiniGigiDeulma.gif",
+      "sha256": "e85e35d649752688437a8c4d6ca6c6086371bb7169822956f6514480adda105f",
+      "bytes": 2763
+    },
+    {
+      "path": "assets/acervo/MiniGuarapariConLaursen.gif",
+      "sha256": "5689c9fcece4bbf194d84c2f6047343775fe827b2b1d326a92418346d46778e2",
+      "bytes": 6891
+    },
+    {
+      "path": "assets/acervo/MiniLia-AncilDeulmo49.gif",
+      "sha256": "ced205684092c04357f0d31c75bae2aa99c7579b4504c3f0e173a4888d916d72",
+      "bytes": 5885
+    },
+    {
+      "path": "assets/acervo/MiniLourdesT06.gif",
+      "sha256": "750b4d4f5f2db42f730b09a5c7b9c2fc0e6673fb58cf134d4dcd31eb533e6af5",
+      "bytes": 5510
+    },
+    {
+      "path": "assets/acervo/MiniLourdesT13.gif",
+      "sha256": "089d3cae0c4ccd80c07ffcee6e4364662eb493eb94310ff68d5b9850b582492b",
+      "bytes": 4055
+    },
+    {
+      "path": "assets/acervo/MiniLuogBR.gif",
+      "sha256": "b01bf12c6639c1c61052096f7086e05b419f9b7ad52b19f41acd2c0fc61af84c",
+      "bytes": 2453
+    },
+    {
+      "path": "assets/acervo/MiniLuogIT1.gif",
+      "sha256": "c8a06872eacf26d38d902e9bad947184625a430501987e7b1294a7f78da36c0e",
+      "bytes": 904
+    },
+    {
+      "path": "assets/acervo/MiniLuogMN.gif",
+      "sha256": "736d1a671d1dfc09c78c816dc3a694b8e2a44ba97bf450a0018bfe368bbf90a7",
+      "bytes": 2442
+    },
+    {
+      "path": "assets/acervo/MiniSebDebViv.gif",
+      "sha256": "91793948b5e15bc5d0b5c90194488dfd1fa9d05a952e0a417a0aec5feaeea21d",
+      "bytes": 6104
+    },
+    {
+      "path": "assets/acervo/MiniSebDebViv9.gif",
+      "sha256": "4a18a74d60de84845a59bc82552cb70e7ac9b3ed8b5903ef773a36c8bbd730f4",
+      "bytes": 5795
+    },
+    {
+      "path": "assets/acervo/MiniStemmanob.gif",
+      "sha256": "f0c40c951abb0a64b52c40d2a2c0c7b205758d0145d418c1bb9e1e49dbafe1ff",
+      "bytes": 2277
+    },
+    {
+      "path": "assets/acervo/MiniVivAma.gif",
+      "sha256": "a11deb2db74b46292aba2d1b629faaee32020966d6df917670115878ca33c518",
+      "bytes": 3967
+    },
+    {
+      "path": "assets/acervo/MiniViviAma.gif",
+      "sha256": "fc933165779dad65f8b8ccb5c5b6c57204bf79284b561578fe56a5f5961ae382",
+      "bytes": 2961
+    },
+    {
+      "path": "assets/acervo/Minibondterr.gif",
+      "sha256": "e34c44e0a7db389868a008eafbd885e14f059c9d28cbe794a9a1066b2a850d2c",
+      "bytes": 1516
+    },
+    {
+      "path": "assets/acervo/Minibonifi5.gif",
+      "sha256": "673b91202408d15240c31280a96e389020ef5ffb9dffc6ed9c2ab3eeb650cad7",
+      "bytes": 947
+    },
+    {
+      "path": "assets/acervo/Minici_botte.gif",
+      "sha256": "1bf7737ba269c51d0b406231b4043b80965b6fac5d93c790b0ddb5eaf3677250",
+      "bytes": 2145
+    },
+    {
+      "path": "assets/acervo/Minici_pila.gif",
+      "sha256": "973b948b812b9afd4cbd1a321660aa38a115f637e20dd0c6626c2288f20ef03c",
+      "bytes": 2121
+    },
+    {
+      "path": "assets/acervo/Minirocca1.gif",
+      "sha256": "81fe86c6437de9b63417be8c7514df672699305dec7c93a0d48ee4cf775cee84",
+      "bytes": 2325
+    },
+    {
+      "path": "assets/acervo/Minirocca2.gif",
+      "sha256": "89f4b706b40567b53eb77754af7601f272373d842ab71adea684a4e9db9c96a9",
+      "bytes": 2380
+    },
+    {
+      "path": "assets/acervo/SfondoCieloblu.jpg",
+      "sha256": "c878dd3ab966cf5c11c5e320b63a16f50fa25ef0736e14ccabeb906cd2aab338",
+      "bytes": 5675
+    },
+    {
+      "path": "assets/acervo/Sfondopergamena.jpg",
+      "sha256": "c6e043a297428bf515b660fff95031034eba208bbf3eded167023ffbe3d2b7b5",
+      "bytes": 9093
+    },
+    {
+      "path": "assets/acervo/brasile.gif",
+      "sha256": "d2b858b718199e21237c9ecf696eb400717256d1a76c575d51cbc57bf924d19d",
+      "bytes": 1054
+    },
+    {
+      "path": "assets/acervo/brazil_b.gif",
+      "sha256": "efee9e90572d137c0cca78e3466228a71c7d273dd1cd2db4ccb40486f2950555",
+      "bytes": 29711
+    },
+    {
+      "path": "assets/acervo/ico_invia.gif",
+      "sha256": "53646fe1773072fb6cad298637244748febc586d5e1b348063d6ccf0a75cfbc6",
+      "bytes": 166
+    },
+    {
+      "path": "assets/acervo/images-domain_reserved.gif",
+      "sha256": "e78ebb1aa5c49a5e8e16bf611e41d108895bcb7e3d29e62a9d770a70cc8c8f7e",
+      "bytes": 3151
+    },
+    {
+      "path": "assets/acervo/images-domain_reserviert.gif",
+      "sha256": "00aeb38876a66bb3968f626d391f1ce38d787c4c1f2eed8135c67036702c7f9f",
+      "bytes": 3171
+    },
+    {
+      "path": "assets/acervo/images-dominio_reservado.gif",
+      "sha256": "3a340e744ebf054956fd651b2111d1997b5659ae073fb8c607536322d235dc7c",
+      "bytes": 3198
+    },
+    {
+      "path": "assets/acervo/images-dominio_riservato.gif",
+      "sha256": "77ad5844a9f52a22f87fa7d6bcc997205692bf3514c690743699a35f7bc72cde",
+      "bytes": 3835
+    },
+    {
+      "path": "assets/acervo/images-reserved.jpg",
+      "sha256": "b35bc15766f4a6549a83dac85081576de9a014fac51efe57af84390711b64b70",
+      "bytes": 18956
+    },
+    {
+      "path": "assets/acervo/italy_b.gif",
+      "sha256": "91d48f8e08ee9541e68f4fa2ce31a4844dd0332abc3a73217d011dc51e497b74",
+      "bytes": 23563
+    },
+    {
+      "path": "assets/acervo/libro.gif",
+      "sha256": "1b5d629075ab35b8172fac60eddcfba942db478907c5a5358f1851041c84b146",
+      "bytes": 1029
+    },
+    {
+      "path": "assets/acervo/uconstr3.gif",
+      "sha256": "d464a9368ece87a7156d0ad180c38b6d6e6bfa2c9489edfb8d9391f748cf8576",
+      "bytes": 1043
+    },
+    {
+      "path": "assets/acervo/documentos/catalog-pdf-01.pdf",
+      "sha256": "0f605f06475d424965602c2c4318e4e1e4bb998c41d25e3a6ccc05dec19b7184",
+      "bytes": 416540
+    },
+    {
+      "path": "assets/acervo/documentos/catalog-pdf-02.pdf",
+      "sha256": "164c67b940334cb0e1e85f30f4ca39977f4a9ca8693b486b8f8048b5c3518ddf",
+      "bytes": 2857336
+    },
+    {
+      "path": "assets/acervo/documentos/p4-original.pdf",
+      "sha256": "19e1d9181c8ac4d034036a162a05e85fe19fe1c82d6c11004ba42ab5e168f236",
+      "bytes": 69467
+    },
+    {
+      "path": "assets/acervo/documentos/catalog-pdf-03.pdf",
+      "sha256": "2107ec7c6e56a63ab1003fb9999b9f1b9a63a5ada8a752fbf65094a3b7f64b20",
+      "bytes": 1041958
+    },
+    {
+      "path": "assets/acervo/documentos/catalog-pdf-04.pdf",
+      "sha256": "24ad2a3d04c060ec4b8c7b6a71be61e498bd2544f5fc8d13d390137fc504f50a",
+      "bytes": 5945171
+    },
+    {
+      "path": "assets/acervo/documentos/catalog-pdf-05.pdf",
+      "sha256": "359c44f4db081f4b9d45cd8a0110276aa6028c3ff39bab82a762730c18f6d3fc",
+      "bytes": 614533
+    },
+    {
+      "path": "assets/acervo/documentos/catalog-pdf-06.pdf",
+      "sha256": "3fbcab3b70fa34f2f4983c78b548bf2e2215c1b2af7b67ced52608e18602c1d1",
+      "bytes": 3308448
+    },
+    {
+      "path": "assets/acervo/documentos/catalog-pdf-07.pdf",
+      "sha256": "3fc3487cc5a8159db8aca3236c6e0a06d0341823def16e02795d133c23bcf82a",
+      "bytes": 3780762
+    },
+    {
+      "path": "assets/acervo/documentos/catalog-pdf-08.pdf",
+      "sha256": "4308f778955fbb1c6277a4be6a859c736bee286cce649f6150e098d5c380612a",
+      "bytes": 48707
+    },
+    {
+      "path": "assets/acervo/documentos/catalog-pdf-09.pdf",
+      "sha256": "4e7bc7522c82a5bac68ca53e51fc1e6a9725a562d9db5637cad921ab2973974f",
+      "bytes": 2738455
+    },
+    {
+      "path": "assets/acervo/documentos/catalog-pdf-10.pdf",
+      "sha256": "53469aed88cd42ffe0ac5c876c69672f07e40948b6cbb6849b75351c10bdc45a",
+      "bytes": 242154
+    },
+    {
+      "path": "assets/acervo/documentos/catalog-pdf-11.pdf",
+      "sha256": "605ca83b1718bac2bb075dcf8a3b1b68395065e4b61b6f84f1df590e74b0082c",
+      "bytes": 1714971
+    },
+    {
+      "path": "assets/acervo/documentos/catalog-pdf-12.pdf",
+      "sha256": "75403601060846d5d4ffa6dc8196722e7a648bd715742f8b75552aa0ef51c178",
+      "bytes": 952460
+    },
+    {
+      "path": "assets/acervo/documentos/catalog-pdf-13.pdf",
+      "sha256": "860006eadcf25f7061c39a1161d022a9fbcd697fd188c824a3e9aa2dfca4c2b1",
+      "bytes": 14982
+    },
+    {
+      "path": "assets/acervo/documentos/catalog-pdf-14.pdf",
+      "sha256": "8f86477528ed45d71e94c60119f4d15d4e3bc20a895b731502a5a523f8bf752d",
+      "bytes": 74791
+    },
+    {
+      "path": "assets/acervo/documentos/catalog-pdf-15.pdf",
+      "sha256": "bf978d62b2dd33bbedbf21d78c6d87eef13739ab09c031ebd43582eafbac05cc",
+      "bytes": 1312318
+    },
+    {
+      "path": "assets/acervo/documentos/catalog-pdf-16.pdf",
+      "sha256": "d7b0b88b93ce63ac6fbc7879ae0e66c7eca1df705f6721d8a76222eff493214d",
+      "bytes": 694658
+    },
+    {
+      "path": "assets/acervo/documentos/catalog-pdf-17.pdf",
+      "sha256": "e286e35ddd43506ff699d8dbc1b60d799bad6144cdef7874eb505179e2e78175",
+      "bytes": 535543
+    },
+    {
+      "path": "assets/acervo/documentos/catalog-pdf-18.pdf",
+      "sha256": "ea7701141e2729fe03641cea32e6a6316a043610d0764a747ab4619d16e9d0c8",
+      "bytes": 106603
+    },
+    {
+      "path": "assets/acervo/documentos/catalog-pdf-19.pdf",
+      "sha256": "f2c86a8c8a5b292527f120d4097419a0e7fdd6ec7ca9f575677d85f91240f161",
+      "bytes": 5200
+    },
+    {
+      "path": "assets/acervo/documentos/catalog-pdf-20.pdf",
+      "sha256": "f355d167a99d3b6596110362459c720064479eac3a5ee6358b316a439df2bb46",
+      "bytes": 68904
+    },
+    {
+      "path": "assets/acervo/documentos/catalog-pdf-21.pdf",
+      "sha256": "fb6f01f9ae82d5aa8730310b8316726ca4a9cd57bd1c15dd4bb0138f742bb976",
+      "bytes": 11526
+    },
+    {
+      "path": "assets/acervo/documentos/catalog-pdf-22.pdf",
+      "sha256": "fc3c3a094fa151e11faf723ecb19b2aeedc2d0e53528b2450bbd85d43d19ae6d",
+      "bytes": 2156300
     }
   ],
-  "gedcom_sha256": "e083c1880a5411aab83b8781fea8bacb6fb1c89fa8d7142feae5f9f7a291da85",
+  "gedcom_sha256": "f27ae89b976e0e4c80db9b3876b42172fd3574fdf84c0de349822ff082500609",
   "inventory_summary": {
     "historical_site_records": 363,
-    "catalog_pdf_records": 26
+    "public_historical_pages": 7,
+    "public_historical_images": 2,
+    "catalog_pdf_records": 26,
+    "public_pdf_originals": 23,
+    "private_pdf_derivatives": 3
   },
   "note": "Projeção pública revisada para disponibilização no site.",
   "approval_decision": {
-    "candidate_snapshot_sha256": "f70710876417888c7e8eeca9c4aa7baf868a696f3fa54966064095647d7ffb29",
+    "candidate_snapshot_sha256": "caf2b870a9bba45e931e7b0f8d949097a2a6d2a2c6f626a66cc7bc14031b12b4",
     "reviewer_role": "coordenação editorial",
-    "reviewed_at": "2026-10-11T23:55:51.695156+00:00"
+    "reviewed_at": "2026-10-13T18:12:31.724436+00:00"
   },
-  "inventory_sha256": "fbed8a0f26e1722dc7a65139af053e69e0212bb2cf926f1d776dba5cd97e940f"
+  "inventory_sha256": "a5ca61278ba03d2bd2dc42cf6a6f5e9ef68e95d528c3aafdc8d60f8cac19693c"
 }

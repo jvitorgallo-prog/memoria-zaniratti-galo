@@ -1,0 +1,60 @@
+---
+import SiteLayout from "../../../layouts/SiteLayout.astro";
+import { publicData as snapshot } from "../../../lib/data";
+import type { PublicArchiveItem } from "../../../lib/data";
+import { url } from "../../../lib/urls";
+const items: PublicArchiveItem[] = snapshot.archive_items || [];
+export function getStaticPaths() { return (snapshot.archive_items || []).map((item) => ({ params: { id: item.id }, props: { itemId: item.id } })); }
+const item = items.find((entry) => entry.id === Astro.props.itemId);
+if (!item) throw new Error("Item de acervo sem registro correspondente na projeção pública.");
+const people = snapshot.people || [];
+const relatedPeople = (item.person_ids || []).map((id) => people.find((person) => person.id === id)).filter((person): person is (typeof people)[number] => Boolean(person));
+const sources = snapshot.sources || [];
+const sourceIds = new Set(item.source_ids || []);
+const relatedSources = sources.filter((source) => sourceIds.has(source.id));
+const publicPath = item.public_path ? url("/" + item.public_path.replace(/^\//,"")) : "";
+const kindLabel = ({ historical_page: "Página do site", photograph: "Imagem", image: "Imagem", document: "Documento", diagram: "Diagrama", inventory_record: "Registro de catálogo" } as Record<string,string>)[item.kind] || "Item do acervo";
+const isImage = /image\/(?:jpeg|png|webp|gif|avif)/i.test(item.mime || "") || /\.(?:png|jpe?g|webp|gif|avif)$/i.test(item.public_path || "");
+const isHtml = /text\/html/i.test(item.mime || "") || /\.html?$/i.test(item.public_path || "");
+const isPdf = /\.pdf$/i.test(item.public_path || "") || (!isHtml && item.mime === "application/pdf");
+const statusText = ({ public_derivative: "Versão pública para leitura", original_public: "Cópia pública", capture_indexed: "Captura indexada", catalog_only: "Referência catalogada", local_copy_review_needed: "Cópia local em revisão" } as Record<string,string>)[item.status] || item.status;
+const missingText = item.status === "local_copy_review_needed" ? "Há uma cópia local preservada; uma versão pública de leitura ainda não está disponível." : item.status === "capture_indexed" ? "A captura está identificada no catálogo, mas não há cópia legível disponível nesta página." : "A referência está preservada, mas o arquivo legível não foi recuperado para esta página.";
+const paragraphs = (item.transcript || "").split(/\n\s*\n/).filter(Boolean);
+---
+<SiteLayout active="acervo" title={item.title} description={item.description || `Item do acervo familiar: ${item.title}.`}>
+  <div class="archive-item-page">
+    <nav class="archive-item-breadcrumb" aria-label="Caminho de navegação"><a href={url("/pt/")}>Árvore</a><span>/</span><a href={url("/pt/acervo/")}>Acervo</a><span>/</span><span aria-current="page">{item.title}</span></nav>
+    <header class="archive-item-heading"><p class="archive-item-kicker">{kindLabel} · {statusText}</p><h1>{item.title}</h1>{item.description && <p>{item.description}</p>}{item.capture_timestamp_utc && <small>Captura: {item.capture_timestamp_utc}</small>}</header>
+    <div class="archive-item-layout">
+      <div class="archive-item-main">
+        {publicPath && isImage && <figure class="archive-item-image"><a href={publicPath}><img src={publicPath} alt={item.title} /></a><figcaption>{item.description || item.title}</figcaption></figure>}
+        {publicPath && isPdf && <section class="archive-document-viewer"><div class="archive-viewer-bar"><strong>Documento em PDF</strong><span><a href={publicPath} target="_blank" rel="noopener">Abrir PDF ↗</a> · <a href={publicPath} download>Baixar PDF ↓</a></span></div><iframe src={publicPath} title={`Visualizador: ${item.title}`} loading="lazy"></iframe></section>}
+        {publicPath && isHtml && <section class="archive-document-viewer"><div class="archive-viewer-bar"><strong>Página recuperada</strong><span><a href={publicPath} target="_blank" rel="noopener">Abrir página ↗</a> · <a href={publicPath} download>Baixar arquivo ↓</a></span></div><iframe src={publicPath} title={`Página recuperada: ${item.title}`} sandbox="" loading="lazy"></iframe><p class="archive-viewer-note">Esta reprodução está isolada para leitura e não executa scripts da página original.</p></section>}
+        {!publicPath && item.transcript && <section class="archive-transcript"><p class="archive-item-kicker">Transcrição para leitura</p>{paragraphs.map((paragraph) => <p>{paragraph}</p>)}</section>}
+        {publicPath && item.transcript && <details class="archive-transcript-details"><summary>Ler transcrição em texto</summary><div class="archive-transcript">{paragraphs.map((paragraph) => <p>{paragraph}</p>)}</div></details>}
+        {!publicPath && !item.transcript && <div class="archive-missing"><span aria-hidden="true">◌</span><div><strong>{statusText}</strong><p>{missingText}</p></div></div>}
+      </div>
+      <aside class="archive-item-aside">
+        {relatedPeople.length > 0 && <section class="archive-item-card"><p class="archive-item-kicker">Pessoas relacionadas</p><ul>{relatedPeople.map((person) => <li><a href={url("/pt/pessoas/" + encodeURIComponent(person.id) + "/")}>{person.label}</a></li>)}</ul></section>}
+        {relatedSources.length > 0 && <details class="archive-item-card archive-source-details"><summary>Fontes</summary><ul>{relatedSources.map((source) => <li><a href={url("/pt/fontes/" + encodeURIComponent(source.id) + "/")}>{source.title}</a></li>)}</ul></details>}
+        {item.capture_url && <section class="archive-item-card"><p class="archive-item-kicker">Origem preservada</p><a href={item.capture_url} target="_blank" rel="noopener noreferrer">Abrir referência da captura ↗</a></section>}
+        <a class="archive-back-link" data-archive-back href={url("/pt/acervo/")}>← Voltar ao acervo</a>
+      </aside>
+    </div>
+  </div>
+</SiteLayout>
+<script>
+  const back = document.querySelector<HTMLAnchorElement>("[data-archive-back]");
+  const returnQuery = new URLSearchParams(window.location.search).get("volta");
+  if (back && returnQuery?.startsWith("?")) back.href += returnQuery;
+</script>
+<style>
+  .archive-item-page{--ai-ink:#172b3a;--ai-blue:#326bb0;--ai-line:#d8e0e6;--ai-muted:#5b6873;--ai-paper:#fffefa;color:var(--ai-ink)}
+  .archive-item-breadcrumb{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:26px;color:var(--ai-muted);font-size:.85rem}.archive-item-breadcrumb a{color:inherit}
+  .archive-item-heading{max-width:900px;margin-bottom:32px}.archive-item-kicker{margin:0 0 9px;color:var(--ai-blue);font-size:.73rem;font-weight:750;letter-spacing:.11em;text-transform:uppercase}.archive-item-heading h1{font-size:clamp(2.2rem,5vw,3.8rem)}.archive-item-heading>p:not(.archive-item-kicker){max-width:700px;color:var(--ai-muted);font-size:1.07rem}.archive-item-heading small{color:var(--ai-muted)}
+  .archive-item-layout{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:30px;align-items:start}.archive-item-main{min-width:0}.archive-item-image{margin:0;padding:15px;border:1px solid var(--ai-line);border-radius:12px;background:var(--ai-paper)}.archive-item-image img{display:block;width:100%;max-height:78vh;object-fit:contain}.archive-item-image figcaption{margin-top:11px;color:var(--ai-muted);font-size:.85rem}
+  .archive-document-viewer{overflow:hidden;border:1px solid var(--ai-line);border-radius:12px;background:var(--ai-paper)}.archive-viewer-bar{display:flex;justify-content:space-between;gap:14px;align-items:center;padding:13px 16px;border-bottom:1px solid var(--ai-line);font-size:.88rem}.archive-document-viewer iframe{display:block;width:100%;height:min(78vh,900px);border:0;background:white}.archive-viewer-note{padding-inline:16px;color:var(--ai-muted);font-size:.82rem}
+  .archive-transcript,.archive-missing{margin-top:20px;padding:clamp(20px,4vw,38px);border:1px solid var(--ai-line);border-radius:12px;background:var(--ai-paper)}.archive-transcript{max-width:78ch;font-family:Georgia,serif;font-size:1.06rem;line-height:1.85}.archive-transcript p{margin:0 0 1.1em}.archive-transcript p:last-child{margin-bottom:0}.archive-transcript-details{margin-top:20px;color:var(--ai-muted)}.archive-transcript-details summary{cursor:pointer;font-weight:650}.archive-missing{display:flex;gap:16px;background:#f2f5f6}.archive-missing>span{color:var(--ai-blue);font-size:1.6rem}.archive-missing p{margin:.3em 0 0;color:var(--ai-muted)}
+  .archive-item-aside{position:sticky;top:24px;display:grid;gap:12px}.archive-item-card{padding:18px;border:1px solid var(--ai-line);border-radius:10px;background:var(--ai-paper)}.archive-item-card ul{margin:10px 0 0;padding-left:1.15em}.archive-item-card li+li{margin-top:7px}.archive-source-details summary{cursor:pointer;color:var(--ai-ink);font-size:.85rem;font-weight:700}.archive-back-link{display:block;padding:13px 4px;font-weight:650}
+  @media(max-width:800px){.archive-item-layout{grid-template-columns:1fr}.archive-item-aside{position:static;grid-row:1;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}.archive-document-viewer iframe{height:70vh}}
+</style>

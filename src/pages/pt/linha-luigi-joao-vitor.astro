@@ -1,58 +1,23 @@
 ---
 import SiteLayout from "../../layouts/SiteLayout.astro";
 import PageIntro from "../../components/PageIntro.astro";
-import EvidenceBadge from "../../components/EvidenceBadge.astro";
-import Notice from "../../components/Notice.astro";
-import { publicData as snapshot } from "../../lib/data";
-import type { PublicAssertion, PublicCitation, PublicPerson, PublicSource } from "../../lib/data";
+import { publicData } from "../../lib/data";
 import { url } from "../../lib/urls";
-const people = snapshot.people || [];
-const claims = snapshot.assertions || [];
-const citations = snapshot.citations || [];
-const sources = snapshot.sources || [];
-const personById = (id: string): PublicPerson | undefined => people.find((person) => person.id === id);
-const relationship = (parentId: string, childId: string): PublicAssertion[] => claims.filter((claim) =>
-  (claim.predicate === "child_of" && claim.object_person_id === parentId && claim.subject_id === childId)
-  || (claim.predicate === "parent_of" && claim.subject_id === parentId && claim.object_person_id === childId));
-const sourcesFor = (claim: PublicAssertion) => (claim.citation_ids || []).map((id) => citations.find((citation) => citation.id === id)).filter((citation): citation is PublicCitation => citation !== undefined).map((citation): { citation: PublicCitation; source: PublicSource | undefined } => {
-  const source = sources.find((item) => item.id === citation.source_id);
-  return { citation, source };
-});
-const stages = [
-  { parents: ["luigi", "pasqua"], child: "custode" },
-  { parents: ["custode"], child: "valentim" },
-  { parents: ["valentim", "elisa"], child: "reni" },
-  { parents: ["reni", "joao_galo"], child: "rejane" },
-  { parents: ["rejane"], child: "jv" },
-].map((stage) => ({ ...stage, links: stage.parents.map((parentId) => ({
-  parent: personById(parentId),
-  child: personById(stage.child),
-  claims: relationship(parentId, stage.child),
-})) }));
+const ids = ["luigi", "pasqua", "custode", "valentim", "reni", "rejane", "jv"];
+const people = ids.map(id => publicData.people.find(person => person.id === id)).filter(person => person !== undefined);
 ---
-<SiteLayout active="linha" title="Linha principal">
-  <PageIntro eyebrow="Linha familiar" title="De Luigi a João Vítor" lede="Uma apresentação navegável dos vínculos incluídos neste recorte público. Cada relação mantém sua própria indicação de fonte." />
-  <Notice tone="warm" title="Relações com evidências distintas">
-    <p>A lista organiza os nomes para leitura. Ela não transforma relatos, transcrições e documentos em uma única classe de prova. A mãe de Valentim permanece não identificada.</p>
-  </Notice>
-  <ol class="line-list">
-    {stages.map((stage, index) => <li>
-      <span class="line-node" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
-      <div class="line-person">
-        <strong>{stage.parents.map((id, parentIndex) => { const person = personById(id); return <span>{parentIndex > 0 && <span class="parent-separator"> + </span>}{person && <a href={url("/pt/pessoas/" + encodeURIComponent(person.id) + "/")}>{person.label}</a>}</span>; })}</strong>
-        <small>relação parental indicada para <a href={url("/pt/pessoas/" + encodeURIComponent(stage.child) + "/")}>{personById(stage.child)?.label || stage.child}</a></small>
-        <div class="line-evidence">
-          {stage.links.map(({ parent, child, claims: edgeClaims }) => <div class="line-edge">
-            <strong class="line-edge-label">{parent?.label || "Pessoa"} → {child?.label || "Pessoa"}</strong>
-            {edgeClaims.length ? <div class="line-proof">
-              {edgeClaims.map((claim) => <EvidenceBadge evidence={claim.evidence_class} interpretation={claim.interpretation} />)}
-              {edgeClaims.flatMap(sourcesFor).map(({ citation, source }) => <a href={url("/pt/fontes/" + encodeURIComponent(source?.id || citation.source_id) + "/")}>{source?.title || citation.source_id}{citation.locator ? ", " + citation.locator : ""}</a>)}
-            </div> : <span class="line-unavailable">Este vínculo não consta no recorte público.</span>}
-          </div>)}
-        </div>
-      </div>
-    </li>)}
-  </ol>
-  <div class="tree-key" aria-label="Como interpretar a linha"><span><i class="key-dot" aria-hidden="true"></i> Relação indicada em fonte</span><span><i class="key-dot report" aria-hidden="true"></i> A natureza da evidência aparece no rótulo</span></div>
-  <section class="section"><a class="button button-quiet" href={url("/pt/arvores/")}>Explorar todos os ramos</a></section>
+<SiteLayout title="De Luigi e Pasqua a João Vitor">
+  <PageIntro eyebrow="Um caminho na família" title="De Luigi e Pasqua a João Vitor" lede="Uma linha de gerações dentro da história Zaniratti. Abra a árvore para encontrar também irmãos, casamentos e os outros ramos." />
+  <p><a class="button button-primary" href={url("/pt/?pessoa=jv&caminho=jv")}>Destacar este caminho na árvore</a></p>
+  <section class="section"><ol class="lineage-people">
+    {people.map(person => <li><a href={url(`/pt/pessoas/${person.id}/`)}>{person.label}</a><a class="view-relative" href={url(`/pt/?pessoa=${person.id}`)}>Ver família →</a></li>)}
+  </ol></section>
+  <p class="prose">Luigi Zaniratti e Pasqua Mellara são os pais de Custode Sante. O caminho segue por Valentim, Reni e Rejane até João Vitor Galo Esteves. Os filhos e descendentes de cada geração continuam acessíveis nas respectivas páginas e na árvore.</p>
 </SiteLayout>
+<style>
+  .lineage-people{list-style:none;padding:0;max-width:48rem;border-left:1px solid var(--atlas-line,#cbd0d0);margin-left:.5rem}
+  .lineage-people li{position:relative;padding:1.1rem 1.5rem;display:flex;justify-content:space-between;gap:1rem;font-family:var(--atlas-serif,Georgia,serif);font-size:1.5rem}
+  .lineage-people li::before{content:"";position:absolute;left:-5px;top:1.8rem;width:9px;height:9px;border-radius:50%;background:var(--atlas-blue,#345ad8)}
+  .view-relative{font-family:var(--atlas-sans,system-ui,sans-serif);font-size:.9rem;align-self:center;white-space:nowrap}
+  @media(max-width:520px){.lineage-people li{flex-direction:column;font-size:1.25rem}.view-relative{align-self:flex-start}}
+</style>

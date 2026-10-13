@@ -1,25 +1,22 @@
 ---
 import SiteLayout from "../../layouts/SiteLayout.astro";
 import PageIntro from "../../components/PageIntro.astro";
-import Notice from "../../components/Notice.astro";
+import { url } from "../../lib/urls";
 ---
-<SiteLayout active="metodo" title="Método de pesquisa">
-  <PageIntro eyebrow="Leitura e pesquisa" title="Como ler as relações" lede="A apresentação organiza uma pesquisa familiar sem esconder de onde veio cada informação nem o que continua em aberto." />
+<SiteLayout title="Como organizamos a memória">
+  <PageIntro eyebrow="Fontes e memória" title="De onde vêm as histórias" lede="Árvores, documentos e relatos familiares se encontram aqui com a sua origem preservada." />
   <div class="prose">
-    <h2>Uma relação, uma fonte</h2>
-    <p>Os vínculos de filiação são apresentados individualmente, com a classe de evidência e a referência associada a cada um. A mesma pessoa pode aparecer em fontes com grafias ou relatos diferentes.</p>
-    <h2>O que as palavras indicam</h2>
-    <ul>
-      <li><strong>Documento fornecido:</strong> cópia apresentada à pesquisa; essa descrição não significa autenticação pelo órgão emissor.</li>
-      <li><strong>Transcrito do site histórico:</strong> informação copiada de uma página antiga, sem equivaler à consulta ao registro original.</li>
-      <li><strong>Relato familiar:</strong> lembrança ou informação compartilhada por familiares.</li>
-      <li><strong>Apoio indireto:</strong> fonte que dá contexto a uma relação sem registrar diretamente todos os seus detalhes.</li>
-    </ul>
-    <h2>Divergências e lacunas</h2>
-    <p>Grafias como Valentim/Vicentim ou Natalina/Natalino são mantidas com a referência que as apresenta. Reni e Lourdes Esposito são pessoas distintas. A mãe de Valentim permanece não identificada.</p>
-    <p>Salvatonica/San Biagio e Francesco/Bondeno continuam em percursos separados até que uma ligação seja sustentada por fonte. Uma associação visual entre nomes não basta para formar uma filiação.</p>
-    <h2>Datas e documentos</h2>
-    <p>Uma data aproximada continua identificada como aproximada. A idade não é usada para calcular um ano de falecimento, e campos desconhecidos não são completados por suposição.</p>
-    <Notice><p>O conjunto público é uma seleção editorial. A ausência de um nome ou documento nesta página não significa que ele não exista no acervo de pesquisa.</p></Notice>
+    <h2>A memória compartilhada</h2>
+    <p>O conteúdo recuperado do site de Edmondo e as informações fornecidas por João Vitor integram a história familiar. Certidões, fotografias e registros de arquivo ajudam a ampliá-la. A seção “De onde vem esta história”, nas páginas pessoais, reúne as referências.</p>
+    <h2>Correções e grafias</h2>
+    <p>Reni Zaniratti Galo aparece entre os quatro filhos de Valentim e Elisa Bernardino, conforme a correção da família. Lourdes Espósito, filha de Grandilia, é outra pessoa. Grafias como Zaniratti, Zanirati, Zanirate, Galo e Gallo permanecem associadas às pessoas e às fontes em que ocorrem.</p>
+    <h2>Relações completas</h2>
+    <p>Filhos, irmãos e cônjuges são apresentados pelos vínculos registrados. A criação de Antônio por Grandilia faz parte de sua história, sem converter esse relato em adoção legal. A mãe de Valentim não é atribuída pela existência de um casamento de Custode.</p>
+    <p>Salvatonica/San Biagio e Bondeno podem ser visitados separadamente. A árvore não cria uma ligação entre esses ramos só pelo sobrenome.</p>
+    <h2>O tempo com sua precisão</h2>
+    <p>Um ano informado continua sendo um ano; uma data aproximada mantém essa indicação. Intervalos usam limites conhecidos. Lacunas não são preenchidas com dias, anos ou parentes calculados.</p>
+    <h2>Preservação do site original</h2>
+    <p>O acervo diferencia arquivos recuperados, referências indexadas e páginas ausentes. Quando um arquivo está disponível, sua ficha oferece o conteúdo e os dados de recuperação. A cobertura total do antigo website permanece desconhecida.</p>
+    <p><a href={url("/pt/acervo/")}>Explorar documentos e páginas recuperadas →</a></p>
   </div>
 </SiteLayout>

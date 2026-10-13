@@ -1,18 +1,50 @@
 ---
 import SiteLayout from "../../../layouts/SiteLayout.astro";
-import PageIntro from "../../../components/PageIntro.astro";
 import { publicData as snapshot } from "../../../lib/data";
 import { url } from "../../../lib/urls";
+const people = snapshot.people || [];
 const claims = snapshot.assertions || [];
-const places = [...new Set(claims.filter((claim) => ["place", "birth_place", "residence"].includes(claim.predicate)).map((claim) => claim.literal).filter(Boolean))].sort((a,b) => a.localeCompare(b, "pt-BR"));
 const citations = snapshot.citations || [];
+const sources = snapshot.sources || [];
+const events = snapshot.events || [];
+const locationPredicates = new Set(["place", "birth_place", "death_place", "residence", "migration_place", "marriage_place"]);
+const locationClaims = claims.filter((claim) => locationPredicates.has(claim.predicate) && claim.literal.trim());
+const relatedPersonIds = (claim: (typeof claims)[number]) => {
+  if (claim.subject_kind === "person") return [claim.subject_id];
+  const event = events.find((item) => item.id === claim.subject_id);
+  if (!event) return [];
+  if (event.subject_kind === "person") return [event.subject_id];
+  const group = snapshot.groups.find((item) => item.id === event.subject_id);
+  return group?.participant_ids || [];
+};
+const placeMap = new Map<string, Array<(typeof claims)[number]>>();
+for (const claim of locationClaims) placeMap.set(claim.literal.trim(), [...(placeMap.get(claim.literal.trim()) || []), claim]);
+const places = [...placeMap.entries()].sort(([a],[b]) => a.localeCompare(b,"pt-BR"));
+const predicateNames: Record<string,string> = { birth_place:"Nascimento", death_place:"Falecimento", residence:"Residência", migration_place:"Percurso", marriage_place:"União", place:"Lugar relacionado" };
+const personById = new Map(people.map((person) => [person.id, person]));
+const sourceForClaim = (claim: (typeof claims)[number]) => [...new Set((claim.citation_ids || []).map((id) => citations.find((citation) => citation.id === id)?.source_id).filter((id): id is string => Boolean(id)))];
 ---
-<SiteLayout active="lugares" title="Lugares">
-  <PageIntro eyebrow="Geografia da pesquisa" title="Lugares" lede="Esta lista reúne apenas lugares nomeados em afirmações do conjunto público." />
-  {places.length ? <div class="source-list">{places.map((place) => {
-    const related = claims.filter((claim) => claim.literal === place);
-    const citation = citations.find((item) => related.some((claim) => (claim.citation_ids || []).includes(item.id)));
-    return <article class="source-card"><p class="eyebrow">Lugar citado</p><h2>{place}</h2><p>{related.length} {related.length === 1 ? "registro" : "registros"} no conjunto público.</p>{citation && <a href={url("/pt/fontes/" + encodeURIComponent(citation.source_id) + "/")}>Ver fonte citada →</a>}</article>;
-  })}</div> : <p class="empty-state">Nenhum lugar está nomeado nas afirmações deste recorte público.</p>}
-  <p class="section-note">Mapas e endereços particulares não fazem parte desta consulta.</p>
+<SiteLayout active="lugares" title="Lugares da família" description="Lugares ligados a pessoas e acontecimentos da Família Zaniratti.">
+  <div class="places-page">
+    <nav class="places-breadcrumb" aria-label="Caminho de navegação"><a href={url("/pt/")}>Árvore</a><span>/</span><span aria-current="page">Lugares</span></nav>
+    <header class="places-intro"><p class="places-kicker">Geografia das histórias</p><h1>Lugares</h1><p>Localidades relacionadas a nascimentos, residências, percursos e outros acontecimentos descritos nas histórias da família.</p></header>
+    {places.length ? <div class="places-list">{places.map(([place, placeClaims]) => {
+      const personIds = [...new Set(placeClaims.flatMap(relatedPersonIds))];
+      const related = personIds.map((id) => personById.get(id)).filter((person): person is (typeof people)[number] => Boolean(person));
+      const sourcesForPlace = [...new Set(placeClaims.flatMap(sourceForClaim))];
+      return <article class="place-card" id={"place-" + place.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")}>
+        <div class="place-card-mark" aria-hidden="true"><span>⌖</span></div><div class="place-card-content"><p class="places-kicker">Lugar citado</p><h2>{place}</h2>
+          <ul class="place-occurrences">{placeClaims.map((claim) => <li><span>{predicateNames[claim.predicate] || "Acontecimento"}</span>{claim.public_note && <p>{claim.public_note}</p>}</li>)}</ul>
+          {related.length > 0 && <div class="place-people"><strong>Pessoas</strong><div>{related.map((person) => <a href={url("/pt/pessoas/" + encodeURIComponent(person.id) + "/")}>{person.label}</a>)}</div></div>}
+          {sourcesForPlace.length > 0 && <p class="place-sources">{sourcesForPlace.map((id) => <a href={url("/pt/fontes/" + encodeURIComponent(id) + "/")}>{sources.find((source) => source.id === id)?.title || "Fonte familiar"}</a>)}</p>}
+        </div>
+      </article>;
+    })}</div> : <div class="places-empty"><p>Os lugares aparecem quando estão ligados a pessoas ou acontecimentos no conjunto público.</p><a href={url("/pt/pessoas/")}>Explorar pessoas →</a></div>}
+  </div>
 </SiteLayout>
+<style>
+  .places-page{--pl-ink:#172b3a;--pl-blue:#326bb0;--pl-line:#d8e0e6;--pl-muted:#5b6873;--pl-paper:#fffefa;color:var(--pl-ink)}.places-breadcrumb{display:flex;gap:9px;margin-bottom:24px;color:var(--pl-muted);font-size:.85rem}.places-breadcrumb a{color:inherit}
+  .places-intro{max-width:850px;padding:clamp(28px,6vw,62px);border-radius:16px;background:#18364b;color:#fff}.places-kicker{margin:0 0 8px;color:var(--pl-blue);font-size:.72rem;font-weight:750;letter-spacing:.11em;text-transform:uppercase}.places-intro .places-kicker{color:#9bc4ee}.places-intro h1{color:white;font-size:clamp(2.5rem,6vw,4.3rem)}.places-intro>p:last-child{max-width:670px;color:#d7e2e9;font-size:1.07rem}
+  .places-list{display:grid;gap:13px;margin-top:30px}.place-card{display:grid;grid-template-columns:78px 1fr;gap:20px;padding:22px;border:1px solid var(--pl-line);border-radius:12px;background:var(--pl-paper)}.place-card-mark{display:grid;place-items:center;align-self:start;width:62px;height:62px;border-radius:50%;background:#edf3f8;color:var(--pl-blue);font-size:1.7rem}.place-card-content h2{margin:0 0 13px;font-size:1.55rem}.place-occurrences{display:grid;gap:6px;margin:0;padding:0;list-style:none}.place-occurrences li{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;color:var(--pl-muted);font-size:.88rem}.place-occurrences li span{color:var(--pl-ink);font-weight:650}.place-occurrences li p{margin:0}.place-people{margin-top:16px}.place-people strong{font-size:.8rem}.place-people>div{display:flex;flex-wrap:wrap;gap:7px 15px;margin-top:5px}.place-sources{display:flex;flex-wrap:wrap;gap:7px 14px;margin:12px 0 0;font-size:.8rem}.place-sources a{color:var(--pl-muted)}.places-empty{margin-top:28px;padding:23px;border:1px solid var(--pl-line);border-radius:12px;background:var(--pl-paper)}.places-empty p{margin-top:0;color:var(--pl-muted)}
+  @media(max-width:560px){.place-card{grid-template-columns:48px 1fr;gap:12px;padding:16px}.place-card-mark{width:44px;height:44px;font-size:1.3rem}}
+</style>

@@ -1,0 +1,31 @@
+---
+import SiteLayout from "../../../layouts/SiteLayout.astro";
+import { publicData as snapshot } from "../../../lib/data";
+import { url } from "../../../lib/urls";
+type Paragraph = { text: string; source_ids?: string[]; citation_ids?: string[] };
+type Biography = { id: string; person_id: string; title?: string; paragraphs: Paragraph[]; source_ids?: string[] };
+const data = snapshot as typeof snapshot & { biographies?: Biography[] };
+const biographies = data.biographies || [];
+export function getStaticPaths() { return (snapshot.biographies || []).map((bio) => ({ params: { id: bio.id }, props: { bioId: bio.id } })); }
+const bio = biographies.find((entry) => entry.id === Astro.props.bioId);
+if (!bio) throw new Error("História sem registro correspondente na projeção pública.");
+const person = snapshot.people.find((item) => item.id === bio.person_id);
+if (!person) throw new Error("História sem pessoa relacionada.");
+const sources = snapshot.sources || [];
+const citations = snapshot.citations || [];
+const referenceIds = [...new Set([...(bio.source_ids || []), ...(bio.paragraphs || []).flatMap((paragraph) => [...(paragraph.source_ids || []), ...(paragraph.citation_ids || []).map((id) => citations.find((citation) => citation.id === id)?.source_id).filter((id): id is string => Boolean(id))])])];
+---
+<SiteLayout active="historias" title={bio.title || `A história de ${person.label}`} description={`Biografia familiar de ${person.label}.`}>
+  <div class="story-page">
+    <nav class="story-breadcrumb" aria-label="Caminho de navegação"><a href={url("/pt/")}>Árvore</a><span>/</span><a href={url("/pt/historias/")}>Histórias</a><span>/</span><span aria-current="page">{person.label}</span></nav>
+    <article class="story-article">
+      <header class="story-article-heading"><p class="story-kicker">Memória da Família Zaniratti</p><h1>{bio.title || `A história de ${person.label}`}</h1><a href={url("/pt/pessoas/" + encodeURIComponent(person.id) + "/")}>Conhecer {person.label} na árvore →</a></header>
+      <div class="story-body">{(bio.paragraphs || []).map((paragraph) => <p>{paragraph.text}</p>)}</div>
+      {referenceIds.length > 0 && <details class="story-sources"><summary>Fontes desta história</summary><ul>{referenceIds.map((id) => { const source = sources.find((item) => item.id === id); return <li><a href={url("/pt/fontes/" + encodeURIComponent(id) + "/")}>{source?.title || "Referência familiar"}</a></li>; })}</ul></details>}
+    </article>
+  </div>
+</SiteLayout>
+<style>
+  .story-page{--sp-ink:#172b3a;--sp-blue:#326bb0;--sp-line:#d8e0e6;--sp-muted:#5b6873;color:var(--sp-ink)}.story-breadcrumb{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:25px;color:var(--sp-muted);font-size:.85rem}.story-breadcrumb a{color:inherit}
+  .story-article{max-width:900px;margin:auto;padding:clamp(24px,6vw,66px);border:1px solid var(--sp-line);border-radius:16px;background:#fffefa}.story-article-heading{padding-bottom:27px;border-bottom:1px solid var(--sp-line)}.story-kicker{margin:0 0 11px;color:var(--sp-blue);font-size:.75rem;font-weight:750;letter-spacing:.12em;text-transform:uppercase}.story-article h1{max-width:760px;font-size:clamp(2.4rem,6vw,4rem)}.story-article-heading>a{display:inline-block;margin-top:16px;font-weight:650}.story-body{max-width:70ch;padding-top:26px;font-family:Georgia,"Times New Roman",serif;font-size:1.15rem;line-height:1.9}.story-body p{margin:0 0 1.3em}.story-sources{max-width:70ch;margin-top:32px;padding-top:17px;border-top:1px solid var(--sp-line);color:var(--sp-muted);font-size:.9rem}.story-sources summary{cursor:pointer;color:var(--sp-ink);font-weight:700}.story-sources li+li{margin-top:7px}
+</style>

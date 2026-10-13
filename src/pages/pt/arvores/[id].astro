@@ -20,9 +20,10 @@ const memberIds = new Set(members.map((person) => person.id));
 const claims = assertions.filter((claim) => memberIds.has(claim.subject_id) && (!claim.object_person_id || memberIds.has(claim.object_person_id)));
 const memberGroups = groups.filter((group) => group.participant_ids.some((id) => memberIds.has(id)));
 ---
-<SiteLayout active="arvores" title={branch.label}>
+<SiteLayout active="arvore" title={branch.label}>
   <p class="breadcrumb"><a href={url("/pt/arvores/")}>Árvores e ramos</a> <span aria-hidden="true">/</span> {branch.label}</p>
   <PageIntro eyebrow="Ramo familiar" title={branch.label} lede={branch.description || branch.note} />
+  <p class="branch-atlas-open"><a class="button" href={url(`/pt/?ramo=${encodeURIComponent(branch.id)}#atlas`)}>Abrir este ramo na árvore</a><span>Retome a exploração com os vínculos e pessoas no contexto da família.</span></p>
   <Notice><p>Esta lista acompanha os registros incluídos neste ramo. A proximidade visual dos cartões não acrescenta evidência a uma relação.</p></Notice>
   <section class="section">
     <div class="section-heading"><div><p class="eyebrow">Pessoas</p><h2>Índice do ramo</h2></div><span>{members.length} {members.length === 1 ? "pessoa" : "pessoas"}</span></div>
@@ -44,3 +45,9 @@ const memberGroups = groups.filter((group) => group.participant_ids.some((id) =>
     })}</div>
   </section>}
 </SiteLayout>
+
+<style>
+  .branch-atlas-open { display: flex; align-items: center; flex-wrap: wrap; gap: 14px; margin: 0 0 24px; }
+  .branch-atlas-open .button { border-color: #315dd8; background: #315dd8; color: white; }
+  .branch-atlas-open span { color: #667487; font: italic 15px "Atlas Serif", Georgia, serif; }
+</style>

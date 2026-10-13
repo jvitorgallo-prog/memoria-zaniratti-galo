@@ -1,4 +1,4 @@
-name: Publicar memória familiar
+name: Publicar Família Zaniratti
 on:
   push:
     branches: [main]
@@ -19,6 +19,8 @@ jobs:
           cache: npm
       - run: npm ci --no-audit --no-fund
       - run: npm run validate:public
+      - run: npm run test:public
+      - run: npm run test:genealogy
       - run: npm run release:check
       - run: npm run check
       - run: npm run build

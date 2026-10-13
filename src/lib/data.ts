@@ -19,6 +19,7 @@ export interface PublicPerson {
   preferred_name_assertion_id: string;
   claim_ids: string[];
   branch_ids: string[];
+  aliases: string[];
 }
 
 export interface PublicBranch {
@@ -33,6 +34,7 @@ export interface PublicGroup {
   id: string;
   kind: 'parental_group' | 'union';
   participant_ids: string[];
+  participants: Array<{ person_id: string; role: 'parent' | 'spouse' | 'child' | 'family_member' }>;
   event_ids: string[];
   note: string;
 }
@@ -97,6 +99,41 @@ export interface PublicLegacyUrl {
   note: string;
 }
 
+export interface PublicBiographyParagraph {
+  text: string;
+  source_ids: string[];
+  citation_ids: string[];
+}
+
+export interface PublicBiography {
+  id: string;
+  person_id: string;
+  title: string;
+  paragraphs: PublicBiographyParagraph[];
+  source_ids: string[];
+}
+
+export interface PublicArchiveItem {
+  id: string;
+  title: string;
+  kind: 'historical_page' | 'photograph' | 'diagram' | 'document' | 'inventory_record';
+  status: 'public_derivative' | 'original_public' | 'capture_indexed' | 'catalog_only' | 'local_copy_review_needed';
+  legacy_path: string;
+  capture_url: string | null;
+  capture_timestamp_utc: string | null;
+  original_sha256: string | null;
+  original_bytes: number | null;
+  mime: string;
+  public_path: string | null;
+  public_sha256: string | null;
+  public_bytes: number | null;
+  person_ids: string[];
+  event_ids: string[];
+  source_ids: string[];
+  description: string;
+  transcript: string | null;
+}
+
 export interface PublicRelease {
   id: string;
   state: 'candidate' | 'approved' | 'published';
@@ -107,7 +144,7 @@ export interface PublicRelease {
 }
 
 export interface PublicSnapshot {
-  schema_version: '1.0.0';
+  schema_version: '1.1.0';
   release: PublicRelease;
   people: PublicPerson[];
   branches: PublicBranch[];
@@ -118,6 +155,8 @@ export interface PublicSnapshot {
   sources: PublicSource[];
   assets: PublicAsset[];
   legacy_urls: PublicLegacyUrl[];
+  biographies: PublicBiography[];
+  archive_items: PublicArchiveItem[];
 }
 
 export const publicData = snapshotJson as PublicSnapshot;

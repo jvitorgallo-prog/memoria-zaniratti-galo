@@ -1,5 +1,6 @@
 ---
 import "../styles/site.css";
+import "../styles/atlas.css";
 import { url } from "../lib/urls";
 import Favicon from "../components/Favicon.astro";
 const localeHome = url("/pt/");
@@ -9,15 +10,15 @@ const localeHome = url("/pt/");
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Memória das famílias Zaniratti e Galo." />
+    <meta name="description" content="ZANIRATTI — Memória da família." />
     <Favicon />
     <link rel="canonical" href={localeHome} />
     <meta http-equiv="refresh" content={"0;url=" + localeHome} />
-    <title>Memória das famílias Zaniratti e Galo</title>
+    <title>ZANIRATTI — Memória da família</title>
   </head>
   <body>
     <main class="page-shell">
-      <h1>Memória das famílias Zaniratti e Galo</h1>
+      <h1>ZANIRATTI — Memória da família</h1>
       <p><a href={localeHome}>Acessar a versão em português</a></p>
     </main>
   </body>

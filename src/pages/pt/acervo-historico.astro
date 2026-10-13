@@ -1,31 +1,14 @@
 ---
 import SiteLayout from "../../layouts/SiteLayout.astro";
 import PageIntro from "../../components/PageIntro.astro";
-import Notice from "../../components/Notice.astro";
-import LegacyCatalog from "../../components/LegacyCatalog.astro";
-import { publicData as snapshot } from "../../lib/data";
 import { url } from "../../lib/urls";
-const sources = (snapshot.sources || []).filter((source) => ["historic_site", "archive_document"].includes(source.kind));
 ---
-<SiteLayout title="Acervo histórico">
-  <PageIntro eyebrow="Memória digital" title="O site histórico" lede="Páginas antigas ajudam a localizar nomes, grafias e pistas. Uma transcrição ou versão navegável é identificada como tal e não substitui o registro original." />
+<SiteLayout title="O acervo do site original">
+  <PageIntro eyebrow="O site de Edmondo" title="Uma memória recuperada" lede="Árvores, biografias, fotografias e documentos do zaniratti.it voltam a fazer parte da história da família." />
   <div class="prose">
-    <h2>Preservar e apresentar são tarefas diferentes</h2>
-    <p>O acervo de pesquisa conserva materiais em sua forma de recebimento e registra a procedência. O site público pode apresentar uma versão derivada, revisada e identificada, quando sua reprodução está autorizada.</p>
-    <p>Capturas, versões reescritas e transcrições podem ter conteúdos semelhantes sem serem o mesmo objeto. O conteúdo público é selecionado por página e por item; não corresponde a uma cópia integral do acervo.</p>
-    <Notice tone="warm" title="Lacunas conhecidas">
-      <p>Há referências a páginas e imagens que não foram recuperadas. A cobertura total do site histórico é desconhecida, por isso o inventário disponível não representa todos os materiais que já existiram.</p>
-    </Notice>
-    <p class="section"><a href={url("/pt/fontes/")}>Ver as fontes e referências públicas →</a></p>
+    <p>Os arquivos recuperados foram reunidos ao acervo da família. Abra as páginas preservadas para ler o conteúdo, conhecer a procedência e seguir os vínculos que sobreviveram.</p>
+    <p><a class="button button-primary" href={url("/pt/acervo/")}>Explorar o acervo</a> <a class="button button-quiet" href={url("/pt/sobre/edmondo-e-o-site-original/")}>Conhecer o projeto original</a></p>
+    <h2>Arquivos e referências</h2>
+    <p>As fichas identificam o conteúdo disponível e as referências sem arquivo recuperado. A cobertura total do website original é desconhecida; novas páginas e documentos podem ampliar essa reconstrução.</p>
   </div>
-  <section class="section">
-    <div class="section-heading"><div><p class="eyebrow">Catálogo público</p><h2>Referências do acervo histórico</h2></div></div>
-    {sources.length ? <div class="source-list">{sources.map((source) => <article class="source-card">
-      <p class="eyebrow">{source.kind === "historic_site" ? "Site histórico" : "Documento de arquivo"}</p>
-      <h3>{source.title}</h3><p>{source.public_reference}</p>
-      <p class="meta">{source.reproduction === "metadata_only" ? "Ficha de referência, sem reprodução integral." : "Há derivado revisado associado a esta referência."}</p>
-      <a href={url("/pt/fontes/" + encodeURIComponent(source.id) + "/")}>Abrir ficha →</a>
-    </article>)}</div> : <p class="empty-state">Nenhuma referência de acervo histórico está incluída neste conjunto público.</p>}
-  </section>
-  <LegacyCatalog />
 </SiteLayout>

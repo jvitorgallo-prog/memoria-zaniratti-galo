@@ -1,19 +1,18 @@
 ---
 import SiteLayout from "../../layouts/SiteLayout.astro";
 import PageIntro from "../../components/PageIntro.astro";
-import Notice from "../../components/Notice.astro";
+import { publicData } from "../../lib/data";
 ---
-<SiteLayout title="Revisões">
-  <PageIntro eyebrow="Acompanhamento editorial" title="Revisões" lede="Correções atualizam a leitura sem apagar a referência que levou à versão anterior." />
-  <Notice title="Registro desta versão">
-    <p>Esta edição inicial apresenta um recorte público de pessoas e relações. O conteúdo segue em revisão familiar; nenhuma contagem do acervo de pesquisa deve ser lida como número de pessoas comprovadas.</p>
-  </Notice>
-  <section class="section">
-    <div class="table-wrap"><table><thead><tr><th>Assunto</th><th>Registro editorial</th></tr></thead><tbody>
-      <tr><td>Identificação de Reni</td><td>A identificação anterior como “Maria de Lourdes” foi corrigida por relato familiar. Lourdes Esposito permanece uma pessoa distinta.</td></tr>
-      <tr><td>Maternidade de Valentim</td><td>A mãe continua não identificada; o vínculo de Custode e Ernesta não é estendido aos filhos por suposição.</td></tr>
-      <tr><td>Ramos italianos</td><td>Salvatonica/San Biagio e Francesco/Bondeno seguem separados enquanto não houver uma ligação demonstrada.</td></tr>
-      <tr><td>Viagem do Attività</td><td>Permanece como pista de pesquisa, sem ano fixado e sem ser descrita como viagem comprovada.</td></tr>
-    </tbody></table></div>
-  </section>
+<SiteLayout title="Revisões da memória familiar">
+  <PageIntro eyebrow="A história continua" title="Revisões da memória familiar" lede="Correções e novas fontes fazem parte da construção desta história. Aqui ficam os ajustes que ajudam a compreender a edição atual." />
+  <div class="prose"><h2>O atlas da família Zaniratti</h2><p>{publicData.release.public_changelog}</p></div>
+  <section class="section"><div class="table-wrap"><table><thead><tr><th>Assunto</th><th>Atualização</th></tr></thead><tbody>
+    <tr><td>Reni</td><td>Reni Zaniratti Galo é uma das quatro filhos de Valentim e Elisa Bernardino. A referência antiga a Maria de Lourdes foi corrigida pela família. Lourdes Espósito, filha de Grandilia, mantém sua identidade própria.</td></tr>
+    <tr><td>Famílias completas</td><td>Os filhos, irmãos e cônjuges conhecidos são apresentados por inteiro nas fichas. A linha até João Vitor pode ser destacada dentro da árvore completa.</td></tr>
+    <tr><td>Valentim</td><td>A mãe não é atribuída pelo casamento de Custode com Ernesta. A lacuna fica registrada junto desta pessoa.</td></tr>
+    <tr><td>Antônio</td><td>A criação por Grandilia integra sua biografia, sem gerar adoção ou filiação automática.</td></tr>
+    <tr><td>Ramos italianos</td><td>Salvatonica/San Biagio e Bondeno podem ser visitados separadamente, sem ligação inventada entre eles.</td></tr>
+    <tr><td>Viagem no Attività</td><td>A viagem relatada pela família faz parte da história de Custode. A imagem da lista de passageiros lembrada no site antigo continua sendo procurada.</td></tr>
+    <tr><td>Nomes iguais</td><td>Páginas recuperadas de outras gerações permanecem no acervo, sem serem associadas automaticamente a parentes que compartilham o mesmo nome.</td></tr>
+  </tbody></table></div></section>
 </SiteLayout>

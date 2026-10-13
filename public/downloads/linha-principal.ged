@@ -4,7 +4,7 @@
 2 VERS 5.5.1
 1 CHAR UTF-8
 0 @giovanni16@ INDI
-1 NAME Giovanni
+1 NAME Giovanni Zaniratti
 1 _PUBID giovanni16
 1 FAMS @F-bartolomeo1@
 1 BIRT
@@ -12,7 +12,7 @@
 2 SOUR @S-PUBLIC@
 1 SOUR @S-PUBLIC@
 0 @bartolomeo1@ INDI
-1 NAME Bartolomeo
+1 NAME Bartolomeo Zaniratti
 1 _PUBID bartolomeo1
 1 FAMS @F-domenica1724@
 1 FAMS @F-giovanna1725@
@@ -26,7 +26,7 @@
 2 SOUR @S-PUBLIC@
 1 SOUR @S-PUBLIC@
 0 @domenica1724@ INDI
-1 NAME Domenica
+1 NAME Domenica Zaniratti
 1 _PUBID domenica1724
 1 FAMC @F-domenica1724@
 1 BIRT
@@ -34,7 +34,7 @@
 2 SOUR @S-PUBLIC@
 1 SOUR @S-PUBLIC@
 0 @giovanna1725@ INDI
-1 NAME Giovanna
+1 NAME Giovanna Zaniratti
 1 _PUBID giovanna1725
 1 FAMC @F-giovanna1725@
 1 BIRT
@@ -42,7 +42,7 @@
 2 SOUR @S-PUBLIC@
 1 SOUR @S-PUBLIC@
 0 @giovanni1727@ INDI
-1 NAME Giovanni
+1 NAME Giovanni Zaniratti
 1 _PUBID giovanni1727
 1 FAMC @F-giovanni1727@
 1 BIRT
@@ -50,7 +50,7 @@
 2 SOUR @S-PUBLIC@
 1 SOUR @S-PUBLIC@
 0 @cattarina1729@ INDI
-1 NAME Cattarina
+1 NAME Cattarina Zaniratti
 1 _PUBID cattarina1729
 1 FAMC @F-cattarina1729@
 1 BIRT
@@ -58,7 +58,7 @@
 2 SOUR @S-PUBLIC@
 1 SOUR @S-PUBLIC@
 0 @angela1733@ INDI
-1 NAME Angela
+1 NAME Angela Zaniratti
 1 _PUBID angela1733
 1 FAMC @F-angela1733@
 1 BIRT
@@ -66,7 +66,7 @@
 2 SOUR @S-PUBLIC@
 1 SOUR @S-PUBLIC@
 0 @giovanni1741@ INDI
-1 NAME Giovanni
+1 NAME Giovanni Zaniratti
 1 _PUBID giovanni1741
 1 FAMS @F-bartolomeo1768@
 1 FAMS @F-giuseppe1770@
@@ -82,7 +82,7 @@
 2 SOUR @S-PUBLIC@
 1 SOUR @S-PUBLIC@
 0 @bartolomeo1768@ INDI
-1 NAME Bartolomeo
+1 NAME Bartolomeo Zaniratti
 1 _PUBID bartolomeo1768
 1 FAMS @F-giovanni1803@
 1 FAMC @F-bartolomeo1768@
@@ -91,7 +91,7 @@
 2 SOUR @S-PUBLIC@
 1 SOUR @S-PUBLIC@
 0 @giuseppe1770@ INDI
-1 NAME Giuseppe
+1 NAME Giuseppe Zaniratti
 1 _PUBID giuseppe1770
 1 FAMC @F-giuseppe1770@
 1 BIRT
@@ -99,7 +99,7 @@
 2 SOUR @S-PUBLIC@
 1 SOUR @S-PUBLIC@
 0 @domenico1772@ INDI
-1 NAME Domenico
+1 NAME Domenico Zaniratti
 1 _PUBID domenico1772
 1 FAMC @F-domenico1772@
 1 BIRT
@@ -107,7 +107,7 @@
 2 SOUR @S-PUBLIC@
 1 SOUR @S-PUBLIC@
 0 @domenica1775@ INDI
-1 NAME Domenica
+1 NAME Domenica Zaniratti
 1 _PUBID domenica1775
 1 FAMC @F-domenica1775@
 1 BIRT
@@ -115,7 +115,7 @@
 2 SOUR @S-PUBLIC@
 1 SOUR @S-PUBLIC@
 0 @antonio1777@ INDI
-1 NAME Antonio
+1 NAME Antonio Zaniratti
 1 _PUBID antonio1777
 1 FAMC @F-antonio1777@
 1 BIRT
@@ -123,7 +123,7 @@
 2 SOUR @S-PUBLIC@
 1 SOUR @S-PUBLIC@
 0 @barbara1778@ INDI
-1 NAME Barbara
+1 NAME Barbara Zaniratti
 1 _PUBID barbara1778
 1 FAMC @F-barbara1778@
 1 BIRT
@@ -131,7 +131,7 @@
 2 SOUR @S-PUBLIC@
 1 SOUR @S-PUBLIC@
 0 @maria1780@ INDI
-1 NAME Maria
+1 NAME Maria Zaniratti
 1 _PUBID maria1780
 1 FAMC @F-maria1780@
 1 BIRT
@@ -139,7 +139,7 @@
 2 SOUR @S-PUBLIC@
 1 SOUR @S-PUBLIC@
 0 @vittoria1782@ INDI
-1 NAME Vittoria
+1 NAME Vittoria Zaniratti
 1 _PUBID vittoria1782
 1 FAMC @F-vittoria1782@
 1 BIRT
@@ -147,7 +147,7 @@
 2 SOUR @S-PUBLIC@
 1 SOUR @S-PUBLIC@
 0 @giovanni1803@ INDI
-1 NAME Giovanni
+1 NAME Giovanni Zaniratti
 1 _PUBID giovanni1803
 1 FAMS @F-bartolomeo1829@
 1 FAMS @F-rosa1832@
@@ -159,7 +159,7 @@
 2 SOUR @S-PUBLIC@
 1 SOUR @S-PUBLIC@
 0 @bartolomeo1829@ INDI
-1 NAME Bartolomeo
+1 NAME Bartolomeo Zaniratti
 1 _PUBID bartolomeo1829
 1 FAMC @F-bartolomeo1829@
 1 BIRT
@@ -167,7 +167,7 @@
 2 SOUR @S-PUBLIC@
 1 SOUR @S-PUBLIC@
 0 @rosa1832@ INDI
-1 NAME Rosa
+1 NAME Rosa Zaniratti
 1 _PUBID rosa1832
 1 FAMC @F-rosa1832@
 1 BIRT
@@ -224,11 +224,12 @@
 1 FAMC @F-carlo1843@
 1 SOUR @S-PUBLIC@
 0 @antonio1846@ INDI
-1 NAME Antonio
+1 NAME Antonio Zaniratti
 1 _PUBID antonio1846
 1 FAMC @F-antonio1846@
 1 BIRT
 2 DATE 16 JAN 1846
+2 PLAC Stellata, Bondeno, Ferrara, Itália
 2 SOUR @S-PUBLIC@
 1 DEAT
 2 DATE 7 MAR 1902
@@ -255,29 +256,32 @@
 2 DATE 23 SEP 1848
 2 PLAC Stellata, Bondeno, Ferrara, Itália
 2 SOUR @S-PUBLIC@
+1 EVEN
+2 TYPE Migration
+2 SOUR @S-PUBLIC@
 1 SOUR @S-PUBLIC@
 0 @ermanno@ INDI
-1 NAME Ermanno
+1 NAME Ermanno Zaniratti
 1 _PUBID ermanno
 1 FAMC @F-ermanno@
 1 SOUR @S-PUBLIC@
 0 @ugo@ INDI
-1 NAME Ugo
+1 NAME Ugo Zaniratti
 1 _PUBID ugo
 1 FAMC @F-ugo@
 1 SOUR @S-PUBLIC@
 0 @umberto@ INDI
-1 NAME Umberto
+1 NAME Umberto Zaniratti
 1 _PUBID umberto
 1 FAMC @F-umberto@
 1 SOUR @S-PUBLIC@
 0 @daniele@ INDI
-1 NAME Daniele
+1 NAME Daniele Zaniratti
 1 _PUBID daniele
 1 FAMC @F-daniele@
 1 SOUR @S-PUBLIC@
 0 @dante1882@ INDI
-1 NAME Dante
+1 NAME Dante Zaniratti
 1 _PUBID dante1882
 1 FAMC @F-dante1882@
 1 BIRT
@@ -285,12 +289,12 @@
 2 SOUR @S-PUBLIC@
 1 SOUR @S-PUBLIC@
 0 @maria1884@ INDI
-1 NAME Maria
+1 NAME Maria Zaniratti
 1 _PUBID maria1884
 1 FAMC @F-maria1884@
 1 SOUR @S-PUBLIC@
 0 @luigi1886@ INDI
-1 NAME Luigi
+1 NAME Luigi Zaniratti
 1 _PUBID luigi1886
 1 FAMC @F-luigi1886@
 1 SOUR @S-PUBLIC@
@@ -310,28 +314,32 @@
 1 FAMC @F-grandilia@
 1 BIRT
 2 DATE 19 JAN 1887
+2 PLAC Burana, Bondeno, Ferrara, Itália
 2 SOUR @S-PUBLIC@
 1 DEAT
 2 DATE 17 JUL 1963
 2 SOUR @S-PUBLIC@
+1 EVEN
+2 TYPE Migration
+2 SOUR @S-PUBLIC@
 1 SOUR @S-PUBLIC@
 0 @ulisse@ INDI
-1 NAME Ulisse
+1 NAME Ulisse Zaniratti
 1 _PUBID ulisse
 1 FAMC @F-ulisse@
 1 SOUR @S-PUBLIC@
 0 @ernesto@ INDI
-1 NAME Ernesto
+1 NAME Ernesto Zaniratti
 1 _PUBID ernesto
 1 FAMC @F-ernesto@
 1 SOUR @S-PUBLIC@
 0 @carlo1892@ INDI
-1 NAME Carlo
+1 NAME Carlo Zaniratti
 1 _PUBID carlo1892
 1 FAMC @F-carlo1892@
 1 SOUR @S-PUBLIC@
 0 @zenaide@ INDI
-1 NAME Zenaide
+1 NAME Zenaide Zaniratti
 1 _PUBID zenaide
 1 FAMS @F-zenaide_child_1@
 1 FAMS @F-zenaide_child_2@
@@ -352,6 +360,10 @@
 1 FAMC @F-zenaide@
 1 BIRT
 2 DATE 2 JUN 1895
+2 PLAC Burana, Bondeno, Ferrara, Itália
+2 SOUR @S-PUBLIC@
+1 EVEN
+2 TYPE Migration
 2 SOUR @S-PUBLIC@
 1 SOUR @S-PUBLIC@
 0 @ernesta@ INDI
@@ -375,6 +387,7 @@
 1 FAMS @F-mafalda@
 1 BIRT
 2 DATE 16 AUG 1888
+2 PLAC San Mauro Forte, Matera, Itália
 2 SOUR @S-PUBLIC@
 1 SOUR @S-PUBLIC@
 0 @luzia@ INDI
@@ -413,7 +426,7 @@
 1 FAMC @F-valquiria@
 1 SOUR @S-PUBLIC@
 0 @lourdes_esposito@ INDI
-1 NAME Lourdes
+1 NAME Lourdes Espósito
 1 _PUBID lourdes_esposito
 1 FAMC @F-lourdes_esposito@
 1 SOUR @S-PUBLIC@
@@ -430,6 +443,7 @@
 0 @valentim@ INDI
 1 NAME Valentim Zaniratti
 1 _PUBID valentim
+1 NICK Valentim Zanirate
 1 FAMS @F-walter@
 1 FAMS @F-nedina@
 1 FAMS @F-reni@
@@ -447,8 +461,9 @@
 1 FAMS @F-antonio1846@
 1 SOUR @S-PUBLIC@
 0 @elisa@ INDI
-1 NAME Elisa Bernardino Zanirate
+1 NAME Elisa Bernardino Zaniratti
 1 _PUBID elisa
+1 NICK Elisa Bernardino Zanirate
 1 FAMS @F-walter@
 1 FAMS @F-nedina@
 1 FAMS @F-reni@
@@ -465,8 +480,9 @@
 1 FAMC @F-nedina@
 1 SOUR @S-PUBLIC@
 0 @reni@ INDI
-1 NAME Reni Zanirate Galo
+1 NAME Reni Zaniratti Galo
 1 _PUBID reni
+1 NICK Reni Zanirate Galo
 1 FAMS @F-fernando@
 1 FAMS @F-vera@
 1 FAMS @F-elcio@
@@ -484,11 +500,13 @@
 0 @antonio_filho@ INDI
 1 NAME Antônio Zaniratti
 1 _PUBID antonio_filho
+1 NICK Antenio
 1 FAMC @F-antonio_filho@
 1 SOUR @S-PUBLIC@
 0 @joao_galo@ INDI
 1 NAME João Galo
 1 _PUBID joao_galo
+1 NICK João Gallo
 1 FAMS @F-fernando@
 1 FAMS @F-vera@
 1 FAMS @F-elcio@
@@ -521,17 +539,21 @@
 0 @jose_airson@ INDI
 1 NAME José Airson Galo
 1 _PUBID jose_airson
+1 NICK José Airson
 1 FAMC @F-jose_airson@
 1 SOUR @S-PUBLIC@
 0 @rejane@ INDI
 1 NAME Rejane Natalina Galo Esteves
 1 _PUBID rejane
+1 NICK Rejane Natalina Galo
+1 NICK Rejane Natalino Galo Esteves
 1 FAMS @F-jv@
 1 FAMC @F-rejane@
 1 SOUR @S-PUBLIC@
 0 @jv@ INDI
 1 NAME João Vítor Galo Esteves
 1 _PUBID jv
+1 NICK João Vitor Galo Esteves
 1 FAMC @F-jv@
 1 SOUR @S-PUBLIC@
 0 @maria_gallo@ INDI
@@ -1103,6 +1125,26 @@
 1 _PARTNER @joao_galo@
 1 MARR
 2 DATE 6 JAN 1960
+2 SOUR @S-PUBLIC@
+0 @union-dante-maria-gallo@ FAM
+1 _PARTNER @dante1882@
+1 _PARTNER @maria_gallo@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @union-valentim-elisa@ FAM
+1 _PARTNER @valentim@
+1 _PARTNER @elisa@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @union-luigi-pasqua@ FAM
+1 _PARTNER @luigi@
+1 _PARTNER @pasqua@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @union-zenaide-felipe-murucci@ FAM
+1 _PARTNER @zenaide@
+1 _PARTNER @felipe_murucci@
+1 MARR
 2 SOUR @S-PUBLIC@
 0 @S-PUBLIC@ SOUR
 1 TITL Snapshot público candidato Zaniratti/Galo
