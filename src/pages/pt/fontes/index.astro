@@ -5,15 +5,38 @@ import { publicData as snapshot } from "../../../lib/data";
 import { url } from "../../../lib/urls";
 const sources = snapshot.sources || [];
 const citationCounts = (id: string) => (snapshot.citations || []).filter((citation) => citation.source_id === id).length;
+const marriageRecord = (snapshot.archive_items || []).find((item) => item.id === "documento-p4");
+const researchGuides = [
+  { title: "Site genealógico histórico", type: "Acervo familiar", text: "Páginas recuperadas preservam histórias e árvores publicadas por familiares. O inventário permite identificar capturas e lacunas, mas não calcular uma porcentagem de recuperação do site original.", href: "/pt/acervo/", label: "Abrir o acervo" },
+  { title: "Casamento em Bondeno, 1880", type: "Registro civil", text: "O extrato registra Custode Sante Zaniratti e Ernesta Galliera em 2 de junho de 1880, ato 37. A ficha do documento informa o que o registro mostra e o localizador disponível.", href: marriageRecord ? "/pt/acervo/" + encodeURIComponent(marriageRecord.id) + "/" : "/pt/acervo/", label: "Consultar o documento" },
+  { title: "Santa Clara e Itaperuna", type: "História territorial · IBGE", text: "A história municipal do IBGE situa Santa Clara do Carangola e Varre-Sai nas divisões administrativas de Itaperuna; o distrito de Santa Clara passou a integrar Porciúncula em 1947.", href: "https://www.ibge.gov.br/biblioteca/visualizacao/dtb/riodejaneiro/itaperuna.pdf", label: "Abrir a fonte do IBGE" },
+  { title: "Fazendas e documentação de colonos", type: "Pesquisa acadêmica", text: "A tese da UFF e o artigo da ANPUH descrevem a Fazenda do Céu, a Fazenda Bela Vista e livros rurais. São fontes de contexto regional; não demonstram que os Zaniratti tenham trabalhado nessas fazendas.", href: "/pt/lugares/fazendas/", label: "Ler a síntese e as referências" },
+];
 ---
-<SiteLayout active="fontes" title="Fontes e documentos" description="Referências e documentos citados no conjunto público.">
-  <PageIntro eyebrow="Referências" title="Fontes e documentos" lede="Uma relação publicada pode apontar para uma fonte sem expor o documento integral. As fichas registram apenas os metadados liberados para consulta." />
-  {sources.length ? <div class="source-list">
+<SiteLayout active="fontes" title="Fontes e documentos" description="Referências, documentos e histórias das fontes do conjunto público.">
+  <PageIntro eyebrow="Referências" title="Fontes e documentos" lede="Histórias, documentos, páginas preservadas e estudos locais têm diferentes alcances. As notas abaixo explicam o que cada referência sustenta e onde suas limitações começam." />
+  <section class="source-guides" aria-labelledby="source-guides-title"><div class="source-guides-heading"><p class="eyebrow">Leituras com contexto</p><h2 id="source-guides-title">O que algumas fontes mostram</h2><p>Os resumos indicam localizadores e limites antes de abrir a referência ou a reprodução.</p></div><div class="source-guides-grid">{researchGuides.map((guide) => <article><p class="eyebrow">{guide.type}</p><h3>{guide.title}</h3><p>{guide.text}</p>{guide.href.startsWith("http") ? <a href={guide.href} target="_blank" rel="noopener noreferrer">{guide.label} ↗</a> : <a href={url(guide.href)}>{guide.label} →</a>}</article>)}</div></section>
+  <p class="research-link"><a href={url("/pt/fontes/pesquisa-integrada/")}>Ler o resumo dos 204 achados e suas limitações →</a></p>
+  <div class="sources-index"><div><h2>Índice de fontes</h2><p>{sources.length} referências vinculadas a citações, histórias e documentos do conjunto público.</p></div><label>Buscar fonte<input id="source-search" type="search" placeholder="Título, tipo ou nota" /></label></div>
+  {sources.length ? <div class="source-list" id="source-list">
     {sources.map((source) => <article class="source-card">
       <p class="eyebrow">{source.kind || "Fonte"}</p><h2>{source.title}</h2>
-      <p>{source.public_reference || source.public_note || "Referência incluída no conjunto público."}</p>
+      <p>{source.public_note || source.public_reference || "Referência incluída no conjunto público."}</p>
       <p class="meta">{citationCounts(source.id)} {citationCounts(source.id) === 1 ? "citação" : "citações"} no conjunto público</p>
       <a href={url("/pt/fontes/" + encodeURIComponent(source.id) + "/")}>Abrir ficha da fonte →</a>
     </article>)}
   </div> : <p class="empty-state">Ainda não há fontes aprovadas para o recorte público.</p>}
 </SiteLayout>
+<script>
+  const input = document.querySelector<HTMLInputElement>("#source-search");
+  const cards = [...document.querySelectorAll<HTMLElement>("#source-list .source-card")];
+  const normalize = (value: string) => value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase("pt-BR").trim();
+  input?.addEventListener("input", () => {
+    const query = normalize(input.value);
+    for (const card of cards) card.hidden = Boolean(query) && !normalize(card.innerText).includes(query);
+  });
+</script>
+<style>
+  .research-link{margin:0 0 30px;padding:14px 0;border-top:1px solid #d7d1c7;border-bottom:1px solid #d7d1c7;font-weight:650}
+  .source-guides{margin:34px 0 42px}.source-guides-heading{max-width:680px}.source-guides-heading h2{margin:0 0 7px;font-size:1.6rem}.source-guides-heading>p:last-child,.sources-index p{color:#5b6873}.source-guides-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:17px}.source-guides-grid article{padding:19px;border:1px solid #d8e0e6;border-radius:10px;background:#fffefa}.source-guides-grid h3{margin:5px 0 8px;font-size:1.1rem}.source-guides-grid article>p:not(.eyebrow){color:#5b6873;font-size:.9rem;line-height:1.65}.source-guides-grid a{font-size:.87rem;font-weight:650}.sources-index{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:15px}.sources-index h2{margin:0;font-size:1.4rem}.sources-index p{margin:5px 0 0;font-size:.88rem}.sources-index label{display:grid;gap:5px;min-width:min(100%,280px);font-size:.82rem;font-weight:700}.sources-index input{min-height:43px;padding:8px 11px;border:1px solid #bdcbd6;border-radius:7px;background:#fffefa;font:inherit}.source-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.source-card{padding:20px;border:1px solid #d8e0e6;border-radius:10px;background:#fffefa}.source-card[hidden]{display:none}.source-card h2{margin:5px 0 9px;font-size:1.15rem}.source-card p:not(.eyebrow){color:#5b6873;font-size:.9rem;line-height:1.6}.source-card .meta{font-size:.78rem}.source-card a{font-size:.88rem;font-weight:650}.eyebrow{color:#326bb0;font-size:.71rem;font-weight:750;letter-spacing:.1em;text-transform:uppercase}.empty-state{padding:20px;color:#5b6873}@media(max-width:900px){.source-list{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:650px){.source-guides-grid{grid-template-columns:1fr}.source-list{grid-template-columns:1fr}.sources-index{align-items:stretch;flex-direction:column;gap:10px}}
+</style>

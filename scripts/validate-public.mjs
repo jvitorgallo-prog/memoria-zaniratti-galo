@@ -6,6 +6,8 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const EDGE_CLASSES = new Set(['transcrito do site','relato familiar','transcrito do documento fornecido','relato familiar com apoio indireto do site']);
+const CORE_PARENT_EDGE_COUNT = 118;
+const CORE_PERSON_COUNT = 89;
 const PRIVATE_KEYS = new Set(['email','email_address','address','street_address','phone','document_number','civil_id','signature','medical','cause_of_death','private_path','original_path','drive_url']);
 const EMAIL_RE = /[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}/;
 const PRIVATE_PATH_RE = /(?:\/workspace\/|drive\.google\.com|documentos_privados|raw\/snapshots\/|raw\/commoncrawl\/)/i;
@@ -46,15 +48,18 @@ export function validatePublic({ snapshot, manifest, gedcom, asset, assetFiles =
     candidate.release.state = 'candidate';
     assert.equal(manifest.approval_decision.candidate_snapshot_sha256, sha(Buffer.from(`${JSON.stringify(candidate, null, 2)}\n`)));
   }
-  assert.equal(snapshot.people.length, 89);
-  assert.equal(snapshot.branches.length, 3, 'disconnected branches must remain separate');
+  assert.equal(snapshot.people.filter(p => !p.id.startsWith('hist-') && p.id !== 'edmondo1950').length, CORE_PERSON_COUNT, 'existing core IDs remain intact');
+  assert.equal(new Set(snapshot.branches.filter(b => b.is_original_tree).map(b => b.tree_id)).size, 4, 'four original trees stay distinct');
+  assert(snapshot.branches.some(b => b.category === 'unassigned_profiles'), 'unassigned biographies stay visible without a fabricated branch');
   const bondenoBranch = snapshot.branches.find(b => b.id === 'ramo-francesco-bondeno-galo');
   assert.equal(bondenoBranch?.label, 'Francesco / Bondeno');
   assert.equal(bondenoBranch?.note, 'Descendência em Bondeno com ramos por casamento. Relações e datas têm origem consultável.');
-  assert.equal(snapshot.events.length, 46);
-  assert.equal(snapshot.assertions.filter(a => a.predicate === 'child_of').length, 118);
-  assert.equal(snapshot.groups.filter(g => g.kind === 'parental_group').length, 20);
-  assert.equal(snapshot.groups.filter(g => g.kind === 'union').length, 7);
+  assert(snapshot.events.length >= 46);
+  const coreParentAssertions = snapshot.assertions.filter(a => a.predicate === 'child_of' && a.id.startsWith('a-parent-'));
+  assert.equal(coreParentAssertions.length, CORE_PARENT_EDGE_COUNT);
+  assert.equal(snapshot.groups.filter(g => g.kind === 'parental_group' && !g.id.startsWith('legacy-family-')).length, 20);
+  const coreUnionIds = new Set(['union-custode-ernesta','union-grandilia-nicola','union-reni-joao','union-dante-maria-gallo','union-valentim-elisa','union-luigi-pasqua','union-zenaide-felipe-murucci']);
+  assert.equal(snapshot.groups.filter(g => g.kind === 'union' && coreUnionIds.has(g.id)).length, 7);
   assert.equal(snapshot.legacy_urls.length, 0, 'no redirect/bridge can be inferred without review');
 
   const personIds = new Set(snapshot.people.map(p => p.id));
@@ -77,7 +82,7 @@ export function validatePublic({ snapshot, manifest, gedcom, asset, assetFiles =
     assert(Array.isArray(p.aliases));
   }
   for (const branch of snapshot.branches) {
-    exactKeys(branch, ['id','label','description','person_ids','note'], 'branch');
+    for (const field of ['id','label','description','person_ids','note']) assert(Object.hasOwn(branch,field), `branch missing ${field}`);
     for (const id of branch.person_ids) assert(personIds.has(id));
   }
   for (const group of snapshot.groups) {
@@ -121,7 +126,28 @@ export function validatePublic({ snapshot, manifest, gedcom, asset, assetFiles =
       }
     }
   }
-  assert.equal(edgePairs.size, 118, 'duplicate parentage edge');
+  const coreEdgePairs = new Set(coreParentAssertions.map(a => `${a.object_person_id}>${a.subject_id}`));
+  assert.equal(coreEdgePairs.size, CORE_PARENT_EDGE_COUNT, 'duplicate parentage edge in core');
+  const preferredParentPairs = new Set(snapshot.assertions.filter(a => a.predicate === 'child_of' && a.interpretation === 'preferred').map(a => `${a.object_person_id}>${a.subject_id}`));
+  for (const group of snapshot.groups.filter(g => g.kind === 'parental_group' && g.id.startsWith('legacy-family-'))) {
+    const parents = group.participants.filter(p => p.role === 'parent').map(p => p.person_id);
+    const children = group.participants.filter(p => p.role === 'child').map(p => p.person_id);
+    assert(parents.length > 0 && children.length > 0, `legacy parental group must have parents and children: ${group.id}`);
+    for (const parentId of parents) for (const childId of children) assert(preferredParentPairs.has(`${parentId}>${childId}`), `legacy group member pair lacks preferred child_of: ${group.id} ${parentId}>${childId}`);
+  }
+  const preferredParentsByChild = new Map();
+  for (const edge of snapshot.assertions.filter(a => a.predicate === 'child_of' && a.interpretation === 'preferred')) {
+    const parents = preferredParentsByChild.get(edge.subject_id) || new Set();
+    parents.add(edge.object_person_id);
+    preferredParentsByChild.set(edge.subject_id, parents);
+  }
+  for (const [childId, parents] of preferredParentsByChild) assert(parents.size <= 2, `more than two preferred biological parents for ${childId}`);
+  const felipeId = snapshot.people.find(p => p.label === 'Felipe Zaniratti (2004)')?.id;
+  if (felipeId) assert.equal(preferredParentsByChild.get(felipeId)?.size, 2, 'Andreza/Gabriel page crosswalk must not duplicate a parent');
+  assert.equal(snapshot.people.filter(p => p.id === 'antonio1846').length, 1, 'S6 URL identity must resolve to the existing Antonio record');
+  const antonioParents = preferredParentsByChild.get('antonio1846') || new Set();
+  assert.deepEqual([...antonioParents].sort(), ['luigi','maria_cavallini'].sort(), 'Antonio S6 parentage must resolve to Luigi and Maria Cavallini without a third reference stub');
+  assert(!snapshot.people.some(p => p.id.startsWith('hist-') && p.label === 'Antonio Zaniratti (1846)'), 'do not duplicate core Antonio 1846 by URL');
   const alternateNames = snapshot.assertions.filter(a => a.predicate === 'alternate_name');
   assert.equal(snapshot.people.find(p => p.id === 'reni').label, 'Reni Zaniratti Galo');
   assert(alternateNames.some(a => a.subject_id === 'reni' && a.literal === 'Reni Zanirate Galo' && a.interpretation === 'alternative'));
@@ -143,9 +169,9 @@ export function validatePublic({ snapshot, manifest, gedcom, asset, assetFiles =
   const zenaideMarriage = snapshot.assertions.find(a => a.id === 'a-casamento-zenaide-felipe');
   assert.equal(zenaideMarriage?.date, null, 'do not infer marriage year from Zenaide’s stated age');
   assert.match(zenaideMarriage?.literal || '', /tinha 12 anos quando se casou/i);
-  const childrenOf = id => [...new Set(snapshot.assertions.filter(a => a.predicate === 'child_of' && a.object_person_id === id).map(a => a.subject_id))];
+  const childrenOf = id => [...new Set(coreParentAssertions.filter(a => a.object_person_id === id).map(a => a.subject_id))];
   for (const [id, count] of [['custode',13],['valentim',4],['reni',5],['grandilia',10],['zenaide',16]]) assert.equal(childrenOf(id).length, count, `child count for ${id}`);
-  assert.deepEqual(snapshot.assertions.filter(a => a.predicate === 'child_of' && a.subject_id === 'valentim').map(a => a.object_person_id), ['custode'], 'Valentim has no assigned mother');
+  assert.deepEqual(coreParentAssertions.filter(a => a.subject_id === 'valentim').map(a => a.object_person_id), ['custode'], 'Valentim has no assigned mother in adopted core');
   assert.notEqual(snapshot.people.find(p => p.id === 'reni').id, snapshot.people.find(p => p.label.includes('Lourdes Espósito'))?.id, 'Reni and Lourdes Espósito must remain distinct records');
   for (const c of snapshot.citations) {
     exactKeys(c, ['id','source_id','locator','quote','translation','language'], 'citation');
@@ -171,10 +197,10 @@ export function validatePublic({ snapshot, manifest, gedcom, asset, assetFiles =
     for (const cid of event.claim_ids) assert(assertionIds.has(cid));
   }
   const marriages = snapshot.events.filter(e => e.type === 'marriage');
-  assert.equal(snapshot.events.filter(e => e.type === 'birth').length, 31);
-  assert.equal(snapshot.events.filter(e => e.type === 'death').length, 5);
-  assert.equal(marriages.length, 7);
-  assert.deepEqual(marriages.map(e => e.subject_id).sort(), ['union-custode-ernesta','union-dante-maria-gallo','union-grandilia-nicola','union-luigi-pasqua','union-reni-joao','union-valentim-elisa','union-zenaide-felipe-murucci'].sort());
+  assert.equal(snapshot.events.filter(e => e.type === 'birth' && e.id.startsWith('evt-birth-')).length, 31);
+  assert.equal(snapshot.events.filter(e => e.type === 'death' && e.id.startsWith('evt-death-')).length, 5);
+  assert(marriages.length >= 7);
+  for (const unionId of coreUnionIds) assert(marriages.some(e => e.subject_id === unionId));
   assert(snapshot.assets.length >= 100, 'historical photographs and diagrams should be preserved');
   for (const assetRec of snapshot.assets) {
     exactKeys(assetRec, ['id','public_path','sha256','mime','bytes','alt','caption','rights_public_note'], 'asset');
@@ -261,7 +287,11 @@ export function validatePublic({ snapshot, manifest, gedcom, asset, assetFiles =
   assert(snapshot.biographies.length >= 30, 'biographies must contain cited prose facts rather than filler');
   assert.equal((gedcom.match(/^1 BIRT$/gm) || []).length, 31);
   assert.equal((gedcom.match(/^1 DEAT$/gm) || []).length, 5);
-  assert.equal((gedcom.match(/^1 MARR$/gm) || []).length, 7);
+  for (const assertion of snapshot.assertions.filter(a => a.predicate === 'child_of' && a.interpretation === 'disputed')) {
+    const family = gedcom.split(`0 @F-${assertion.subject_id}@ FAM\n`)[1]?.split('\n0 ')[0] || '';
+    assert(!family.includes(`1 _PARENT @${assertion.object_person_id}@`), `disputed parentage exported in GEDCOM for ${assertion.subject_id}`);
+  }
+  assert((gedcom.match(/^1 MARR$/gm) || []).length >= 7);
   assert(!/\b(?:CAUSE|CAUSE OF DEATH|EMAIL)\b/i.test(gedcom));
   return true;
 }

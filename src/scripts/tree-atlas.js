@@ -9,8 +9,16 @@ if (atlas) {
   const byId = new Map(people.map((person) => [person.id, person]));
   const parentMap = new Map();
   const childMap = new Map();
+  const explicitSiblingMap = new Map();
   for (const claim of assertions) {
-    if (claim.predicate !== "child_of" || !claim.object_person_id || claim.interpretation === "disputed") continue;
+    if (claim.interpretation === "disputed") continue;
+    if (claim.predicate === "sibling_of" && claim.object_person_id) {
+      if (!explicitSiblingMap.has(claim.subject_id)) explicitSiblingMap.set(claim.subject_id, new Set());
+      if (!explicitSiblingMap.has(claim.object_person_id)) explicitSiblingMap.set(claim.object_person_id, new Set());
+      explicitSiblingMap.get(claim.subject_id).add(claim.object_person_id);
+      explicitSiblingMap.get(claim.object_person_id).add(claim.subject_id);
+    }
+    if (claim.predicate !== "child_of" || !claim.object_person_id) continue;
     if (!parentMap.has(claim.subject_id)) parentMap.set(claim.subject_id, new Set());
     parentMap.get(claim.subject_id).add(claim.object_person_id);
     if (!childMap.has(claim.object_person_id)) childMap.set(claim.object_person_id, new Set());
@@ -24,28 +32,35 @@ if (atlas) {
       unionMap.get(id).push({ group, partners: (group.participant_ids || []).filter((other) => other !== id) });
     }
   }
-  const selectedPath = ["luigi", "pasqua", "custode", "valentim", "reni", "rejane", "jv"];
-  const pathEdges = new Set(["luigi:custode", "pasqua:custode", "custode:valentim", "valentim:reni", "reni:rejane", "rejane:jv"]);
+  const journeyAvailable = atlas.dataset.journeyAvailable === "true";
+  const selectedPath = journeyAvailable ? ["luigi", "pasqua", "custode", "valentim", "reni", "rejane", "jv"] : [];
+  const pathEdges = journeyAvailable ? new Set(["luigi:custode", "pasqua:custode", "custode:valentim", "valentim:reni", "reni:rejane", "rejane:jv"]) : new Set();
   const $ = (selector) => atlas.querySelector(selector);
   const base = atlas.dataset.personBase || "/pt/pessoas/";
   const sourceBase = atlas.dataset.sourceBase || "/pt/fontes/";
   const archiveBase = atlas.dataset.archiveBase || "/pt/acervo/";
+  const branchBase = atlas.dataset.branchBase || "/pt/arvores/";
   const home = atlas.dataset.home || "/pt/";
   const normalize = (value) => (value || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase("pt-BR").trim();
-  const safeStateKey = "zaniratti-atlas-state-v1";
+  const initialFocus = atlas.dataset.initialPerson || "";
+  const currentBranchId = atlas.dataset.currentBranch || "";
+  const safeStateKey = `zaniratti-atlas-state-v1:${currentBranchId || "unassigned"}`;
   let saved = {};
   try { saved = JSON.parse(sessionStorage.getItem(safeStateKey) || "{}"); } catch { saved = {}; }
   const params = new URLSearchParams(location.search);
   const routeFocus = params.get("pessoa") || params.get("focus");
   const routeBranch = branches.find((branch) => branch.id === params.get("ramo"));
-  const branchPeople = (routeBranch?.person_ids || []).map((id) => byId.get(id)).filter(Boolean);
+  const currentBranch = branches.find((branch) => branch.id === currentBranchId) || routeBranch;
+  const branchPeople = (currentBranch?.person_ids || []).map((id) => byId.get(id)).filter(Boolean);
   const branchRoot = branchPeople.find((person) => !(parentMap.get(person.id) || new Set()).size) || branchPeople[0];
-  let selectedId = routeFocus || (routeBranch ? branchRoot?.id : saved.selectedId) || "custode";
-  if (!byId.has(selectedId)) selectedId = "custode";
+  const savedPersonIsCurrent = Boolean(saved.selectedId && (currentBranch?.person_ids || []).includes(saved.selectedId));
+  let selectedId = routeFocus || (routeBranch ? (routeBranch.id === currentBranchId ? initialFocus : branchRoot?.id || initialFocus) : savedPersonIsCurrent ? saved.selectedId : initialFocus) || branchRoot?.id || "";
+  if (!byId.has(selectedId)) selectedId = branchRoot?.id || initialFocus || "";
   let mode = saved.mode || "family";
   let zoom = Number(saved.zoom) || 1;
   let expanded = new Set(saved.expanded || []);
-  let lineFocus = params.get("caminho") === "jv" || Boolean(saved.lineFocus);
+  let lineFocus = journeyAvailable && (params.get("caminho") === "jv" || Boolean(saved.lineFocus));
+  const initialAtlasState = { selectedId, mode, zoom, expanded: new Set(expanded), lineFocus };
 
   function personUrl(id) { return `${base}${encodeURIComponent(id)}/`; }
   function initials(label) { return (label || "?").trim().split(/\s+/).slice(0, 2).map((part) => part[0]).join("").toLocaleUpperCase("pt-BR"); }
@@ -54,7 +69,7 @@ if (atlas) {
   function childrenOf(id) { return byName(childMap.get(id) || []); }
   function siblingsOf(id) {
     const parentIds = parentMap.get(id) || new Set();
-    return byName([...parentIds].flatMap((parentId) => [...(childMap.get(parentId) || [])])).filter((person) => person.id !== id);
+    return byName([...parentIds].flatMap((parentId) => [...(childMap.get(parentId) || [])]).concat([...(explicitSiblingMap.get(id) || [])])).filter((person) => person.id !== id);
   }
   function unionsOf(id) { return unionMap.get(id) || []; }
   function branchNames(person) { return (person.branch_ids || []).map((id) => branches.find((branch) => branch.id === id)?.label).filter(Boolean); }
@@ -205,10 +220,10 @@ if (atlas) {
   }
   function renderLineRoute() {
     const route = $("[data-line-route]");
-    if (!lineFocus) { route.replaceChildren(); return; }
+    if (!journeyAvailable || !lineFocus) { route.replaceChildren(); return; }
     const ordered = ["luigi", "pasqua", "custode", "valentim", "reni", "rejane", "jv"].map((id) => byId.get(id)).filter(Boolean);
     route.replaceChildren();
-    route.append(element("span", "atlas-route-title", "Luigi e Pasqua até João Vítor"));
+    route.append(element("span", "atlas-route-title", "Percurso da família até João Vítor"));
     const list = element("div", "atlas-route-people");
     const couple = element("span", "atlas-route-couple");
     couple.setAttribute("aria-label", "Luigi e Pasqua, pais de Custode");
@@ -343,10 +358,13 @@ if (atlas) {
   });
   $("[data-branch-select]").addEventListener("change", (event) => {
     const branch = branches.find((item) => item.id === event.target.value);
-    if (!branch) { selectPerson("custode"); return; }
-    const peopleInBranch = (branch.person_ids || []).map((id) => byId.get(id)).filter(Boolean);
-    const rootPerson = peopleInBranch.find((person) => !(parentMap.get(person.id) || new Set()).size) || peopleInBranch[0];
-    if (rootPerson) { mode = "family"; selectPerson(rootPerson.id); }
+    if (!branch) { render(); return; }
+    // The destination route owns its complete graph and SSR-selected focus. A branch can be
+    // valid even when none of its people are in this compact, local graph payload.
+    const target = new URL(`${branchBase}${encodeURIComponent(branch.id)}/`, location.href);
+    target.searchParams.set("ramo", branch.id);
+    target.hash = "atlas";
+    location.assign(target.toString());
   });
   $("[data-zone=siblings]").addEventListener("toggle", (event) => {
     if (event.currentTarget.open) expanded.add("__siblings"); else expanded.delete("__siblings");
@@ -357,22 +375,26 @@ if (atlas) {
     if (event.currentTarget.open) requestAnimationFrame(() => $("[data-atlas-canvas]").scrollIntoView({ behavior: "smooth", block: "start" }));
   });
   window.addEventListener("popstate", () => {
+    const state = history.state;
     const next = new URLSearchParams(location.search).get("pessoa") || new URLSearchParams(location.search).get("focus");
-    if (next && byId.has(next)) {
-      selectedId = next;
-      if (history.state?.atlas) {
-        mode = history.state.mode || mode;
-        zoom = history.state.zoom || zoom;
-        expanded = new Set(history.state.expanded || []);
-        lineFocus = Boolean(history.state.lineFocus);
-      }
-      render();
-      requestAnimationFrame(() => {
-        const canvas = $("[data-atlas-canvas]");
-        canvas.scrollLeft = history.state?.scrollLeft || 0;
-        canvas.scrollTop = history.state?.scrollTop || 0;
-      });
+    selectedId = next && byId.has(next) ? next : initialAtlasState.selectedId;
+    if (state?.atlas) {
+      mode = state.mode || initialAtlasState.mode;
+      zoom = state.zoom || initialAtlasState.zoom;
+      expanded = new Set(state.expanded || []);
+      lineFocus = journeyAvailable && Boolean(state.lineFocus);
+    } else {
+      mode = initialAtlasState.mode;
+      zoom = initialAtlasState.zoom;
+      expanded = new Set(initialAtlasState.expanded);
+      lineFocus = initialAtlasState.lineFocus;
     }
+    render();
+    requestAnimationFrame(() => {
+      const canvas = $("[data-atlas-canvas]");
+      canvas.scrollLeft = state?.atlas ? state.scrollLeft || 0 : saved.scrollLeft || 0;
+      canvas.scrollTop = state?.atlas ? state.scrollTop || 0 : saved.scrollTop || 0;
+    });
   });
   render();
   $("[data-atlas-canvas]").addEventListener("scroll", () => {

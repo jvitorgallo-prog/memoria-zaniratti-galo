@@ -3,20 +3,21 @@ import { url } from "../lib/urls";
 import type { PublicPerson, PublicAssertion, PublicGroup, PublicBranch } from "../lib/data";
 
 type PersonWithAliases = PublicPerson & { aliases?: string[] };
-const { people, branches, assertions, groups, focusId = "custode" } = Astro.props as {
-  people: PersonWithAliases[]; branches: PublicBranch[]; assertions: PublicAssertion[]; groups: PublicGroup[]; focusId?: string;
+const { people, branches, assertions, groups, focusId = "", homeHref = url("/pt/"), treeTitle = "Árvore Zaniratti", embedded = false, journeyAvailable = false, currentBranchId = "" } = Astro.props as {
+  people: PersonWithAliases[]; branches: PublicBranch[]; assertions: PublicAssertion[]; groups: PublicGroup[]; focusId?: string; homeHref?: string; treeTitle?: string; embedded?: boolean; journeyAvailable?: boolean; currentBranchId?: string;
 };
 const byId = new Map(people.map((person) => [person.id, person]));
 const parentMap = new Map<string, Set<string>>();
 const childMap = new Map<string, Set<string>>();
 for (const claim of assertions) {
-  if (claim.predicate !== "child_of" || !claim.object_person_id) continue;
+  if (claim.predicate !== "child_of" || !claim.object_person_id || claim.interpretation === "disputed") continue;
   const parents = parentMap.get(claim.subject_id) || new Set<string>(); parents.add(claim.object_person_id); parentMap.set(claim.subject_id, parents);
   const children = childMap.get(claim.object_person_id) || new Set<string>(); children.add(claim.subject_id); childMap.set(claim.object_person_id, children);
 }
 const parents = [...(parentMap.get(focusId) || [])].map((id) => byId.get(id)).filter((person): person is PersonWithAliases => Boolean(person));
+const explicitSiblings = new Set(assertions.filter((claim) => claim.predicate === "sibling_of" && claim.interpretation !== "disputed" && (claim.subject_id === focusId || claim.object_person_id === focusId)).map((claim) => claim.subject_id === focusId ? claim.object_person_id : claim.subject_id).filter((id): id is string => Boolean(id)));
 const focusParents = parentMap.get(focusId) || new Set<string>();
-const siblings = people.filter((person) => person.id !== focusId && [...(parentMap.get(person.id) || [])].some((id) => focusParents.has(id)));
+const siblings = people.filter((person) => person.id !== focusId && (explicitSiblings.has(person.id) || [...(parentMap.get(person.id) || [])].some((id) => focusParents.has(id))));
 const children = [...(childMap.get(focusId) || [])].map((id) => byId.get(id)).filter((person): person is PersonWithAliases => Boolean(person));
 const unionPartners = groups.filter((group) => group.kind === "union" && group.participant_ids.includes(focusId)).flatMap((group) => group.participant_ids.filter((id) => id !== focusId).map((id) => byId.get(id))).filter((person): person is PersonWithAliases => Boolean(person));
 const safeGraph = JSON.stringify({ people, branches, assertions, groups, events: Astro.props.events || [], citations: Astro.props.citations || [], sources: Astro.props.sources || [] }).replace(/</g, "\\u003c");
@@ -25,12 +26,12 @@ const initials = (label: string) => label.split(/\s+/).filter(Boolean).slice(0, 
 const personHref = (id: string) => url(`/pt/pessoas/${encodeURIComponent(id)}/`);
 ---
 
-<section class="atlas" id="atlas" data-atlas data-person-base={url("/pt/pessoas/")} data-source-base={url("/pt/fontes/")} data-archive-base={url("/pt/acervo/")} data-home={url("/pt/")} aria-label="Árvore da família Zaniratti">
+<section class="atlas" id="atlas" data-atlas data-initial-person={focusId} data-current-branch={currentBranchId} data-journey-available={journeyAvailable ? "true" : "false"} data-person-base={url("/pt/pessoas/")} data-source-base={url("/pt/fontes/")} data-archive-base={url("/pt/acervo/")} data-branch-base={url("/pt/arvores/")} data-home={homeHref} aria-label="Árvore da família Zaniratti">
   <script type="application/json" data-atlas-data set:html={safeGraph}></script>
   <div class="atlas-toolbar">
     <div class="atlas-identity">
       <p class="atlas-kicker">Memória da família</p>
-      <h1>Árvore Zaniratti</h1>
+      {embedded ? <h2>{treeTitle}</h2> : <h1>{treeTitle}</h1>}
       <p>Explore pessoas, gerações e os vínculos que contam esta história.</p>
     </div>
     <div class="atlas-search-wrap">
@@ -49,9 +50,9 @@ const personHref = (id: string) => url(`/pt/pessoas/${encodeURIComponent(id)}/`)
           <button type="button" data-mode="descendants">Descendentes</button>
         </div>
         <label class="atlas-branch-label">Outros ramos
-          <select data-branch-select aria-label="Escolher outro ramo">
-            <option value="">Família de Luigi e Pasqua</option>
-            {branches.filter((branch) => !branch.person_ids.includes("custode")).map((branch) => <option value={branch.id}>{branch.label}</option>)}
+          <select data-branch-select aria-label="Escolher uma árvore familiar">
+            <option value="">Selecione uma árvore</option>
+            {branches.map((branch) => <option value={branch.id}>{branch.label}</option>)}
           </select>
         </label>
         <div class="atlas-view-controls" role="group" aria-label="Escala da árvore">
@@ -62,7 +63,7 @@ const personHref = (id: string) => url(`/pt/pessoas/${encodeURIComponent(id)}/`)
         </div>
       </div>
 
-      <p class="atlas-focus-path" data-focus-path><span class="atlas-path-mark" aria-hidden="true"></span> Caminho até João Vítor <button type="button" data-line-focus>Ver percurso</button></p>
+      <p class="atlas-focus-path" data-focus-path hidden={!journeyAvailable}><span class="atlas-path-mark" aria-hidden="true"></span> Caminho até João Vítor <button type="button" data-line-focus>Ver percurso</button></p>
       <div class="atlas-line-route" data-line-route hidden aria-label="Percurso destacado até João Vítor"></div>
       <div class="atlas-canvas" data-atlas-canvas tabindex="0" aria-label="Árvore interativa. Use Tab para escolher uma pessoa.">
         <div class="atlas-tree" data-atlas-tree>

@@ -1,0 +1,1838 @@
+[
+  {
+    "id": "ap-01",
+    "title": "Genealogias familiares | Blog Brava Gente",
+    "url": "https://bravagente.wordpress.com/2009/05/25/%E2%80%A2-genealogias-familiares/",
+    "fact": "Diretório público de 2009 descreve o site de Edmondo Zaniratti como abrangendo “diversos ramos pelo mundo”, especialmente Luigi Zaniratti e Pasqua Mellara, Bondeno, Ferrara, e Luigi Zaniratti e Luigia Medini, Ferrara.",
+    "locator": "Página de blog Brava Gente; entrada visível nas linhas 803–805 da página aberta; search/open 2026-10-11 UTC.",
+    "status": "comprovado",
+    "limitation": "Fonte já constava do acervo anterior; revalidada nesta rodada. Comprova referência pública ao site e ao escopo anunciado, não os elos individuais."
+  },
+  {
+    "id": "ap-02",
+    "title": "José Augusto (1959) | Zaniratti Continentes – Origens",
+    "url": "https://zaniratticontinentes.blogspot.com/2017/03/jose-augusto-1959-jose-augusto-em-uma.html",
+    "fact": "A página se apresenta como “biografia escrita por Edmondo Zaniratti”, seguida de aviso de que foi atualizada por Zaniratti Continentes. A própria seção marca seu fim com “Aqui termina a biografia escrita por Edmondo”; o restante é explicitamente separado como “Eu por mim mesmo!”. O ramo narrado é colateral e sem vínculo demonstrado à linha do usuário.",
+    "locator": "HTML público integral salvo em [evidência local preservada; caminho interno omitido]; consulta 2026-10-11 UTC; ver fragmentos e proveniência em arquivos próprios.",
+    "status": "candidato",
+    "limitation": "Atribuição explícita de autoria parcial, com edição posterior declarada pelo blog. Não comprova cópia do site zaniratti.it, nem relação deste ramo com Luigi/Pasqua/Custode; evitar fundir homônimos."
+  },
+  {
+    "id": "ap-03",
+    "title": "Ernesta Zanirati (1888–1961) | FamilySearch",
+    "url": "https://ancestors.familysearch.org/en/G45Y-D1G/ernesta-zanirati-1888-1961",
+    "fact": "Perfil mostra Ernesta nascida 1888, pais Gaetano Zanirati e Emma Berni, cônjuge Aristodemo Gusmatti.",
+    "locator": "Snippet público de pesquisa; perfil já identificado na consolidação prévia.",
+    "status": "rejeitado",
+    "limitation": "Perfil colaborativo identifica outra Ernesta, com pais e cônjuge diferentes; não corresponde à Ernesta Galliera esposa de Custode."
+  },
+  {
+    "id": "ap-04",
+    "title": "Busca de perfil genealógico para João Vitor / Reni",
+    "url": "https://www.familysearch.org/pt/groups/family/",
+    "fact": "Buscas exatas públicas não retornaram árvore/prova genealógica indexada para os nomes.",
+    "locator": "Consultas públicas aos buscadores efetuadas em 2026-10-11 UTC; sem sessão autenticada.",
+    "status": "negativa",
+    "limitation": "As consultas públicas registradas não retornaram perfil/registro genealógico alvo indexado. As páginas profissionais foram excluídas. Isso não rejeita identidade nem prova inexistência de árvore."
+  },
+  {
+    "id": "ap-05",
+    "title": "FamilySearch: variantes de sobrenome e descoberta pública",
+    "url": "https://www.familysearch.org/pt/search/discovery/results/?q.surname=zaniratto&tab=preview",
+    "fact": "A busca pública por variante de sobrenome exibiu páginas de sobrenome/registros sem perfil da linha-alvo nas snippets consultadas.",
+    "locator": "Resultados indexados pelo buscador em 2026-10-11 UTC; não equivale a busca logada na árvore colaborativa nem a busca exaustiva nas coleções.",
+    "status": "negativa",
+    "limitation": "Snippets de busca não mostraram perfil-alvo. Ausência em snippet não demonstra ausência em árvore colaborativa ou coleção."
+  },
+  {
+    "id": "ap-06",
+    "title": "Brazil, Espirito Santo, Civil Registration, 1850-2020 | FamilySearch",
+    "url": "https://www.familysearch.org/en/search/collection/4473668",
+    "fact": "Página de coleção descreve registros civis de nascimentos, casamentos e óbitos de cartórios do Espírito Santo; mostra 2,555 Images (imagens) e 11,722,845 Persons. Busca/coleção não confirmou ocorrência nominal da família.",
+    "locator": "Abertura e buscas em [arquivo interno omitido]; identificação de quantidade/unidade conforme painel público; captura 2026-10-11 UTC.",
+    "status": "comprovado",
+    "limitation": "É recurso para pesquisa colateral em Espírito Santo; quantidades de imagens/pessoas não são ocorrências nominais nem prova de filiação."
+  },
+  {
+    "id": "ap-07",
+    "title": "APEES — Fundo Registros Civis / Catálogo 2023",
+    "url": "https://ape.es.gov.br/GrupodeArquivos/registros-civis",
+    "fact": "APEES informa que acesso aos livros-talões é “restrito exclusivamente ao titular dos dados”; catálogo lista, entre outras séries, BR ESAPEES RC.GUA.20, casamentos Guaçuí 1959–1969 (caixa 475), e BR ESAPEES RC.GUA.19, casamentos 1946–1959 (caixa 474).",
+    "locator": "Página institucional e Catálogo_Registros Civis_PUBLICAR_NOV.2023; PDF/texto e citações no arquivo.",
+    "status": "comprovado",
+    "limitation": "O catálogo descreve séries e datas, não nomes; cobertura não prova ocorrência de Zenaide/Filipe ou quaisquer parentes. Nenhum pedido de acesso foi feito."
+  },
+  {
+    "id": "ap-08",
+    "title": "Brasil, Rio de Janeiro, Registro Civil, 1804-2013 | FamilySearch",
+    "url": "https://www.familysearch.org/pt/search/collection/1582573",
+    "fact": "A página pública descreve coleção de registros civis do estado do Rio de Janeiro, com imagens e registros indexados, de cobertura parcial.",
+    "locator": "Revalidação em [arquivo interno omitido]; a coleção já constava do levantamento anterior.",
+    "status": "comprovado",
+    "limitation": "Revalidação/ampliação da descrição da coleção, não nova descoberta nem registro de familiar."
+  },
+  {
+    "id": "ap-09",
+    "title": "Certidões interligadas | 1º Ofício de Petrópolis",
+    "url": "https://www.cartoriopetropolis.com.br/certidoes-interligadas",
+    "fact": "O cartório descreve serviço de certidões interligadas no estado, com referência normativa CGJ-RJ 37/2013.",
+    "locator": "Abertura pública em [arquivo interno omitido]; 2026-10-11 UTC.",
+    "status": "comprovado",
+    "limitation": "Descreve canal de solicitação, não comprova certidão nem vínculo familiar."
+  },
+  {
+    "id": "ap-10",
+    "title": "Cartório do Ofício Único de Porciúncula",
+    "url": "https://cartorioporciuncula.com.br/",
+    "fact": "Página pública do serviço cartorial atual em Porciúncula. Santa Clara aparece em fontes públicas como 3º distrito; não foi confirmado que o cartório atual substitua a serventia competente para casamento de 1960.",
+    "locator": "Abertura em [arquivo interno omitido]; distrito pesquisado em [arquivo interno omitido].",
+    "status": "comprovado",
+    "limitation": "Limite histórico mantido: cartório/competência atuais não são prova da custódia do ato de Santa Clara em 1960."
+  },
+  {
+    "id": "ap-11",
+    "title": "Busca pelo site familiar Galo-Esteves no MyHeritage",
+    "url": "https://www.myheritage.com.br/family-sites/galo-esteves/OYYV6CU54AHK6FKUA6OYSD3S7P4YRPQ",
+    "fact": "O retorno da ferramenta para domínio/caminho específico informou “Blocked by robots.txt”; não foram obtidos perfis ou conteúdo da árvore.",
+    "locator": "[arquivo interno omitido], captura 2026-10-11 13:14:25 UTC; IDs e querys exatas em consultas.csv.",
+    "status": "bloqueado",
+    "limitation": "O bloqueio impede dizer se há perfil/record ou genealogia; não se tentou contornar e não equivale a resultado negativo de pessoa."
+  },
+  {
+    "id": "ap-12",
+    "title": "Zaniratti Continentes — sitemap/feed e quatro páginas públicas",
+    "url": "https://zaniratticontinentes.blogspot.com/",
+    "fact": "Sitemap/feed enumeraram quatro posts de 2017; o post de José Augusto traz seção atribuída a Edmondo e declara atualização posterior pelo blog. Nenhuma página enumera Luigi, Pasqua, Custode, Reni, João Vitor ou apresenta GEDCOM público.",
+    "locator": "Arquivos integrais em [evidência local preservada; caminho interno omitido]; manifest com URL, data, tamanho e [hash local omitido]; robots.txt preservado.",
+    "status": "candidato",
+    "limitation": "Não demonstra que a biografia foi copiada de zaniratti.it nem parentesco com a linha alvo. A seção de Edmondo e texto posterior foram mantidos separados como fragmentos literais; o HTML original permanece intacto."
+  },
+  {
+    "id": "ap-13",
+    "title": "Consulta pública sobre GEDCOM em Zaniratti Continentes",
+    "url": "https://zaniratticontinentes.blogspot.com/",
+    "fact": "Nas quatro páginas inventariadas e feeds/sitemap públicos não foi encontrado link ou arquivo GEDCOM; resultado limitado ao acervo/blog enumerado.",
+    "locator": "Consulta de sitemap/feed/posts, manifest e consultas desta rodada.",
+    "status": "negativa",
+    "limitation": "Não prova que não exista GEDCOM em outro domínio, arquivo privado ou cópia não indexada."
+  },
+  {
+    "id": "apees-index",
+    "title": "APEES/Projeto Imigrantes: sobrenomes-alvo sem ocorrência no índice consultado",
+    "url": "https://imigrantes.es.gov.br/Imigra.aspx",
+    "fact": "Filtros públicos por sobrenome Z, ZA, ZAN, ZANI, ZANIR, ZANN, ZANER, ZANIRAT e variantes relacionadas não exibiram sobrenome alvo; ZANI mostrou seis opções não correspondentes.",
+    "locator": "Arquivo Público do Estado do Espírito Santo / Projeto Imigrantes",
+    "status": "negativa",
+    "limitation": "Negativa de consulta, não rejeição de pessoa nem prova de ausência fora da cobertura."
+  },
+  {
+    "id": "apees-book",
+    "title": "Livro-base APEES, busca local sem sobrenomes do alvo",
+    "url": "https://ape.es.gov.br/Media/ape/PDF/Livros/Imigrantes_Livro_21_05_14.pdf",
+    "fact": "Busca textual no livro de imigração não localizou os sobrenomes acima relacionados ao grupo; Custode apareceu em linha de outra pessoa.",
+    "locator": "Cilmar Franceschetto, Imigrantes Espírito Santo: base de dados da imigração estrangeira no ES, vol. 19, 2014, APEES",
+    "status": "negativa",
+    "limitation": "Busca no texto extraído/OCR; ocorrência de Custode não vinculada. Não exclui registros omitidos ou OCR falho."
+  },
+  {
+    "id": "apees-galliera",
+    "title": "Registro APEES: Luigi Galliera, selecionado por sobrenome",
+    "url": "https://imigrantes.es.gov.br/Imigra.aspx",
+    "fact": "Ficha de grupo público enumera Luigi sozinho, idade 23, navio Matteo Bruzzo, 1895 (HTML de detalhe).",
+    "locator": "Projeto Imigrantes ES",
+    "status": "candidato",
+    "limitation": "Não prova relação com Ernesta Galliera, esposa de Custode; não rejeita parentesco familiar amplo."
+  },
+  {
+    "id": "apees-mellare",
+    "title": "Registro APEES: Giovanni Mellarè, esposa e filha",
+    "url": "https://imigrantes.es.gov.br/Imigra.aspx",
+    "fact": "Busca prefixo MELLA lista MELLARÈ; detalhe público nomeia Giovanni, Teresa Maliani como cônjuge e Rosa como filha.",
+    "locator": "Projeto Imigrantes ES",
+    "status": "candidato",
+    "limitation": "A grafia e os nomes não provam identidade ou parentesco com Pasqua Mellara."
+  },
+  {
+    "id": "imigrantes-directory",
+    "title": "Diretório oficial de famílias cita zaniratti.it",
+    "url": "https://imigrantes.es.gov.br/html/familias/italia.html",
+    "fact": "Diretório declara destinar-se a links com história, genealogia e fotografias de famílias; lista ZANIRATTI ligado a www.zaniratti.it.",
+    "locator": "Projeto Imigrantes ES",
+    "status": "comprovado",
+    "limitation": "Confirma a listagem do site como recurso; não prova imigração ao ES nem cada relação genealógica do site."
+  },
+  {
+    "id": "varresai-list",
+    "title": "Inventário histórico de Varre-Sai lista Zaniratti e Gallo",
+    "url": "https://pt.scribd.com/document/852846693/Inventario-do-patrimonio-ambiental-e-urbano-do-nucleo-historico-de-Varre-Sai",
+    "fact": "“De acordo com um levantamento existente no Centro Cultural Sebastião Oliveira Vargas, a colônia italiana de Varre-Sai era formada pelas famílias:” e lista termina “Zaniratti e Zanganellie”; Gallo figura anteriormente.",
+    "locator": "Marcelo Salim de Martino, projeto Memória e Patrimônio/INEPAC-RJ, 2011, cópia Scribd",
+    "status": "candidato",
+    "limitation": "Lista de sobrenomes não individualiza nem prova elo entre Zaniratti e Gallo ou a linha Custode. Busca não encontrou cópia oficial direta."
+  },
+  {
+    "id": "cisei-luppi-control",
+    "title": "CISEI: passageiro Luppi no Attività, Santos 1895",
+    "url": "https://www.ciseionline.it/portomondo/Dettagli_Bra.asp?id=373210",
+    "fact": "Página: “Cognome: LUPPI”; “Nome: GIOVANNI”; “Età: 4”; “Data del viaggio (Sbarco a San Paolo): 19/01/1895”; “Nave: ATTIVITA”. Descrição identifica Registro da Hospedaria, 1887–1912.",
+    "locator": "CISEI, dados atribuídos ao Memorial do Imigrante de São Paulo",
+    "status": "rejeitado",
+    "limitation": "Indivíduo Luppi/Giovanni diverge; não atribuir viagem a Custode. Data é indicada como desembarque em São Paulo."
+  },
+  {
+    "id": "bn-g-zaniratti",
+    "title": "Jornal A Federação: passageiro “G. Zaniratti” em 1903",
+    "url": "https://hemeroteca-pdf.bn.gov.br/388653/per388653_1903_00245.pdf",
+    "fact": "“—Da Margem entrou vapor Porto Alegre— Passageiros: ... Octavio Pacheco, G. Zaniratti, Nicolau Klemann ...”; cabeçalho da edição: Porto Alegre, quarta-feira 21 de outubro de 1903.",
+    "locator": "A Federação, p. 3; OCR de snippet e confirmação visual no recorte do PDF",
+    "status": "candidato",
+    "limitation": "Inicial não identifica prenome. Não consta navio Attività, nem localidade/parentesco que o conecte a Custode. Não expandir G. para nome específico."
+  },
+  {
+    "id": "giovanni-zanirato",
+    "title": "Lista de terceiros: Giovanni Zanirato, linha datada 21/11/1888",
+    "url": "https://imigrantesdaeuropa.blogspot.com/2013/10/lista-24-de-imigrantes-que_6.html",
+    "fact": "Snippet: “GIOVANNI | ZANIRATO | 39 | 21/11/1888 | ITALIANA”; abertura direta retornou HTTP 429.",
+    "locator": "Blog Imigrantes da Europa; bloqueio 429",
+    "status": "rejeitado",
+    "limitation": "Orientação do coordenador: prenome Giovanni não corresponde; idade isolada é insuficiente. Preservar sem fusão e não como candidato Custode."
+  },
+  {
+    "id": "target-variant-searches",
+    "title": "Variantes de Valentim, Elisa, Reni e João sem registro nominal verificado",
+    "url": "https://www.google.com/search?q=%22Valentino+Zaniratti%22",
+    "fact": "Consultas exatas de variantes com Zaniratti/Zanirati/Zanirate/Zannirati e localidades/índices públicos não retornaram registro nominal verificável da família nesta rodada.",
+    "locator": "Lotes 10–13, 26–27 e 32",
+    "status": "negativa",
+    "limitation": "Negativa de consultas específicas, não rejeição das pessoas nem prova de inexistência; limitado ao conteúdo público acessível/indexado."
+  },
+  {
+    "id": "HDB-AFED-1895-277",
+    "title": "A Federação, anno XII, n.277, 26/11/1895, p.2",
+    "url": "https://hemeroteca-pdf.bn.gov.br/388653/per388653_1895_00277.pdf",
+    "fact": "“Guelfo Zanirati” (grafia visual no impresso, um t); a notícia diz que a fábrica de roupas brancas que ele acabara de fundar foi inaugurada “hontem”, na rua General Câmara. Edição datada de 26/11/1895, portanto “hontem” aponta 25/11/1895.",
+    "locator": "PDF oficial, página impressa 2; recorte ampliado gerado localmente da página 2; cabeçalho da página 1 para data/edição.",
+    "status": "candidato",
+    "limitation": "Pessoa de sobrenome parecido e notícia contemporânea, mas não é manifesto/lista de passageiros; nenhuma ligação com Custode ou com ramo do solicitante foi demonstrada. Serve somente como pista colateral de ocorrência do nome."
+  },
+  {
+    "id": "AN-1084737-PRJ5412",
+    "title": "Attività RV 63 — referência de lista PRJ.5412, 25/07/1895",
+    "url": "https://imigracao.duobox.com.br/pdf.php?id=1084737&id2=11877",
+    "fact": "Registro de índice: 25/07/1895, Attività (RV 63), Gênova, BR RJANRIO OL.0.RPV, PRJ.5412, anexo 11877. Nenhum nome individual consta nesse resultado do índice.",
+    "locator": "POST público a https://imigracao.duobox.com.br/index.php; redirecionador revela URL exata http://imagem.sian.an.gov.br/anexos/sian/arquivos/1084737_11877.pdf. Baixa exata HTTPS e HTTP resultou 404; Wayback não forneceu metadados úteis; Common Crawl teve falhas generalizadas; nenhum payload documental confirmado foi recuperado.",
+    "status": "candidato",
+    "limitation": "Ponteiro de manifesto a recuperar, não prova de viagem nem contém identificação nominal; o índice pode derivar do mesmo SIAN/blog previamente conhecido. Não se atribui a Custode."
+  },
+  {
+    "id": "AN-1085257-PRJ5491",
+    "title": "Attività RV 66 — referência de lista PRJ.5491, 06/11/1895",
+    "url": "https://imigracao.duobox.com.br/pdf.php?id=1085257&id2=11918",
+    "fact": "Registro de índice: 06/11/1895, Attività (RV 66), Gênova, BR RJANRIO OL.0.RPV, PRJ.5491, anexo 11918. Nenhum nome individual consta nesse resultado do índice.",
+    "locator": "POST público a https://imigracao.duobox.com.br/index.php; redirecionador revela URL exata http://imagem.sian.an.gov.br/anexos/sian/arquivos/1085257_11918.pdf. Baixa exata HTTPS e HTTP resultou 404; Wayback não forneceu metadados úteis; Common Crawl teve falhas generalizadas; nenhum payload documental confirmado foi recuperado.",
+    "status": "candidato",
+    "limitation": "Ponteiro de manifesto a recuperar, não prova de viagem nem contém identificação nominal; o índice pode derivar do mesmo SIAN/blog previamente conhecido. Não se atribui a Custode."
+  },
+  {
+    "id": "MI-GAETANO-1891",
+    "title": "Gaetano Zanirati, registro de matrícula 332753",
+    "url": "https://museudaimigracao.com.br/acervo/registro-de-matricula/detalhes?id=332753&livro=029&pagina=125&familia=02094",
+    "fact": "Registro atribui Gaetano Zanirati, 28 anos, chegada à Hospedaria de São Paulo em 28/09/1891 no SIRIO; esposa Emma, 27; filhos Giov. 5, Ernesta 3, Ignazio 2; mãe Anna 55.",
+    "locator": "Busca prévia nominal por Zanirati no portal Museu da Imigração; cotejada com ficha individual; CISEI também encontrou o mesmo Gaetano (possível dependência de base comum).",
+    "status": "rejeitado",
+    "limitation": "Nome diferente (Gaetano, não Custode/Sante) e navio SIRIO, além de composição familiar diversa; rejeitado como candidato ao indivíduo-alvo, sem inferir relação familiar."
+  },
+  {
+    "id": "APESP-ATT-5PDF",
+    "title": "Cinco listas APESP do vapor Attività, 1893–1897 (217 páginas)",
+    "url": "https://museudaimigracao.com.br/acervo/passageiros?navio=Attivit&periodo_ano=1891&periodo_ano2=1897",
+    "fact": "Varredura de OCR e leitura visual grosseira anterior nas cinco listas 1893-02-17 (39 p.), 1895-04-01 (42 p.), 1895-10-26 (87 p.), 1896-03-20 (38 p.) e 1897-03-08 (11 p.) não confirmou Custode nem família. Não é afirmação de ausência: OCR manuscrito fraco e alguns recortes anteriores cortavam nomes/colunas.",
+    "locator": "PDFs íntegros previamente baixados em [evidência local preservada; caminho interno omitido]; neste diretório foi preservada cópia do PDF de 87 p. de 1895-10-26. Catálogo fornece período, que não deve ser tratado como data de embarque/chegada.",
+    "status": "candidato",
+    "limitation": "Conjunto prioritário e potencialmente relevante, mas sem identificação nominal segura até agora. Necessária leitura página completa/foco visual onde OCR/crop falha; nenhuma atribuição individual."
+  },
+  {
+    "id": "CISEI-373210-LUPPI-GIOVANNI",
+    "title": "Scheda CISEI de Giovanni Luppi, id 373210",
+    "url": "https://www.ciseionline.it/portomondo/Dettagli_Bra.asp?id=373210",
+    "fact": "Cognome LUPPI; Nome GIOVANNI; Età 4; Data del viaggio (Sbarco a San Paolo) 19/01/1895; Nave ATTIVITA. Fonte declarada Memorial do Imigrante di San Paolo, Porto di Santos, 1888–1912. A página descreve a série como REGISTRO DA HOSPEDARIA DE IMIGRANTES, dados de chegadas à Hospedaria 1887–1912; Provenienza SANTOS; Porto nd; Data di partenza nd; seção de grupo familiar sem nomes.",
+    "locator": "Consulta HTTP direta à ficha; comparada com livro primário disponibilizado pelo Museu da Imigração/APESP (L046, página 165, família 46610). A ficha CISEI não é manifesto do navio.",
+    "status": "comprovado",
+    "limitation": "O registro primário do livro L046, p.165, confirma Giovanni 4 no grupo Luppi, a anotação de vapor Attività e entrada na Hospedaria em 19/01 (o portal associa esse livro/folha a 19/01/1895). Confirmação diz respeito ao indivíduo Luppi e à hospedaria; não a Custode nem a parentesco Zaniratti."
+  },
+  {
+    "id": "MI-REGISTRO-046-165-FAMILIA46610",
+    "title": "Matrícula dos Imigrantes entrados na Hospedaria — livro 046, página 165, família 46610",
+    "url": "https://museudaimigracao.com.br/acervo/registro-de-matricula/detalhes?id=559957&livro=046&pagina=165&familia=46610",
+    "fact": "A tela de detalhe traz Livro 046, Página 165, Família 46610, Giuseppe Luppi, chefe, 31, vapor ATTIVITA, chegada 19/01/1895; registros relacionados na mesma família: Luiza 32, Domenico 5, Giovanni 4. A folha digitalizada tem cabeçalho “Matricula dos Imigrantes entrados na Hospedaria da Capital de São Paulo”, página impressa 165; no bloco Luppi, nomes/idades Giuseppe 31, Luiza 32, Domenico 5, Giovanni 4. A coluna da página registra vapor manuscrito Attività e Entrada: Gen° 19.",
+    "locator": "Página de detalhe pública do acervo fornece livro/folha/família e link PDF exato; PDF de 1 página baixado publicamente e conferido visualmente. O campo é registro de entrada na hospedaria, não manifesto marítimo.",
+    "status": "comprovado",
+    "limitation": "Confirma que Giovanni Luppi, 4, foi matriculado no grupo Luppi em registro que anota Attività e entrada na Hospedaria em 19/01/1895. Esse fato não identifica Custode nem prova laço com Zaniratti; tampouco é lista de passageiros original do navio."
+  },
+  {
+    "id": "MI-CATALOGO-ATTIVITA-JAN1895",
+    "title": "Consulta ao catálogo público de listas de bordo APESP/Museu da Imigração para Attività em 1895",
+    "url": "https://museudaimigracao.com.br/acervo/passageiros?navio=Attivita&periodo_ano=1895&periodo_ano2=1895&dia=&mes=&ano=",
+    "fact": "Variantes públicas Attivita, Attività e Attivitá retornaram dois itens: Attivita, 01/04/1895, BR_APESP_MI_LP_000094.pdf e Attivita, 26/10/1895, BR_APESP_MI_LP_000165.pdf. Nenhum manifesto Attività de janeiro foi retornado nas consultas registradas. A consulta de data 19/01 sem filtro do vapor retornou navios Tagus (18/01), Maranhão (22/01), Bretagne/Charente/Espagne (26/01), Alacrita (31/01), além de registros de outubro.",
+    "locator": "GETs públicos do formulário do Museu da Imigração; parâmetros exatos, horários, respostas e hashes estão em [arquivo interno omitido]. As páginas HTML brutas estão preservadas localmente.",
+    "status": "rejeitado",
+    "limitation": "A pista de que há um novo manifesto de passageiros APESP do Attività em janeiro não foi confirmada pelo catálogo público consultado. Não equivale à ausência de registro de hospedaria: o PDF L046_165 é um registro primário de hospedaria de janeiro, outra série documental, e confirma a família Luppi."
+  },
+  {
+    "id": "ASFE-LEVA-FONDO-1839-1916",
+    "title": "Ufficio di leva per la provincia di Ferrara",
+    "url": "https://archiviodistatoferrara.cultura.gov.it/patrimonio/fondi-archivistici/u",
+    "fact": "O catálogo institucional descreve registros de listas de leva para as classes de nascimento de 1839–1916 e listas de extração de 1839–1890.",
+    "locator": "Archivio di Stato di Ferrara, página Patrimonio > Fondi archivistici > U; captura HTTP 200, resposta salva em [evidência local preservada; caminho interno omitido]; texto HTML confirma literalmente a série.",
+    "status": "comprovado",
+    "limitation": "Comprova a existência, cronologia e tipo da série de recrutamento. Não comprova presença de Custode nem parentesco."
+  },
+  {
+    "id": "ASFE-LEVA-91-BONDENO-1848",
+    "title": "Lista di leva, classe di nascita 1848, Bondeno, registro 91",
+    "url": "https://archiviodistatoferrara.cultura.gov.it/fileadmin/risorse/Strumenti_di_ricerca/Liste_di_leva_classi_di_nascita_1839-1899.pdf",
+    "fact": "O inventário PDF oficial lista o item 91 como Bondeno, classe 1848, sem nota de dano nessa linha.",
+    "locator": "Archivio di Stato di Ferrara, Strumenti di ricerca, PDF baixado integralmente, HTTP 200 e application/pdf. O texto extraído localmente mantém a linha item 91 / Bondeno / 1848. [hash local omitido].",
+    "status": "comprovado",
+    "limitation": "A cota e a combinação município/classe estão comprovadas. A identificação com Custode é apenas candidata porque o inventário não contém nomes; requer consulta do registro 91."
+  },
+  {
+    "id": "ASFE-ESTRAZIONE-361-1848",
+    "title": "Lista di estrazione, classe di nascita 1848, Ferrara e mandamentos incluindo Bondeno, registro 361",
+    "url": "https://archiviodistatoferrara.cultura.gov.it/fileadmin/risorse/Strumenti_di_ricerca/Liste_di_estrazione_classi_di_nascita_1839-1890.pdf",
+    "fact": "A linha 361 cobre Ferrara, Argenta, Bondeno, Copparo e Portomaggiore, classe 1848; o inventário anota “guasto orlo esterno”.",
+    "locator": "Archivio di Stato di Ferrara, Strumenti di ricerca, PDF baixado integralmente, HTTP 200 e application/pdf. O texto extraído localmente contém item 361, classe 1848 e nota de dano. [hash local omitido].",
+    "status": "comprovado",
+    "limitation": "Comprova a existência e cota do item, e registra dano físico no bordo externo. Não comprova que Custode figure nele; não inferir que o nome esteja ilegível sem consultar o original."
+  },
+  {
+    "id": "ASFE-ROTA-NASCIMENTOS-PRE-1866",
+    "title": "Ricerche per corrispondenza – Archivio di Stato di Ferrara",
+    "url": "https://archiviodistatoferrara.cultura.gov.it/servizi-per-il-pubblico/ricerche-per-corrispondenza",
+    "fact": "O arquivo informa que não conserva as cópias dos atos de estado civil, destruídas durante a Segunda Guerra Mundial, e que para nascidos antes de 1866 deve-se pedir a certidão ao Archivio storico dell’Arcidiocesi di Ferrara-Comacchio.",
+    "locator": "Página oficial baixada em HTTP 200, guardada em [evidência local preservada; caminho interno omitido]; consulta direta registrada em [evidência local preservada; caminho interno omitido] O texto também consta nos lotes de busca brutos.",
+    "status": "comprovado",
+    "limitation": "Define a rota institucional para eventos pré-1866 se as datas alegadas forem confirmadas; não demonstra existência nem conteúdo dos livros paroquiais exatos."
+  },
+  {
+    "id": "COMUNE-BONDENO-SERIE-STATO-CIVILE-1866-1960",
+    "title": "Archivio storico del Comune di Bondeno – descrição de fundos",
+    "url": "https://archivi.ibc.regione.emilia-romagna.it/ibc-cms/cms.item?flagview=viewItemCaster&itemRef=IT-ER-IBC-038003-001-001&munu_str=0_1_0&numDoc=8&typeItem=2",
+    "fact": "A descrição regional enumera no Archivio moderno “Stato civile - Anagrafe - Censimento (1800 - 1815; 1866-1960)” e aproximadamente 40 buste e registri.",
+    "locator": "Resultado da busca da plataforma Archivi ER/IBC; recuperado como resposta indexada, não como PDF inventarial. A tentativa HTTP direta ao PDF adicional de inventário deu 403 e foi separada como falha.",
+    "status": "comprovado",
+    "limitation": "Comprova uma série municipal que abrange cronologicamente o casamento civil alegado em 1880 e outros atos pós-1866. A cota interna do livro/ato 1880 não aparece na descrição sumária; buscar o original com Comune di Bondeno."
+  },
+  {
+    "id": "COMUNE-BONDENO-ACCESSO-ATTI",
+    "title": "Richiedere l’accesso agli atti – Comune di Bondeno",
+    "url": "https://www.comune.bondeno.fe.it/servizio/richiedere-l-accesso-agli-atti/",
+    "fact": "A página oficial informa que pedidos de extratos/certidões de estado civil e anagrafes vão ao Comune; o serviço de acesso documental requer interesse direto, concreto e atual, permite solicitação online, e prevê prazo de 30 dias, com custos de pesquisa/reprodução.",
+    "locator": "Página baixada HTTP 200 e preservada. Não foi feito pedido nem contato externo.",
+    "status": "comprovado",
+    "limitation": "Rota documentada para solicitar localização e inteiro teor do casamento em 02/06/1880, parte I, ato 37, e registros populacionais municipais. A elegibilidade dependerá do procedimento e do interesse demonstrado."
+  },
+  {
+    "id": "PARROCCHIE-STALLATA-SALVATONICA-SANBIAGIO",
+    "title": "SIUSA: fundos das paróquias Natività di Maria Vergine in Stellata; Sant’Antonio da Padova in Salvatonica; San Biagio in San Biagio",
+    "url": "https://siusa-archivi.cultura.gov.it/cgi-bin/siusa/pagina.pl?Chiave=21365&RicDimF=2&RicLin=en&RicProgetto=reg-emr&TipoPag=prodente",
+    "fact": "O SIUSA identifica como fundos os arquivos paroquiais de Stellata, Salvatonica e San Biagio e localiza a custódia nas respectivas paróquias. A entrada de Salvatonica relata destruição de registros paroquiais no século XVII, durante peste e guerra. Nenhuma descrição recuperada discrimina livro sacramental de 1848.",
+    "locator": "Resultados brutos de busca em [evidência local preservada; caminho interno omitido], [arquivo interno omitido], [arquivo interno omitido], [arquivo interno omitido] e [arquivo interno omitido]; Stellata SIUSA como produtora tem resposta indexada; acesso direto à URL inicialmente malformada devolveu HTTP 200 com “scheda non trovata” (siafe_stellata.html), portanto essa resposta não serve de confirmação do conteúdo. Consultas SIUSA diretas anteriores a páginas específicas retornaram 503, preservadas.",
+    "status": "comprovado",
+    "limitation": "Confirma existência dos fundos paroquiais como custodiados por essas instituições, mas não identifica volumes de batismo/matrimônio de 1848 nem confirma evento, pessoa ou filiação. A nota de perda em Salvatonica é específica ao século XVII e não prova ausência de livros do século XIX."
+  },
+  {
+    "id": "ZANIRATTI-VOLUME-VIII-FAMIGLIA86",
+    "title": "FontiI (página italiana do site Zaniratti.it) e página VolVIII8B.htm",
+    "url": "https://www.zaniratti.it/ITA/FontiI.htm; https://www.zaniratti.it/BRA/VolVIII8B.htm",
+    "fact": "FontiI diz: “A Bondeno abbiamo trovato quello della nostra famiglia (Volume VIII, famiglia 86).” Outra página preservada nomeia o documento como “Registro Da População De Burana (vila de Bondeno), Volume VIII, pág 86.”",
+    "locator": "FontiI no pacote anexado e site recuperado local; VolVIII8B.htm captura Wayback de 2008. Os dois usos de 86 não foram reconciliados: não inferir que página 86 = família 86. HTML aponta para imagens VolVIIIS0.jpg, VolVIIIS8.gif, VolVIIID0.gif e VolVIIID8.gif, sem imagem primária recuperada nesta pesquisa.",
+    "status": "comprovado",
+    "limitation": "Comprova que a página familiar cita Volume VIII, famiglia 86 e que outra página identifica Volume VIII, página 86. É referência bibliográfica secundária, não transcrição nem leitura direta do fólio. Custode/Ernesta e relações familiares continuam sem prova primária nesta rodada."
+  },
+  {
+    "id": "ASBO-RUOLI-FERRARA-1876-1937-GUIDA",
+    "title": "Ruoli matricolari Distretto Militare di Ferrara; rubricas nominais",
+    "url": "https://archiviodistatobologna.it/wp-content/uploads/2024/05/GUIDA-RICERCHE-ANAGRAFICHE-E-MILITARI.pdf",
+    "fact": "A guia do Archivio di Stato di Bologna especifica que todos os anos são classes de nascimento; há ruoli matricolari do Distrito Militar de Ferrara para 1876–1937, com rubricas nominais indispensáveis, primeiros anos especialmente lacunares; os ruoli indicam paternidade e maternidade.",
+    "locator": "PDF oficial baixado integralmente: HTTP 200, application/pdf, 706806 bytes, [hash local omitido]; texto extraído em [evidência local preservada; caminho interno omitido] Página oficial de correspondência arquivada em asbo_correspondence.html mostra discrepância de intervalo 1876–1939; guia oficial específica 1876–1937.",
+    "status": "comprovado",
+    "limitation": "A série e as rubricas são comprovadas como recurso arquivístico. Custode (classe relatada 1848) fica fora do intervalo listado para Ferrara; Dante 1882 e Carlo 1892 estão dentro, apenas como candidatos para busca nas rubricas. Uma eventual filiação de Dante/Carlo não prova automaticamente a mãe de Valentim."
+  },
+  {
+    "id": "ASBO-RUOLI-FERRARA-CANDIDATOS-DANTE-CARLO",
+    "title": "Aplicabilidade das classes militares e limites para a genealogia",
+    "url": "https://archiviodistatobologna.it/servizi/ricerche-per-corrispondenza/",
+    "fact": "A guia define “anni” como classes de nascimento; lista Ferrara de 1876 a 1937, com primeiras classes particularmente lacunares; a página de correspondência lista 1876–1939. Custode 1848 está fora das faixas publicadas.",
+    "locator": "Comparação direta da guia (PDF) com a página de ricerche per corrispondenza (HTML), ambas HTTP 200 e preservadas. A divergência entre 1937 e 1939 permanece sem reconciliação.",
+    "status": "comprovado",
+    "limitation": "Dante/Carlo são apenas candidatos para busca por nome nas rubricas da sua classe, não nomes localizados. A série não constitui rota aplicável ao nascimento 1848 de Custode. Não atribuir mãe de Valentim com base em irmão sem documento nominal que prove o elo."
+  },
+  {
+    "id": "ASBO-FERRARA-RUBRICHE-NOMINAIS-DIGITALIZACAO",
+    "title": "Pesquisa de índice nominal e imagens online de ruoli matricolari de Ferrara",
+    "url": "https://archiviodistatobologna.it/inventari/strumenti-digitalizzati/",
+    "fact": "A página de instrumentos digitalizados inclui “Distretto militare di Bologna – Ruoli matricolari (rubriche e registri)” e não inclui o Distrito Militar de Ferrara no texto do inventário digitalizado consultado. A guia oficial informa que Ferrara tem rubricas nominais, mas não foram localizadas imagens digitais ou índice nominal pesquisável dessa série.",
+    "locator": "Página oficial baixada HTTP 200, arquivo [evidência local preservada; caminho interno omitido]; lotes de busca web em [evidência local preservada; caminho interno omitido] e [arquivo interno omitido].",
+    "status": "não localizado (sem inferência de inexistência)",
+    "limitation": "A listagem verificada não apresenta o inventário digital do Distretto di Ferrara; a busca web por variantes não retornou nomes individualizados. Isso descreve limites das rotas online verificadas, não inexistência do índice físico ou dos registros."
+  },
+  {
+    "id": "DIOCESANO-FERRARA-COMACCHIO-ROTA-ACCESSO",
+    "title": "Archivio Storico Diocesano di Ferrara-Comacchio: consulta dos fundos paroquiais",
+    "url": "https://www.utadiocesiferrara.org/archivio-storico-diocesano-2/",
+    "fact": "O arquivo diocesano publica normas de acesso, formulário e regulamento; a consulta é presencial e exige formulário com fundo e motivo de pesquisa. As normas guardadas informam consulta gratuita e limite temporal do material disponível.",
+    "locator": "Página oficial e arquivos baixados em respostas íntegras: norme_di_accesso.response (PDF 7 p., PDF mágico válido); regolamento_archivio_storico_diocesano.response (PDF 12 p.); domanda_di_accesso_pdf.response (PDF 2 p.). Textos extraídos guardados. Não houve contato nem pedido enviado.",
+    "status": "comprovado",
+    "limitation": "Documenta a rota consultável para eventos pré-1866. O arquivo consultado não identifica o livro exato de batismos de Stellata de 1848 nem comprova que ele exista/esteja disponível."
+  },
+  {
+    "id": "SIUSA-STALLATA-PRODUTORA-FUNDO",
+    "title": "Parrocchia della Natività di Maria Vergine in Stellata di Bondeno",
+    "url": "https://siusa-archivi.cultura.gov.it/cgi-bin/siusa/pagina.pl?Chiave=196976&RicDimF=2&RicLin=en&RicProgetto=reg-emr&TipoPag=comparc",
+    "fact": "A ficha SIUSA do fundo da paróquia informa cronologia 1554–2001 e 119 unidades (114 registri, 2 buste, 3 fascicoli), custodiadas pela paróquia. A árvore contém os subfundos “Libri parrocchiali” (1554–2001, 62 unidades; 61 registri e 1 fascicolo, ordem cronológica e alfabética) e “Atti e certificati” (1626–1908, 3 unidades; 2 registri e 1 fascicolo). As faixas cobrem cronologicamente 1848, porém não identificam item/volume nem ano específico de batismo.",
+    "locator": "Fichas SIUSA de fundo e subfundos abertas diretamente em HTTP 200; HTMLs integrais e hashes em [evidência local preservada; caminho interno omitido], siusa_stellata_libri.html, siusa_stellata_atti_certificati.html; manifest em [evidência local preservada; caminho interno omitido] O resultado bruto das buscas e da abertura das páginas está preservado em [evidência local preservada; caminho interno omitido] e [arquivo interno omitido]; as URLs abertas via click estão documentadas nas capturas HTML.",
+    "status": "comprovado",
+    "limitation": "Comprova fundo/subfundos cronológicos e a custódia pela paróquia; 1848 cai no intervalo dos “Libri parrocchiali” e “Atti e certificati”. Não há discriminação de registros por sacramento/ano, fólio ou cota de item, nem confirmação de livro de batismos de 1848 ou batismo de Custode. O resultado melhora a rota, mas continua metadado arquivístico, não evidência genealógica nominal."
+  },
+  {
+    "id": "SIUSA-ANALISE-LIVROS-SACRAMENTAIS-1848",
+    "title": "Índices e imagens de livros paroquiais de 1848, Stellata/Salvatonica/San Biagio",
+    "url": "https://siusa-archivi.cultura.gov.it/",
+    "fact": "A ficha SIUSA de Stellata descreve subfundo amplo “Libri parrocchiali” (1554–2001, 62 unidades) e “Atti e certificati” (1626–1908, 3 unidades), que cobrem 1848 cronologicamente; não individualiza registro sacramental, ano/volume/cota de 1848. As fichas das demais paróquias também não trouxeram unidade específica de 1848; nenhum índice nominal ou imagem digital de batismo foi localizado.",
+    "locator": "Buscas específicas em italiano, respostas brutas preservadas; fichas de produtor de Stellata e San Biagio e custódia de Salvatonica identificadas. O endpoint direto malformado de Stellata respondeu 200 com ficha não encontrada; páginas SIUSA específicas previamente testadas retornaram 503. SIA.Fe/Curia retornou 503 na tentativa direta. A ficha completa de Stellata foi obtida diretamente e acrescentada em [evidência local preservada; caminho interno omitido], siusa_stellata_libri.html e siusa_stellata_atti_certificati.html.",
+    "status": "não localizado (sem inferência de inexistência)",
+    "limitation": "Nenhum catálogo consultável ou resposta de busca trouxe a cota do livro de 1848 nem um índice nominal. Não é evidência de inexistência do livro ou do batismo. As rotas restantes verificadas são consulta do fundo paroquial no SIUSA/SIA.Fe e acesso formal ao arquivo diocesano/paróquia, conforme normas públicas."
+  },
+  {
+    "id": "SIUSA-STALLATA-LIBRI-PARROCCHIALI-1554-2001",
+    "title": "Subfundo Libri parrocchiali — Parrocchia della Natività di Maria Vergine in Stellata",
+    "url": "https://siusa-archivi.cultura.gov.it/cgi-bin/siusa/pagina.pl?ApriNodo=0&Chiave=196978&ChiaveAlbero=196976&ChiaveRadice=196976&RicDimF=2&RicLin=en&RicProgetto=reg-emr&RicSez=fondi&RicTipoScheda=ca&RicVM=indice&TipoPag=comparc",
+    "fact": "O SIUSA descreve “Libri parrocchiali” como subfundo de 1554–2001, com 62 unidades (61 registri, 1 fascicolo), ordem cronológica e alfabética, custodiado pela Parrocchia della Natività di Maria Vergine in Stellata.",
+    "locator": "Ficha SIUSA aberta em HTTP 200 e arquivada integralmente; [hash local omitido]. URL e horário/status constam de [evidência local preservada; caminho interno omitido]",
+    "status": "comprovado",
+    "limitation": "Comprova que existe no catálogo subfundo de livros paroquiais e que 1848 está dentro da cronologia ampla. A descrição não discrimina volumes de batismo, ano 1848, cota individual nem imagem/índice. Custode não foi encontrado ou confirmado."
+  },
+  {
+    "id": "PESQUISA-NOMINAL-ZANIRATTI",
+    "title": "Achado sem título",
+    "url": null,
+    "fact": "Consultas web exatas e variantes Zaniratti, Zanirati, Zannirati, Zanirate; Custode/Custodio/Sante; Pasqua/Pasquina Mellara; Ernesta Galliera não retornaram registro civil nominal indexado ou imagem autenticada nesta rodada.",
+    "locator": null,
+    "status": "candidato",
+    "limitation": "A ausência de resultado indexado não rejeita pessoas/identidades; os resultados registram limite de busca na web. Nenhum índice nominal dessas cotas foi baixado."
+  },
+  {
+    "id": "ANTENATI-403",
+    "title": "Páginas de busca por localidade Bondeno, Burana e Ferrara",
+    "url": "https://antenati.cultura.gov.it/search-registry/?lang=it&localita=Bondeno (e variantes locais)",
+    "fact": null,
+    "locator": null,
+    "status": "status não informado",
+    "limitation": null
+  },
+  {
+    "id": "FAMILYSEARCH-403",
+    "title": "Busca do catálogo FamilySearch por Bondeno, Ferrara",
+    "url": null,
+    "fact": null,
+    "locator": null,
+    "status": "status não informado",
+    "limitation": null
+  },
+  {
+    "id": "IBC-PDF-403",
+    "title": "PDF de inventário do Archivio Storico Comunale di Bondeno localizado via Archivi ER",
+    "url": null,
+    "fact": null,
+    "locator": null,
+    "status": "status não informado",
+    "limitation": null
+  },
+  {
+    "id": "SIUSA-503",
+    "title": "Páginas individuais dos fundos paroquiais de Stellata, Salvatonica e San Biagio",
+    "url": null,
+    "fact": null,
+    "locator": null,
+    "status": "status não informado",
+    "limitation": null
+  },
+  {
+    "id": "VOLVIII-IMAGENS-404",
+    "title": "Quatro imagens vinculadas pelo HTML da página VolVIII8B.htm e consulta pública CDX à captura de VolVIIIS0.jpg",
+    "url": null,
+    "fact": null,
+    "locator": null,
+    "status": "status não informado",
+    "limitation": null
+  },
+  {
+    "id": "fs-rj-collection",
+    "title": "FamilySearch: coleção pública de Registro Civil do RJ, 1804–2013",
+    "url": "https://www.familysearch.org/pt/search/collection/1582573",
+    "fact": "Página informa registros civis de vários cartórios do estado, nascimento/casamento/óbito e 5.100.470 imagens disponíveis para navegação. Seletor de município exibe Petrópolis; a navegação selecionada falha no leitor atual, que exige JavaScript.",
+    "locator": "FamilySearch, coleção 1582573",
+    "status": "comprovado",
+    "limitation": "Confirma cobertura potencial para Petrópolis, não existência de ato para Reni/João. Porciúncula e Varre-Sai não aparecem no seletor visível. Pesquisa por nome não pôde ser executada: URL de resultados inacessível no web tool e GET público devolveu 403."
+  },
+  {
+    "id": "aperj-dgie-route",
+    "title": "APERJ oferece levantamento nominal do Controle de Registro de Estrangeiros (DGIE)",
+    "url": "https://www.aperj.rj.gov.br/form_req_dgie.php",
+    "fact": "Página descreve pesquisa de nomes pela equipe do APERJ no fundo DGIE (1910–1983), por solicitação formal; o processo requer cadastro e dados de identificação do requerente. Não submeti pedido.",
+    "locator": "Arquivo Público do Estado do Rio de Janeiro (APERJ)",
+    "status": "comprovado",
+    "limitation": "Não é índice público de resultados e não confirma registro de Custode. Solicitação exigiria envio externo de dados pessoais, fora do escopo de busca pública autônoma."
+  },
+  {
+    "id": "fs-ernesta-other",
+    "title": "FamilySearch: perfil Ernesta Zanirati (1888–1961), ramo diverso",
+    "url": "https://ancestors.familysearch.org/el/G45Y-D1G/ernesta-zanirati-1888-1961",
+    "fact": "Snippet público lista Gaetano Zanirati e Emma Berni como pais; Aristodemo Gusmatti como cônjuge e família Gusmatti. Perfil informa nascimento 1888 e morte 1961.",
+    "locator": "FamilySearch Ancestors; abertura individual exibe requisito JavaScript, snippet indexado preservado",
+    "status": "rejeitado",
+    "limitation": "A esposa de Custode tinha 21 anos em 1880 (nascimento aproximado 1859); perfil de 1888 é cronologicamente incompatível, além de pais/cônjuge diferentes. Rejeita essa fusão, não parentesco remoto possível."
+  },
+  {
+    "id": "ancestry-pasqua-other",
+    "title": "Ancestry: Pasqua Zanirato (1851–1893), outra família",
+    "url": "https://www.ancestry.com/genealogy/records/pasqua-zanirato-24-244bkx9",
+    "fact": "Snippet público informa nascimento em 1851 em Ceregnano; pais Giuseppe Zanirato e Teresa Gazzabin; cônjuge Giuseppe Luigi Apollonio Sega; morte 11/03/1893 em Gavello. A página direta retorna HTTP 403.",
+    "locator": "Ancestry search index; detalhe obtido por snippet público; acesso direto negado",
+    "status": "rejeitado",
+    "limitation": "Nascimento em 1851 ocorre depois do nascimento informado de Custode em 1848; pais, cônjuge e locais diferentes. Não é a mãe de Custode, sem inferir vínculo familiar amplo."
+  },
+  {
+    "id": "fs-joao-gallo-homonym",
+    "title": "FamilySearch: João de Oliveira Gallo (Alagoinhas / Maruim), homônimo",
+    "url": "https://ancestors.familysearch.org/pt/GNFZ-5SP/jo%C3%A3o-de-oliveira-gallo-1965",
+    "fact": "Snippet informa pais Manoel Alexandre Galo e Maria de Oliveira Chaves; nascimento em Alagoinhas-BA e morte em Maruim-SE em 1965. Abertura do perfil é substituída por mensagem de JavaScript necessário.",
+    "locator": "FamilySearch Ancestors",
+    "status": "rejeitado",
+    "limitation": "Local e data de morte divergem do João alvo (Varre-Sai/Petrópolis; 1938–2017). Não importar como antepassado."
+  },
+  {
+    "id": "fs-joao-zanirato",
+    "title": "FamilySearch: João Zanirato (1914–1986), ramo São Paulo não associado",
+    "url": "https://ancestors.familysearch.org/en/LC7W-9NV/jo%C3%A3o-zanirato-1914-1986",
+    "fact": "Perfil aberto informa nascimento em Amparo-SP, pais Giacomo Giuseppe Zanirato e Albina Maria De Grandis, casamento em Olímpia-SP, morte em Santo André-SP, sepultamento Nossa Senhora do Carmo.",
+    "locator": "FamilySearch Ancestors",
+    "status": "candidato",
+    "limitation": "Nome distinto e origem familiar paulista; sem ligação com Custode ou com a família de Reni/João. Não fundir."
+  },
+  {
+    "id": "bravagente-revalidation",
+    "title": "Revalidação do diretório Brava Gente sobre o site antigo de Edmondo",
+    "url": "https://bravagente.wordpress.com/2009/05/25/%E2%80%A2-genealogias-familiares/",
+    "fact": "A lista de genealogias familiares descreve descendência de ramos especialmente de Luigi Zaniratti + Pasqua Mellara e outro ramo Luigi Zaniratti + Luigia Medini; atribui o site zaniratti.it a Edmondo Zaniratti.",
+    "locator": "Blog Brava Gente, 2009; retorno revalidado em buscas atuais",
+    "status": "comprovado",
+    "limitation": "É revalidação de fonte já conhecida no acervo anterior, não achado novo nem cópia integral da árvore."
+  },
+  {
+    "id": "old-site-maria-lourdes-alias",
+    "title": "Busca de alias histórico Maria de Lourdes/Maria Lourdes sem cópia atribuível encontrada",
+    "url": "https://www.google.com/search?q=%22Maria+de+Lourdes%22+%22Valentim+Zaniratti%22",
+    "fact": "Foram submetidos termos do alias antigo combinados com Valentim Zaniratti e Elisa Bernardino/Bernardini, e consultas ao site antigo; os retornos disponíveis são ruído documental/nomes homônimos, sem cópia da árvore que atribua o alias à Reni.",
+    "locator": "Lotes web_search_24, 29, 30; resposta agregada",
+    "status": "negativa",
+    "limitation": "O nome antigo não foi usado como identidade nova nem associado a Lourdes Esposito. A resposta agrupada não permite afirmar inexistência de cópias não indexadas."
+  },
+  {
+    "id": "fs-exact-nominal-queries",
+    "title": "Buscas exatas indexadas no FamilySearch sem perfil público do núcleo consultado",
+    "url": "https://ancestors.familysearch.org/",
+    "fact": "Seis consultas separadas ao índice público de perfis Ancestors retornaram “Empty search results”.",
+    "locator": "Consultas web exatas com domínio ancestors.familysearch.org",
+    "status": "negativa",
+    "limitation": "Negativa limitada ao índice de perfis Ancestors e às grafias consultadas; não é busca concluída na coleção de registros civis, cujo formulário retornou 403/JS inacessível."
+  },
+  {
+    "id": "myheritage-session-limit",
+    "title": "MyHeritage site Galo-Esteves: busca web bloqueada por robots",
+    "url": "https://www.myheritage.com.br/family-sites/galo-esteves/OYYV6CU54AHK6FKUA6OYSD3S7P4YRPQ",
+    "fact": "A busca de referências indexadas ao site exato retornou mensagem “Blocked by robots.txt”; o teste de sessão local não encontrou navegador conectado/logado.",
+    "locator": "MyHeritage web search bloqueado pelo mecanismo; verificação local CDP",
+    "status": "bloqueado",
+    "limitation": "Sem contornar robots, CAPTCHA ou login. Nenhum perfil interno ou conta logada foi acessado; navegador Chrome está instalado, mas não há listener CDP nas portas testadas."
+  },
+  {
+    "id": "aperj-and-local-records-no-names",
+    "title": "Índices locais/arquivos brasileiros: rotas encontradas, sem índice nominal aberto na busca executada",
+    "url": "https://porciuncula.rj.gov.br/noticias/historia-do-municipio-agora-tem-espaco-exclusivo",
+    "fact": "Prefeitura de Porciúncula informa a existência de Centro de Memória/Arquivo Histórico Municipal; consulta exata não expôs catálogo de nomes. Pesquisas públicas de obituários/sepultamentos/certidões não localizaram registro nominal verificável. A página do cemitério de Petrópolis não abriu (502); a página municipal de Porciúncula retornou 403.",
+    "locator": "Prefeitura de Porciúncula; município de Petrópolis; buscas web regionais",
+    "status": "negativa",
+    "limitation": "Não confundir falta de índice online com falta de registros no arquivo ou cartório. Arquivo Histórico municipal não foi contatado; nenhum serviço de busca foi submetido."
+  },
+  {
+    "id": "galliera_revisao",
+    "title": "Quatro fichas Galliera conferidas",
+    "url": "https://museudaimigracao.com.br/acervo/registro-de-matricula?nome=&sobrenome=Galliera&nacionalidade=&chegada=&vapor=",
+    "fact": "[{\"http_status\": 200, \"url\": \"https://museudaimigracao.com.br/acervo/registro-de-matricula/detalhes?id=848711&livro=063&pagina=187&familia=21350\", \"campos_ficha\": {\"livro\": \"063\", \"familia\": \"21350\", \"chegada\": \"24/12/1898\", \"sobrenome\": \"GALLIERA\", \"nome\": \"CARLO\", \"idade\": \"55\", \"vapor\": \"FRANCE\", \"porto_emb\": \"\", \"ferrovia\": \"\", \"dt_nasc\": \"\", \"dt_part\": \"\", \"filiacao\": \"\", \"introductor\": \"\", \"condicao\": \"\", \"lugar_nasc\": \"\"}, \"arquivo\": \"recheck/galliera_detail_1.html\", \"[hash local omitido]\": \"[hash local omitido]\"}, {\"http_status\": 200, \"url\": \"https://museudaimigracao.com.br/acervo/registro-de-matricula/detalhes?id=1121578&livro=084&pagina=042&familia=38090\", \"campos_ficha\": {\"livro\": \"084\", \"familia\": \"38090\", \"chegada\": \"05/10/1911\", \"sobrenome\": \"GALLIERA\", \"nome\": \"EMMA\", \"idade\": \"25\", \"vapor\": \"\", \"porto_emb\": \"\", \"ferrovia\": \"CENTRAL\", \"dt_nasc\": \"\", \"dt_part\": \"\", \"filiacao\": \"\", \"introductor\": \"\", \"condicao\": \"\", \"lugar_nasc\": \"\"}, \"arquivo\": \"recheck/galliera_detail_2.html\", \"[hash local omitido]\": \"[hash local omitido]\"}, {\"http_status\": 200, \"url\": \"https://museudaimigracao.com.br/acervo/registro-de-matricula/detalhes?id=416776&livro=034&pagina=156&familia=01520\", \"campos_ficha\": {\"livro\": \"034\", \"familia\": \"01520\", \"chegada\": \"05/08/1892\", \"sobrenome\": \"GALLIERA\", \"nome\": \"GIOV.\", \"idade\": \"32\", \"vapor\": \"LAS PALMAS\", \"porto_emb\": \"\", \"ferrovia\": \"\", \"dt_nasc\": \"\", \"dt_part\": \"\", \"filiacao\": \"\", \"introductor\": \"\", \"condicao\": \"\", \"lugar_nasc\": \"\"}, \"arquivo\": \"recheck/galliera_detail_3.html\", \"[hash local omitido]\": \"[hash local omitido]\"}, {\"http_status\": 200, \"url\": \"https://museudaimigracao.com.br/acervo/registro-de-matricula/detalhes?id=1302933&livro=097&pagina=294&familia=76280\", \"campos_ficha\": {\"livro\": \"097\", \"familia\": \"76280\", \"chegada\": \"30/03/1925\", \"sobrenome\": \"GALLIERA\", \"nome\": \"PIETRO\", \"idade\": \"50\", \"vapor\": \"PRINCIPE DI UDINE\", \"porto_emb\": \"\", \"ferrovia\": \"\", \"dt_nasc\": \"\", \"dt_part\": \"\", \"filiacao\": \"\", \"introductor\": \"\", \"condicao\": \"\", \"lugar_nasc\": \"\"}, \"arquivo\": \"recheck/galliera_detail_4.html\", \"[hash local omitido]\": \"[hash local omitido]\"}]",
+    "locator": null,
+    "status": "contexto_colateral_sem_associacao",
+    "limitation": "Carlo (55, 24/12/1898, France), Emma (25, 05/10/1911, trem Central), Giov. (32, 05/08/1892, Las Palmas), Pietro (50, 30/03/1925, Principe di Udine). Nenhum é Ernesta/Ernesto, não há chegada em 1895 nem vínculo demonstrado."
+  },
+  {
+    "id": "prefix_zanir",
+    "title": "Busca de sobrenome com termo Zanir",
+    "url": "https://museudaimigracao.com.br/acervo/registro-de-matricula?nome=&sobrenome=Zanir&nacionalidade=&chegada=&vapor=",
+    "fact": null,
+    "locator": null,
+    "status": "pista_ortográfica_sem_associacao",
+    "limitation": "Resultados do índice são homônimos ou grafias parecidas sem identificadores que sustentem fusão. A busca Zanir mostra 20 de 21 linhas, possivelmente paginada."
+  },
+  {
+    "id": "prefix_zannir",
+    "title": "Busca de sobrenome com termo Zannir",
+    "url": "https://museudaimigracao.com.br/acervo/registro-de-matricula?nome=&sobrenome=Zannir&nacionalidade=&chegada=&vapor=",
+    "fact": null,
+    "locator": null,
+    "status": "pista_ortográfica_sem_associacao",
+    "limitation": "Resultados do índice são homônimos ou grafias parecidas sem identificadores que sustentem fusão. A busca Zanir mostra 20 de 21 linhas, possivelmente paginada."
+  },
+  {
+    "id": "prefix_zaner",
+    "title": "Busca de sobrenome com termo Zaner",
+    "url": "https://museudaimigracao.com.br/acervo/registro-de-matricula?nome=&sobrenome=Zaner&nacionalidade=&chegada=&vapor=",
+    "fact": null,
+    "locator": null,
+    "status": "pista_ortográfica_sem_associacao",
+    "limitation": "Resultados do índice são homônimos ou grafias parecidas sem identificadores que sustentem fusão. A busca Zanir mostra 20 de 21 linhas, possivelmente paginada."
+  },
+  {
+    "id": "prefix_zanirate",
+    "title": "Busca de sobrenome com termo Zanirate",
+    "url": "https://museudaimigracao.com.br/acervo/registro-de-matricula?nome=&sobrenome=Zanirate&nacionalidade=&chegada=&vapor=",
+    "fact": null,
+    "locator": null,
+    "status": "pista_ortográfica_sem_associacao",
+    "limitation": "Resultados do índice são homônimos ou grafias parecidas sem identificadores que sustentem fusão. A busca Zanir mostra 20 de 21 linhas, possivelmente paginada."
+  },
+  {
+    "id": "autocomplete_zanir",
+    "title": "Autocomplete público de sobrenome",
+    "url": "https://museudaimigracao.com.br/es/autocomplete/sobrenome?term=Zanir",
+    "fact": "{\"headers\": {}, \"original\": [], \"exception\": null}",
+    "locator": null,
+    "status": "autocomplete_sem_sugestao",
+    "limitation": "O autocomplete listado no HTML retorna original vazio; a busca normal aceita entrada manual e acha resultados, portanto não é índice negativo."
+  },
+  {
+    "id": "autocomplete_zannir",
+    "title": "Autocomplete público de sobrenome",
+    "url": "https://museudaimigracao.com.br/es/autocomplete/sobrenome?term=Zannir",
+    "fact": "{\"headers\": {}, \"original\": [], \"exception\": null}",
+    "locator": null,
+    "status": "autocomplete_sem_sugestao",
+    "limitation": "O autocomplete listado no HTML retorna original vazio; a busca normal aceita entrada manual e acha resultados, portanto não é índice negativo."
+  },
+  {
+    "id": "autocomplete_zaner",
+    "title": "Autocomplete público de sobrenome",
+    "url": "https://museudaimigracao.com.br/es/autocomplete/sobrenome?term=Zaner",
+    "fact": "{\"headers\": {}, \"original\": [], \"exception\": null}",
+    "locator": null,
+    "status": "autocomplete_sem_sugestao",
+    "limitation": "O autocomplete listado no HTML retorna original vazio; a busca normal aceita entrada manual e acha resultados, portanto não é índice negativo."
+  },
+  {
+    "id": "autocomplete_zanirate",
+    "title": "Autocomplete público de sobrenome",
+    "url": "https://museudaimigracao.com.br/es/autocomplete/sobrenome?term=Zanirate",
+    "fact": "{\"headers\": {}, \"original\": [], \"exception\": null}",
+    "locator": null,
+    "status": "autocomplete_sem_sugestao",
+    "limitation": "O autocomplete listado no HTML retorna original vazio; a busca normal aceita entrada manual e acha resultados, portanto não é índice negativo."
+  },
+  {
+    "id": "given_custode_1895",
+    "title": "Nome isolado com filtro de chegada 1895",
+    "url": "https://museudaimigracao.com.br/acervo/registro-de-matricula?nome=Custode&sobrenome=&nacionalidade=&chegada=1895&vapor=",
+    "fact": null,
+    "locator": null,
+    "status": "consulta_ampla_com_limite_de_paginacao",
+    "limitation": "Custode retorna zero; Custodio e Sante devolvem ocorrências numerosas; a consulta Sante mostra somente 20 de 247 e não foi integralmente triada. Data de chegada à Hospedaria não equivale a embarque."
+  },
+  {
+    "id": "given_custodio_1895",
+    "title": "Nome isolado com filtro de chegada 1895",
+    "url": "https://museudaimigracao.com.br/acervo/registro-de-matricula?nome=Custodio&sobrenome=&nacionalidade=&chegada=1895&vapor=",
+    "fact": null,
+    "locator": null,
+    "status": "consulta_ampla_com_limite_de_paginacao",
+    "limitation": "Custode retorna zero; Custodio e Sante devolvem ocorrências numerosas; a consulta Sante mostra somente 20 de 247 e não foi integralmente triada. Data de chegada à Hospedaria não equivale a embarque."
+  },
+  {
+    "id": "given_sante_1895",
+    "title": "Nome isolado com filtro de chegada 1895",
+    "url": "https://museudaimigracao.com.br/acervo/registro-de-matricula?nome=Sante&sobrenome=&nacionalidade=&chegada=1895&vapor=",
+    "fact": null,
+    "locator": null,
+    "status": "consulta_ampla_com_limite_de_paginacao",
+    "limitation": "Custode retorna zero; Custodio e Sante devolvem ocorrências numerosas; a consulta Sante mostra somente 20 de 247 e não foi integralmente triada. Data de chegada à Hospedaria não equivale a embarque."
+  },
+  {
+    "id": "zanir_1895",
+    "title": "Busca com filtro de chegada em 1895",
+    "url": "https://museudaimigracao.com.br/acervo/registro-de-matricula?nome=&sobrenome=Zanir&nacionalidade=&chegada=1895&vapor=",
+    "fact": null,
+    "locator": null,
+    "status": "consulta_contextual",
+    "limitation": "Consulta delimitada à data de chegada registrada na Hospedaria."
+  },
+  {
+    "id": "sante_zanir_1895",
+    "title": "Busca com filtro de chegada em 1895",
+    "url": "https://museudaimigracao.com.br/acervo/registro-de-matricula?nome=Sante&sobrenome=Zanir&nacionalidade=&chegada=1895&vapor=",
+    "fact": null,
+    "locator": null,
+    "status": "consulta_contextual",
+    "limitation": "Consulta delimitada à data de chegada registrada na Hospedaria."
+  },
+  {
+    "id": "sante_zanirato_00108",
+    "title": "Sante Zanirato e família 00108 — ocorrência homônima sem associação à linha",
+    "url": "https://museudaimigracao.com.br/acervo/registro-de-matricula?nome=&sobrenome=Zanir&nacionalidade=&chegada=&vapor=",
+    "fact": "{\"indexado\": {\"nome\": \"SANTE\", \"sobrenome\": \"ZANIRATO\", \"idade\": \"40\", \"chegada\": \"27/05/1891\", \"nacionalidade\": \"ITALIANA\", \"parentesco\": \"MARIDO\", \"navio\": \"MANILLA\", \"família\": \"00108\", \"livro\": \"026\", \"página\": \"009\"}, \"grupo_familiar\": [{\"nome\": \"Sante\", \"sobrenome\": \"Zanirato (leitura manuscrita aproximada)\", \"idade\": 40, \"parentesco\": \"marido\", \"nacionalidade\": \"italiana\"}, {\"nome\": \"Chiara\", \"sobrenome\": \"não repetido\", \"idade\": 38, \"parentesco\": \"esposa\", \"nacionalidade\": \"italiana\"}, {\"nome\": \"Romolo\", \"sobrenome\": \"não repetido\", \"idade\": 12, \"parentesco\": \"filho\", \"nacionalidade\": \"italiana\"}, {\"nome\": \"Luigi\", \"sobrenome\": \"não repetido\", \"idade\": 9, \"parentesco\": \"filho\", \"nacionalidade\": \"italiana\"}, {\"nome\": \"Carlo\", \"sobrenome\": \"não repetido\", \"idade\": 3, \"parentesco\": \"filho\", \"nacionalidade\": \"italiana\"}], \"transcrição_visual_folha\": \"Página impressa 9; sobrenome manuscrito aparenta Zanirato; Sante 40, Chiara 38, Romolo 12, Luigi 9 e Carlo 3; navio Manilla; chegada anotada Maio 27. Campo de procedência/naturalidade sem preenchimento aparente para o grupo.\", \"detalhe\": \"https://museudaimigracao.com.br/acervo/registro-de-matricula/detalhes?id=288319&livro=026&pagina=009&familia=00108\", \"pdf\": \"https://museudaimigracao.com.br/uploads/portal/acervo/livros/pdfs/L026_009.pdf\"}",
+    "locator": null,
+    "status": "homonimo_nao_associado_a_linha",
+    "limitation": "O HTML e a folha mostram uma família com esposa Chiara e filhos pequenos, incompatível com a configuração familiar documentada para Custode/Ernesta; também difere o relato de navio/data Attività/1895. A ficha não identifica Custode ou seus pais, portanto nada foi importado. A classificação se limita à identidade-alvo e não exclui parentesco remoto."
+  },
+  {
+    "id": "g_battista_zannirato",
+    "title": "G. Battista Zannirato, chegada 1895 — contexto não associado",
+    "url": "https://museudaimigracao.com.br/acervo/registro-de-matricula?nome=&sobrenome=Zannir&nacionalidade=&chegada=&vapor=",
+    "fact": "{\"nome\": \"G. BATTISTA\", \"sobrenome\": \"ZANNIRATO\", \"idade\": \"51\", \"chegada\": \"07/01/1895\", \"vapor\": \"ENTELLA\", \"porto_emb\": \"\", \"ferrovia\": \"\", \"parentesco\": \"\", \"nacionalidade\": \"\", \"livro\": \"046\", \"familia\": \"36880\"}",
+    "locator": null,
+    "status": "ocorrencia_nominal_nao_associada",
+    "limitation": "Prenome abreviado e nenhum identificador familiar convergente; sem fusão com Custode."
+  },
+  {
+    "id": "museu_giuseppe_luppi_positive_control",
+    "title": "Consulta positiva de Giuseppe Luppi",
+    "url": "https://museudaimigracao.com.br/acervo/registro-de-matricula?nome=Giuseppe&sobrenome=Luppi&nacionalidade=&chegada=&vapor=",
+    "fact": "{\"Nome\": \"GIUSEPPE\", \"Sobrenome\": \"LUPPI\", \"Nacionalidade\": \"ITALIANO\", \"Idade\": \"31\", \"Chegada\": \"19/01/1895\", \"Parentesco\": \"CH\", \"Família\": \"46610\", \"Livro\": \"046\", \"registro_pdf_url\": \"https://museudaimigracao.com.br/uploads/portal/acervo/livros/pdfs/L046_165.pdf\", \"detalhe_params_literal\": \"'559957','046', '165','46610'\"}",
+    "locator": "Consulta GET comum do formulário HTML público; controle comparativo com ficha anteriormente identificada.",
+    "status": "revalidado_como_controle",
+    "limitation": "A resposta atual contém registros e a contagem 8, demonstrando que resultados são devolvidos na própria resposta."
+  },
+  {
+    "id": "museu_gaetano_zanirati_positive_control",
+    "title": "Registro nominal Gaetano Zanirati no Museu da Imigração",
+    "url": "https://museudaimigracao.com.br/acervo/registro-de-matricula?nome=Gaetano&sobrenome=Zanirati&nacionalidade=&chegada=&vapor=",
+    "fact": "{\"Nome\": \"GAETANO\", \"Sobrenome\": \"ZANIRATI\", \"Nacionalidade\": \"ITALIANA\", \"Idade\": \"28\", \"Chegada\": \"28/09/1891\", \"Parentesco\": \"MARIDO\", \"Família\": \"02094\", \"Livro\": \"029\", \"registro_pdf_url\": \"https://museudaimigracao.com.br/uploads/portal/acervo/livros/pdfs/L029_125.pdf\", \"detalhe_params_literal\": \"'332753','029', '125','02094'\"}",
+    "locator": "Consulta GET comum do formulário HTML público; ver resposta bruta e metadados referenciados.",
+    "status": "comprovado_como_resultado_da_base",
+    "limitation": "A resposta HTTP 200 inclui contagem 1 e os campos do registro. A identidade familiar com a linha investigada não foi demonstrada."
+  },
+  {
+    "id": "surname_zaniratti",
+    "title": "Ampliação por sobrenome no índice público do Museu",
+    "url": "https://museudaimigracao.com.br/acervo/registro-de-matricula?nome=&sobrenome=Zaniratti&nacionalidade=&chegada=&vapor=",
+    "fact": "Cabeçalho: 0 Registro(os) Encontrado(os); controles Ver Mais: 0.",
+    "locator": "GET comum conforme formulário HTML público; resultado no HTML de resposta.",
+    "status": "resultado_de_consulta",
+    "limitation": "Sobrenome consultado isoladamente para contextualizar o comportamento do índice; qualquer homônimo permanece não associado sem convergência identificadora."
+  },
+  {
+    "id": "surname_zanirati",
+    "title": "Ampliação por sobrenome no índice público do Museu",
+    "url": "https://museudaimigracao.com.br/acervo/registro-de-matricula?nome=&sobrenome=Zanirati&nacionalidade=&chegada=&vapor=",
+    "fact": "Cabeçalho: 1 Registro(os) Encontrado(os); controles Ver Mais: 1.",
+    "locator": "GET comum conforme formulário HTML público; resultado no HTML de resposta.",
+    "status": "resultado_de_consulta",
+    "limitation": "Sobrenome consultado isoladamente para contextualizar o comportamento do índice; qualquer homônimo permanece não associado sem convergência identificadora."
+  },
+  {
+    "id": "surname_galliera",
+    "title": "Ampliação por sobrenome no índice público do Museu",
+    "url": "https://museudaimigracao.com.br/acervo/registro-de-matricula?nome=&sobrenome=Galliera&nacionalidade=&chegada=&vapor=",
+    "fact": "Cabeçalho: 4 Registro(os) Encontrado(os); controles Ver Mais: 4.",
+    "locator": "GET comum conforme formulário HTML público; resultado no HTML de resposta.",
+    "status": "resultado_de_consulta",
+    "limitation": "Sobrenome consultado isoladamente para contextualizar o comportamento do índice; qualquer homônimo permanece não associado sem convergência identificadora."
+  },
+  {
+    "id": "surname_mellara",
+    "title": "Ampliação por sobrenome no índice público do Museu",
+    "url": "https://museudaimigracao.com.br/acervo/registro-de-matricula?nome=&sobrenome=Mellara&nacionalidade=&chegada=&vapor=",
+    "fact": "Cabeçalho: 0 Registro(os) Encontrado(os); controles Ver Mais: 0.",
+    "locator": "GET comum conforme formulário HTML público; resultado no HTML de resposta.",
+    "status": "resultado_de_consulta",
+    "limitation": "Sobrenome consultado isoladamente para contextualizar o comportamento do índice; qualquer homônimo permanece não associado sem convergência identificadora."
+  },
+  {
+    "id": "custode_zaniratti_control",
+    "title": "Consulta nominal sem resultados na interface pública do Museu",
+    "url": "https://museudaimigracao.com.br/acervo/registro-de-matricula?nome=Custode&sobrenome=Zaniratti&nacionalidade=&chegada=&vapor=",
+    "fact": "Cabeçalho da página: 0 Registro(os) Encontrado(os); controles Ver Mais: 0.",
+    "locator": "Consulta GET comum do formulário HTML público, resposta integral preservada.",
+    "status": "negativa_limitada_a_consulta",
+    "limitation": "Controle positivo contemporâneo demonstra que a rota devolve resultados no HTML; o zero é efetivo para estes parâmetros e para o índice consultado, mas não prova ausência de registros familiares nem cobertura de variantes não testadas."
+  },
+  {
+    "id": "custode_zanirati_control",
+    "title": "Consulta nominal sem resultados na interface pública do Museu",
+    "url": "https://museudaimigracao.com.br/acervo/registro-de-matricula?nome=Custode&sobrenome=Zanirati&nacionalidade=&chegada=&vapor=",
+    "fact": "Cabeçalho da página: 0 Registro(os) Encontrado(os); controles Ver Mais: 0.",
+    "locator": "Consulta GET comum do formulário HTML público, resposta integral preservada.",
+    "status": "negativa_limitada_a_consulta",
+    "limitation": "Controle positivo contemporâneo demonstra que a rota devolve resultados no HTML; o zero é efetivo para estes parâmetros e para o índice consultado, mas não prova ausência de registros familiares nem cobertura de variantes não testadas."
+  },
+  {
+    "id": "APESP-BR_APESP_MI_LP_000165-p45",
+    "title": "Capa de relação de emigrantes / vapor Attività",
+    "url": "https://museudaimigracao.com.br/uploads/portal/acervo/listas/BR_APESP_MI_LP_000165.pdf",
+    "fact": "Capa: “Relação dos Emigrantes que partem hoje a bordo do Vapor ATTIVITÀ ... com destino a SANTOS”; contrato de 21 de agosto de 1894; Genova, aos 5 de Outubro de 1895.",
+    "locator": "PDF público Museu da Imigração/APESP; catalogado como 1895-10-26; 87 páginas; [hash local omitido] conhecido na recuperação anterior: [hash local omitido]; leitura nesta rodada da folha 45 integral, renderizada a 120 dpi.",
+    "status": "evidência contextual de manifesto / candidato a delimitar lote; não registro nominal",
+    "limitation": "Data de 05/10/1895 está na capa; 21/08/1894 se refere ao contrato. Não confirma Custode ou qualquer passageiro. As demais páginas só foram triadas em pranchas de contato nesta rodada, sem concluir ausência nominal."
+  },
+  {
+    "id": "APESP-BR_APESP_MI_LP_000094-p2,p14,p18",
+    "title": "Capas e certificado inseridos em lista do vapor Attività",
+    "url": "https://museudaimigracao.com.br/uploads/portal/acervo/listas/BR_APESP_MI_LP_000094.pdf",
+    "fact": "p2 e p18: capa Attività destino Santos, Genova, 3 Março 1895. p14: “Attesto que a 1º de Abril corrente, vieram pelo vapor Attività ...”; fecho “São Paulo, 10 de Abril de 1895.”",
+    "locator": "PDF público Museu da Imigração/APESP; catálogo 1895-04-01; 42 páginas; [hash local omitido] conhecido na recuperação anterior: [hash local omitido]; p2, p14, p18 abertas integralmente em 120 dpi nesta rodada.",
+    "status": "evidência contextual de saída/chegada e certificação; sem passageiro associado",
+    "limitation": "As datas são cronologicamente compatíveis: saída indicada em Genova 03/03/1895, emigrantes vieram pelo Attività em 01/04/1895 e certificação em São Paulo 10/04/1895. A certidão não individualiza quais passageiros são listados em cada fólio. Nenhum nome da família alvo foi encontrado de forma verificável nas folhas abertas."
+  },
+  {
+    "id": "MUSEU-MATRICULA-nominal-17-consultas",
+    "title": "Consultas nominais Registro de Matrícula",
+    "url": "https://museudaimigracao.com.br/acervo/registro-de-matricula",
+    "fact": "Consultas combinando Custode/Zaniratti; Custode/Zanirati; Sante/Zaniratti; Santi/Zaniratti; Ernesta/Galliera; Grandilia/Grandília; Zenaide; Dante; Carlo; Luigi; Pasqua/Mellara; Valentim/Valentino; Vicentim; Zanirate. Cada corpo consultado indicava 0 resultados.",
+    "locator": "17 GETs públicos em 11/10/2026, HTTP 200; URL/termos/hash/cópia HTML e timestamp UTC por consulta em bruto/[arquivo interno omitido] e HTMLs individuais.",
+    "status": "resultado negativo de busca, identidade indeterminada",
+    "limitation": "O índice consultado é paulista e baseado em registros de hospedaria; 0 resultados não prova ausência de viagem nem rejeita identidade."
+  },
+  {
+    "id": "WEB-SEARCH-nominal-2026-10-11",
+    "title": "Busca exploratória em páginas públicas para bases migratórias, CISEI e AN/SIAN",
+    "url": null,
+    "fact": "Nenhum resultado retornado foi validado nesta rodada como Custode Sante Zaniratti, Ernesta Galliera ou parente do grupo.",
+    "locator": "Três lotes brutos salvos; buscas gerais, CISEI e domínio/identificadores AN-SIAN.",
+    "status": "nenhuma identificação; resultados não usados para rejeitar pessoa",
+    "limitation": "Vários resultados são homônimos/ruído ou páginas indexadas sem conteúdo nominal verificável. Não foi contado como consulta a página individual."
+  },
+  {
+    "id": "APESP-informacoes-oficiais-imigracao",
+    "title": "APESP: Pesquisa sobre imigração / emissão de certidões",
+    "url": "https://www.arquivoestado.sp.gov.br/web/acervo/solicitacao_certidoes/imigracao/index.php",
+    "fact": "Página institucional informa cobertura de listas gerais de passageiros do Porto de Santos (1888–1978) e livros de matrícula da Hospedaria (1882–1973), alerta para lacunas e orienta contato com Arquivo Nacional se a entrada ocorreu por outro porto.",
+    "locator": "Busca web retornou trecho indexado do APESP; tentativa de open individual registrada em bruto/apesp_imigracao_info_open.json retornou Internal Error informando que URL não é acessível pela ferramenta.",
+    "status": "snippet institucional para contexto arquivístico / tentativa de acesso falhou; não evidência nominal",
+    "limitation": "O snippet descreve séries e limites, mas não houve validação do texto integral da página via open. Não é resultado sobre Custode e não exclui entrada pelo Rio."
+  },
+  {
+    "id": "R04-165-cover",
+    "title": "Capa da lista APESP 000165",
+    "url": "https://museudaimigracao.com.br/uploads/portal/acervo/listas/BR_APESP_MI_LP_000165.pdf",
+    "fact": "A capa registra a relação dos emigrantes que partem a bordo do vapor Attività; campo manuscrito indica Genova, 5 de outubro de 1895.",
+    "locator": "PDF completo de 87 páginas; página 2 e capa interna p45 examinadas; [hash local omitido] abaixo",
+    "status": "comprovado como texto da capa; não atribui passageiros a uma chegada específica",
+    "limitation": "data e embarcação são dados de capa, sem nome Custode identificado na revisão visual; não substituir data do catálogo pela data efetiva sem cautela"
+  },
+  {
+    "id": "R04-165-valentin",
+    "title": "Prenome Valentin isolado em lista nominativa",
+    "url": "https://museudaimigracao.com.br/uploads/portal/acervo/listas/BR_APESP_MI_LP_000165.pdf",
+    "fact": "Na página 70, a linha familiar contém prenome legível “Valentin”, com idade lida aproximadamente 1½ ano; sobrenome/cabeçalho de família são incertos.",
+    "locator": "PDF 000165, p.70; imagem JPEG derivada a 200 dpi; linha revisada individualmente",
+    "status": "ocorrência contextual não associada; não é candidato comprovado ou rejeitado",
+    "limitation": "prenome sozinho, sem sobrenome, pais/localidade ou relação demonstrada, não associa ao Valentim de idade desconhecida na árvore. Transcrição visual sujeita à leitura paleográfica."
+  },
+  {
+    "id": "R04-094-cover",
+    "title": "Capa da lista APESP 000094",
+    "url": "https://museudaimigracao.com.br/uploads/portal/acervo/listas/BR_APESP_MI_LP_000094.pdf",
+    "fact": "A capa registra emigrantes embarcados no vapor “ATTIVITA” e “Genova, aos 3 de Março de 1895”.",
+    "locator": "PDF completo de 42 páginas; p.2 examinada em imagem a 200 dpi",
+    "status": "comprovado como texto da capa; nenhum indivíduo da família alvo identificado por esse dado",
+    "limitation": "capa informa embarque/lista e data; por si só não prova passageiros específicos nem data de chegada"
+  },
+  {
+    "id": "R04-094-attestation",
+    "title": "Certificação manuscrita sobre chegada pelo vapor Attività",
+    "url": "https://museudaimigracao.com.br/uploads/portal/acervo/listas/BR_APESP_MI_LP_000094.pdf",
+    "fact": "Página 14: “Attesto que a 1º de Abril corrente vieram pelo vapor Attività”; a certificação é datada de 10 de abril de 1895.",
+    "locator": "PDF completo; p.14 examinada em resolução de 200 dpi; fragmento literal conferido visualmente",
+    "status": "comprovado como texto do certificado; não nominal",
+    "limitation": "corrobora a data de chegada geral da lista em abril; compatível com a data de partida Genova 3 março da capa; não nomeia Custode nem prova manifestação individual"
+  },
+  {
+    "id": "R04-165-review",
+    "title": "Revisão visual das 87 páginas do manifesto APESP 000165",
+    "url": "https://museudaimigracao.com.br/uploads/portal/acervo/listas/BR_APESP_MI_LP_000165.pdf",
+    "fact": "Leitura visual p.1–87: sem ocorrência claramente legível de Zaniratti/Zanirati/Zannirati/Zanirate, Custode/Custodio, Sante/Santi ou Galliera, e sem agrupamento convergente da família.",
+    "locator": "Cada folha renderizada a 200 dpi; nomes/parentesco/idade vistos nas folhas nominativas, registro folha-a-folha no CSV",
+    "status": "não identificado, não indivíduo rejeitado",
+    "limitation": "grafias sob rasuras, tinta azul, corte ou ilegibilidade continuam indeterminadas; capa e páginas em branco não contam como leitura de nomes"
+  },
+  {
+    "id": "R04-094-review",
+    "title": "Revisão visual das 42 páginas do manifesto APESP 000094",
+    "url": "https://museudaimigracao.com.br/uploads/portal/acervo/listas/BR_APESP_MI_LP_000094.pdf",
+    "fact": "Leitura visual das folhas nominativas: nenhum sobrenome-alvo nem agrupamento familiar convergente claramente identificado.",
+    "locator": "Cada folha renderizada a 200 dpi; folhas não nominativas distinguem-se no catálogo",
+    "status": "não identificado, não indivíduo rejeitado",
+    "limitation": "tinta azul, riscos e segmentos ilegíveis impedem afirmar ausência absoluta; nomes ocultos permanecem indeterminados"
+  },
+  {
+    "id": "R04-031-review",
+    "title": "Revisão visual integral do manifesto APESP 000031",
+    "url": "https://museudaimigracao.com.br/uploads/portal/acervo/listas/BR_APESP_MI_LP_000031.pdf",
+    "fact": "Na capa e folha de identificação, lê-se o vapor “Attività” e “Genova, 19 Jan. 1893” (p.2 e p.19).",
+    "locator": "PDF 39 páginas; [hash local omitido]; páginas 1–39 individualmente renderizadas e abertas a 200 dpi.",
+    "status": "revisão negativa limitada às áreas legíveis; nenhuma ocorrência-alvo identificada",
+    "limitation": "p.3–12,14–17,20–38 contêm listagens nominais; p.1,13,18,39 administrativas. Não foi identificado sobrenome-alvo nem agrupamento convergente. Rasuras e linhas ilegíveis permanecem indeterminadas. A data da capa é contextual e não prova viagem de pessoa específica."
+  },
+  {
+    "id": "R04-196-review",
+    "title": "Revisão visual integral do manifesto APESP 000196",
+    "url": "https://museudaimigracao.com.br/uploads/portal/acervo/listas/BR_APESP_MI_LP_000196.pdf",
+    "fact": "A capa (p.2) registra o vapor “Attività” e “Genova, 25 Febbraio 1896”.",
+    "locator": "PDF 38 páginas; [hash local omitido]; páginas 1–38 individualmente renderizadas e abertas a 200 dpi.",
+    "status": "revisão negativa limitada às áreas legíveis; nenhuma ocorrência-alvo identificada",
+    "limitation": "p.3–36 nominativas, p.37 estatística, p.38 certificado; não identificado Custode/Sante nem sobrenome variante ou grupo familiar convergente. Páginas riscadas/manchadas ou grafias ambíguas permanecem indeterminadas. A data é dado da capa, não prova de passageiro específico."
+  },
+  {
+    "id": "R04-274-review",
+    "title": "Revisão visual integral do manifesto APESP 000274",
+    "url": "https://museudaimigracao.com.br/uploads/portal/acervo/listas/BR_APESP_MI_LP_000274.pdf",
+    "fact": "A relação/certificação da p.1 menciona o vapor “Attività”; p.3–7 contêm listas nominativas e p.10 é outro certificado manuscrito.",
+    "locator": "PDF 11 páginas; [hash local omitido]; todas as páginas individualmente renderizadas e abertas a 200 dpi.",
+    "status": "revisão negativa limitada às áreas legíveis; nenhuma ocorrência-alvo identificada",
+    "limitation": "p.3–7 foram lidas nas colunas nominais; p.8 anotação isolada sem alvo; p.9 totais; p.10 certificado aparenta data Genova 12 febbraio 1897. O PDF contém material administrativo de formatos distintos; datas não devem ser atribuídas a passageiros sem vínculo explícito. Linhas apagadas ou incertas permanecem indeterminadas."
+  },
+  {
+    "id": "R04-CISEI-SANTE-ZANIRATO",
+    "title": "Matrícula de Sante Zanirato no vapor Manilla",
+    "url": "https://museudaimigracao.com.br/acervo/registro-de-matricula/detalhes?id=288319&livro=026&pagina=009&familia=00108",
+    "fact": "Ficha de matrícula: Sante Zanirato, 40 anos; família 00108; esposa Chiara, 38; filhos Romolo, 12, Luigi, 9, Carlo, 3; navio Manilla; chegada indicada 27/05/1891. A folha manuscrita p.009 mostra grupo com sobrenome aparente “Zanirato” e esses prenomes/idades.",
+    "locator": "Ficha pública e cópia do scan L026_009.pdf fornecidas pelo agente luna_arvores_publicas; a chamada GET da ficha foi registrada em 2026-10-11T14:19:07.851417Z, HTTP 200, 50.108 bytes, [hash local omitido]. Scan PDF copiado para [evidência local preservada; caminho interno omitido]; hash local no manifest.[hash local omitido]. HTML, recortes e manifesto de aquisição acompanham. Trata-se de material recuperado/publicamente revisado por outro agente e copiado para preservação local, não de nova consulta independente nesta rodada.",
+    "status": "candidato colateral; identidade com a família Custode/Ernesta não demonstrada",
+    "limitation": "sobrenome aproxima-se de Zaniratti, mas grafia lida é Zanirato; idade 40 e família Chiara/Romolo/Luigi/Carlo não converge por si só com Custode, Ernesta ou filhos documentados. Sem localidade de origem preenchida. CISEI e Museu derivam da mesma matrícula/registro de hospedaria, não são confirmações independentes. A data indicada é campo de hospedaria e não prova de viagem/chegada do navio."
+  },
+  {
+    "id": "ARI-966-ZANIRATTI-GROUP15",
+    "title": "Catalogo dei manoscritti della Collezione Antonelli, item 966",
+    "url": "https://archibiblio.comune.ferrara.it/attach/biblioario/docs/collezione_antonelli.pdf",
+    "fact": "Item 966: ‘N° 15 buste di documenti, lettere autografe ecc. di varie famiglie ferraresi.’ A list numbered 1–15 follows. The surname ‘Zaniratti’ appears in list number 15, alongside ‘Zanelli, Zantri, Zerbinati.’",
+    "locator": "PDF baixado diretamente do domínio oficial; item 966 começa na página PDF 151 e o sobrenome aparece na página PDF 153. Não há paginação impressa claramente visível. Arquivo evidencial: [evidência local preservada; caminho interno omitido]; extração textual [evidência local preservada; caminho interno omitido]; hash e resposta HTTP em [evidência local preservada; caminho interno omitido]",
+    "status": "comprovado (metadado arquivístico); candidato para investigação do sobrenome",
+    "limitation": "Comprova somente a presença do sobrenome em uma listagem ordinal 15 dentro da descrição de 15 grupos/bustes. Não dá nome próprio, filiação, data, município nem associação com Luigi/Custode. O grupo ordinal 15 não é cota individual demonstrada e não pode ser equiparado a uma busta 15 sem conferência do catálogo físico/instrumento de localização."
+  },
+  {
+    "id": "GU-1874-ZANIRATTI-GIOVANNI-NOTAIO",
+    "title": "Gazzetta Ufficiale del Regno d’Italia, n. 199, 21 agosto 1874",
+    "url": "https://www.gazzettaufficiale.it/eli/gu/1874/08/21/199/sg/pdf",
+    "fact": "‘Zaniratti Giovanni, notaio residente a Ferrara, reintegrato nell’esercizio delle sue funzioni da cui fa sospeso con decreto ministeriale 31 maggio 1874 per essergli venuta meno una parte della cauzione’; item under ‘Disposizioni fatte nel personale dei notai’ and following ministerial decrees of 30 July 1874.",
+    "locator": "PDF integral oficial, página PDF 2; extração em [evidência local preservada; caminho interno omitido] URL, HTTP e hash em [evidência local preservada; caminho interno omitido]",
+    "status": "comprovado (ocorrência nominal); candidato independente, sem vínculo genealógico",
+    "limitation": "O ato oficial comprova a ocorrência de Giovanni Zaniratti e sua condição profissional/residência naquela data. Não informa idade, parentes, nem qualquer ligação com Luigi Zaniratti/Pasqua Mellara/Custode Sante. A associação genealógica permanece não demonstrada."
+  },
+  {
+    "id": "ASFE-ANA-CONSULTABLE-PACCHI",
+    "title": "Archivio notarile antico di Ferrara: elenco dei pacchi attualmente consultabili",
+    "url": "https://archiviodistatoferrara.cultura.gov.it/fileadmin/risorse/Strumenti_di_ricerca/ANA_-_Pacchi_notai_attualmente_consultabili.pdf",
+    "fact": "O instrumento é uma lista oficial de pacchi atualmente consultáveis do Archivio notarile antico di Ferrara. A busca textual pelo sobrenome não localizou Zaniratti; a listagem recuperada concentra-se em pacotes de notários com datas até 1826.",
+    "locator": "PDF oficial de uma página; extração textual [evidência local preservada; caminho interno omitido]; manifesto HTTP/hash [evidência local preservada; caminho interno omitido]",
+    "status": "comprovado (alcance do instrumento); negativo apenas para este instrumento parcial",
+    "limitation": "Não é inventário integral dos protocolos notariais nem cobre automaticamente atos posteriores. A ausência textual de Zaniratti neste elenco não rejeita a pessoa nem prova inexistência de atos ou unidades arquivísticas."
+  },
+  {
+    "id": "ASFE-ANA-FONDI-INDEX",
+    "title": "Archivio di Stato di Ferrara, fondi archivistici – letra A",
+    "url": "https://archiviodistatoferrara.cultura.gov.it/patrimonio/fondi-archivistici/a",
+    "fact": "A página oficial identifica o fundo Archivio notarile antico di Ferrara e fornece link para o elenco dos pacchi notarili atualmente consultáveis.",
+    "locator": "HTML oficial salvo como [evidência local preservada; caminho interno omitido]; registrado em [evidência local preservada; caminho interno omitido]",
+    "status": "comprovado (rota institucional e descrição de fundo)",
+    "limitation": "Confirma existência do fundo e uma rota pública para consulta do elenco parcial; não fornece índice nominal de Giovanni nem cota individual do sobrenome."
+  },
+  {
+    "id": "BRAVA-GENTE-LUIGI-PASQUA",
+    "title": "Menção secundária a Luigi Zaniratti e Pasqua Mellara",
+    "url": "https://www.bravagentefamily.com/",
+    "fact": "Resultados de busca localizaram a menção secundária ao casal Luigi Zaniratti e Pasqua Mellara associado a Bondeno; é referência familiar/compilatória, não registro civil ou paroquial primário.",
+    "locator": "Menção recuperada nas respostas da busca web em [evidência local preservada; caminho interno omitido] e [evidência local preservada; caminho interno omitido]; a chamada de busca não equivale à obtenção de assento original.",
+    "status": "candidato (alegação secundária para verificação)",
+    "limitation": "Não comprova pais, idades, datas ou filiação de Custode. Manter distinto de outra união com Luigi Zaniratti e Luigia Medini em Ferrara mencionada em fontes secundárias."
+  },
+  {
+    "id": "POP-BONDENO-VOLUME-VIII-FAM86-LEAD",
+    "title": "Pista de referência a Registro della Popolazione de Bondeno, Volume VIII / famiglia 86 / p.86",
+    "url": "https://archivi.ibc.regione.emilia-romagna.it/ibc-cms/cms.item?flagview=viewItemCaster&itemRef=IT-ER-IBC-038003-001-001&munu_str=0_1_0&numDoc=8&typeItem=2",
+    "fact": "O catálogo público do Archivio storico del Comune di Bondeno descreve a série “Stato civile - Anagrafe - Censimento (1800-1815; 1866-1960), bb. e regg. 40 ca.”. Não fornece imagem ou índice nominal nesta ficha. A pista distinta do corpus familiar remete a Volume VIII/pag.86 e FAMIGLIA 86, ainda sem confirmação de que page 86 e família 86 sejam a mesma referência.",
+    "locator": "Ficha Archivi ER localizada em [evidência local preservada; caminho interno omitido] (resultado search0), que descreve o arquivo histórico do Comune di Bondeno. A pesquisa desta rodada não encontrou na ficha Volume VIII, família 86, página 86, índice nominal ou imagens.",
+    "status": "candidato (pista de cota/folha, não ocorrência pessoal comprovada)",
+    "limitation": "A descrição de séries não é prova de conteúdo nominal. A série listada de estado civil/anagrafe salta de 1815 para 1866; isso indica apenas a cobertura descrita nessa ficha, não inexistência de fontes civis, paroquiais ou outras unidades em 1848. Volume VIII/p.86 e FAMIGLIA 86 permanecem identificadores separados até inspeção do original."
+  },
+  {
+    "id": "NOTAIO-GIOVANNI-PDF-ACCESS-FAILURE",
+    "title": "Estudo acadêmico sobre notário Giovanni Zaniratti – acesso aos PDFs falhou",
+    "url": "https://iris.univr.it/bitstream/11562/659359/1/Lebrecht%20Vecchiato%202013.pdf ; https://files.core.ac.uk/download/217534149.pdf",
+    "fact": "Duas tentativas diretas retornaram HTTP 403 e HTML, sem conteúdo PDF: Univr 6.254 bytes, [hash local omitido]; CORE 6.113 bytes, [hash local omitido].",
+    "locator": "Respostas 403 salvas como [evidência local preservada; caminho interno omitido] e [evidência local preservada; caminho interno omitido], com URLs e horários em [evidência local preservada; caminho interno omitido] Resumo do catálogo/busca é preservado em [evidência local preservada; caminho interno omitido]",
+    "status": "candidato não verificável nesta rodada; falha de acesso separada",
+    "limitation": "O registro bibliográfico citado pode orientar busca futura, mas os PDFs não foram obtidos. A falha não informa ausência, identidade ou parentesco."
+  },
+  {
+    "id": "VECCHIATO-LEBRECHT-ZANIRATTI-1881-PROC-6257",
+    "title": "Vecchiato, I Lebrecht (2013), passagem sobre procura de Isaia Vitali e documento Zaniratti",
+    "url": "https://iris.univr.it/handle/11562/659359",
+    "fact": "A obra secundária cita ato de 27/01/1881 em Ferrara pelo qual Isaia Vitali, fu Lazzaro, nomeia Clemente Levi procurador. A nota identifica o dossiê em ASVR, Atti del Notaio Italo Donatelli, vol. 7, repertório 1299/registro 2544, ‘Compravendita del 29 gennaio 1881’, e menciona uma procura N. 6257, ‘atti Zaniratti di Ferrara unito sotto N. 1’.",
+    "locator": "Registro institucional da Universidade de Verona confirma Francesco Vecchiato, I Lebrecht, 2013, monografia, ISBN 9788898513161, handle 11562/659359; PDF pós-print listado como aberto, mas tentativas diretas retornaram HTTP 403 e HTML. Resultados de busca indexados exibem p.69 e nota 12. Buscas brutas em [evidência local preservada; caminho interno omitido] e web_giovanni_notarial_detail_*.json; tentativas de download em [evidência local preservada; caminho interno omitido], [arquivo interno omitido] e [arquivo interno omitido].",
+    "status": "candidato (referência nominativa secundária e pista de processo), original não obtido",
+    "limitation": "É uma rota muito precisa para pedir/conferir presencialmente ou consultar no ASVR a unidade Donatelli vol. 7, rep. 1299/reg. 2544, cc. 314–317 e anexo N.1; a fonte diz que a procura é de atos Zaniratti de Ferrara, nº 6257. O conteúdo prova apenas que a publicação identifica um notário com esse nome em 1881 e referencia uma procura. Não fornece idade, pais, nascimento, parentesco ou endereço do notário. A digitalização da monografia não foi baixada apesar de metadado institucional dizer que o post-print está aberto."
+  },
+  {
+    "id": "TESIONLINE-GIOVANNI-ZANIRATTI-1896",
+    "title": "Ex istituto pedagogico infantile di Aguscello: ipotesi di riuso",
+    "url": "https://www.tesionline.it/tesi/anteprima-tesi/ex-istituto-pedagogico-infantile-di-aguscello-ipotesi-di-riuso/15403",
+    "fact": "A tese cita ‘Enfiteusi Grazioli-Lombardi, 1 febbraio 1896, notaio Giovanni Zaniratti’ como referência para a etapa de enfiteuse; no trecho, a sucessão de usufruto ocorre entre Carolina Morelli Gondolmieri, Don Vignali e herdeiros de Giacomo Carpanetti.",
+    "locator": "Trecho indexado em resultados web preservados em [evidência local preservada; caminho interno omitido], [arquivo interno omitido] e [arquivo interno omitido]. O original notarial e dados bibliográficos completos do documento de 1896 não foram encontrados nesta rodada.",
+    "status": "candidato (ocorrência secundária de notário em 1896)",
+    "limitation": "A citação estende o período em que um notário de nome Giovanni Zaniratti teria atuado em Ferrara e fornece outro ato e partes para pesquisa no inventário/protocolo. Não o conecta a Luigi Zaniratti de Bondeno. A obra só foi localizada em anteprima/busca; o ato primário não foi obtido."
+  },
+  {
+    "id": "IRIS-UNIVR-LEBRECHT-METADATA",
+    "title": "Registro institucional IRIS: I Lebrecht (Francesco Vecchiato, 2013)",
+    "url": "https://iris.univr.it/handle/11562/659359",
+    "fact": "O repositório institucional lista I Lebrecht, de Francesco Vecchiato, ano 2013, monografia científica, ISBN 9788898513161, handle 11562/659359, depósito 27/01/2014; indica post-print aberto, domínio público, 4,74 MB.",
+    "locator": "Resposta de busca indexada em [evidência local preservada; caminho interno omitido] e [arquivo interno omitido]; tentativas diretas de obter PDF/handle retornaram HTTP 403, detalhadas em manifestos vecchiato_*.",
+    "status": "comprovado (metadados da obra), PDF inacessível nesta sessão",
+    "limitation": "Sustenta a autoria, título e referência bibliográfica do relato secundário sobre o notário. O arquivo integral não foi capturado; os trechos textuais pesquisáveis vêm do índice web e devem ser tratados como pista até acesso à obra ou ao original citado."
+  },
+  {
+    "id": "Ariostea-Pasi-Famiglie-catalogo",
+    "title": "Cataloghi speciali e fondi – Biblioteca Comunale Ariostea",
+    "url": "https://www.comune.ferrara.it/archibiblio/biblioteche/biblioteca-ariostea/cataloghi-speciali-e-fondi",
+    "fact": "A página institucional informa arquivo com 24 buste e catálogo de dois volumes do próprio Alessandro Pasi, com sobrenomes em ordem alfabética e referências a busta, fascicolo, documentos individuais e datas.",
+    "locator": "HTML oficial completo, HTTP 200, coletado 2026-10-11T14:07:53.697561Z; conteúdo bruto salvo como [evidência local preservada; caminho interno omitido]",
+    "status": "comprovado",
+    "limitation": "Comprova a existência e natureza do instrumento, não uma ocorrência de Zaniratti nem parentesco. Catálogo não encontrado digitalizado nesta busca."
+  },
+  {
+    "id": "Ariostea-Pasi-Z-busta24-bobina30",
+    "title": "Elenco microfilm Archivio Pasi Strade – Archivio Pasi Famiglie",
+    "url": "https://www.comune.ferrara.it/attachments/file/view?id=56385&hash=3f7ab86abfe9a0db7dfc8304f2c4173d36aef23676c4e141a88f4c2c187dcb6e&size=original",
+    "fact": "O inventário lista “Busta n. 24 fasc 1607-1652”, “da Zaffarini a Zurlati”, bobina 30; negativo preto e branco 35 mm, 406 fotogramas. O catálogo institucional descreve nomes em ordem alfabética.",
+    "locator": "PDF HTTP 200, application/pdf, assinatura %PDF confirmada, coletado 2026-10-11T14:08:08.599019Z; [hash local omitido]",
+    "status": "candidato",
+    "limitation": "A faixa alfabética e cota tornam bobina 30 e busta 24 a rota concreta para conferir eventual entrada Zaniratti no catálogo/arquivo. A faixa não confirma que a família ou indivíduo conste ali. Requer consulta presencial ou reprodução institucional disponível."
+  },
+  {
+    "id": "Ariostea-Cittadella-catalogo-microfilm344",
+    "title": "Elenco microfilm Raccolta Autografica Cittadella",
+    "url": "https://www.comune.ferrara.it/attachments/file/view?id=56371&hash=c13339f36d32bb80303295b514c0c7097a759378c87c751c38a7128d4cd0a0fc&size=original",
+    "fact": "L’inventario riporta “Cataloghi Cittadella, Luigi Napoleone”, “Raccolta Autografica Cittadella”, 112 fotogrammi, bobina n. 344.",
+    "locator": "PDF HTTP 200, application/pdf, assinatura %PDF confirmada, coletado 2026-10-11T14:08:07.002011Z; [hash local omitido]",
+    "status": "candidato",
+    "limitation": "Comprova que o catálogo Cittadella está microfilmado; não há resultado nominal Zaniratti e o filme não é imagem digital online. A página Ariostea caracteriza o catálogo como rubrica alfabética manuscrita da coleção de autógrafos."
+  },
+  {
+    "id": "MOL-nome-Zaniratti-variantes",
+    "title": "Manus Online – consulta pública ao catálogo de manuscritos",
+    "url": "https://manus.iccu.sbn.it/cerca-manoscritti",
+    "fact": "Consultas públicas por Zaniratti, Zanirati, Zannirati e Zanirate retornaram total=0. Zaniratti foi repetido em busca avançada via formulário público e endpoint da interface; resposta HTTP 200.",
+    "locator": "Quatro respostas individuais brutas em [evidência local preservada; caminho interno omitido] a _03.json e [evidência local preservada; caminho interno omitido]; manifestos com consulta, UTC, bytes e [hash local omitido].",
+    "status": "comprovado",
+    "limitation": "Comprova somente que a busca exata nesse catálogo não trouxe títulos. Não rejeita identidade, ocorrência em fundos sem catálogo, manuscrito não indexado ou arquivo não incorporado ao MOL."
+  },
+  {
+    "id": "MOL-Mellara-manuscritos-Ariostea",
+    "title": "Resultados MOL para Mellara: Statuti del Vescovo di Ferrara per Mellara e Bergantino; Scrittura sui condotti di Mellara",
+    "url": "https://manus.iccu.sbn.it/cerca-manoscritti",
+    "fact": "Mellara retornou 5 títulos no total; dois são manuscritos da Biblioteca Ariostea: MOL 577852 / CNMD0000051131, Statuti del Vescovo di Ferrara per Mellara e Bergantino; e MOL 578341 / CNMD0000051247, Scrittura sui condotti di Mellara.",
+    "locator": "Busca JSON bruta query_04; fichas completas via API HTTP200 e XML-TEI HTTP200 preservados; detalhes e respostas com timestamp/hash em manifestos. Ausência de lista images e facsimile/graphic nos dois TEI examinados.",
+    "status": "rejeitado",
+    "limitation": "Os títulos tratam a localidade Mellara e obras históricas; não são referências a Pasqua Mellara ou ao ramo Zaniratti. Sem fac-símiles/imagens nas respostas examinadas: metadados, não documento pessoal recuperado."
+  },
+  {
+    "id": "Ottocento-Popolazione-Bondeno-1848",
+    "title": "Stato della popolazione di tutto il territorio di Bondeno per l’anno 1848 (part.)",
+    "url": "https://ottocentoferrarese.it/index.php?Itemid=172&id=68&option=com_k2&view=item",
+    "fact": "A página indica a referência: Governo Pontificio – Legazione di Ferrara, Stato della popolazione di tutto il territorio di Bondeno per l’anno 1848 (part.) — Archivio storico del Comune di Bondeno, Carteggio amministrativo, Cat. XIV, b. 468, f. “1848”, r. 5.",
+    "locator": "HTML integral HTTP 200, coletado 2026-10-11T14:12:30.789240Z, [hash local omitido]. A imagem presente é arte gráfica genérica, sem fólio/lista nominal.",
+    "status": "candidato",
+    "limitation": "É pista concreta de fonte arquivística de 1848 para Bondeno, mas título “(part.)” e a página não demonstram que seja censo nominativo ou contenha Custode/Luigi/Pasqua; não é comprovado como folha de família nem é a cota 91/361."
+  },
+  {
+    "id": "MOL-sem-coocorrencia-familia",
+    "title": "Buscas de frase no Manus Online",
+    "url": "https://manus.iccu.sbn.it/cerca-manoscritti",
+    "fact": "As buscas exatas por Custode Sante, Luigi Zaniratti, Pasqua Mellara, Maria Cavallini, Stellata Bondeno e Salvatonica San Biagio retornaram total=0; Custode sozinho retornou 512 e Sante sozinho 1.234 (ruído de nomes comuns).",
+    "locator": "[evidência local preservada; caminho interno omitido] a _14.json e manifest [evidência local preservada; caminho interno omitido], cada qual com UTC/status/hash.",
+    "status": "comprovado",
+    "limitation": "Negativo somente para a busca na base MOL e para essas combinações exatas; não significa ausência de atos em Bondeno ou de fontes de arquivo."
+  },
+  {
+    "id": "BeWeb-diocese-Ferrara-shell",
+    "title": "Archivio storico diocesano di Ferrara – BeWeB",
+    "url": "https://www.beweb.chiesacattolica.it/institutos/instituto/1569/Archivio+storico+diocesano+di+Ferrara",
+    "fact": "A consulta retornou página institucional HTML com indicação de JavaScript; o HTML recebido não apresentou inventário nominal verificável de paróquias/series para Stellata ou Salvatonica.",
+    "locator": "HTML integral e manifesto (status, timestamp, content type e hash) em [evidência local preservada; caminho interno omitido] e [arquivo interno omitido].",
+    "status": "candidato",
+    "limitation": "A falha de exposição de inventário no HTML desta resposta não prova inexistência de acervo, nem constitui falha HTTP. Nenhuma imagem ou índice nominal obtido nesta rota."
+  },
+  {
+    "id": "BeWeb-SanBiagio-Roncofreddo-localidade",
+    "title": "Archivio della Parrocchia di San Biagio vescovo (BeWeB ID 2928)",
+    "url": "https://www.beweb.chiesacattolica.it/institutos/istituto/2928/Archivio+della+Parrocchia+di+San+Biagio+vescovo",
+    "fact": "A ficha BeWeB consultada localiza a paróquia em Roncofreddo.",
+    "locator": "Busca pública por nomes de paróquia; ficha HTML em [evidência local preservada; caminho interno omitido], manifesto em [evidência local preservada; caminho interno omitido]",
+    "status": "rejeitado",
+    "limitation": "Rejeitado apenas como identificação do arquivo/paróquia-alvo por divergência geográfica, não como evidência sobre a genealogia."
+  },
+  {
+    "id": "Ottocento-biblioteca-digitale-catalog",
+    "title": "Biblioteca digitale – Ottocento Ferrarese",
+    "url": "https://ottocentoferrarese.it/index.php?option=com_k2&view=item&id=168&Itemid=162",
+    "fact": "Página lista obras digitalizadas, incluindo publicações de 1845 e 1850; títulos e links correspondem a obras impressas, sem catálogo nominal de habitantes ou imagem do registro de 1848 identificado.",
+    "locator": "HTML HTTP200, coletado 2026-10-11T14:13:18.474044Z, [hash local omitido]",
+    "status": "comprovado",
+    "limitation": "Comprova a existência do repertório digital e sua tipologia, não uma fonte pessoal para os alvos."
+  },
+  {
+    "id": "Nagliati-fabrik-indisponivel",
+    "title": "Repertorio bibliografico Luciano Nagliati, periodici ferraresi 1886–2003",
+    "url": "https://ottocentoferrarese.it/index.php?option=com_k2&view=item&layout=item&id=2&Itemid=147",
+    "fact": "A página descreve repertório bibliográfico de periódicos locais 1886–2003 e aponta para uma máscara Fabrik; a máscara retornou HTTP 500 (listid 1 e 2) e a URL de tabela HTTP 404.",
+    "locator": "Página catalográfica 200, coletada 2026-10-11T14:13:19.163951Z, hash [hash local omitido]. Tentativas das três URLs registradas em consultas.csv; respostas HTTP atuais não preservadas individualmente como arquivo bruto.",
+    "status": "candidato",
+    "limitation": "A descrição aponta base de cobertura temporal potencialmente útil, mas as consultas nominais não puderam ser feitas devido às respostas 500/404. Isso é falha de acesso à interface, não resultado negativo nem inexistência de menções."
+  },
+  {
+    "id": "ManusOnline-Mellara-localidade-577852",
+    "title": "Statuti del Vescovo di Ferrara per Mellara e Bergantino",
+    "url": "https://manus.iccu.sbn.it/cnmd/0000051131",
+    "fact": "Ficha MOL 577852 / CNMD0000051131, atribui manuscrito à Biblioteca comunale Ariostea, Classe I, Cl. I.126, Lat.42; data estimada 1501–1600; o título nomeia estatutos do bispo de Ferrara para Mellara e Bergantino.",
+    "locator": "JSON de detalhe HTTP200 47.332 bytes; TEI XML HTTP200 22.162 bytes, ambos integralmente guardados com SHA em manifestos. TEI não contém facsimile/graphic; API de detalhe sem campo de imagem.",
+    "status": "rejeitado",
+    "limitation": "É localidade e objeto estatutário histórico, não prova de pessoa Pasqua Mellara; não liga a Zaniratti."
+  },
+  {
+    "id": "ManusOnline-Mellara-localidade-578341",
+    "title": "Scrittura sui condotti di Mellara",
+    "url": "https://manus.iccu.sbn.it/cnmd/0000051247",
+    "fact": "Ficha MOL 578341 / CNMD0000051247, atribuída à Biblioteca comunale Ariostea, Classe I, Cl. I.197, It.192; data estimada 1701–1800; título “Scrittura sui condotti di Mellara”.",
+    "locator": "JSON de detalhe HTTP200 45.446 bytes e TEI XML HTTP200 22.846 bytes preservados; TEI sem facsimile/graphic.",
+    "status": "rejeitado",
+    "limitation": "O termo é topônimo numa obra sobre condutos; não é referência a Pasqua Mellara nem conexão familiar."
+  },
+  {
+    "id": "VS001",
+    "title": "Inventário do Patrimônio Ambiental e Urbano do Núcleo Histórico de Varre-Sai — trecho contextual",
+    "url": "https://livrozilla.com/doc/1184391/",
+    "fact": "A visualização pública lista sobrenomes que comporiam a colônia italiana segundo levantamento existente no Centro Cultural Sebastião Oliveira Vargas; Gallo aparece na página impressa 511 e Zaniratti na continuação da página impressa 512.",
+    "locator": "Resultado web e página pública Livrozilla aberta sem autenticação; uma ocorrência de Zaniratti localizada. Cópia Scribd também indexa o trecho, sem download.",
+    "status": "contextual_nao_genealogico",
+    "limitation": "Lista só informa sobrenomes agregados; não individualiza família, origem ou relação. Gallo e Zaniratti não aparecem ligados. Cópia de terceiro, não original institucional."
+  },
+  {
+    "id": "VS002",
+    "title": "Dados Abertos RJ — ato de seleção do projeto no Diário Oficial de 19/11/2010",
+    "url": "https://dadosabertos.rj.gov.br/dataset/f9a20da3-7f28-45a0-8ebc-63b7dc7b213e/resource/e8779700-757f-4f18-8a1f-8b13fb241cd8/download/2010-11-19.json",
+    "fact": "Aviso da Secretaria de Estado de Cultura publica resultado da Chamada Pública nº 015/2010 e lista Marcelo Salim de Martino, código 11500040, com o título Inventário do Patrimônio Ambiental e Urbano do Núcleo Histórico de Varre-Sai.",
+    "locator": "Portal de Dados Abertos do RJ; página do recurso informa JSON, cobertura 2010-11-19 e tamanho 5,5 MiB. GET público HTTP 200, 5.793.231 bytes; [hash local omitido] no manifesto.",
+    "status": "proveniencia_do_projeto_comprovada",
+    "limitation": "Confirma título, proponente e seleção, não publicação institucional do PDF nem validade de pedigree."
+  },
+  {
+    "id": "VS003",
+    "title": "Casarão da Cultura de Varre-Sai — descrição oficial do museu",
+    "url": "https://varresai.rj.gov.br/pontos-turisticos/10",
+    "fact": "A Prefeitura descreve um museu no Casarão da Cultura que conta história local — imigração italiana, café e origem do nome — por meio de fotos e objetos das famílias pioneiras.",
+    "locator": "Site oficial da Prefeitura de Varre-Sai, página pública aberta em 2026-10-11.",
+    "status": "contexto_institucional_sem_indice_nominal",
+    "limitation": "A página não apresenta catálogo, transcrição de fotos ou nomes Zaniratti/Valentim/Custode; não indica acervo pesquisável online."
+  },
+  {
+    "id": "VS004",
+    "title": "Busca nominal no texto público do inventário",
+    "url": "https://livrozilla.com/doc/1184391/",
+    "fact": "Encontrada uma única ocorrência de Zaniratti, na lista de sobrenomes; não foram encontrados Custode, Zanirati, Zanirate, Mellara ou Galliera. Valentim aparece em nomes/ruas históricos sem conexão; Gallo aparece na lista.",
+    "locator": "Chamadas de localização do texto, preservadas em [arquivo interno omitido] e [arquivo interno omitido].",
+    "status": "negativa_limitada_ao_texto",
+    "limitation": "Ausência no texto reconhecido não prova ausência em exposição física, material não digitalizado ou grafias não pesquisadas. Valentim sem contexto compatível não foi associado."
+  },
+  {
+    "id": "VS005",
+    "title": "Tese de Doutorado em História da UFF — acervos locais e contexto regional (2009)",
+    "url": "https://www.historia.uff.br/stricto/td/1197.pdf",
+    "fact": "Tese de Rosane Aparecida Bartholazzi de Carvalho, Universidade Federal Fluminense, 2009, p. 282 impressa (PDF p. 283), item 10.2.2: Casa da Cultura de Varre-Sai contém “Pastas com documentações dos imigrantes”. Item 10.2.3 relaciona Livro de Registro Contábil da Fazenda do Céu – Santa Clara/Porciúncula, 1929–1934 e “Correspondências: ... Ulisses Morucci – 1916”. Na p. 124 impressa (PDF p. 125), enumeração ampla de cognomes da região inclui Gallo e diz que parte da relação de casais imigrados em 1897–1898 foi elaborada por funcionários da Casa da Cultura. Na p. 159 impressa (PDF p. 160), tabela 15 de propriedades registra Gallo: 4 alqueires, benfeitorias de duas casas, cafezais e pastinho cercado, compra em 1913, localização São José/Varre-Sai. Na p. 160 impressa (PDF p. 161), tabela 16 de famílias de Graffignano lista Murucci com aquisições de 1920 e 1925 em Jacutinga/Varre-Sai.",
+    "locator": "PDF diretamente acessível, 285 páginas; baixado via GET público HTTP, hash [hash local omitido]. Texto pesquisado integralmente por extração local e find no PDF.",
+    "status": "contextual_nao_associado",
+    "limitation": "O sobrenome Gallo e a família Murucci aparecem em passagens independentes e não são conectados entre si nem a Zaniratti. Gallo sem prenome/identificadores não se associa ao João Gallo do usuário; Morucci/Murucci e Ulisses não se associam a Filipe Murucci/Zenaide. A tese aponta fundos potencialmente consultáveis na Casa da Cultura e cartório local, mas não publica aqui os documentos originais desses arquivos."
+  },
+  {
+    "id": "VS006",
+    "title": "Busca textual nominal na tese UFF de 2009",
+    "url": "https://www.historia.uff.br/stricto/td/1197.pdf",
+    "fact": "A extração local do PDF (285 páginas) e buscas públicas no texto não localizaram Zaniratti, Zanirati, Zanirate, Custode nem Valentim. Gallo aparece como cognome em lista regional e numa tabela patrimonial; Morucci aparece em referências históricas e em inventário de fontes.",
+    "locator": "PDF UFF baixado integralmente; arquivo e texto extraído preservados. Respostas integrais da ferramenta web: [arquivo interno omitido]; trechos contextuais: [arquivo interno omitido].",
+    "status": "negativa_limitada_ao_documento",
+    "limitation": "A ausência dos termos não prova ausência em arquivos físicos subjacentes, indexação diferente ou outros documentos. “Gallo” genérico e “Morucci” colateral não devem ser convertidos em relação familiar."
+  },
+  {
+    "id": "G001",
+    "title": "Consultas nominais de Grandilia em índices web públicos",
+    "url": "https://www.familysearch.org/pt/search/collection/1582573",
+    "fact": "O mecanismo respondeu Empty search results / No results were found for the provided queries em lotes nominais.",
+    "locator": "Busca pública, respostas integrais nos lotes 09–11 e 13–14.",
+    "status": "negative_index_search",
+    "limitation": "Negativa limitada às consultas e ao índice web; não prova inexistência do ato nem ausência em imagens não indexadas."
+  },
+  {
+    "id": "G002",
+    "title": "FamilySearch: coleção Brasil, Rio de Janeiro, Registro Civil, 1804–2013",
+    "url": "https://www.familysearch.org/pt/search/collection/1582573",
+    "fact": "A página informa registros civis de nascimento, casamento e óbito e índices de vários cartórios do estado, 1829–2012; somente parte indexada; 5.100.470 imagens.",
+    "locator": "Página pública oficial da FamilySearch, aberta em 2026-10-11.",
+    "status": "catalog_fact",
+    "limitation": "O intervalo geral inclui 1963, mas não há relação de waypoints consultável nesta ferramenta; não é registro nominal."
+  },
+  {
+    "id": "G003",
+    "title": "Limites observados ao abrir pesquisa nominal e waypoints FamilySearch",
+    "url": "https://www.familysearch.org/search/record/results?count=20&q.anyDate.from=1963&q.anyDate.to=1963&q.givenName=Grandilia&q.surname=Zaniratti&q.collectionId=1582573",
+    "fact": "A página pública de pesquisa declara que JavaScript é necessário; URL padrão de resultados não acessível pela ferramenta; waypoint redirecionou a URL não acessível; inventário associado retornou 403 Forbidden.",
+    "locator": "Links/URLs públicos da coleção, sem autenticação ou contorno.",
+    "status": "inconclusive_access",
+    "limitation": "Falha técnica não é resultado negativo do índice e não confirma se o registro está indexado."
+  },
+  {
+    "id": "G004",
+    "title": "Arquivo Nacional: escopo anunciado dos livros talões do Rio",
+    "url": "https://www.gov.br/arquivonacional/pt-br/servicos/acervos/copy_of_acervos-mais-consultados/registro-civil-da-cidade-do-rio-de-janeiro",
+    "fact": "O Arquivo Nacional declara possuir livros talões de nascimentos, casamentos e óbitos das pretorias/circunscrições da cidade do Rio no período 1929–1961, com intervalos; orienta localizar registros dessa série no SIAN por data e local/circunscrição.",
+    "locator": "Arquivo Nacional; captura contém linhas 269–273.",
+    "status": "catalog_fact",
+    "limitation": "Limita apenas a série descrita nessa página, não todos os acervos públicos do Rio; não prova inexistência em cartório."
+  },
+  {
+    "id": "G005",
+    "title": "TJRJ Consulta de Nascimentos e Óbitos",
+    "url": "https://www3.tjrj.jus.br/PORTALEXTRAJUDICIAL/CNO/resultado/",
+    "fact": "A página diz que serão exibidos somente atos praticados a partir de 01/08/2007.",
+    "locator": "Portal do Tribunal de Justiça do Estado do Rio de Janeiro.",
+    "status": "coverage_limit",
+    "limitation": "Não é negativa nominal e não afirma que o registro não exista em cartório."
+  },
+  {
+    "id": "G006",
+    "title": "Buscas em Hemeroteca, jornais, cemitérios e obituários",
+    "url": "https://memoria.bn.gov.br/",
+    "fact": "As consultas não localizaram registro pertinente. Resultado para Grandilia Ghizoni em jornal de 1950 não contém Zaniratti e não foi associado.",
+    "locator": "Lotes 13–14, respostas integrais preservadas.",
+    "status": "negative_index_search",
+    "limitation": "O nome Ghizoni foi tratado como não associado; resultados negativos limitam-se às consultas."
+  },
+  {
+    "id": "G007",
+    "title": "Inventário histórico de Varre-Sai",
+    "url": "https://pt.scribd.com/document/491491512/Inventario-Varre-Sai-PARTE-I-pdf",
+    "fact": "OCR da busca mostra Zaniratti em lista associada à história/ocupação de Varre-Sai, em inventário atribuído ao INEPAC/Secretaria de Estado de Cultura, edição 2011.",
+    "locator": "Snippet OCR; não foi conferido com original institucional nem visualmente no documento completo.",
+    "status": "context_only",
+    "limitation": "Não prova ocorrência de Custode, Valentim, Elisa ou Reni nem parentesco."
+  },
+  {
+    "id": "G008",
+    "title": "Revalidação nominal de João Vítor sem dado genealógico novo",
+    "url": "https://joao.md/",
+    "fact": "A busca web retornou página profissional com o nome exato, sem fato genealógico útil.",
+    "locator": "Lote 01; ruído adicional nos lotes 02–04.",
+    "status": "revalidation_no_genealogy",
+    "limitation": "Página profissional não é prova genealógica; não reproduzir identificadores ou dados privados."
+  },
+  {
+    "id": "G009",
+    "title": "História municipal de Varre-Sai",
+    "url": "https://www.varresai.rj.gov.br/paginas/97",
+    "fact": "A página municipal relata migração/colonização e chegada de cerca de 100 famílias italianas no fim do século XIX.",
+    "locator": "Site oficial da Prefeitura de Varre-Sai, lote 05.",
+    "status": "context_only",
+    "limitation": "Não demonstra presença de alvo ou vínculo familiar."
+  },
+  {
+    "id": "MI-SANTE-ATTIVITA-1895-21-IDS",
+    "title": "Filtro público do Museu: Sante + chegada 1895 + vapor Attivita",
+    "url": "https://museudaimigracao.com.br/acervo/registro-de-matricula?nome=Sante&sobrenome=&nacionalidade=&chegada=1895&vapor=Attivita",
+    "fact": "O filtro declara “21 Registro(os) Encontrado(os)”. Duas páginas renderizam 20 e 11 linhas; deduplicação por ID resulta em 21 registros únicos. Três adultos de 40–55 foram detalhados.",
+    "locator": "HTML íntegro das páginas 1 e 2 e manifests JSON em [evidência local preservada; caminho interno omitido]; IDs preservados em [evidência local preservada; caminho interno omitido]",
+    "status": "candidatos examinados; nenhum comprovado como Custode/família",
+    "limitation": "Consulta dirigida pelo prenome e vapor, mas cada linha deve ser avaliada individualmente. O campo data é chegada/matrícula da hospedaria segundo o acervo; não prova, por si, data de embarque."
+  },
+  {
+    "id": "653423",
+    "title": "Registro Sante sem sobrenome indexado, família Bassin",
+    "url": "https://museudaimigracao.com.br/acervo/registro-de-matricula/detalhes?id=653423&livro=051&pagina=456&familia=87470",
+    "fact": "Ficha: Nome SANTE; sobrenome indexado vazio; idade 45; chegada 18/11/1895; família 87470; livro 051, página 456; vapor FORTUNATA RAGGIO. Registros relacionados incluem cabeçalho manuscrito Bassin Giovanni 62 e Catterina 61, Emilia, Antonio, Sante 45, Regina 45, Catterina e Maria.",
+    "locator": "GET 200 detalhado; PDF institucional L051_456.pdf baixado e renderizado para leitura visual.",
+    "status": "rejeitado para associação ao alvo, mantendo ocorrência literal",
+    "limitation": "O grupo é apresentado sob cabeçalho Bassin e contém Regina 45; não há Ernesta, Grandilia ou Zenaide, nem ligação Zaniratti. A linha de Sante não deve herdar sobrenome do chefe sem evidência explícita."
+  },
+  {
+    "id": "625978",
+    "title": "Sante 54, sobrenome indexado vazio, grupo Bertoni",
+    "url": "https://museudaimigracao.com.br/acervo/registro-de-matricula/detalhes?id=625978&livro=050&pagina=199&familia=46280",
+    "fact": "SANTE, 54, sem sobrenome na ficha; parentesco PAI; chegada 19/08/1895; vapor ATTIVITÁ. Família relacionada: Giulio Bertoni 22 (CHF), Sante (PAI), Adelaide 47 (MAE), Luigi 13 e Vandelina 15.",
+    "locator": "Resposta integral HTTP 200 preservada com hash e hora em [evidência local preservada; caminho interno omitido]",
+    "status": "rejeitado para associação ao alvo",
+    "limitation": "A composição doméstica nomeia Adelaide e filhos sem Ernesta, Grandilia ou Zenaide; não há sobrenome ou vínculo Zaniratti. Prenome/idade isolados são insuficientes."
+  },
+  {
+    "id": "560473",
+    "title": "Sante Cornetti 49",
+    "url": "https://museudaimigracao.com.br/acervo/registro-de-matricula/detalhes?id=560473&livro=046&pagina=179&familia=47820",
+    "fact": "SANTE CORNETTI, 49, parentesco CH, chegada 19/01/1895, vapor ATTIVITA. Registros relacionados: Filomena 49; Vincenzo 17; Vittorio 16; Francesco 14; Antonio 12; Erminia 1.",
+    "locator": "Resposta integral HTTP 200 preservada com hash e hora em [evidência local preservada; caminho interno omitido]",
+    "status": "rejeitado para associação ao alvo",
+    "limitation": "A ficha apresenta grupo familiar Cornetti/Filomena, sem os nomes âncora do alvo; registro isolado não identifica Custode."
+  },
+  {
+    "id": "593997",
+    "title": "Sante Neson 48",
+    "url": "https://museudaimigracao.com.br/acervo/registro-de-matricula/detalhes?id=593997&livro=049&pagina=185&familia=49490",
+    "fact": "SANTE NESON, 48, parentesco CF, chegada 17/06/1895, vapor ATTIVITÁ. Registros relacionados: Luigi 35; Rosa 33 (FLLº); Elisa 7; Corola 4; Maria 1.",
+    "locator": "Resposta integral HTTP 200 preservada com hash e hora em [evidência local preservada; caminho interno omitido]",
+    "status": "rejeitado para associação ao alvo",
+    "limitation": "A composição familiar listada não contém Ernesta, Grandilia ou Zenaide e não há elo Zaniratti. A semelhança etária não basta."
+  },
+  {
+    "id": "MUSEU-COMBOS-01-09",
+    "title": "Consultas combinadas de nomes e sobrenomes alvo",
+    "url": "https://museudaimigracao.com.br/acervo/registro-de-matricula",
+    "fact": "Nove combinações nome/sobrenome foram consultadas: Custode/Zaniratti; Custode/Zanirati; Custodio/Zaniratti; Custodio/Zanirati; Sante/Zaniratti; Sante/Zanirati; Ernesta/Galliera; Grandilia/Zaniratti; Zenaide/Zaniratti. Retornos HTTP 200 indicaram 0 resultados em cada combinação.",
+    "locator": "Respostas integrais em [evidência local preservada; caminho interno omitido] até [arquivo interno omitido] e metadados em [arquivo interno omitido].",
+    "status": "consulta negativa limitada ao critério literal do índice",
+    "limitation": "Zero para combinação consultada não demonstra ausência histórica nem exclui variantes, campos incompletos ou grafias não testadas."
+  },
+  {
+    "id": "SIAN-1035061-HTTP",
+    "title": "Acesso público SIAN a referência atribuída ao Attività",
+    "url": "https://sian.an.gov.br/sianex/Consulta/Pesquisa_Livre_Painel_Resultado.asp?v_CodReferencia_id=1035061",
+    "fact": "GET HTTP 200 retornou HTML de desafio TSPD, não o conteúdo da referência.",
+    "locator": "Resposta HTML integral preservada, horário e hash em [evidência local preservada; caminho interno omitido]",
+    "status": "não acessível nesta tentativa; sem resultado nominal",
+    "limitation": "Nenhum desafio foi contornado. O retorno não pode ser interpretado como ausência do documento ou de passageiros."
+  },
+  {
+    "id": "AN-BASES-MENU-HTTP",
+    "title": "Interface pública de entrada de estrangeiros do Arquivo Nacional",
+    "url": "https://bases.an.gov.br/rv/Menu_Externo/",
+    "fact": "GET HTTP 200 retornou HTML de desafio TSPD, sem menu/pesquisa utilizável.",
+    "locator": "Corpo HTML guardado em [evidência local preservada; caminho interno omitido]; manifesto SIAN/AN registra metadados da resposta.",
+    "status": "bloqueio de acesso nesta tentativa; sem resultado nominal",
+    "limitation": "Não houve contorno de desafio; retorno não é prova de ausência."
+  },
+  {
+    "id": "WEB-SEARCH-BATCHES-01-03",
+    "title": "Buscas web em fontes abertas e Hemeroteca Digital",
+    "url": null,
+    "fact": "Busca trouxe ocorrência colateral OCR de grafia “Guello Zaniràti” e resultado de texto com custode/Galliera em contexto não relacionado; consultas CISEI exatas não retornaram alvos. Nenhum resultado encontrado estabeleceu Custode ou família alvo.",
+    "locator": "Respostas completas das ferramentas guardadas em [evidência local preservada; caminho interno omitido]",
+    "status": "ocorrências colaterais, não associadas; sem identificação",
+    "limitation": "OCR e busca textual são pistas; trecho Guello Zaniràti não equivale a Zaniratti e nenhum contexto localizado demonstra relação com a família em investigação."
+  },
+  {
+    "id": "ZANIRATTO-EXT-01",
+    "title": "Busca web: \"Custode Sante\" \"Zaniratto\" OR \"Custodio Sante\" \"Zaniratto\"",
+    "url": null,
+    "fact": "Empty search results No results were found for the provided queries",
+    "locator": "Resposta integral da chamada preservada em [evidência local preservada; caminho interno omitido]; registrada 2026-10-11T15:03:01+00:00; ferramenta não expôs horário da consulta, status HTTP ou ID de chamada para as duas respostas vazias.",
+    "status": "inconclusivo_para_identidade",
+    "limitation": "O mecanismo retornou “Empty search results”; isso não rejeita a identidade nem demonstra inexistência documental."
+  },
+  {
+    "id": "ZANIRATTO-EXT-02",
+    "title": "Busca web: \"Luigi Zaniratto\" \"Pasqua Mellara\"",
+    "url": null,
+    "fact": "Empty search results No results were found for the provided queries",
+    "locator": "Resposta integral da chamada preservada em [evidência local preservada; caminho interno omitido]; registrada 2026-10-11T15:03:01+00:00; ferramenta não expôs horário da consulta, status HTTP ou ID de chamada para as duas respostas vazias.",
+    "status": "inconclusivo_para_identidade",
+    "limitation": "O mecanismo retornou “Empty search results”; isso não rejeita a identidade nem demonstra inexistência documental."
+  },
+  {
+    "id": "ZANIRATTO-EXT-03",
+    "title": "Resultados agregados para Valentim/Valentino + Zaniratto + Elisa Bernardino",
+    "url": null,
+    "fact": "Convocados FUVEST 2022 - Lista Alfabética | PDF (https://id.scribd.com/document/549429478/Fuvest-2022-Convocados-Segunda-Fase-Geral) 【turn350596search0】 [wordlim: 200] Crawled: 4.8 years ago; Beatriz Guimaraes do Nascimento 527.415... ... Beatriz Laurentino Alves de Lima 156.879... ... Bernardo Martins Valentim ... Bruna Nagamine Zanini ... Bianky Nardy Lyrio Vargas dos Santos 356.583... ... Enrico Zanirato 526.800... Beatriz Rodrigues Rocha 413.491... Bernardo Gomes de Moraes 472.375... Beatriz Kruglensky Lerner 498.299... Beatriz Rodrigues Rossi 165.997... Bernardo Gomes Teixeira Goncalves 498.219... Beatriz Kunzendorff Oh 409.826... Beatriz Romanhole Machado 380.845... Bernardo Granado Teixeira 459.950... Beatriz Kurihara Momente 487.837... Beatriz Romano Wardil 513.366... Bernardo Guaraldo Batista de Souza 478.458... Beatriz Lara Mercham dos Santos 354.314... Beatriz Rosa Pizani 157.112... Bernardo Lage Morano Torquato 031.310... Beatriz Latado Braga 451.445... Beatriz Rosalino Lourenco 096.249... Bernardo Lopes Bernardi 465.896... Beatriz Laurentino Alves de Lima 156.879... Beatriz Rossi Valladares E Souza 198.331... Bernardo Magalhaes Schaffer 528.651... Beatriz Leardini Ozaki 525.286... Beatriz Rowlands 160.693... Bernardo Maisonnette Blower 442.713... Beatriz Leite de Souza 383.651... Beatriz Rustomgy Mesquita 146.693... Bernardo Martins Valentim 105.737... Beatriz Leite Pessoa 473.842... Beatriz Sabino 099.336... Bernardo Miranda Feuerschuette 489.013... Beatriz Lemes de Oliveira 385.925... Beatriz Salzani 138.248... Bernardo Motta da Fonseca 478.767... Beatriz Lima dos Santos 446.675... Beatriz Sandrini Roseguine da Cruz 034.168... Bernardo Nascentes Bispo Oliveira 443.666... Beatriz Lima Fernandes de Souza E Silva 519.929... Beatriz Santana de Oliveira 142.271... Bernardo Nebias Silva -------------------------------------------------------------------------------- Aprovados Na 1 Fase - Provas Realizadas em 2024 - 05092024 | PDF (https://www.scribd.com/document/767123133/Aprovados-Na-1%C2%AA-Fase-Provas-Realizadas-Em-2024-05092024) 【turn350596search1】 [wordlim: 200] Published: 2.1 years ago; Crawled: 2.1 years ago; Aguardem o contato do CIEE! ... ANA ELISA RIBEIRO DE SOUZA 26/01/2024 ... BRUNA GABRIELA VALENTIM 24/06/2024 ... CLARA CHIOATTO FREITAS 07/03/2024 ... CLAUDINEIA DA SILVA VALENTIM 15/08/2024 44 BRUNA DIAS CAVALCANTE 23/01/2024 BRUNA DIAS RODRIGUES 11/04/2024 BRUNA DOMINGUES DE MOURA 06/06/2024 BRUNA DOS SANTOS 23/01/2024 BRUNA DOS SANTOS MANOEL 04/08/2024 BRUNA DOS SANTOS PEREIRA DA SILVA 02/06/2024 BRUNA EDUARDA ALMEIDA PORTELA E SOUZA 20/03/2024 BRUNA ESTEVES LIMA 21/05/2024 BRUNA EVELYN COSTA DA SILVA 13/04/2024 BRUNA FERNANDA LIMA SILVA 12/08/2024 BRUNA FERNANDES FEITOSA 09/02/2024 BRUNA FERREIRA DA SILVA 28/05/2024 BRUNA FERREIRA FLORES 14/08/2024 BRUNA FERREIRA PASSOS 13/02/2024 BRUNA FIGUEIREDO 24/08/2024 BRUNA FRANCINE HARUMI UYETI 31/01/2024 BRUNA FRANCISCA DA SILVA ORTIZ 28/08/2024 BRUNA GABRIELA VALENTIM 24/06/2024 BRUNA GABRIELI GODOI NASCIMENTO 11/01/2024 BRUNA GABRIELI GODOI NASCIMENTO 25/04/2024 BRUNA GABRIELY SOUZA SILVA 31/08/2024 BRUNA GALDINO BUITRAGO SILVA 09/04/2024 BRUNA GENEROSO DE PAULA 20/08/2024 BRUNA GOMES 26/03/2024 BRUNA GOMES DUARTE 09/05/2024 BRUNA GONÇALVES ALMEIDA 11/03/2024 BRUNA GONÇALVES SISNANDES 22/08/2024 BRUNA GONZALEZ TANDU OLIVEIRA 18/03/2024 BRUNA GRECCO DA SILVA 04/04/2024 CLAUDIA MARIA DOS SANTOS OLIVEIRA 04/03/2024 CLÁUDIA MARIA MUNIZ DA SILVA 21/08/2024 CLAUDIA MIRIÃ SOARES RAMIRES 01/02/2024 CLAUDIA PATRICIA DOS SANTOS 12/04/2024 CLAUDIA PATRICIA DOS SANTOS 15/04/2024 CLAUDIA PINHEIRO DOS SANTOS 01/08/2024 CLAUDIA REGINA FERREIRA 19/08/2024 CLAUDIA ROBERTA SOUZA GUIMARÃES 17/05/2024 CLAUDIA RODRIGUES PEREIRA GONÇALVES 01/08/2024 CLAUDIA SABINA SILVA 29/07/2024 CLAUDIA SILVA DE BARROS 16/02/2024 CLAUDIANA DA SILVA MEDEIROS 21/04/2024 CLAUDIANA DAMASCENO DE LIMA 23/05/2024 CLAUDIANA FELIPE DOS SANTOS 15/07/2024 CLAUDIANE ALEXANDRE BARROS 16/02/2024 CLAUDIANE APARECIDA DA SILVA CAMELO 28/01/2024 CLAUDIANE SOARES NASCIMENTO 22/02/2024 CLAUDIANI PEREIRA CELESTINO 26/06/2024 CLAUDICE SILVA DOS SANTOS 03/04/2024 CLAUDINA RODRIGUES DOS SANTOS 08/08/2024 CLAUDINEIA DA SILVA VALENTIM 15/08/2024 CLAUDINEIA RIBEIRO DOS SANTOS PAULINO 19/02/2024 CLAUDIO DA SILVA ARAUJO 07/02/2024 CLAUDIO NOGUEIRA SERRA 03/06/2024 CLAUDIO RIBEIRO ROCHA 21/02/2024 CLAYSON NEGREIRO DA SILVA 25/03/2024 CLAYTON BEZERRA AMANCIO DOS SANTOS 04/01/2024 CLAYTON CAMPOS DE SANTANA FILHO 02/09/2024 CLAYTON GUILHERME ALVES DE OLIVEIRA 05/08/2024 CLAYTON RIBEIRO LOPES 02/09/2024 CLEA CRISTIANA NASCIMENTO 14/06/2024 CLEANI CRISTINA SOUZA SILVA 12/07/2024 CLEBERSON VICTOR VIEIRA PINTO 08/05/2024 CLECIA FLORENTINO DE ARAUJO CARVALHO 23/04/2024 CLECIVANIA COSTA DE SANTANA 17/06/2024 CLÉDSON GOMES QUIRINO 04/06/2024 CLEIA MORORO MARTINS DOS SANTOS 09/05/2024 CLEIANE ARAUJO GONCALVES 25/08/2024 CLEICIANE APARECIDA APOLINARI 26/01/2024 CLEIDE ALMEIDA ALVES DO CARMO 06/02/2024 CLEIDE CARVALHO COSTA 05/06/2024 -------------------------------------------------------------------------------- CEMIG Funcionarios Resultado Oficial 2005 - PDFCOFFEE.COM (https://pdfcoffee.com/cemig-funcionarios-resultado-oficial-2005-pdf-free.html) 【turn350596search2】 [wordlim: 200] Published: 21.8 years ago; Crawled: today; LIMA, EDUARDO BEZERRA CARDOSO, GUSTAVO CIFUENTES DIAS ARAUJO, BARBARA MAIA SABINO, EDSON VIEIRA GUIMARAES, LUCIANA PESSOA DE SOUSA GOMES, RAQUEL LIMA NASCIMENTO, CLARISSE VIANA SANTOS SANTANNA, DANIELA CRISTINA ALVES, FABIANE DE MELO VILAÇA, JORDANA DOS SANTOS MACHADO, ROGERIO RAIMUNDO NONATO, ÁLAN SANCHES DA SILVA, CARLA OLIVEIRA SANTOS, JAQUELINE CRISTINA ALVES, DENISE ALVES GODINHO, LUCIANA DRUMMOND DE CARVALHO, DAYANE DANIELE VIEIRA MARTINS, ROBERTA CAMPOS PRATA, PEDRO HENRIQUE VIANA RODRIGUES DE PAULA, MARCUS VINICIUS BAPTISTA DOS SANTOS, DANIELLA PIMENTA COSTA, FILLIPE MARÇAL RODRIGUES DE SANT´ANA, EDUARDO AGUIAR MOURAO, DIEGO CARDOSO DE SOUZA, MÚCIO OTÁVIO DA FONSECA JUNQUEIRA, MARY LUCY VENÂNCIO DE FARIA, DIOGO DA SILVA PORCINO, NÉLIO JOSÉ PEREIRA DA SILVA, ROZÂNGELA MARIA CASSIANO DE SOUZA, ADILSON DE ALCANTARA BUSTAMANTE, VAGNER LUCAS RIBEIRO DA SILVA, EDLLIAM HENRIQUE COUTO DE OLIVEIRA, JOMAILTON FERREIRA BARROS, ERIKA DE SOUZA OLIVEIRA, CRISTIANO MARQUES GOMES, FLÁVIA MARA CAMPOS SILVA, RODRIGO FERREIRA SANTAIGO, BERNARDO MANNARINO BOTARRO, WILLIAM DE SOUZA DA SILVA, ALINE HARMENDANI TEIXEIRA, VIVIANE DOS SANTOS ARAÚJO, TIAGO MOREIRA DE CARVALHO, MAIRA DA COSTA CARVALHO, HEDERLEI LUCIANO DE SIQUEIRA, LUANA JAÇANÃ RESENDE DOS SANTOS, JEFFERSON WASHINGTON ALFAIA ROMANELLI, RENATA MOREIRA DINIZ, MARCO TÚLIO MAGALHÃES SOUZA, FLÁVIA FRANCISCA DO NASCIMENTO CORRÊA, DÉBORA NICODEMOS BATISTA DE PAIVA, LILIAN BATISTA DE OLIVEIRA, LUIZ GUSTAVO MONTEIRO DA SILVA, VANESSA PORTO CAETANO, DOUGLAS MOISES COSTA, RAYMI FERNANDES FARIA, EMANUELLE DAS DORES FIGUEIREDO SOCORRO, MATHEUS VINICIUS DE ARAUJO RIBEIRO, JEFFERSON DA SILVA BOTELHO, ALINE FÁTIMA PESSOA DOS ANJOS, KATIA FERNANDES TEIXEIRA, PAULO ACORRONI JUNIOR, CASSIO MARTINS DE LIMA, JULIO CESAR FAUSTINO, MISAEL SINCLAIR DE OLIVEIRA, ABÍLIO LEITE ALMEIDA, CLEBER DE OLIVEIRA MACHADO, MATHEUS CÉSAR DE MATOS RIBEIRO PINTO, VINICIUS FONSECA MELO, RAFAEL MESQUITA GONDIM, GABRIELA DE JESUS CARVALHO, OTÁVIO NUNES DE OLIVEIRA, VÍTOR DE ALMEIDA BRACARENSE, MAGNO ALVES COSTA, LEANDRO CAVALCANTE FERREIRA, JUNIA CRISTINA TEIXEIRA, JOSÉ FRANCISCO DE LANA, SAMUEL NOGUEIRA PEREIRA, CLAUDINEIA TEREZA DA SILVA, ANDRÉ LUIZ CALDEIRA RODRIGUES, FABIANO FRANCO MENDONÇA, ANDERSON VINICIUS DE SOUZA MOTA, ABEL JOSE DE OLIVEIRA, TAÍS LÉLIS ADVINCULA, BRUNO SANTANA DE FREITAS, VITOR CELIO SOARES, BÁRBARA MADUREIRA WANDERLEY, DÉRICK DE FREITAS MELO, GUSTAVO HENRIQUE MENDES, VANTUIL CUNHA DE SOUZA, MÁRCIO DE SENA LEVINDO, EFIGENIA APARECIDA PINTO PAIXÃO, MARCOS SILVINO NEVES, LAURA CRISTINE MARTINS CORRÊA, SAYMON MAIA DA COSTA, TATIANA SILVA DA COSTA, VALTER GOMES DA SSILVA, NIZE BRAZ STUART, FABIANO DE SOUZA DIAS, FLAVIANE FERNANDA FERNANDES, GISELLE VAZ DE SOUSA, VANESSA BRAGA CRISÓSTOMO, FERNANDA CRISTINA RESENDE RAMOS, CLAUDIO JUNIO DOS SANTOS, ARACELI ARAÚJO VASCONCELOS, RAPHAEL ORDONHES SANTIAGO, CAROLINA PORTO OTTONI, HÉLIO BARBOSA SANTOS, LEANDRA FREITAS DE MATOS, TÚLIO FONTES TEIXEIRA, VALQUIRIA DE ALMEIDA LOPES ALVES, JANDERSON DE OLIVERA MENEZ, KLEBER DE SOUZA RESENDE, DANIEL AUGUSTO DE RESENDE, WILSON NOGUEIRA DA SILVA, FABIANA CAVALCANTE DE REZENDE, ANDRÉ LUIZ DOS SANTOS, VANESSA CRISTINA CARDEAL, CAMILA DE MATOS RAMOS, ALEX CANDIDO DA SILVA, JORDANA NEVES SALLES, LEANDRO DIAS FERREIRA, JOSÉ MARCOS GOMES BORGES, ALCIONE MARIA CAMPOS, ROSANE ELIZABETH VITORETTI MARTINS, RAFAEL DE LIMA PEIXOTO, POLLYANNA THAYS ZANETTI, MIGUEL AMARAL FROSSARD DE PAULA, FABRÍCIO AUGUSTO PEREIRA CASTELO BRANCO, JULIETA MARIA DONIZETI SANT´ANA, WILIAM ROCHA SILVA, ELTON ROSADO, VIVIANE MOREIRA BESSA, MONICA GOMES MATTOS, CLÁUDIO ROGÉRIO AMBRÓSIO, JAQUELINE DULCE MOREIRA, FABIANNE BRITO EDWIGES, TIAGO HENRIQUE ALVES ROCHA, FERNANDA LUIZA DE MELO FRANCISCO, OTHON JOSÉ DE SOUZA COSTA, DENISE DINIZ FERREIRA, LUCIANA ALBANAZ DOS SANTOS, ISABELLA REGINA MORAIS MAGNANI, EVERALDO DOS SANTOS CHAVES, RENATO AUGUSTO ANDRADE, LUANA DE LIMA OLIVEIRA, JOSÉ ANTÔNIO DE CARVALHO CANÇADO LAMBERTUCCI, MARCELA GONÇALVES COELHO SILVA, LUIZ HENRIQUE MARQUES DA COSTA, PEDRO HENRIQUE DA COSTA FREITAS, DANIEL ANDRADE MEIRELES, SILVIO CESAR ANTONIO DA SILVEIRA, LIMA, EDUARDO BEZERRA CARDOSO, GUSTAVO CIFUENTES DIAS ARAUJO, BARBARA MAIA SABINO, EDSON VIEIRA GUIMARAES, LUCIANA PESSOA DE SOUSA GOMES, RAQUEL LIMA NASCIMENTO, CLARISSE VIANA SANTOS SANTANNA, DANIELA CRISTINA ALVES, FABIANE DE MELO VILAÇA, JORDANA DOS SANTOS MACHADO, ROGERIO RAIMUNDO NONATO, ÁLAN SANCHES DA SILVA, CARLA OLIVEIRA SANTOS, JAQUELINE CRISTINA ALVES, DENISE ALVES GODINHO, LUCIANA DRUMMOND DE CARVALHO, DAYANE DANIELE VIEIRA MARTINS, ROBERTA CAMPOS PRATA, PEDRO HENRIQUE VIANA RODRIGUES DE PAULA, MARCUS VINICIUS BAPTISTA DOS SANTOS, DANIELLA PIMENTA COSTA, FILLIPE MARÇAL RODRIGUES DE SANT´ANA, EDUARDO AGUIAR MOURAO, DIEGO CARDOSO DE SOUZA, MÚCIO OTÁVIO DA FONSECA JUNQUEIRA, MARY LUCY VENÂNCIO DE FARIA, DIOGO DA SILVA PORCINO, NÉLIO JOSÉ PEREIRA DA SILVA, ROZÂNGELA MARIA CASSIANO DE SOUZA, ADILSON DE ALCANTARA BUSTAMANTE, VAGNER LUCAS RIBEIRO DA SILVA, EDLLIAM HENRIQUE COUTO DE OLIVEIRA, JOMAILTON FERREIRA BARROS, ERIKA DE SOUZA OLIVEIRA, CRISTIANO MARQUES GOMES, FLÁVIA MARA CAMPOS SILVA, RODRIGO FERREIRA SANTAIGO, BERNARDO MANNARINO BOTARRO, WILLIAM DE SOUZA DA SILVA, ALINE HARMENDANI TEIXEIRA, VIVIANE DOS SANTOS ARAÚJO, TIAGO MOREIRA DE CARVALHO, MAIRA DA COSTA CARVALHO, HEDERLEI LUCIANO DE SIQUEIRA, LUANA JAÇANÃ RESENDE DOS SANTOS, JEFFERSON WASHINGTON ALFAIA ROMANELLI, RENATA MOREIRA DINIZ, MARCO TÚLIO MAGALHÃES SOUZA, FLÁVIA FRANCISCA DO NASCIMENTO CORRÊA, DÉBORA NICODEMOS BATISTA DE PAIVA, LILIAN BATISTA DE OLIVEIRA, LUIZ GUSTAVO MONTEIRO DA SILVA, VANESSA PORTO CAETANO, DOUGLAS MOISES COSTA, RAYMI FERNANDES FARIA, EMANUELLE DAS DORES FIGUEIREDO SOCORRO, MATHEUS VINICIUS DE ARAUJO RIBEIRO, JEFFERSON DA SILVA BOTELHO, ALINE FÁTIMA PESSOA DOS ANJOS, KATIA FERNANDES TEIXEIRA, PAULO ACORRONI JUNIOR, CASSIO MARTINS DE LIMA, JULIO CESAR FAUSTINO, MISAEL SINCLAIR DE OLIVEIRA, ABÍLIO LEITE ALMEIDA, CLEBER DE OLIVEIRA MACHADO, MATHEUS CÉSAR DE MATOS RIBEIRO PINTO, VINICIUS FONSECA MELO, RAFAEL MESQUITA GONDIM, GABRIELA DE JESUS CARVALHO, OTÁVIO NUNES DE OLIVEIRA, VÍTOR DE ALMEIDA BRACARENSE, MAGNO ALVES COSTA, LEANDRO CAVALCANTE FERREIRA, JUNIA CRISTINA TEIXEIRA, JOSÉ FRANCISCO DE LANA, SAMUEL NOGUEIRA PEREIRA, CLAUDINEIA TEREZA DA SILVA, ANDRÉ LUIZ CALDEIRA RODRIGUES, FABIANO FRANCO MENDONÇA, ANDERSON VINICIUS DE SOUZA MOTA, ABEL JOSE DE OLIVEIRA, TAÍS LÉLIS ADVINCULA, BRUNO SANTANA DE FREITAS, VITOR CELIO SOARES, BÁRBARA MADUREIRA WANDERLEY, DÉRICK DE FREITAS MELO, GUSTAVO HENRIQUE MENDES, VANTUIL CUNHA DE SOUZA, MÁRCIO DE SENA LEVINDO, EFIGENIA APARECIDA PINTO PAIXÃO, MARCOS SILVINO NEVES, LAURA CRISTINE MARTINS CORRÊA, SAYMON MAIA DA COSTA, TATIANA SILVA DA COSTA, VALTER GOMES DA SSILVA, NIZE BRAZ STUART, FABIANO DE SOUZA DIAS, FLAVIANE FERNANDA FERNANDES, GISELLE VAZ DE SOUSA, VANESSA BRAGA CRISÓSTOMO, FERNANDA CRISTINA RESENDE RAMOS, CLAUDIO JUNIO DOS SANTOS, ARACELI ARAÚJO VASCONCELOS, RAPHAEL ORDONHES SANTIAGO, CAROLINA PORTO OTTONI, HÉLIO BARBOSA SANTOS, LEANDRA FREITAS DE MATOS, TÚLIO FONTES TEIXEIRA, VALQUIRIA DE ALMEIDA LOPES ALVES, JANDERSON DE OLIVERA MENEZ, KLEBER DE SOUZA RESENDE, DANIEL AUGUSTO DE RESENDE, WILSON NOGUEIRA DA SILVA, FABIANA CAVALCANTE DE REZENDE, ANDRÉ LUIZ DOS SANTOS, VANESSA CRISTINA CARDEAL, CAMILA DE MATOS RAMOS, ALEX CANDIDO DA SILVA, JORDANA NEVES SALLES, LEANDRO DIAS FERREIRA, JOSÉ MARCOS GOMES BORGES, ALCIONE MARIA CAMPOS, ROSANE ELIZABETH VITORETTI MARTINS, RAFAEL DE LIMA PEIXOTO, POLLYANNA THAYS ZANETTI, MIGUEL AMARAL FROSSARD DE PAULA, FABRÍCIO AUGUSTO PEREIRA CASTELO BRANCO, JULIETA MARIA DONIZETI SANT´ANA, WILIAM ROCHA SILVA, ELTON ROSADO, VIVIANE MOREIRA BESSA, MONICA GOMES MATTOS, CLÁUDIO ROGÉRIO AMBRÓSIO, JAQUELINE DULCE MOREIRA, FABIANNE BRITO EDWIGES, TIAGO HENRIQUE ALVES ROCHA, FERNANDA LUIZA DE MELO FRANCISCO, OTHON JOSÉ DE SOUZA COSTA, DENISE DINIZ FERREIRA, LUCIANA ALBANAZ DOS SANTOS, ISABELLA REGINA MORAIS MAGNANI, EVERALDO DOS SANTOS CHAVES, RENATO AUGUSTO ANDRADE, LUANA DE LIMA OLIVEIRA, JOSÉ ANTÔNIO DE CARVALHO CANÇADO LAMBERTUCCI, MARCELA GONÇALVES COELHO SILVA, LUIZ HENRIQUE MARQUES DA COSTA, PEDRO HENRIQUE DA COSTA FREITAS, DANIEL ANDRADE MEIRELES, SILVIO CESAR ANTONIO DA SILVEIRA, -------------------------------------------------------------------------------- Lista de aprovados Unicamp 2020: classificados na 1ª fase (https://blog.imaginie.com.br/lista-de-aprovados-unicamp/) 【turn350596search3】 [wordlim: 200] Published: 6.9 years ago; Crawled: today; Beatriz Valentim Perna ... Elisa Lurago da Silva ... Elisa Marques Cardoso de Oliveira ... Enzo Valentim Cappelozza ... Isabela Zanatta Braido ... Isabelle Schiavinatto Nogueira ... Lucas Bernardino de Oliveira -------------------------------------------------------------------------------- ESCOLA DE FORMAÇÃO e APERFEIÇOAMENTO DOS (https://livrozilla.com/doc/390671/escola-de-forma%C3%A7%C3%A3o-e-aperfei%C3%A7oamento-dos) 【turn350596search4】 [wordlim: 200] Published: 15.9 years ago; Crawled: today; Cibele Fernandes Zaniratto Ruiz; RG 198876749; Local: 14; Data/Período: P4 ... Cicero Andre de Castro Jardim; RG 183475537; Local: 63; Data/Período: P4 ... Elizabete Aparecida Bernardino; RG 226264580; Local: 65; Data/Período: P3 -------------------------------------------------------------------------------- 10ª Olimpíada Brasileira de Matemática das Escolas Públicas - OBMEP (https://premiacao.obmep.org.br/2014/verRelatorioPremiadosGeral-SP.do.htm) 【turn350596search5】 [wordlim: 200] Crawled: 2.6 years ago; 366 | BEATRIZ ALVES MACEDO SILVA | LAURA QUAGLIATO PACHECO EM | M | CAPIVARI | SP | --- | Sim ... 368 | BEATRIZ BERALDO | VALENTIM ALVARES EM | M | PALESTINA | SP | --- | Sim ... 377 | BEATRIZ DE MORAES TEIXEIRA | OSWALDO SAMUEL MASSEI EMEF | M | SAO CAETANO DO SUL | SP | Bronze | --- -------------------------------------------------------------------------------- Concurso da CAIXA Economica Federal 2006 - Free Download PDF Ebook (https://dokumen.site/download/concurso-da-caixa-economica-federal-2006-a5b39efffbe3fd) 【turn350596search6】 [wordlim: 200] Published: 8.5 years ago; Crawled: today; Rio de Janeiro/RJ / 10128561. ... Bianca Giordana Zaniratto. ... Carla Regina Esteves Valentim.",
+    "locator": "Retorno integral da chamada preservado em [evidência local preservada; caminho interno omitido]; consulta refinada registrada 2026-10-11T15:05:00+00:00. O provedor não expôs hora individual, status HTTP ou ID para a chamada.",
+    "status": "inconclusivo_para_identidade",
+    "limitation": "O retorno da busca mostra listas contemporâneas com combinações parciais ou sobrenome diferente (“Zanirato”), sem coocorrência genealógica verificável dos nomes solicitados. São resultados não associados, não evidência dos alvos nem rejeição de identidade."
+  },
+  {
+    "id": "ZANIRATTO-EXT-04",
+    "title": "Busca exploratória mais ampla para Valentim/Valentino + Zaniratto + Elisa Bernardino",
+    "url": null,
+    "fact": "Convocados FUVEST 2022 - Lista Alfabética | PDF (https://id.scribd.com/document/549429478/Fuvest-2022-Convocados-Segunda-Fase-Geral) 【turn792316search0】 [wordlim: 200] Crawled: 4.8 years ago; Bernardo Guaraldo Batista de Souza ... Bernardo Martins Valentim ... Bruna Alves da Silva Mello 372.462... ... Enrico Zanirato 526.800... ... Enzo Nascimento Cardoso de Moraes 445.490... ... Enzo Daldon Arraval 456.986... Beatriz Rodrigues Rocha 413.491... Bernardo Gomes de Moraes 472.375... Beatriz Kruglensky Lerner 498.299... Beatriz Rodrigues Rossi 165.997... Bernardo Gomes Teixeira Goncalves 498.219... Beatriz Kunzendorff Oh 409.826... Beatriz Romanhole Machado 380.845... Bernardo Granado Teixeira 459.950... Beatriz Kurihara Momente 487.837... Beatriz Romano Wardil 513.366... Bernardo Guaraldo Batista de Souza 478.458... Beatriz Lara Mercham dos Santos 354.314... Beatriz Rosa Pizani 157.112... Bernardo Lage Morano Torquato 031.310... Beatriz Latado Braga 451.445... Beatriz Rosalino Lourenco 096.249... Bernardo Lopes Bernardi 465.896... Beatriz Laurentino Alves de Lima 156.879... Beatriz Rossi Valladares E Souza 198.331... Bernardo Magalhaes Schaffer 528.651... Beatriz Leardini Ozaki 525.286... Beatriz Rowlands 160.693... Bernardo Maisonnette Blower 442.713... Beatriz Leite de Souza 383.651... Beatriz Rustomgy Mesquita 146.693... Bernardo Martins Valentim 105.737... Beatriz Leite Pessoa 473.842... Beatriz Sabino 099.336... Bernardo Miranda Feuerschuette 489.013... Beatriz Lemes de Oliveira 385.925... Beatriz Salzani 138.248... Bernardo Motta da Fonseca 478.767... Beatriz Lima dos Santos 446.675... Beatriz Sandrini Roseguine da Cruz 034.168... Bernardo Nascentes Bispo Oliveira 443.666... Beatriz Lima Fernandes de Souza E Silva 519.929... Beatriz Santana de Oliveira 142.271... Bernardo Nebias Silva FUVEST 2022 CPF Nome Relação dos Convocados para a Segunda Fase Listagem Alfabética CPF Nome CPF Nome até Estevao Morellon Coimbra 390 candidatos nesta página PAG 0019 525.597... Enrico Thomas Mazelli 445.550... Enzo Menezes Melo 481.490... Erick Hiroshi Iizuka 451.838... Enrico Vasconcellos 393.142... Enzo Mirim Lima Ribeiro 449.157... Erick Jun Miyagi 536.034... Enrico Vitolo 528.400... Enzo Miyazaki Takao 528.108... Erick Kendi Tanigami 541.366... Enrico Zanirato 526.800... Enzo Mizumoto Ferreira 474.789... Erick Kenzo Sato 475.108... Enrique Dionisio Carraro 448.017... Enzo Molinari 424.674... Erick Lima Bulgarelli 026.004... Enydaira Cyles Pereira Miranda 423.992... Enzo Morette Barreto Passarelli 482.190... Erick Lione 111.143... Enza Maria Conti Zacche 450.058... Enzo Murari 399.832... Erick Marquiti Agostinelli Cinquini 392.503... Enzo Adami Tucunduva 507.910... Enzo Naoki Shimizu 483.304... Erick Mesquita Cruz 395.817... Enzo Aiello 491.288... Enzo Nascimento Cardoso de Moraes 445.490... Erick Minto Martins -------------------------------------------------------------------------------- Aprovados Na 1 Fase - Provas Realizadas em 2024 - 05092024 | PDF (https://www.scribd.com/document/767123133/Aprovados-Na-1%C2%AA-Fase-Provas-Realizadas-Em-2024-05092024) 【turn792316search1】 [wordlim: 200] Published: 2.1 years ago; Crawled: 2.1 years ago; CLARA CHIOATTO FREITAS 07/03/2024 ... CLAUDINEIA DA SILVA VALENTIM 15/08/2024 ... ELISA CRISTINA DE OLIVEIRA 12/07/2024 ... ELISA MOREIRA DA SILVA ALVES 15/02/2024 ... ELIZA ELIZETE DE ALCÂNTARA BATISTA 25/03/2024 ... ELMA DE CASTRO SOUZA 05/04/2024 ... ELVIS HENRIQUE CARDOSO DE SOUZA DA SILVA 27/03/2024 ... EMANOELLE BERNARDO DA SILVA LARCHER 03/05/2024 CLAUDIA MARIA DOS SANTOS OLIVEIRA 04/03/2024 CLÁUDIA MARIA MUNIZ DA SILVA 21/08/2024 CLAUDIA MIRIÃ SOARES RAMIRES 01/02/2024 CLAUDIA PATRICIA DOS SANTOS 12/04/2024 CLAUDIA PATRICIA DOS SANTOS 15/04/2024 CLAUDIA PINHEIRO DOS SANTOS 01/08/2024 CLAUDIA REGINA FERREIRA 19/08/2024 CLAUDIA ROBERTA SOUZA GUIMARÃES 17/05/2024 CLAUDIA RODRIGUES PEREIRA GONÇALVES 01/08/2024 CLAUDIA SABINA SILVA 29/07/2024 CLAUDIA SILVA DE BARROS 16/02/2024 CLAUDIANA DA SILVA MEDEIROS 21/04/2024 CLAUDIANA DAMASCENO DE LIMA 23/05/2024 CLAUDIANA FELIPE DOS SANTOS 15/07/2024 CLAUDIANE ALEXANDRE BARROS 16/02/2024 CLAUDIANE APARECIDA DA SILVA CAMELO 28/01/2024 CLAUDIANE SOARES NASCIMENTO 22/02/2024 CLAUDIANI PEREIRA CELESTINO 26/06/2024 CLAUDICE SILVA DOS SANTOS 03/04/2024 CLAUDINA RODRIGUES DOS SANTOS 08/08/2024 CLAUDINEIA DA SILVA VALENTIM 15/08/2024 CLAUDINEIA RIBEIRO DOS SANTOS PAULINO 19/02/2024 CLAUDIO DA SILVA ARAUJO 07/02/2024 CLAUDIO NOGUEIRA SERRA 03/06/2024 CLAUDIO RIBEIRO ROCHA 21/02/2024 CLAYSON NEGREIRO DA SILVA 25/03/2024 CLAYTON BEZERRA AMANCIO DOS SANTOS 04/01/2024 CLAYTON CAMPOS DE SANTANA FILHO 02/09/2024 CLAYTON GUILHERME ALVES DE OLIVEIRA 05/08/2024 CLAYTON RIBEIRO LOPES 02/09/2024 CLEA CRISTIANA NASCIMENTO 14/06/2024 CLEANI CRISTINA SOUZA SILVA 12/07/2024 CLEBERSON VICTOR VIEIRA PINTO 08/05/2024 CLECIA FLORENTINO DE ARAUJO CARVALHO 23/04/2024 CLECIVANIA COSTA DE SANTANA 17/06/2024 CLÉDSON GOMES QUIRINO 04/06/2024 CLEIA MORORO MARTINS DOS SANTOS 09/05/2024 CLEIANE ARAUJO GONCALVES 25/08/2024 CLEICIANE APARECIDA APOLINARI 26/01/2024 CLEIDE ALMEIDA ALVES DO CARMO 06/02/2024 CLEIDE CARVALHO COSTA 05/06/2024 -------------------------------------------------------------------------------- Lista de aprovados Unicamp 2020: classificados na 1ª fase (https://blog.imaginie.com.br/lista-de-aprovados-unicamp/) 【turn792316search2】 [wordlim: 200] Published: 6.9 years ago; Crawled: today; Beatriz Guerrero da Silva ... Beatriz Valentim Perna ... Elisa Bellintani Falcao de Sousa ... Elisa Marques Cardoso de Oliveira ... Emmerson Santos Araujo ... Erika Henrique Alves Silva ... Gabriela Bosque Zanelatto ... Isadora Valentim Freire ... Mariana da Rocha Valentino ... Nicolas Quintan Bernardo ... Nicole Batista Moura ... Vanessa Mayumi Demuner Kizuka Enzo Toledo Viciguer Enzo Valentim Cappelozza Enzo Varella Pastore Enzo Vicente Andruccioli Felix Enzo Vieira Rodrigues Enzo Yasumasa Hirotani Enzzo Massaretto Ephraim Saback Lavigne de Lemos Silva Eric Andreotti Eric Aparecido Moreira Do Nascimento Eric Campos Chiesse Eric de Sordi Ribeiro dos Santos Eric Gordon Findlay Eric Oliveira Gomes Eric Rodrigues de Oliveira Eric Scorci Salvador Eric Seiji Kanai Eric Toshio Mizukami Eric Valerio da Silva Eric Vieira Massoli Eric Vinicius Biagi Raphael Erica Christovao Cardoso Erica Cristina de Oliveira Erica Dallecio Ferreira dos Santos Erica de Oliveira Erica de Sousa Pereira Erica Neri de Lima Erica Policastro Natalense Erica Pottmaier da Silva Erick Alexandre Silva de Araujo Erick de Oliveira Costa Erick de Oliveira Meneses Erick Gomes Do Nascimento Erick Hideki Hayashida Ferreira Erick Mendes de Souza Erick Nogueira Zorn Erick Samuel Salazar Do Carmo Erick Santos Reis Erik da Silva Santos Erik Luis Munhoz Erik Olivi Pereira Erika Cristina Guido Miranda Erika Henrique Alves Silva Isabelle Louise Barbosa dos Santos Isabelle Martins de Sa Oliveira Isabelle Miki Ikuno Isabelle Modesto de Abreu Rodrigues Isabelle Moschini Murollo Isabelle Namias Magri Dordan da Cunha Isabelle Pinheiro Jeronimo Isabelle Polido Ribeiro Isabelle Rocha Oliveira Isabelle Schiavinatto Nogueira Isabelle Silveira Franca Isabelle Vargas Isabelle Zanchetta Quesada Isabelli Molina dos Santos Isabelly Araujo Garbuio Isabelly Cezar Sampaio Isabelly de Lira Ladislau Isabelly Serabo Baseio Isabely Ferreira Mota Isac Almeida Bispo Isack Miguel da Conceicao Isadora Alvarez de Souza Isadora Alves Marinzek Isadora Antunes Isadora Arriagada Andrioli Isadora Barana Conceicao Isadora Beatriz Reis Pereira Isadora Bedani Cavallaro Isadora Caetano Dantas Isadora Caldara Pioli Isadora Campanha Dias Isadora Campos Trindade Isadora Castaldi Sousa Isadora Compri de Souza Moreira Isadora da Motta Paes Costa Isadora de Borba Borges Isadora de Carvalho Mendes Isadora de Castro Lima Isadora de Morais Maria Isadora Delcor Oliveira Isadora Fernandes Goncalves Isadora Florio Tucci Isadora Frasson Matyis Isadora Guerra Nascimento Isadora Larini de Souza Isadora Lima Bigatao Isadora Lima Ribeiro Isadora Luiza Silva Isadora Machado Franceschetti Ferreira da Cun Isadora Maciel Isadora Menezes de Oliveira Isadora Monteiro de Oliveira Isadora Morcelli Loureiro Isadora Nogueira Pinheiro Castelo Branco Isadora Oliveira Das Chagas Isadora Oliveira Lima Isadora Pontoglio Ferreira Isadora Ramos Isadora Romanini Isadora Schuller Santiago Granda Raymundo Isadora Silva Bertini Isadora Theodoro Rodrigues Isadora Valentim Freire Maria Luisa Pereira Melin Lorencini Maria Luisa Pimenta Barros Maria Luisa Rossi Maria Luisa Tavares de Miranda Matias Maria Luisa Vieira Parada Maria Luiza Almeida Teixeira Maria Luiza Alves Ferracini Maria Luiza Barbosa de Oliveira Maria Luiza Barboza da Mota Maria Luiza Busato Maria Luiza Caetano Bassetto Maria Luiza Castro Silva Maria Luiza da Silva Maria Luiza de Carvalho Morel Maria Luiza de Vasconcelos Rossi Maria Luiza dos Santos Maria Luiza Fagundes Cunha Antoniassi Maria Luiza Goncalves Ferreira Maria Luiza Licatalosi Grecco Maria Luiza Machado Pinto Goncalves Maria Luiza Mardegan Igarashi Maria Luiza Maximiano Maria Luiza Nobrega Amorim Maria Luiza Pereira Andrade Maria Luiza Pereira Silva Maria Luiza Piovezan Lorencao Maria Luiza Reis Funchal Maria Luiza Rocha Bitencourt Maria Luiza Rocha Ferreira Sato Maria Luiza Rodrigues Almeida Maria Luiza Solano Pereira Serra Maria Luiza Tassitano de Aguiar Maria Luiza Tonini Novelli Maria Luiza Vieira Guidi Maria Monteiro Silva Maria Paula Bessa Maria Paula de Almeida Passeri Maria Paula Jacinto Maria Paula Jorge Nogueira Secundo dos Santos Maria Paula Morabito Pimentel Maria Paula Rodrigues Martins de Carvalho Maria Paula Rosini Goncalves Maria Paula Viana Araujo Maria Rafaela Lopes dos Santos Maria Raquel Brito Gama Santos Maria Rita Ferreira Rocha Maria Rita Zuza Domingos Maria Romana de Queiroz Porto Maria Sofia Garcia Roche Maria Stefani Fernandes Farias Santana Maria Thais Fricher Fracassi Maria Theresa Adekanbi Valentim Rufino Maria Travesso Daher Maria Valentina Souza Passador Maria Victoria Ferreira e Araujo Maria Victoria Stromberg Racciatti Maria Vitoria Barbero Goncalves Maria Vitoria Couto Barbosa Maria Vitoria Cruz Maria Vitoria de Carvalho Maria Vitoria Dias Camargo Maria Vitoria Fukaya Maria Vitoria Gomes Cardoso Maria Vitoria Leao Ferreira Maria Vitoria Ribeiro Mendes Maria Vitoria Silva Pereira Maria Vittoria Lopes Fernandes -------------------------------------------------------------------------------- Concurso da CAIXA Economica Federal 2006 - Free Download PDF Ebook (https://dokumen.site/download/concurso-da-caixa-economica-federal-2006-a5b39efffbe3fd) 【turn792316search3】 [wordlim: 200] Published: 8.5 years ago; Crawled: today; Bianca Neto de Oliveira.60.40. ... Braz Antonio Silva. ... Bianca Giordana Zaniratto. Baixada Santista/SP / 20045807.00. 17.40. 17. Niterói/RJ / 60104204.60.00. 16. Bianca Braga Cousino. 981. 635.80. Jundiaí/SP / 61301357. 19. 594.40. Bianca Neto de Oliveira.60.40. 19. Brummer Ortiz de Azeredo. 17. 968.20. ABC/SP / 20187886.40. São Paulo Centro/SP / 20561826.60.40. ABC/SP / 10033094.20.40.80.60. Rio de Janeiro/RJ / 10128561. 19. Bianco Coreliano Gomes Pinhal. 16.40. Bianca de Carvalho Rodrigues. 16. Bianca Ramos Cal Machado. 19. 23. Bianca Cirilo Goncalves. 17. Braz Antonio Silva. São Paulo Centro/SP / 60201391. 18. ABC/SP / 62008645. 16. Bibiana Vicentini Nubias. 17.00. 1646. Presidente Prudente/SP / 10100033. 18. 17. Campinas/SP / 62006414.00. Bruna Cristina de Sa. 20.20.40.40. São Paulo Centro/SP / 10131808. Rio de Janeiro/RJ / 20295602. Bianca de Queiroz Ribeiro. 110. Bianca Yukimi Ono. 21. Niterói/RJ / 20070133. Rio de Janeiro/RJ / 61301518.20.60. Bianca Giordana Zaniratto. 105.20.80. 211. Rio de Janeiro/RJ / 10204174. 16. 377. 20. 17.20. 20. 17.60. Campinas/SP / 20082245. Ribeirão Preto/SP / 20338597. -------------------------------------------------------------------------------- 10ª Olimpíada Brasileira de Matemática das Escolas Públicas - OBMEP (https://premiacao.obmep.org.br/2014/verRelatorioPremiadosGeral-SP.do.htm) 【turn792316search4】 [wordlim: 200] Crawled: 2.6 years ago; 366 | BEATRIZ ALVES MACEDO SILVA | LAURA QUAGLIATO PACHECO EM | M | CAPIVARI | SP | --- | Sim ... 368 | BEATRIZ BERALDO | VALENTIM ALVARES EM | M | PALESTINA | SP | --- | Sim ... 371 | BEATRIZ COELHO SILVA | PAULINIA ESCOLA MUNICIPAL ENSINO FUNDAMENTAL E MEDIO DE | M | PAULINIA | SP | Bronze | --- ... 377 | BEATRIZ DE MORAES TEIXEIRA | OSWALDO SAMUEL MASSEI EMEF | M | SAO CAETANO DO SUL | SP | Bronze | --- -------------------------------------------------------------------------------- CEMIG Funcionarios Resultado Oficial 2005 - PDFCOFFEE.COM (https://pdfcoffee.com/cemig-funcionarios-resultado-oficial-2005-pdf-free.html) 【turn792316search5】 [wordlim: 200] Published: 21.8 years ago; Crawled: today; LIMA, EDUARDO BEZERRA CARDOSO, GUSTAVO CIFUENTES DIAS ARAUJO, BARBARA MAIA SABINO, EDSON VIEIRA GUIMARAES, LUCIANA PESSOA DE SOUSA GOMES, RAQUEL LIMA NASCIMENTO, CLARISSE VIANA SANTOS SANTANNA, DANIELA CRISTINA ALVES, FABIANE DE MELO VILAÇA, JORDANA DOS SANTOS MACHADO, ROGERIO RAIMUNDO NONATO, ÁLAN SANCHES DA SILVA, CARLA OLIVEIRA SANTOS, JAQUELINE CRISTINA ALVES, DENISE ALVES GODINHO, LUCIANA DRUMMOND DE CARVALHO, DAYANE DANIELE VIEIRA MARTINS, ROBERTA CAMPOS PRATA, PEDRO HENRIQUE VIANA RODRIGUES DE PAULA, MARCUS VINICIUS BAPTISTA DOS SANTOS, DANIELLA PIMENTA COSTA, FILLIPE MARÇAL RODRIGUES DE SANT´ANA, EDUARDO AGUIAR MOURAO, DIEGO CARDOSO DE SOUZA, MÚCIO OTÁVIO DA FONSECA JUNQUEIRA, MARY LUCY VENÂNCIO DE FARIA, DIOGO DA SILVA PORCINO, NÉLIO JOSÉ PEREIRA DA SILVA, ROZÂNGELA MARIA CASSIANO DE SOUZA, ADILSON DE ALCANTARA BUSTAMANTE, VAGNER LUCAS RIBEIRO DA SILVA, EDLLIAM HENRIQUE COUTO DE OLIVEIRA, JOMAILTON FERREIRA BARROS, ERIKA DE SOUZA OLIVEIRA, CRISTIANO MARQUES GOMES, FLÁVIA MARA CAMPOS SILVA, RODRIGO FERREIRA SANTAIGO, BERNARDO MANNARINO BOTARRO, WILLIAM DE SOUZA DA SILVA, ALINE HARMENDANI TEIXEIRA, VIVIANE DOS SANTOS ARAÚJO, TIAGO MOREIRA DE CARVALHO, MAIRA DA COSTA CARVALHO, HEDERLEI LUCIANO DE SIQUEIRA, LUANA JAÇANÃ RESENDE DOS SANTOS, JEFFERSON WASHINGTON ALFAIA ROMANELLI, RENATA MOREIRA DINIZ, MARCO TÚLIO MAGALHÃES SOUZA, FLÁVIA FRANCISCA DO NASCIMENTO CORRÊA, DÉBORA NICODEMOS BATISTA DE PAIVA, LILIAN BATISTA DE OLIVEIRA, LUIZ GUSTAVO MONTEIRO DA SILVA, VANESSA PORTO CAETANO, DOUGLAS MOISES COSTA, RAYMI FERNANDES FARIA, EMANUELLE DAS DORES FIGUEIREDO SOCORRO, MATHEUS VINICIUS DE ARAUJO RIBEIRO, JEFFERSON DA SILVA BOTELHO, ALINE FÁTIMA PESSOA DOS ANJOS, KATIA FERNANDES TEIXEIRA, PAULO ACORRONI JUNIOR, CASSIO MARTINS DE LIMA, JULIO CESAR FAUSTINO, MISAEL SINCLAIR DE OLIVEIRA, ABÍLIO LEITE ALMEIDA, CLEBER DE OLIVEIRA MACHADO, MATHEUS CÉSAR DE MATOS RIBEIRO PINTO, VINICIUS FONSECA MELO, RAFAEL MESQUITA GONDIM, GABRIELA DE JESUS CARVALHO, OTÁVIO NUNES DE OLIVEIRA, VÍTOR DE ALMEIDA BRACARENSE, MAGNO ALVES COSTA, LEANDRO CAVALCANTE FERREIRA, JUNIA CRISTINA TEIXEIRA, JOSÉ FRANCISCO DE LANA, SAMUEL NOGUEIRA PEREIRA, CLAUDINEIA TEREZA DA SILVA, ANDRÉ LUIZ CALDEIRA RODRIGUES, FABIANO FRANCO MENDONÇA, ANDERSON VINICIUS DE SOUZA MOTA, ABEL JOSE DE OLIVEIRA, TAÍS LÉLIS ADVINCULA, BRUNO SANTANA DE FREITAS, VITOR CELIO SOARES, BÁRBARA MADUREIRA WANDERLEY, DÉRICK DE FREITAS MELO, GUSTAVO HENRIQUE MENDES, VANTUIL CUNHA DE SOUZA, MÁRCIO DE SENA LEVINDO, EFIGENIA APARECIDA PINTO PAIXÃO, MARCOS SILVINO NEVES, LAURA CRISTINE MARTINS CORRÊA, SAYMON MAIA DA COSTA, TATIANA SILVA DA COSTA, VALTER GOMES DA SSILVA, NIZE BRAZ STUART, FABIANO DE SOUZA DIAS, FLAVIANE FERNANDA FERNANDES, GISELLE VAZ DE SOUSA, VANESSA BRAGA CRISÓSTOMO, FERNANDA CRISTINA RESENDE RAMOS, CLAUDIO JUNIO DOS SANTOS, ARACELI ARAÚJO VASCONCELOS, RAPHAEL ORDONHES SANTIAGO, CAROLINA PORTO OTTONI, HÉLIO BARBOSA SANTOS, LEANDRA FREITAS DE MATOS, TÚLIO FONTES TEIXEIRA, VALQUIRIA DE ALMEIDA LOPES ALVES, JANDERSON DE OLIVERA MENEZ, KLEBER DE SOUZA RESENDE, DANIEL AUGUSTO DE RESENDE, WILSON NOGUEIRA DA SILVA, FABIANA CAVALCANTE DE REZENDE, ANDRÉ LUIZ DOS SANTOS, VANESSA CRISTINA CARDEAL, CAMILA DE MATOS RAMOS, ALEX CANDIDO DA SILVA, JORDANA NEVES SALLES, LEANDRO DIAS FERREIRA, JOSÉ MARCOS GOMES BORGES, ALCIONE MARIA CAMPOS, ROSANE ELIZABETH VITORETTI MARTINS, RAFAEL DE LIMA PEIXOTO, POLLYANNA THAYS ZANETTI, MIGUEL AMARAL FROSSARD DE PAULA, FABRÍCIO AUGUSTO PEREIRA CASTELO BRANCO, JULIETA MARIA DONIZETI SANT´ANA, WILIAM ROCHA SILVA, ELTON ROSADO, VIVIANE MOREIRA BESSA, MONICA GOMES MATTOS, CLÁUDIO ROGÉRIO AMBRÓSIO, JAQUELINE DULCE MOREIRA, FABIANNE BRITO EDWIGES, TIAGO HENRIQUE ALVES ROCHA, FERNANDA LUIZA DE MELO FRANCISCO, OTHON JOSÉ DE SOUZA COSTA, DENISE DINIZ FERREIRA, LUCIANA ALBANAZ DOS SANTOS, ISABELLA REGINA MORAIS MAGNANI, EVERALDO DOS SANTOS CHAVES, RENATO AUGUSTO ANDRADE, LUANA DE LIMA OLIVEIRA, JOSÉ ANTÔNIO DE CARVALHO CANÇADO LAMBERTUCCI, MARCELA GONÇALVES COELHO SILVA, LUIZ HENRIQUE MARQUES DA COSTA, PEDRO HENRIQUE DA COSTA FREITAS, DANIEL ANDRADE MEIRELES, SILVIO CESAR ANTONIO DA SILVEIRA,",
+    "locator": "Resposta integral preservada em [evidência local preservada; caminho interno omitido], registrada 2026-10-11T15:06:00+00:00; ferramenta não expôs horário individual, HTTP ou ID para esta chamada.",
+    "status": "inconclusivo_para_identidade",
+    "limitation": "Formulação exploratória ampla trouxe listas contemporâneas e resultados com Zanirato (grafia distinta), sem coocorrência verificável dos nomes alvo. Foi seguida por busca mais precisa, também inconclusiva; não usar estes resultados para inferir parentesco."
+  },
+  {
+    "id": "CARAFACATASTO-5344-GIOVANNI-ZANIRAN",
+    "title": "Catasto Carafa – immagine di registro, Casaglia-Salvatonica_SBV13",
+    "url": "https://www.archivistoricibonificaferrara.it/catasto-carafa/images-carafa/Casaglia-Salvatonica_SBV13.jpg",
+    "fact": "Na linha n.44 lê-se aproximadamente “Giovanni Zaniran”, descrito como “livellaro delle RR. ... del Corpus Domini di Ferrara”; na linha n.45 o mesmo nome é seguido por “livellaro come sopra”. O contexto sugere duas propriedades/entradas da mesma pessoa, não duas pessoas comprovadas.",
+    "locator": "Imagem direta do site do Catasto Carafa, HTTP 200, image/jpeg, coletada em 2026-10-11T14:48:54.074546+00:00; hash e demais metadados: [evidência local preservada; caminho interno omitido]; URL da página popup: https://www.archivistoricibonificaferrara.it/catasto-carafa/mappa.php?NomeFile=Casaglia-Salvatonica_SBV13&IdCatasto=5344&ente=&comune=26&guardia=&villa=&pagina=13&chkq=&chkf=&chkt=&chkd=&chki=&chkft=&attributo=Testo. O portal descreve metadado como Comune Bondeno, Guardia Casaglia, Villa Salvatonica, pagina registro 13, attributo Testo. O texto da imagem p.15 do mesmo conjunto, porém, intitula a Villa “S. Biagio delle Vezzane”; ambas as informações são preservadas como discrepância.",
+    "status": "candidato",
+    "limitation": "A imagem comprova uma entrada cadastral manuscrita cujo sobrenome parece Zaniran, mas a leitura é aproximada e não coincide por si só com as variantes-alvo Zaniratti/Zanirati/Zanirate. A página histórica oficial explica que a avaliação do Catasto Carafa foi ordenada em 1779 e que Campioni descrevem proprietários, usurários/livellari e mutações; 1779 é a origem da série, não a data individual comprovada deste lançamento. Não há nascimento, parentesco nem ligação demonstrada com Luigi, Pasqua, Custode ou Valentim. Não atribuir idade ou identidade a outros Giovannis."
+  },
+  {
+    "id": "APESC-INDICE-ONOMASTICO-ZANIRAN-1892",
+    "title": "Índice Onomástico de Imigrantes, volume 4",
+    "url": "https://acervo.arquivopublico.sc.gov.br/uploads/r/arquivo-publico-do-estado-de-santa-catarina/b/f/9/bf978d62b2dd33bbedbf21d78c6d87eef13739ab09c031ebd43582eafbac05cc/Indice_Onomastico_de_Imigrantes_-_v._4.pdf",
+    "fact": "O índice registra “ZANIRAN, Giovanni” com local Blumenau, ano 1892, referência 54, grupo “GOV p/ ENG”. Os campos de país/nacionalidade e vários outros campos aparecem vazios na extração do índice.",
+    "locator": "PDF integral oficial do Arquivo Público do Estado de Santa Catarina, HTTP 200, application/pdf e assinatura %PDF confirmada; página PDF 129, página impressa 126. [hash local omitido].",
+    "status": "comprovado (entrada do índice); candidato independente sem identidade genealógica",
+    "limitation": "Comprova uma entrada onomástica com grafia Zaniran em índice público; não prova que o indexado seja o Giovanni do Catasto, um membro da família de Bondeno, imigrante do ramo Luigi/Pasqua ou ancestral do solicitante. O território de registro é Santa Catarina/Blumenau, não a cadeia italiana demonstrada. O mesmo índice também contém entrada distinta “ZANIRATTO, Gabrielli”, Tubarão, 1885; não há vínculo demonstrado com Zaniran Giovanni ou com o ramo Bondeno."
+  },
+  {
+    "id": "APESC-INVENTARIO-CORRESP-GOV-ENG-CAIXA69-1892",
+    "title": "Inventário Analítico das Correspondências do Governo do Estado para Engenheiros (1891/1898), volume 4, caixa 69",
+    "url": "https://acervo.arquivopublico.sc.gov.br/uploads/r/arquivo-publico-do-estado-de-santa-catarina/3/5/9/359c44f4db081f4b9d45cd8a0110276aa6028c3ff39bab82a762730c18f6d3fc/corresp._gov._para_eng._1891-1898_v._4.pdf",
+    "fact": "O item 54 do inventário aparece na página PDF 38, que também é a página impressa 38, e remete à página 54 do documento descrito. A descrição refere correspondência de Desterro, 05/07/1892, sobre títulos de lotes. A nota menciona remessa correspondente ao Chefe da Comissão de Tubarão para Zaniran Giovanni, Sandrini Angelo, Sartor Ângelo e Marcon Giuseppe, residentes na ex-colônia de Azambuja. O inventário não permite afirmar aqui que os títulos estejam ausentes do acervo.",
+    "locator": "PDF integral do APESC, HTTP 200, application/pdf e assinatura %PDF confirmada, [hash local omitido]. Documento real descrito não foi baixado; caixa 69 é a unidade indicada na capa do inventário, não cota individual confirmada do item.",
+    "status": "comprovado (referência no inventário); original não obtido",
+    "limitation": "A existência da referência analítica é comprovada; o original é apenas descrito, não recuperado. Não há pais, nascimento ou conexão com o ramo italiano. O índice nomina a localidade Blumenau enquanto a nota da descrição menciona a remessa ao chefe de Tubarão e a ex-colônia de Azambuja; não inferir migração/identidade além do texto do inventário."
+  },
+  {
+    "id": "FAMILYSEARCH-CATALOGO-BONDENO-FALHA-403",
+    "title": "FamilySearch Catalog – tentativas públicas de abrir busca por Bondeno/ sobrenome",
+    "url": "https://www.familysearch.org/search/catalog/results?count=20&q.place=Bondeno%2C+Ferrara%2C+Italy",
+    "fact": "As três URLs públicas de resultados do catálogo (place Bondeno, keywords Bondeno Ferrara, surname Zaniratti) retornaram HTTP 403 com HTML curto; nenhuma página de resultados/imagens foi obtida.",
+    "locator": "Respostas integrais de 852–855 bytes guardadas e manifestadas em [evidência local preservada; caminho interno omitido] a _3.html e [arquivo interno omitido], com URL, hora UTC, content-type e [hash local omitido].",
+    "status": "candidato (tentativa falhou; nenhum dado nominal recuperado)",
+    "limitation": "A tentativa foi feita pela rota pública sem login; 403 documenta indisponibilidade desta sessão/rota. Não se contornou bloqueio e não se afirma inexistência de registros no FamilySearch."
+  },
+  {
+    "id": "ARCHIVEORG-COLECOES-BUSCA-ZANIRATTI-2026",
+    "title": "Internet Archive Advanced Search – busca pública de livros e coleções digitalizadas",
+    "url": "https://archive.org/advancedsearch.php?q=title%3A%28Zaniratti+OR+Zanirati%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=date&rows=50&output=json",
+    "fact": "A consulta por título com Zaniratti/Zanirati retornou total 0; consulta ampla retornou 12 itens mas sem livros históricos/familiares pertinentes (principalmente uploads digitais contemporâneos não genealógicos); combinação exata Custode Sante/Pasqua Mellara retornou 0.",
+    "locator": "Três respostas completas Archive.org em [evidência local preservada; caminho interno omitido] a _3.json e manifesto com parâmetros, UTC, status e [hash local omitido].",
+    "status": "comprovado (resultado de consultas), sem achado genealógico",
+    "limitation": "Nenhum item pesquisável pertinente foi localizado nessa base. Busca vazia não é prova de inexistência em outras bibliotecas/acervos."
+  },
+  {
+    "id": "OTTACENTO-BONDENO-ATO1880-ONLINE-ROTA",
+    "title": "Serviços oficiais do Comune di Bondeno: acesso a atos históricos",
+    "url": "https://www.comune.bondeno.fe.it/servizio/richiedere-l-accesso-agli-atti/",
+    "fact": "A página municipal descreve o serviço oficial de acesso aos atos e informa que extratos/certidões de estado civil e anagrafe são solicitados ao município; não oferece imagens de registros históricos nem pesquisa nominal online para o ato 1880/37.",
+    "locator": "Resultado de busca oficial em [evidência local preservada; caminho interno omitido]; a página não foi contatada nem submetida solicitação.",
+    "status": "candidato (rota de acesso documental, sem ato recuperado)",
+    "limitation": "Confirma via pública administrativa para acesso documental, mas não fornece o assento, allegati, filiação, ou acesso aberto às imagens. Não foi feito contato externo."
+  },
+  {
+    "id": "WEB-RESULTADOS-BONDENO-ESTADOCIVILE",
+    "title": "Buscas públicas por digitalização do casamento Bondeno 1880 ato 37 e nascimento 1848",
+    "url": "https://www.comune.bondeno.fe.it/servizio/richiedere-l-accesso-agli-atti/",
+    "fact": "Os resultados web focados em Bondeno, 1880, registro de casamento/allegati e nomes não localizaram imagem digital, índice nominal ou transcrição civil desses atos. A página oficial encontrada orienta acesso administrativo.",
+    "locator": "Quatro buscas em lote preservadas em [evidência local preservada; caminho interno omitido]",
+    "status": "comprovado (limite da busca executada; ato continua não localizado online)",
+    "limitation": "Ausência de resultado em busca web não rejeita o casamento ou nascimento relatado; cópias do original e allegati permanecem não obtidos nesta rodada."
+  },
+  {
+    "id": "EXT-01",
+    "title": "Os italianos sitiantes no interior fluminense",
+    "url": "https://www.encontro2010.rj.anpuh.org/resources/anais/8/1276702173_ARQUIVO_Ositalianossitiantesnointeriorfluminense-ok.pdf",
+    "fact": "A Tabela 1 lista GALLO, 4 alqueires, duas casas de morada, tulha, cafezais e pastinho cercado, ano 1913, São José/Varre-Sai. A fonte geral impressa sob a tabela é “Cartório de Registro Civil e Notas de Varre-Sai Livro de Notas, 1899-195[0]”. O rodapé 2 que especifica Livro de Notas nº 08, p. 08 aparece após o parágrafo sobre Giuseppe Valli e suas compras de 1904 e 1907; não é fonte individual de GALLO.",
+    "locator": "PDF aberto, HTTP 200, 106603 bytes, 12 páginas; [hash local omitido]. Tabela na p.3 física do PDF. A referência geral é truncada no texto extraído; o recorte textual apresenta 1899-195. Resposta open/find íntegra preservada.",
+    "status": "contextual_nao_associado",
+    "limitation": "O artigo fornece sobrenome e registro de propriedade, sem prenome, filiação ou vínculo a Zaniratti. A nota específica Livro 08 p.08 corresponde ao parágrafo anterior sobre Giuseppe Valli, portanto não deve ser atribuída à entrada GALLO. A referência da tabela a Livro de Notas 1899-195[0] é geral e a imagem do livro não foi localizada nesta extensão. Não associar GALLO ao João Gallo nem a outros Gallo."
+  },
+  {
+    "id": "EXT-02",
+    "title": "Imigrantes italianos em uma nova fronteira: Noroeste Fluminense (1896–1930)",
+    "url": "https://sigaa.ufrrj.br/sigaa/public/programa/defesas.jsf?lc=pt_BR&id=7554",
+    "fact": "Fontes secundárias citam a dissertação de mestrado de 2001, Universidade Severino Sombra/Universidade de Vassouras, título “Imigrantes italianos em uma nova fronteira: Noroeste Fluminense (1896–1930)”. Uma página pública de SIGAA lista no mesmo ano uma qualificação de mestrado com título semelhante e nome Rosane Aparecida Bartholazzi, mas a correspondência bibliográfica entre esse item e a dissertação citada não foi demonstrada. Não há PDF integral nessa página. Metadados secundários divergem na contagem de folhas (128/135).",
+    "locator": "Consultas de bibliografia, repositórios, universidade, catálogo CAPES/BDTD e buscas de cópia preservadas em [evidência local preservada; caminho interno omitido] e [arquivo interno omitido].",
+    "status": "referencia_sem_texto_integral_publico_localizado",
+    "limitation": "Não foi localizada versão pública integral da dissertação, e o item de qualificação SIGAA não pode ser identificado automaticamente como o mesmo trabalho sem dados bibliográficos que fechem a correspondência. Portanto não permite verificar se há transcrição de colonos ou nomes da família."
+  },
+  {
+    "id": "EXT-03",
+    "title": "Cadastro Nacional de Museus — Sala Baden Powell, Varre-Sai",
+    "url": "https://cadastro.museus.gov.br/museus/sala-baden-powell/",
+    "fact": "A ficha situa a Sala Baden Powell dentro do Centro Cultural Sebastião Oliveira Vargas e declara: “O museu não possui biblioteca” e “O museu não possui arquivo histórico”.",
+    "locator": "Página HTML aberta em busca pública em 2026-10-11; retorno íntegro em [evidência local preservada; caminho interno omitido]",
+    "status": "contexto_de_custodia_limitado",
+    "limitation": "A ficha não permite concluir que nenhuma pasta municipal esteja preservada no edifício ou em outro setor. Também não comprova existência/acesso a uma pasta nominal específica."
+  },
+  {
+    "id": "EXT-04",
+    "title": "Imigração Italiana no Rio de Janeiro / Módulo A Chegada",
+    "url": "https://www.hospedariailhadasflores.com.br/c%C3%B3pia-m%C3%B3dulo-2-a-viagem",
+    "fact": "A página pública reproduz conteúdo do e-book e menciona entrevistas/depoimentos sobre colonos da Fazenda e a Casa da Cultura; nos trechos abertos há referências a famílias Pellegrini, Grillo, Pulitini, Gorini, Geovanini, Pirozzi, Ridolfi e Bendia, sem Zaniratti, Valentim ou Bernardino.",
+    "locator": "URL aberta em 2026-10-11; página tem conteúdo extraído do livro; retorno integral da chamada open e buscas em [evidência local preservada; caminho interno omitido]",
+    "status": "fonte_contextual_sem_alvo",
+    "limitation": "Os depoimentos e trechos são de terceiros e não conectam a linha direta. Busca por alvo no domínio e no título não retornou correspondência nominal útil."
+  },
+  {
+    "id": "EXT-05",
+    "title": "Pastas de documentação dos imigrantes da Casa de Cultura; Fazenda do Céu; Ulisses Morucci",
+    "url": "https://www.historia.uff.br/stricto/td/1197.pdf",
+    "fact": "A tese UFF de 2009 lista “Pastas com documentações dos imigrantes”, livros de registro contábil da Fazenda do Céu (1929–1934), carta formal de partilha Lira/Castoni etc. e correspondência “Ulisses Morucci – 1916”. O artigo ANPUH 2011 descreve folhas contábeis com nome de colono, ano/mês, débitos/créditos e contagem de 102 trabalhadores em 1929–1930, mas não publica lista nominal.",
+    "locator": "Tese UFF p.282 impressa/PDF p.283; artigo ANPUH 2011 e buscas exatas por cópias, títulos e correspondência. Originais da tese/artigo e buscas estão no diretório pai [evidência local preservada; caminho interno omitido]",
+    "status": "acervo_sem_copia_nominal_publica_localizada",
+    "limitation": "A publicação demonstra a existência descrita de fontes, não fornece acesso ou transcrição dos nomes de trabalhadores. Não inferir que Valentim ou qualquer alvo esteja no conjunto."
+  },
+  {
+    "id": "EXT-06",
+    "title": "Índices genealógicos públicos — Valentim/Valentino e Elisa Bernardino/Bernardini",
+    "url": "https://www.familysearch.org/search/",
+    "fact": "Buscas web direcionadas em Geneanet/FamilySearch e variações de grafia/localidade não localizaram perfil aberto que conecte estes nomes a Santa Clara, Itaperuna, Porciúncula ou Varre-Sai. Houve apenas resultados agrupados vazios, homônimos e nomes semelhantes sem contexto para identificação.",
+    "locator": "60 consultas web nominais/adaptativas em lotes preservados em [evidência local preservada; caminho interno omitido], [arquivo interno omitido], [arquivo interno omitido] e [arquivo interno omitido].",
+    "status": "negativa_limitada_aos_indices_publicos_consultados",
+    "limitation": "Não equivale à pesquisa completa em árvores autenticadas, não indexadas ou em páginas não rastreadas. Resultados de lotes agrupados impedem atribuir cada hit ambíguo a um termo individual."
+  },
+  {
+    "id": "R06-01",
+    "title": "Tese UFF sobre imigração no noroeste fluminense",
+    "url": "https://www.historia.uff.br/stricto/td/1197.pdf",
+    "fact": "A tese lista Gallo em cognomes regionais e em uma tabela de propriedade em São José/Varre-Sai comprada em 1913; registra Murucci em tabela de propriedades em Jacutinga/Varre-Sai. Descreve também a Fazenda do Céu em Santa Clara e seus livros contábeis privados.",
+    "locator": "PDF institucional público com 285 páginas, baixado via HTTP 200; [hash local omitido]. Cópia e texto integral em [evidência local preservada; caminho interno omitido]",
+    "status": "contextual_nao_associado",
+    "limitation": "Gallo não tem prenome ou relação textual com Zaniratti; Murucci não está ligado a Gallo nem à linha. A tabela de Gallo é um registro de propriedade citado, não a imagem da escritura."
+  },
+  {
+    "id": "R06-02",
+    "title": "Artigo ANPUH 2011 sobre Fazenda do Céu e colônias",
+    "url": "https://www.snh2011.anpuh.org/resources/anais/14/1300659779_ARQUIVO_Ainsercaodamulhernomundodosnegocios.pdf",
+    "fact": "Artigo da mesma pesquisadora descreve livros contábeis privados da Fazenda do Céu com cabeçalho de colono, ano/mês, débitos e créditos; relata 102 trabalhadores nos livros de 1929–1930.",
+    "locator": "PDF de 16 páginas baixado via HTTP 200; tamanho 242154 bytes; [hash local omitido]; arquivo e extração em [evidência local preservada; caminho interno omitido]",
+    "status": "fonte_colateral_publica_e_acervo_privado",
+    "limitation": "Confirma presença de um conjunto de registros nominativos, mas os volumes foram mantidos em arquivo privado e o artigo não expõe o rol dos trabalhadores; nenhuma associação aos alvos é possível."
+  },
+  {
+    "id": "R06-03",
+    "title": "Pastas de imigração da Casa de Cultura de Varre-Sai",
+    "url": "https://www.historia.uff.br/stricto/td/1197.pdf",
+    "fact": "A tese relata que a relação de casais imigrados em 1897–1898 foi em parte preparada por funcionários da Casa de Cultura de Varre-Sai e lista “Pastas com documentações dos imigrantes” na relação de fontes.",
+    "locator": "PDF UFF, pp.124 e 282 impressas (PDF pp.125 e 283); buscas web por frase e variantes não localizaram cópia ou índice online.",
+    "status": "acervo_fisico_sem_copia_publica_encontrada",
+    "limitation": "O acervo é nomeado por pesquisadora, mas não há catálogo digital/página nominativa encontrada. A lista de casais não foi publicada na tese."
+  },
+  {
+    "id": "R06-04",
+    "title": "Livros contábeis da Fazenda do Céu, Santa Clara",
+    "url": "https://www.historia.uff.br/stricto/td/1197.pdf",
+    "fact": "Livros diários da propriedade, aproximadamente 1920–1950; artigo detalha cabeçalho com nome do colono, ano/mês, débitos/créditos e 102 trabalhadores registrados em 1929–1930. A pesquisadora informa que o material foi cedido a ela pelo herdeiro Ítalo Lira.",
+    "locator": "Tese pp.191–198 impressas e paper ANPUH pp.7–8; evidência e citações arquivísticas transcritas em passagens_relevantes.txt.",
+    "status": "arquivo_privado_sem_digitalizacao_publica_encontrada",
+    "limitation": "Não se deve inferir que Valentim ou outros alvos estejam entre os 102. Nenhuma folha nominal foi publicada ou digitalizada nas fontes encontradas."
+  },
+  {
+    "id": "R06-05",
+    "title": "Inventário e Carta Formal de Partilha de Veronica Castoni (1932)",
+    "url": "https://www.historia.uff.br/stricto/td/1197.pdf",
+    "fact": "A tese cita Inventário de Veronica Castoni, Cartório do 2º Ofício de Itaperuna, 1932, e Carta Formal de Partilha de 24 páginas; a carta é citada também como arquivo privado. Buscas exatas não localizaram digitalização pública.",
+    "locator": "Tese pp.191 e 226–230 impressas; buscas públicas por nome/título e TJRJ/FamilySearch não localizaram item de 1932.",
+    "status": "registro_citado_sem_imagem_publica_encontrada",
+    "limitation": "As pessoas e fatos da família Lira-Castoni são contexto de custódia, não evidência de parentesco com a linha do usuário."
+  },
+  {
+    "id": "R06-06",
+    "title": "Jurisdição histórica de Santa Clara e Porciúncula",
+    "url": "https://www.ibge.gov.br/biblioteca/visualizacao/dtb/riodejaneiro/itaperuna.pdf",
+    "fact": "Histórico do IBGE: Santa Clara do Carangola foi criada/anexada a Itaperuna em 1892; em 1938 passou a se chamar Santa Clara. Histórico de Porciúncula: emancipação de Itaperuna em 20/06/1947 e instalação em 22/08/1947, com distritos Porciúncula, Purilândia e Santa Clara.",
+    "locator": "URLs públicas oficiais baixadas via HTTP 200; hashes e textos extraídos preservados em [evidência local preservada; caminho interno omitido] Tool web de abertura PDF retornou 403, mas o GET público do documento foi bem-sucedido.",
+    "status": "contexto_jurisdicional_confirmado",
+    "limitation": "Muda parâmetros de busca histórica para distrito sob Itaperuna antes da emancipação; deve ser aplicado sem presumir competência cartorial da certidão específica."
+  },
+  {
+    "id": "R06-07",
+    "title": "Negativa limitada: variantes pessoais nas publicações da tese e artigo",
+    "url": "https://www.historia.uff.br/stricto/td/1197.pdf",
+    "fact": "Busca local no texto extraído integralmente e buscas web direcionadas não localizaram referências contextualizadas a indivíduos da linha com os nomes e variantes pesquisados. Ocorrências de Gallo/Murucci são meramente colaterais e separadas.",
+    "locator": "13 lotes com 52 termos de busca; outputs completos JSON preservados.",
+    "status": "negativa_limitada_aos_documentos_consultados",
+    "limitation": "Não demonstra que nomes não existam em livros físicos, arquivos privados ou catálogos não indexados. Resultados de buscas em lote não permitem atribuir cada snippet a uma consulta quando retornos são agrupados."
+  },
+  {
+    "id": "r06-local-001",
+    "title": "VolVIII8B — mapa interpretativo do registro populacional de Burana",
+    "url": "http://www.zaniratti.it:80/BRA/VolVIII8B.htm",
+    "fact": "“Registro Da População De Burana (vila de Bondeno), Volume VIII, pág 86.”; “Passe o rato sobre a foto para saber o que está escrito.” O HTML define colunas NOME E SESSO, Paternità, Maternità, LUOGO di NASCITA, DATA della NASCITA; Map3 contém Zaniratti, Diletta di, Antonio e, Salani Flora, 30 Giugno 1887, Enzo di, Burana, 27 Gennaio 1889, Ulisse di, Custode Sante, Galliera Ernesta, Ernesto, 17 Febbraio 1889, 2 Luglio 1891, Luigi di, Sigismondo, 17 Giugno 1892. Map4 contém Felonica, 4 = 10 = 901, 17 7bre 1891.",
+    "locator": null,
+    "status": "evidência contextual do site; relações e datas não confirmadas por imagem original",
+    "limitation": "Overlay textual da página sobre imagens ausentes, e não transcrição verificável da foto. As datas do Map3 seguem ordem plausível de linhas, mas y dos nomes/datas se desloca e há sobreposições: associação nome-data é inferência estrutural, não ligação explícita em texto. Custode Sante/Galliera Ernesta ficam nas colunas pater/mater para regiões que abrangem Ulisse/Ernesto, mas a fotografia não está disponível; não promover a vínculo novo. Map4 cruza colunas de saída, morte e mudança de estado civil; sem atribuição por y isolado."
+  },
+  {
+    "id": "r06-local-002",
+    "title": "Imagem de registro do Volume VIII, lado S0",
+    "url": "http://www.zaniratti.it/Foto/VolVIIIS0.jpg",
+    "fact": "{\"url\": \"http://www.zaniratti.it/Foto/VolVIIIS0.jpg\", \"archived_snapshots\": {}, \"timestamp\": \"20080415210432\"}",
+    "locator": null,
+    "status": "sem metadados de captura retornados nessa consulta; não prova inexistência",
+    "limitation": null
+  },
+  {
+    "id": "r06-local-003",
+    "title": "Imagem de registro do Volume VIII, lado D0",
+    "url": "http://www.zaniratti.it/Foto/VolVIIID0.gif",
+    "fact": "{\"url\": \"http://www.zaniratti.it/Foto/VolVIIID0.gif\", \"archived_snapshots\": {}, \"timestamp\": \"20080415210432\"}",
+    "locator": null,
+    "status": "sem metadados de captura retornados nessa consulta; não prova inexistência",
+    "limitation": null
+  },
+  {
+    "id": "r06-local-004",
+    "title": "Imagem de registro do Volume VIII, lado S8",
+    "url": "http://www.zaniratti.it/Foto/VolVIIIS8.gif",
+    "fact": "{\"url\": \"http://www.zaniratti.it/Foto/VolVIIIS8.gif\", \"archived_snapshots\": {}, \"timestamp\": \"20080415210432\"}",
+    "locator": null,
+    "status": "sem metadados de captura retornados nessa consulta; não prova inexistência",
+    "limitation": null
+  },
+  {
+    "id": "r06-local-005",
+    "title": "Imagem de registro do Volume VIII, lado D8",
+    "url": "http://www.zaniratti.it/Foto/VolVIIID8.gif",
+    "fact": "{\"url\": \"http://www.zaniratti.it/Foto/VolVIIID8.gif\", \"archived_snapshots\": {}, \"timestamp\": \"20080415210432\"}",
+    "locator": null,
+    "status": "sem metadados de captura retornados nessa consulta; não prova inexistência",
+    "limitation": null
+  },
+  {
+    "id": "r06-local-006",
+    "title": "Diagrama genealógico GeneaA3",
+    "url": "http://www.zaniratti.it/Foto/GeneaA3.gif",
+    "fact": "Diagrama mostra o grupo rotulado Custode Sante com nomes dos descendentes Ermanno, Ugo, Umberto, Daniele, Dante, Maria, Luigi, Grandilia, Ulisse, Ernesto, Carlo e Zenaide.",
+    "locator": null,
+    "status": "evidência genealógica secundária, apenas contextual",
+    "limitation": "Diagrama secundário de família; não é imagem de lista de passageiros nem registro civil fotografado; não fornece base para associação ao vapor Attività."
+  },
+  {
+    "id": "r06-local-007",
+    "title": "Miniatura MiniDante1878m",
+    "url": "http://www.zaniratti.it/MiniDante1878m.gif",
+    "fact": "A página biográfica associada descreve como “Documento di accompagnamento dell’atto di morte trasmesso da Ferrara a Bondeno”.",
+    "locator": null,
+    "status": "descartado como a lista lembrada; manter como documento civil colateral",
+    "limitation": "Miniatura de documento ligado a ato de morte de Dante; não é lista marítima/manifesto. O scan completo não foi encontrado neste corpus."
+  },
+  {
+    "id": "r06-local-008",
+    "title": "Página de Grandilia e links a registros",
+    "url": "http://www.zaniratti.it:80/Esposito/Grandilia.htm",
+    "fact": "Contém links para CustodeSanteB.htm, GrandiliaNascB.htm, Mini/GrandiliaNasc.gif (“Certidão de Nascimento”), Zenaide1895B.htm e VolVIII8B.htm.",
+    "locator": null,
+    "status": "links de páginas/assets citados, mas páginas e imagens de nascimento não presentes no corpus recuperado; página de perfil não é lista de passageiros",
+    "limitation": null
+  },
+  {
+    "id": "r06-local-009",
+    "title": "Página de Zenaide1895 e links a certidão",
+    "url": "http://www.zaniratti.it:80/Murucci/Zenaide1895.htm",
+    "fact": "Links para CustodeSanteB.htm, ZenaideCertB.htm, Mini/ZenaideNasc.gif (“Certidão de nascimento”) e VolVIII9B.htm.",
+    "locator": null,
+    "status": "links de certidão/asset citados, mas não presentes no corpus recuperado; página de perfil não é lista de passageiros",
+    "limitation": null
+  },
+  {
+    "id": "r06-local-010",
+    "title": "FontiB: referências ao registro e às fotos de livro",
+    "url": "http://www.zaniratti.it/BRA/FontiB.htm",
+    "fact": "FontiB referencia registro de população/volumes e páginas fotográficas de livro; aponta imagens de volume (miniaturas/aberto/fechado), mas as imagens completas de Volume VIII não foram recuperadas.",
+    "locator": null,
+    "status": "contexto bibliográfico secundário",
+    "limitation": "Fonte para navegação e descrição do acervo do site, não lista marítima nem reprodução integral da página do registro."
+  },
+  {
+    "id": "r06-web-001",
+    "title": "Common Crawl 2012 exact URL dos quatro scans VolVIII",
+    "url": null,
+    "fact": null,
+    "locator": null,
+    "status": "para URL canônica www + caminho/capitalização originais: No Captures em respostas HTTP404 para S0, D0 e S8; D8 retornou HTTP504, falha. Variantes de host/case tiveram HTTP502/504 e timeout. Não há payload confirmado; 404 de índice é resultado limitado ao índice/URL testado, não prova inexistência universal.",
+    "limitation": null
+  },
+  {
+    "id": "r06-web-002",
+    "title": "Wayback Availability dos quatro scans e duas miniaturas VolVIII",
+    "url": null,
+    "fact": null,
+    "locator": null,
+    "status": "seis respostas HTTP200 com archived_snapshots vazio para timestamp consultado; sem metadados de disponibilidade retornados, sem prova absoluta de ausência.",
+    "limitation": null
+  },
+  {
+    "id": "r06-web-003",
+    "title": "Index Common Crawl CC-MAIN-2013-48 dos quatro scans VolVIII",
+    "url": null,
+    "fact": null,
+    "locator": null,
+    "status": "D0 e S8 HTTP404 No Captures; S0 timeout e D8 HTTP504. Falhas/consultas limitadas, nenhum scan recuperado.",
+    "limitation": null
+  },
+  {
+    "id": "r06-web-004",
+    "title": "URL ListaB.htm identificado por href histórico, consulta CDX corrigida",
+    "url": "http://www.zaniratti.it/BRA/ListaB.htm",
+    "fact": "Link nomeado “Biografias”/índice de biografias em páginas históricas; página Benvenuto menciona cerca de 340 biografias pessoais.",
+    "locator": null,
+    "status": "URL identificada por href real; captura ainda não localizada nesta busca. Consultas sem captura/Availability não demonstram inexistência. Uma consulta CDX inicial HTTP400 usou parâmetro inválido `filter=collapse:digest`; não contar como resultado. Consulta CDX codificada/corrigida retornou lista vazia. Não é evidência da lista de passageiros lembrada.",
+    "limitation": null
+  },
+  {
+    "id": "r06-cert-05",
+    "title": "imagem/registro de nascimento alegado de Grandilia",
+    "url": "http://www.zaniratti.it/BRA/FO/GrandiliaNascB.htm",
+    "fact": "{\"message\": \"No Captures found for: http://www.zaniratti.it/BRA/FO/GrandiliaNascB.htm\"}",
+    "locator": "href literal de página histórica; relação ao registro descrita pelo site, sem verificação da imagem/ato",
+    "status": "404 No Captures for exact URL in this index",
+    "limitation": null
+  },
+  {
+    "id": "r06-cert-06",
+    "title": "miniatura rotulada certidão de nascimento",
+    "url": "http://www.zaniratti.it/Mini/GrandiliaNasc.gif",
+    "fact": "<html> <head><title>502 Bad Gateway</title></head> <body> <center><h1>502 Bad Gateway</h1></center> <hr><center>nginx/1.31.6</center> </body> </html>",
+    "locator": "href literal de página histórica; relação ao registro descrita pelo site, sem verificação da imagem/ato",
+    "status": "falha HTTP 502; não é resultado negativo",
+    "limitation": null
+  },
+  {
+    "id": "r06-cert-07",
+    "title": "certidão de nascimento alegada de Zenaide",
+    "url": "http://www.zaniratti.it/BRA/ZenaideCertB.htm",
+    "fact": "{\"message\": \"No Captures found for: http://www.zaniratti.it/BRA/ZenaideCertB.htm\"}",
+    "locator": "href literal de página histórica; relação ao registro descrita pelo site, sem verificação da imagem/ato",
+    "status": "404 No Captures for exact URL in this index",
+    "limitation": null
+  },
+  {
+    "id": "r06-cert-08",
+    "title": "miniatura rotulada certidão de nascimento",
+    "url": "http://www.zaniratti.it/Mini/ZenaideNasc.gif",
+    "fact": "{\"message\": \"No Captures found for: http://www.zaniratti.it/Mini/ZenaideNasc.gif\"}",
+    "locator": "href literal de página histórica; relação ao registro descrita pelo site, sem verificação da imagem/ato",
+    "status": "404 No Captures for exact URL in this index",
+    "limitation": null
+  },
+  {
+    "id": "NOM-CASA-01",
+    "title": "Casa da Cultura de Varre-Sai: relação de casais imigrados e pastas documentais referidas em tese UFF",
+    "url": "https://www.historia.uff.br/stricto/td/1197.pdf",
+    "fact": "A tese afirma que parte da lista de cognomes italianos foi extraída de relação de casais imigrados em 1897–1898 elaborada por funcionários da Casa da Cultura; seu apêndice lista “Pastas com documentações dos imigrantes”. Na lista impressa, Gallo aparece entre sobrenomes chegados à região, sem prenomes ou filiações.",
+    "locator": "Tese, p.124 impressa / PDF p.125; lista de fontes, p.282 impressa / PDF p.283. Texto integral é artefato de rodada anterior em ../luna_arvores_publicas/[evidência local preservada; caminho interno omitido]",
+    "status": "referência de fonte confirmada; relação/pastas originais não recuperadas",
+    "limitation": "Não é ocorrência individual de João Gallo nem de ramo Zaniratti. As buscas desta extensão não localizaram lista digitalizada, índice nominal online ou acesso à folha."
+  },
+  {
+    "id": "NOM-NEG-01",
+    "title": "Buscas nominais por alvos em Hemeroteca, índice público FamilySearch e pesquisa TJRJ",
+    "url": null,
+    "fact": "As consultas literais dirigidas aos nomes e às combinações territoriais não produziram imagem/assento individual de 1880–1950 que ligue qualquer alvo ao ramo. A pesquisa por expressão sobre a relação de casais da Casa da Cultura localizou a tese que a descreve, não a lista em si.",
+    "locator": "14 retornos completos do serviço web preservados; buscas BN direcionadas por domínio, consulta FamilySearch por nome e consulta TJRJ por nomes exatos. O serviço de pesquisa não fornece timestamp da requisição; cada horário preservado é somente leitura do relógio após o retorno.",
+    "status": "negativa limitada às consultas e indexação disponíveis; inconclusiva sobre existência do registro",
+    "limitation": "OCR pode falhar, nomes podem estar grafados de outra forma e índices podem não ser digitalizados/indexados. Nenhuma ausência é tratada como prova de inexistência."
+  },
+  {
+    "id": "NOM-EXCL-01",
+    "title": "Retornos OCR de homônimos ou texto fora de local/período não associados",
+    "url": null,
+    "fact": "Consultas com operadores OR amplos geraram resultados de OCR que não correspondiam a registro nominativo do ramo nem ao local/recorte 1880–1950. A consulta exata a “Elisa Bernardino” retornou uma menção em jornal de 1876 sem conexão demonstrada com Itaperuna ou Santa Clara.",
+    "locator": "Somente snippets e metadados de resultados da BN; nenhum PDF de resultado foi aberto ou baixado nesta extensão.",
+    "status": "não associado; não é achado genealógico",
+    "limitation": "Nome coincidente sem local, contexto ou parentesco não identifica a pessoa procurada. Não houve tentativa de ligar esses resultados a membros da família."
+  },
+  {
+    "id": "NOM-TJRJ-01",
+    "title": "Consulta pública TJRJ de acervos transferidos: resultados para a comarca de Itaperuna e Natividade",
+    "url": "https://www3.tjrj.jus.br/PORTALEXTRAJUDICIAL/consultaAcervo/",
+    "fact": "A consulta oficial retornou: RCPN 1º, 2º, 3º e 6º Distritos de Itaperuna → Itaperuna 1º Ofício de Justiça (2015; atribuição transferida: Ofícios e Atos de Notas); 4º Distrito → mesmo destino (2017; apenas Ofícios e Atos de Notas); Nossa Senhora da Penha → Itaperuna RCPN 1º Distrito (1989; Ofícios e Atos de Notas e Civil das Pessoas Naturais); Itajara → Itaperuna RCPN 1º Distrito (1996; as mesmas duas atribuições); Retiro do Muriaé → Itaperuna RCPN 1º Distrito (2010; as mesmas duas atribuições); Comendador Venâncio → Itaperuna RCPN 1º Distrito (2017; as mesmas duas atribuições). Itaperuna 5º Ofício → Itaperuna 3º Ofício de Justiça (2024; “acervo transferido por completo”). Natividade 1º e 2º Ofícios → Natividade Ofício Único (2013; “acervo transferido por completo”).",
+    "locator": "Formulários públicos TJRJ consultados com GET e POST selecionando comarca/serviço exposto na página; cada resposta HTML integral está preservada com HTTP, tamanho e [hash local omitido] em [evidência local preservada; caminho interno omitido]",
+    "status": "resultado de custódia comprovado para origens listadas; serviço/registro alvo não localizado na lista",
+    "limitation": "A lista de resultados para RCPN do 2º Distrito de Itaperuna cobre apenas atos notariais; os registros civis dos outros distritos nomeados têm destino indicado, mas sem delimitação de livros/anos que associe os atos de 1880–1950. Não foi possível mapear Santa Clara à numeração distrital atual. A lista de Natividade não exibe serviço Varre-Sai; a interface não lista comarca Porciúncula. Essas lacunas da interface não provam inexistência de transferência ou de acervo."
+  },
+  {
+    "id": "R06-TERR-01",
+    "title": "Itaperuna historical municipal divisions and Santa Clara/Varre-Sai in the 1938–1948 divisions",
+    "url": "https://www.ibge.gov.br/biblioteca/visualizacao/dtb/riodejaneiro/itaperuna.pdf",
+    "fact": null,
+    "locator": "Downloaded direct from IBGE; Santa Clara creation, PDF p.1; renaming and 1939–1948 divisions, PDF p.2. Exact URL/status/hash in evidence manifest.",
+    "status": "comprovado (territorial jurisdiction only)",
+    "limitation": "Supports searching 1938 records under Itaperuna and district Santa Clara; does not identify any person or prove where the book is currently held."
+  },
+  {
+    "id": "R06-TERR-02",
+    "title": "Porciúncula created from Itaperuna in 1947; Santa Clara becomes district",
+    "url": "https://www.ibge.gov.br/biblioteca/visualizacao/dtb/riodejaneiro/porciuncula.pdf",
+    "fact": null,
+    "locator": "Downloaded direct from IBGE; PDF p.2 (one-indexed), exact URL in evidence manifest",
+    "status": "comprovado (territorial jurisdiction only)",
+    "limitation": "Separates 1938 municipality/district from post-1947 municipality. It does not establish present custodianship of pre-1947 records."
+  },
+  {
+    "id": "R06-TERR-03",
+    "title": "State Constitution of 1947, Art. 6, IV, creates Porciúncula from Itaperuna",
+    "url": "https://www2.alerj.rj.gov.br/biblioteca/assets/documentos/pdf/constituicoes/rio_de_janeiro/constituicao_1947/Constituicao_1947.pdf",
+    "fact": null,
+    "locator": "Opened and preserved as tool-return text at [evidência local preservada; caminho interno omitido]; PDF page 31 / printed internal page 31 in web extraction. Direct GET attempt separately failed 503; no downloaded PDF.",
+    "status": "comprovado (legal jurisdiction)",
+    "limitation": "Primary statutory evidence for territorial transfer. It is a text extraction of an official PDF, not a locally acquired PDF image."
+  },
+  {
+    "id": "R06-REG-01",
+    "title": "TJRJ current map lists Varre-Sai registry service",
+    "url": "https://www3.tjrj.jus.br/PORTALEXTRAJUDICIAL/MapaExtrajudicial?filtroAtribuicao=Civil+das+Pessoas+Naturais&filtroMunicipio=",
+    "fact": null,
+    "locator": "Opened in public TJRJ page; lines 4004–4021 preserved in [evidência local preservada; caminho interno omitido] Current status only.",
+    "status": "comprovado (current service listing; historical custody not shown)",
+    "limitation": "Provides current locator for a follow-up records-custody route. It does not prove that the 1897–1950 book cited by the thesis is held there today."
+  },
+  {
+    "id": "R06-REG-02",
+    "title": "TJRJ public transferred-archives lookup is available but target inventory not queried",
+    "url": "https://www3.tjrj.jus.br/PORTALEXTRAJUDICIAL/consultaAcervo/",
+    "fact": null,
+    "locator": "Page open preserved in [evidência local preservada; caminho interno omitido]; no comarca/service was submitted and no target-specific result obtained.",
+    "status": "rota_comprovada; resultado individual não obtido",
+    "limitation": "A useful public route to test historical custody under Itaperuna/Porciúncula, but this turn did not establish a receiving service for the historical register."
+  },
+  {
+    "id": "R06-THESIS-01",
+    "title": "UFF thesis cites Varre-Sai notary book series 1899–1950 and agricultural-property inventory",
+    "url": "https://www.historia.uff.br/stricto/td/1197.pdf",
+    "fact": null,
+    "locator": "Earlier round artifact cited in prior report; thesis originally downloaded in another team folder. This round independently searched for public digitization of referenced source volumes.",
+    "status": "referência arquivística comprovada; original volumes não recuperados",
+    "limitation": "The tables and book dates are references to source records, not recovered deeds or civil acts. The Gallo row is contextual and does not establish a connection to the user’s family."
+  },
+  {
+    "id": "R06-NEG-01",
+    "title": "No target-specific public record surfaced in narrowly scoped web queries",
+    "url": null,
+    "fact": null,
+    "locator": "17 raw query responses retained under [evidência local preservada; caminho interno omitido]; direct public catalog/API attempts separately recorded.",
+    "status": "inconclusivo / não localizado nesta rodada",
+    "limitation": "A search failure or empty search response is not evidence that the record or person does not exist. One response returned unrelated contemporary names; those were not adopted as findings."
+  },
+  {
+    "id": "R06-API-01",
+    "title": "Internet Archive title query returned zero records for cited 1927 volume",
+    "url": "https://archive.org/advancedsearch.php?q=title%3A%28%22Propriedades+Agr%C3%ADcolas%22%29+1927&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=date&fl%5B%5D=creator&rows=40&page=1&output=json",
+    "fact": null,
+    "locator": "Raw request/response preserved in [evidência local preservada; caminho interno omitido]; exact raw-response [hash local omitido].",
+    "status": "consulta negativa real (limitada à consulta exata)",
+    "limitation": "Only this exact title/year query is negative; it does not establish that no copy exists elsewhere."
+  },
+  {
+    "id": "R06-API-02",
+    "title": "Google Books API query blocked by quota",
+    "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3APropriedades%20Agricolas%20inauthor%3ADiretoria%20de%20Agricultura",
+    "fact": null,
+    "locator": "Raw response preserved in [evidência local preservada; caminho interno omitido]; response [hash local omitido].",
+    "status": "falha de acesso/consulta; não negativa",
+    "limitation": "Quota response gives no evidence about catalog presence or absence."
+  }
+]

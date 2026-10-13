@@ -5,12 +5,16 @@ import { publicData } from "../../lib/data";
 import { url } from "../../lib/urls";
 const ids = ["luigi", "pasqua", "custode", "valentim", "reni", "rejane", "jv"];
 const people = ids.map(id => publicData.people.find(person => person.id === id)).filter(person => person !== undefined);
+const familyBranch = publicData.branches.find(branch => branch.person_ids.includes("jv"));
+const treeHref = (id: string, highlight = false) => familyBranch
+  ? url(`/pt/arvores/${encodeURIComponent(familyBranch.id)}/?pessoa=${encodeURIComponent(id)}${highlight ? "&caminho=jv" : ""}#atlas`)
+  : url("/pt/arvores/");
 ---
 <SiteLayout title="De Luigi e Pasqua a João Vitor">
   <PageIntro eyebrow="Um caminho na família" title="De Luigi e Pasqua a João Vitor" lede="Uma linha de gerações dentro da história Zaniratti. Abra a árvore para encontrar também irmãos, casamentos e os outros ramos." />
-  <p><a class="button button-primary" href={url("/pt/?pessoa=jv&caminho=jv")}>Destacar este caminho na árvore</a></p>
+  <p><a class="button button-primary" href={treeHref("jv", true)}>Destacar este caminho na árvore</a></p>
   <section class="section"><ol class="lineage-people">
-    {people.map(person => <li><a href={url(`/pt/pessoas/${person.id}/`)}>{person.label}</a><a class="view-relative" href={url(`/pt/?pessoa=${person.id}`)}>Ver família →</a></li>)}
+    {people.map(person => <li><a href={url(`/pt/pessoas/${person.id}/`)}>{person.label}</a><a class="view-relative" href={treeHref(person.id)}>Ver família →</a></li>)}
   </ol></section>
   <p class="prose">Luigi Zaniratti e Pasqua Mellara são os pais de Custode Sante. O caminho segue por Valentim, Reni e Rejane até João Vitor Galo Esteves. Os filhos e descendentes de cada geração continuam acessíveis nas respectivas páginas e na árvore.</p>
 </SiteLayout>

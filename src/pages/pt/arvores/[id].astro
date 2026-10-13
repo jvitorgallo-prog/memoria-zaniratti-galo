@@ -1,9 +1,9 @@
 ---
 import SiteLayout from "../../../layouts/SiteLayout.astro";
 import PageIntro from "../../../components/PageIntro.astro";
-import PersonCard from "../../../components/PersonCard.astro";
+import TreeAtlas from "../../../components/TreeAtlas.astro";
+import PeopleDirectory from "../../../components/PeopleDirectory.astro";
 import ClaimList from "../../../components/ClaimList.astro";
-import Notice from "../../../components/Notice.astro";
 import { publicData as snapshot } from "../../../lib/data";
 import { url } from "../../../lib/urls";
 const branches = snapshot.branches || [];
@@ -17,37 +17,80 @@ const branch = branches.find((item) => item.id === Astro.props.branchId);
 if (!branch) throw new Error("Ramo sem registro correspondente no snapshot público.");
 const members = (branch.person_ids || []).map((id) => people.find((person) => person.id === id)).filter((person): person is (typeof people)[number] => Boolean(person));
 const memberIds = new Set(members.map((person) => person.id));
-const claims = assertions.filter((claim) => memberIds.has(claim.subject_id) && (!claim.object_person_id || memberIds.has(claim.object_person_id)));
-const memberGroups = groups.filter((group) => group.participant_ids.some((id) => memberIds.has(id)));
+const explicitSiblingClaims = assertions.filter((claim) => claim.predicate === "sibling_of" && claim.interpretation !== "disputed" && (memberIds.has(claim.subject_id) || Boolean(claim.object_person_id && memberIds.has(claim.object_person_id))));
+const atlasMemberIds = new Set([...memberIds, ...explicitSiblingClaims.flatMap((claim) => [claim.subject_id, claim.object_person_id].filter((id): id is string => Boolean(id)))]);
+const atlasMembers = people.filter((person) => atlasMemberIds.has(person.id));
+const branchMeta = branch as typeof branch & { origin_source_ids?: string[]; archive_item_ids?: string[]; asset_ids?: string[]; legacy_urls?: string[] };
+const branchSources = (branchMeta.origin_source_ids || []).map((id) => snapshot.sources.find((source) => source.id === id)).filter((source): source is NonNullable<typeof source> => Boolean(source));
+const branchPages = (branchMeta.archive_item_ids || []).map((id) => snapshot.archive_items.find((item) => item.id === id)).filter((item): item is NonNullable<typeof item> => Boolean(item));
+const branchPublicAssets = (branchMeta.asset_ids || []).map((id) => snapshot.assets.find((asset) => asset.id === id)).filter((asset): asset is NonNullable<typeof asset> => Boolean(asset));
+const branchAssets = branchPublicAssets.filter((asset) => asset.mime.startsWith("image/"));
+const branchLegacyReferences = branchMeta.legacy_urls || [];
+const claims = assertions.filter((claim) => atlasMemberIds.has(claim.subject_id) && (!claim.object_person_id || atlasMemberIds.has(claim.object_person_id)));
+const memberGroups = groups.filter((group) => group.participant_ids.some((id) => atlasMemberIds.has(id)) && group.participant_ids.every((id) => atlasMemberIds.has(id)));
+const hasTreeEdges = claims.some((claim) => claim.predicate === "child_of" && claim.interpretation !== "disputed");
+const requiredJourneyEdges = [["luigi", "custode"], ["pasqua", "custode"], ["custode", "valentim"], ["valentim", "reni"], ["reni", "rejane"], ["rejane", "jv"]];
+const claimEdges = new Set(claims.filter((claim) => claim.predicate === "child_of" && claim.object_person_id && claim.interpretation !== "disputed").map((claim) => `${claim.object_person_id}:${claim.subject_id}`));
+const journeyAvailable = requiredJourneyEdges.every(([parent, child]) => memberIds.has(parent) && memberIds.has(child) && claimEdges.has(`${parent}:${child}`));
+
+const showAtlas = atlasMembers.length > 1 && (branch.is_original_tree === true || branch.person_ids.includes("custode") || hasTreeEdges || explicitSiblingClaims.length > 0);
+const citationIds = new Set(claims.flatMap((claim) => claim.citation_ids));
+const localCitations = (snapshot.citations || []).filter((citation) => citationIds.has(citation.id));
+const sourceIds = new Set([...branchSources.map((source) => source.id), ...localCitations.map((citation) => citation.source_id)]);
+const localSources = (snapshot.sources || []).filter((source) => sourceIds.has(source.id));
+const parentMap = new Map<string, Set<string>>();
+for (const claim of assertions) if (claim.predicate === "child_of" && claim.object_person_id && claim.interpretation !== "disputed") {
+  const parents = parentMap.get(claim.subject_id) || new Set<string>(); parents.add(claim.object_person_id); parentMap.set(claim.subject_id, parents);
+}
+const focusId = memberIds.has("custode") ? "custode" : members.find((person) => ![...(parentMap.get(person.id) || [])].some((id) => memberIds.has(id)))?.id || members[0]?.id || "";
 ---
 <SiteLayout active="arvore" title={branch.label}>
   <p class="breadcrumb"><a href={url("/pt/arvores/")}>Árvores e ramos</a> <span aria-hidden="true">/</span> {branch.label}</p>
   <PageIntro eyebrow="Ramo familiar" title={branch.label} lede={branch.description || branch.note} />
-  <p class="branch-atlas-open"><a class="button" href={url(`/pt/?ramo=${encodeURIComponent(branch.id)}#atlas`)}>Abrir este ramo na árvore</a><span>Retome a exploração com os vínculos e pessoas no contexto da família.</span></p>
-  <Notice><p>Esta lista acompanha os registros incluídos neste ramo. A proximidade visual dos cartões não acrescenta evidência a uma relação.</p></Notice>
-  <section class="section">
-    <div class="section-heading"><div><p class="eyebrow">Pessoas</p><h2>Índice do ramo</h2></div><span>{members.length} {members.length === 1 ? "pessoa" : "pessoas"}</span></div>
-    {members.length ? <div class="person-grid">{members.map((person) => <PersonCard person={person} branches={branches} />)}</div> : <p class="empty-state">Nenhuma pessoa listada para este ramo.</p>}
-  </section>
-  <section class="section">
-    <div class="section-heading"><div><p class="eyebrow">Relações e fatos</p><h2>Registros com fonte</h2></div></div>
+  {showAtlas ? <section id="atlas" class="branch-live-tree" aria-label={`Árvore interativa: ${branch.label}`}>
+    <TreeAtlas people={atlasMembers} branches={branches} currentBranchId={branch.id} assertions={claims} groups={memberGroups} events={(snapshot.events || []).filter((event) => event.subject_kind === "person" ? memberIds.has(event.subject_id) : memberGroups.some((group) => group.id === event.subject_id))} citations={localCitations} sources={localSources} focusId={focusId} homeHref={url(`/pt/arvores/${encodeURIComponent(branch.id)}/`)} treeTitle={`Árvore de ${branch.label}`} journeyAvailable={journeyAvailable} embedded />
+  </section> : <section class="branch-index-intro" id="atlas"><p class="atlas-kicker">Perfis e páginas relacionadas</p><h2>{members.length ? `${members.length} ${members.length === 1 ? "pessoa identificada" : "perfis reunidos"}` : "Registro histórico"}</h2>{members.length ? <p>Este registro permanece separado das árvores com vínculos apresentados em conjunto.</p> : <p>{branchAssets.length || branchPublicAssets.length ? "A página ou o documento disponível ainda não foi convertido em fichas de pessoas." : "A imagem do diagrama não foi recuperada; as fichas de pessoas ainda não foram identificadas."}</p>}{!members.length && branchAssets[0] && <figure class="branch-map-preview"><a href={url("/" + branchAssets[0].public_path.replace(/^\/+/, ""))}><img src={url("/" + branchAssets[0].public_path.replace(/^\/+/, ""))} alt={branchAssets[0].alt} /></a><figcaption>{branchAssets[0].caption}</figcaption></figure>}{branchPublicAssets.filter((asset) => asset.mime === "application/pdf").map((asset) => <p><a href={url("/" + asset.public_path.replace(/^\/+/, ""))}>Abrir documento ou diagrama: {asset.alt || asset.caption}</a></p>)}{branchLegacyReferences.length > 0 && <details><summary>Referências do site histórico · {branchLegacyReferences.length}</summary><ul>{branchLegacyReferences.map((reference) => <li><code>{reference}</code></li>)}</ul></details>}</section>}
+  <div class="branch-reference-strip">
+    {branchSources.map((source) => <a href={url("/pt/fontes/" + encodeURIComponent(source.id) + "/")}>Fonte da árvore: {source.title}</a>)}
+    {branchPages.map((item) => <a href={url("/pt/acervo/" + encodeURIComponent(item.id) + "/")}>Página preservada: {item.title}</a>)}
+  </div>
+  <details class="branch-details" id="pessoas">
+    <summary>Índice pesquisável · {members.length} {members.length === 1 ? "pessoa" : "pessoas"}</summary>
+    {members.length ? <PeopleDirectory people={members} branches={[branch]} assertions={assertions} /> : <p class="empty-state">Nenhuma pessoa listada para este ramo.</p>}
+  </details>
+  {branchAssets.length > 0 && members.length > 0 && <details class="branch-details">
+    <summary>Diagramas e mapas do site original · {branchAssets.length}</summary>
+    <div class="branch-asset-list">{branchAssets.map((asset) => <figure><a href={url("/" + asset.public_path.replace(/^\/+/, ""))}><img src={url("/" + asset.public_path.replace(/^\/+/, ""))} alt={asset.alt} loading="lazy" /></a><figcaption>{asset.caption}</figcaption></figure>)}</div>
+  </details>}
+  <details class="branch-details">
+    <summary>Relações e fatos com referências · {claims.length}</summary>
     <ClaimList claims={claims} citations={snapshot.citations || []} sources={snapshot.sources || []} people={people} />
-  </section>
-  {memberGroups.length > 0 && <section class="section">
-    <div class="section-heading"><div><p class="eyebrow">Contexto de organização</p><h2>Agrupamentos familiares</h2></div></div>
-    <p class="section-note">Estes agrupamentos ajudam a navegar pelo material. Só um evento de casamento com fonte própria indica casamento.</p>
-    <div class="branch-list">{memberGroups.map((group) => {
+  </details>
+  {memberGroups.length > 0 && <details class="branch-details">
+    <summary>Agrupamentos familiares · {memberGroups.length}</summary>
+    <p class="branch-detail-note">Os agrupamentos organizam pessoas e filhos. Casamento aparece somente quando um evento próprio o registra.</p>
+    <ul class="branch-group-list">{memberGroups.map((group) => {
       const participants = group.participant_ids.map((id) => people.find((person) => person.id === id)).filter((person): person is (typeof people)[number] => Boolean(person));
-      return <article class="branch-card"><p class="eyebrow">{group.kind === "parental_group" ? "Agrupamento parental" : "Agrupamento familiar"}</p>
-        <div class="person-grid">{participants.map((person) => <PersonCard person={person} branches={branches} />)}</div>
-        <p>{group.note}</p>
-      </article>;
-    })}</div>
-  </section>}
+      return <li><span>{group.kind === "parental_group" ? "Grupo parental" : "União citada"}</span><span>{participants.map((person) => <a href={url("/pt/pessoas/" + encodeURIComponent(person.id) + "/")}>{person.label}</a>)}</span>{group.note && <small>{group.note}</small>}</li>;
+    })}</ul>
+  </details>}
 </SiteLayout>
 
 <style>
-  .branch-atlas-open { display: flex; align-items: center; flex-wrap: wrap; gap: 14px; margin: 0 0 24px; }
-  .branch-atlas-open .button { border-color: #315dd8; background: #315dd8; color: white; }
-  .branch-atlas-open span { color: #667487; font: italic 15px "Atlas Serif", Georgia, serif; }
+  .branch-live-tree { margin: 0 0 24px; }
+  .branch-reference-strip { display: flex; flex-wrap: wrap; gap: 8px 17px; margin: 12px 0 24px; font-size: 12px; }
+  .branch-details { margin: 12px 0; border: 1px solid #d7d1c7; border-radius: 9px; background: #fffdf8; }
+  .branch-details > summary { padding: 14px 17px; color: #142c43; cursor: pointer; font: 600 17px "Atlas Serif", Georgia, serif; }
+  .branch-details[open] > summary { border-bottom: 1px solid #e0d9cf; }
+  .branch-details > :not(summary) { margin: 17px; }
+  .branch-asset-list { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,300px),1fr)); gap: 14px; }
+  .branch-asset-list figure { margin: 0; padding: 10px; border: 1px solid #e0d9cf; border-radius: 7px; }
+  .branch-asset-list img { display: block; width: 100%; max-height: 540px; object-fit: contain; }
+  .branch-asset-list figcaption, .branch-detail-note { color: #667487; font: italic 14px/1.5 "Atlas Serif", Georgia, serif; }
+  .branch-group-list { display: grid; gap: 9px; padding: 0; list-style: none; }
+  .branch-group-list li { display: grid; grid-template-columns: 130px minmax(0,1fr); gap: 6px 15px; padding: 10px 0; border-bottom: 1px solid #e7e1d8; }
+  .branch-group-list li > span:first-child { color: #667487; font-size: 12px; }
+  .branch-group-list li > span:nth-child(2) { display: flex; flex-wrap: wrap; gap: 5px 12px; }
+  .branch-group-list li small { grid-column: 2; color: #667487; }
+  @media (max-width: 650px) { .branch-group-list li { grid-template-columns: 1fr; } .branch-group-list li small { grid-column: 1; } }
 </style>

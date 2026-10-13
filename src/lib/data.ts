@@ -28,6 +28,23 @@ export interface PublicBranch {
   description: string;
   person_ids: string[];
   note: string;
+  tree_id?: string | null;
+  is_original_tree?: boolean;
+  category?: 'original_tree' | 'subtree_or_edition' | 'unassigned_profiles' | string;
+  region_label?: string | null;
+  country_label?: string | null;
+  source_language?: 'pt' | 'it' | string;
+  historical_person_count?: number | null;
+  count_edition_label?: string | null;
+  count_source_id?: string | null;
+  historical_counts?: Array<{ count: number; edition: string }>;
+  historical_page_count?: number | null;
+  chapter_count?: number | null;
+  origin_source_ids?: string[];
+  asset_ids?: string[];
+  archive_item_ids?: string[];
+  legacy_urls?: string[];
+  unresolved_references?: Array<{ target: string; label: string | null; status: string }>;
 }
 
 export interface PublicGroup {

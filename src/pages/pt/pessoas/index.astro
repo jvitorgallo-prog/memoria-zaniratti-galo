@@ -8,7 +8,7 @@ const initials = (name: string) => name.trim().split(/\s+/).slice(0,2).map((part
 ---
 <SiteLayout active="pessoas" title="Pessoas da família" description="Encontre os nomes e histórias das pessoas ligadas à Família Zaniratti.">
   <div class="people-page">
-    <nav class="people-breadcrumb" aria-label="Caminho de navegação"><a href={url("/pt/")}>Árvore</a><span>/</span><span aria-current="page">Pessoas</span></nav>
+    <nav class="people-breadcrumb" aria-label="Caminho de navegação"><a href={url("/pt/arvores/")}>Árvores</a><span>/</span><span aria-current="page">Pessoas</span></nav>
     <header class="people-intro"><p class="people-kicker">Nomes e gerações</p><h1>Pessoas</h1><p>Encontre uma pessoa pelo nome atual ou por uma grafia registrada. Cada ficha reúne suas relações, histórias e documentos disponíveis.</p><div><strong>{people.length}</strong><span>pessoas no atlas</span></div></header>
     <section class="people-controls" aria-label="Buscar pessoas">
       <label>Buscar por nome ou variante<input type="search" id="people-search" placeholder="Ex.: Zanirati, Galo, Grandilia" /></label>

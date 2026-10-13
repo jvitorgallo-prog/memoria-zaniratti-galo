@@ -17,7 +17,7 @@ const referenceIds = [...new Set([...(bio.source_ids || []), ...(bio.paragraphs 
 ---
 <SiteLayout active="historias" title={bio.title || `A história de ${person.label}`} description={`Biografia familiar de ${person.label}.`}>
   <div class="story-page">
-    <nav class="story-breadcrumb" aria-label="Caminho de navegação"><a href={url("/pt/")}>Árvore</a><span>/</span><a href={url("/pt/historias/")}>Histórias</a><span>/</span><span aria-current="page">{person.label}</span></nav>
+    <nav class="story-breadcrumb" aria-label="Caminho de navegação"><a href={url("/pt/arvores/")}>Árvores</a><span>/</span><a href={url("/pt/historias/")}>Histórias</a><span>/</span><span aria-current="page">{person.label}</span></nav>
     <article class="story-article">
       <header class="story-article-heading"><p class="story-kicker">Memória da Família Zaniratti</p><h1>{bio.title || `A história de ${person.label}`}</h1><a href={url("/pt/pessoas/" + encodeURIComponent(person.id) + "/")}>Conhecer {person.label} na árvore →</a></header>
       <div class="story-body">{(bio.paragraphs || []).map((paragraph) => <p>{paragraph.text}</p>)}</div>

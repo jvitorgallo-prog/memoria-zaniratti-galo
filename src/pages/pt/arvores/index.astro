@@ -1,69 +1,23 @@
 ---
 import SiteLayout from "../../../layouts/SiteLayout.astro";
-import PageIntro from "../../../components/PageIntro.astro";
-import { publicData as snapshot } from "../../../lib/data";
+import FamilyForest from "../../../components/FamilyForest.astro";
+import LocalSearch from "../../../components/LocalSearch.astro";
+import { publicData } from "../../../lib/data";
 import { url } from "../../../lib/urls";
-
-const branches = snapshot.branches || [];
-const people = snapshot.people || [];
-const mainPath = url("/pt/?pessoa=jv&caminho=jv#jv");
+const data = publicData;
 ---
 
-<SiteLayout active="arvore" title="Ramos da família">
-  <div class="branch-atlas-page">
-    <p class="breadcrumb"><a href={url("/pt/")}>Árvore da família</a> <span aria-hidden="true">/</span> Ramos</p>
-    <PageIntro eyebrow="Memória da família" title="Ramos da família" lede="Comece pela árvore ou escolha um ramo para abri-lo no contexto das gerações conhecidas." />
-
-    <a class="branch-atlas-feature" href={mainPath}>
-      <span class="eyebrow">Percurso em destaque</span>
-      <strong>Luigi e Pasqua até João Vítor</strong>
-      <span>Ver o caminho na árvore, mantendo os demais ramos visíveis.</span>
-      <span class="branch-atlas-arrow" aria-hidden="true"></span>
-    </a>
-
-    <section class="section branch-atlas-section" aria-labelledby="branch-heading">
-      <div class="section-heading"><div><p class="eyebrow">Outras famílias e gerações</p><h2 id="branch-heading">Escolha um ramo</h2></div><span>{branches.length} ramos</span></div>
-      {branches.length ? <div class="branch-atlas-list">
-        {branches.map((branch) => {
-          const count = (branch.person_ids || []).filter((id) => people.some((person) => person.id === id)).length;
-          return <article class="branch-atlas-card">
-            <p class="eyebrow">{count} {count === 1 ? "pessoa" : "pessoas"}</p>
-            <h3>{branch.label}</h3>
-            <p>{branch.description || branch.note || "Explore as pessoas listadas neste ramo."}</p>
-            <div class="branch-atlas-actions">
-              <a class="button" href={url(`/pt/?ramo=${encodeURIComponent(branch.id)}#atlas`)}>Abrir na árvore</a>
-              <a class="branch-atlas-index-link" href={url(`/pt/arvores/${encodeURIComponent(branch.id)}/`)}>Ver índice do ramo</a>
-            </div>
-          </article>;
-        })}
-      </div> : <p class="empty-state">Nenhum ramo está incluído neste conjunto público.</p>}
-    </section>
-    <p class="branch-atlas-note">Ramos sem uma ligação conhecida permanecem separados. A árvore mostra apenas vínculos e uniões registrados na memória pública.</p>
+<SiteLayout active="arvore" title="Árvores e ramos">
+  <div class="forest-home forest-index">
+    <p class="breadcrumb"><a href={url("/pt/")}>Memória da família</a> <span aria-hidden="true">/</span> Árvores</p>
+    <div class="forest-search-panel">
+      <div><p class="atlas-kicker">Encontre em qualquer ramo</p><h2>Buscar pessoas, páginas e fontes</h2></div>
+      <LocalSearch people={data.people} branches={data.branches} assertions={data.assertions} sources={data.sources} archiveItems={data.archive_items} />
+    </div>
+    <aside class="forest-downloads" aria-label="Exportação genealógica">
+      <div><p class="atlas-kicker">Leve a pesquisa com você</p><h2>Arquivo genealógico</h2><p>Baixe a exportação GEDCOM ampliada para consultar em programas de genealogia.</p></div>
+      <div><a href={url("/downloads/familia-zaniratti.ged")} download>Baixar GEDCOM ampliado</a><a href={url("/downloads/linha-principal.ged")} download>Baixar versão da linha principal</a></div>
+    </aside>
+    <FamilyForest branches={data.branches} people={data.people} sources={data.sources} assets={data.assets} archiveItems={data.archive_items} />
   </div>
 </SiteLayout>
-
-<style>
-  .branch-atlas-page { max-width: 1120px; margin: 0 auto; padding: 18px 0 54px; }
-  .branch-atlas-feature { position: relative; display: grid; gap: 8px; max-width: 760px; margin: 28px 0 42px; padding: 24px 60px 25px 26px; border: 1px solid #c9c2b8; border-left: 4px solid #aa5f44; border-radius: 10px; background: #fffdf8; color: #142c43; text-decoration: none; }
-  .branch-atlas-feature:hover { border-color: #315dd8; }
-  .branch-atlas-feature strong { font: 500 26px/1.2 "Atlas Serif", Georgia, serif; }
-  .branch-atlas-feature > span:last-of-type { color: #667487; }
-  .branch-atlas-arrow { position: absolute; top: 50%; right: 25px; width: 22px; height: 12px; border-top: 1.5px solid #aa5f44; transform: translateY(-50%); }
-  .branch-atlas-arrow::after { position: absolute; top: -5px; right: 1px; width: 8px; height: 8px; border-top: 1.5px solid #aa5f44; border-right: 1.5px solid #aa5f44; content: ""; transform: rotate(45deg); }
-  .branch-atlas-section { margin-top: 0; }
-  .branch-atlas-list { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,290px),1fr)); gap: 15px; }
-  .branch-atlas-card { display: flex; min-height: 225px; flex-direction: column; align-items: flex-start; padding: 22px; border: 1px solid #d7d1c7; border-radius: 9px; background: #fffdf8; }
-  .branch-atlas-card .eyebrow { margin: 0 0 8px; color: #aa5f44; font: 700 11px "Atlas Sans", sans-serif; letter-spacing: .12em; text-transform: uppercase; }
-  .branch-atlas-card h3 { margin: 0; color: #142c43; font: 500 22px/1.2 "Atlas Serif", Georgia, serif; }
-  .branch-atlas-card > p:not(.eyebrow) { margin: 9px 0 19px; color: #667487; line-height: 1.55; }
-  .branch-atlas-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: auto; }
-  .branch-atlas-actions .button { border-color: #315dd8; background: #315dd8; color: #fff; }
-  .branch-atlas-index-link { font-size: 13px; }
-  .branch-atlas-note { max-width: 760px; margin: 27px 0 0; color: #667487; font: italic 15px/1.5 "Atlas Serif", Georgia, serif; }
-  @media (max-width: 760px) {
-    .branch-atlas-page { padding: 8px 0 42px; }
-    .branch-atlas-feature { margin: 22px 0 34px; padding: 21px 48px 21px 19px; }
-    .branch-atlas-feature strong { font-size: 22px; }
-    .branch-atlas-card { min-height: 0; }
-  }
-</style>

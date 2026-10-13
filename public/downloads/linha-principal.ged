@@ -226,6 +226,21 @@
 0 @antonio1846@ INDI
 1 NAME Antonio Zaniratti
 1 _PUBID antonio1846
+1 FAMS @F-hist-c2cfb3c5096e5f78@
+1 FAMS @F-hist-990fa21185b98943@
+1 FAMS @F-hist-d59d63580dfa315b@
+1 FAMS @F-hist-d34ac132c11e2dca@
+1 FAMS @F-hist-03e2b3ba41512b11@
+1 FAMS @F-hist-cd457288983c34f9@
+1 FAMS @F-hist-239f8852c30e3829@
+1 FAMS @F-hist-b8ce57393d58a4d1@
+1 FAMS @F-hist-f6d40a63e7ad369d@
+1 FAMS @F-hist-45997c36335a55b3@
+1 FAMS @F-hist-e89e148c14e239c3@
+1 FAMS @F-hist-319505717c82a77d@
+1 FAMS @F-hist-3ab8cdacfcf16a70@
+1 FAMS @F-hist-35cfa87edf0e8ad3@
+1 FAMS @F-hist-302f75d9057fb97e@
 1 FAMC @F-antonio1846@
 1 BIRT
 2 DATE 16 JAN 1846
@@ -283,6 +298,7 @@
 0 @dante1882@ INDI
 1 NAME Dante Zaniratti
 1 _PUBID dante1882
+1 FAMS @F-hist-1d91484590fcd9b7@
 1 FAMC @F-dante1882@
 1 BIRT
 2 DATE 1882
@@ -408,6 +424,10 @@
 0 @orestes@ INDI
 1 NAME Orestes
 1 _PUBID orestes
+1 FAMS @F-hist-5c8b9db4c10c539c@
+1 FAMS @F-hist-f82e49835b8729a8@
+1 FAMS @F-hist-dbd9044835eca9aa@
+1 FAMS @F-hist-3fd3176be24363d6@
 1 FAMC @F-orestes@
 1 SOUR @S-PUBLIC@
 0 @santina@ INDI
@@ -685,6 +705,2118 @@
 1 NAME Gabriel
 1 _PUBID zenaide_child_16
 1 FAMC @F-zenaide_child_16@
+1 SOUR @S-PUBLIC@
+0 @hist-c2cfb3c5096e5f78@ INDI
+1 NAME Adelina Zaniratti
+1 _PUBID hist-c2cfb3c5096e5f78
+1 FAMS @F-hist-ref-ed273eb655e34ea6@
+1 FAMC @F-hist-c2cfb3c5096e5f78@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-13d54fecb0fecf3d@ INDI
+1 NAME Angelica Braga
+1 _PUBID hist-ref-13d54fecb0fecf3d
+1 FAMS @F-hist-c2cfb3c5096e5f78@
+1 FAMS @F-hist-d34ac132c11e2dca@
+1 FAMS @F-hist-03e2b3ba41512b11@
+1 FAMS @F-hist-cd457288983c34f9@
+1 SOUR @S-PUBLIC@
+0 @hist-d34ac132c11e2dca@ INDI
+1 NAME Palmira Zaniratti
+1 _PUBID hist-d34ac132c11e2dca
+1 FAMC @F-hist-d34ac132c11e2dca@
+1 SOUR @S-PUBLIC@
+0 @hist-03e2b3ba41512b11@ INDI
+1 NAME Sigismondo Zaniratti
+1 _PUBID hist-03e2b3ba41512b11
+1 FAMS @F-hist-b0f2c797441a9d6a@
+1 FAMS @F-hist-5b92544a2d812cd5@
+1 FAMS @F-hist-4630780e00411597@
+1 FAMS @F-hist-e97bc136eb174e56@
+1 FAMS @F-hist-728ef069cadc4194@
+1 FAMS @F-hist-2fd1cf7bb3de4f39@
+1 FAMS @F-hist-8298df635435448c@
+1 FAMS @F-hist-0108cdf215ffe194@
+1 FAMC @F-hist-03e2b3ba41512b11@
+1 SOUR @S-PUBLIC@
+0 @hist-cd457288983c34f9@ INDI
+1 NAME Dircea Zaniratti
+1 _PUBID hist-cd457288983c34f9
+1 FAMC @F-hist-cd457288983c34f9@
+1 SOUR @S-PUBLIC@
+0 @hist-239f8852c30e3829@ INDI
+1 NAME Giovanna Zaniratti
+1 _PUBID hist-239f8852c30e3829
+1 FAMC @F-hist-239f8852c30e3829@
+1 SOUR @S-PUBLIC@
+0 @hist-b8ce57393d58a4d1@ INDI
+1 NAME Ermelinda Zaniratti
+1 _PUBID hist-b8ce57393d58a4d1
+1 FAMC @F-hist-b8ce57393d58a4d1@
+1 SOUR @S-PUBLIC@
+0 @hist-f6d40a63e7ad369d@ INDI
+1 NAME Carlo Zaniratti (1876)
+1 _PUBID hist-f6d40a63e7ad369d
+1 FAMC @F-hist-f6d40a63e7ad369d@
+1 SOUR @S-PUBLIC@
+0 @hist-990fa21185b98943@ INDI
+1 NAME Agostino Zaniratti
+1 _PUBID hist-990fa21185b98943
+1 FAMC @F-hist-990fa21185b98943@
+1 SOUR @S-PUBLIC@
+0 @hist-45997c36335a55b3@ INDI
+1 NAME Dante Zaniratti (1878)
+1 _PUBID hist-45997c36335a55b3
+1 FAMC @F-hist-45997c36335a55b3@
+1 SOUR @S-PUBLIC@
+0 @hist-e89e148c14e239c3@ INDI
+1 NAME Pasqua Zaniratti
+1 _PUBID hist-e89e148c14e239c3
+1 FAMC @F-hist-e89e148c14e239c3@
+1 SOUR @S-PUBLIC@
+0 @hist-b0f2c797441a9d6a@ INDI
+1 NAME Luigi
+1 _PUBID hist-b0f2c797441a9d6a
+1 FAMS @F-hist-6c4cb7eceea35985@
+1 FAMC @F-hist-b0f2c797441a9d6a@
+1 SOUR @S-PUBLIC@
+0 @hist-3ab8cdacfcf16a70@ INDI
+1 NAME Aristodemo Zaniratti
+1 _PUBID hist-3ab8cdacfcf16a70
+1 FAMS @F-hist-8cacccca99d35706@
+1 FAMS @F-hist-9e11a21ebe690c09@
+1 FAMC @F-hist-3ab8cdacfcf16a70@
+1 SOUR @S-PUBLIC@
+0 @hist-d59d63580dfa315b@ INDI
+1 NAME Annunziata Zaniratti
+1 _PUBID hist-d59d63580dfa315b
+1 FAMC @F-hist-d59d63580dfa315b@
+1 SOUR @S-PUBLIC@
+0 @hist-35cfa87edf0e8ad3@ INDI
+1 NAME Diletta Zaniratti
+1 _PUBID hist-35cfa87edf0e8ad3
+1 FAMC @F-hist-35cfa87edf0e8ad3@
+1 SOUR @S-PUBLIC@
+0 @hist-302f75d9057fb97e@ INDI
+1 NAME Enzo Zaniratti
+1 _PUBID hist-302f75d9057fb97e
+1 FAMS @F-hist-a42037f1435b1e15@
+1 FAMC @F-hist-302f75d9057fb97e@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-3dfb02a3e98a79d0@ INDI
+1 NAME Guzzinatti
+1 _PUBID hist-ref-3dfb02a3e98a79d0
+1 SOUR @S-PUBLIC@
+0 @hist-ref-ed273eb655e34ea6@ INDI
+1 NAME Elsa Fedora
+1 _PUBID hist-ref-ed273eb655e34ea6
+1 FAMC @F-hist-ref-ed273eb655e34ea6@
+1 SOUR @S-PUBLIC@
+0 @hist-09b079f7b98d2108@ INDI
+1 NAME Afonso Zanirati
+1 _PUBID hist-09b079f7b98d2108
+1 FAMS @F-hist-646e6e54b03e2f13@
+1 FAMS @F-hist-90f1dc9bf7aaf50d@
+1 FAMC @F-hist-09b079f7b98d2108@
+1 SOUR @S-PUBLIC@
+0 @hist-46a616ead32954d3@ INDI
+1 NAME Nelcy Zanirati
+1 _PUBID hist-46a616ead32954d3
+1 FAMS @F-hist-09b079f7b98d2108@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-1434e82153ce928d@ INDI
+1 NAME Hordy da Conceição Goulart
+1 _PUBID hist-ref-1434e82153ce928d
+1 FAMS @F-hist-09b079f7b98d2108@
+1 SOUR @S-PUBLIC@
+0 @hist-1b60bfd2d3c40391@ INDI
+1 NAME Nanci
+1 _PUBID hist-1b60bfd2d3c40391
+1 SOUR @S-PUBLIC@
+0 @hist-ref-fce227726eec5022@ INDI
+1 NAME Marcia Oliveira Zanirati Goulart
+1 _PUBID hist-ref-fce227726eec5022
+1 SOUR @S-PUBLIC@
+0 @hist-646e6e54b03e2f13@ INDI
+1 NAME Douglas
+1 _PUBID hist-646e6e54b03e2f13
+1 FAMC @F-hist-646e6e54b03e2f13@
+1 SOUR @S-PUBLIC@
+0 @hist-90f1dc9bf7aaf50d@ INDI
+1 NAME Jennifer
+1 _PUBID hist-90f1dc9bf7aaf50d
+1 FAMC @F-hist-90f1dc9bf7aaf50d@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-33b3e16305093b1d@ INDI
+1 NAME Flora Salani
+1 _PUBID hist-ref-33b3e16305093b1d
+1 FAMS @F-hist-990fa21185b98943@
+1 FAMS @F-hist-d59d63580dfa315b@
+1 FAMS @F-hist-239f8852c30e3829@
+1 FAMS @F-hist-b8ce57393d58a4d1@
+1 FAMS @F-hist-f6d40a63e7ad369d@
+1 FAMS @F-hist-45997c36335a55b3@
+1 FAMS @F-hist-e89e148c14e239c3@
+1 FAMS @F-hist-319505717c82a77d@
+1 FAMS @F-hist-3ab8cdacfcf16a70@
+1 FAMS @F-hist-35cfa87edf0e8ad3@
+1 FAMS @F-hist-302f75d9057fb97e@
+1 SOUR @S-PUBLIC@
+0 @hist-319505717c82a77d@ INDI
+1 NAME Luigi Zaniratti (1883)
+1 _PUBID hist-319505717c82a77d
+1 FAMC @F-hist-319505717c82a77d@
+1 SOUR @S-PUBLIC@
+0 @hist-5f5d8f04c6fe8605@ INDI
+1 NAME Guelfo Zaniratti
+1 _PUBID hist-5f5d8f04c6fe8605
+1 FAMS @F-hist-2753aec992e49186@
+1 SOUR @S-PUBLIC@
+0 @hist-85eeb6c8cc28212d@ INDI
+1 NAME Raymundo
+1 _PUBID hist-85eeb6c8cc28212d
+1 FAMS @F-hist-f656adfd061a8571@
+1 SOUR @S-PUBLIC@
+0 @hist-f656adfd061a8571@ INDI
+1 NAME Radyr Zaniratti
+1 _PUBID hist-f656adfd061a8571
+1 FAMS @F-hist-bb650114fed2dcf2@
+1 FAMS @F-hist-48583cf7740e295e@
+1 FAMS @F-hist-e7c1201f59dd2530@
+1 FAMS @F-hist-5c2f7b90c939abe5@
+1 FAMS @F-hist-00aa770120639d9a@
+1 FAMS @F-hist-8bbe3e2ddc6a1ee8@
+1 FAMS @F-hist-d830a01841845e31@
+1 FAMS @F-hist-33c24bff9eba4c83@
+1 FAMC @F-hist-f656adfd061a8571@
+1 SOUR @S-PUBLIC@
+0 @hist-48583cf7740e295e@ INDI
+1 NAME Henrique Zaniratti
+1 _PUBID hist-48583cf7740e295e
+1 FAMS @F-hist-e515a355c84676a4@
+1 FAMS @F-hist-6fbb8194fdab41d8@
+1 FAMS @F-hist-784f522eb5b1c9d2@
+1 FAMC @F-hist-48583cf7740e295e@
+1 SOUR @S-PUBLIC@
+0 @hist-e515a355c84676a4@ INDI
+1 NAME Nara Regina
+1 _PUBID hist-e515a355c84676a4
+1 FAMC @F-hist-e515a355c84676a4@
+1 SOUR @S-PUBLIC@
+0 @hist-8996592a00293752@ INDI
+1 NAME Caroline Zaniratti
+1 _PUBID hist-8996592a00293752
+1 FAMC @F-hist-8996592a00293752@
+1 SOUR @S-PUBLIC@
+0 @hist-784f522eb5b1c9d2@ INDI
+1 NAME Luciana
+1 _PUBID hist-784f522eb5b1c9d2
+1 FAMC @F-hist-784f522eb5b1c9d2@
+1 SOUR @S-PUBLIC@
+0 @hist-d830a01841845e31@ INDI
+1 NAME Waldir Zaniratti
+1 _PUBID hist-d830a01841845e31
+1 FAMS @F-hist-0c7bfaba2cdf83af@
+1 FAMS @F-hist-d1f1fd4a979b5105@
+1 FAMC @F-hist-d830a01841845e31@
+1 SOUR @S-PUBLIC@
+0 @hist-0c7bfaba2cdf83af@ INDI
+1 NAME Lucimari
+1 _PUBID hist-0c7bfaba2cdf83af
+1 FAMC @F-hist-0c7bfaba2cdf83af@
+1 SOUR @S-PUBLIC@
+0 @hist-33c24bff9eba4c83@ INDI
+1 NAME Vanira Zaniratti
+1 _PUBID hist-33c24bff9eba4c83
+1 FAMC @F-hist-33c24bff9eba4c83@
+1 SOUR @S-PUBLIC@
+0 @hist-00aa770120639d9a@ INDI
+1 NAME José Carlos Zaniratti
+1 _PUBID hist-00aa770120639d9a
+1 FAMS @F-hist-606a8346ebccb8ee@
+1 FAMS @F-hist-19e52c532fe3cdf6@
+1 FAMC @F-hist-00aa770120639d9a@
+1 SOUR @S-PUBLIC@
+0 @hist-606a8346ebccb8ee@ INDI
+1 NAME Andreza Zaniratti
+1 _PUBID hist-606a8346ebccb8ee
+1 FAMS @F-hist-4a4e4bc48e6d4733@
+1 FAMC @F-hist-606a8346ebccb8ee@
+1 SOUR @S-PUBLIC@
+0 @hist-5c2f7b90c939abe5@ INDI
+1 NAME Jorge Zaniratti
+1 _PUBID hist-5c2f7b90c939abe5
+1 FAMS @F-hist-ac94113acb6e141b@
+1 FAMS @F-hist-d73fbe0bfca9bdc1@
+1 FAMC @F-hist-5c2f7b90c939abe5@
+1 SOUR @S-PUBLIC@
+0 @hist-7eabe75feea46ae8@ INDI
+1 NAME Yuri Zaniratti
+1 _PUBID hist-7eabe75feea46ae8
+1 FAMC @F-hist-7eabe75feea46ae8@
+1 SOUR @S-PUBLIC@
+0 @hist-ac94113acb6e141b@ INDI
+1 NAME Fabrício Zaniratti (1980)
+1 _PUBID hist-ac94113acb6e141b
+1 FAMC @F-hist-ac94113acb6e141b@
+1 SOUR @S-PUBLIC@
+0 @hist-d73fbe0bfca9bdc1@ INDI
+1 NAME Flávio
+1 _PUBID hist-d73fbe0bfca9bdc1
+1 FAMC @F-hist-d73fbe0bfca9bdc1@
+1 SOUR @S-PUBLIC@
+0 @hist-4a4e4bc48e6d4733@ INDI
+1 NAME Felipe Zaniratti (2004)
+1 _PUBID hist-4a4e4bc48e6d4733
+1 FAMC @F-hist-4a4e4bc48e6d4733@
+1 SOUR @S-PUBLIC@
+0 @hist-6f2a6c7e49be9bcb@ INDI
+1 NAME Ranyr Zaniratti
+1 _PUBID hist-6f2a6c7e49be9bcb
+1 FAMS @F-hist-ea9be34ffb687854@
+1 SOUR @S-PUBLIC@
+0 @hist-ee74854960827e48@ INDI
+1 NAME Patrícia
+1 _PUBID hist-ee74854960827e48
+1 FAMC @F-hist-ee74854960827e48@
+1 SOUR @S-PUBLIC@
+0 @hist-896e3df836a1b16b@ INDI
+1 NAME Marcelli Letícia
+1 _PUBID hist-896e3df836a1b16b
+1 FAMC @F-hist-896e3df836a1b16b@
+1 SOUR @S-PUBLIC@
+0 @hist-66dd514df18e45df@ INDI
+1 NAME Giovani Zanirati
+1 _PUBID hist-66dd514df18e45df
+1 FAMC @F-hist-66dd514df18e45df@
+1 SOUR @S-PUBLIC@
+0 @hist-6ca37873600e29fe@ INDI
+1 NAME Maria Leopoldina da Costa Zaniratti
+1 _PUBID hist-6ca37873600e29fe
+1 FAMS @F-hist-68796ac3bb52c810@
+1 SOUR @S-PUBLIC@
+0 @hist-a19b979fe9af7d04@ INDI
+1 NAME Gabriele Goulart Zanirati
+1 _PUBID hist-a19b979fe9af7d04
+1 FAMC @F-hist-a19b979fe9af7d04@
+1 SOUR @S-PUBLIC@
+0 @hist-d7063b7f82df00aa@ INDI
+1 NAME Bruno Rodrigues Zaniratti
+1 _PUBID hist-d7063b7f82df00aa
+1 FAMC @F-hist-d7063b7f82df00aa@
+1 SOUR @S-PUBLIC@
+0 @hist-5eaae71e8eae6f4a@ INDI
+1 NAME Andréa Zaniratti
+1 _PUBID hist-5eaae71e8eae6f4a
+1 FAMC @F-hist-5eaae71e8eae6f4a@
+1 SOUR @S-PUBLIC@
+0 @hist-ea9be34ffb687854@ INDI
+1 NAME Edson Zaniratti
+1 _PUBID hist-ea9be34ffb687854
+1 FAMS @F-hist-5eaae71e8eae6f4a@
+1 FAMS @F-hist-eb7192f1602b4c46@
+1 FAMS @F-hist-ee74854960827e48@
+1 FAMS @F-hist-71e0d4ccf1f4c2ca@
+1 FAMC @F-hist-ea9be34ffb687854@
+1 SOUR @S-PUBLIC@
+0 @hist-c9be5809a46d54aa@ INDI
+1 NAME Realcir
+1 _PUBID hist-c9be5809a46d54aa
+1 SOUR @S-PUBLIC@
+0 @hist-acbbe5e0ff17fbf4@ INDI
+1 NAME Reolinda
+1 _PUBID hist-acbbe5e0ff17fbf4
+1 SOUR @S-PUBLIC@
+0 @hist-950b424ef3a074f8@ INDI
+1 NAME Realtina
+1 _PUBID hist-950b424ef3a074f8
+1 SOUR @S-PUBLIC@
+0 @hist-651cb9cec7694c39@ INDI
+1 NAME Rui
+1 _PUBID hist-651cb9cec7694c39
+1 SOUR @S-PUBLIC@
+0 @hist-b92d15a8d06f1696@ INDI
+1 NAME Ruth
+1 _PUBID hist-b92d15a8d06f1696
+1 SOUR @S-PUBLIC@
+0 @hist-2753aec992e49186@ INDI
+1 NAME Augusto Zaniratti (1877)
+1 _PUBID hist-2753aec992e49186
+1 FAMS @F-hist-c7996d44974ae919@
+1 FAMS @F-hist-5ffdb2dd61d945b1@
+1 FAMC @F-hist-2753aec992e49186@
+1 SOUR @S-PUBLIC@
+0 @hist-640e605ebc191024@ INDI
+1 NAME Tiago Zaniratti
+1 _PUBID hist-640e605ebc191024
+1 FAMC @F-hist-640e605ebc191024@
+1 SOUR @S-PUBLIC@
+0 @hist-6fbb8194fdab41d8@ INDI
+1 NAME Luis Henrique Zaniratti
+1 _PUBID hist-6fbb8194fdab41d8
+1 FAMS @F-hist-8996592a00293752@
+1 FAMC @F-hist-6fbb8194fdab41d8@
+1 SOUR @S-PUBLIC@
+0 @hist-d1f1fd4a979b5105@ INDI
+1 NAME Maria Cristina
+1 _PUBID hist-d1f1fd4a979b5105
+1 FAMC @F-hist-d1f1fd4a979b5105@
+1 SOUR @S-PUBLIC@
+0 @hist-bb650114fed2dcf2@ INDI
+1 NAME Flávio Zaniratti
+1 _PUBID hist-bb650114fed2dcf2
+1 FAMC @F-hist-bb650114fed2dcf2@
+1 SOUR @S-PUBLIC@
+0 @hist-8bbe3e2ddc6a1ee8@ INDI
+1 NAME Maria Zaniratti
+1 _PUBID hist-8bbe3e2ddc6a1ee8
+1 FAMC @F-hist-8bbe3e2ddc6a1ee8@
+1 SOUR @S-PUBLIC@
+0 @hist-e7c1201f59dd2530@ INDI
+1 NAME Jadir Zaniratti
+1 _PUBID hist-e7c1201f59dd2530
+1 FAMC @F-hist-e7c1201f59dd2530@
+1 SOUR @S-PUBLIC@
+0 @hist-0055efb033ae0bb6@ INDI
+1 NAME Raymundo Júnior
+1 _PUBID hist-0055efb033ae0bb6
+1 FAMS @F-hist-18ebc85588fc7bba@
+1 FAMS @F-hist-a19b979fe9af7d04@
+1 SOUR @S-PUBLIC@
+0 @hist-18ebc85588fc7bba@ INDI
+1 NAME Everton Goulart Zanirati
+1 _PUBID hist-18ebc85588fc7bba
+1 FAMS @F-hist-896e3df836a1b16b@
+1 FAMC @F-hist-18ebc85588fc7bba@
+1 SOUR @S-PUBLIC@
+0 @hist-75cce87a9547e385@ INDI
+1 NAME Ranira Terezinha da Costa Zanirati
+1 _PUBID hist-75cce87a9547e385
+1 FAMS @F-hist-d5b916ed59df8a7b@
+1 FAMS @F-hist-66dd514df18e45df@
+1 SOUR @S-PUBLIC@
+0 @hist-89ce79d4e103f335@ INDI
+1 NAME Lídice Zaniratti
+1 _PUBID hist-89ce79d4e103f335
+1 FAMS @F-hist-b0312d4bad79e91b@
+1 FAMC @F-hist-89ce79d4e103f335@
+1 SOUR @S-PUBLIC@
+0 @hist-5ffdb2dd61d945b1@ INDI
+1 NAME Geraldo (1920)
+1 _PUBID hist-5ffdb2dd61d945b1
+1 FAMS @F-hist-89ce79d4e103f335@
+1 FAMS @F-hist-dda7f4924efeb2af@
+1 FAMS @F-hist-03f22694e8f6a8eb@
+1 FAMS @F-hist-c43ca697a7a5ddd1@
+1 FAMS @F-hist-1410dcf9b56a130c@
+1 FAMC @F-hist-5ffdb2dd61d945b1@
+1 SOUR @S-PUBLIC@
+0 @hist-03f22694e8f6a8eb@ INDI
+1 NAME Regina Maria Zaniratti
+1 _PUBID hist-03f22694e8f6a8eb
+1 FAMS @F-hist-ccd98d9f3a3cf1ca@
+1 FAMS @F-hist-392a29b3fb758bbe@
+1 FAMC @F-hist-03f22694e8f6a8eb@
+1 SOUR @S-PUBLIC@
+0 @hist-8b6af8fdcd4ff3f6@ INDI
+1 NAME Ridan
+1 _PUBID hist-8b6af8fdcd4ff3f6
+1 SOUR @S-PUBLIC@
+0 @hist-19e52c532fe3cdf6@ INDI
+1 NAME Bruno Zaniratti
+1 _PUBID hist-19e52c532fe3cdf6
+1 FAMS @F-hist-7eabe75feea46ae8@
+1 FAMC @F-hist-19e52c532fe3cdf6@
+1 SOUR @S-PUBLIC@
+0 @hist-c43ca697a7a5ddd1@ INDI
+1 NAME José Augusto Zaniratti
+1 _PUBID hist-c43ca697a7a5ddd1
+1 FAMS @F-hist-640e605ebc191024@
+1 FAMS @F-hist-6795cf65f61eb514@
+1 FAMC @F-hist-c43ca697a7a5ddd1@
+1 SOUR @S-PUBLIC@
+0 @hist-c7996d44974ae919@ INDI
+1 NAME Suely Zaniratti
+1 _PUBID hist-c7996d44974ae919
+1 FAMS @F-hist-ref-2eca62c96b8c4a8b@
+1 FAMC @F-hist-c7996d44974ae919@
+1 SOUR @S-PUBLIC@
+0 @hist-cb5138966adec674@ INDI
+1 NAME Gerson Zaniratti
+1 _PUBID hist-cb5138966adec674
+1 FAMS @F-hist-08d072ce74da68e0@
+1 FAMS @F-hist-8186650ec18a340a@
+1 SOUR @S-PUBLIC@
+0 @hist-059b62bd1defae7d@ INDI
+1 NAME Raymundo
+1 _PUBID hist-059b62bd1defae7d
+1 SOUR @S-PUBLIC@
+0 @hist-cc65d651c52d04a2@ INDI
+1 NAME Cristina
+1 _PUBID hist-cc65d651c52d04a2
+1 FAMC @F-hist-cc65d651c52d04a2@
+1 SOUR @S-PUBLIC@
+0 @hist-3d86df74220bed28@ INDI
+1 NAME Geraldo Neto
+1 _PUBID hist-3d86df74220bed28
+1 FAMC @F-hist-3d86df74220bed28@
+1 SOUR @S-PUBLIC@
+0 @hist-ba2464feda27dacd@ INDI
+1 NAME Cristian
+1 _PUBID hist-ba2464feda27dacd
+1 FAMC @F-hist-ba2464feda27dacd@
+1 SOUR @S-PUBLIC@
+0 @hist-ccd98d9f3a3cf1ca@ INDI
+1 NAME Anderson Luiz
+1 _PUBID hist-ccd98d9f3a3cf1ca
+1 FAMC @F-hist-ccd98d9f3a3cf1ca@
+1 SOUR @S-PUBLIC@
+0 @hist-392a29b3fb758bbe@ INDI
+1 NAME André Luiz
+1 _PUBID hist-392a29b3fb758bbe
+1 FAMC @F-hist-392a29b3fb758bbe@
+1 SOUR @S-PUBLIC@
+0 @hist-6795cf65f61eb514@ INDI
+1 NAME Vinicius Zaniratti
+1 _PUBID hist-6795cf65f61eb514
+1 FAMC @F-hist-6795cf65f61eb514@
+1 SOUR @S-PUBLIC@
+0 @hist-1410dcf9b56a130c@ INDI
+1 NAME José Luiz Zaniratti
+1 _PUBID hist-1410dcf9b56a130c
+1 FAMS @F-hist-a28d7b3c68d955ac@
+1 FAMC @F-hist-1410dcf9b56a130c@
+1 SOUR @S-PUBLIC@
+0 @hist-dda7f4924efeb2af@ INDI
+1 NAME José Antônio Zaniratti
+1 _PUBID hist-dda7f4924efeb2af
+1 FAMS @F-hist-cc65d651c52d04a2@
+1 FAMS @F-hist-ba2464feda27dacd@
+1 FAMS @F-hist-3d86df74220bed28@
+1 FAMC @F-hist-dda7f4924efeb2af@
+1 SOUR @S-PUBLIC@
+0 @hist-71e0d4ccf1f4c2ca@ INDI
+1 NAME Rodrigo
+1 _PUBID hist-71e0d4ccf1f4c2ca
+1 FAMC @F-hist-71e0d4ccf1f4c2ca@
+1 SOUR @S-PUBLIC@
+0 @hist-b0312d4bad79e91b@ INDI
+1 NAME Jones
+1 _PUBID hist-b0312d4bad79e91b
+1 FAMC @F-hist-b0312d4bad79e91b@
+1 SOUR @S-PUBLIC@
+0 @hist-a28d7b3c68d955ac@ INDI
+1 NAME Bruno
+1 _PUBID hist-a28d7b3c68d955ac
+1 FAMC @F-hist-a28d7b3c68d955ac@
+1 SOUR @S-PUBLIC@
+0 @hist-08d072ce74da68e0@ INDI
+1 NAME Diego Zaniratti
+1 _PUBID hist-08d072ce74da68e0
+1 FAMS @F-hist-5d33ae06936fcdf2@
+1 FAMC @F-hist-08d072ce74da68e0@
+1 SOUR @S-PUBLIC@
+0 @hist-8186650ec18a340a@ INDI
+1 NAME Diogo Zaniratti
+1 _PUBID hist-8186650ec18a340a
+1 FAMC @F-hist-8186650ec18a340a@
+1 SOUR @S-PUBLIC@
+0 @hist-a7f5e833e1485902@ INDI
+1 NAME Bruno
+1 _PUBID hist-a7f5e833e1485902
+1 SOUR @S-PUBLIC@
+0 @hist-0ed4226676bd35f5@ INDI
+1 NAME Ranyr
+1 _PUBID hist-0ed4226676bd35f5
+1 SOUR @S-PUBLIC@
+0 @hist-fd766578645b575c@ INDI
+1 NAME José
+1 _PUBID hist-fd766578645b575c
+1 SOUR @S-PUBLIC@
+0 @hist-5d33ae06936fcdf2@ INDI
+1 NAME Haika
+1 _PUBID hist-5d33ae06936fcdf2
+1 FAMC @F-hist-5d33ae06936fcdf2@
+1 SOUR @S-PUBLIC@
+0 @hist-c4ba918f86a7b118@ INDI
+1 NAME Gaetano Zaniratti
+1 _PUBID hist-c4ba918f86a7b118
+1 FAMS @F-hist-4ea0b90f3eab9b6d@
+1 SOUR @S-PUBLIC@
+0 @hist-e031751c31134835@ INDI
+1 NAME Pilade
+1 _PUBID hist-e031751c31134835
+1 SOUR @S-PUBLIC@
+0 @hist-4ea0b90f3eab9b6d@ INDI
+1 NAME Ferruccio
+1 _PUBID hist-4ea0b90f3eab9b6d
+1 FAMS @F-hist-9cd5127455a40e85@
+1 FAMS @F-hist-07af4a2ffac2d823@
+1 FAMC @F-hist-4ea0b90f3eab9b6d@
+1 SOUR @S-PUBLIC@
+0 @hist-9cd5127455a40e85@ INDI
+1 NAME Giovanni
+1 _PUBID hist-9cd5127455a40e85
+1 FAMC @F-hist-9cd5127455a40e85@
+1 SOUR @S-PUBLIC@
+0 @hist-07af4a2ffac2d823@ INDI
+1 NAME Franco (1920-2005)
+1 _PUBID hist-07af4a2ffac2d823
+1 FAMC @F-hist-07af4a2ffac2d823@
+1 SOUR @S-PUBLIC@
+0 @hist-b12b762a494f3311@ INDI
+1 NAME Carlo
+1 _PUBID hist-b12b762a494f3311
+1 SOUR @S-PUBLIC@
+0 @hist-81049f5c71094b1b@ INDI
+1 NAME (2 6 1895-19??) Ebbe 13 figli
+1 _PUBID hist-81049f5c71094b1b
+1 SOUR @S-PUBLIC@
+0 @hist-8edc2c31e77cf815@ INDI
+1 NAME Maria
+1 _PUBID hist-8edc2c31e77cf815
+1 SOUR @S-PUBLIC@
+0 @hist-b2186dbeb0e10697@ INDI
+1 NAME Carlo
+1 _PUBID hist-b2186dbeb0e10697
+1 SOUR @S-PUBLIC@
+0 @hist-579a079f999acd48@ INDI
+1 NAME 1868-1874
+1 _PUBID hist-579a079f999acd48
+1 SOUR @S-PUBLIC@
+0 @hist-5b92544a2d812cd5@ INDI
+1 NAME Angelica
+1 _PUBID hist-5b92544a2d812cd5
+1 FAMC @F-hist-5b92544a2d812cd5@
+1 SOUR @S-PUBLIC@
+0 @hist-2fd1cf7bb3de4f39@ INDI
+1 NAME Deulma
+1 _PUBID hist-2fd1cf7bb3de4f39
+1 FAMC @F-hist-2fd1cf7bb3de4f39@
+1 SOUR @S-PUBLIC@
+0 @hist-728ef069cadc4194@ INDI
+1 NAME Deulmo Zaniratti
+1 _PUBID hist-728ef069cadc4194
+1 FAMS @F-hist-1f7c474fd0b89f3d@
+1 FAMS @F-hist-894e771ea7785a57@
+1 FAMC @F-hist-728ef069cadc4194@
+1 SOUR @S-PUBLIC@
+0 @hist-8298df635435448c@ INDI
+1 NAME Antonio Zaniratti
+1 _PUBID hist-8298df635435448c
+1 FAMS @F-hist-242fe239ba4ac266@
+1 FAMC @F-hist-8298df635435448c@
+1 SOUR @S-PUBLIC@
+0 @hist-0108cdf215ffe194@ INDI
+1 NAME Sante
+1 _PUBID hist-0108cdf215ffe194
+1 FAMC @F-hist-0108cdf215ffe194@
+1 SOUR @S-PUBLIC@
+0 @hist-8cacccca99d35706@ INDI
+1 NAME Clara
+1 _PUBID hist-8cacccca99d35706
+1 FAMC @F-hist-8cacccca99d35706@
+1 SOUR @S-PUBLIC@
+0 @hist-9e11a21ebe690c09@ INDI
+1 NAME Etra
+1 _PUBID hist-9e11a21ebe690c09
+1 FAMC @F-hist-9e11a21ebe690c09@
+1 SOUR @S-PUBLIC@
+0 @hist-4630780e00411597@ INDI
+1 NAME Edmondo
+1 _PUBID hist-4630780e00411597
+1 FAMC @F-hist-4630780e00411597@
+1 SOUR @S-PUBLIC@
+0 @hist-e97bc136eb174e56@ INDI
+1 NAME Clarice Zaniratti
+1 _PUBID hist-e97bc136eb174e56
+1 FAMS @F-hist-6399c4d3b6e53f55@
+1 FAMC @F-hist-e97bc136eb174e56@
+1 SOUR @S-PUBLIC@
+0 @hist-894e771ea7785a57@ INDI
+1 NAME Bianca Zaniratti
+1 _PUBID hist-894e771ea7785a57
+1 FAMS @F-hist-ref-ebcb4d945c7778b2@
+1 FAMC @F-hist-894e771ea7785a57@
+1 SOUR @S-PUBLIC@
+0 @hist-879b9dc60af09690@ INDI
+1 NAME (1963)
+1 _PUBID hist-879b9dc60af09690
+1 SOUR @S-PUBLIC@
+0 @hist-40db0284aa0a8e8c@ INDI
+1 NAME (2003)
+1 _PUBID hist-40db0284aa0a8e8c
+1 SOUR @S-PUBLIC@
+0 @hist-110eb0f4becd053b@ INDI
+1 NAME Mario Zaniratti
+1 _PUBID hist-110eb0f4becd053b
+1 FAMS @F-hist-6563ddd14ef1a9ff@
+1 FAMS @F-hist-626951a7a1afe703@
+1 SOUR @S-PUBLIC@
+0 @hist-6563ddd14ef1a9ff@ INDI
+1 NAME Angelica Zaniratti (1950)
+1 _PUBID hist-6563ddd14ef1a9ff
+1 FAMS @F-hist-ref-4ecee0d6f235f562@
+1 FAMC @F-hist-6563ddd14ef1a9ff@
+1 SOUR @S-PUBLIC@
+0 @hist-626951a7a1afe703@ INDI
+1 NAME Emanuela Zaniratti
+1 _PUBID hist-626951a7a1afe703
+1 FAMC @F-hist-626951a7a1afe703@
+1 SOUR @S-PUBLIC@
+0 @hist-1f7c474fd0b89f3d@ INDI
+1 NAME Anna Zaniratti
+1 _PUBID hist-1f7c474fd0b89f3d
+1 FAMS @F-hist-3a33ed4d1186b249@
+1 FAMC @F-hist-1f7c474fd0b89f3d@
+1 SOUR @S-PUBLIC@
+0 @hist-a42037f1435b1e15@ INDI
+1 NAME Alvaro Zaniratti
+1 _PUBID hist-a42037f1435b1e15
+1 FAMC @F-hist-a42037f1435b1e15@
+1 SOUR @S-PUBLIC@
+0 @hist-03cdd7b0f6f048fd@ INDI
+1 NAME Albertina
+1 _PUBID hist-03cdd7b0f6f048fd
+1 SOUR @S-PUBLIC@
+0 @hist-6c4cb7eceea35985@ INDI
+1 NAME Gilberto Zaniratti
+1 _PUBID hist-6c4cb7eceea35985
+1 FAMS @F-hist-8411ea7e29ea99c9@
+1 FAMC @F-hist-6c4cb7eceea35985@
+1 SOUR @S-PUBLIC@
+0 @hist-8411ea7e29ea99c9@ INDI
+1 NAME Nadia
+1 _PUBID hist-8411ea7e29ea99c9
+1 FAMC @F-hist-8411ea7e29ea99c9@
+1 SOUR @S-PUBLIC@
+0 @hist-fdec3a5021c6ecbd@ INDI
+1 NAME (1927)
+1 _PUBID hist-fdec3a5021c6ecbd
+1 SOUR @S-PUBLIC@
+0 @hist-9a1627aa0a97d7b2@ INDI
+1 NAME Leonida
+1 _PUBID hist-9a1627aa0a97d7b2
+1 SOUR @S-PUBLIC@
+0 @hist-1236a9567ec0de24@ INDI
+1 NAME Orlando
+1 _PUBID hist-1236a9567ec0de24
+1 FAMS @F-edmondo1950@
+1 SOUR @S-PUBLIC@
+0 @edmondo1950@ INDI
+1 NAME Edmondo Lorenzo Zaniratti
+1 _PUBID edmondo1950
+1 FAMS @F-hist-a0d17c52ecebe5c5@
+1 FAMC @F-edmondo1950@
+1 SOUR @S-PUBLIC@
+0 @hist-5538ee8f09a0f0fd@ INDI
+1 NAME (1984)
+1 _PUBID hist-5538ee8f09a0f0fd
+1 SOUR @S-PUBLIC@
+0 @hist-61acaf2818b8ffc7@ INDI
+1 NAME Ivano
+1 _PUBID hist-61acaf2818b8ffc7
+1 SOUR @S-PUBLIC@
+0 @hist-242fe239ba4ac266@ INDI
+1 NAME Deulma Zaniratti (1930)
+1 _PUBID hist-242fe239ba4ac266
+1 FAMS @F-hist-ref-a46b3fd872632e8c@
+1 FAMC @F-hist-242fe239ba4ac266@
+1 SOUR @S-PUBLIC@
+0 @hist-c0b5d60cfe0bb81b@ INDI
+1 NAME Giuseppe
+1 _PUBID hist-c0b5d60cfe0bb81b
+1 SOUR @S-PUBLIC@
+0 @hist-21b2704a7cf39375@ INDI
+1 NAME Ermanno
+1 _PUBID hist-21b2704a7cf39375
+1 SOUR @S-PUBLIC@
+0 @hist-5fa7bdd2f855395e@ INDI
+1 NAME Ugo
+1 _PUBID hist-5fa7bdd2f855395e
+1 SOUR @S-PUBLIC@
+0 @hist-3e38be1633543a4f@ INDI
+1 NAME Umberto
+1 _PUBID hist-3e38be1633543a4f
+1 SOUR @S-PUBLIC@
+0 @hist-6f2431654b58f92f@ INDI
+1 NAME (1880-1881)
+1 _PUBID hist-6f2431654b58f92f
+1 SOUR @S-PUBLIC@
+0 @hist-4bd6e9a99fc14a62@ INDI
+1 NAME Maria
+1 _PUBID hist-4bd6e9a99fc14a62
+1 SOUR @S-PUBLIC@
+0 @hist-0ed13d83a990964d@ INDI
+1 NAME Luigi
+1 _PUBID hist-0ed13d83a990964d
+1 SOUR @S-PUBLIC@
+0 @hist-c26599bdae52a78a@ INDI
+1 NAME Grandilia
+1 _PUBID hist-c26599bdae52a78a
+1 SOUR @S-PUBLIC@
+0 @hist-4503f8e5bc94e747@ INDI
+1 NAME (1889-1967)
+1 _PUBID hist-4503f8e5bc94e747
+1 SOUR @S-PUBLIC@
+0 @hist-4370b15f3ca8ed92@ INDI
+1 NAME Ernesto
+1 _PUBID hist-4370b15f3ca8ed92
+1 SOUR @S-PUBLIC@
+0 @hist-161cd20a9894e18c@ INDI
+1 NAME (1920-1997)
+1 _PUBID hist-161cd20a9894e18c
+1 SOUR @S-PUBLIC@
+0 @hist-4cd8021d1ed2f324@ INDI
+1 NAME Sebastião
+1 _PUBID hist-4cd8021d1ed2f324
+1 FAMS @F-hist-144179fd33e0b25e@
+1 SOUR @S-PUBLIC@
+0 @hist-14332e5cede775a5@ INDI
+1 NAME Geraldo Zaniratti
+1 _PUBID hist-14332e5cede775a5
+1 FAMS @F-hist-7c1f8da5c063e63e@
+1 FAMS @F-hist-0894deb1c7fbd183@
+1 FAMS @F-hist-4a56455479f95144@
+1 FAMS @F-hist-ec60708a11e75fe7@
+1 FAMC @F-hist-14332e5cede775a5@
+1 SOUR @S-PUBLIC@
+0 @hist-f817ce4d73a44758@ INDI
+1 NAME Helena Zaniratti
+1 _PUBID hist-f817ce4d73a44758
+1 FAMS @F-hist-7780d2996e078623@
+1 SOUR @S-PUBLIC@
+0 @hist-e088a08d7d66fb19@ INDI
+1 NAME Lourdes
+1 _PUBID hist-e088a08d7d66fb19
+1 SOUR @S-PUBLIC@
+0 @hist-50d6b3c91998cabc@ INDI
+1 NAME (1927)
+1 _PUBID hist-50d6b3c91998cabc
+1 SOUR @S-PUBLIC@
+0 @hist-c4c81634cdf40e50@ INDI
+1 NAME (1954)
+1 _PUBID hist-c4c81634cdf40e50
+1 SOUR @S-PUBLIC@
+0 @hist-4b6c29b4907f044b@ INDI
+1 NAME (1956)
+1 _PUBID hist-4b6c29b4907f044b
+1 SOUR @S-PUBLIC@
+0 @hist-144179fd33e0b25e@ INDI
+1 NAME Débora Costa Ferreira Zanirati
+1 _PUBID hist-144179fd33e0b25e
+1 FAMC @F-hist-144179fd33e0b25e@
+1 SOUR @S-PUBLIC@
+0 @hist-23cfe9bf18f696dc@ INDI
+1 NAME Viviane
+1 _PUBID hist-23cfe9bf18f696dc
+1 SOUR @S-PUBLIC@
+0 @hist-7c1f8da5c063e63e@ INDI
+1 NAME Cynthia Zaniratti
+1 _PUBID hist-7c1f8da5c063e63e
+1 FAMC @F-hist-7c1f8da5c063e63e@
+1 SOUR @S-PUBLIC@
+0 @hist-4a56455479f95144@ INDI
+1 NAME Vinícius
+1 _PUBID hist-4a56455479f95144
+1 FAMC @F-hist-4a56455479f95144@
+1 SOUR @S-PUBLIC@
+0 @hist-0894deb1c7fbd183@ INDI
+1 NAME Felipe Zaniratti
+1 _PUBID hist-0894deb1c7fbd183
+1 FAMC @F-hist-0894deb1c7fbd183@
+1 SOUR @S-PUBLIC@
+0 @hist-4c04083088046c2f@ INDI
+1 NAME Angelo Zaniratti Prado
+1 _PUBID hist-4c04083088046c2f
+1 FAMS @F-hist-ref-f3a7a84500422a03@
+1 FAMC @F-hist-4c04083088046c2f@
+1 SOUR @S-PUBLIC@
+0 @hist-7780d2996e078623@ INDI
+1 NAME Amanda Zaniratti Prado
+1 _PUBID hist-7780d2996e078623
+1 FAMC @F-hist-7780d2996e078623@
+1 SOUR @S-PUBLIC@
+0 @hist-67697e529e25a628@ INDI
+1 NAME Dorselina
+1 _PUBID hist-67697e529e25a628
+1 SOUR @S-PUBLIC@
+0 @hist-a12c19b6e86c8005@ INDI
+1 NAME ?
+1 _PUBID hist-a12c19b6e86c8005
+1 SOUR @S-PUBLIC@
+0 @hist-72cfa0124f124d5e@ INDI
+1 NAME Custòdio
+1 _PUBID hist-72cfa0124f124d5e
+1 SOUR @S-PUBLIC@
+0 @hist-974565ed722d1876@ INDI
+1 NAME ?
+1 _PUBID hist-974565ed722d1876
+1 SOUR @S-PUBLIC@
+0 @hist-98955b97180dc475@ INDI
+1 NAME Maria
+1 _PUBID hist-98955b97180dc475
+1 SOUR @S-PUBLIC@
+0 @hist-3c735ec440c41804@ INDI
+1 NAME Valdemar
+1 _PUBID hist-3c735ec440c41804
+1 SOUR @S-PUBLIC@
+0 @hist-23498d6fd399d985@ INDI
+1 NAME Laurides
+1 _PUBID hist-23498d6fd399d985
+1 SOUR @S-PUBLIC@
+0 @hist-ee42703141b3a3ae@ INDI
+1 NAME Jair Zaniratti
+1 _PUBID hist-ee42703141b3a3ae
+1 FAMS @F-hist-df79cd378d384472@
+1 FAMS @F-hist-baef5756a5a33892@
+1 SOUR @S-PUBLIC@
+0 @hist-102b1dc064f6eae0@ INDI
+1 NAME Jorge Ailton Zaniratti
+1 _PUBID hist-102b1dc064f6eae0
+1 FAMS @F-hist-cb5e99cf6e3dfe81@
+1 SOUR @S-PUBLIC@
+0 @hist-a1bd9a232ce62f5c@ INDI
+1 NAME Daniele
+1 _PUBID hist-a1bd9a232ce62f5c
+1 SOUR @S-PUBLIC@
+0 @hist-e4dae51a7ae8bc7f@ INDI
+1 NAME Ulisse Zaniratti
+1 _PUBID hist-e4dae51a7ae8bc7f
+1 FAMS @F-hist-73d7cfed855dcd88@
+1 SOUR @S-PUBLIC@
+0 @hist-e7f08804b749b96e@ INDI
+1 NAME Zenaide
+1 _PUBID hist-e7f08804b749b96e
+1 SOUR @S-PUBLIC@
+0 @hist-f1f19b937c204550@ INDI
+1 NAME Santer
+1 _PUBID hist-f1f19b937c204550
+1 SOUR @S-PUBLIC@
+0 @hist-c58d8d5dd90b21c5@ INDI
+1 NAME José
+1 _PUBID hist-c58d8d5dd90b21c5
+1 SOUR @S-PUBLIC@
+0 @hist-541eb1cec60e8f20@ INDI
+1 NAME Elpìdio
+1 _PUBID hist-541eb1cec60e8f20
+1 FAMS @F-hist-1483995c62be5829@
+1 SOUR @S-PUBLIC@
+0 @hist-f08a63c70b2db797@ INDI
+1 NAME Hilario
+1 _PUBID hist-f08a63c70b2db797
+1 FAMS @F-hist-14332e5cede775a5@
+1 SOUR @S-PUBLIC@
+0 @hist-8cc4645d929c4d32@ INDI
+1 NAME Iolanda
+1 _PUBID hist-8cc4645d929c4d32
+1 SOUR @S-PUBLIC@
+0 @hist-73d7cfed855dcd88@ INDI
+1 NAME Gecí Zanirate
+1 _PUBID hist-73d7cfed855dcd88
+1 FAMS @F-hist-f912b206957b863e@
+1 FAMS @F-hist-84f04d4e7c9ac139@
+1 FAMS @F-hist-b731e16a40b3f357@
+1 FAMS @F-hist-ref-73e39c2fc65819f0@
+1 FAMC @F-hist-73d7cfed855dcd88@
+1 SOUR @S-PUBLIC@
+0 @hist-a14eafdbad3b87ca@ INDI
+1 NAME Valci
+1 _PUBID hist-a14eafdbad3b87ca
+1 SOUR @S-PUBLIC@
+0 @hist-8fd3793e2432c49d@ INDI
+1 NAME Maria
+1 _PUBID hist-8fd3793e2432c49d
+1 SOUR @S-PUBLIC@
+0 @hist-e3b5772c1bd32209@ INDI
+1 NAME Cleonice Zaniratti
+1 _PUBID hist-e3b5772c1bd32209
+1 FAMS @F-hist-b62fc90d5fb9fc84@
+1 SOUR @S-PUBLIC@
+0 @hist-1483995c62be5829@ INDI
+1 NAME Hélio Zaniratti
+1 _PUBID hist-1483995c62be5829
+1 FAMS @F-hist-ref-03b66299f244d595@
+1 FAMS @F-hist-07c5e6c4093b73b5@
+1 FAMC @F-hist-1483995c62be5829@
+1 SOUR @S-PUBLIC@
+0 @hist-b040a364df970ee2@ INDI
+1 NAME Maria Helena Zanirati
+1 _PUBID hist-b040a364df970ee2
+1 FAMS @F-hist-4ba7d76f575abb39@
+1 SOUR @S-PUBLIC@
+0 @hist-0beb85f3f7d68ad4@ INDI
+1 NAME José Geraldo Zaniratti
+1 _PUBID hist-0beb85f3f7d68ad4
+1 FAMS @F-hist-4420a6a00a7eb207@
+1 SOUR @S-PUBLIC@
+0 @hist-61762b4b4193cd7f@ INDI
+1 NAME Paolo
+1 _PUBID hist-61762b4b4193cd7f
+1 SOUR @S-PUBLIC@
+0 @hist-2396e5fba2f94985@ INDI
+1 NAME Elaine
+1 _PUBID hist-2396e5fba2f94985
+1 SOUR @S-PUBLIC@
+0 @hist-39ccfa3e9762df1b@ INDI
+1 NAME Adriana
+1 _PUBID hist-39ccfa3e9762df1b
+1 SOUR @S-PUBLIC@
+0 @hist-14bd273ddc1eecfb@ INDI
+1 NAME Edézio
+1 _PUBID hist-14bd273ddc1eecfb
+1 SOUR @S-PUBLIC@
+0 @hist-b62fc90d5fb9fc84@ INDI
+1 NAME Érica Zaniratti
+1 _PUBID hist-b62fc90d5fb9fc84
+1 FAMC @F-hist-b62fc90d5fb9fc84@
+1 SOUR @S-PUBLIC@
+0 @hist-07c5e6c4093b73b5@ INDI
+1 NAME Rafael Ribeiro Zanirate
+1 _PUBID hist-07c5e6c4093b73b5
+1 FAMC @F-hist-07c5e6c4093b73b5@
+1 SOUR @S-PUBLIC@
+0 @hist-d9d5fe86e07cda10@ INDI
+1 NAME Cristiano Lima Zaniratti
+1 _PUBID hist-d9d5fe86e07cda10
+1 SOUR @S-PUBLIC@
+0 @hist-29d12bbe81e67a2c@ INDI
+1 NAME Cristiane Lima Zaniratti
+1 _PUBID hist-29d12bbe81e67a2c
+1 SOUR @S-PUBLIC@
+0 @hist-4420a6a00a7eb207@ INDI
+1 NAME Anderson Zaniratti
+1 _PUBID hist-4420a6a00a7eb207
+1 FAMC @F-hist-4420a6a00a7eb207@
+1 SOUR @S-PUBLIC@
+0 @hist-df79cd378d384472@ INDI
+1 NAME Maria Angélica Zaniratti
+1 _PUBID hist-df79cd378d384472
+1 FAMS @F-hist-bbcece2133e78e29@
+1 FAMC @F-hist-df79cd378d384472@
+1 SOUR @S-PUBLIC@
+0 @hist-4a80ab75fe924c28@ INDI
+1 NAME Sebastião Heleno
+1 _PUBID hist-4a80ab75fe924c28
+1 SOUR @S-PUBLIC@
+0 @hist-bdfc492af68e55a3@ INDI
+1 NAME Veronica Aparecida
+1 _PUBID hist-bdfc492af68e55a3
+1 SOUR @S-PUBLIC@
+0 @hist-baef5756a5a33892@ INDI
+1 NAME Arésio Tadeu Zanirati
+1 _PUBID hist-baef5756a5a33892
+1 FAMS @F-hist-c163b79416a6626d@
+1 FAMC @F-hist-baef5756a5a33892@
+1 SOUR @S-PUBLIC@
+0 @hist-8599ee7a410e8610@ INDI
+1 NAME Silvania
+1 _PUBID hist-8599ee7a410e8610
+1 SOUR @S-PUBLIC@
+0 @hist-4ba7d76f575abb39@ INDI
+1 NAME Cristiano Zaniratti
+1 _PUBID hist-4ba7d76f575abb39
+1 FAMC @F-hist-4ba7d76f575abb39@
+1 SOUR @S-PUBLIC@
+0 @hist-1d986a9b2ff3d0fc@ INDI
+1 NAME Vinícius
+1 _PUBID hist-1d986a9b2ff3d0fc
+1 SOUR @S-PUBLIC@
+0 @hist-ec60708a11e75fe7@ INDI
+1 NAME Felipe
+1 _PUBID hist-ec60708a11e75fe7
+1 FAMC @F-hist-ec60708a11e75fe7@
+1 SOUR @S-PUBLIC@
+0 @hist-a0d17c52ecebe5c5@ INDI
+1 NAME Irene
+1 _PUBID hist-a0d17c52ecebe5c5
+1 FAMC @F-hist-a0d17c52ecebe5c5@
+1 SOUR @S-PUBLIC@
+0 @hist-bbcece2133e78e29@ INDI
+1 NAME Mariana Zaniratti
+1 _PUBID hist-bbcece2133e78e29
+1 FAMC @F-hist-bbcece2133e78e29@
+1 SOUR @S-PUBLIC@
+0 @hist-c163b79416a6626d@ INDI
+1 NAME Lívia Aparecida
+1 _PUBID hist-c163b79416a6626d
+1 FAMC @F-hist-c163b79416a6626d@
+1 SOUR @S-PUBLIC@
+0 @hist-dab7a2e836976bfc@ INDI
+1 NAME Andrio
+1 _PUBID hist-dab7a2e836976bfc
+1 SOUR @S-PUBLIC@
+0 @hist-cb5e99cf6e3dfe81@ INDI
+1 NAME Michele Zanirati
+1 _PUBID hist-cb5e99cf6e3dfe81
+1 FAMC @F-hist-cb5e99cf6e3dfe81@
+1 SOUR @S-PUBLIC@
+0 @hist-0fe23fa205ea0e06@ INDI
+1 NAME João Vitor
+1 _PUBID hist-0fe23fa205ea0e06
+1 SOUR @S-PUBLIC@
+0 @hist-fdbc53b2f601a005@ INDI
+1 NAME Eulália
+1 _PUBID hist-fdbc53b2f601a005
+1 SOUR @S-PUBLIC@
+0 @hist-afb2de2241e3614c@ INDI
+1 NAME Antênio
+1 _PUBID hist-afb2de2241e3614c
+1 SOUR @S-PUBLIC@
+0 @hist-2f244f4f694abc15@ INDI
+1 NAME Alzira
+1 _PUBID hist-2f244f4f694abc15
+1 SOUR @S-PUBLIC@
+0 @hist-210f8e7d86731d69@ INDI
+1 NAME Helena
+1 _PUBID hist-210f8e7d86731d69
+1 SOUR @S-PUBLIC@
+0 @hist-ac59cfb7d77bbc8c@ INDI
+1 NAME Paumira
+1 _PUBID hist-ac59cfb7d77bbc8c
+1 SOUR @S-PUBLIC@
+0 @hist-c56d31fc02bdefe9@ INDI
+1 NAME Luiz
+1 _PUBID hist-c56d31fc02bdefe9
+1 SOUR @S-PUBLIC@
+0 @hist-1d91484590fcd9b7@ INDI
+1 NAME Quirino Zaniratti
+1 _PUBID hist-1d91484590fcd9b7
+1 FAMS @F-hist-12302e3b9be752e6@
+1 FAMS @F-hist-0f73335aeeace729@
+1 FAMS @F-hist-694b5249581dc009@
+1 FAMS @F-hist-e19471447f64ea27@
+1 FAMS @F-hist-5ce869e2b801168b@
+1 FAMS @F-hist-7effd7f7d1f4666a@
+1 FAMC @F-hist-1d91484590fcd9b7@
+1 SOUR @S-PUBLIC@
+0 @hist-0f73335aeeace729@ INDI
+1 NAME Quirino Zaniratti
+1 _PUBID hist-0f73335aeeace729
+1 FAMS @F-hist-24b1627b5740e036@
+1 FAMC @F-hist-0f73335aeeace729@
+1 SOUR @S-PUBLIC@
+0 @hist-24b1627b5740e036@ INDI
+1 NAME Wendel
+1 _PUBID hist-24b1627b5740e036
+1 FAMC @F-hist-24b1627b5740e036@
+1 SOUR @S-PUBLIC@
+0 @hist-e19471447f64ea27@ INDI
+1 NAME Maria José Zaniratti
+1 _PUBID hist-e19471447f64ea27
+1 FAMS @F-hist-0563d4606808f71a@
+1 FAMS @F-hist-d8a282449f7503b0@
+1 FAMC @F-hist-e19471447f64ea27@
+1 SOUR @S-PUBLIC@
+0 @hist-0563d4606808f71a@ INDI
+1 NAME Silvania
+1 _PUBID hist-0563d4606808f71a
+1 FAMC @F-hist-0563d4606808f71a@
+1 SOUR @S-PUBLIC@
+0 @hist-d8a282449f7503b0@ INDI
+1 NAME Silvestre
+1 _PUBID hist-d8a282449f7503b0
+1 FAMC @F-hist-d8a282449f7503b0@
+1 SOUR @S-PUBLIC@
+0 @hist-694b5249581dc009@ INDI
+1 NAME José Nilton Zanirate
+1 _PUBID hist-694b5249581dc009
+1 FAMS @F-hist-44a39475b4f32dcb@
+1 FAMC @F-hist-694b5249581dc009@
+1 SOUR @S-PUBLIC@
+0 @hist-44a39475b4f32dcb@ INDI
+1 NAME Dante
+1 _PUBID hist-44a39475b4f32dcb
+1 FAMC @F-hist-44a39475b4f32dcb@
+1 SOUR @S-PUBLIC@
+0 @hist-12302e3b9be752e6@ INDI
+1 NAME Conceição das Graças
+1 _PUBID hist-12302e3b9be752e6
+1 FAMS @F-hist-142972a5247df998@
+1 FAMS @F-hist-950145f90aa97bac@
+1 FAMC @F-hist-12302e3b9be752e6@
+1 SOUR @S-PUBLIC@
+0 @hist-142972a5247df998@ INDI
+1 NAME Carlos Eduardo
+1 _PUBID hist-142972a5247df998
+1 FAMC @F-hist-142972a5247df998@
+1 SOUR @S-PUBLIC@
+0 @hist-950145f90aa97bac@ INDI
+1 NAME Afonso
+1 _PUBID hist-950145f90aa97bac
+1 FAMC @F-hist-950145f90aa97bac@
+1 SOUR @S-PUBLIC@
+0 @hist-5ce869e2b801168b@ INDI
+1 NAME Silvia Helena
+1 _PUBID hist-5ce869e2b801168b
+1 FAMS @F-hist-3b3060286ba04ce8@
+1 FAMS @F-hist-2d234accb50b3396@
+1 FAMS @F-hist-b9d59ff9ae8ccad5@
+1 FAMC @F-hist-5ce869e2b801168b@
+1 SOUR @S-PUBLIC@
+0 @hist-3b3060286ba04ce8@ INDI
+1 NAME Bruno
+1 _PUBID hist-3b3060286ba04ce8
+1 FAMC @F-hist-3b3060286ba04ce8@
+1 SOUR @S-PUBLIC@
+0 @hist-b9d59ff9ae8ccad5@ INDI
+1 NAME Maria Cristina
+1 _PUBID hist-b9d59ff9ae8ccad5
+1 FAMC @F-hist-b9d59ff9ae8ccad5@
+1 SOUR @S-PUBLIC@
+0 @hist-2d234accb50b3396@ INDI
+1 NAME Guilherme
+1 _PUBID hist-2d234accb50b3396
+1 FAMC @F-hist-2d234accb50b3396@
+1 SOUR @S-PUBLIC@
+0 @hist-7effd7f7d1f4666a@ INDI
+1 NAME Rosani Zaniratti
+1 _PUBID hist-7effd7f7d1f4666a
+1 FAMS @F-hist-d3591a0e7be367f6@
+1 FAMC @F-hist-7effd7f7d1f4666a@
+1 SOUR @S-PUBLIC@
+0 @hist-d3591a0e7be367f6@ INDI
+1 NAME Quirino
+1 _PUBID hist-d3591a0e7be367f6
+1 FAMC @F-hist-d3591a0e7be367f6@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-84f9cde02796cb97@ INDI
+1 NAME Remira Gavioli
+1 _PUBID hist-ref-84f9cde02796cb97
+1 FAMS @F-hist-a42037f1435b1e15@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-35f771c4e68651d5@ INDI
+1 NAME Francesca Saletti
+1 _PUBID hist-ref-35f771c4e68651d5
+1 SOUR @S-PUBLIC@
+0 @hist-ref-64f202fd583bce06@ INDI
+1 NAME Marco Antônio Prado
+1 _PUBID hist-ref-64f202fd583bce06
+1 FAMS @F-hist-7780d2996e078623@
+1 SOUR @S-PUBLIC@
+0 @hist-6399c4d3b6e53f55@ INDI
+1 NAME Ancilla Molinari
+1 _PUBID hist-6399c4d3b6e53f55
+1 FAMS @F-hist-ref-58adac5fae0e15c7@
+1 FAMC @F-hist-6399c4d3b6e53f55@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-e075e9368f0d4b5b@ INDI
+1 NAME Gino Rinaldi
+1 _PUBID hist-ref-e075e9368f0d4b5b
+1 SOUR @S-PUBLIC@
+0 @hist-ref-58adac5fae0e15c7@ INDI
+1 NAME Tiziana Loretta Lia
+1 _PUBID hist-ref-58adac5fae0e15c7
+1 FAMC @F-hist-ref-58adac5fae0e15c7@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-92203fa2379c2a99@ INDI
+1 NAME Marilena Lima Zaniratti
+1 _PUBID hist-ref-92203fa2379c2a99
+1 FAMS @F-hist-4420a6a00a7eb207@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-d8d1fa0f0498924f@ INDI
+1 NAME Maria do Carmo Garcia
+1 _PUBID hist-ref-d8d1fa0f0498924f
+1 FAMS @F-hist-5eaae71e8eae6f4a@
+1 SOUR @S-PUBLIC@
+0 @hist-eb7192f1602b4c46@ INDI
+1 NAME Marcelo
+1 _PUBID hist-eb7192f1602b4c46
+1 FAMS @F-hist-d7063b7f82df00aa@
+1 FAMC @F-hist-eb7192f1602b4c46@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-21d2704545e4abd1@ INDI
+1 NAME Guacira Licker
+1 _PUBID hist-ref-21d2704545e4abd1
+1 FAMS @F-hist-606a8346ebccb8ee@
+1 FAMS @F-hist-19e52c532fe3cdf6@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-028468e7ea71c465@ INDI
+1 NAME Gabriel Pereira Leite
+1 _PUBID hist-ref-028468e7ea71c465
+1 SOUR @S-PUBLIC@
+0 @hist-ref-dcdbb84d1b1f5bdc@ INDI
+1 NAME Maria Giglioli
+1 _PUBID hist-ref-dcdbb84d1b1f5bdc
+1 FAMS @F-hist-6563ddd14ef1a9ff@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-06a86aa0a3f5e58b@ INDI
+1 NAME Davide Cerri
+1 _PUBID hist-ref-06a86aa0a3f5e58b
+1 SOUR @S-PUBLIC@
+0 @hist-ref-4ecee0d6f235f562@ INDI
+1 NAME Cristina
+1 _PUBID hist-ref-4ecee0d6f235f562
+1 FAMC @F-hist-ref-4ecee0d6f235f562@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-7013e70beff3bb1c@ INDI
+1 NAME Carmem Helena Mariano
+1 _PUBID hist-ref-7013e70beff3bb1c
+1 FAMS @F-hist-df79cd378d384472@
+1 FAMS @F-hist-baef5756a5a33892@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-d325f603a29caab8@ INDI
+1 NAME Madison Cabral da Silva
+1 _PUBID hist-ref-d325f603a29caab8
+1 SOUR @S-PUBLIC@
+0 @hist-d9a2cd9b09b03926@ INDI
+1 NAME Helena
+1 _PUBID hist-d9a2cd9b09b03926
+1 FAMS @F-hist-4c04083088046c2f@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-0e4f372f962140a2@ INDI
+1 NAME Marco Antônio Prado
+1 _PUBID hist-ref-0e4f372f962140a2
+1 FAMS @F-hist-4c04083088046c2f@
+1 SOUR @S-PUBLIC@
+0 @hist-83348c7081cc5039@ INDI
+1 NAME Amanda
+1 _PUBID hist-83348c7081cc5039
+1 SOUR @S-PUBLIC@
+0 @hist-ref-55b6dbd442f3bb32@ INDI
+1 NAME Raphaela Handam
+1 _PUBID hist-ref-55b6dbd442f3bb32
+1 SOUR @S-PUBLIC@
+0 @hist-ref-f3a7a84500422a03@ INDI
+1 NAME Gabriel
+1 _PUBID hist-ref-f3a7a84500422a03
+1 FAMC @F-hist-ref-f3a7a84500422a03@
+1 SOUR @S-PUBLIC@
+0 @hist-32baa414db0d8106@ INDI
+1 NAME Adalgisa Gulinelli
+1 _PUBID hist-32baa414db0d8106
+1 FAMS @F-hist-1f7c474fd0b89f3d@
+1 FAMS @F-hist-894e771ea7785a57@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-5cdce7ebb42e133e@ INDI
+1 NAME Rocco Femminella
+1 _PUBID hist-ref-5cdce7ebb42e133e
+1 SOUR @S-PUBLIC@
+0 @hist-3a33ed4d1186b249@ INDI
+1 NAME Gisella Femminella
+1 _PUBID hist-3a33ed4d1186b249
+1 FAMS @F-hist-ref-e15f506b7457a370@
+1 FAMC @F-hist-3a33ed4d1186b249@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-e65cfb5d7b3d38d3@ INDI
+1 NAME Angelica Braga
+1 _PUBID hist-ref-e65cfb5d7b3d38d3
+1 SOUR @S-PUBLIC@
+0 @hist-ref-3ceeedc8c06a9b30@ INDI
+1 NAME Imaculada Aparecida Gripp Zanirati
+1 _PUBID hist-ref-3ceeedc8c06a9b30
+1 SOUR @S-PUBLIC@
+0 @hist-ref-713438375b8f76c0@ INDI
+1 NAME Maria Gadda
+1 _PUBID hist-ref-713438375b8f76c0
+1 SOUR @S-PUBLIC@
+0 @hist-ref-0f6841c64f3725f7@ INDI
+1 NAME Idialdina
+1 _PUBID hist-ref-0f6841c64f3725f7
+1 FAMS @F-hist-2753aec992e49186@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-2d63090ef6fc8d1c@ INDI
+1 NAME Thereza Fortunati
+1 _PUBID hist-ref-2d63090ef6fc8d1c
+1 SOUR @S-PUBLIC@
+0 @hist-ref-5ca013cba270eb5a@ INDI
+1 NAME Quinto Marchetti
+1 _PUBID hist-ref-5ca013cba270eb5a
+1 SOUR @S-PUBLIC@
+0 @hist-ref-ebcb4d945c7778b2@ INDI
+1 NAME Leonello Cosetta
+1 _PUBID hist-ref-ebcb4d945c7778b2
+1 FAMC @F-hist-ref-ebcb4d945c7778b2@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-a24a8c3ba4ffda99@ INDI
+1 NAME Tanara Pujol
+1 _PUBID hist-ref-a24a8c3ba4ffda99
+1 SOUR @S-PUBLIC@
+0 @hist-ref-6f8e4527a042bb61@ INDI
+1 NAME Ceni Rodrigues
+1 _PUBID hist-ref-6f8e4527a042bb61
+1 FAMS @F-hist-d7063b7f82df00aa@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-212cee55ca83afd1@ INDI
+1 NAME Denilson Araújo
+1 _PUBID hist-ref-212cee55ca83afd1
+1 FAMS @F-hist-3b3060286ba04ce8@
+1 FAMS @F-hist-2d234accb50b3396@
+1 FAMS @F-hist-b9d59ff9ae8ccad5@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-ed6d37f2d203f54a@ INDI
+1 NAME Rosângela Arruda
+1 _PUBID hist-ref-ed6d37f2d203f54a
+1 FAMS @F-hist-8996592a00293752@
+1 SOUR @S-PUBLIC@
+0 @hist-d5b916ed59df8a7b@ INDI
+1 NAME Cenira Zanirati
+1 _PUBID hist-d5b916ed59df8a7b
+1 FAMC @F-hist-d5b916ed59df8a7b@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-4a24423a0914c1d2@ INDI
+1 NAME Heldecy Barcelos Ramos
+1 _PUBID hist-ref-4a24423a0914c1d2
+1 FAMS @F-hist-d5b916ed59df8a7b@
+1 FAMS @F-hist-66dd514df18e45df@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-371709b3f4bb8dfd@ INDI
+1 NAME Eny Zanirate
+1 _PUBID hist-ref-371709b3f4bb8dfd
+1 FAMS @F-hist-12302e3b9be752e6@
+1 FAMS @F-hist-0f73335aeeace729@
+1 FAMS @F-hist-694b5249581dc009@
+1 FAMS @F-hist-e19471447f64ea27@
+1 FAMS @F-hist-5ce869e2b801168b@
+1 FAMS @F-hist-7effd7f7d1f4666a@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-6b262c71545ee759@ INDI
+1 NAME José Carlos Brum
+1 _PUBID hist-ref-6b262c71545ee759
+1 SOUR @S-PUBLIC@
+0 @hist-ref-7c02185308caef51@ INDI
+1 NAME Jorge Sérgio Vieira
+1 _PUBID hist-ref-7c02185308caef51
+1 FAMS @F-hist-4ba7d76f575abb39@
+1 SOUR @S-PUBLIC@
+0 @hist-d4fd4386073b7256@ INDI
+1 NAME Nancy Parreira
+1 _PUBID hist-d4fd4386073b7256
+1 FAMS @F-hist-7c1f8da5c063e63e@
+1 FAMS @F-hist-0894deb1c7fbd183@
+1 SOUR @S-PUBLIC@
+0 @hist-d6e6b874025478df@ INDI
+1 NAME Daniele Zanirati
+1 _PUBID hist-d6e6b874025478df
+1 FAMC @F-hist-d6e6b874025478df@
+1 SOUR @S-PUBLIC@
+0 @hist-cdc9358479328780@ INDI
+1 NAME Rosângela Zanirati
+1 _PUBID hist-cdc9358479328780
+1 FAMS @F-hist-d6e6b874025478df@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-e84fcca2f207e691@ INDI
+1 NAME Silveira
+1 _PUBID hist-ref-e84fcca2f207e691
+1 FAMS @F-hist-d6e6b874025478df@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-b96edc3b424d8239@ INDI
+1 NAME Maria das Graças Costa Ferreira
+1 _PUBID hist-ref-b96edc3b424d8239
+1 FAMS @F-hist-144179fd33e0b25e@
+1 SOUR @S-PUBLIC@
+0 @hist-24508495e7c34044@ INDI
+1 NAME Ernesta Bellini
+1 _PUBID hist-24508495e7c34044
+1 FAMS @F-hist-242fe239ba4ac266@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-b09e7ecaa93951fe@ INDI
+1 NAME Luigi Chianale
+1 _PUBID hist-ref-b09e7ecaa93951fe
+1 SOUR @S-PUBLIC@
+0 @hist-ref-a46b3fd872632e8c@ INDI
+1 NAME Antonella Agostina
+1 _PUBID hist-ref-a46b3fd872632e8c
+1 FAMC @F-hist-ref-a46b3fd872632e8c@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-63636d95a60959ca@ INDI
+1 NAME Liane Menezes
+1 _PUBID hist-ref-63636d95a60959ca
+1 FAMS @F-hist-08d072ce74da68e0@
+1 FAMS @F-hist-8186650ec18a340a@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-eb56e276347024a5@ INDI
+1 NAME Antonio Guzzinati
+1 _PUBID hist-ref-eb56e276347024a5
+1 SOUR @S-PUBLIC@
+0 @hist-68796ac3bb52c810@ INDI
+1 NAME Dinaci Zanirati
+1 _PUBID hist-68796ac3bb52c810
+1 FAMC @F-hist-68796ac3bb52c810@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-a1a080efe153fa04@ INDI
+1 NAME Jorecy Conceição Goulart
+1 _PUBID hist-ref-a1a080efe153fa04
+1 FAMS @F-hist-68796ac3bb52c810@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-6b6d99bb26731faf@ INDI
+1 NAME Neusa Zanirati
+1 _PUBID hist-ref-6b6d99bb26731faf
+1 SOUR @S-PUBLIC@
+0 @hist-ref-9bf10d01fbe5de58@ INDI
+1 NAME Odilla Gherlinzoni
+1 _PUBID hist-ref-9bf10d01fbe5de58
+1 FAMS @F-edmondo1950@
+1 SOUR @S-PUBLIC@
+0 @hist-bf8f174c3c3ee1ad@ INDI
+1 NAME Cristina Barion
+1 _PUBID hist-bf8f174c3c3ee1ad
+1 SOUR @S-PUBLIC@
+0 @hist-ref-df14912f98799605@ INDI
+1 NAME Afonsina da Costa
+1 _PUBID hist-ref-df14912f98799605
+1 FAMS @F-hist-ea9be34ffb687854@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-e5dd0a45880a70a6@ INDI
+1 NAME Maria do Carmo Garcia
+1 _PUBID hist-ref-e5dd0a45880a70a6
+1 SOUR @S-PUBLIC@
+0 @hist-ref-1594a891a553d7d5@ INDI
+1 NAME Silvana Silvozzi
+1 _PUBID hist-ref-1594a891a553d7d5
+1 FAMS @F-hist-626951a7a1afe703@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-b0d2338d2dc57304@ INDI
+1 NAME Remira Gavioli
+1 _PUBID hist-ref-b0d2338d2dc57304
+1 SOUR @S-PUBLIC@
+0 @hist-ref-ce3f46c38bc1fd2b@ INDI
+1 NAME Geraldo Zaniratti Murucci
+1 _PUBID hist-ref-ce3f46c38bc1fd2b
+1 FAMS @F-hist-b62fc90d5fb9fc84@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-76e80c10e5cff123@ INDI
+1 NAME Eledina Conceição Goulart
+1 _PUBID hist-ref-76e80c10e5cff123
+1 FAMS @F-hist-18ebc85588fc7bba@
+1 FAMS @F-hist-a19b979fe9af7d04@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-608126913cc53ec4@ INDI
+1 NAME ? da Cruz
+1 _PUBID hist-ref-608126913cc53ec4
+1 SOUR @S-PUBLIC@
+0 @hist-ref-1eae018de7e95cee@ INDI
+1 NAME Mariza Terezinha Jung
+1 _PUBID hist-ref-1eae018de7e95cee
+1 FAMS @F-hist-ac94113acb6e141b@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-6d3150883a6a1b8d@ INDI
+1 NAME Gabriel Pereira Leite
+1 _PUBID hist-ref-6d3150883a6a1b8d
+1 FAMS @F-hist-4a4e4bc48e6d4733@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-96a626485f60f0df@ INDI
+1 NAME Guglielma Dei
+1 _PUBID hist-ref-96a626485f60f0df
+1 FAMS @F-hist-4ea0b90f3eab9b6d@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-122af091173b9793@ INDI
+1 NAME Elvira Bigoni
+1 _PUBID hist-ref-122af091173b9793
+1 SOUR @S-PUBLIC@
+0 @hist-ref-d8254ba1664b4a98@ INDI
+1 NAME Luci Olga Boldrini
+1 _PUBID hist-ref-d8254ba1664b4a98
+1 FAMS @F-hist-bb650114fed2dcf2@
+1 FAMS @F-hist-48583cf7740e295e@
+1 FAMS @F-hist-e7c1201f59dd2530@
+1 FAMS @F-hist-5c2f7b90c939abe5@
+1 FAMS @F-hist-8bbe3e2ddc6a1ee8@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-473ce85d295f2efd@ INDI
+1 NAME (1935) (1941) (1948) (1950) (1955) > Flávio (?) < (?) (?)
+1 _PUBID hist-ref-473ce85d295f2efd
+1 SOUR @S-PUBLIC@
+0 @hist-ref-87da25a739637f37@ INDI
+1 NAME Elvira Bigoni
+1 _PUBID hist-ref-87da25a739637f37
+1 FAMS @F-hist-9cd5127455a40e85@
+1 FAMS @F-hist-07af4a2ffac2d823@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-0d66ef08b2de8121@ INDI
+1 NAME Thereza Molinari
+1 _PUBID hist-ref-0d66ef08b2de8121
+1 FAMS @F-hist-73d7cfed855dcd88@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-2d9a7a208b703c4a@ INDI
+1 NAME Aníbal Adrião Muruci
+1 _PUBID hist-ref-2d9a7a208b703c4a
+1 SOUR @S-PUBLIC@
+0 @hist-f912b206957b863e@ INDI
+1 NAME Cleonice
+1 _PUBID hist-f912b206957b863e
+1 FAMC @F-hist-f912b206957b863e@
+1 SOUR @S-PUBLIC@
+0 @hist-84f04d4e7c9ac139@ INDI
+1 NAME Tacizo
+1 _PUBID hist-84f04d4e7c9ac139
+1 FAMC @F-hist-84f04d4e7c9ac139@
+1 SOUR @S-PUBLIC@
+0 @hist-b731e16a40b3f357@ INDI
+1 NAME Irene
+1 _PUBID hist-b731e16a40b3f357
+1 FAMC @F-hist-b731e16a40b3f357@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-73e39c2fc65819f0@ INDI
+1 NAME Geraldo Cleusa Antônio Tereza Aparecida Taciula Wolmar Maria Silvano
+1 _PUBID hist-ref-73e39c2fc65819f0
+1 FAMC @F-hist-ref-73e39c2fc65819f0@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-6a9a0de19d74dbe3@ INDI
+1 NAME Thereza Fortunati
+1 _PUBID hist-ref-6a9a0de19d74dbe3
+1 FAMS @F-hist-c7996d44974ae919@
+1 FAMS @F-hist-5ffdb2dd61d945b1@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-ab59bc95526cd7b9@ INDI
+1 NAME lronita Teresinha Cordeiro
+1 _PUBID hist-ref-ab59bc95526cd7b9
+1 SOUR @S-PUBLIC@
+0 @hist-ref-efe8101de3421203@ INDI
+1 NAME Raquel Ridolphi
+1 _PUBID hist-ref-efe8101de3421203
+1 FAMS @F-hist-14332e5cede775a5@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-2a6e895983ade859@ INDI
+1 NAME Linda Poletti
+1 _PUBID hist-ref-2a6e895983ade859
+1 FAMS @F-hist-6c4cb7eceea35985@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-bcbc24030c01b47f@ INDI
+1 NAME Giuseppina Goldoni
+1 _PUBID hist-ref-bcbc24030c01b47f
+1 SOUR @S-PUBLIC@
+0 @hist-ref-b3e80dbccbf71975@ INDI
+1 NAME Rocco Femminella
+1 _PUBID hist-ref-b3e80dbccbf71975
+1 FAMS @F-hist-3a33ed4d1186b249@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-49e3f7633dc0c703@ INDI
+1 NAME Carmelo
+1 _PUBID hist-ref-49e3f7633dc0c703
+1 SOUR @S-PUBLIC@
+0 @hist-ref-e15f506b7457a370@ INDI
+1 NAME Tiziana Erica
+1 _PUBID hist-ref-e15f506b7457a370
+1 FAMC @F-hist-ref-e15f506b7457a370@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-a2364949da9df900@ INDI
+1 NAME Maria Barbara (Aquita) Murucci Zaniratti
+1 _PUBID hist-ref-a2364949da9df900
+1 FAMS @F-hist-1483995c62be5829@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-92c03ff4c99cfec3@ INDI
+1 NAME Marlene Amaral Vilete
+1 _PUBID hist-ref-92c03ff4c99cfec3
+1 SOUR @S-PUBLIC@
+0 @hist-ref-03b66299f244d595@ INDI
+1 NAME Elisson Amaral Vilete Alcilaine Amaral Vilete Jeferson Amaral Vilete
+1 _PUBID hist-ref-03b66299f244d595
+1 FAMC @F-hist-ref-03b66299f244d595@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-208295fcd8bc7ed5@ INDI
+1 NAME Sueli Conceição Machado
+1 _PUBID hist-ref-208295fcd8bc7ed5
+1 SOUR @S-PUBLIC@
+0 @hist-ref-091b2e0178023249@ INDI
+1 NAME (1935) (1941) (1948) (1950) > Jorge (1955) < (?) (?) (?)
+1 _PUBID hist-ref-091b2e0178023249
+1 SOUR @S-PUBLIC@
+0 @hist-ref-6402583f0591c8cc@ INDI
+1 NAME Mariza Terezinha Jung
+1 _PUBID hist-ref-6402583f0591c8cc
+1 SOUR @S-PUBLIC@
+0 @hist-ref-cc22736c407de68e@ INDI
+1 NAME Lucy Olga Boldrini
+1 _PUBID hist-ref-cc22736c407de68e
+1 FAMS @F-hist-00aa770120639d9a@
+1 FAMS @F-hist-d830a01841845e31@
+1 FAMS @F-hist-33c24bff9eba4c83@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-48c849899a25112d@ INDI
+1 NAME (1935) (1941) (1948) > José (1950) < (1955) (?) (?) (?)
+1 _PUBID hist-ref-48c849899a25112d
+1 SOUR @S-PUBLIC@
+0 @hist-ref-d98bb9a390e47611@ INDI
+1 NAME Guacira Licker
+1 _PUBID hist-ref-d98bb9a390e47611
+1 SOUR @S-PUBLIC@
+0 @hist-ref-1d7adc44a21ca4bf@ INDI
+1 NAME Ironita Teresinha Zaniratti
+1 _PUBID hist-ref-1d7adc44a21ca4bf
+1 FAMS @F-hist-89ce79d4e103f335@
+1 FAMS @F-hist-dda7f4924efeb2af@
+1 FAMS @F-hist-03f22694e8f6a8eb@
+1 FAMS @F-hist-c43ca697a7a5ddd1@
+1 FAMS @F-hist-1410dcf9b56a130c@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-093df11fef140be0@ INDI
+1 NAME Dóris Vasconcellos
+1 _PUBID hist-ref-093df11fef140be0
+1 SOUR @S-PUBLIC@
+0 @hist-ref-9aa5d8285b5d7d52@ INDI
+1 NAME Sandra Rute da Silva Martins
+1 _PUBID hist-ref-9aa5d8285b5d7d52
+1 SOUR @S-PUBLIC@
+0 @hist-ref-c47dbcadafa61ca5@ INDI
+1 NAME Lisiane Regina da Cunha
+1 _PUBID hist-ref-c47dbcadafa61ca5
+1 SOUR @S-PUBLIC@
+0 @hist-ref-26f0a35f6d7f35db@ INDI
+1 NAME Ana Paula
+1 _PUBID hist-ref-26f0a35f6d7f35db
+1 SOUR @S-PUBLIC@
+0 @hist-ref-5f48733cb7adb58c@ INDI
+1 NAME Paulo Eduardo Tavares de Oliveira
+1 _PUBID hist-ref-5f48733cb7adb58c
+1 SOUR @S-PUBLIC@
+0 @hist-ref-3fd056a8de7377cc@ INDI
+1 NAME Sebastião da Silva
+1 _PUBID hist-ref-3fd056a8de7377cc
+1 SOUR @S-PUBLIC@
+0 @hist-ref-3f6b854c8f881877@ INDI
+1 NAME (1935) (1941) (1948) (1950) (1955) (?) > Maria (?) < (?)
+1 _PUBID hist-ref-3f6b854c8f881877
+1 SOUR @S-PUBLIC@
+0 @hist-ref-9e019649668db330@ INDI
+1 NAME Madison Cabral
+1 _PUBID hist-ref-9e019649668db330
+1 FAMS @F-hist-bbcece2133e78e29@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-514064d10d23023a@ INDI
+1 NAME Cleuza
+1 _PUBID hist-ref-514064d10d23023a
+1 FAMS @F-hist-cb5e99cf6e3dfe81@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-51028b5caf3da366@ INDI
+1 NAME Verecondo (detto Celio) Bonfatti
+1 _PUBID hist-ref-51028b5caf3da366
+1 SOUR @S-PUBLIC@
+0 @hist-ref-cbb864dabe72d756@ INDI
+1 NAME Pompeo Conforti
+1 _PUBID hist-ref-cbb864dabe72d756
+1 SOUR @S-PUBLIC@
+0 @hist-ref-e2d1ec5cc957f54c@ INDI
+1 NAME Maria Gallo
+1 _PUBID hist-ref-e2d1ec5cc957f54c
+1 FAMS @F-hist-1d91484590fcd9b7@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-7f62eda552e777b3@ INDI
+1 NAME Eny Zanirati
+1 _PUBID hist-ref-7f62eda552e777b3
+1 SOUR @S-PUBLIC@
+0 @hist-ref-709b2daebaceea2c@ INDI
+1 NAME Maria Leopoldina Ferreira
+1 _PUBID hist-ref-709b2daebaceea2c
+1 FAMS @F-hist-f656adfd061a8571@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-a7f73994641d5dfc@ INDI
+1 NAME Lucy Olga Boldrini
+1 _PUBID hist-ref-a7f73994641d5dfc
+1 SOUR @S-PUBLIC@
+0 @hist-ref-ec112ab96d86f395@ INDI
+1 NAME Marlene Amaral Vilete
+1 _PUBID hist-ref-ec112ab96d86f395
+1 FAMS @F-hist-07c5e6c4093b73b5@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-d70d7293771b5a8c@ INDI
+1 NAME Elisson Amaral Vilete Alcilane Amaral Vilete Jeferson Amaral Vilete
+1 _PUBID hist-ref-d70d7293771b5a8c
+1 SOUR @S-PUBLIC@
+0 @hist-ref-7ab53aa605e58039@ INDI
+1 NAME Edgelson Meister
+1 _PUBID hist-ref-7ab53aa605e58039
+1 SOUR @S-PUBLIC@
+0 @hist-ref-21f7b77a39b337d6@ INDI
+1 NAME Liduina Molinari
+1 _PUBID hist-ref-21f7b77a39b337d6
+1 SOUR @S-PUBLIC@
+0 @hist-ref-f8626a9d71f78de2@ INDI
+1 NAME Denilson Araújo
+1 _PUBID hist-ref-f8626a9d71f78de2
+1 SOUR @S-PUBLIC@
+0 @hist-ref-2eca62c96b8c4a8b@ INDI
+1 NAME Délia
+1 _PUBID hist-ref-2eca62c96b8c4a8b
+1 FAMC @F-hist-ref-2eca62c96b8c4a8b@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-2f3e562d38f207cf@ INDI
+1 NAME Sandra Rute da Silva Martins
+1 _PUBID hist-ref-2f3e562d38f207cf
+1 FAMS @F-hist-640e605ebc191024@
+1 FAMS @F-hist-6795cf65f61eb514@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-7e4a2d5218203ab7@ INDI
+1 NAME (1935) (1941) > Vanira (1948) < (1950) (1955) (?) (?) (?)
+1 _PUBID hist-ref-7e4a2d5218203ab7
+1 SOUR @S-PUBLIC@
+0 @hist-ref-2ff370561bb620a7@ INDI
+1 NAME (1935) > Waldir (1941) < (1948) (1950) (1955) (?) (?) (?)
+1 _PUBID hist-ref-2ff370561bb620a7
+1 SOUR @S-PUBLIC@
+0 @hist-ref-60954ca7089ada99@ INDI
+1 NAME Nilza
+1 _PUBID hist-ref-60954ca7089ada99
+1 SOUR @S-PUBLIC@
+0 @hist-ref-3b5ac6c4208bd918@ INDI
+1 NAME Tanara Tujol
+1 _PUBID hist-ref-3b5ac6c4208bd918
+1 FAMS @F-hist-7eabe75feea46ae8@
+1 SOUR @S-PUBLIC@
+0 @hist-dbd9044835eca9aa@ INDI
+1 NAME Orbélio
+1 _PUBID hist-dbd9044835eca9aa
+1 FAMC @F-hist-dbd9044835eca9aa@
+1 SOUR @S-PUBLIC@
+0 @hist-5c8b9db4c10c539c@ INDI
+1 NAME Jésus
+1 _PUBID hist-5c8b9db4c10c539c
+1 FAMS @F-hist-5bc58342b078984e@
+1 FAMS @F-hist-fab4cad21002e0b0@
+1 FAMS @F-hist-3275bc705dcc0df7@
+1 FAMS @F-hist-30403f6a67f495ea@
+1 FAMS @F-hist-e6ea2c21301ca11c@
+1 FAMC @F-hist-5c8b9db4c10c539c@
+1 SOUR @S-PUBLIC@
+0 @hist-fab4cad21002e0b0@ INDI
+1 NAME Isabela Souza
+1 _PUBID hist-fab4cad21002e0b0
+1 FAMS @F-hist-23fb89e53cdcdf94@
+1 FAMS @F-hist-0b302e4f53d539e5@
+1 FAMS @F-hist-1742eed03ca14643@
+1 FAMC @F-hist-fab4cad21002e0b0@
+1 SOUR @S-PUBLIC@
+0 @hist-3fd3176be24363d6@ INDI
+1 NAME Orestes Filho
+1 _PUBID hist-3fd3176be24363d6
+1 FAMC @F-hist-3fd3176be24363d6@
+1 SOUR @S-PUBLIC@
+0 @hist-f82e49835b8729a8@ INDI
+1 NAME Nigran
+1 _PUBID hist-f82e49835b8729a8
+1 FAMC @F-hist-f82e49835b8729a8@
+1 SOUR @S-PUBLIC@
+0 @hist-3275bc705dcc0df7@ INDI
+1 NAME Paula Souza
+1 _PUBID hist-3275bc705dcc0df7
+1 FAMC @F-hist-3275bc705dcc0df7@
+1 SOUR @S-PUBLIC@
+0 @hist-e6ea2c21301ca11c@ INDI
+1 NAME Mila Gomes
+1 _PUBID hist-e6ea2c21301ca11c
+1 FAMC @F-hist-e6ea2c21301ca11c@
+1 SOUR @S-PUBLIC@
+0 @hist-5bc58342b078984e@ INDI
+1 NAME Bruna Souza
+1 _PUBID hist-5bc58342b078984e
+1 FAMC @F-hist-5bc58342b078984e@
+1 SOUR @S-PUBLIC@
+0 @hist-30403f6a67f495ea@ INDI
+1 NAME Julia Gomes
+1 _PUBID hist-30403f6a67f495ea
+1 FAMC @F-hist-30403f6a67f495ea@
+1 SOUR @S-PUBLIC@
+0 @hist-16b1bbcf737c9966@ INDI
+1 NAME Carmen
+1 _PUBID hist-16b1bbcf737c9966
+1 SOUR @S-PUBLIC@
+0 @hist-e17bab57fcc8a678@ INDI
+1 NAME Nicola Esposito
+1 _PUBID hist-e17bab57fcc8a678
+1 SOUR @S-PUBLIC@
+0 @hist-ref-5e1e2034adb5a205@ INDI
+1 NAME Maria Helena Souza Pinto
+1 _PUBID hist-ref-5e1e2034adb5a205
+1 FAMS @F-hist-5bc58342b078984e@
+1 FAMS @F-hist-fab4cad21002e0b0@
+1 FAMS @F-hist-3275bc705dcc0df7@
+1 FAMS @F-hist-30403f6a67f495ea@
+1 FAMS @F-hist-e6ea2c21301ca11c@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-ed88ae6396a46373@ INDI
+1 NAME Angelo José Alves Zulato
+1 _PUBID hist-ref-ed88ae6396a46373
+1 SOUR @S-PUBLIC@
+0 @hist-23fb89e53cdcdf94@ INDI
+1 NAME Lucas Esposito Zulato
+1 _PUBID hist-23fb89e53cdcdf94
+1 FAMC @F-hist-23fb89e53cdcdf94@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-8b5ee86dcc867f96@ INDI
+1 NAME Maria de Jesus
+1 _PUBID hist-ref-8b5ee86dcc867f96
+1 FAMS @F-hist-5c8b9db4c10c539c@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-0866cccd18dd734c@ INDI
+1 NAME Maria Helena Souza Pinto
+1 _PUBID hist-ref-0866cccd18dd734c
+1 SOUR @S-PUBLIC@
+0 @hist-ref-6a649124a6760179@ INDI
+1 NAME Angelo José Alves Zulato
+1 _PUBID hist-ref-6a649124a6760179
+1 FAMS @F-hist-23fb89e53cdcdf94@
+1 FAMS @F-hist-0b302e4f53d539e5@
+1 FAMS @F-hist-1742eed03ca14643@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-0ed254aa57a55796@ INDI
+1 NAME Maria
+1 _PUBID hist-ref-0ed254aa57a55796
+1 FAMS @F-hist-f82e49835b8729a8@
+1 FAMS @F-hist-dbd9044835eca9aa@
+1 FAMS @F-hist-3fd3176be24363d6@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-32e5094b65aed50c@ INDI
+1 NAME Maria
+1 _PUBID hist-ref-32e5094b65aed50c
+1 SOUR @S-PUBLIC@
+0 @hist-0b302e4f53d539e5@ INDI
+1 NAME Theo Esposito Resende
+1 _PUBID hist-0b302e4f53d539e5
+1 FAMC @F-hist-0b302e4f53d539e5@
+1 SOUR @S-PUBLIC@
+0 @hist-1742eed03ca14643@ INDI
+1 NAME Valentina Esposito Resende
+1 _PUBID hist-1742eed03ca14643
+1 FAMC @F-hist-1742eed03ca14643@
+1 SOUR @S-PUBLIC@
+0 @hist-59389290eeb40b2a@ INDI
+1 NAME Afonso Zanirati
+1 _PUBID hist-59389290eeb40b2a
+1 FAMC @F-hist-59389290eeb40b2a@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-63232af202c58487@ INDI
+1 NAME Hordy Conceição Goulart Nelcy Zanirati
+1 _PUBID hist-ref-63232af202c58487
+1 FAMS @F-hist-59389290eeb40b2a@
+1 SOUR @S-PUBLIC@
+0 @hist-438ca10bbaef1781@ INDI
+1 NAME Nanci
+1 _PUBID hist-438ca10bbaef1781
+1 SOUR @S-PUBLIC@
+0 @hist-4fd19153469a6c35@ INDI
+1 NAME Ancilla Molinari
+1 _PUBID hist-4fd19153469a6c35
+1 FAMS @F-hist-ref-260f792e3eb55381@
+1 FAMC @F-hist-4fd19153469a6c35@
+1 SOUR @S-PUBLIC@
+0 @hist-6b248fc6641489d2@ INDI
+1 NAME Clarice Zaniratti
+1 _PUBID hist-6b248fc6641489d2
+1 FAMS @F-hist-4fd19153469a6c35@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-ce7b491357b388bd@ INDI
+1 NAME Gino Rinaldi
+1 _PUBID hist-ref-ce7b491357b388bd
+1 SOUR @S-PUBLIC@
+0 @hist-ref-260f792e3eb55381@ INDI
+1 NAME Tiziana Loretta Lia
+1 _PUBID hist-ref-260f792e3eb55381
+1 FAMC @F-hist-ref-260f792e3eb55381@
+1 SOUR @S-PUBLIC@
+0 @hist-a7dc034685b39eb3@ INDI
+1 NAME Anderson Zaniratti
+1 _PUBID hist-a7dc034685b39eb3
+1 FAMC @F-hist-a7dc034685b39eb3@
+1 SOUR @S-PUBLIC@
+0 @hist-9d0c742e03132b0d@ INDI
+1 NAME José Geraldo Zaniratti
+1 _PUBID hist-9d0c742e03132b0d
+1 FAMS @F-hist-a7dc034685b39eb3@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-b8e902bc10184f63@ INDI
+1 NAME Marilena Lima Zaniratti
+1 _PUBID hist-ref-b8e902bc10184f63
+1 FAMS @F-hist-a7dc034685b39eb3@
+1 SOUR @S-PUBLIC@
+0 @hist-fe6bf5bd3e6490f3@ INDI
+1 NAME Cristiano Lima Zaniratti
+1 _PUBID hist-fe6bf5bd3e6490f3
+1 SOUR @S-PUBLIC@
+0 @hist-94ee506c07074358@ INDI
+1 NAME Cristiane Lima Zaniratti
+1 _PUBID hist-94ee506c07074358
+1 SOUR @S-PUBLIC@
+0 @hist-866a13d19f77e7dc@ INDI
+1 NAME Andréa Zaniratti
+1 _PUBID hist-866a13d19f77e7dc
+1 FAMC @F-hist-866a13d19f77e7dc@
+1 SOUR @S-PUBLIC@
+0 @hist-592ad40a2e8a6908@ INDI
+1 NAME Edson Zaniratti
+1 _PUBID hist-592ad40a2e8a6908
+1 FAMS @F-hist-866a13d19f77e7dc@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-891beabe52912c84@ INDI
+1 NAME Maria do Carmo Garcia
+1 _PUBID hist-ref-891beabe52912c84
+1 FAMS @F-hist-866a13d19f77e7dc@
+1 SOUR @S-PUBLIC@
+0 @hist-ed69d22ab727192d@ INDI
+1 NAME Marcelo
+1 _PUBID hist-ed69d22ab727192d
+1 FAMS @F-hist-8ad34112e26f632d@
+1 SOUR @S-PUBLIC@
+0 @hist-8c6c30aa7bc15097@ INDI
+1 NAME Patrícia
+1 _PUBID hist-8c6c30aa7bc15097
+1 SOUR @S-PUBLIC@
+0 @hist-2e6068e4438e1660@ INDI
+1 NAME Rodrigo
+1 _PUBID hist-2e6068e4438e1660
+1 SOUR @S-PUBLIC@
+0 @hist-8ad34112e26f632d@ INDI
+1 NAME Bruno Rodrigues Zaniratti
+1 _PUBID hist-8ad34112e26f632d
+1 FAMC @F-hist-8ad34112e26f632d@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-0c048d3cc31391ba@ INDI
+1 NAME Ceni Rodrigues
+1 _PUBID hist-ref-0c048d3cc31391ba
+1 FAMS @F-hist-8ad34112e26f632d@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-c1eaca86c6cd5fa4@ INDI
+1 NAME Bruno Rodrigues
+1 _PUBID hist-ref-c1eaca86c6cd5fa4
+1 SOUR @S-PUBLIC@
+0 @hist-36d18db282fd93de@ INDI
+1 NAME Cenira Zanirati
+1 _PUBID hist-36d18db282fd93de
+1 FAMC @F-hist-36d18db282fd93de@
+1 SOUR @S-PUBLIC@
+0 @hist-4944ce8104ed596f@ INDI
+1 NAME Ranira Terezinha da Costa Zanirati
+1 _PUBID hist-4944ce8104ed596f
+1 FAMS @F-hist-36d18db282fd93de@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-8cdfba0acbe1e55a@ INDI
+1 NAME Heldecy Barcelos Ramos
+1 _PUBID hist-ref-8cdfba0acbe1e55a
+1 FAMS @F-hist-36d18db282fd93de@
+1 SOUR @S-PUBLIC@
+0 @hist-b6ebe69aa879dd0e@ INDI
+1 NAME Giovani
+1 _PUBID hist-b6ebe69aa879dd0e
+1 SOUR @S-PUBLIC@
+0 @hist-fae667118fda0613@ INDI
+1 NAME Cynthia Zaniratti
+1 _PUBID hist-fae667118fda0613
+1 FAMC @F-hist-fae667118fda0613@
+1 SOUR @S-PUBLIC@
+0 @hist-6ef647be9c43c054@ INDI
+1 NAME Geraldo Zaniratti
+1 _PUBID hist-6ef647be9c43c054
+1 FAMS @F-hist-fae667118fda0613@
+1 SOUR @S-PUBLIC@
+0 @hist-78da83bfbebec5a8@ INDI
+1 NAME Nancy Parreira
+1 _PUBID hist-78da83bfbebec5a8
+1 FAMS @F-hist-fae667118fda0613@
+1 SOUR @S-PUBLIC@
+0 @hist-fd9fa8978898a1c8@ INDI
+1 NAME Vinícius
+1 _PUBID hist-fd9fa8978898a1c8
+1 SOUR @S-PUBLIC@
+0 @hist-8c7bfe97abf1cc59@ INDI
+1 NAME Felipe
+1 _PUBID hist-8c7bfe97abf1cc59
+1 SOUR @S-PUBLIC@
+0 @hist-a0868922e4721e75@ INDI
+1 NAME Daniele Zanirati
+1 _PUBID hist-a0868922e4721e75
+1 FAMC @F-hist-a0868922e4721e75@
+1 SOUR @S-PUBLIC@
+0 @hist-5b771e1f3e962de4@ INDI
+1 NAME Rosângela Zanirati
+1 _PUBID hist-5b771e1f3e962de4
+1 FAMS @F-hist-a0868922e4721e75@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-184328ea89321555@ INDI
+1 NAME Silveira
+1 _PUBID hist-ref-184328ea89321555
+1 FAMS @F-hist-a0868922e4721e75@
+1 SOUR @S-PUBLIC@
+0 @hist-872ccaa0fce2299a@ INDI
+1 NAME Dinaci Zanirati
+1 _PUBID hist-872ccaa0fce2299a
+1 FAMC @F-hist-872ccaa0fce2299a@
+1 SOUR @S-PUBLIC@
+0 @hist-b17bc63aafcefb0f@ INDI
+1 NAME Maria Leopoldina da Costa Zaniratti
+1 _PUBID hist-b17bc63aafcefb0f
+1 FAMS @F-hist-872ccaa0fce2299a@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-c6d62d5e4c390848@ INDI
+1 NAME Jorecy Conceição Goulart
+1 _PUBID hist-ref-c6d62d5e4c390848
+1 FAMS @F-hist-872ccaa0fce2299a@
+1 SOUR @S-PUBLIC@
+0 @hist-df7f911b1cc63e54@ INDI
+1 NAME Ferruccio
+1 _PUBID hist-df7f911b1cc63e54
+1 FAMS @F-hist-8d2efbd632cfcb6f@
+1 FAMS @F-hist-4f0cae26ff4c8af1@
+1 FAMC @F-hist-df7f911b1cc63e54@
+1 SOUR @S-PUBLIC@
+0 @hist-86e857a326beebc2@ INDI
+1 NAME Gaetano Zaniratti
+1 _PUBID hist-86e857a326beebc2
+1 FAMS @F-hist-df7f911b1cc63e54@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-aaf7b8ede85f7f74@ INDI
+1 NAME Guglielma Dei
+1 _PUBID hist-ref-aaf7b8ede85f7f74
+1 FAMS @F-hist-df7f911b1cc63e54@
+1 SOUR @S-PUBLIC@
+0 @hist-ae5e0a9cdca5a737@ INDI
+1 NAME Pilade
+1 _PUBID hist-ae5e0a9cdca5a737
+1 SOUR @S-PUBLIC@
+0 @hist-ref-0e52ce41d75d3e65@ INDI
+1 NAME Elvira Bigoni
+1 _PUBID hist-ref-0e52ce41d75d3e65
+1 SOUR @S-PUBLIC@
+0 @hist-8d2efbd632cfcb6f@ INDI
+1 NAME Giovanni
+1 _PUBID hist-8d2efbd632cfcb6f
+1 FAMC @F-hist-8d2efbd632cfcb6f@
+1 SOUR @S-PUBLIC@
+0 @hist-4f0cae26ff4c8af1@ INDI
+1 NAME Franco
+1 _PUBID hist-4f0cae26ff4c8af1
+1 FAMC @F-hist-4f0cae26ff4c8af1@
+1 SOUR @S-PUBLIC@
+0 @hist-19d5da6a9c35cd7a@ INDI
+1 NAME Felipe Ilário Muruci
+1 _PUBID hist-19d5da6a9c35cd7a
+1 FAMC @F-hist-19d5da6a9c35cd7a@
+1 SOUR @S-PUBLIC@
+0 @hist-372537a83ae9d56c@ INDI
+1 NAME Geone Muruci
+1 _PUBID hist-372537a83ae9d56c
+1 FAMC @F-hist-372537a83ae9d56c@
+1 SOUR @S-PUBLIC@
+0 @hist-5db04cb153d9373e@ INDI
+1 NAME Georgia Muruci
+1 _PUBID hist-5db04cb153d9373e
+1 FAMC @F-hist-5db04cb153d9373e@
+1 SOUR @S-PUBLIC@
+0 @hist-2f606fb554e103bc@ INDI
+1 NAME Benício Muruci
+1 _PUBID hist-2f606fb554e103bc
+1 FAMC @F-hist-2f606fb554e103bc@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-70314e94e5f05fd3@ INDI
+1 NAME Jorge Murucci Grillo
+1 _PUBID hist-ref-70314e94e5f05fd3
+1 FAMS @F-hist-2f606fb554e103bc@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-9f9ee3b9abf8c414@ INDI
+1 NAME Jorge Murucci Grillo
+1 _PUBID hist-ref-9f9ee3b9abf8c414
+1 FAMS @F-hist-19d5da6a9c35cd7a@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-d69071776ae79b90@ INDI
+1 NAME Jorge Murucci Grillo
+1 _PUBID hist-ref-d69071776ae79b90
+1 FAMS @F-hist-372537a83ae9d56c@
+1 SOUR @S-PUBLIC@
+0 @hist-ref-81857371117013ef@ INDI
+1 NAME Benício > Geone < João Cassio
+1 _PUBID hist-ref-81857371117013ef
+1 SOUR @S-PUBLIC@
+0 @hist-ref-55b7bba2f761c354@ INDI
+1 NAME Jorge Murucci Grillo
+1 _PUBID hist-ref-55b7bba2f761c354
+1 FAMS @F-hist-5db04cb153d9373e@
 1 SOUR @S-PUBLIC@
 0 @F-bartolomeo1@ FAM
 1 _PARENT @giovanni16@
@@ -1108,6 +3240,991 @@
 1 CHIL @zenaide_child_16@
 1 NOTE Parentage assertions only; no marriage implied.
 1 SOUR @S-PUBLIC@
+0 @F-hist-c2cfb3c5096e5f78@ FAM
+1 _PARENT @antonio1846@
+1 _PARENT @hist-ref-13d54fecb0fecf3d@
+1 CHIL @hist-c2cfb3c5096e5f78@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-ref-ed273eb655e34ea6@ FAM
+1 _PARENT @hist-c2cfb3c5096e5f78@
+1 CHIL @hist-ref-ed273eb655e34ea6@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-09b079f7b98d2108@ FAM
+1 _PARENT @hist-46a616ead32954d3@
+1 _PARENT @hist-ref-1434e82153ce928d@
+1 CHIL @hist-09b079f7b98d2108@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-646e6e54b03e2f13@ FAM
+1 _PARENT @hist-09b079f7b98d2108@
+1 CHIL @hist-646e6e54b03e2f13@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-90f1dc9bf7aaf50d@ FAM
+1 _PARENT @hist-09b079f7b98d2108@
+1 CHIL @hist-90f1dc9bf7aaf50d@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-990fa21185b98943@ FAM
+1 _PARENT @antonio1846@
+1 _PARENT @hist-ref-33b3e16305093b1d@
+1 CHIL @hist-990fa21185b98943@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-a42037f1435b1e15@ FAM
+1 _PARENT @hist-302f75d9057fb97e@
+1 _PARENT @hist-ref-84f9cde02796cb97@
+1 CHIL @hist-a42037f1435b1e15@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-7780d2996e078623@ FAM
+1 _PARENT @hist-f817ce4d73a44758@
+1 _PARENT @hist-ref-64f202fd583bce06@
+1 CHIL @hist-7780d2996e078623@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-6399c4d3b6e53f55@ FAM
+1 _PARENT @hist-e97bc136eb174e56@
+1 CHIL @hist-6399c4d3b6e53f55@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-ref-58adac5fae0e15c7@ FAM
+1 _PARENT @hist-6399c4d3b6e53f55@
+1 CHIL @hist-ref-58adac5fae0e15c7@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-4420a6a00a7eb207@ FAM
+1 _PARENT @hist-0beb85f3f7d68ad4@
+1 _PARENT @hist-ref-92203fa2379c2a99@
+1 CHIL @hist-4420a6a00a7eb207@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-5eaae71e8eae6f4a@ FAM
+1 _PARENT @hist-ea9be34ffb687854@
+1 _PARENT @hist-ref-d8d1fa0f0498924f@
+1 CHIL @hist-5eaae71e8eae6f4a@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-606a8346ebccb8ee@ FAM
+1 _PARENT @hist-00aa770120639d9a@
+1 _PARENT @hist-ref-21d2704545e4abd1@
+1 CHIL @hist-606a8346ebccb8ee@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-4a4e4bc48e6d4733@ FAM
+1 _PARENT @hist-606a8346ebccb8ee@
+1 _PARENT @hist-ref-6d3150883a6a1b8d@
+1 CHIL @hist-4a4e4bc48e6d4733@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-6563ddd14ef1a9ff@ FAM
+1 _PARENT @hist-110eb0f4becd053b@
+1 _PARENT @hist-ref-dcdbb84d1b1f5bdc@
+1 CHIL @hist-6563ddd14ef1a9ff@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-ref-4ecee0d6f235f562@ FAM
+1 _PARENT @hist-6563ddd14ef1a9ff@
+1 CHIL @hist-ref-4ecee0d6f235f562@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-df79cd378d384472@ FAM
+1 _PARENT @hist-ee42703141b3a3ae@
+1 _PARENT @hist-ref-7013e70beff3bb1c@
+1 CHIL @hist-df79cd378d384472@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-bbcece2133e78e29@ FAM
+1 _PARENT @hist-df79cd378d384472@
+1 _PARENT @hist-ref-9e019649668db330@
+1 CHIL @hist-bbcece2133e78e29@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-4c04083088046c2f@ FAM
+1 _PARENT @hist-d9a2cd9b09b03926@
+1 _PARENT @hist-ref-0e4f372f962140a2@
+1 CHIL @hist-4c04083088046c2f@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-ref-f3a7a84500422a03@ FAM
+1 _PARENT @hist-4c04083088046c2f@
+1 CHIL @hist-ref-f3a7a84500422a03@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-1f7c474fd0b89f3d@ FAM
+1 _PARENT @hist-728ef069cadc4194@
+1 _PARENT @hist-32baa414db0d8106@
+1 CHIL @hist-1f7c474fd0b89f3d@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-3a33ed4d1186b249@ FAM
+1 _PARENT @hist-1f7c474fd0b89f3d@
+1 _PARENT @hist-ref-b3e80dbccbf71975@
+1 CHIL @hist-3a33ed4d1186b249@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-d59d63580dfa315b@ FAM
+1 _PARENT @antonio1846@
+1 _PARENT @hist-ref-33b3e16305093b1d@
+1 CHIL @hist-d59d63580dfa315b@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-d34ac132c11e2dca@ FAM
+1 _PARENT @antonio1846@
+1 _PARENT @hist-ref-13d54fecb0fecf3d@
+1 CHIL @hist-d34ac132c11e2dca@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-03e2b3ba41512b11@ FAM
+1 _PARENT @antonio1846@
+1 _PARENT @hist-ref-13d54fecb0fecf3d@
+1 CHIL @hist-03e2b3ba41512b11@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-cd457288983c34f9@ FAM
+1 _PARENT @antonio1846@
+1 _PARENT @hist-ref-13d54fecb0fecf3d@
+1 CHIL @hist-cd457288983c34f9@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-239f8852c30e3829@ FAM
+1 _PARENT @antonio1846@
+1 _PARENT @hist-ref-33b3e16305093b1d@
+1 CHIL @hist-239f8852c30e3829@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-b8ce57393d58a4d1@ FAM
+1 _PARENT @antonio1846@
+1 _PARENT @hist-ref-33b3e16305093b1d@
+1 CHIL @hist-b8ce57393d58a4d1@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-f6d40a63e7ad369d@ FAM
+1 _PARENT @antonio1846@
+1 _PARENT @hist-ref-33b3e16305093b1d@
+1 CHIL @hist-f6d40a63e7ad369d@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-45997c36335a55b3@ FAM
+1 _PARENT @antonio1846@
+1 _PARENT @hist-ref-33b3e16305093b1d@
+1 CHIL @hist-45997c36335a55b3@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-e89e148c14e239c3@ FAM
+1 _PARENT @antonio1846@
+1 _PARENT @hist-ref-33b3e16305093b1d@
+1 CHIL @hist-e89e148c14e239c3@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-319505717c82a77d@ FAM
+1 _PARENT @antonio1846@
+1 _PARENT @hist-ref-33b3e16305093b1d@
+1 CHIL @hist-319505717c82a77d@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-3ab8cdacfcf16a70@ FAM
+1 _PARENT @antonio1846@
+1 _PARENT @hist-ref-33b3e16305093b1d@
+1 CHIL @hist-3ab8cdacfcf16a70@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-35cfa87edf0e8ad3@ FAM
+1 _PARENT @antonio1846@
+1 _PARENT @hist-ref-33b3e16305093b1d@
+1 CHIL @hist-35cfa87edf0e8ad3@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-302f75d9057fb97e@ FAM
+1 _PARENT @antonio1846@
+1 _PARENT @hist-ref-33b3e16305093b1d@
+1 CHIL @hist-302f75d9057fb97e@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-baef5756a5a33892@ FAM
+1 _PARENT @hist-ee42703141b3a3ae@
+1 _PARENT @hist-ref-7013e70beff3bb1c@
+1 CHIL @hist-baef5756a5a33892@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-c163b79416a6626d@ FAM
+1 _PARENT @hist-baef5756a5a33892@
+1 CHIL @hist-c163b79416a6626d@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-8cacccca99d35706@ FAM
+1 _PARENT @hist-3ab8cdacfcf16a70@
+1 CHIL @hist-8cacccca99d35706@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-9e11a21ebe690c09@ FAM
+1 _PARENT @hist-3ab8cdacfcf16a70@
+1 CHIL @hist-9e11a21ebe690c09@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-2753aec992e49186@ FAM
+1 _PARENT @hist-5f5d8f04c6fe8605@
+1 _PARENT @hist-ref-0f6841c64f3725f7@
+1 CHIL @hist-2753aec992e49186@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-c7996d44974ae919@ FAM
+1 _PARENT @hist-2753aec992e49186@
+1 _PARENT @hist-ref-6a9a0de19d74dbe3@
+1 CHIL @hist-c7996d44974ae919@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-5ffdb2dd61d945b1@ FAM
+1 _PARENT @hist-2753aec992e49186@
+1 _PARENT @hist-ref-6a9a0de19d74dbe3@
+1 CHIL @hist-5ffdb2dd61d945b1@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-894e771ea7785a57@ FAM
+1 _PARENT @hist-728ef069cadc4194@
+1 _PARENT @hist-32baa414db0d8106@
+1 CHIL @hist-894e771ea7785a57@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-ref-ebcb4d945c7778b2@ FAM
+1 _PARENT @hist-894e771ea7785a57@
+1 CHIL @hist-ref-ebcb4d945c7778b2@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-19e52c532fe3cdf6@ FAM
+1 _PARENT @hist-00aa770120639d9a@
+1 _PARENT @hist-ref-21d2704545e4abd1@
+1 CHIL @hist-19e52c532fe3cdf6@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-7eabe75feea46ae8@ FAM
+1 _PARENT @hist-19e52c532fe3cdf6@
+1 _PARENT @hist-ref-3b5ac6c4208bd918@
+1 CHIL @hist-7eabe75feea46ae8@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-d7063b7f82df00aa@ FAM
+1 _PARENT @hist-eb7192f1602b4c46@
+1 _PARENT @hist-ref-6f8e4527a042bb61@
+1 CHIL @hist-d7063b7f82df00aa@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-3b3060286ba04ce8@ FAM
+1 _PARENT @hist-5ce869e2b801168b@
+1 _PARENT @hist-ref-212cee55ca83afd1@
+1 CHIL @hist-3b3060286ba04ce8@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-8996592a00293752@ FAM
+1 _PARENT @hist-6fbb8194fdab41d8@
+1 _PARENT @hist-ref-ed6d37f2d203f54a@
+1 CHIL @hist-8996592a00293752@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-d5b916ed59df8a7b@ FAM
+1 _PARENT @hist-75cce87a9547e385@
+1 _PARENT @hist-ref-4a24423a0914c1d2@
+1 CHIL @hist-d5b916ed59df8a7b@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-12302e3b9be752e6@ FAM
+1 _PARENT @hist-1d91484590fcd9b7@
+1 _PARENT @hist-ref-371709b3f4bb8dfd@
+1 CHIL @hist-12302e3b9be752e6@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-142972a5247df998@ FAM
+1 _PARENT @hist-12302e3b9be752e6@
+1 CHIL @hist-142972a5247df998@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-950145f90aa97bac@ FAM
+1 _PARENT @hist-12302e3b9be752e6@
+1 CHIL @hist-950145f90aa97bac@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-4ba7d76f575abb39@ FAM
+1 _PARENT @hist-b040a364df970ee2@
+1 _PARENT @hist-ref-7c02185308caef51@
+1 CHIL @hist-4ba7d76f575abb39@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-7c1f8da5c063e63e@ FAM
+1 _PARENT @hist-14332e5cede775a5@
+1 _PARENT @hist-d4fd4386073b7256@
+1 CHIL @hist-7c1f8da5c063e63e@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-d6e6b874025478df@ FAM
+1 _PARENT @hist-cdc9358479328780@
+1 _PARENT @hist-ref-e84fcca2f207e691@
+1 CHIL @hist-d6e6b874025478df@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-144179fd33e0b25e@ FAM
+1 _PARENT @hist-4cd8021d1ed2f324@
+1 _PARENT @hist-ref-b96edc3b424d8239@
+1 CHIL @hist-144179fd33e0b25e@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-242fe239ba4ac266@ FAM
+1 _PARENT @hist-8298df635435448c@
+1 _PARENT @hist-24508495e7c34044@
+1 CHIL @hist-242fe239ba4ac266@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-ref-a46b3fd872632e8c@ FAM
+1 _PARENT @hist-242fe239ba4ac266@
+1 CHIL @hist-ref-a46b3fd872632e8c@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-08d072ce74da68e0@ FAM
+1 _PARENT @hist-cb5138966adec674@
+1 _PARENT @hist-ref-63636d95a60959ca@
+1 CHIL @hist-08d072ce74da68e0@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-5d33ae06936fcdf2@ FAM
+1 _PARENT @hist-08d072ce74da68e0@
+1 CHIL @hist-5d33ae06936fcdf2@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-68796ac3bb52c810@ FAM
+1 _PARENT @hist-6ca37873600e29fe@
+1 _PARENT @hist-ref-a1a080efe153fa04@
+1 CHIL @hist-68796ac3bb52c810@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-8186650ec18a340a@ FAM
+1 _PARENT @hist-cb5138966adec674@
+1 _PARENT @hist-ref-63636d95a60959ca@
+1 CHIL @hist-8186650ec18a340a@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-0f73335aeeace729@ FAM
+1 _PARENT @hist-1d91484590fcd9b7@
+1 _PARENT @hist-ref-371709b3f4bb8dfd@
+1 CHIL @hist-0f73335aeeace729@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-24b1627b5740e036@ FAM
+1 _PARENT @hist-0f73335aeeace729@
+1 CHIL @hist-24b1627b5740e036@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-edmondo1950@ FAM
+1 _PARENT @hist-1236a9567ec0de24@
+1 _PARENT @hist-ref-9bf10d01fbe5de58@
+1 CHIL @edmondo1950@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-a0d17c52ecebe5c5@ FAM
+1 _PARENT @edmondo1950@
+1 CHIL @hist-a0d17c52ecebe5c5@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-ea9be34ffb687854@ FAM
+1 _PARENT @hist-6f2a6c7e49be9bcb@
+1 _PARENT @hist-ref-df14912f98799605@
+1 CHIL @hist-ea9be34ffb687854@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-eb7192f1602b4c46@ FAM
+1 _PARENT @hist-ea9be34ffb687854@
+1 CHIL @hist-eb7192f1602b4c46@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-ee74854960827e48@ FAM
+1 _PARENT @hist-ea9be34ffb687854@
+1 CHIL @hist-ee74854960827e48@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-71e0d4ccf1f4c2ca@ FAM
+1 _PARENT @hist-ea9be34ffb687854@
+1 CHIL @hist-71e0d4ccf1f4c2ca@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-626951a7a1afe703@ FAM
+1 _PARENT @hist-110eb0f4becd053b@
+1 _PARENT @hist-ref-1594a891a553d7d5@
+1 CHIL @hist-626951a7a1afe703@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-b62fc90d5fb9fc84@ FAM
+1 _PARENT @hist-e3b5772c1bd32209@
+1 _PARENT @hist-ref-ce3f46c38bc1fd2b@
+1 CHIL @hist-b62fc90d5fb9fc84@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-18ebc85588fc7bba@ FAM
+1 _PARENT @hist-0055efb033ae0bb6@
+1 _PARENT @hist-ref-76e80c10e5cff123@
+1 CHIL @hist-18ebc85588fc7bba@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-896e3df836a1b16b@ FAM
+1 _PARENT @hist-18ebc85588fc7bba@
+1 CHIL @hist-896e3df836a1b16b@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-ac94113acb6e141b@ FAM
+1 _PARENT @hist-5c2f7b90c939abe5@
+1 _PARENT @hist-ref-1eae018de7e95cee@
+1 CHIL @hist-ac94113acb6e141b@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-0894deb1c7fbd183@ FAM
+1 _PARENT @hist-14332e5cede775a5@
+1 _PARENT @hist-d4fd4386073b7256@
+1 CHIL @hist-0894deb1c7fbd183@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-4ea0b90f3eab9b6d@ FAM
+1 _PARENT @hist-c4ba918f86a7b118@
+1 _PARENT @hist-ref-96a626485f60f0df@
+1 CHIL @hist-4ea0b90f3eab9b6d@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-9cd5127455a40e85@ FAM
+1 _PARENT @hist-4ea0b90f3eab9b6d@
+1 _PARENT @hist-ref-87da25a739637f37@
+1 CHIL @hist-9cd5127455a40e85@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-07af4a2ffac2d823@ FAM
+1 _PARENT @hist-4ea0b90f3eab9b6d@
+1 _PARENT @hist-ref-87da25a739637f37@
+1 CHIL @hist-07af4a2ffac2d823@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-bb650114fed2dcf2@ FAM
+1 _PARENT @hist-f656adfd061a8571@
+1 _PARENT @hist-ref-d8254ba1664b4a98@
+1 CHIL @hist-bb650114fed2dcf2@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-a19b979fe9af7d04@ FAM
+1 _PARENT @hist-0055efb033ae0bb6@
+1 _PARENT @hist-ref-76e80c10e5cff123@
+1 CHIL @hist-a19b979fe9af7d04@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-73d7cfed855dcd88@ FAM
+1 _PARENT @hist-e4dae51a7ae8bc7f@
+1 _PARENT @hist-ref-0d66ef08b2de8121@
+1 CHIL @hist-73d7cfed855dcd88@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-f912b206957b863e@ FAM
+1 _PARENT @hist-73d7cfed855dcd88@
+1 CHIL @hist-f912b206957b863e@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-84f04d4e7c9ac139@ FAM
+1 _PARENT @hist-73d7cfed855dcd88@
+1 CHIL @hist-84f04d4e7c9ac139@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-b731e16a40b3f357@ FAM
+1 _PARENT @hist-73d7cfed855dcd88@
+1 CHIL @hist-b731e16a40b3f357@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-ref-73e39c2fc65819f0@ FAM
+1 _PARENT @hist-73d7cfed855dcd88@
+1 CHIL @hist-ref-73e39c2fc65819f0@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-89ce79d4e103f335@ FAM
+1 _PARENT @hist-5ffdb2dd61d945b1@
+1 _PARENT @hist-ref-1d7adc44a21ca4bf@
+1 CHIL @hist-89ce79d4e103f335@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-dda7f4924efeb2af@ FAM
+1 _PARENT @hist-5ffdb2dd61d945b1@
+1 _PARENT @hist-ref-1d7adc44a21ca4bf@
+1 CHIL @hist-dda7f4924efeb2af@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-03f22694e8f6a8eb@ FAM
+1 _PARENT @hist-5ffdb2dd61d945b1@
+1 _PARENT @hist-ref-1d7adc44a21ca4bf@
+1 CHIL @hist-03f22694e8f6a8eb@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-c43ca697a7a5ddd1@ FAM
+1 _PARENT @hist-5ffdb2dd61d945b1@
+1 _PARENT @hist-ref-1d7adc44a21ca4bf@
+1 CHIL @hist-c43ca697a7a5ddd1@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-1410dcf9b56a130c@ FAM
+1 _PARENT @hist-5ffdb2dd61d945b1@
+1 _PARENT @hist-ref-1d7adc44a21ca4bf@
+1 CHIL @hist-1410dcf9b56a130c@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-14332e5cede775a5@ FAM
+1 _PARENT @hist-f08a63c70b2db797@
+1 _PARENT @hist-ref-efe8101de3421203@
+1 CHIL @hist-14332e5cede775a5@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-4a56455479f95144@ FAM
+1 _PARENT @hist-14332e5cede775a5@
+1 CHIL @hist-4a56455479f95144@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-ec60708a11e75fe7@ FAM
+1 _PARENT @hist-14332e5cede775a5@
+1 CHIL @hist-ec60708a11e75fe7@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-6c4cb7eceea35985@ FAM
+1 _PARENT @hist-b0f2c797441a9d6a@
+1 _PARENT @hist-ref-2a6e895983ade859@
+1 CHIL @hist-6c4cb7eceea35985@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-8411ea7e29ea99c9@ FAM
+1 _PARENT @hist-6c4cb7eceea35985@
+1 CHIL @hist-8411ea7e29ea99c9@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-66dd514df18e45df@ FAM
+1 _PARENT @hist-75cce87a9547e385@
+1 _PARENT @hist-ref-4a24423a0914c1d2@
+1 CHIL @hist-66dd514df18e45df@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-ref-e15f506b7457a370@ FAM
+1 _PARENT @hist-3a33ed4d1186b249@
+1 CHIL @hist-ref-e15f506b7457a370@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-2d234accb50b3396@ FAM
+1 _PARENT @hist-5ce869e2b801168b@
+1 _PARENT @hist-ref-212cee55ca83afd1@
+1 CHIL @hist-2d234accb50b3396@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-1483995c62be5829@ FAM
+1 _PARENT @hist-541eb1cec60e8f20@
+1 _PARENT @hist-ref-a2364949da9df900@
+1 CHIL @hist-1483995c62be5829@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-ref-03b66299f244d595@ FAM
+1 _PARENT @hist-1483995c62be5829@
+1 CHIL @hist-ref-03b66299f244d595@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-48583cf7740e295e@ FAM
+1 _PARENT @hist-f656adfd061a8571@
+1 _PARENT @hist-ref-d8254ba1664b4a98@
+1 CHIL @hist-48583cf7740e295e@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-e515a355c84676a4@ FAM
+1 _PARENT @hist-48583cf7740e295e@
+1 CHIL @hist-e515a355c84676a4@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-6fbb8194fdab41d8@ FAM
+1 _PARENT @hist-48583cf7740e295e@
+1 CHIL @hist-6fbb8194fdab41d8@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-784f522eb5b1c9d2@ FAM
+1 _PARENT @hist-48583cf7740e295e@
+1 CHIL @hist-784f522eb5b1c9d2@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-e7c1201f59dd2530@ FAM
+1 _PARENT @hist-f656adfd061a8571@
+1 _PARENT @hist-ref-d8254ba1664b4a98@
+1 CHIL @hist-e7c1201f59dd2530@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-5c2f7b90c939abe5@ FAM
+1 _PARENT @hist-f656adfd061a8571@
+1 _PARENT @hist-ref-d8254ba1664b4a98@
+1 CHIL @hist-5c2f7b90c939abe5@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-d73fbe0bfca9bdc1@ FAM
+1 _PARENT @hist-5c2f7b90c939abe5@
+1 CHIL @hist-d73fbe0bfca9bdc1@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-00aa770120639d9a@ FAM
+1 _PARENT @hist-f656adfd061a8571@
+1 _PARENT @hist-ref-cc22736c407de68e@
+1 CHIL @hist-00aa770120639d9a@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-cc65d651c52d04a2@ FAM
+1 _PARENT @hist-dda7f4924efeb2af@
+1 CHIL @hist-cc65d651c52d04a2@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-ba2464feda27dacd@ FAM
+1 _PARENT @hist-dda7f4924efeb2af@
+1 CHIL @hist-ba2464feda27dacd@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-3d86df74220bed28@ FAM
+1 _PARENT @hist-dda7f4924efeb2af@
+1 CHIL @hist-3d86df74220bed28@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-640e605ebc191024@ FAM
+1 _PARENT @hist-c43ca697a7a5ddd1@
+1 _PARENT @hist-ref-2f3e562d38f207cf@
+1 CHIL @hist-640e605ebc191024@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-a28d7b3c68d955ac@ FAM
+1 _PARENT @hist-1410dcf9b56a130c@
+1 CHIL @hist-a28d7b3c68d955ac@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-694b5249581dc009@ FAM
+1 _PARENT @hist-1d91484590fcd9b7@
+1 _PARENT @hist-ref-371709b3f4bb8dfd@
+1 CHIL @hist-694b5249581dc009@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-44a39475b4f32dcb@ FAM
+1 _PARENT @hist-694b5249581dc009@
+1 CHIL @hist-44a39475b4f32dcb@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-b0312d4bad79e91b@ FAM
+1 _PARENT @hist-89ce79d4e103f335@
+1 CHIL @hist-b0312d4bad79e91b@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-b9d59ff9ae8ccad5@ FAM
+1 _PARENT @hist-5ce869e2b801168b@
+1 _PARENT @hist-ref-212cee55ca83afd1@
+1 CHIL @hist-b9d59ff9ae8ccad5@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-e19471447f64ea27@ FAM
+1 _PARENT @hist-1d91484590fcd9b7@
+1 _PARENT @hist-ref-371709b3f4bb8dfd@
+1 CHIL @hist-e19471447f64ea27@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-0563d4606808f71a@ FAM
+1 _PARENT @hist-e19471447f64ea27@
+1 CHIL @hist-0563d4606808f71a@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-d8a282449f7503b0@ FAM
+1 _PARENT @hist-e19471447f64ea27@
+1 CHIL @hist-d8a282449f7503b0@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-8bbe3e2ddc6a1ee8@ FAM
+1 _PARENT @hist-f656adfd061a8571@
+1 _PARENT @hist-ref-d8254ba1664b4a98@
+1 CHIL @hist-8bbe3e2ddc6a1ee8@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-cb5e99cf6e3dfe81@ FAM
+1 _PARENT @hist-102b1dc064f6eae0@
+1 _PARENT @hist-ref-514064d10d23023a@
+1 CHIL @hist-cb5e99cf6e3dfe81@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-1d91484590fcd9b7@ FAM
+1 _PARENT @dante1882@
+1 _PARENT @hist-ref-e2d1ec5cc957f54c@
+1 CHIL @hist-1d91484590fcd9b7@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-5ce869e2b801168b@ FAM
+1 _PARENT @hist-1d91484590fcd9b7@
+1 _PARENT @hist-ref-371709b3f4bb8dfd@
+1 CHIL @hist-5ce869e2b801168b@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-7effd7f7d1f4666a@ FAM
+1 _PARENT @hist-1d91484590fcd9b7@
+1 _PARENT @hist-ref-371709b3f4bb8dfd@
+1 CHIL @hist-7effd7f7d1f4666a@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-f656adfd061a8571@ FAM
+1 _PARENT @hist-85eeb6c8cc28212d@
+1 _PARENT @hist-ref-709b2daebaceea2c@
+1 CHIL @hist-f656adfd061a8571@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-d830a01841845e31@ FAM
+1 _PARENT @hist-f656adfd061a8571@
+1 _PARENT @hist-ref-cc22736c407de68e@
+1 CHIL @hist-d830a01841845e31@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-33c24bff9eba4c83@ FAM
+1 _PARENT @hist-f656adfd061a8571@
+1 _PARENT @hist-ref-cc22736c407de68e@
+1 CHIL @hist-33c24bff9eba4c83@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-07c5e6c4093b73b5@ FAM
+1 _PARENT @hist-1483995c62be5829@
+1 _PARENT @hist-ref-ec112ab96d86f395@
+1 CHIL @hist-07c5e6c4093b73b5@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-ccd98d9f3a3cf1ca@ FAM
+1 _PARENT @hist-03f22694e8f6a8eb@
+1 CHIL @hist-ccd98d9f3a3cf1ca@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-392a29b3fb758bbe@ FAM
+1 _PARENT @hist-03f22694e8f6a8eb@
+1 CHIL @hist-392a29b3fb758bbe@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-d3591a0e7be367f6@ FAM
+1 _PARENT @hist-7effd7f7d1f4666a@
+1 CHIL @hist-d3591a0e7be367f6@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-b0f2c797441a9d6a@ FAM
+1 _PARENT @hist-03e2b3ba41512b11@
+1 CHIL @hist-b0f2c797441a9d6a@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-5b92544a2d812cd5@ FAM
+1 _PARENT @hist-03e2b3ba41512b11@
+1 CHIL @hist-5b92544a2d812cd5@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-4630780e00411597@ FAM
+1 _PARENT @hist-03e2b3ba41512b11@
+1 CHIL @hist-4630780e00411597@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-e97bc136eb174e56@ FAM
+1 _PARENT @hist-03e2b3ba41512b11@
+1 CHIL @hist-e97bc136eb174e56@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-728ef069cadc4194@ FAM
+1 _PARENT @hist-03e2b3ba41512b11@
+1 CHIL @hist-728ef069cadc4194@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-2fd1cf7bb3de4f39@ FAM
+1 _PARENT @hist-03e2b3ba41512b11@
+1 CHIL @hist-2fd1cf7bb3de4f39@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-8298df635435448c@ FAM
+1 _PARENT @hist-03e2b3ba41512b11@
+1 CHIL @hist-8298df635435448c@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-0108cdf215ffe194@ FAM
+1 _PARENT @hist-03e2b3ba41512b11@
+1 CHIL @hist-0108cdf215ffe194@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-ref-2eca62c96b8c4a8b@ FAM
+1 _PARENT @hist-c7996d44974ae919@
+1 CHIL @hist-ref-2eca62c96b8c4a8b@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-6795cf65f61eb514@ FAM
+1 _PARENT @hist-c43ca697a7a5ddd1@
+1 _PARENT @hist-ref-2f3e562d38f207cf@
+1 CHIL @hist-6795cf65f61eb514@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-0c7bfaba2cdf83af@ FAM
+1 _PARENT @hist-d830a01841845e31@
+1 CHIL @hist-0c7bfaba2cdf83af@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-d1f1fd4a979b5105@ FAM
+1 _PARENT @hist-d830a01841845e31@
+1 CHIL @hist-d1f1fd4a979b5105@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-5bc58342b078984e@ FAM
+1 _PARENT @hist-5c8b9db4c10c539c@
+1 _PARENT @hist-ref-5e1e2034adb5a205@
+1 CHIL @hist-5bc58342b078984e@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-fab4cad21002e0b0@ FAM
+1 _PARENT @hist-5c8b9db4c10c539c@
+1 _PARENT @hist-ref-5e1e2034adb5a205@
+1 CHIL @hist-fab4cad21002e0b0@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-23fb89e53cdcdf94@ FAM
+1 _PARENT @hist-fab4cad21002e0b0@
+1 _PARENT @hist-ref-6a649124a6760179@
+1 CHIL @hist-23fb89e53cdcdf94@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-5c8b9db4c10c539c@ FAM
+1 _PARENT @orestes@
+1 _PARENT @hist-ref-8b5ee86dcc867f96@
+1 CHIL @hist-5c8b9db4c10c539c@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-3275bc705dcc0df7@ FAM
+1 _PARENT @hist-5c8b9db4c10c539c@
+1 _PARENT @hist-ref-5e1e2034adb5a205@
+1 CHIL @hist-3275bc705dcc0df7@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-30403f6a67f495ea@ FAM
+1 _PARENT @hist-5c8b9db4c10c539c@
+1 _PARENT @hist-ref-5e1e2034adb5a205@
+1 CHIL @hist-30403f6a67f495ea@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-e6ea2c21301ca11c@ FAM
+1 _PARENT @hist-5c8b9db4c10c539c@
+1 _PARENT @hist-ref-5e1e2034adb5a205@
+1 CHIL @hist-e6ea2c21301ca11c@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-f82e49835b8729a8@ FAM
+1 _PARENT @orestes@
+1 _PARENT @hist-ref-0ed254aa57a55796@
+1 CHIL @hist-f82e49835b8729a8@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-dbd9044835eca9aa@ FAM
+1 _PARENT @orestes@
+1 _PARENT @hist-ref-0ed254aa57a55796@
+1 CHIL @hist-dbd9044835eca9aa@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-3fd3176be24363d6@ FAM
+1 _PARENT @orestes@
+1 _PARENT @hist-ref-0ed254aa57a55796@
+1 CHIL @hist-3fd3176be24363d6@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-0b302e4f53d539e5@ FAM
+1 _PARENT @hist-fab4cad21002e0b0@
+1 _PARENT @hist-ref-6a649124a6760179@
+1 CHIL @hist-0b302e4f53d539e5@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-1742eed03ca14643@ FAM
+1 _PARENT @hist-fab4cad21002e0b0@
+1 _PARENT @hist-ref-6a649124a6760179@
+1 CHIL @hist-1742eed03ca14643@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-59389290eeb40b2a@ FAM
+1 _PARENT @hist-ref-63232af202c58487@
+1 CHIL @hist-59389290eeb40b2a@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-4fd19153469a6c35@ FAM
+1 _PARENT @hist-6b248fc6641489d2@
+1 CHIL @hist-4fd19153469a6c35@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-ref-260f792e3eb55381@ FAM
+1 _PARENT @hist-4fd19153469a6c35@
+1 CHIL @hist-ref-260f792e3eb55381@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-a7dc034685b39eb3@ FAM
+1 _PARENT @hist-9d0c742e03132b0d@
+1 _PARENT @hist-ref-b8e902bc10184f63@
+1 CHIL @hist-a7dc034685b39eb3@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-866a13d19f77e7dc@ FAM
+1 _PARENT @hist-592ad40a2e8a6908@
+1 _PARENT @hist-ref-891beabe52912c84@
+1 CHIL @hist-866a13d19f77e7dc@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-8ad34112e26f632d@ FAM
+1 _PARENT @hist-ed69d22ab727192d@
+1 _PARENT @hist-ref-0c048d3cc31391ba@
+1 CHIL @hist-8ad34112e26f632d@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-36d18db282fd93de@ FAM
+1 _PARENT @hist-4944ce8104ed596f@
+1 _PARENT @hist-ref-8cdfba0acbe1e55a@
+1 CHIL @hist-36d18db282fd93de@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-fae667118fda0613@ FAM
+1 _PARENT @hist-6ef647be9c43c054@
+1 _PARENT @hist-78da83bfbebec5a8@
+1 CHIL @hist-fae667118fda0613@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-a0868922e4721e75@ FAM
+1 _PARENT @hist-5b771e1f3e962de4@
+1 _PARENT @hist-ref-184328ea89321555@
+1 CHIL @hist-a0868922e4721e75@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-872ccaa0fce2299a@ FAM
+1 _PARENT @hist-b17bc63aafcefb0f@
+1 _PARENT @hist-ref-c6d62d5e4c390848@
+1 CHIL @hist-872ccaa0fce2299a@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-df7f911b1cc63e54@ FAM
+1 _PARENT @hist-86e857a326beebc2@
+1 _PARENT @hist-ref-aaf7b8ede85f7f74@
+1 CHIL @hist-df7f911b1cc63e54@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-8d2efbd632cfcb6f@ FAM
+1 _PARENT @hist-df7f911b1cc63e54@
+1 CHIL @hist-8d2efbd632cfcb6f@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-4f0cae26ff4c8af1@ FAM
+1 _PARENT @hist-df7f911b1cc63e54@
+1 CHIL @hist-4f0cae26ff4c8af1@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-2f606fb554e103bc@ FAM
+1 _PARENT @hist-ref-70314e94e5f05fd3@
+1 CHIL @hist-2f606fb554e103bc@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-19d5da6a9c35cd7a@ FAM
+1 _PARENT @hist-ref-9f9ee3b9abf8c414@
+1 CHIL @hist-19d5da6a9c35cd7a@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-372537a83ae9d56c@ FAM
+1 _PARENT @hist-ref-d69071776ae79b90@
+1 CHIL @hist-372537a83ae9d56c@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
+0 @F-hist-5db04cb153d9373e@ FAM
+1 _PARENT @hist-ref-55b7bba2f761c354@
+1 CHIL @hist-5db04cb153d9373e@
+1 NOTE Parentage assertions only; no marriage implied.
+1 SOUR @S-PUBLIC@
 0 @union-custode-ernesta@ FAM
 1 _PARTNER @custode@
 1 _PARTNER @ernesta@
@@ -1144,6 +4261,281 @@
 0 @union-zenaide-felipe-murucci@ FAM
 1 _PARTNER @zenaide@
 1 _PARTNER @felipe_murucci@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-8eac66437acb8f73@ FAM
+1 _PARTNER @hist-c2cfb3c5096e5f78@
+1 _PARTNER @hist-ref-3dfb02a3e98a79d0@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-e21e838d0dd274e3@ FAM
+1 _PARTNER @hist-09b079f7b98d2108@
+1 _PARTNER @hist-ref-fce227726eec5022@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-f435d4695d780f32@ FAM
+1 _PARTNER @hist-a42037f1435b1e15@
+1 _PARTNER @hist-ref-35f771c4e68651d5@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-78576821865dd1a3@ FAM
+1 _PARTNER @hist-6399c4d3b6e53f55@
+1 _PARTNER @hist-ref-e075e9368f0d4b5b@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-092e35c3938d9947@ FAM
+1 _PARTNER @hist-606a8346ebccb8ee@
+1 _PARTNER @hist-ref-028468e7ea71c465@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-da91f24d9e0d48cc@ FAM
+1 _PARTNER @hist-6563ddd14ef1a9ff@
+1 _PARTNER @hist-ref-06a86aa0a3f5e58b@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-05a10df233431815@ FAM
+1 _PARTNER @hist-df79cd378d384472@
+1 _PARTNER @hist-ref-d325f603a29caab8@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-7d4329f29f79b0a7@ FAM
+1 _PARTNER @hist-4c04083088046c2f@
+1 _PARTNER @hist-ref-55b6dbd442f3bb32@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-68483d7996c5b3f1@ FAM
+1 _PARTNER @hist-1f7c474fd0b89f3d@
+1 _PARTNER @hist-ref-5cdce7ebb42e133e@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-63196d8669b632c0@ FAM
+1 _PARTNER @antonio1846@
+1 _PARTNER @hist-ref-e65cfb5d7b3d38d3@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-68a6c2d98a674e4d@ FAM
+1 _PARTNER @antonio1846@
+1 _PARTNER @hist-ref-33b3e16305093b1d@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-bd45f65eb22d68d4@ FAM
+1 _PARTNER @hist-baef5756a5a33892@
+1 _PARTNER @hist-ref-3ceeedc8c06a9b30@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-7176f63bf11fd04a@ FAM
+1 _PARTNER @hist-3ab8cdacfcf16a70@
+1 _PARTNER @hist-ref-713438375b8f76c0@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-d4bb2771117ff67c@ FAM
+1 _PARTNER @hist-2753aec992e49186@
+1 _PARTNER @hist-ref-2d63090ef6fc8d1c@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-1108f6b73909942e@ FAM
+1 _PARTNER @hist-894e771ea7785a57@
+1 _PARTNER @hist-ref-5ca013cba270eb5a@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-e1ff0eb09f98241e@ FAM
+1 _PARTNER @hist-19e52c532fe3cdf6@
+1 _PARTNER @hist-ref-a24a8c3ba4ffda99@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-dfd2883bb79f89e0@ FAM
+1 _PARTNER @hist-12302e3b9be752e6@
+1 _PARTNER @hist-ref-6b262c71545ee759@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-3c6b518c652a7020@ FAM
+1 _PARTNER @hist-242fe239ba4ac266@
+1 _PARTNER @hist-ref-b09e7ecaa93951fe@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-d93bb4b7106ef4eb@ FAM
+1 _PARTNER @hist-35cfa87edf0e8ad3@
+1 _PARTNER @hist-ref-eb56e276347024a5@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-7ab8b023d16db119@ FAM
+1 _PARTNER @hist-0f73335aeeace729@
+1 _PARTNER @hist-ref-6b6d99bb26731faf@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-0e66b4c4687d7530@ FAM
+1 _PARTNER @edmondo1950@
+1 _PARTNER @hist-bf8f174c3c3ee1ad@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-86994f1c5b0e154e@ FAM
+1 _PARTNER @hist-ea9be34ffb687854@
+1 _PARTNER @hist-ref-e5dd0a45880a70a6@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-96588ed97ce12f01@ FAM
+1 _PARTNER @hist-302f75d9057fb97e@
+1 _PARTNER @hist-ref-b0d2338d2dc57304@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-448745332a736d6b@ FAM
+1 _PARTNER @hist-18ebc85588fc7bba@
+1 _PARTNER @hist-ref-608126913cc53ec4@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-dfdc3d76cd882813@ FAM
+1 _PARTNER @hist-4ea0b90f3eab9b6d@
+1 _PARTNER @hist-ref-122af091173b9793@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-2a16288f91fb4185@ FAM
+1 _PARTNER @hist-73d7cfed855dcd88@
+1 _PARTNER @hist-ref-2d9a7a208b703c4a@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-077a958eac4aa582@ FAM
+1 _PARTNER @hist-5ffdb2dd61d945b1@
+1 _PARTNER @hist-ref-ab59bc95526cd7b9@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-885bf8cfdfab5c3e@ FAM
+1 _PARTNER @hist-14332e5cede775a5@
+1 _PARTNER @hist-d4fd4386073b7256@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-ba0bddc16e9d8331@ FAM
+1 _PARTNER @hist-6c4cb7eceea35985@
+1 _PARTNER @hist-ref-bcbc24030c01b47f@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-f0d2ffc4b1cd3f3a@ FAM
+1 _PARTNER @hist-3a33ed4d1186b249@
+1 _PARTNER @hist-ref-49e3f7633dc0c703@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-130abff80d6b7dc6@ FAM
+1 _PARTNER @hist-1483995c62be5829@
+1 _PARTNER @hist-ref-92c03ff4c99cfec3@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-5a25877156be6a34@ FAM
+1 _PARTNER @hist-48583cf7740e295e@
+1 _PARTNER @hist-ref-208295fcd8bc7ed5@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-6286b492498e8c6b@ FAM
+1 _PARTNER @hist-5c2f7b90c939abe5@
+1 _PARTNER @hist-ref-6402583f0591c8cc@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-2918c85e1cf63f25@ FAM
+1 _PARTNER @hist-00aa770120639d9a@
+1 _PARTNER @hist-ref-d98bb9a390e47611@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-e27ad6d83c6ecd04@ FAM
+1 _PARTNER @hist-dda7f4924efeb2af@
+1 _PARTNER @hist-ref-093df11fef140be0@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-21ee69d3cdf64235@ FAM
+1 _PARTNER @hist-c43ca697a7a5ddd1@
+1 _PARTNER @hist-ref-9aa5d8285b5d7d52@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-dd720e8902edc052@ FAM
+1 _PARTNER @hist-1410dcf9b56a130c@
+1 _PARTNER @hist-ref-c47dbcadafa61ca5@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-a355c9b7ba2a21f5@ FAM
+1 _PARTNER @hist-694b5249581dc009@
+1 _PARTNER @hist-ref-26f0a35f6d7f35db@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-b0eca228409c4461@ FAM
+1 _PARTNER @hist-89ce79d4e103f335@
+1 _PARTNER @hist-ref-5f48733cb7adb58c@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-05a67d87245cac96@ FAM
+1 _PARTNER @hist-e19471447f64ea27@
+1 _PARTNER @hist-ref-3fd056a8de7377cc@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-b85ce1536ce8e6fe@ FAM
+1 _PARTNER @hist-d34ac132c11e2dca@
+1 _PARTNER @hist-ref-51028b5caf3da366@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-1cd5844a8561176b@ FAM
+1 _PARTNER @hist-e89e148c14e239c3@
+1 _PARTNER @hist-ref-cbb864dabe72d756@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-cb0a95024a338fd6@ FAM
+1 _PARTNER @hist-1d91484590fcd9b7@
+1 _PARTNER @hist-ref-7f62eda552e777b3@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-773154cbbe8a2d40@ FAM
+1 _PARTNER @hist-f656adfd061a8571@
+1 _PARTNER @hist-ref-a7f73994641d5dfc@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-9be3c8a936afdc9f@ FAM
+1 _PARTNER @hist-03f22694e8f6a8eb@
+1 _PARTNER @hist-ref-7ab53aa605e58039@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-541fcef8a1b76df8@ FAM
+1 _PARTNER @hist-03e2b3ba41512b11@
+1 _PARTNER @hist-ref-21f7b77a39b337d6@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-7f6e409b81b14749@ FAM
+1 _PARTNER @hist-5ce869e2b801168b@
+1 _PARTNER @hist-ref-f8626a9d71f78de2@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-5a2d3f5acf8241e9@ FAM
+1 _PARTNER @hist-d830a01841845e31@
+1 _PARTNER @hist-ref-60954ca7089ada99@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-c86d89b191e0a2d9@ FAM
+1 _PARTNER @grandilia@
+1 _PARTNER @hist-e17bab57fcc8a678@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-1ea26461b90c094a@ FAM
+1 _PARTNER @hist-fab4cad21002e0b0@
+1 _PARTNER @hist-ref-ed88ae6396a46373@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-76e0180bc9adbe32@ FAM
+1 _PARTNER @hist-5c8b9db4c10c539c@
+1 _PARTNER @hist-ref-0866cccd18dd734c@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-93ea7bcad7ed41a0@ FAM
+1 _PARTNER @hist-ref-32e5094b65aed50c@
+1 _PARTNER @orestes@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-1741b315a06c247b@ FAM
+1 _PARTNER @hist-4fd19153469a6c35@
+1 _PARTNER @hist-ref-ce7b491357b388bd@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-40803e50be1e24fc@ FAM
+1 _PARTNER @hist-df7f911b1cc63e54@
+1 _PARTNER @hist-ref-0e52ce41d75d3e65@
+1 MARR
+2 SOUR @S-PUBLIC@
+0 @legacy-union-f682e165691b244c@ FAM
+1 _PARTNER @felipe_murucci@
+1 _PARTNER @zenaide@
 1 MARR
 2 SOUR @S-PUBLIC@
 0 @S-PUBLIC@ SOUR

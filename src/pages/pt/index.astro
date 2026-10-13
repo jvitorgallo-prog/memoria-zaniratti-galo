@@ -1,18 +1,53 @@
 ---
 import SiteLayout from "../../layouts/SiteLayout.astro";
-import TreeAtlas from "../../components/TreeAtlas.astro";
+import FamilyForest from "../../components/FamilyForest.astro";
+import LocalSearch from "../../components/LocalSearch.astro";
 import { publicData } from "../../lib/data";
-const description = "Explore a árvore da família Zaniratti, conheça as pessoas e percorra gerações entre Itália e Brasil.";
+import { url } from "../../lib/urls";
+const description = "Explore as árvores e memórias da família Zaniratti entre Itália e Brasil, com pessoas, páginas preservadas e fontes.";
+const data = publicData;
 ---
-<SiteLayout active="arvore" title="Árvore" description={description}>
-  <TreeAtlas
-    people={publicData.people || []}
-    branches={publicData.branches || []}
-    assertions={publicData.assertions || []}
-    groups={publicData.groups || []}
-    events={publicData.events || []}
-    citations={publicData.citations || []}
-    sources={publicData.sources || []}
-    focusId="custode"
-  />
+
+<SiteLayout active="arvore" title="Árvores da família" description={description}>
+  <div class="forest-home">
+    <div class="forest-search-panel">
+      <div><p class="atlas-kicker">Encontre alguém ou uma história</p><h2>Busca em toda a memória</h2><p>Pesquise pessoas, grafias antigas, páginas do site familiar e fontes.</p></div>
+      <LocalSearch people={data.people} branches={data.branches} assertions={data.assertions} sources={data.sources} archiveItems={data.archive_items} />
+    </div>
+    <FamilyForest branches={data.branches} people={data.people} sources={data.sources} assets={data.assets} archiveItems={data.archive_items} />
+    <section class="forest-stories-spotlight" aria-label="Histórias e lugares da família">
+      <a href={url("/pt/historias/ramos-italianos/")}><span>Itália</span><h2>Ramos e histórias italianas</h2><p>Explore as árvores documentadas na Itália, em sua própria continuidade.</p><strong>Conhecer os ramos <span aria-hidden="true">→</span></strong></a>
+      <a href={url("/pt/lugares/fazendas/")}><span>Brasil</span><h2>Fazendas e vida rural</h2><p>Conheça os lugares e as memórias de trabalho rural registrados pela família.</p><strong>Explorar lugares <span aria-hidden="true">→</span></strong></a>
+    </section>
+    <section class="forest-history-note" aria-labelledby="forest-history-heading">
+      <div><p class="atlas-kicker">Da Itália ao Brasil</p><h2 id="forest-history-heading">Raízes, caminhos e histórias de família</h2><p>As árvores preservadas no site original, as memórias brasileiras e os relatos de quem construiu esse acervo aparecem lado a lado, com suas origens identificadas.</p></div>
+      <div class="forest-history-links"><a href={url("/pt/sobre/edmondo-e-o-site-original/")}>Edmondo e o site original</a><a href={url("/pt/historias/")}>Ler histórias</a><a href={url("/pt/acervo/")}>Percorrer o acervo</a></div>
+    </section>
+  </div>
 </SiteLayout>
+
+<style>
+  .forest-home { width: min(1420px, 100%); margin: 0 auto; padding: 18px 0 52px; }
+  .forest-search-panel { display: grid; grid-template-columns: minmax(260px,.75fr) minmax(420px,1.25fr); align-items: center; gap: 35px; margin: 2px 0 34px; padding: 24px 28px; border: 1px solid #d7d1c7; border-radius: 12px; background: #fffdf8; }
+  .forest-search-panel h2 { margin: 0; color: #142c43; font: 500 27px/1.15 "Atlas Serif", Georgia, serif; }
+  .forest-search-panel > div:first-child > p:last-child { margin: 8px 0 0; color: #667487; line-height: 1.5; }
+  .forest-search-panel .local-search { max-width: 620px; }
+  .forest-search-panel .local-search > label:first-child { font-size: 13px; }
+  .forest-search-panel .search-help { margin-bottom: 0; }
+  .forest-history-note { display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: center; gap: 24px; margin-top: 34px; padding: 25px 28px; border-top: 1px solid #d7d1c7; border-bottom: 1px solid #d7d1c7; }
+  .forest-history-note h2 { margin: 0; color: #142c43; font: 500 25px/1.2 "Atlas Serif", Georgia, serif; }
+  .forest-history-note > div:first-child > p:last-child { max-width: 790px; margin: 8px 0 0; color: #667487; line-height: 1.55; }
+  .forest-history-links { display: grid; gap: 9px; min-width: 210px; }
+  .forest-history-links a { color: #3155a4; }
+  @media (max-width: 850px) {
+    .forest-search-panel { grid-template-columns: minmax(0, 1fr); gap: 17px; }
+    .forest-search-panel > .local-search { min-width: 0; width: 100%; max-width: none; }
+  }
+  @media (max-width: 760px) {
+    .forest-home { padding: 8px 0 40px; }
+    .forest-search-panel { grid-template-columns: 1fr; gap: 17px; margin-bottom: 26px; padding: 19px; }
+    .forest-search-panel h2 { font-size: 23px; }
+    .forest-history-note { grid-template-columns: 1fr; gap: 15px; padding: 21px 0; }
+    .forest-history-note h2 { font-size: 22px; }
+  }
+</style>

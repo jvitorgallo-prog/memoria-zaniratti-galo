@@ -28,7 +28,10 @@ const citationById = new Map(citations.map((citation) => [citation.id, citation]
 const personById = new Map(people.map((item) => [item.id, item]));
 const sourceHref = (id: string) => url("/pt/fontes/" + encodeURIComponent(id) + "/");
 const personHref = (id: string) => url("/pt/pessoas/" + encodeURIComponent(id) + "/");
-const returnTree = url("/pt/") + "?pessoa=" + encodeURIComponent(personId) + "#" + encodeURIComponent(personId);
+const primaryBranch = person.branch_ids?.[0];
+const returnTree = primaryBranch
+  ? url("/pt/arvores/" + encodeURIComponent(primaryBranch) + "/") + "?pessoa=" + encodeURIComponent(personId) + "#atlas"
+  : url("/pt/arvores/");
 const initials = person.label.trim().split(/\s+/).slice(0, 2).map((part) => part[0]).join("").toLocaleUpperCase("pt-BR");
 const branchNames = (person.branch_ids || []).map((id) => branches.find((branch) => branch.id === id)?.label).filter((value): value is string => Boolean(value));
 
@@ -63,6 +66,15 @@ const siblingMap = new Map<string, PublicAssertion[]>();
 for (const claim of siblingClaims) {
   const id = claim.predicate === "child_of" ? claim.subject_id : claim.object_person_id;
   if (id && personById.has(id)) siblingMap.set(id, [...(siblingMap.get(id) || []), claim]);
+}
+for (const claim of claims) {
+  if (claim.predicate !== "sibling_of") continue;
+  const interpretation = (claim.interpretation || "").toLocaleLowerCase("pt-BR");
+  if (/(disput|reject|contradict|supersed)/.test(interpretation)) continue;
+  const id = claim.subject_id === personId ? claim.object_person_id : claim.object_person_id === personId ? claim.subject_id : null;
+  if (!id || id === personId || !personById.has(id)) continue;
+  const existing = siblingMap.get(id) || [];
+  if (!existing.some((item) => item.id === claim.id)) siblingMap.set(id, [...existing, claim]);
 }
 const siblings: Relation[] = [...siblingMap.entries()].map(([id, edgeClaims]) => ({ other: personById.get(id)!, claims: edgeClaims }));
 
@@ -131,7 +143,7 @@ const sourceUrl = (id: string) => sourceHref(id);
 <SiteLayout active="pessoas" title={person.label} description={`História familiar de ${person.label}: vínculos, relatos e acervo relacionado.`}>
   <div class="editorial-person">
     <nav class="editorial-breadcrumb" aria-label="Caminho de navegação">
-      <a href={url("/pt/")}>Árvore</a><span aria-hidden="true">/</span><a href={url("/pt/pessoas/")}>Pessoas</a><span aria-hidden="true">/</span><span aria-current="page">{person.label}</span>
+      <a href={url("/pt/arvores/")}>Árvores</a><span aria-hidden="true">/</span><a href={url("/pt/pessoas/")}>Pessoas</a><span aria-hidden="true">/</span><span aria-current="page">{person.label}</span>
     </nav>
 
     <header class="editorial-person-hero">
@@ -156,6 +168,7 @@ const sourceUrl = (id: string) => sourceHref(id);
             <div class="editorial-rich-text">{bio.paragraphs?.filter((paragraph) => !isBiographyEcho(paragraph.text) && !isStructuredRepeat(paragraph.text)).map((paragraph) => <p>{paragraph.text}</p>)}</div>
           </article>)}
         </section> : <section id="historia" class="editorial-section editorial-biography editorial-biography-empty"><p class="editorial-eyebrow">Memória da família</p><h2>A história de {person.label.split(" ")[0]}</h2><p>Os registros reunidos para esta pessoa estão apresentados abaixo, junto à família e aos documentos relacionados.</p></section>}
+        {personId === "hist-c43ca697a7a5ddd1" && <p class="editorial-longread-link"><span>Leitura complementar</span><a href={url("/pt/historias/jose-augusto/")}>Ler a biografia atribuída a Edmondo, com a transcrição completa →</a></p>}
 
         <section class="editorial-section" aria-labelledby="familia">
           <div class="editorial-section-title"><p class="editorial-eyebrow">Laços familiares</p><h2 id="familia">Família</h2></div>
@@ -244,6 +257,9 @@ const sourceUrl = (id: string) => sourceHref(id);
   .editorial-biography-empty { background: #f0f4f7; color: var(--ep-ink); }
   .editorial-biography-empty h2 { color: var(--ep-ink); }
   .editorial-biography-empty p:last-child { margin-bottom: 0; }
+  .editorial-longread-link { display:grid; gap:4px; margin:16px 0 0; padding:15px 0; border-bottom:1px solid var(--ep-line); }
+  .editorial-longread-link span { color:var(--ep-muted); font-size:.75rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+  .editorial-longread-link a { font-weight:650; }
   .editorial-relation-block { margin-top: 26px; }
   .editorial-relation-block h3 { margin-bottom: 12px; font-family: inherit; font-size: 1rem; font-weight: 700; }
   .editorial-count { display:inline-grid; place-items:center; min-width:24px; height:24px; margin-left:5px; padding-inline:5px; border-radius:99px; color:var(--ep-blue); background:var(--ep-pale); font-size:.74rem; }

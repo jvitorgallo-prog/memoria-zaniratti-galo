@@ -1,0 +1,70 @@
+---
+import { url } from "../lib/urls";
+import type { PublicBranch, PublicSource, PublicAsset, PublicArchiveItem } from "../lib/data";
+type Branch = PublicBranch & { lineage_label?: string; kind?: string };
+type Tree = { id: string; primary: Branch; branches: Branch[]; original: boolean };
+const { tree, sources = [], assets = [], archiveItems = [] } = Astro.props as {
+  tree: Tree; sources?: PublicSource[]; assets?: PublicAsset[]; archiveItems?: PublicArchiveItem[];
+};
+const bySource = new Map(sources.map((item) => [item.id, item]));
+const byAsset = new Map(assets.map((item) => [item.id, item]));
+const byArchive = new Map(archiveItems.map((item) => [item.id, item]));
+const branch = tree.primary;
+const allPersonIds = new Set(tree.branches.flatMap((item) => item.person_ids));
+const peopleCount = allPersonIds.size;
+const coreView = allPersonIds.has("custode") && !tree.original;
+const image = [...new Set(tree.branches.flatMap((item) => item.asset_ids || []))]
+  .map((id) => byAsset.get(id)).find((item) => item && item.mime.startsWith("image/"));
+const origins = [...new Set(tree.branches.flatMap((item) => item.origin_source_ids || []))]
+  .map((id) => bySource.get(id)).filter((item): item is PublicSource => Boolean(item));
+const pages = [...new Set(tree.branches.flatMap((item) => item.archive_item_ids || []))]
+  .map((id) => byArchive.get(id)).filter((item): item is PublicArchiveItem => Boolean(item));
+const legacyReferences = [...new Set(tree.branches.flatMap((item) => item.legacy_urls || []))];
+const publicAssets = [...new Set(tree.branches.flatMap((item) => item.asset_ids || []))].map((id) => byAsset.get(id)).filter((item): item is PublicAsset => Boolean(item));
+const hasDiagramPdf = publicAssets.some((asset) => asset.mime === "application/pdf" && /mapa|diagrama|árvore|albero|tree|geneal/i.test(`${asset.alt} ${asset.caption}`));
+const hasPreservedMaterial = pages.some((item) => Boolean(item.public_path)) || publicAssets.length > 0;
+const countSources = [...new Set(tree.branches.map((item) => item.count_source_id).filter((id): id is string => Boolean(id)))]
+  .map((id) => bySource.get(id)).filter((item): item is PublicSource => Boolean(item));
+const language = (value?: string | null) => {
+  const normalized = (value || "").toLocaleLowerCase("pt-BR");
+  return ["it", "italian", "italiano"].includes(normalized) ? "italiano" : ["pt", "portuguese", "português"].includes(normalized) ? "português" : value;
+};
+const editionRows = tree.branches.flatMap((item) => {
+  const counts = item.historical_counts || (item.historical_person_count != null ? [{ count: item.historical_person_count, edition: item.count_edition_label || "edição citada" }] : []);
+  if (!counts.length && !item.count_edition_label && item.historical_page_count == null && item.chapter_count == null && !item.source_language) return [];
+  return [{ id: item.id, label: item.count_edition_label || counts[0]?.edition || "Edição citada", counts, pageCount: item.historical_page_count, chapterCount: item.chapter_count, language: language(item.source_language), source: item.count_source_id ? bySource.get(item.count_source_id) : undefined }];
+});
+const labels = tree.branches.filter((item) => item.id !== branch.id);
+const titlePath = `/pt/arvores/${encodeURIComponent(branch.id)}/`;
+---
+<article class="forest-tree-card" data-tree={tree.id}>
+  {image && <a class="forest-tree-image" href={url(titlePath)} aria-label={`Abrir árvore ${branch.label}`}>
+    <img src={url("/" + image.public_path.replace(/^\/+/, ""))} alt={image.alt} loading="lazy" />
+    <span>{image.caption || "Diagrama histórico"}</span>
+  </a>}
+  <div class="forest-tree-copy">
+    <p class="forest-tree-kicker">{tree.original ? "Árvore do site original" : coreView ? "Vista da família de Custode" : branch.lineage_label || branch.region_label || "Mapa ou edição histórica"}</p>
+    <h3><a href={url(titlePath)}>{branch.label}</a></h3>
+    <p class="forest-tree-meta">{peopleCount > 0 ? `${peopleCount} ${peopleCount === 1 ? "perfil relacionado" : "perfis relacionados"}` : "Perfis ainda não identificados"}{branch.country_label ? ` · ${branch.country_label}` : ""}{branch.region_label ? ` · ${branch.region_label}` : ""}</p>
+    {editionRows.length > 0 && <div class="forest-tree-editions">{editionRows.map((edition) => <div class="forest-tree-edition">
+      <strong>{edition.label}</strong>
+      {edition.counts.map((item) => <span>{item.count} pessoas registradas</span>)}
+      {edition.pageCount != null && <span>{edition.pageCount} páginas</span>}
+      {edition.chapterCount != null && <span>{edition.chapterCount} capítulos</span>}
+      {edition.language && <span>Idioma: {edition.language}</span>}
+      {edition.source && <a href={url(`/pt/fontes/${encodeURIComponent(edition.source.id)}/`)}>Fonte da contagem: {edition.source.title}</a>}
+    </div>)}</div>}
+    <p class="forest-tree-description">{peopleCount > 0 ? branch.description || branch.note || "Explore os perfis e as referências ligados a este mapa." : hasPreservedMaterial ? "O registro está disponível no acervo, mas as fichas de pessoas ainda não foram identificadas." : "A referência está catalogada, mas ainda não há fichas de pessoas identificadas para este registro."}</p>
+    {peopleCount === 0 && <p class="forest-map-gap">{image || hasDiagramPdf ? "As fichas de pessoas ainda não foram identificadas." : "A imagem do diagrama não foi recuperada; as fichas de pessoas ainda não foram identificadas."}</p>}
+    {legacyReferences.length > 0 && <details class="forest-legacy-references"><summary>Referências do site histórico · {legacyReferences.length}</summary><ul>{legacyReferences.map((reference) => <li><code>{reference}</code></li>)}</ul></details>}
+    {!countSources.length && origins[0] && <a class="forest-tree-source" href={url(`/pt/fontes/${encodeURIComponent(origins[0].id)}/`)}>Fonte: {origins[0].title}</a>}
+    {labels.length > 0 && <p class="forest-related-editions">Também nesta árvore: {labels.slice(0, 3).map((item, index) => <>{index > 0 && <span aria-hidden="true"> · </span>}<a href={url(`/pt/arvores/${encodeURIComponent(item.id)}/`)}>{item.label}</a></>)}{labels.length > 3 && <span> · +{labels.length - 3} registros de edição</span>}</p>}
+    <div class="forest-tree-actions">
+      <a class="forest-open-tree" href={url(titlePath)}>{peopleCount > 0 ? "Abrir árvore" : "Abrir registro e fontes"}</a>
+      {origins.slice(0, 2).map((source) => <a href={url(`/pt/fontes/${encodeURIComponent(source.id)}/`)}>Fonte: {source.title}</a>)}
+      {pages.slice(0, 3).map((archive) => <a href={url(`/pt/acervo/${encodeURIComponent(archive.id)}/`)}>Acervo: {archive.title}</a>)}
+      {publicAssets.filter((item) => item.mime === "application/pdf").slice(0, 1).map((asset) => <a href={url("/" + asset.public_path.replace(/^\/+/, ""))}>Abrir documento ou diagrama</a>)}
+      {image && <a href={url("/" + image.public_path.replace(/^\/+/, ""))}>Ver diagrama</a>}
+    </div>
+  </div>
+</article>

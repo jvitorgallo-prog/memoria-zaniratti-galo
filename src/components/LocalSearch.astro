@@ -1,7 +1,7 @@
 ---
 import { url } from "../lib/urls";
-import type { PublicPerson, PublicBranch, PublicAssertion } from "../lib/data";
-const { people = [], branches = [], assertions = [], placeholder = "Buscar por nome, grafia ou ramo" } = Astro.props as { people?: PublicPerson[]; branches?: PublicBranch[]; assertions?: PublicAssertion[]; placeholder?: string };
+import type { PublicPerson, PublicBranch, PublicAssertion, PublicSource, PublicArchiveItem } from "../lib/data";
+const { people = [], branches = [], assertions = [], sources = [], archiveItems = [], placeholder = "Buscar pessoas, histórias e fontes" } = Astro.props as { people?: PublicPerson[]; branches?: PublicBranch[]; assertions?: PublicAssertion[]; sources?: PublicSource[]; archiveItems?: PublicArchiveItem[]; placeholder?: string };
 const nameClaims = new Map();
 for (const claim of assertions) {
   if (claim.subject_kind === "person" && ["name", "preferred_name", "alternate_name"].includes(claim.predicate) && claim.literal) {
@@ -10,22 +10,36 @@ for (const claim of assertions) {
     nameClaims.set(claim.subject_id, list);
   }
 }
-const rows = people.map((person) => ({
+const peopleRows = people.map((person) => ({
+  kind: "person",
+  kindLabel: "Pessoa",
   id: person.id,
   label: person.label || person.id,
   href: url("/pt/pessoas/" + encodeURIComponent(person.id) + "/"),
   branchIds: person.branch_ids || [],
   branch: (person.branch_ids || []).map((id) => branches.find((branch) => branch.id === id)?.label).filter(Boolean).join(" · "),
-  aliases: nameClaims.get(person.id) || [],
+  aliases: [...(person.aliases || []), ...(nameClaims.get(person.id) || [])],
 }));
-const safeRows = JSON.stringify(rows).replace(/</g, "\\u003c");
+const sourceRows = sources.map((source) => ({
+  kind: "source", kindLabel: "Fonte", id: source.id, label: source.title,
+  href: url("/pt/fontes/" + encodeURIComponent(source.id) + "/"),
+  terms: [source.public_reference, source.public_note].filter(Boolean).join(" "),
+}));
+const archiveRows = archiveItems.map((item) => ({
+  kind: "archive", kindLabel: item.kind === "historical_page" ? "Página histórica" : "Acervo",
+  id: item.id, label: item.title || item.legacy_path,
+  href: url("/pt/acervo/" + encodeURIComponent(item.id) + "/"),
+  terms: [item.legacy_path, item.description, item.transcript || ""].filter(Boolean).join(" "),
+}));
+const safeRows = JSON.stringify([...peopleRows, ...archiveRows, ...sourceRows]).replace(/</g, "\\u003c");
 ---
 <div class="local-search" data-local-search>
-  <label for="family-search">Buscar pessoas</label>
+  <label for="family-search">Buscar em pessoas, páginas históricas e fontes</label>
   <div class="search-control"><input id="family-search" type="search" placeholder={placeholder} autocomplete="off" data-search-input /><span aria-hidden="true">⌕</span></div>
-  {branches.length > 1 && <label class="search-filter-label" for="family-branch">Filtrar ramo</label>}
+  {branches.length > 1 && <label class="search-filter-label" for="family-branch">Opcional · filtrar pessoas por ramo</label>}
   {branches.length > 1 && <select id="family-branch" data-search-branch><option value="">Todos os ramos</option>{branches.map((branch) => <option value={branch.id}>{branch.label}</option>)}</select>}
-  <p class="search-help">Busca local neste conjunto publicado. Tente também uma grafia alternativa.</p>
+  <p class="search-help">Busca local entre os nomes e grafias, as páginas preservadas e as fontes deste conjunto.</p>
+  <noscript><p class="search-noscript">A busca interativa precisa de JavaScript. Você ainda pode <a href={url("/pt/pessoas/")}>abrir o índice completo de pessoas</a> ou percorrer as árvores abaixo.</p></noscript>
   <ul class="search-results" data-search-results aria-live="polite" hidden></ul>
   <script type="application/json" data-search-data set:html={safeRows}></script>
   <script>

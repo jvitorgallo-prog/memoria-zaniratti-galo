@@ -1,0 +1,90 @@
+---
+import SiteLayout from "../../../layouts/SiteLayout.astro";
+import PageIntro from "../../../components/PageIntro.astro";
+import researchIndex from "../../../data/research-index.json";
+import { url } from "../../../lib/urls";
+const getCategory = (status: string) => {
+  const value = (status || "").toLocaleLowerCase("pt-BR");
+  if (["negativa", "negative", "empty search", "não acessível", "inacessível", "falha de acesso", "bloqueio de acesso", "sem resultado nominal", "não localizada", "não localizado", "não identificada", "não identificado", "sem texto integral"].some((term) => value.includes(term))) return "negative";
+  if (["rejeitado", "descartado", "não associado", "sem vínculo", "sem parentesco"].some((term) => value.includes(term))) return "unlinked";
+  if (["candidato", "candidate", "inconclus", "referencia_sem", "referência secundária"].some((term) => value.includes(term))) return "candidate";
+  if (["comprovado", "confirmado", "evidência genealógica", "histórico do site", "forte correspondência"].some((term) => value.includes(term))) return "confirmed";
+  return "context";
+};
+const categoryLabels: Record<string, string> = { confirmed: "Ocorrência, fonte ou rota comprovada", candidate: "Candidato ou pista em aberto", unlinked: "Não associado ou rejeitado", negative: "Consulta negativa ou acesso sem resultado", context: "Contexto, método ou cobertura" };
+const categoryCounts = researchIndex.reduce<Record<string, number>>((counts, item) => { const key = getCategory(item.status); counts[key] = (counts[key] || 0) + 1; return counts; }, {});
+---
+<SiteLayout active="fontes" title="Pesquisa pública integrada" description="Síntese legível dos achados, ocorrências e limites de pesquisa sobre a Família Zaniratti.">
+  <PageIntro eyebrow="Pesquisa e proveniência" title="O que foi encontrado — e o que continua em aberto" lede="A pesquisa integrada reúne 204 achados de fontes genealógicas, jornais, arquivos e catálogos. Os estados descrevem cada registro pesquisado; uma ocorrência de sobrenome, uma rota de arquivo ou uma consulta negativa não se transforma automaticamente em parentesco." />
+
+  <section class="research-counts" aria-labelledby="counts-title">
+    <div class="research-heading"><p class="eyebrow">Leitura do conjunto</p><h2 id="counts-title">204 achados do inventário de pesquisa, organizados pelo estado da evidência</h2><p>A classificação abaixo agrupa os estados literais preservados em cinco famílias editoriais, contando cada achado do inventário uma vez. O arquivo integrado também traz dez notas curatoriais suplementares; três delas registram transcrições visuais e lacunas de imagens de mapas e não entram na contagem de 204. “Comprovado” pode confirmar uma ocorrência, um metadado ou a existência de uma série; não significa, por si só, que a pessoa pertença a uma linha familiar.</p></div>
+    <dl class="count-list">
+      <div><dt>Ocorrência, documento, metadado ou rota comprovados</dt><dd>44</dd><small>Inclui 29 registros com status literal “comprovado” e 15 com estados específicos, como ocorrência nominal ou metadado arquivístico confirmado.</small></div>
+      <div><dt>Candidatos e pistas ainda abertas</dt><dd>35</dd><small>Inclui 18 com status literal “candidato” e 17 estados próprios de pista, identidade inconclusiva ou consulta em andamento.</small></div>
+      <div><dt>Rejeitados ou mantidos sem associação</dt><dd>20</dd><small>Inclui 12 status “rejeitado” e 8 ocorrências explicitamente não associadas. A ocorrência pode continuar documentada mesmo sem vínculo genealógico.</small></div>
+      <div><dt>Consultas negativas ou acesso sem resultado</dt><dd>36</dd><small>Resultados limitados aos termos, índices ou páginas consultados; falhas de acesso não foram contadas como resultados negativos.</small></div>
+      <div><dt>Contexto, método, cobertura e estados próprios</dt><dd>69</dd><small>Inclui fontes territoriais e institucionais, controles, escopo de coleção, limites de captura e outros estados não reduzidos às categorias acima.</small></div>
+    </dl>
+  </section>
+
+  <section class="research-findings" aria-labelledby="independent-title">
+    <p class="eyebrow">Ocorrências nominais independentes</p><h2 id="independent-title">Nomes documentados sem parentesco presumido</h2>
+    <p>Essas fontes trazem pessoas chamadas Zaniratti ou Zanirati. Mantemos cada ocorrência identificada pela própria fonte e em seu contexto, sem incorporá-la à linhagem de Custode, Luigi, Pasqua ou João apenas pela semelhança do sobrenome.</p>
+    <article><h3>Giovanni Zaniratti, notário em Ferrara</h3><p>A <i>Gazzetta Ufficiale del Regno d’Italia</i> de 21 de agosto de 1874 registra “Zaniratti Giovanni, notaio residente a Ferrara” e informa a reintegração no exercício da função. Uma referência secundária cita novamente o notário em um ato de enfiteuse de 1º de fevereiro de 1896. A publicação oficial confirma a ocorrência e a ocupação em 1874; não informa idade, parentes ou ligação com a família de Bondeno. O ato de 1896 ainda não foi localizado em original.</p><p class="citation"><a href="https://www.gazzettaufficiale.it/eli/gu/1874/08/21/199/sg/pdf" target="_blank" rel="noopener noreferrer">Gazzetta Ufficiale, n. 199, PDF p. 2 ↗</a><a href="https://www.tesionline.it/tesi/anteprima-tesi/ex-istituto-pedagogico-infantile-di-aguscello-ipotesi-di-riuso/15403" target="_blank" rel="noopener noreferrer">Referência secundária ao ato de 1896 ↗</a></p></article>
+    <article><h3>Guelfo Zanirati, Porto Alegre, 1895</h3><p>Uma notícia de <i>A Federação</i> registra “Guelfo Zanirati” (grafia impressa com um “t”) e informa que a fábrica de roupas brancas fundada por ele foi inaugurada “hontem”. Como a edição é de 26 de novembro de 1895, a notícia aponta para 25 de novembro. É uma ocorrência nominal em jornal, não uma lista de passageiros nem prova de relação com Custode ou com o Guelfo citado em outras páginas.</p><p class="citation"><a href="https://hemeroteca-pdf.bn.gov.br/388653/per388653_1895_00277.pdf" target="_blank" rel="noopener noreferrer">Hemeroteca Digital Brasileira, edição de 26/11/1895, p. 2 ↗</a></p></article>
+    <article><h3>“G. Zaniratti” entre passageiros, 1903</h3><p>Na edição de 21 de outubro de 1903, <i>A Federação</i> lista “G. Zaniratti” entre passageiros do vapor Porto Alegre. A inicial não permite identificar o prenome. O jornal não relaciona essa pessoa a Custode, ao navio Attività ou a uma localidade familiar.</p><p class="citation"><a href="https://hemeroteca-pdf.bn.gov.br/388653/per388653_1903_00245.pdf" target="_blank" rel="noopener noreferrer">Hemeroteca Digital Brasileira, edição de 21/10/1903, p. 3 ↗</a></p></article>
+    <article><h3>Gaetano Zanirati e sua família, São Paulo, 1891</h3><p>O catálogo do Museu da Imigração mostra um registro para Gaetano Zanirati, 28 anos, chegada à Hospedaria em 28 de setembro de 1891; a ficha identifica a família e relaciona Emma, Giov., Ernesta e Ignazio. Trata-se de uma ocorrência nominal de outra unidade familiar. O registro não estabelece vínculo com os Zaniratti de Bondeno nem com Custode.</p><p class="citation"><a href="https://museudaimigracao.com.br/acervo/registro-de-matricula?nome=Gaetano&amp;sobrenome=Zanirati&amp;nacionalidade=&amp;chegada=&amp;vapor=" target="_blank" rel="noopener noreferrer">Museu da Imigração, busca nominal ↗</a><a href="https://museudaimigracao.com.br/uploads/portal/acervo/livros/pdfs/L029_125.pdf" target="_blank" rel="noopener noreferrer">Livro 029, p. 125 ↗</a></p></article>
+  </section>
+
+  <section class="research-findings" aria-labelledby="history-title">
+    <p class="eyebrow">Páginas e arquivos familiares</p><h2 id="history-title">Uma biografia atribuída a Edmondo e árvores italianas separadas</h2>
+    <article><h3>José Augusto (1959), no blog Zaniratti Continentes</h3><p>O post público identifica uma parte como “biografia escrita por Edmondo Zaniratti” e informa que o blog a atualizou. O próprio texto encerra essa parte com “Aqui termina a biografia escrita por Edmondo”; a continuação aparece sob o título separado “Eu por mim mesmo!”. A leitura editorial da seção atribuída, com lugares, relações e episódios do relato, está disponível em capítulo próprio. Não comprova cópia do antigo zaniratti.it nem parentesco entre esse ramo e Custode.</p><p class="citation"><a href={url("/pt/historias/jose-augusto/")}>Ler a biografia atribuída a Edmondo →</a><a href="https://zaniratticontinentes.blogspot.com/2017/03/jose-augusto-1959-jose-augusto-em-uma.html" target="_blank" rel="noopener noreferrer">Ler o post completo e a continuação autobiográfica ↗</a></p></article>
+    <article><h3>Bondeno, Copparo, Ennio e Porto Alegre</h3><p>As árvores do site antigo têm títulos e mapas próprios para os grupos de Francesco/Bondeno, Giovanni Battista/Copparo, Ennio e Porto Alegre. Um índice de 2004 os listava separadamente. Há páginas com biografias e links legíveis no acervo; as hipóteses do autor ficam como hipóteses e os alvos ausentes continuam assinalados como lacunas.</p><p class="citation"><a href={url("/pt/historias/ramos-italianos/")}>Ler a síntese dos ramos e abrir mapas preservados →</a><a href={url("/pt/acervo/")}>Buscar e paginar todo o acervo →</a></p></article>
+  </section>
+
+  <section class="research-boundaries"><p class="eyebrow">Como interpretar os demais resultados</p><h2>Negativas, falhas e referências institucionais têm alcance delimitado</h2><p>Buscas sem retorno significam que os termos testados não apareceram nos campos e índices consultados; não provam que um documento ou uma pessoa não existam. Páginas de arquivos podem confirmar a existência de uma série ou indicar onde pedir uma consulta, sem revelar o nome de alguém em um registro não examinado.</p><p>Os inventários independentes diferem em período, unidade e método. As 1.203 linhas de metadados Wayback, os 251 registros Common Crawl, as versões de conteúdo recuperadas, os alvos citados sem cópia e os 238 HTMs históricos e três interfaces HTML auxiliares atualmente inventariados não são a mesma população. Não há denominador seguro para declarar uma porcentagem de recuperação do site antigo.</p><p><a href={url("/pt/fontes/")}>Voltar ao índice de fontes →</a><a href={url("/pt/lugares/fazendas/")}>Ler sobre fazendas e registros rurais →</a></p></section>
+
+  <section class="research-catalog" aria-labelledby="catalog-title">
+    <p class="eyebrow">Catálogo consultável</p><h2 id="catalog-title">Todos os 204 achados</h2>
+    <p class="catalog-intro">Cada registro mantém sua fonte, o localizador disponível e o estado de pesquisa. Os candidatos, resultados negativos e limites de acesso permanecem separados de fatos familiares confirmados.</p>
+    <div class="catalog-controls"><label>Buscar nos registros<input id="research-search" type="search" placeholder="Nome, fato, lugar ou fonte" /></label><label>Estado da pesquisa<select id="research-status"><option value="all">Todos os estados ({researchIndex.length})</option>{Object.entries(categoryLabels).map(([key, label]) => <option value={key}>{label} ({categoryCounts[key] || 0})</option>)}</select></label><p id="research-results" aria-live="polite">Mostrando {researchIndex.length} de {researchIndex.length} achados</p></div>
+    <div class="research-catalog-list" id="research-catalog-list">
+      {researchIndex.map((item) => {
+        const category = getCategory(item.status);
+        const searchText = [item.title, item.fact, item.locator, item.status, item.limitation, item.url].filter(Boolean).join(" ").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase("pt-BR");
+        return <details id={item.id} class="research-record" data-research-entry data-category={category} data-search={searchText}>
+          <summary><span class={`record-status is-${category}`}>{categoryLabels[category]}</span><strong>{item.title}</strong></summary>
+          {item.fact && <p>{item.fact}</p>}
+          {item.locator && <p class="record-locator"><strong>Localizador:</strong> {item.locator}</p>}
+          <p class="record-locator"><strong>Status:</strong> {item.status}</p>
+          {item.limitation && <p class="record-limitation"><strong>Limitação:</strong> {item.limitation}</p>}
+          {item.url ? <a href={item.url} target="_blank" rel="noopener noreferrer">Abrir fonte pública ↗</a> : <span class="record-no-url">URL pública não localizada para este registro.</span>}
+        </details>;
+      })}
+    </div>
+  </section>
+</SiteLayout>
+<script>
+  const queryInput = document.querySelector<HTMLInputElement>("#research-search");
+  const statusSelect = document.querySelector<HTMLSelectElement>("#research-status");
+  const entries = [...document.querySelectorAll<HTMLDetailsElement>("[data-research-entry]")];
+  const resultLabel = document.querySelector<HTMLElement>("#research-results");
+  const normalize = (value: string) => value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase("pt-BR").trim();
+  const updateResults = () => {
+    const query = normalize(queryInput?.value || "");
+    const category = statusSelect?.value || "all";
+    let visible = 0;
+    for (const entry of entries) {
+      const matches = (!query || (entry.dataset.search || "").includes(query)) && (category === "all" || entry.dataset.category === category);
+      entry.hidden = !matches;
+      if (matches) visible++;
+    }
+    if (resultLabel) resultLabel.textContent = `Mostrando ${visible} de ${entries.length} achados`;
+  };
+  queryInput?.addEventListener("input", updateResults);
+  statusSelect?.addEventListener("change", updateResults);
+</script>
+<style>
+  .research-counts,.research-findings,.research-boundaries,.research-catalog{margin:34px 0 42px;max-width:1050px;color:var(--atlas-ink)}.research-heading{max-width:780px}.research-heading h2,.research-findings h2,.research-boundaries h2,.research-catalog h2{margin:0 0 10px;font:500 clamp(1.6rem,3vw,2rem) var(--atlas-serif,Georgia,serif)}.research-heading p:last-child,.research-findings>p:not(.eyebrow),.research-boundaries>p:not(.eyebrow),.catalog-intro{max-width:82ch;color:var(--atlas-muted);line-height:1.75}.count-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px;margin:20px 0}.count-list div{display:grid;grid-template-columns:1fr auto;gap:5px 15px;padding:16px 0;border-top:1px solid var(--atlas-line)}.count-list dt{font-weight:650}.count-list dd{grid-column:2;grid-row:1;margin:0;color:var(--atlas-terra);font:500 1.65rem var(--atlas-serif,Georgia,serif)}.count-list small{grid-column:1/-1;color:var(--atlas-muted);line-height:1.55}.research-findings article{max-width:850px;padding:20px 0;border-bottom:1px solid var(--atlas-line)}.research-findings h3{margin:0 0 8px;font:500 1.25rem var(--atlas-serif,Georgia,serif)}.research-findings article>p:not(.citation){max-width:78ch;color:var(--atlas-muted);line-height:1.75}.citation{display:flex;flex-wrap:wrap;gap:8px 18px;margin:12px 0 0;font-size:.88rem}.research-boundaries{padding:20px 0;border-top:1px solid var(--atlas-line)}.research-boundaries a{margin-right:20px;font-weight:650}.catalog-controls{display:grid;grid-template-columns:1fr 1fr auto;gap:14px;align-items:end;margin:20px 0 15px;padding:16px 0;border-top:1px solid var(--atlas-line);border-bottom:1px solid var(--atlas-line)}.catalog-controls label{display:grid;gap:6px;font-size:.86rem;font-weight:650}.catalog-controls input,.catalog-controls select{min-height:42px;padding:8px 11px;border:1px solid #b8b9b4;border-radius:4px;background:var(--atlas-surface);color:var(--atlas-ink);font:inherit}.catalog-controls #research-results{margin:0;color:var(--atlas-muted);font-size:.82rem;white-space:nowrap}.research-record{padding:14px 0;border-bottom:1px solid var(--atlas-line)}.research-record summary{display:flex;gap:12px;align-items:baseline;cursor:pointer;list-style:none}.research-record summary::-webkit-details-marker{display:none}.research-record summary::after{content:"+";margin-left:auto;color:var(--atlas-terra);font-size:1.1rem}.research-record[open] summary::after{content:"−"}.research-record summary strong{font:500 1.05rem var(--atlas-serif,Georgia,serif)}.record-status{flex:0 0 auto;color:var(--atlas-terra);font-size:.68rem;font-weight:750;letter-spacing:.07em;text-transform:uppercase}.record-status.is-negative,.record-status.is-unlinked{color:#6c5861}.record-status.is-candidate{color:#795b32}.record-status.is-context{color:var(--atlas-muted)}.research-record>p{max-width:88ch;color:var(--atlas-muted);line-height:1.7}.research-record .record-locator,.research-record .record-limitation{font-size:.87rem}.research-record>a,.record-no-url{font-size:.86rem;font-weight:650}.research-record[hidden]{display:none!important}@media(max-width:700px){.count-list{grid-template-columns:1fr}.catalog-controls{grid-template-columns:1fr}.catalog-controls #research-results{white-space:normal}.research-record summary{align-items:flex-start;flex-direction:column;gap:5px}.research-record summary::after{display:none}}
+</style>

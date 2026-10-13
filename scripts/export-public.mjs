@@ -4,12 +4,13 @@ import { createHash } from 'node:crypto';
 import { mkdir, readFile, realpath, readdir, rmdir, unlink, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { execFileSync } from 'node:child_process';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const EXPECTED_INPUT_SHA = '2c063f6e0050fa6a3bec42c856160eb4a9b83eb22ae0c4d5155da1de81a575f9';
-const PUBLIC_PERSON_COUNT = 89;
-const PUBLIC_EDGE_COUNT = 118;
-const PUBLIC_FAMILY_COUNT = 20;
+const CORE_PERSON_COUNT = 89;
+const CORE_EDGE_COUNT = 118;
+const CORE_FAMILY_COUNT = 20;
 const PUBLIC_CLASSES = new Set(['transcrito do site', 'relato familiar', 'transcrito do documento fornecido', 'relato familiar com apoio indireto do site']);
 const ALLOWED_SOURCES = new Set(['S1','S2','S3','S4','S5','S6','S7','S8','S9','U2','U3','P1','P2','P3','P4','legacy-luigi','legacy-pasqua','legacy-dante','legacy-grandilia','legacy-zenaide','legacy-genealogia']);
 const PRIVATE_DOC_SOURCE_SEQUENCE = ['P4','P1','P2','P3'];
@@ -373,10 +374,10 @@ async function prepareDocuments(docs) {
   return { archiveItems, assets, publicFiles };
 }
 
-function buildSnapshot(canonical, docs, siteCatalog, assetBytes, legacy) {
-  if (Object.keys(canonical.pessoas || {}).length !== PUBLIC_PERSON_COUNT) throw new Error('Contagem pública de pessoas mudou; exige nova revisão explícita.');
-  if (canonical.parentescos?.length !== PUBLIC_EDGE_COUNT) throw new Error('Contagem de vínculos mudou; exige nova revisão explícita.');
-  if (Object.keys(canonical.familias || {}).length !== PUBLIC_FAMILY_COUNT) throw new Error('Contagem de agrupamentos mudou; exige nova revisão explícita.');
+function buildSnapshot(canonical, docs, siteCatalog, assetBytes, legacy, supplemental) {
+  if (Object.keys(canonical.pessoas || {}).length !== CORE_PERSON_COUNT) throw new Error('Contagem do núcleo de pessoas mudou; exige revisão editorial.');
+  if (canonical.parentescos?.length !== CORE_EDGE_COUNT) throw new Error('Contagem do núcleo de vínculos mudou; exige revisão editorial.');
+  if (Object.keys(canonical.familias || {}).length !== CORE_FAMILY_COUNT) throw new Error('Contagem do núcleo de agrupamentos mudou; exige revisão editorial.');
   const assetDigest = digest(assetBytes);
   const asset = { id: ASSET_ID, public_path: ASSET_PUBLIC_PATH, sha256: assetDigest, mime: 'image/png', bytes: assetBytes.length, alt: 'Recorte superior do diagrama GeneaA3, com Francesco, Luigi e irmãos no ramo de Bondeno.', caption: 'O diagrama é uma versão histórica; a identificação de pessoas com o mesmo nome em relatos familiares não é presumida.', rights_public_note: 'Derivado do diagrama histórico identificado por captura e SHA-256 no manifesto.' };
   const sourceMap = makeSources(canonical, docs, siteCatalog, legacy.assets, legacy.documentAssets || []);
@@ -403,6 +404,138 @@ function buildSnapshot(canonical, docs, siteCatalog, assetBytes, legacy) {
     if (id === 'elisa') label = 'Elisa Bernardino Zaniratti';
     return { id, label, preferred_name_assertion_id: `a-name-${id}`, claim_ids: [`a-name-${id}`], branch_ids: [], aliases: [] };
   });
+  const coreIds = new Set(people.map(p => p.id));
+  const knownPagePeople = new Map([
+    ['Esposito/Grandilia.htm','grandilia'],
+    ['Murucci/Zenaide1895.htm','zenaide'],
+    ['BRA/Edmondo1950B.htm','edmondo1950'],
+    ['BRA/FrancescoB.htm','francesco'],
+    ['BRA/Luigi1803B.htm','luigi'],
+    ['BRA/CustodeSanteB.htm','custode'],
+    ['BRA/ValentimB.htm','valentim'],
+    ['BRA/Dante1882B.htm','dante1882'],
+    ['BRA/PasquaMellaraB.htm','pasqua'],
+    ['BRA/MariaCavalliniB.htm','maria_cavallini'],
+    ['BRA/ErnestaGallieraB.htm','ernesta'],
+    ['BRA/Antonio1846B.htm','antonio1846'],
+    // These exact profile URLs are the already-adopted children in the 10-child
+    // Grandilia/Nicola family list; the legacy page is another transcription of
+    // those same people, not a second generation of namesakes.
+    ['Esposito/Luzia_Esposito.htm','luzia'],
+    ['Esposito/Ana_Maria.htm','ana_maria'],
+    ['Esposito/Helia_Esposito.htm','helia'],
+    ['Esposito/Orestes1915.htm','orestes'],
+    ['Esposito/Santina_Esposito.htm','santina'],
+    ['Esposito/MariaGrandiliaEsposito.htm','maria_esposito'],
+    ['Esposito/Valquiria.htm','valquiria'],
+    ['Esposito/LourdesEsposito.htm','lourdes_esposito'],
+    ['Esposito/Carmen_Esposito.htm','carmen'],
+    ['Esposito/Mafalda_Esposito.htm','mafalda'],
+    // The 16 names in this exact Murucci page reproduce the adopted S7 list.
+    ['Murucci/Zelmira_Murucci.htm','zenaide_child_1'],
+    ['Murucci/Auresmina.htm','zenaide_child_2'],
+    ['Murucci/Conceicao1933.htm','zenaide_child_3'],
+    ['Murucci/Darzina_Murucci.htm','zenaide_child_4'],
+    ['Murucci/MariaZenaide.htm','zenaide_child_5'],
+    ['Murucci/QuitaZenaide.htm','zenaide_child_6'],
+    ['Murucci/Geraldo1111.htm','zenaide_child_7'],
+    ['Murucci/AurecilZenaide.htm','zenaide_child_8'],
+    ['Murucci/PedroZenaide.htm','zenaide_child_9'],
+    ['Murucci/Anibal_Murucci.htm','zenaide_child_10'],
+    ['Murucci/Antonio1111.htm','zenaide_child_11'],
+    ['Murucci/Felipe1922.htm','zenaide_child_12'],
+    ['Murucci/Sebastiao1111.htm','zenaide_child_13'],
+    ['Murucci/JoaoZenaide.htm','zenaide_child_14'],
+    ['Murucci/JoseRainazo.htm','zenaide_child_15'],
+    ['Murucci/GabrielBelo.htm','zenaide_child_16'],
+    ...[
+      ['Giovanni16XX','giovanni16'],['Bartolomeo1','bartolomeo1'],['Domenica1724','domenica1724'],['Giovanna1725','giovanna1725'],['Giovanni1727','giovanni1727'],['Cattarina1729','cattarina1729'],['Angela1733','angela1733'],['Giovanni1741','giovanni1741'],['Bartolomeo1768','bartolomeo1768'],['Giuseppe1770','giuseppe1770'],['Domenico1772','domenico1772'],['Domenica1775','domenica1775'],['Antonio1777','antonio1777'],['Barbara1778','barbara1778'],['Maria1780','maria1780'],['Vittoria1782','vittoria1782'],['GiovanniBattista1803','giovanni1803'],['Bartolomeo1829','bartolomeo1829'],['Rosa1832','rosa1832'],['Francesco1833','francesco1833'],['Enrica1837','enrica1837'],
+    ].flatMap(([stem,id]) => [[`BRA/${stem}B.htm`,id],[`ITA/${stem}I.htm`,id]]),
+  ]);
+  const normalizedLegacyPath = legacyPath => String(legacyPath).replace(/^(?:Esposito|Murucci)\//,'');
+  // Andreza1976B and AndrezaB contain the same complete parent/sibling/spouse/
+  // child table; use the latter URL as their stable identity key.
+  const equivalentLegacyPaths = new Map([['BRA/Andreza1976B.htm','BRA/AndrezaB.htm']]);
+  const canonicalLegacyPath = legacyPath => equivalentLegacyPaths.get(String(legacyPath)) || String(legacyPath);
+  const pathId = legacyPath => {
+    const canonicalPath = canonicalLegacyPath(legacyPath);
+    return knownPagePeople.get(canonicalPath) || knownPagePeople.get(normalizedLegacyPath(canonicalPath)) || `hist-${digest(Buffer.from(normalizedLegacyPath(canonicalPath).toLowerCase())).slice(0,16)}`;
+  };
+  const profileByPath = new Map(supplemental.pages.filter(p => p.relations.length).map(p => [p.path.toLowerCase(),p]));
+  const pageByPath = new Map(supplemental.pages.map(p => [p.path.toLowerCase(),p]));
+  const labelsByPath = new Map();
+  function setPathLabel(legacyPath, label, priority) {
+    if (!legacyPath || !label) return;
+    const key = legacyPath.toLowerCase();
+    const old = labelsByPath.get(key);
+    if (!old || priority > old.priority) labelsByPath.set(key,{ label: cleanName(label), priority });
+  }
+  for (const page of supplemental.pages) {
+    if (page.title && !page.tree_map) setPathLabel(page.path,page.title,page.relations.length ? 4 : 3);
+    for (const relation of page.relations) for (const ref of relation.names) if (ref.target) setPathLabel(ref.target,ref.label,2);
+    for (const ref of page.map_nodes || []) if (ref.target && ref.label && !/^(?:nato|nasc|born|morto|morte|n\.?\s*\d)/i.test(ref.label)) setPathLabel(ref.target,ref.label,1);
+  }
+  const linkedPaths = new Set();
+  for (const page of supplemental.pages) {
+    if (page.relations.length) linkedPaths.add(page.path.toLowerCase());
+    for (const relation of page.relations) for (const ref of relation.names) if (ref.target) linkedPaths.add(ref.target.toLowerCase());
+    for (const ref of page.map_nodes || []) if (ref.target) linkedPaths.add(ref.target.toLowerCase());
+  }
+  const supplementalPeople = [];
+  const unlinkedIds = new Map();
+  function unlinkedId(pagePath, role, label, anchor = '') {
+    const normalizedLabel = cleanName(label).toLocaleLowerCase('pt-BR');
+    if (role === 'parent' && normalizedLabel === 'ernesta galliera' && anchor === 'co-parent:custode') return 'ernesta';
+    if (role === 'parent' && normalizedLabel === 'maria cavallini' && pagePath === 'BRA/Antonio1846B.htm' && anchor === 'co-parent:luigi') return 'maria_cavallini';
+    if (role === 'spouse' && normalizedLabel === 'felipe murucci' && pagePath === 'Murucci/Zenaide1895.htm') return 'felipe_murucci';
+    if (role === 'spouse' && normalizedLabel === 'flora salani' && pagePath === 'BRA/Antonio1846B.htm') {
+      const key='parent|flora salani|co-parent:antonio1846';
+      if (!unlinkedIds.has(key)) unlinkedIds.set(key,`hist-ref-${digest(Buffer.from(key)).slice(0,16)}`);
+      return unlinkedIds.get(key);
+    }
+    const key = `${role}|${cleanName(label).toLowerCase()}|${anchor || pagePath.toLowerCase()}`;
+    if (!unlinkedIds.has(key)) unlinkedIds.set(key,`hist-ref-${digest(Buffer.from(key)).slice(0,16)}`);
+    return unlinkedIds.get(key);
+  }
+  function unlinkedAnchor(page, role, subjectId) {
+    const parents=page.relations.find(r=>r.role==='parent')?.names.filter(n=>n.target).map(n=>pathId(n.target)).sort() || [];
+    const spouses=page.relations.find(r=>r.role==='spouse')?.names.filter(n=>n.target).map(n=>pathId(n.target)).sort() || [];
+    if (role==='parent' && parents.length) return `co-parent:${parents.join('|')}`;
+    if (role==='sibling' && parents.length) return `parents:${parents.join('|')}`;
+    if (role==='spouse') return `spouse-of:${subjectId}`;
+    if (role==='child' && (subjectId || spouses.length)) return `parents:${[subjectId,...spouses].sort().join('|')}`;
+    return '';
+  }
+  for (const page of supplemental.pages) {
+    if (page.relations.length) {
+      const id = pathId(page.path);
+      if (!coreIds.has(id) && !supplementalPeople.some(p => p.id === id)) {
+        supplementalPeople.push({ id, label: cleanName(page.title) || 'Pessoa citada em página histórica', preferred_name_assertion_id: `a-name-${id}`, claim_ids: [`a-name-${id}`], branch_ids: [], aliases: [], _name_source_path: page.path });
+      }
+    }
+    const subjectId = pathId(page.path);
+    for (const relation of page.relations) for (const ref of relation.names) {
+      const id = ref.target ? pathId(ref.target) : unlinkedId(page.path,relation.role,ref.label,unlinkedAnchor(page,relation.role,subjectId));
+      if (!coreIds.has(id) && !supplementalPeople.some(p => p.id === id)) {
+        const sourcePath = ref.target && profileByPath.get(ref.target.toLowerCase()) ? profileByPath.get(ref.target.toLowerCase()).path : page.path;
+        supplementalPeople.push({ id, label: ref.target ? (labelsByPath.get(ref.target.toLowerCase())?.label || 'Pessoa referenciada no site histórico') : cleanName(ref.label), preferred_name_assertion_id: `a-name-${id}`, claim_ids: [`a-name-${id}`], branch_ids: [], aliases: [], _name_source_path: sourcePath, _unlinked: !ref.target });
+      }
+    }
+    for (const ref of page.map_nodes || []) if (ref.target) {
+      const id = pathId(ref.target);
+      if (!coreIds.has(id) && !supplementalPeople.some(p => p.id === id)) {
+        const label = labelsByPath.get(ref.target.toLowerCase())?.label;
+        if (!label) continue;
+        const sourcePath = pageByPath.get(ref.target.toLowerCase())?.path || page.path;
+        supplementalPeople.push({ id, label, preferred_name_assertion_id: `a-name-${id}`, claim_ids: [`a-name-${id}`], branch_ids: [], aliases: [], _name_source_path: sourcePath, _map_only: !profileByPath.has(ref.target.toLowerCase()) });
+      }
+    }
+  }
+  const edmondoId = 'edmondo1950';
+  if (!coreIds.has(edmondoId) && !supplementalPeople.some(p => p.id === edmondoId)) supplementalPeople.push({ id: edmondoId, label: 'Edmondo Lorenzo Zaniratti', preferred_name_assertion_id: `a-name-${edmondoId}`, claim_ids: [`a-name-${edmondoId}`], branch_ids: [], aliases: [], _name_source_path: 'BRA/Edmondo1950B.htm' });
+  const edmondoProfile = profileByPath.get('bra/edmondo1950b.htm');
+  if (!edmondoProfile && !supplementalPeople.some(p => p.id === edmondoId)) throw new Error('Não foi encontrado Edmondo Lorenzo no corpus fornecido.');
+  for (const person of supplementalPeople) people.push(person);
   const peopleById = new Map(people.map(p => [p.id, p]));
   const assertions = [];
   const nameClaims = new Map();
@@ -412,10 +545,19 @@ function buildSnapshot(canonical, docs, siteCatalog, assetBytes, legacy) {
     if (refs.length) nameClaims.set(claim.pessoa_id, refs);
   }
   for (const person of people) {
-    const refs = nameClaims.get(person.id) || parseRefs(canonical.pessoas[person.id].sources?.join(';') || '').filter(r => ALLOWED_SOURCES.has(r.id) && sourceMap.has(r.id));
-    if (!refs.length) throw new Error(`Nome sem fonte pública permitida: ${person.id}`);
+    const refs = nameClaims.get(person.id) || parseRefs(canonical.pessoas[person.id]?.sources?.join(';') || '').filter(r => ALLOWED_SOURCES.has(r.id) && sourceMap.has(r.id));
+    if (!refs.length && coreIds.has(person.id)) throw new Error(`Nome sem fonte pública permitida: ${person.id}`);
+    if (!refs.length) continue;
     const cids = [...new Set(refs.map(citation))];
     assertions.push({ id: person.preferred_name_assertion_id, subject_kind: 'person', subject_id: person.id, predicate: 'preferred_name', object_person_id: null, literal: person.label, date: null, interpretation: 'preferred', evidence_class: 'nome selecionado para esta edição; grafia conforme as fontes citadas', citation_ids: cids, public_note: '' });
+  }
+  for (const person of supplementalPeople) {
+    if (assertions.some(a => a.id === person.preferred_name_assertion_id)) continue;
+    const sourcePath = person._name_source_path;
+    const sourceId = sourcePath && legacySourceId(sourcePath);
+    if (!sourceId || !sourceMap.has(sourceId)) throw new Error(`Nome de referência sem página-fonte pública: ${person.id}`);
+    const ref = citation({ id: sourceId, locator: person._unlinked ? 'tabela de relações, nome sem link individual' : person._map_only ? 'mapa histórico, destino sem página recuperada' : 'título ou referência de página histórica' });
+    assertions.push({ id: person.preferred_name_assertion_id, subject_kind: 'person', subject_id: person.id, predicate: 'preferred_name', object_person_id: null, literal: person.label, date: null, interpretation: person._unlinked || person._map_only ? 'annotation' : 'preferred', evidence_class: person._unlinked || person._map_only ? 'referência literal em página histórica; identidade não individualizada' : 'página histórica recuperada', citation_ids: [ref], public_note: person._unlinked || person._map_only ? 'Referência estável a uma menção ou destino sem página individual recuperada; não equivale a identidade confirmada.' : '' });
   }
   const nameVariants = [
     { id: 'reni', predicate: 'alternate_name', literal: 'Reni Zanirate Galo', refs: [{ id: 'P2', locator: 'p. 1' }], interpretation: 'alternative', evidence: 'grafia transcrita de documento fornecido' },
@@ -460,7 +602,7 @@ function buildSnapshot(canonical, docs, siteCatalog, assetBytes, legacy) {
     peopleById.get(edge.child).claim_ids.push(id);
     parentEdges.push({ parent: edge.parent, child: edge.child, id });
   }
-  if (parentEdges.length !== PUBLIC_EDGE_COUNT) throw new Error('Nem todos os vínculos autorizados foram projetados.');
+  if (parentEdges.length !== CORE_EDGE_COUNT) throw new Error('Nem todos os vínculos do núcleo foram projetados.');
   const attivitaRefs = [citation({ id: 'U2', locator: 'relato familiar' }), citation({ id: 'U3', locator: 'relato familiar adicional' })];
   assertions.push({ id: 'a-memory-attivita-custode', subject_kind: 'person', subject_id: 'custode', predicate: 'travel_memory_not_confirmed', object_person_id: null, literal: 'A família relata que Custode chegou ao Brasil no vapor Attività; a lista de passageiros e a data da viagem ainda não foram localizadas no acervo.', date: null, interpretation: 'annotation', evidence_class: 'relato familiar', citation_ids: attivitaRefs, public_note: '' });
   peopleById.get('custode').claim_ids.push('a-memory-attivita-custode');
@@ -470,21 +612,28 @@ function buildSnapshot(canonical, docs, siteCatalog, assetBytes, legacy) {
   assertions.push({ id: 'a-conflict-reni-father-name', subject_kind: 'person', subject_id: 'reni', predicate: 'father_name_on_death_record', object_person_id: null, literal: 'Vicentim Zanirate', date: null, interpretation: 'disputed', evidence_class: 'transcrição de óbito divergente do registro de casamento', citation_ids: [citation({ id: 'P2', locator: 'pp. 1, 2 e 4' })], public_note: 'O registro de casamento P2 p. 1 identifica Valentim; as páginas de óbito transcrevem Vicentim. A divergência não altera a filiação adotada.' });
   peopleById.get('reni').claim_ids.push('a-conflict-reni-father-name');
 
-  // Components stay distinct. The isolated Gallo record remains unlinked rather than being attached by surname.
-  const adjacency = new Map(people.map(p => [p.id, new Set()]));
+  // Build navigation components from adopted parentage plus explicit unions.
+  // A spouse is included only when the marriage itself is an adopted assertion.
+  const adjacency = new Map(people.filter(p => coreIds.has(p.id)).map(p => [p.id, new Set()]));
   for (const edge of parentEdges) { adjacency.get(edge.parent).add(edge.child); adjacency.get(edge.child).add(edge.parent); }
+  const explicitCoreUnions = [
+    ['custode','ernesta'],['grandilia','nicola'],['reni','joao_galo'],
+    ['dante1882','maria_gallo'],['valentim','elisa'],['luigi','pasqua'],
+    ['zenaide','felipe_murucci'],
+  ];
+  for (const [left,right] of explicitCoreUnions) if (adjacency.has(left) && adjacency.has(right)) { adjacency.get(left).add(right); adjacency.get(right).add(left); }
   const components = [];
   const seen = new Set();
-  for (const person of people) {
+  for (const person of people.filter(p => coreIds.has(p.id))) {
     if (seen.has(person.id)) continue;
     const stack = [person.id], ids = [];
     while (stack.length) { const id = stack.pop(); if (seen.has(id)) continue; seen.add(id); ids.push(id); stack.push(...adjacency.get(id)); }
     components.push(ids.sort());
   }
   const branches = components.map(ids => {
-    const id = ids.includes('giovanni16') ? 'ramo-salvatonica-san-biagio' : ids.includes('custode') ? 'ramo-francesco-bondeno-galo' : 'ramo-gallo-sem-vinculo';
-    const label = id === 'ramo-salvatonica-san-biagio' ? 'Salvatonica / San Biagio' : id === 'ramo-francesco-bondeno-galo' ? 'Francesco / Bondeno' : 'Registro Gallo sem vínculo demonstrado';
-    const note = id === 'ramo-salvatonica-san-biagio' ? 'Ramo apresentado separadamente; nenhuma ligação hipotética ao ramo Francesco/Bondeno foi incluída.' : id === 'ramo-gallo-sem-vinculo' ? 'Pessoa mantida em separado, sem atribuição de parentesco por sobrenome.' : 'Descendência em Bondeno com ramos por casamento. Relações e datas têm origem consultável.';
+    const id = ids.includes('giovanni16') ? 'ramo-salvatonica-san-biagio' : ids.includes('custode') ? 'ramo-francesco-bondeno-galo' : `ramo-historico-${digest(Buffer.from(ids.join('|'))).slice(0,10)}`;
+    const label = id === 'ramo-salvatonica-san-biagio' ? 'Salvatonica / San Biagio' : id === 'ramo-francesco-bondeno-galo' ? 'Francesco / Bondeno' : 'Pessoas em fichas relacionadas';
+    const note = id === 'ramo-salvatonica-san-biagio' ? 'Ramo apresentado separadamente; nenhuma ligação hipotética ao ramo Francesco/Bondeno foi incluída.' : id === 'ramo-francesco-bondeno-galo' ? 'Descendência em Bondeno com ramos por casamento. Relações e datas têm origem consultável.' : 'Pessoas agrupadas por relações familiares explicitamente citadas.';
     for (const pid of ids) peopleById.get(pid).branch_ids.push(id);
     return { id, label, description: 'Conjunto de pessoas ligado por afirmações de parentesco citadas.', person_ids: ids, note };
   });
@@ -564,6 +713,207 @@ function buildSnapshot(canonical, docs, siteCatalog, assetBytes, legacy) {
       events.push({ id: eventId, type: 'marriage', subject_kind: 'group', subject_id: group.id, claim_ids: [assertionId] });
       group.event_ids = [eventId];
     }
+  }
+
+  // Integrate recovered legacy relation tables and historical image maps as source-backed records.
+  // A profile path is the stable identity key; map position and surnames never create parentage.
+  const supplementalEdges = new Set();
+  const unionGroups = new Map();
+  const extraBranches = [];
+  function addLegacyRelation(page, role, fromId, toId, index) {
+    const sourceId = legacySourceId(page.path);
+    if (!sourceMap.has(sourceId)) throw new Error(`Página de parentesco sem ficha pública: ${page.path}`);
+    const citationId = citation({ id: sourceId, locator: `tabela de relações, ${role}` });
+    const edgeKey = `${role}|${fromId}|${toId}|${sourceId}`;
+    if (supplementalEdges.has(edgeKey)) return;
+    supplementalEdges.add(edgeKey);
+    const assertionId = `a-legacy-${digest(Buffer.from(`${edgeKey}|${index}`)).slice(0,18)}`;
+    if (role === 'parent' || role === 'child') {
+      const childId = role === 'parent' ? fromId : toId;
+      const parentId = role === 'parent' ? toId : fromId;
+      const adoptedParents = parentEdges.filter(edge => edge.child === childId).map(edge => edge.parent);
+      const conflict = coreIds.has(childId) && adoptedParents.length > 0 && !adoptedParents.includes(parentId);
+      assertions.push({ id: assertionId, subject_kind: 'person', subject_id: childId, predicate: 'child_of', object_person_id: parentId, literal: '', date: null, interpretation: conflict ? 'disputed' : 'preferred', evidence_class: 'transcrito do site', citation_ids: [citationId], public_note: conflict ? 'A página histórica apresenta esta filiação; a edição familiar atual mantém separadamente a filiação adotada.' : '' });
+    } else if (role === 'sibling') {
+      assertions.push({ id: assertionId, subject_kind: 'person', subject_id: fromId, predicate: 'sibling_of', object_person_id: toId, literal: '', date: null, interpretation: 'preferred', evidence_class: 'transcrito do site', citation_ids: [citationId], public_note: '' });
+    }
+    peopleById.get(fromId)?.claim_ids.push(assertionId);
+    peopleById.get(toId)?.claim_ids.push(assertionId);
+  }
+  for (const page of supplemental.pages) {
+    if (!page.relations.length) continue;
+    const subjectId = pathId(page.path);
+    if (!peopleById.has(subjectId)) continue;
+    const srcId = legacySourceId(page.path);
+    const pageCite = citation({ id: srcId, locator: 'ficha biográfica e tabela de relações' });
+    const relationIds = { parent: [], sibling: [], spouse: [], child: [] };
+    let ordinal = 0;
+    for (const relation of page.relations) {
+      for (const ref of relation.names) {
+        ordinal += 1;
+        const targetId = ref.target ? pathId(ref.target) : unlinkedId(page.path,relation.role,ref.label,unlinkedAnchor(page,relation.role,subjectId));
+        if (!peopleById.has(targetId)) continue;
+        relationIds[relation.role]?.push(targetId);
+        if (relation.role === 'parent') addLegacyRelation(page,'parent',subjectId,targetId,ordinal);
+        else if (relation.role === 'child') addLegacyRelation(page,'child',subjectId,targetId,ordinal);
+        else if (relation.role === 'sibling') addLegacyRelation(page,'sibling',subjectId,targetId,ordinal);
+        else if (relation.role === 'spouse' && targetId !== subjectId) {
+          const pair = [subjectId,targetId].sort();
+          const key = pair.join('|');
+          let group = unionGroups.get(key);
+          if (!group) {
+            const groupId = `legacy-union-${digest(Buffer.from(key)).slice(0,16)}`;
+            const assertionId = `a-legacy-marriage-${digest(Buffer.from(`${key}|${srcId}`)).slice(0,16)}`;
+            const eventId = `evt-legacy-marriage-${digest(Buffer.from(key)).slice(0,16)}`;
+            assertions.push({ id: assertionId, subject_kind: 'group', subject_id: groupId, predicate: 'marriage', object_person_id: null, literal: 'União indicada na coluna de cônjuge da página histórica; sem data informada.', date: null, interpretation: 'preferred', evidence_class: 'relação explícita na tabela da página histórica', citation_ids: [pageCite], public_note: '' });
+            events.push({ id: eventId, type: 'marriage', subject_kind: 'group', subject_id: groupId, claim_ids: [assertionId] });
+            group = { id: groupId, kind: 'union', participant_ids: pair, participants: pair.map(person_id => ({ person_id, role: 'spouse' })), event_ids: [eventId], note: 'União indicada explicitamente na coluna de cônjuge de uma ficha histórica; sem data indicada.' };
+            unionGroups.set(key,group); groups.push(group);
+            peopleById.get(subjectId)?.claim_ids.push(assertionId); peopleById.get(targetId)?.claim_ids.push(assertionId);
+          }
+        }
+      }
+    }
+    const parents = [...new Set(relationIds.parent)];
+    const siblings = [...new Set(relationIds.sibling)];
+    const spouseIds = [...new Set(relationIds.spouse)];
+    const descendants = [...new Set(relationIds.child)];
+    const relationshipArchive = legacy.archiveItems.find(item => item.legacy_path.toLowerCase() === page.path.toLowerCase());
+    if (relationshipArchive) for (const relatedId of [...parents,...siblings,...spouseIds,...descendants]) {
+      if (peopleById.has(relatedId) && !relationshipArchive.person_ids.includes(relatedId)) relationshipArchive.person_ids.push(relatedId);
+    }
+    // Attach this recovered page and its source to its path-confirmed person.
+    const archivePage = legacy.archiveItems.find(item => item.legacy_path === page.path);
+    if (archivePage && !archivePage.person_ids.includes(subjectId)) archivePage.person_ids.push(subjectId);
+    for (const image of page.images || []) {
+      if (!image.target || !/\.(?:gif|jpe?g|png)$/i.test(image.target)) continue;
+      const archiveImage = legacy.archiveItems.find(item => item.legacy_path.toLowerCase() === image.target.toLowerCase());
+      if (archiveImage && !archiveImage.person_ids.includes(subjectId)) archiveImage.person_ids.push(subjectId);
+    }
+  }
+  // Legacy parental groups are a projection of exact preferred child_of claims.
+  // Sibling rows remain sibling_of assertions and never become children of the
+  // subject's parents; each child is grouped only with its own complete parent set.
+  const legacyChildrenByParentSet = new Map();
+  const preferredParentSetByChild = new Map();
+  for (const claim of assertions.filter(a => a.predicate === 'child_of' && a.interpretation === 'preferred')) {
+    const set = preferredParentSetByChild.get(claim.subject_id) || new Set();
+    set.add(claim.object_person_id);
+    preferredParentSetByChild.set(claim.subject_id,set);
+  }
+  for (const claim of assertions.filter(a => a.predicate === 'child_of' && a.interpretation === 'preferred' && a.id.startsWith('a-legacy-'))) {
+    const parentSet = [...(preferredParentSetByChild.get(claim.subject_id) || [])].sort();
+    if (!parentSet.length) continue;
+    const key = parentSet.join('|');
+    const children = legacyChildrenByParentSet.get(key) || new Set();
+    children.add(claim.subject_id);
+    legacyChildrenByParentSet.set(key,children);
+  }
+  for (const [parentKey, childSet] of legacyChildrenByParentSet) {
+    const parentIds = parentKey.split('|');
+    const childIds = [...childSet].sort();
+    const participantIds = [...parentIds,...childIds];
+    const alreadyCovered = groups.some(group => group.kind === 'parental_group' && participantIds.every(id => group.participant_ids.includes(id)) && parentIds.every(id => group.participants.some(p => p.person_id === id && p.role === 'parent')) && childIds.every(id => group.participants.some(p => p.person_id === id && p.role === 'child')));
+    if (alreadyCovered) continue;
+    const groupKey = `${parentIds.join('|')}::${childIds.join('|')}`;
+    const groupId = `legacy-family-${digest(Buffer.from(groupKey)).slice(0,16)}`;
+    groups.push({ id: groupId, kind: 'parental_group', participant_ids: participantIds, participants: participantIds.map(person_id => ({ person_id, role: parentIds.includes(person_id) ? 'parent' : 'child' })), event_ids: [], note: 'Grupo formado somente por filiações preferidas citadas com o mesmo conjunto exato de pais; não implica casamento.' });
+  }
+  // Attach every recovered page/image whose exact legacy path resolves to an
+  // existing adopted or path-confirmed person, including biographies with no
+  // relation table of their own (for example, the children in the Esposito and
+  // Murucci family lists).
+  for (const page of supplemental.pages) {
+    const subjectId = pathId(page.path);
+    if (!peopleById.has(subjectId)) continue;
+    const archivePage = legacy.archiveItems.find(item => item.legacy_path.toLowerCase() === page.path.toLowerCase());
+    if (archivePage && !archivePage.person_ids.includes(subjectId)) archivePage.person_ids.push(subjectId);
+    for (const image of page.images || []) {
+      if (!image.target || !/\.(?:gif|jpe?g|png)$/i.test(image.target)) continue;
+      const archiveImage = legacy.archiveItems.find(item => item.legacy_path.toLowerCase() === image.target.toLowerCase());
+      if (archiveImage && !archiveImage.person_ids.includes(subjectId)) archiveImage.person_ids.push(subjectId);
+    }
+  }
+  // Edmondo Lorenzo is the site author identified by his own recovered profile; the family testimony
+  // is kept as a separate place report and does not add parents or an adoption relationship.
+  const edmondoSource = legacySourceId('BRA/Edmondo1950B.htm');
+  if (peopleById.has('edmondo1950') && sourceMap.has(edmondoSource)) {
+    const authorCitation = citation({ id: edmondoSource, locator: 'biografia histórica: autoria do site' });
+    const residenceCitation = citation({ id: 'U2', locator: 'relato familiar sobre Edmondo e Milão' });
+    for (const [predicate,literal,citationId,evidence] of [
+      ['role','Autor material do site familiar histórico.',authorCitation,'biografia publicada no site histórico'],
+      ['residence_place','Milão',residenceCitation,'relato familiar fornecido'],
+    ]) {
+      const claimId = `a-edmondo1950-${predicate}`;
+      assertions.push({ id: claimId, subject_kind: 'person', subject_id: 'edmondo1950', predicate, object_person_id: null, literal, date: null, interpretation: 'annotation', evidence_class: evidence, citation_ids: [citationId], public_note: '' });
+      peopleById.get('edmondo1950').claim_ids.push(claimId);
+    }
+  }
+
+  const treeEditionCounts = {
+    'BRA/AlbSBiagioB.htm': { historical_person_count: 21, count_edition_label: 'ForestaB, captura de 19/05/2005' },
+    'BRA/AlberoB.htm': { historical_person_count: 100, count_edition_label: 'ForestaI, captura de 25/10/2004' },
+    'BRA/AlberoBondenoB.htm': { historical_person_count: 127, count_edition_label: 'ForestaB, captura de 19/05/2005' },
+    'BRA/AlbAlegreB.htm': { historical_person_count: 71, count_edition_label: 'ForestaB, captura de 19/05/2005', historical_counts: [{ count: 66, edition: 'ForestaI, captura de 25/10/2004' }] },
+    'BRA/AlbGiobatB.htm': { historical_person_count: 24, count_edition_label: 'ForestaB, captura de 19/05/2005' },
+  };
+  const mainTreeIds = new Map([
+    ['BRA/AlbSBiagioB.htm','tree-san-biagio'],['ITA/AlbSBiagioI.htm','tree-san-biagio'],
+    ['BRA/AlberoB.htm','tree-francesco-bondeno'],['BRA/AlberoBondenoB.htm','tree-francesco-bondeno'],
+    ['BRA/AlbAlegreB.htm','tree-porto-alegre'],['BRA/AlbGiobatB.htm','tree-giovanni-battista'],
+  ]);
+  const mainTreePaths = new Set(['BRA/AlbSBiagioB.htm','BRA/AlberoBondenoB.htm','BRA/AlbAlegreB.htm','BRA/AlbGiobatB.htm']);
+  const branchByTreeId = new Map();
+  const mapReferenceNotes = [];
+  for (const page of supplemental.pages.filter(p => p.tree_map)) {
+    const members = [...new Set((page.map_nodes || []).filter(n => n.target).map(n => pathId(n.target)))].filter(id => peopleById.has(id));
+    const unresolvedReferences = (page.map_nodes || []).filter(n => n.target && !peopleById.has(pathId(n.target))).map(n => ({ target: n.target, label: n.label || null, status: 'named_destination_missing_or_unreadable' }));
+    const sourceId = legacySourceId(page.path);
+    const archiveId = `legacy-${page.path.toLowerCase().replace(/[^a-z0-9]+/g,'-')}`;
+    const assetIds = legacy.assets.filter(a => (page.images || []).some(i => i.target && a.public_path.endsWith(i.target.replaceAll('/','-')))).map(a => a.id);
+    const edition = treeEditionCounts[page.path] || {};
+    const treeId = mainTreeIds.get(page.path) || `tree-sub-${digest(Buffer.from(page.path.toLowerCase())).slice(0,12)}`;
+    let branch = branchByTreeId.get(treeId);
+    if (!branch) {
+      branch = { id: `tree-${digest(Buffer.from(treeId)).slice(0,12)}`, tree_id: treeId, is_original_tree: mainTreePaths.has(page.path), category: mainTreePaths.has(page.path) ? 'original_tree' : 'subtree_or_edition', label: page.title || 'Árvore histórica', description: page.description || 'Árvore genealógica preservada do site histórico.', person_ids: [], note: 'A quantidade indicada pertence à edição histórica citada e não representa o total atual deste atlas.', source_language: page.path.startsWith('ITA/') || /^albero genealogico/i.test(page.title) ? 'it' : 'pt', historical_person_count: edition.historical_person_count ?? null, count_edition_label: edition.count_edition_label ?? null, count_source_id: edition.historical_person_count ? legacySourceId(edition.count_edition_label?.startsWith('ForestaI') ? 'ITA/ForestaI.htm' : 'BRA/ForestaB.htm') : sourceId, historical_counts: edition.historical_counts || [], origin_source_ids: [], asset_ids: [], archive_item_ids: [], legacy_urls: [], unresolved_references: [], diagram_transcriptions: [], region_label: treeId === 'tree-san-biagio' ? 'San Biagio di Bondeno, Ferrara' : treeId === 'tree-francesco-bondeno' ? 'Bondeno, Ferrara; descendência em Minas Gerais e outros ramos no Brasil' : treeId === 'tree-porto-alegre' ? 'Rio Grande do Sul' : treeId === 'tree-giovanni-battista' ? 'Toscana e Lazio' : null, country_label: treeId === 'tree-porto-alegre' ? 'Brasil' : treeId === 'tree-francesco-bondeno' ? 'Itália e Brasil' : ['tree-san-biagio','tree-giovanni-battista'].includes(treeId) ? 'Itália' : null };
+      branchByTreeId.set(treeId,branch); extraBranches.push(branch);
+    } else if (edition.historical_person_count && !mainTreePaths.has(page.path)) {
+      branch.historical_counts = [...(branch.historical_counts || []), { count: edition.historical_person_count, edition: edition.count_edition_label }];
+    }
+    if (mainTreePaths.has(page.path)) {
+      if (branch.historical_person_count && branch.count_edition_label && branch.count_edition_label !== edition.count_edition_label) branch.historical_counts = [...(branch.historical_counts || []), { count: branch.historical_person_count, edition: branch.count_edition_label }];
+      branch.historical_person_count = edition.historical_person_count ?? branch.historical_person_count;
+      branch.count_edition_label = edition.count_edition_label ?? branch.count_edition_label;
+      branch.count_source_id = edition.historical_person_count ? legacySourceId(edition.count_edition_label?.startsWith('ForestaI') ? 'ITA/ForestaI.htm' : 'BRA/ForestaB.htm') : branch.count_source_id;
+      branch.is_original_tree=true; branch.category='original_tree';
+      branch.label=page.title || branch.label; branch.description=page.description || branch.description;
+    }
+    branch.person_ids = [...new Set([...branch.person_ids,...members])];
+    branch.origin_source_ids = [...new Set([...branch.origin_source_ids,sourceId,...(edition.historical_person_count ? [legacySourceId(page.path.startsWith('ITA/') ? 'ITA/ForestaI.htm' : 'BRA/ForestaB.htm')] : [])])];
+    branch.asset_ids = [...new Set([...branch.asset_ids,...assetIds])];
+    branch.archive_item_ids = [...new Set([...branch.archive_item_ids,archiveId])];
+    branch.legacy_urls = [...new Set([...branch.legacy_urls,page.path])];
+    branch.unresolved_references.push(...unresolvedReferences);
+    const diagramLabels = {
+      'BRA/AlberoB.htm': { asset_path: 'Foto/GeneaA3.gif', names: ['Francesco','Luigi','Maria','Carlo','Leonilde','Antonio','Palmira','Sigismondo','Albertina','Gilberto','Nadia','Angelica','Edmondo','Sante','Clarice','Deulma','Deulmo','Leonida','Orlando','Irene','Paolo','Miriam','Mario','Bianca','Emanuela','Anna','Adelina','Dircea','Giovanna','Ermelinda','Agostino','Dante','Pasqua','Aristodemo','Annunziata','Diletta','Enzo','Alvaro','Custode Sante','Ermanno','Ugo','Umberto','Daniele','Grandilia','Ulisse','Ernesto','Zenaide','Elpidio','Custódio','Jair','Guanair','Devanir','Devair','Genair','Anair','Sebastião','Creusa','Gerci','Valdemar','Jorge Ailton','Paulo Henrique','Edmar','Helena','Laurides','José Carlos','Laerte','Hilário','Geraldo','Cynthia','Vinicius','Felipe','Débora','Viviane','Ângelo','Amanda','Lourdes','Iolanda','Maria Hilda','Moisés'], uncertain_labels: ['Dorselina'] },
+      'BRA/AlbSBiagioB.htm': { asset_path: 'Foto/AlbBiagio.gif', names: ['Giovanni','Bartolomeo','Domenica','Giovanna','Cattarina','Angela','Giuseppe','Domenico','Antonio','Barbara','Maria','Vittoria','Rosa','Francesco','Enrica','Matilde'], uncertain_labels: [] },
+    }[page.path];
+    if (diagramLabels) {
+      const imageSourceId=legacySourceId(diagramLabels.asset_path);
+      const diagramAsset=legacy.assets.find(a=>a.public_path.endsWith(diagramLabels.asset_path.replaceAll('/','-')));
+      if (diagramAsset && sourceMap.has(imageSourceId)) branch.diagram_transcriptions.push({ asset_id: diagramAsset.id, source_id: imageSourceId, citation_id: citation({ id: imageSourceId, locator: 'rótulos legíveis no diagrama; sem associação com destinos/áreas' }), method: 'transcrição visual', confidence_note: 'Os nomes foram lidos na imagem; as áreas clicáveis não correspondem com segurança a cada rótulo. A lista não cria identidade nem parentesco.', names: diagramLabels.names, uncertain_labels: diagramLabels.uncertain_labels });
+    }
+    for (const id of members) if (!peopleById.get(id).branch_ids.includes(branch.id)) peopleById.get(id).branch_ids.push(branch.id);
+    mapReferenceNotes.push(...unresolvedReferences.map(ref => ({ source_path: page.path, ...ref })));
+  }
+  const mappedPersonIds = new Set(extraBranches.flatMap(branch => branch.person_ids));
+  const unassignedProfiles = [...new Set(supplemental.pages.filter(p => p.relations.length).map(p => pathId(p.path)))].filter(id => peopleById.has(id) && !mappedPersonIds.has(id));
+  if (unassignedProfiles.length) {
+    const branchId='legacy-profiles-unassigned';
+    const unassignedPaths=supplemental.pages.filter(p => p.relations.length && unassignedProfiles.includes(pathId(p.path)));
+    const branch={ id: branchId, tree_id: null, is_original_tree: false, category: 'unassigned_profiles', label: 'Fichas históricas sem árvore associada', description: 'Pessoas identificadas em fichas biográficas cujo vínculo com uma das árvores originais não foi estabelecido.', person_ids: unassignedProfiles, note: 'Fichas preservadas sem atribuição de ramo por sobrenome ou semelhança de nome.', source_language: 'pt', historical_person_count: null, count_edition_label: null, count_source_id: null, historical_counts: [], origin_source_ids: [...new Set(unassignedPaths.map(p => legacySourceId(p.path)))], asset_ids: [], archive_item_ids: unassignedPaths.map(p => `legacy-${p.path.toLowerCase().replace(/[^a-z0-9]+/g,'-')}`), legacy_urls: unassignedPaths.map(p => p.path), unresolved_references: [] };
+    for (const id of unassignedProfiles) if (!peopleById.get(id).branch_ids.includes(branchId)) peopleById.get(id).branch_ids.push(branchId);
+    extraBranches.push(branch);
   }
 
   const narrativeFields = new Set(['emigracao','emigracao_navio','criado_por','casamento_e_descendencia','correcao_identidade_site','memoria_lista_passageiros','residencia_e_naturalidade_relato','memoria_geografia_familiar','divergencia_geografia_familiar','pista_overlay_registro_populacional','anexo_nota']);
@@ -656,22 +1006,46 @@ function buildSnapshot(canonical, docs, siteCatalog, assetBytes, legacy) {
   const editorialOpenings = {
     reni: {
       text: 'Reni Zaniratti Galo era filha de Valentim Zaniratti e Elisa Bernardino. Casou-se com João Galo e teve cinco filhos: Fernando, Vera, Elcio, José Airson e Rejane. Seu registro situa seu nascimento em Santa Clara e seu falecimento em Petrópolis.',
-      source_ids: ['U2','P2','P3'], citation_ids: ['c-p2-16','c-p2-11','c-u2-5','c-p3-17','c-p2-7'],
+      source_ids: ['U2','P2','P3'], refs: [{ id: 'U2', locator: 'relato familiar' }, { id: 'P2', locator: 'pp. 1–2' }, { id: 'P3', locator: 'p. 1' }],
     },
     custode: {
       text: 'Custode Sante Zaniratti era filho de Luigi Zaniratti e Pasqua Mellara. Nasceu em Stellata, no município de Bondeno. Veio ao Brasil no vapor Attività, conforme a história familiar. Os 13 filhos registrados incluem Grandilia, Zenaide e Valentim.',
-      source_ids: ['U2','S3','S4'], citation_ids: ['c-u2-5','c-s3-3','c-s4-4'],
+      source_ids: ['U2','S3','S4'], refs: [{ id: 'U2', locator: 'relato familiar' }, { id: 'S3', locator: 'diagrama histórico, nomes e filiação' }, { id: 'S4', locator: 'biografia histórica de Grandilia' }],
     },
     valentim: {
       text: 'Valentim Zaniratti, filho de Custode Sante, viveu em Santa Clara. Casou-se com Elisa Bernardino; teve Walter, Nedina, Reni e Antônio.',
-      source_ids: ['U2','U3','S4','P2'], citation_ids: ['c-u2-5','c-u2-12','c-u3-26','c-s4-4','c-p2-16'],
+      source_ids: ['U2','U3','S4','P2'], refs: [{ id: 'U2', locator: 'relato familiar' }, { id: 'U3', locator: 'relato familiar adicional' }, { id: 'S4', locator: 'biografia histórica de Grandilia' }, { id: 'P2', locator: 'p. 1' }],
     },
   };
   for (const [personId, opening] of Object.entries(editorialOpenings)) {
     const biography = biographies.find(item => item.person_id === personId);
     if (!biography) throw new Error(`Biografia ausente para abertura editorial: ${personId}`);
-    biography.paragraphs.unshift(opening);
+    biography.paragraphs.unshift({ text: opening.text, source_ids: opening.source_ids, citation_ids: opening.refs.map(citation) });
     biography.source_ids = [...new Set([...biography.source_ids, ...opening.source_ids])];
+  }
+
+  for (const page of supplemental.pages.filter(p => p.relations.length)) {
+    const personId = pathId(page.path);
+    const archivePage = legacy.archiveItems.find(item => item.legacy_path === page.path);
+    if (!peopleById.has(personId) || !archivePage) continue;
+    const sourceId = legacySourceId(page.path);
+    const citeId = citation({ id: sourceId, locator: 'biografia histórica recuperada' });
+    const text = archivePage.transcript || [page.title,page.description].filter(Boolean).join('. ');
+    if (!text) continue;
+    const paragraph = { text, source_ids: [sourceId], citation_ids: [citeId] };
+    const existing = biographies.find(b => b.person_id === personId);
+    if (existing) {
+      if (!existing.paragraphs.some(p => p.source_ids.includes(sourceId))) existing.paragraphs.push(paragraph);
+      existing.source_ids = [...new Set([...existing.source_ids,sourceId])];
+    } else {
+      biographies.push({ id: `bio-${personId}`, person_id: personId, title: peopleById.get(personId).label, paragraphs: [paragraph], source_ids: [sourceId] });
+    }
+  }
+  const edmondoBio = biographies.find(b => b.person_id === 'edmondo1950');
+  if (edmondoBio) {
+    const familyCitation = citation({ id: 'U2', locator: 'relato familiar sobre Edmondo em Milão' });
+    edmondoBio.paragraphs.unshift({ text: 'O relato familiar também situa Edmondo em Milão; a biografia antiga do site descreve residência em outras cidades italianas em diferentes períodos.', source_ids: ['U2',legacySourceId('BRA/Edmondo1950B.htm')], citation_ids: [familyCitation,citation({ id: legacySourceId('BRA/Edmondo1950B.htm'), locator: 'biografia histórica: percurso residencial' })] });
+    edmondoBio.source_ids = [...new Set([...edmondoBio.source_ids,'U2'])];
   }
 
   const sourceList = [...sourceMap.values()];
@@ -693,8 +1067,8 @@ function buildSnapshot(canonical, docs, siteCatalog, assetBytes, legacy) {
   }
   const snapshot = {
     schema_version: '1.1.0',
-    release: { id: 'zaniratti-family-atlas-candidate-2026-10-13', state: 'candidate', generated_at: iso(), content_revision: 'family-atlas-2026-10-13-v1', locale: 'pt', public_changelog: 'Reintegra fatos familiares adotados, biografias com fontes e acervo histórico legível; conserva vínculos, variantes e proveniência.' },
-    people, branches, groups, events, assertions, citations, sources, assets: [asset, ...legacy.assets.map(({ source_id, ...publicAsset }) => publicAsset)], legacy_urls: [], biographies, archive_items: legacy.archiveItems,
+    release: { id: 'zaniratti-integral-atlas-candidate-2026-10-13', state: 'candidate', generated_at: iso(), content_revision: 'family-atlas-integral-2026-10-13-v2', locale: 'pt', public_changelog: 'Integra as árvores e fichas históricas recuperadas, preservando as identidades e relações com suas fontes.' },
+    people: people.map(({ _name_source_path, _unlinked, _map_only, ...publicPerson }) => publicPerson), branches: [...branches,...extraBranches], groups, events, assertions, citations, sources, assets: [asset, ...legacy.assets.map(({ source_id, ...publicAsset }) => publicAsset)], legacy_urls: [], biographies, archive_items: legacy.archiveItems,
   };
   return { snapshot, siteRecords: legacy.records };
 }
@@ -702,8 +1076,10 @@ function buildSnapshot(canonical, docs, siteCatalog, assetBytes, legacy) {
 function buildGedcom(snapshot) {
   const lines = ['0 HEAD','1 SOUR ZanirattiGaloPublicExporter','1 GEDC','2 VERS 5.5.1','1 CHAR UTF-8'];
   const familyByChild = new Map();
-  for (const assertion of snapshot.assertions.filter(a => a.predicate === 'child_of')) {
-    familyByChild.set(assertion.subject_id, [...(familyByChild.get(assertion.subject_id) || []), assertion.object_person_id]);
+  for (const assertion of snapshot.assertions.filter(a => a.predicate === 'child_of' && a.interpretation === 'preferred')) {
+    const parents = familyByChild.get(assertion.subject_id) || [];
+    if (!parents.includes(assertion.object_person_id)) parents.push(assertion.object_person_id);
+    familyByChild.set(assertion.subject_id, parents);
   }
   for (const p of snapshot.people) {
     lines.push(`0 @${p.id}@ INDI`, `1 NAME ${p.label}`, `1 _PUBID ${p.id}`);
@@ -773,12 +1149,14 @@ async function main() {
   const originCapture = originRecord.capturas_indexadas?.find(c => c.snapshot)?.snapshot;
   if (originCapture !== 'https://web.archive.org/web/20041029160237id_/http://www.zaniratti.it:80/Foto/GeneaA3.gif') throw new Error('A captura de origem GeneaA3 mudou sem revisão.');
   const legacy = await prepareLegacy(siteCatalog, args.get('--site-root'));
+  const supplementalText = execFileSync('python3', [path.join(ROOT,'scripts/extract-legacy-genealogy.py'), args.get('--site-root')], { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 });
+  const supplemental = JSON.parse(supplementalText);
   const documents = await prepareDocuments(docs);
   legacy.archiveItems.push(...documents.archiveItems);
   legacy.assets.push(...documents.assets);
   legacy.publicFiles.push(...documents.publicFiles);
   legacy.documentAssets = documents.assets;
-  const { snapshot, siteRecords } = buildSnapshot(canonical, docs, siteCatalog, assetBytes, legacy);
+  const { snapshot, siteRecords } = buildSnapshot(canonical, docs, siteCatalog, assetBytes, legacy, supplemental);
   let approvalDecision = null;
   if (args.has('--approve')) {
     const candidatePath = path.join(ROOT, 'content/public/snapshot.json');
@@ -801,7 +1179,7 @@ async function main() {
     source_snapshot_sha256: EXPECTED_INPUT_SHA,
     origin_asset: { catalog_path: 'Foto/GeneaA3.gif', sha256: ASSET_ORIGIN_SHA, capture_url: originCapture },
     snapshot_sha256: digest(Buffer.from(dataText)), assets: [{ path: ASSET_PUBLIC_PATH, sha256: digest(assetBytes), bytes: assetBytes.length }, ...legacy.assets.map(a => ({ path: a.public_path, sha256: a.sha256, bytes: a.bytes }))], gedcom_sha256: digest(Buffer.from(gedcom)),
-    inventory_summary: { historical_site_records: siteRecords.length, public_historical_pages: PUBLIC_LEGACY_PAGES.size, public_historical_images: PUBLIC_LEGACY_IMAGES.size, catalog_pdf_records: 26, public_pdf_originals: documents.assets.length, private_pdf_derivatives: documents.archiveItems.filter(i => i.status === 'public_derivative').length },
+    inventory_summary: { historical_site_records: siteRecords.length, public_historical_pages: supplemental.pages.filter(p => p.relations.length).length, historical_tree_maps: supplemental.tree_map_count, supplemental_profile_pages: supplemental.profile_page_count, supplemental_people_added: snapshot.people.length - Object.keys(canonical.pessoas).length, catalog_pdf_records: 26, public_pdf_originals: documents.assets.length, private_pdf_derivatives: documents.archiveItems.filter(i => i.status === 'public_derivative').length },
     note: snapshot.release.state === 'approved' ? 'Projeção pública revisada para disponibilização no site.' : 'Candidato de atlas familiar; fatos citados, cópias históricas estáticas e metadados sem caminhos locais ou conteúdo de e-mail.'
   };
   if (approvalDecision) manifest.approval_decision = approvalDecision;
@@ -815,6 +1193,7 @@ async function main() {
     await writeFile(file.path, file.bytes);
   }
   await writeFile(path.join(ROOT, 'content/public/snapshot.json'), dataText);
+  await writeFile(path.join(ROOT, 'public/downloads/familia-zaniratti.ged'), gedcom);
   await writeFile(path.join(ROOT, 'public/downloads/linha-principal.ged'), gedcom);
   const inventory = { generated_from: 'catalogo_site.json', entries: legacy.inventoryEntries };
   const inventoryText = `${JSON.stringify(inventory, null, 2)}\n`;

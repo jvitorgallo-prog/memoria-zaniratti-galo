@@ -1,0 +1,108 @@
+---
+import { url } from "../lib/urls";
+import type { PublicPerson, PublicBranch, PublicSource, PublicAsset, PublicArchiveItem } from "../lib/data";
+import ForestTreeCard from "./ForestTreeCard.astro";
+
+type BranchMetadata = PublicBranch & {
+  origin_label?: string; lineage_label?: string; kind?: string; category?: string;
+};
+const { branches = [], people = [], sources = [], assets = [], archiveItems = [] } = Astro.props as {
+  branches?: BranchMetadata[]; people?: PublicPerson[]; sources?: PublicSource[]; assets?: PublicAsset[]; archiveItems?: PublicArchiveItem[];
+};
+const coreBranch = branches.find((branch) => branch.person_ids.includes("custode"));
+const hasCuration = branches.some((branch) => branch.tree_id || branch.is_original_tree !== undefined || branch.category);
+const unassigned = branches.find((branch) => branch.category === "unassigned_profiles");
+const byKey = new Map<string, BranchMetadata[]>();
+for (const branch of branches) {
+  if (branch.category === "unassigned_profiles") continue;
+  const historicMaterial = Boolean(branch.asset_ids?.length || branch.archive_item_ids?.length || branch.origin_source_ids?.length || branch.historical_counts?.length || branch.historical_person_count != null);
+  // In the curated export, bare page-level branches belong in the people/archive indexes, not as tree cards.
+  if (hasCuration && !branch.tree_id && branch.is_original_tree !== true && !historicMaterial && !branch.person_ids.includes("custode")) continue;
+  const key = branch.tree_id ? `tree:${branch.tree_id}` : `branch:${branch.id}`;
+  byKey.set(key, [...(byKey.get(key) || []), branch]);
+}
+const trees = [...byKey.entries()].map(([id, related]) => {
+  const primary = related.find((branch) => branch.is_original_tree) || related.find((branch) => branch.person_ids.includes("custode")) || related[0];
+  return { id, primary, branches: related, original: hasCuration ? related.some((branch) => branch.is_original_tree === true) : related.some((branch) => branch.person_ids.includes("custode")) || !hasCuration };
+}).sort((a, b) => Number(b.original) - Number(a.original) || a.primary.label.localeCompare(b.primary.label, "pt-BR"));
+const mainTrees = trees.filter((tree) => tree.original);
+const historicalTrees = trees.filter((tree) => !tree.original);
+const countryKey = (country: string) => {
+  const normalized = country.trim().normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase("pt-BR");
+  if (["italia", "italy"].includes(normalized)) return "italia";
+  if (["brasil", "brazil"].includes(normalized)) return "brasil";
+  return normalized;
+};
+const countryTitle = (country: string) => countryKey(country) === "italia" ? "Itália" : countryKey(country) === "brasil" ? "Brasil" : country.trim();
+const countryGroups = new Map<string, typeof trees>();
+for (const tree of trees) {
+  const country = tree.branches.map((branch) => branch.country_label?.trim()).find(Boolean);
+  if (!country) continue;
+  const key = countryKey(country);
+  countryGroups.set(key, [...(countryGroups.get(key) || []), tree]);
+}
+const resources = (tree: (typeof trees)[number]) => ({
+  images: [...new Set(tree.branches.flatMap((branch) => branch.asset_ids || []))].map((id) => assets.find((asset) => asset.id === id)).filter((asset): asset is PublicAsset => Boolean(asset && asset.mime.startsWith("image/"))),
+});
+const mapImage = (tree: (typeof trees)[number]) => resources(tree).images.find((asset) => /mapa|\bmap\b|carta geogr|territ[oó]rio/i.test(`${asset.alt} ${asset.caption}`));
+const unassignedCount = unassigned ? new Set(unassigned.person_ids).size : 0;
+---
+<section class="family-forest" aria-labelledby="forest-title">
+  <div class="forest-intro">
+    <div>
+      <p class="atlas-kicker">Memória de uma família</p>
+      <h1 id="forest-title">Zaniratti através das gerações</h1>
+      <p>Árvores preservadas na Itália e no Brasil, edições históricas e histórias que continuam ligadas à família.</p>
+    </div>
+    <div class="forest-counts" aria-label="Cobertura do conjunto">
+      <span><strong>{mainTrees.length}</strong> árvores do site original</span>
+      <span><strong>{people.length}</strong> pessoas e perfis nomeados</span>
+    </div>
+  </div>
+
+  {countryGroups.size > 0 && <section class="forest-regions" aria-labelledby="regions-heading">
+    <div class="forest-section-heading"><div><p class="atlas-kicker">Lugares mencionados nas fontes</p><h2 id="regions-heading">Uma família, diferentes lugares</h2></div><span>Árvores e edições organizadas por região</span></div>
+    <div class="forest-region-grid">
+      {[...countryGroups.entries()].map(([country, regionTrees]) => {
+        const places = [...new Set(regionTrees.flatMap((tree) => tree.branches.map((branch) => branch.region_label).filter(Boolean)))];
+        const image = regionTrees.map(mapImage).find(Boolean);
+        const names = new Set(regionTrees.flatMap((tree) => tree.branches.flatMap((branch) => branch.person_ids)));
+        return <article class="forest-region-card">
+          {image && <img src={url("/" + image.public_path.replace(/^\/+/, ""))} alt={image.alt} loading="lazy" />}
+          <div class="forest-region-copy">
+            <p class="forest-region-label">Regiões documentadas</p>
+            <h3>{countryTitle(country)}</h3>
+            {places.length > 0 && <p class="forest-region-places">{places.join(" · ")}</p>}
+            <p>{regionTrees.length} {regionTrees.length === 1 ? "árvore ou edição" : "árvores e edições"} · {names.size} perfis relacionados</p>
+            <div class="forest-region-links">{regionTrees.slice(0, 4).map((tree) => <a href={url(`/pt/arvores/${encodeURIComponent(tree.primary.id)}/`)}>{tree.primary.label}</a>)}{regionTrees.length > 4 && <a href={url("/pt/arvores/")}>Ver a floresta completa</a>}</div>
+          </div>
+        </article>;
+      })}
+    </div>
+  </section>}
+
+  {mainTrees.length > 0 && <section class="forest-branches" aria-labelledby="main-trees-heading">
+    <div class="forest-section-heading"><div><p class="atlas-kicker">Percursos principais</p><h2 id="main-trees-heading">Árvores do site familiar</h2></div><span>{mainTrees.length} árvores preservadas na edição citada</span></div>
+    <div class="forest-tree-grid">
+      {mainTrees.map((tree) => <ForestTreeCard tree={tree} sources={sources} assets={assets} archiveItems={archiveItems} />)}
+    </div>
+  </section>}
+
+  {historicalTrees.length > 0 && <section class="forest-branches forest-historical" aria-labelledby="historical-heading">
+    <div class="forest-section-heading"><div><p class="atlas-kicker">Mapas, edições e páginas históricas</p><h2 id="historical-heading">Outros registros da floresta</h2></div><span>{historicalTrees.length} conjuntos relacionados</span></div>
+    <div class="forest-tree-grid">
+      {historicalTrees.map((tree) => <ForestTreeCard tree={tree} sources={sources} assets={assets} archiveItems={archiveItems} />)}
+    </div>
+  </section>}
+
+  {unassignedCount > 0 && <aside class="forest-unassigned">
+    <div><p class="atlas-kicker">Catálogo de perfis</p><h2>Outras páginas de pessoas</h2><p>{unassignedCount} perfis recuperados ainda não foram associados a uma árvore original. Eles permanecem disponíveis no índice geral.</p></div>
+    <a href={url("/pt/pessoas/")}>Buscar no índice de pessoas</a>
+  </aside>}
+
+  {coreBranch && <aside class="forest-open-main">
+    <span class="forest-open-main-mark" aria-hidden="true">Z</span>
+    <div><p class="atlas-kicker">Uma árvore entre várias</p><h2>Explorar Custode e seus descendentes</h2><p>Abra a família com pais, irmãos, uniões e filhos apresentados em seus próprios grupos.</p></div>
+    <a href={url(`/pt/arvores/${encodeURIComponent(coreBranch.id)}/#atlas`)}>Abrir árvore</a>
+  </aside>}
+</section>

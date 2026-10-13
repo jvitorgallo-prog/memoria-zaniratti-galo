@@ -3,9 +3,10 @@ import { readFile } from 'node:fs/promises';
 
 const snapshot = JSON.parse(await readFile(new URL('../content/public/snapshot.json', import.meta.url), 'utf8'));
 const claims = snapshot.assertions;
+const adoptedParents = claims.filter(claim => claim.predicate === 'child_of' && claim.interpretation === 'preferred');
 const people = new Map(snapshot.people.map(person => [person.id, person]));
-const parents = id => [...new Set(claims.filter(claim => claim.predicate === 'child_of' && claim.subject_id === id).map(claim => claim.object_person_id))].sort();
-const children = id => [...new Set(claims.filter(claim => claim.predicate === 'child_of' && claim.object_person_id === id).map(claim => claim.subject_id))].sort();
+const parents = id => [...new Set(adoptedParents.filter(claim => claim.subject_id === id).map(claim => claim.object_person_id))].sort();
+const children = id => [...new Set(adoptedParents.filter(claim => claim.object_person_id === id).map(claim => claim.subject_id))].sort();
 
 const expected = {
   custode: ['ermanno','ugo','umberto','daniele','dante1882','maria1884','luigi1886','ulisse','ernesto','carlo1892','zenaide','grandilia','valentim'],
@@ -37,6 +38,21 @@ for (const [path,wrongId] of [['BRA/Luigi1883B.htm','luigi'],['BRA/PasquaB.htm',
   assert(!item.person_ids.includes(wrongId), `${path} must not merge two people who share a given name.`);
 }
 
+const antonioPage = snapshot.archive_items.find(item => item.legacy_path === 'BRA/Antonio1846B.htm');
+assert(antonioPage?.person_ids.includes('antonio1846'), 'S6 and its exact original page must resolve to the same Antonio.');
+assert.deepEqual(parents('antonio1846'), ['luigi','maria_cavallini']);
+
+// A parental grouping must not turn siblings into children of unproved parents.
+// Only the explicitly adopted parentage permits this presentation in the atlas.
+const parentPairs = new Set(adoptedParents.map(claim => `${claim.subject_id}|${claim.object_person_id}`));
+for (const group of snapshot.groups.filter(group => group.kind === 'parental_group' && group.id.startsWith('legacy-family-'))) {
+  const parentIds = group.participants.filter(participant => participant.role === 'parent').map(participant => participant.person_id);
+  const childIds = group.participants.filter(participant => participant.role === 'child').map(participant => participant.person_id);
+  for (const childId of childIds) for (const parentId of parentIds) {
+    assert(parentPairs.has(`${childId}|${parentId}`), `Parental group ${group.id} implies unsupported parentage ${parentId} → ${childId}.`);
+  }
+}
+
 for (const claim of claims.filter(claim => claim.date)) {
   if (claim.date.precision === 'year') {
     assert.equal(claim.date.components.month, null, `Invented month: ${claim.id}`);
@@ -58,7 +74,7 @@ function visit(id) {
 }
 for (const id of people.keys()) visit(id);
 const isolated = new Set(snapshot.branches.find(branch => branch.id === 'ramo-salvatonica-san-biagio')?.person_ids || []);
-for (const claim of claims.filter(claim => claim.predicate === 'child_of')) {
+for (const claim of adoptedParents) {
   assert(isolated.has(claim.subject_id) === isolated.has(claim.object_person_id), 'No invented bridge between the historic Zaniratti branches.');
 }
 

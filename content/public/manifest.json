@@ -1,14 +1,14 @@
 {
-  "release_id": "zaniratti-family-atlas-candidate-2026-10-13",
+  "release_id": "zaniratti-integral-atlas-candidate-2026-10-13",
   "state": "approved",
-  "source_revision": "family-atlas-2026-10-13-v1",
+  "source_revision": "family-atlas-integral-2026-10-13-v2",
   "source_snapshot_sha256": "2c063f6e0050fa6a3bec42c856160eb4a9b83eb22ae0c4d5155da1de81a575f9",
   "origin_asset": {
     "catalog_path": "Foto/GeneaA3.gif",
     "sha256": "27a3b8087c74cb2d6f1c435fe727d153b9f41dc03d34c102b536cb47486f9fda",
     "capture_url": "https://web.archive.org/web/20041029160237id_/http://www.zaniratti.it:80/Foto/GeneaA3.gif"
   },
-  "snapshot_sha256": "ec6a3bd56735ae5719d7653b7cadc91ce54908481257b3e1a85e9698360a7dbc",
+  "snapshot_sha256": "ed2871b2616d0a006f970936d0f71a6d629f3e43bb4d71967459c73d13421815",
   "assets": [
     {
       "path": "assets/revisados/genea-a3-francesco-luigi-recorte.png",
@@ -736,20 +736,22 @@
       "bytes": 2156300
     }
   ],
-  "gedcom_sha256": "f27ae89b976e0e4c80db9b3876b42172fd3574fdf84c0de349822ff082500609",
+  "gedcom_sha256": "cf3752400805a534a72c19d5ada3ba060bc395474a26cd3c7bbce167432828ea",
   "inventory_summary": {
     "historical_site_records": 363,
-    "public_historical_pages": 7,
-    "public_historical_images": 2,
+    "public_historical_pages": 122,
+    "historical_tree_maps": 11,
+    "supplemental_profile_pages": 122,
+    "supplemental_people_added": 418,
     "catalog_pdf_records": 26,
     "public_pdf_originals": 23,
     "private_pdf_derivatives": 3
   },
   "note": "Projeção pública revisada para disponibilização no site.",
   "approval_decision": {
-    "candidate_snapshot_sha256": "caf2b870a9bba45e931e7b0f8d949097a2a6d2a2c6f626a66cc7bc14031b12b4",
+    "candidate_snapshot_sha256": "818ffe72be4d18d0fb6c723b5fbf4ec301c242367b3fe0ecb265454b81960038",
     "reviewer_role": "coordenação editorial",
-    "reviewed_at": "2026-10-13T18:12:31.724436+00:00"
+    "reviewed_at": "2026-10-13T22:09:09.088921Z"
   },
   "inventory_sha256": "a5ca61278ba03d2bd2dc42cf6a6f5e9ef68e95d528c3aafdc8d60f8cac19693c"
 }

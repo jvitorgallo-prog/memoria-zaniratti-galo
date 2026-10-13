@@ -8,17 +8,21 @@ for (const root of document.querySelectorAll("[data-local-search]")) {
     const query = normalize(input.value);
     results.replaceChildren();
     if (!query) { results.hidden = true; return; }
-    const matches = data.filter((person) => normalize([person.label, person.branch, ...(person.aliases || [])].join(" ")).includes(query) && (!branch?.value || person.branchIds.includes(branch.value))).slice(0, 12);
-    for (const person of matches) {
+    const matches = data.filter((row) => {
+      if (branch?.value && row.kind === "person" && !(row.branchIds || []).includes(branch.value)) return false;
+      return normalize([row.label, row.branch, row.terms, ...(row.aliases || [])].filter(Boolean).join(" ")).includes(query);
+    }).slice(0, 16);
+    for (const row of matches) {
       const li = document.createElement("li");
       const a = document.createElement("a");
-      a.href = person.href;
-      a.textContent = person.label;
+      a.href = row.href;
+      a.textContent = row.label;
       li.append(a);
-      if (person.branch) { const small = document.createElement("small"); small.textContent = person.branch; li.append(small); }
+      const detail = [row.kindLabel, row.branch].filter(Boolean).join(" · ");
+      if (detail) { const small = document.createElement("small"); small.textContent = detail; li.append(small); }
       results.append(li);
     }
-    if (!matches.length) { const li = document.createElement("li"); li.textContent = "Nenhuma pessoa encontrada neste recorte."; results.append(li); }
+    if (!matches.length) { const li = document.createElement("li"); li.textContent = "Nenhum resultado encontrado."; results.append(li); }
     results.hidden = false;
   };
   input?.addEventListener("input", render);
