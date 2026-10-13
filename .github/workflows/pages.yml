@@ -21,6 +21,7 @@ jobs:
       - run: npm run validate:public
       - run: npm run test:public
       - run: npm run test:genealogy
+      - run: npm run test:images
       - run: npm run release:check
       - run: npm run check
       - run: npm run build

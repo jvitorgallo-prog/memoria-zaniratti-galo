@@ -15,7 +15,8 @@
     "validate:public": "node scripts/validate-public.mjs",
     "release:check": "node scripts/verify-release.mjs",
     "test:public": "node scripts/test-public.mjs",
-    "test:genealogy": "node scripts/test-genealogy.mjs"
+    "test:genealogy": "node scripts/test-genealogy.mjs",
+    "test:images": "node scripts/verify-historical-images.mjs"
   },
   "dependencies": {
     "astro": "7.3.8"

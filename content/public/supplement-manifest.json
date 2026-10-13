@@ -1,0 +1,36 @@
+{
+  "release_id": "zaniratti-imagens-auditoria-2026-10-13",
+  "state": "approved",
+  "reviewed_by_role": "coordenação editorial",
+  "reviewed_at": "2026-10-13T23:57:52.452536+00:00",
+  "base_genealogy_release": "zaniratti-integral-atlas-candidate-2026-10-13",
+  "base_snapshot_sha256": "ed2871b2616d0a006f970936d0f71a6d629f3e43bb4d71967459c73d13421815",
+  "description": "Galeria de todos os arquivos históricos de imagem disponíveis, notas de leitura, correção da proveniência de duas versões HTML e auditoria de cobertura; nenhuma nova imagem original foi recuperada nesta rodada.",
+  "files": [
+    {
+      "path": "downloads/imagens-originais-zaniratti.zip",
+      "sha256": "1ab7fdca85072608c9c136ebc48e73791c96d1a0c03769617adde9c853bc37ea",
+      "bytes": 1201530
+    },
+    {
+      "path": "downloads/inventario-imagens-originais.json",
+      "sha256": "2e3e2853c8a6c626da5be4e7ba72dbbcdb2120aca265cdd2a94c58c9f80cf9da",
+      "bytes": 140873
+    },
+    {
+      "path": "downloads/auditoria-recuperacao.json",
+      "sha256": "e0cdd668eb041e0d5a8a0041a2145065bd419ccbdfd7c67629b8ce11959db13d",
+      "bytes": 9359
+    },
+    {
+      "path": "downloads/proveniencia-versoes-html.json",
+      "sha256": "603eb360f9a409a8f1788616cb5209f4544e14d127af610972f8b971042030ff",
+      "bytes": 2660
+    },
+    {
+      "path": "downloads/notas-de-leitura.json",
+      "sha256": "90378029fa5eb377960c7edaaf4c3894c5a21d474e6a63cbad83c20f2820e521",
+      "bytes": 12154
+    }
+  ]
+}

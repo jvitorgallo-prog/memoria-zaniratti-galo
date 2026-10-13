@@ -1,0 +1,4246 @@
+{
+  "scope": "Imagens recuperadas do site familiar zaniratti.it; não representa toda a mídia histórica do domínio.",
+  "unique_files": 106,
+  "historical_records_in_initial_inventory": 116,
+  "parking_assets_2020_excluded": 5,
+  "images": [
+    {
+      "id": "23028fd5cf7e8d0a713b",
+      "title": "Albero1.gif",
+      "original_filename": "Albero1.gif",
+      "path": "/assets/imagens-originais/23028fd5cf7e8d0a713b.gif",
+      "mime_detected": "image/gif",
+      "bytes": 288,
+      "dimensions_px": [
+        32,
+        32
+      ],
+      "frames": 1,
+      "sha256": "23028fd5cf7e8d0a713ba39460692150aaa2b3819533267368921c02313ed7d3",
+      "category": "decorativa",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it/Foto/Albero1.gif",
+        "timestamp_utc": "20131113130958",
+        "snapshot_url": "https://web.archive.org/web/20131113130958id_/http://www.zaniratti.it/Foto/Albero1.gif",
+        "source": "Wayback",
+        "manifest_sha256": "23028fd5cf7e8d0a713ba39460692150aaa2b3819533267368921c02313ed7d3"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/AdelinaB.htm; BRA/AfonsoB.htm; BRA/AlberoB.htm (entre outras páginas do corpus)",
+          "src": "../Foto/Albero1.gif",
+          "alt": "Árvore genealógica",
+          "title": "",
+          "source_page_capture": "20080415210319"
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-Albero1.gif"
+      ],
+      "caption": "Ícone de navegação; texto alternativo no HTML original: “Árvore genealógica”."
+    },
+    {
+      "id": "27a3b8087c74cb2d6f1c",
+      "title": "GeneaA3.gif",
+      "original_filename": "GeneaA3.gif",
+      "path": "/assets/imagens-originais/27a3b8087c74cb2d6f1c.gif",
+      "mime_detected": "image/gif",
+      "bytes": 33853,
+      "dimensions_px": [
+        611,
+        1352
+      ],
+      "frames": 1,
+      "sha256": "27a3b8087c74cb2d6f1c435fe727d153b9f41dc03d34c102b536cb47486f9fda",
+      "category": "arvore-genealogica",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/GeneaA3.gif",
+        "timestamp_utc": "20041029160237",
+        "snapshot_url": "https://web.archive.org/web/20041029160237id_/http://www.zaniratti.it:80/Foto/GeneaA3.gif",
+        "source": "Wayback",
+        "manifest_sha256": "27a3b8087c74cb2d6f1c435fe727d153b9f41dc03d34c102b536cb47486f9fda"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/AlberoB.htm",
+          "src": "../Foto/GeneaA3.gif",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-GeneaA3.gif"
+      ]
+    },
+    {
+      "id": "53646fe1773072fb6cad",
+      "title": "ico_invia.gif",
+      "original_filename": "ico_invia.gif",
+      "path": "/assets/imagens-originais/53646fe1773072fb6cad.gif",
+      "mime_detected": "image/gif",
+      "bytes": 166,
+      "dimensions_px": [
+        22,
+        9
+      ],
+      "frames": 1,
+      "sha256": "53646fe1773072fb6cad298637244748febc586d5e1b348063d6ccf0a75cfbc6",
+      "category": "decorativa",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/ico_invia.gif",
+        "timestamp_utc": "20050504050545",
+        "snapshot_url": "https://web.archive.org/web/20050504050545id_/http://www.zaniratti.it:80/ico_invia.gif",
+        "source": "Wayback",
+        "manifest_sha256": "53646fe1773072fb6cad298637244748febc586d5e1b348063d6ccf0a75cfbc6"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/CompleanniB.htm",
+          "src": "../ico_invia.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/CompleanniB.htm",
+          "src": "../ico_invia.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/FramesxB.htm",
+          "src": "../ico_invia.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "ITA/FramesxI.htm",
+          "src": "../ico_invia.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "ITA/CompleanniI.htm",
+          "src": "../ico_invia.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "ITA/CompleanniI.htm",
+          "src": "../ico_invia.gif",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/ico_invia.gif"
+      ]
+    },
+    {
+      "id": "c878dd3ab966cf5c11c5",
+      "title": "SfondoCieloblu.jpg",
+      "original_filename": "SfondoCieloblu.jpg",
+      "path": "/assets/imagens-originais/c878dd3ab966cf5c11c5.jpg",
+      "mime_detected": "image/jpeg",
+      "bytes": 5675,
+      "dimensions_px": [
+        300,
+        300
+      ],
+      "frames": 1,
+      "sha256": "c878dd3ab966cf5c11c5e320b63a16f50fa25ef0736e14ccabeb906cd2aab338",
+      "category": "decorativa",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it/SfondoCieloblu.jpg",
+        "timestamp_utc": "20150122205746",
+        "snapshot_url": "https://web.archive.org/web/20150122205746id_/http://www.zaniratti.it/SfondoCieloblu.jpg",
+        "source": "Wayback",
+        "manifest_sha256": "c878dd3ab966cf5c11c5e320b63a16f50fa25ef0736e14ccabeb906cd2aab338"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "index.htm",
+          "src": "SfondoCieloblu.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/BenvenutoB.htm",
+          "src": "../SfondoCieloblu.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/SfondoCieloblu.jpg"
+      ]
+    },
+    {
+      "id": "c6e043a297428bf515b6",
+      "title": "Sfondopergamena.jpg",
+      "original_filename": "Sfondopergamena.jpg",
+      "path": "/assets/imagens-originais/c6e043a297428bf515b6.jpg",
+      "mime_detected": "image/jpeg",
+      "bytes": 9093,
+      "dimensions_px": [
+        264,
+        245
+      ],
+      "frames": 1,
+      "sha256": "c6e043a297428bf515b660fff95031034eba208bbf3eded167023ffbe3d2b7b5",
+      "category": "decorativa",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it/Sfondopergamena.jpg",
+        "timestamp_utc": "20160417044935",
+        "snapshot_url": "https://web.archive.org/web/20160417044935id_/http://www.zaniratti.it/Sfondopergamena.jpg",
+        "source": "Wayback",
+        "manifest_sha256": "c6e043a297428bf515b660fff95031034eba208bbf3eded167023ffbe3d2b7b5"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "Esposito/Grandilia.htm",
+          "src": "../Sfondopergamena.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/PasquaB.htm",
+          "src": "../Sfondopergamena.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/AristodemoB.htm",
+          "src": "../Sfondopergamena.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/FerruccioB.htm",
+          "src": "../Sfondopergamena.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/OriginiAB.htm",
+          "src": "../Sfondopergamena.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/Origini-B.htm",
+          "src": "../Sfondopergamena.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/Antonio1846B.htm",
+          "src": "../Sfondopergamena.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/DirceaB.htm",
+          "src": "../Sfondopergamena.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/PalmiraB.htm",
+          "src": "../Sfondopergamena.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/GiovannaB.htm",
+          "src": "../Sfondopergamena.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/Augusto1877B.htm",
+          "src": "../Sfondopergamena.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/Dante1878B.htm",
+          "src": "../Sfondopergamena.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/Luigi1883B.htm",
+          "src": "../Sfondopergamena.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/AnnunziataB.htm",
+          "src": "../Sfondopergamena.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/DilettaB.htm",
+          "src": "../Sfondopergamena.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/OriginiEB.htm",
+          "src": "../Sfondopergamena.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/AdelinaB.htm",
+          "src": "../Sfondopergamena.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/AgostinoB.htm",
+          "src": "../Sfondopergamena.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/EnzoB.htm",
+          "src": "../Sfondopergamena.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/FotoGuelfoDocB.htm",
+          "src": "../Sfondopergamena.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/Carlo1876B.htm",
+          "src": "../Sfondopergamena.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/ErmelindaB.htm",
+          "src": "../Sfondopergamena.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/SigismondoB.htm",
+          "src": "../Sfondopergamena.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "ITA/FerruccioI.htm",
+          "src": "../Sfondopergamena.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "ITA/FO/Aug1877obI.htm",
+          "src": "../../Sfondopergamena.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Sfondopergamena.jpg"
+      ]
+    },
+    {
+      "id": "428d09f388284eb6fc60",
+      "title": "AlbBiagio.gif",
+      "original_filename": "AlbBiagio.gif",
+      "path": "/assets/imagens-originais/428d09f388284eb6fc60.gif",
+      "mime_detected": "image/gif",
+      "bytes": 17931,
+      "dimensions_px": [
+        611,
+        400
+      ],
+      "frames": 1,
+      "sha256": "428d09f388284eb6fc6032f2425a16288575bc550334a3abb211fd6f6bd7c332",
+      "category": "arvore-genealogica",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/AlbBiagio.gif",
+        "timestamp_utc": "20050902185856",
+        "snapshot_url": "https://web.archive.org/web/20050902185856id_/http://www.zaniratti.it:80/Foto/AlbBiagio.gif",
+        "source": "Wayback",
+        "manifest_sha256": "428d09f388284eb6fc6032f2425a16288575bc550334a3abb211fd6f6bd7c332"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/AlbSBiagioB.htm",
+          "src": "../Foto/AlbBiagio.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "ITA/AlbSBiagioI.htm",
+          "src": "../AlbBiagio.gif",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-AlbBiagio.gif"
+      ]
+    },
+    {
+      "id": "1c29f06b723c3e408941",
+      "title": "Amanda.jpg",
+      "original_filename": "Amanda.jpg",
+      "path": "/assets/imagens-originais/1c29f06b723c3e408941.jpg",
+      "mime_detected": "image/jpeg",
+      "bytes": 27486,
+      "dimensions_px": [
+        221,
+        345
+      ],
+      "frames": 1,
+      "sha256": "1c29f06b723c3e408941764c083b5ab66264a143ed5e729e0db86a85c79ac167",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/Amanda.jpg",
+        "timestamp_utc": "20041102082012",
+        "snapshot_url": "https://web.archive.org/web/20041102082012id_/http://www.zaniratti.it:80/Foto/Amanda.jpg",
+        "source": "Wayback",
+        "manifest_sha256": "1c29f06b723c3e408941764c083b5ab66264a143ed5e729e0db86a85c79ac167"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/AmandaB.htm",
+          "src": "../Foto/Amanda.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-Amanda.jpg"
+      ]
+    },
+    {
+      "id": "ca2c3cf6ef7760bf12aa",
+      "title": "Ancilla61p.jpg",
+      "original_filename": "Ancilla61p.jpg",
+      "path": "/assets/imagens-originais/ca2c3cf6ef7760bf12aa.jpg",
+      "mime_detected": "image/jpeg",
+      "bytes": 25588,
+      "dimensions_px": [
+        399,
+        436
+      ],
+      "frames": 1,
+      "sha256": "ca2c3cf6ef7760bf12aad80d36740dfa4c8b38e015176ee436d26b44a7733095",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/Ancilla61p.jpg",
+        "timestamp_utc": "20050112040750",
+        "snapshot_url": "https://web.archive.org/web/20050112040750id_/http://www.zaniratti.it:80/Foto/Ancilla61p.jpg",
+        "source": "Wayback",
+        "manifest_sha256": "ca2c3cf6ef7760bf12aad80d36740dfa4c8b38e015176ee436d26b44a7733095"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/AncillaB.htm",
+          "src": "../Foto/Ancilla61p.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "ITA/AncillaI.htm",
+          "src": "../Foto/Ancilla61p.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-Ancilla61p.jpg"
+      ]
+    },
+    {
+      "id": "d3a8654c2c69813add34",
+      "title": "Anna62p.jpg",
+      "original_filename": "Anna62p.jpg",
+      "path": "/assets/imagens-originais/d3a8654c2c69813add34.jpg",
+      "mime_detected": "image/jpeg",
+      "bytes": 23784,
+      "dimensions_px": [
+        290,
+        379
+      ],
+      "frames": 1,
+      "sha256": "d3a8654c2c69813add3490a3e46c866de5828a1af342fed79ca6ce406d723959",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/Anna62p.jpg",
+        "timestamp_utc": "20041119183606",
+        "snapshot_url": "https://web.archive.org/web/20041119183606id_/http://www.zaniratti.it:80/Foto/Anna62p.jpg",
+        "source": "Wayback",
+        "manifest_sha256": "d3a8654c2c69813add3490a3e46c866de5828a1af342fed79ca6ce406d723959"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/AnnaB.htm",
+          "src": "../Foto/Anna62p.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-Anna62p.jpg"
+      ]
+    },
+    {
+      "id": "669b722ef744e6cd3abe",
+      "title": "Bianca80p.jpg",
+      "original_filename": "Bianca80p.jpg",
+      "path": "/assets/imagens-originais/669b722ef744e6cd3abe.jpg",
+      "mime_detected": "image/jpeg",
+      "bytes": 25887,
+      "dimensions_px": [
+        302,
+        354
+      ],
+      "frames": 1,
+      "sha256": "669b722ef744e6cd3abec262a10e943c7d17e8e7a86be7be8b63837d75ebfb03",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/Bianca80p.jpg",
+        "timestamp_utc": "20041119180345",
+        "snapshot_url": "https://web.archive.org/web/20041119180345id_/http://www.zaniratti.it:80/Foto/Bianca80p.jpg",
+        "source": "Wayback",
+        "manifest_sha256": "669b722ef744e6cd3abec262a10e943c7d17e8e7a86be7be8b63837d75ebfb03"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/BiancaB.htm",
+          "src": "../Foto/Bianca80p.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-Bianca80p.jpg"
+      ]
+    },
+    {
+      "id": "cdd886a62e7959eba529",
+      "title": "bonifi1.jpg",
+      "original_filename": "bonifi1.jpg",
+      "path": "/assets/imagens-originais/cdd886a62e7959eba529.jpg",
+      "mime_detected": "image/jpeg",
+      "bytes": 34921,
+      "dimensions_px": [
+        351,
+        240
+      ],
+      "frames": 1,
+      "sha256": "cdd886a62e7959eba52923ec3acfdb20c9671faa60808e9026edef372141a09c",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/bonifi1.jpg",
+        "timestamp_utc": "20041119182740",
+        "snapshot_url": "https://web.archive.org/web/20041119182740id_/http://www.zaniratti.it:80/Foto/bonifi1.jpg",
+        "source": "Wayback",
+        "manifest_sha256": "cdd886a62e7959eba52923ec3acfdb20c9671faa60808e9026edef372141a09c"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/BonificheB.htm",
+          "src": "../Foto/bonifi1.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-bonifi1.jpg"
+      ]
+    },
+    {
+      "id": "e72e1cf90d6b0c28a7de",
+      "title": "bonifi2.jpg",
+      "original_filename": "bonifi2.jpg",
+      "path": "/assets/imagens-originais/e72e1cf90d6b0c28a7de.jpg",
+      "mime_detected": "image/jpeg",
+      "bytes": 109427,
+      "dimensions_px": [
+        450,
+        421
+      ],
+      "frames": 1,
+      "sha256": "e72e1cf90d6b0c28a7deec983f28fb459c302c4c513c019e5741f18afb27937b",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/bonifi2.jpg",
+        "timestamp_utc": "20041119183522",
+        "snapshot_url": "https://web.archive.org/web/20041119183522id_/http://www.zaniratti.it:80/Foto/bonifi2.jpg",
+        "source": "Wayback",
+        "manifest_sha256": "e72e1cf90d6b0c28a7deec983f28fb459c302c4c513c019e5741f18afb27937b"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/BonificheB.htm",
+          "src": "../Foto/bonifi2.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-bonifi2.jpg"
+      ]
+    },
+    {
+      "id": "be4ad52270839c1b27b8",
+      "title": "bonifi4.jpg",
+      "original_filename": "bonifi4.jpg",
+      "path": "/assets/imagens-originais/be4ad52270839c1b27b8.jpg",
+      "mime_detected": "image/jpeg",
+      "bytes": 78653,
+      "dimensions_px": [
+        452,
+        240
+      ],
+      "frames": 1,
+      "sha256": "be4ad52270839c1b27b8071010c901ca28ee45b926be5712963299ceb072a739",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/bonifi4.jpg",
+        "timestamp_utc": "20041119175233",
+        "snapshot_url": "https://web.archive.org/web/20041119175233id_/http://www.zaniratti.it:80/Foto/bonifi4.jpg",
+        "source": "Wayback",
+        "manifest_sha256": "be4ad52270839c1b27b8071010c901ca28ee45b926be5712963299ceb072a739"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/BonificheB.htm",
+          "src": "../Foto/bonifi4.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-bonifi4.jpg"
+      ]
+    },
+    {
+      "id": "5250c16f077e69cfd8fe",
+      "title": "bonifi5.jpg",
+      "original_filename": "bonifi5.jpg",
+      "path": "/assets/imagens-originais/5250c16f077e69cfd8fe.jpg",
+      "mime_detected": "image/jpeg",
+      "bytes": 79189,
+      "dimensions_px": [
+        456,
+        240
+      ],
+      "frames": 1,
+      "sha256": "5250c16f077e69cfd8fe89ee103ac985c61f6dc6c3520431a369e99e21c7a3f1",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/bonifi5.jpg",
+        "timestamp_utc": "20041119181832",
+        "snapshot_url": "https://web.archive.org/web/20041119181832id_/http://www.zaniratti.it:80/Foto/bonifi5.jpg",
+        "source": "Wayback",
+        "manifest_sha256": "5250c16f077e69cfd8fe89ee103ac985c61f6dc6c3520431a369e99e21c7a3f1"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/BonificheB.htm",
+          "src": "../Foto/bonifi5.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-bonifi5.jpg"
+      ]
+    },
+    {
+      "id": "9a662b315abf7fe20eef",
+      "title": "bonifi6.jpg",
+      "original_filename": "bonifi6.jpg",
+      "path": "/assets/imagens-originais/9a662b315abf7fe20eef.jpg",
+      "mime_detected": "image/jpeg",
+      "bytes": 78524,
+      "dimensions_px": [
+        463,
+        240
+      ],
+      "frames": 1,
+      "sha256": "9a662b315abf7fe20eefa87dcab0953c98b2271dbc33c5b3c5510ee4860dbb6d",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/bonifi6.jpg",
+        "timestamp_utc": "20041119184153",
+        "snapshot_url": "https://web.archive.org/web/20041119184153id_/http://www.zaniratti.it:80/Foto/bonifi6.jpg",
+        "source": "Wayback",
+        "manifest_sha256": "9a662b315abf7fe20eefa87dcab0953c98b2271dbc33c5b3c5510ee4860dbb6d"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/BonificheB.htm",
+          "src": "../Foto/bonifi6.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-bonifi6.jpg"
+      ]
+    },
+    {
+      "id": "5603fbae38eaa62b0b8f",
+      "title": "ci_botte.jpg",
+      "original_filename": "ci_botte.jpg",
+      "path": "/assets/imagens-originais/5603fbae38eaa62b0b8f.jpg",
+      "mime_detected": "image/jpeg",
+      "bytes": 25556,
+      "dimensions_px": [
+        375,
+        255
+      ],
+      "frames": 1,
+      "sha256": "5603fbae38eaa62b0b8fff7efd3649544caaa4df152d33c3f4a59c36f94a2cb1",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/ci_botte.jpg",
+        "timestamp_utc": "20041119180601",
+        "snapshot_url": "https://web.archive.org/web/20041119180601id_/http://www.zaniratti.it:80/Foto/ci_botte.jpg",
+        "source": "Wayback",
+        "manifest_sha256": "5603fbae38eaa62b0b8fff7efd3649544caaa4df152d33c3f4a59c36f94a2cb1"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/BonificaBuranaB.htm",
+          "src": "../Foto/ci_botte.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-ci_botte.jpg"
+      ]
+    },
+    {
+      "id": "30b29d571f2129923002",
+      "title": "ci_sto_a.gif",
+      "original_filename": "ci_sto_a.gif",
+      "path": "/assets/imagens-originais/30b29d571f2129923002.gif",
+      "mime_detected": "image/gif",
+      "bytes": 13508,
+      "dimensions_px": [
+        226,
+        226
+      ],
+      "frames": 1,
+      "sha256": "30b29d571f2129923002cb4e008335f1286e8f37b3f54e0ccfa0f57e41ffae5b",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/ci_sto_a.gif",
+        "timestamp_utc": "20041119183309",
+        "snapshot_url": "https://web.archive.org/web/20041119183309id_/http://www.zaniratti.it:80/Foto/ci_sto_a.gif",
+        "source": "Wayback",
+        "manifest_sha256": "30b29d571f2129923002cb4e008335f1286e8f37b3f54e0ccfa0f57e41ffae5b"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/BonificaBuranaB.htm",
+          "src": "../Foto/ci_sto_a.gif",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-ci_sto_a.gif"
+      ]
+    },
+    {
+      "id": "e77d99d67233eee72444",
+      "title": "ci_sto_b.jpg",
+      "original_filename": "ci_sto_b.jpg",
+      "path": "/assets/imagens-originais/e77d99d67233eee72444.jpg",
+      "mime_detected": "image/jpeg",
+      "bytes": 14108,
+      "dimensions_px": [
+        226,
+        226
+      ],
+      "frames": 1,
+      "sha256": "e77d99d67233eee72444f3519266091247a39b5a01d3ef947a163287649bfa48",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/ci_sto_b.jpg",
+        "timestamp_utc": "20041119183946",
+        "snapshot_url": "https://web.archive.org/web/20041119183946id_/http://www.zaniratti.it:80/Foto/ci_sto_b.jpg",
+        "source": "Wayback",
+        "manifest_sha256": "e77d99d67233eee72444f3519266091247a39b5a01d3ef947a163287649bfa48"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/BonificaBuranaB.htm",
+          "src": "../Foto/ci_sto_b.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-ci_sto_b.jpg"
+      ]
+    },
+    {
+      "id": "d641c9b3cb1288f7b90e",
+      "title": "ci_sto_c.gif",
+      "original_filename": "ci_sto_c.gif",
+      "path": "/assets/imagens-originais/d641c9b3cb1288f7b90e.gif",
+      "mime_detected": "image/gif",
+      "bytes": 9830,
+      "dimensions_px": [
+        226,
+        226
+      ],
+      "frames": 1,
+      "sha256": "d641c9b3cb1288f7b90eb7eb0f979a814cb2fa19f71cd0df1ebdda3366742357",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/ci_sto_c.gif",
+        "timestamp_utc": "20041119175852",
+        "snapshot_url": "https://web.archive.org/web/20041119175852id_/http://www.zaniratti.it:80/Foto/ci_sto_c.gif",
+        "source": "Wayback",
+        "manifest_sha256": "d641c9b3cb1288f7b90eb7eb0f979a814cb2fa19f71cd0df1ebdda3366742357"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/BonificaBuranaB.htm",
+          "src": "../Foto/ci_sto_c.gif",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-ci_sto_c.gif"
+      ]
+    },
+    {
+      "id": "adfa183a50ede02a6d83",
+      "title": "ci_sto_d.gif",
+      "original_filename": "ci_sto_d.gif",
+      "path": "/assets/imagens-originais/adfa183a50ede02a6d83.gif",
+      "mime_detected": "image/gif",
+      "bytes": 14225,
+      "dimensions_px": [
+        226,
+        226
+      ],
+      "frames": 1,
+      "sha256": "adfa183a50ede02a6d838bf6fe248d50d0d38b7d4dc3286a978ff867047b5daf",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/ci_sto_d.gif",
+        "timestamp_utc": "20041119182451",
+        "snapshot_url": "https://web.archive.org/web/20041119182451id_/http://www.zaniratti.it:80/Foto/ci_sto_d.gif",
+        "source": "Wayback",
+        "manifest_sha256": "adfa183a50ede02a6d838bf6fe248d50d0d38b7d4dc3286a978ff867047b5daf"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/BonificaBuranaB.htm",
+          "src": "../Foto/ci_sto_d.gif",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-ci_sto_d.gif"
+      ]
+    },
+    {
+      "id": "6902681c5185ac4c541c",
+      "title": "Cris2003a.jpg",
+      "original_filename": "Cris2003a.jpg",
+      "path": "/assets/imagens-originais/6902681c5185ac4c541c.jpg",
+      "mime_detected": "image/jpeg",
+      "bytes": 26712,
+      "dimensions_px": [
+        255,
+        340
+      ],
+      "frames": 1,
+      "sha256": "6902681c5185ac4c541c89ee31c0a421e62981a39fae654e5aaadbb9a7fc2d42",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/Cris2003a.jpg",
+        "timestamp_utc": "20041122075500",
+        "snapshot_url": "https://web.archive.org/web/20041122075500id_/http://www.zaniratti.it:80/Foto/Cris2003a.jpg",
+        "source": "Wayback",
+        "manifest_sha256": "6902681c5185ac4c541c89ee31c0a421e62981a39fae654e5aaadbb9a7fc2d42"
+      },
+      "aliases": [],
+      "referenced_by": [],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-Cris2003a.jpg"
+      ]
+    },
+    {
+      "id": "513aea47136f064f72af",
+      "title": "CynthiaBH.jpg",
+      "original_filename": "CynthiaBH.jpg",
+      "path": "/assets/imagens-originais/513aea47136f064f72af.jpg",
+      "mime_detected": "image/jpeg",
+      "bytes": 29190,
+      "dimensions_px": [
+        328,
+        340
+      ],
+      "frames": 1,
+      "sha256": "513aea47136f064f72af7a4945af42adc98118e54d17f7a2e138b37f652390d3",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/CynthiaBH.jpg",
+        "timestamp_utc": "20051004053638",
+        "snapshot_url": "https://web.archive.org/web/20051004053638id_/http://www.zaniratti.it:80/Foto/CynthiaBH.jpg",
+        "source": "Wayback",
+        "manifest_sha256": "513aea47136f064f72af7a4945af42adc98118e54d17f7a2e138b37f652390d3"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/CynthiaB.htm",
+          "src": "../Foto/CynthiaBH.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "ITA/CynthiaI.htm",
+          "src": "../Foto/CynthiaBH.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-CynthiaBH.jpg"
+      ]
+    },
+    {
+      "id": "c29d71e20fe075514bdf",
+      "title": "Debora0.jpg",
+      "original_filename": "Debora0.jpg",
+      "path": "/assets/imagens-originais/c29d71e20fe075514bdf.jpg",
+      "mime_detected": "image/jpeg",
+      "bytes": 25959,
+      "dimensions_px": [
+        215,
+        327
+      ],
+      "frames": 1,
+      "sha256": "c29d71e20fe075514bdf83f7414319310aaef25aa94a05e2f2336cc98381bfdc",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/Debora0.jpg",
+        "timestamp_utc": "20041122045654",
+        "snapshot_url": "https://web.archive.org/web/20041122045654id_/http://www.zaniratti.it:80/Foto/Debora0.jpg",
+        "source": "Wayback",
+        "manifest_sha256": "c29d71e20fe075514bdf83f7414319310aaef25aa94a05e2f2336cc98381bfdc"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/DeboraB.htm",
+          "src": "../Foto/Debora0.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-Debora0.jpg"
+      ]
+    },
+    {
+      "id": "5672527009d6618155ec",
+      "title": "Deulma1930Serena.jpg",
+      "original_filename": "Deulma1930Serena.jpg",
+      "path": "/assets/imagens-originais/5672527009d6618155ec.jpg",
+      "mime_detected": "image/jpeg",
+      "bytes": 21797,
+      "dimensions_px": [
+        291,
+        288
+      ],
+      "frames": 1,
+      "sha256": "5672527009d6618155ec30e3675e5afc8c069b2aa29e4547de54e85f3436f550",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/Deulma1930Serena.jpg",
+        "timestamp_utc": "20041123174755",
+        "snapshot_url": "https://web.archive.org/web/20041123174755id_/http://www.zaniratti.it:80/Foto/Deulma1930Serena.jpg",
+        "source": "Wayback",
+        "manifest_sha256": "5672527009d6618155ec30e3675e5afc8c069b2aa29e4547de54e85f3436f550"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/Deulma1930B.htm",
+          "src": "../Foto/Deulma1930Serena.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-Deulma1930Serena.jpg"
+      ]
+    },
+    {
+      "id": "532e501c591da8bca6ab",
+      "title": "Ferrara5.jpg",
+      "original_filename": "Ferrara5.jpg",
+      "path": "/assets/imagens-originais/532e501c591da8bca6ab.jpg",
+      "mime_detected": "image/jpeg",
+      "bytes": 19581,
+      "dimensions_px": [
+        152,
+        200
+      ],
+      "frames": 1,
+      "sha256": "532e501c591da8bca6ab6619fed17306a8cd08e235f0d5845837de997a15db99",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/Ferrara5.jpg",
+        "timestamp_utc": "20041029144608",
+        "snapshot_url": "https://web.archive.org/web/20041029144608id_/http://www.zaniratti.it:80/Foto/Ferrara5.jpg",
+        "source": "Wayback",
+        "manifest_sha256": "532e501c591da8bca6ab6619fed17306a8cd08e235f0d5845837de997a15db99"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/AlbGiobatB.htm",
+          "src": "../Foto/Ferrara5.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-Ferrara5.jpg"
+      ]
+    },
+    {
+      "id": "13379da1a00945e3c93b",
+      "title": "Ferrara6.jpg",
+      "original_filename": "Ferrara6.jpg",
+      "path": "/assets/imagens-originais/13379da1a00945e3c93b.jpg",
+      "mime_detected": "image/jpeg",
+      "bytes": 24321,
+      "dimensions_px": [
+        153,
+        200
+      ],
+      "frames": 1,
+      "sha256": "13379da1a00945e3c93b9b5b5dafd4ee5c5344c0c6d5034476b39744187254a5",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/Ferrara6.jpg",
+        "timestamp_utc": "20041029150804",
+        "snapshot_url": "https://web.archive.org/web/20041029150804id_/http://www.zaniratti.it:80/Foto/Ferrara6.jpg",
+        "source": "Wayback",
+        "manifest_sha256": "13379da1a00945e3c93b9b5b5dafd4ee5c5344c0c6d5034476b39744187254a5"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/AlbGiobatB.htm",
+          "src": "../Foto/Ferrara6.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-Ferrara6.jpg"
+      ]
+    },
+    {
+      "id": "1fe9bd4d6b2fcd74195c",
+      "title": "Ferrara7.jpg",
+      "original_filename": "Ferrara7.jpg",
+      "path": "/assets/imagens-originais/1fe9bd4d6b2fcd74195c.jpg",
+      "mime_detected": "image/jpeg",
+      "bytes": 20212,
+      "dimensions_px": [
+        158,
+        200
+      ],
+      "frames": 1,
+      "sha256": "1fe9bd4d6b2fcd74195cfe748b5df24e49f12419488f9138e85e00d7397762e7",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/Ferrara7.jpg",
+        "timestamp_utc": "20041029153124",
+        "snapshot_url": "https://web.archive.org/web/20041029153124id_/http://www.zaniratti.it:80/Foto/Ferrara7.jpg",
+        "source": "Wayback",
+        "manifest_sha256": "1fe9bd4d6b2fcd74195cfe748b5df24e49f12419488f9138e85e00d7397762e7"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/AlbGiobatB.htm",
+          "src": "../Foto/Ferrara7.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-Ferrara7.jpg"
+      ]
+    },
+    {
+      "id": "f925f206f80b8e6f3812",
+      "title": "Ferrara8.jpg",
+      "original_filename": "Ferrara8.jpg",
+      "path": "/assets/imagens-originais/f925f206f80b8e6f3812.jpg",
+      "mime_detected": "image/jpeg",
+      "bytes": 24422,
+      "dimensions_px": [
+        179,
+        200
+      ],
+      "frames": 1,
+      "sha256": "f925f206f80b8e6f38120b094092260f3d41615faa28959f0d04f35e5093e526",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/Ferrara8.jpg",
+        "timestamp_utc": "20041029154449",
+        "snapshot_url": "https://web.archive.org/web/20041029154449id_/http://www.zaniratti.it:80/Foto/Ferrara8.jpg",
+        "source": "Wayback",
+        "manifest_sha256": "f925f206f80b8e6f38120b094092260f3d41615faa28959f0d04f35e5093e526"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/AlbGiobatB.htm",
+          "src": "../Foto/Ferrara8.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-Ferrara8.jpg"
+      ]
+    },
+    {
+      "id": "595617ed10fdc2f50988",
+      "title": "Ferruccio1.jpg",
+      "original_filename": "Ferruccio1.jpg",
+      "path": "/assets/imagens-originais/595617ed10fdc2f50988.jpg",
+      "mime_detected": "image/jpeg",
+      "bytes": 64011,
+      "dimensions_px": [
+        610,
+        541
+      ],
+      "frames": 1,
+      "sha256": "595617ed10fdc2f50988e688d3a7115855380483608573454b526083140686a7",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it/Foto/Ferruccio1.jpg",
+        "timestamp_utc": "20131113131000",
+        "snapshot_url": "https://web.archive.org/web/20131113131000id_/http://www.zaniratti.it/Foto/Ferruccio1.jpg",
+        "source": "Wayback",
+        "manifest_sha256": "595617ed10fdc2f50988e688d3a7115855380483608573454b526083140686a7"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/FerruccioB.htm",
+          "src": "../Foto/Ferruccio1.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "ITA/FerruccioI.htm",
+          "src": "../Foto/Ferruccio1.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-Ferruccio1.jpg"
+      ]
+    },
+    {
+      "id": "4d2bc852d78b29e536a8",
+      "title": "Ferruccio2.jpg",
+      "original_filename": "Ferruccio2.jpg",
+      "path": "/assets/imagens-originais/4d2bc852d78b29e536a8.jpg",
+      "mime_detected": "image/jpeg",
+      "bytes": 32694,
+      "dimensions_px": [
+        273,
+        346
+      ],
+      "frames": 1,
+      "sha256": "4d2bc852d78b29e536a81fb115d86f71f4aa653884477dbf20f1c8d19a2ebc99",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it/Foto/Ferruccio2.jpg",
+        "timestamp_utc": "20131113130955",
+        "snapshot_url": "https://web.archive.org/web/20131113130955id_/http://www.zaniratti.it/Foto/Ferruccio2.jpg",
+        "source": "Wayback",
+        "manifest_sha256": "4d2bc852d78b29e536a81fb115d86f71f4aa653884477dbf20f1c8d19a2ebc99"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/FerruccioB.htm",
+          "src": "../Foto/Ferruccio2.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "ITA/FerruccioI.htm",
+          "src": "../Foto/Ferruccio2.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-Ferruccio2.jpg"
+      ]
+    },
+    {
+      "id": "097f085803413db78af9",
+      "title": "Leonida42.jpg",
+      "original_filename": "Leonida42.jpg",
+      "path": "/assets/imagens-originais/097f085803413db78af9.jpg",
+      "mime_detected": "image/jpeg",
+      "bytes": 59206,
+      "dimensions_px": [
+        508,
+        590
+      ],
+      "frames": 1,
+      "sha256": "097f085803413db78af9485969b16e6afc1a3f142f4bb722851d2d81a40a43ec",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it/Foto/Leonida42.jpg",
+        "timestamp_utc": "20140814104339",
+        "snapshot_url": "https://web.archive.org/web/20140814104339id_/http://www.zaniratti.it/Foto/Leonida42.jpg",
+        "source": "Wayback",
+        "manifest_sha256": "097f085803413db78af9485969b16e6afc1a3f142f4bb722851d2d81a40a43ec"
+      },
+      "aliases": [],
+      "referenced_by": [],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-Leonida42.jpg"
+      ]
+    },
+    {
+      "id": "950c94fe837ef24b42cb",
+      "title": "MiniAlvaro88.gif",
+      "original_filename": "MiniAlvaro88.gif",
+      "path": "/assets/imagens-originais/950c94fe837ef24b42cb.gif",
+      "mime_detected": "image/gif",
+      "bytes": 2259,
+      "dimensions_px": [
+        76,
+        100
+      ],
+      "frames": 1,
+      "sha256": "950c94fe837ef24b42cb26c8f57cfc999f3fcd5dd9a602ad0c8cf2e2d2f299a1",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniAlvaro88.gif",
+        "timestamp_utc": "20041029163205",
+        "snapshot_url": "https://web.archive.org/web/20041029163205id_/http://www.zaniratti.it:80/MiniAlvaro88.gif",
+        "source": "Wayback",
+        "manifest_sha256": "950c94fe837ef24b42cb26c8f57cfc999f3fcd5dd9a602ad0c8cf2e2d2f299a1"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/AlvaroB.htm",
+          "src": "../MiniAlvaro88.gif",
+          "alt": "Foto sobre a lápide",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/MiniAlvaro88.gif"
+      ]
+    },
+    {
+      "id": "7d919e72099657f0d029",
+      "title": "MiniAlvaroMoglie.gif",
+      "original_filename": "MiniAlvaroMoglie.gif",
+      "path": "/assets/imagens-originais/7d919e72099657f0d029.gif",
+      "mime_detected": "image/gif",
+      "bytes": 2366,
+      "dimensions_px": [
+        71,
+        100
+      ],
+      "frames": 1,
+      "sha256": "7d919e72099657f0d029805f210e78dbd75b1a7f449004ace9388c19730c25fc",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniAlvaroMoglie.gif",
+        "timestamp_utc": "20041029165319",
+        "snapshot_url": "https://web.archive.org/web/20041029165319id_/http://www.zaniratti.it:80/MiniAlvaroMoglie.gif",
+        "source": "Wayback",
+        "manifest_sha256": "7d919e72099657f0d029805f210e78dbd75b1a7f449004ace9388c19730c25fc"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/AlvaroB.htm",
+          "src": "../MiniAlvaroMoglie.gif",
+          "alt": "Alvaro e sua mulher",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/MiniAlvaroMoglie.gif"
+      ]
+    },
+    {
+      "id": "0b7bd49bc6e861ac3297",
+      "title": "MiniAmaLou03.gif",
+      "original_filename": "MiniAmaLou03.gif",
+      "path": "/assets/imagens-originais/0b7bd49bc6e861ac3297.gif",
+      "mime_detected": "image/gif",
+      "bytes": 4358,
+      "dimensions_px": [
+        129,
+        100
+      ],
+      "frames": 1,
+      "sha256": "0b7bd49bc6e861ac3297a39d9d3452afa55540e9e8104a12c53f044dd7f55942",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniAmaLou03.gif",
+        "timestamp_utc": "20041102085156",
+        "snapshot_url": "https://web.archive.org/web/20041102085156id_/http://www.zaniratti.it:80/MiniAmaLou03.gif",
+        "source": "Wayback",
+        "manifest_sha256": "0b7bd49bc6e861ac3297a39d9d3452afa55540e9e8104a12c53f044dd7f55942"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/AmandaB.htm",
+          "src": "../MiniAmaLou03.gif",
+          "alt": "Amanda e Lourdes",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/MiniAmaLou03.gif"
+      ]
+    },
+    {
+      "id": "8832d41cadc7e611008f",
+      "title": "MiniAnc32.gif",
+      "original_filename": "MiniAnc32.gif",
+      "path": "/assets/imagens-originais/8832d41cadc7e611008f.gif",
+      "mime_detected": "image/gif",
+      "bytes": 2372,
+      "dimensions_px": [
+        90,
+        100
+      ],
+      "frames": 1,
+      "sha256": "8832d41cadc7e611008f36ab7b89b49d354f1593ba52cdf1f4971a8c51bdfd0b",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniAnc32.gif",
+        "timestamp_utc": "20041029170107",
+        "snapshot_url": "https://web.archive.org/web/20041029170107id_/http://www.zaniratti.it:80/MiniAnc32.gif",
+        "source": "Wayback",
+        "manifest_sha256": "8832d41cadc7e611008f36ab7b89b49d354f1593ba52cdf1f4971a8c51bdfd0b"
+      },
+      "aliases": [
+        {
+          "filename": "MiniAnc32.gif",
+          "original_url": "http://www.zaniratti.it:80/Foto/MiniAnc32.gif",
+          "timestamp_utc": "20050504085458",
+          "snapshot_url": "https://web.archive.org/web/20050504085458id_/http://www.zaniratti.it:80/Foto/MiniAnc32.gif",
+          "source": "Wayback",
+          "payload_path": "raw/snapshots/20050504085458/Foto/MiniAnc32.gif.body",
+          "manifest_sha256": "8832d41cadc7e611008f36ab7b89b49d354f1593ba52cdf1f4971a8c51bdfd0b"
+        }
+      ],
+      "referenced_by": [
+        {
+          "page": "BRA/AncillaB.htm",
+          "src": "../Foto/MiniAnc32.gif",
+          "alt": "Ancilla e Gino (1932)",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-MiniAnc32.gif",
+        "/assets/acervo/MiniAnc32.gif"
+      ]
+    },
+    {
+      "id": "082e731c42624fff1567",
+      "title": "MiniAnc43.gif",
+      "original_filename": "MiniAnc43.gif",
+      "path": "/assets/imagens-originais/082e731c42624fff1567.gif",
+      "mime_detected": "image/gif",
+      "bytes": 2650,
+      "dimensions_px": [
+        92,
+        100
+      ],
+      "frames": 1,
+      "sha256": "082e731c42624fff1567abbbc4a31cbfa105fddf395628db022862310c30c177",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniAnc43.gif",
+        "timestamp_utc": "20041029172055",
+        "snapshot_url": "https://web.archive.org/web/20041029172055id_/http://www.zaniratti.it:80/MiniAnc43.gif",
+        "source": "Wayback",
+        "manifest_sha256": "082e731c42624fff1567abbbc4a31cbfa105fddf395628db022862310c30c177"
+      },
+      "aliases": [
+        {
+          "filename": "MiniAnc43.gif",
+          "original_url": "http://www.zaniratti.it:80/Foto/MiniAnc43.gif",
+          "timestamp_utc": "20050504090632",
+          "snapshot_url": "https://web.archive.org/web/20050504090632id_/http://www.zaniratti.it:80/Foto/MiniAnc43.gif",
+          "source": "Wayback",
+          "payload_path": "raw/snapshots/20050504090632/Foto/MiniAnc43.gif.body",
+          "manifest_sha256": "082e731c42624fff1567abbbc4a31cbfa105fddf395628db022862310c30c177"
+        }
+      ],
+      "referenced_by": [
+        {
+          "page": "BRA/AncillaB.htm",
+          "src": "../Foto/MiniAnc43.gif",
+          "alt": "(1943)",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-MiniAnc43.gif",
+        "/assets/acervo/MiniAnc43.gif"
+      ]
+    },
+    {
+      "id": "80712e7196bb25956293",
+      "title": "MiniAncilla2004a.gif",
+      "original_filename": "MiniAncilla2004a.gif",
+      "path": "/assets/imagens-originais/80712e7196bb25956293.gif",
+      "mime_detected": "image/gif",
+      "bytes": 5961,
+      "dimensions_px": [
+        133,
+        100
+      ],
+      "frames": 1,
+      "sha256": "80712e7196bb259562930b69f7499a8a107c08ce846659034e4ae4a1f7bfd836",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniAncilla2004a.gif",
+        "timestamp_utc": "20050112042425",
+        "snapshot_url": "https://web.archive.org/web/20050112042425id_/http://www.zaniratti.it:80/MiniAncilla2004a.gif",
+        "source": "Wayback",
+        "manifest_sha256": "80712e7196bb259562930b69f7499a8a107c08ce846659034e4ae4a1f7bfd836"
+      },
+      "aliases": [
+        {
+          "filename": "MiniAncilla2004a.gif",
+          "original_url": "http://www.zaniratti.it:80/Foto/MiniAncilla2004a.gif",
+          "timestamp_utc": "20050504101345",
+          "snapshot_url": "https://web.archive.org/web/20050504101345id_/http://www.zaniratti.it:80/Foto/MiniAncilla2004a.gif",
+          "source": "Wayback",
+          "payload_path": "raw/snapshots/20050504101345/Foto/MiniAncilla2004a.gif.body",
+          "manifest_sha256": "80712e7196bb259562930b69f7499a8a107c08ce846659034e4ae4a1f7bfd836"
+        }
+      ],
+      "referenced_by": [
+        {
+          "page": "BRA/AncillaB.htm",
+          "src": "../Foto/MiniAncilla2004a.gif",
+          "alt": "Ancilla com Geraldo e Nancy.",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-MiniAncilla2004a.gif",
+        "/assets/acervo/MiniAncilla2004a.gif"
+      ]
+    },
+    {
+      "id": "417e5c8b71558ef8117a",
+      "title": "MiniAncLeo2003.gif",
+      "original_filename": "MiniAncLeo2003.gif",
+      "path": "/assets/imagens-originais/417e5c8b71558ef8117a.gif",
+      "mime_detected": "image/gif",
+      "bytes": 2784,
+      "dimensions_px": [
+        112,
+        100
+      ],
+      "frames": 1,
+      "sha256": "417e5c8b71558ef8117a092eae03afc42e5df6920d888a98cb90330c51e131b6",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniAncLeo2003.gif",
+        "timestamp_utc": "20041029174148",
+        "snapshot_url": "https://web.archive.org/web/20041029174148id_/http://www.zaniratti.it:80/MiniAncLeo2003.gif",
+        "source": "Wayback",
+        "manifest_sha256": "417e5c8b71558ef8117a092eae03afc42e5df6920d888a98cb90330c51e131b6"
+      },
+      "aliases": [
+        {
+          "filename": "MiniAncLeo2003.gif",
+          "original_url": "http://www.zaniratti.it:80/Foto/MiniAncLeo2003.gif",
+          "timestamp_utc": "20050504094707",
+          "snapshot_url": "https://web.archive.org/web/20050504094707id_/http://www.zaniratti.it:80/Foto/MiniAncLeo2003.gif",
+          "source": "Wayback",
+          "payload_path": "raw/snapshots/20050504094707/Foto/MiniAncLeo2003.gif.body",
+          "manifest_sha256": "417e5c8b71558ef8117a092eae03afc42e5df6920d888a98cb90330c51e131b6"
+        }
+      ],
+      "referenced_by": [
+        {
+          "page": "BRA/AncillaB.htm",
+          "src": "../Foto/MiniAncLeo2003.gif",
+          "alt": "Nel Castello (2003)",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-MiniAncLeo2003.gif",
+        "/assets/acervo/MiniAncLeo2003.gif"
+      ]
+    },
+    {
+      "id": "b6b0a0b27b430c5d4daf",
+      "title": "MiniAngelica1950-04.gif",
+      "original_filename": "MiniAngelica1950-04.gif",
+      "path": "/assets/imagens-originais/b6b0a0b27b430c5d4daf.gif",
+      "mime_detected": "image/gif",
+      "bytes": 3570,
+      "dimensions_px": [
+        96,
+        100
+      ],
+      "frames": 1,
+      "sha256": "b6b0a0b27b430c5d4daf86a2f781896436297409b8ebe42c2692e1c8f2b997d3",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniAngelica1950-04.gif",
+        "timestamp_utc": "20041029180216",
+        "snapshot_url": "https://web.archive.org/web/20041029180216id_/http://www.zaniratti.it:80/MiniAngelica1950-04.gif",
+        "source": "Wayback",
+        "manifest_sha256": "b6b0a0b27b430c5d4daf86a2f781896436297409b8ebe42c2692e1c8f2b997d3"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/Angelica1950B.htm",
+          "src": "../MiniAngelica1950-04.gif",
+          "alt": "2004",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/MiniAngelica1950-04.gif"
+      ]
+    },
+    {
+      "id": "a822e8afe6674a641fc4",
+      "title": "MiniAnna-e-Gisella.gif",
+      "original_filename": "MiniAnna-e-Gisella.gif",
+      "path": "/assets/imagens-originais/a822e8afe6674a641fc4.gif",
+      "mime_detected": "image/gif",
+      "bytes": 1982,
+      "dimensions_px": [
+        80,
+        100
+      ],
+      "frames": 1,
+      "sha256": "a822e8afe6674a641fc488478eb44b93d6aed9a744b8e0f77b9781ffdc016070",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniAnna-e-Gisella.gif",
+        "timestamp_utc": "20041119175005",
+        "snapshot_url": "https://web.archive.org/web/20041119175005id_/http://www.zaniratti.it:80/MiniAnna-e-Gisella.gif",
+        "source": "Wayback",
+        "manifest_sha256": "a822e8afe6674a641fc488478eb44b93d6aed9a744b8e0f77b9781ffdc016070"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/AnnaB.htm",
+          "src": "../MiniAnna-e-Gisella.gif",
+          "alt": "Anna e Gisella",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/MiniAnna-e-Gisella.gif"
+      ]
+    },
+    {
+      "id": "85e032253c863d69237e",
+      "title": "MiniAnna45.gif",
+      "original_filename": "MiniAnna45.gif",
+      "path": "/assets/imagens-originais/85e032253c863d69237e.gif",
+      "mime_detected": "image/gif",
+      "bytes": 1872,
+      "dimensions_px": [
+        63,
+        100
+      ],
+      "frames": 1,
+      "sha256": "85e032253c863d69237e3ffbb50746acfd42922b8277b4e18d343b220709b0c8",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniAnna45.gif",
+        "timestamp_utc": "20041119182401",
+        "snapshot_url": "https://web.archive.org/web/20041119182401id_/http://www.zaniratti.it:80/MiniAnna45.gif",
+        "source": "Wayback",
+        "manifest_sha256": "85e032253c863d69237e3ffbb50746acfd42922b8277b4e18d343b220709b0c8"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/AnnaB.htm",
+          "src": "../MiniAnna45.gif",
+          "alt": "1945",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/MiniAnna45.gif"
+      ]
+    },
+    {
+      "id": "eb9cb8fc4010b8d1ef9a",
+      "title": "MiniAnna50.gif",
+      "original_filename": "MiniAnna50.gif",
+      "path": "/assets/imagens-originais/eb9cb8fc4010b8d1ef9a.gif",
+      "mime_detected": "image/gif",
+      "bytes": 3515,
+      "dimensions_px": [
+        150,
+        100
+      ],
+      "frames": 1,
+      "sha256": "eb9cb8fc4010b8d1ef9ac52c47915461b13912b4245cca6fdc00b352ef4d4445",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniAnna50.gif",
+        "timestamp_utc": "20041119183918",
+        "snapshot_url": "https://web.archive.org/web/20041119183918id_/http://www.zaniratti.it:80/MiniAnna50.gif",
+        "source": "Wayback",
+        "manifest_sha256": "eb9cb8fc4010b8d1ef9ac52c47915461b13912b4245cca6fdc00b352ef4d4445"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/AnnaB.htm",
+          "src": "../MiniAnna50.gif",
+          "alt": "1950",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/MiniAnna50.gif"
+      ]
+    },
+    {
+      "id": "acd74fee0dbb7c7f8a5e",
+      "title": "MiniAnna75ca.gif",
+      "original_filename": "MiniAnna75ca.gif",
+      "path": "/assets/imagens-originais/acd74fee0dbb7c7f8a5e.gif",
+      "mime_detected": "image/gif",
+      "bytes": 3248,
+      "dimensions_px": [
+        124,
+        100
+      ],
+      "frames": 1,
+      "sha256": "acd74fee0dbb7c7f8a5ed8a99fcba21e3a8a492a130e428c415f4d61fb0a50c2",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniAnna75ca.gif",
+        "timestamp_utc": "20041119180609",
+        "snapshot_url": "https://web.archive.org/web/20041119180609id_/http://www.zaniratti.it:80/MiniAnna75ca.gif",
+        "source": "Wayback",
+        "manifest_sha256": "acd74fee0dbb7c7f8a5ed8a99fcba21e3a8a492a130e428c415f4d61fb0a50c2"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/AnnaB.htm",
+          "src": "../MiniAnna75ca.gif",
+          "alt": "Anna ed Enrico, 1975",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/MiniAnna75ca.gif"
+      ]
+    },
+    {
+      "id": "c12b021e1909171746cb",
+      "title": "MiniAnnaAnc03.gif",
+      "original_filename": "MiniAnnaAnc03.gif",
+      "path": "/assets/imagens-originais/c12b021e1909171746cb.gif",
+      "mime_detected": "image/gif",
+      "bytes": 3143,
+      "dimensions_px": [
+        127,
+        100
+      ],
+      "frames": 1,
+      "sha256": "c12b021e1909171746cbb18a0009b5624979cc4322c399b60aada64cc44368d3",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniAnnaAnc03.gif",
+        "timestamp_utc": "20050112001153",
+        "snapshot_url": "https://web.archive.org/web/20050112001153id_/http://www.zaniratti.it:80/MiniAnnaAnc03.gif",
+        "source": "Wayback",
+        "manifest_sha256": "c12b021e1909171746cbb18a0009b5624979cc4322c399b60aada64cc44368d3"
+      },
+      "aliases": [
+        {
+          "filename": "MiniAnnaAnc03.gif",
+          "original_url": "http://www.zaniratti.it:80/Foto/MiniAnnaAnc03.gif",
+          "timestamp_utc": "20050504103230",
+          "snapshot_url": "https://web.archive.org/web/20050504103230id_/http://www.zaniratti.it:80/Foto/MiniAnnaAnc03.gif",
+          "source": "Wayback",
+          "payload_path": "raw/snapshots/20050504103230/Foto/MiniAnnaAnc03.gif.body",
+          "manifest_sha256": "c12b021e1909171746cbb18a0009b5624979cc4322c399b60aada64cc44368d3"
+        }
+      ],
+      "referenced_by": [
+        {
+          "page": "BRA/AncillaB.htm",
+          "src": "../Foto/MiniAnnaAnc03.gif",
+          "alt": "Nel Castello (2003)",
+          "title": ""
+        },
+        {
+          "page": "BRA/AnnaB.htm",
+          "src": "../MiniAnnaAnc03.gif",
+          "alt": "Anna, Ancilla, Edmondo, 2003",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-MiniAnnaAnc03.gif",
+        "/assets/acervo/MiniAnnaAnc03.gif"
+      ]
+    },
+    {
+      "id": "d2d2fbe4931a6f2a6fc2",
+      "title": "MiniBiancaMarAnna.gif",
+      "original_filename": "MiniBiancaMarAnna.gif",
+      "path": "/assets/imagens-originais/d2d2fbe4931a6f2a6fc2.gif",
+      "mime_detected": "image/gif",
+      "bytes": 1671,
+      "dimensions_px": [
+        71,
+        100
+      ],
+      "frames": 1,
+      "sha256": "d2d2fbe4931a6f2a6fc252c9eda5ca6ed6d525e6cc9c697ec5474869236e4fa9",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniBiancaMarAnna.gif",
+        "timestamp_utc": "20041119180717",
+        "snapshot_url": "https://web.archive.org/web/20041119180717id_/http://www.zaniratti.it:80/MiniBiancaMarAnna.gif",
+        "source": "Wayback",
+        "manifest_sha256": "d2d2fbe4931a6f2a6fc252c9eda5ca6ed6d525e6cc9c697ec5474869236e4fa9"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/BiancaB.htm",
+          "src": "../MiniBiancaMarAnna.gif",
+          "alt": "Bianca, Maria Gilioli, Anna, 1957 ",
+          "title": ""
+        },
+        {
+          "page": "BRA/AnnaB.htm",
+          "src": "../MiniBiancaMarAnna.gif",
+          "alt": "Bianca, Maria Gilioli, Anna, 1957 ",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/MiniBiancaMarAnna.gif"
+      ]
+    },
+    {
+      "id": "40c8272d08f5b30074e6",
+      "title": "MiniBiancaQuinto.gif",
+      "original_filename": "MiniBiancaQuinto.gif",
+      "path": "/assets/imagens-originais/40c8272d08f5b30074e6.gif",
+      "mime_detected": "image/gif",
+      "bytes": 1865,
+      "dimensions_px": [
+        70,
+        100
+      ],
+      "frames": 1,
+      "sha256": "40c8272d08f5b30074e696b2ba3b9101ed6bd3182ad8cce208a46ef6f1fd7cc2",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniBiancaQuinto.gif",
+        "timestamp_utc": "20041119183342",
+        "snapshot_url": "https://web.archive.org/web/20041119183342id_/http://www.zaniratti.it:80/MiniBiancaQuinto.gif",
+        "source": "Wayback",
+        "manifest_sha256": "40c8272d08f5b30074e696b2ba3b9101ed6bd3182ad8cce208a46ef6f1fd7cc2"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/BiancaB.htm",
+          "src": "../MiniBiancaQuinto.gif",
+          "alt": "Bianca e Quinto, 1957",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/MiniBiancaQuinto.gif"
+      ]
+    },
+    {
+      "id": "e34c44e0a7db389868a0",
+      "title": "Minibondterr.gif",
+      "original_filename": "Minibondterr.gif",
+      "path": "/assets/imagens-originais/e34c44e0a7db389868a0.gif",
+      "mime_detected": "image/gif",
+      "bytes": 1516,
+      "dimensions_px": [
+        100,
+        75
+      ],
+      "frames": 1,
+      "sha256": "e34c44e0a7db389868a008eafbd885e14f059c9d28cbe794a9a1066b2a850d2c",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Minibondterr.gif",
+        "timestamp_utc": "20050214195242",
+        "snapshot_url": "https://web.archive.org/web/20050214195242id_/http://www.zaniratti.it:80/Minibondterr.gif",
+        "source": "Wayback",
+        "manifest_sha256": "e34c44e0a7db389868a008eafbd885e14f059c9d28cbe794a9a1066b2a850d2c"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/LuoghiB.htm",
+          "src": "../Minibondterr.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "ITA/LuoghiI.htm",
+          "src": "../Minibondterr.gif",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Minibondterr.gif"
+      ]
+    },
+    {
+      "id": "673b91202408d15240c3",
+      "title": "Minibonifi5.gif",
+      "original_filename": "Minibonifi5.gif",
+      "path": "/assets/imagens-originais/673b91202408d15240c3.gif",
+      "mime_detected": "image/gif",
+      "bytes": 947,
+      "dimensions_px": [
+        100,
+        53
+      ],
+      "frames": 1,
+      "sha256": "673b91202408d15240c31280a96e389020ef5ffb9dffc6ed9c2ab3eeb650cad7",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Minibonifi5.gif",
+        "timestamp_utc": "20041207120455",
+        "snapshot_url": "https://web.archive.org/web/20041207120455id_/http://www.zaniratti.it:80/Minibonifi5.gif",
+        "source": "Wayback",
+        "manifest_sha256": "673b91202408d15240c31280a96e389020ef5ffb9dffc6ed9c2ab3eeb650cad7"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/LuoghiB.htm",
+          "src": "../Minibonifi5.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "ITA/LuoghiI.htm",
+          "src": "../Minibonifi5.gif",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Minibonifi5.gif"
+      ]
+    },
+    {
+      "id": "5163f1baea5f7fe477a1",
+      "title": "MiniChiSiamo.gif",
+      "original_filename": "MiniChiSiamo.gif",
+      "path": "/assets/imagens-originais/5163f1baea5f7fe477a1.gif",
+      "mime_detected": "image/gif",
+      "bytes": 47915,
+      "dimensions_px": [
+        307,
+        485
+      ],
+      "frames": 1,
+      "sha256": "5163f1baea5f7fe477a1d89d62c6a36e527495fb02972b6606c93355ee5892c1",
+      "category": "fotografia-ou-montagem-original",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/MiniChiSiamo.gif",
+        "timestamp_utc": "20050214191129",
+        "snapshot_url": "https://web.archive.org/web/20050214191129id_/http://www.zaniratti.it:80/Foto/MiniChiSiamo.gif",
+        "source": "Wayback",
+        "manifest_sha256": "5163f1baea5f7fe477a1d89d62c6a36e527495fb02972b6606c93355ee5892c1"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/ObiettiviB.htm",
+          "src": "../Foto/MiniChiSiamo.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "ITA/ObiettiviI.htm",
+          "src": "../Foto/MiniChiSiamo.gif",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-MiniChiSiamo.gif"
+      ]
+    },
+    {
+      "id": "1bf7737ba269c51d0b40",
+      "title": "Minici_botte.gif",
+      "original_filename": "Minici_botte.gif",
+      "path": "/assets/imagens-originais/1bf7737ba269c51d0b40.gif",
+      "mime_detected": "image/gif",
+      "bytes": 2145,
+      "dimensions_px": [
+        100,
+        68
+      ],
+      "frames": 1,
+      "sha256": "1bf7737ba269c51d0b406231b4043b80965b6fac5d93c790b0ddb5eaf3677250",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Minici_botte.gif",
+        "timestamp_utc": "20050214222525",
+        "snapshot_url": "https://web.archive.org/web/20050214222525id_/http://www.zaniratti.it:80/Minici_botte.gif",
+        "source": "Wayback",
+        "manifest_sha256": "1bf7737ba269c51d0b406231b4043b80965b6fac5d93c790b0ddb5eaf3677250"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/LuoghiB.htm",
+          "src": "../Minici_botte.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "ITA/LuoghiI.htm",
+          "src": "../Minici_botte.gif",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Minici_botte.gif"
+      ]
+    },
+    {
+      "id": "973b948b812b9afd4cbd",
+      "title": "Minici_pila.gif",
+      "original_filename": "Minici_pila.gif",
+      "path": "/assets/imagens-originais/973b948b812b9afd4cbd.gif",
+      "mime_detected": "image/gif",
+      "bytes": 2121,
+      "dimensions_px": [
+        100,
+        68
+      ],
+      "frames": 1,
+      "sha256": "973b948b812b9afd4cbd1a321660aa38a115f637e20dd0c6626c2288f20ef03c",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Minici_pila.gif",
+        "timestamp_utc": "20041023031543",
+        "snapshot_url": "https://web.archive.org/web/20041023031543id_/http://www.zaniratti.it:80/Minici_pila.gif",
+        "source": "Wayback",
+        "manifest_sha256": "973b948b812b9afd4cbd1a321660aa38a115f637e20dd0c6626c2288f20ef03c"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/LuoghiB.htm",
+          "src": "../Minici_pila.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "ITA/LuoghiI.htm",
+          "src": "../Minici_pila.gif",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Minici_pila.gif"
+      ]
+    },
+    {
+      "id": "eac27af16e99200cef8a",
+      "title": "MiniClarAnc.gif",
+      "original_filename": "MiniClarAnc.gif",
+      "path": "/assets/imagens-originais/eac27af16e99200cef8a.gif",
+      "mime_detected": "image/gif",
+      "bytes": 2288,
+      "dimensions_px": [
+        86,
+        100
+      ],
+      "frames": 1,
+      "sha256": "eac27af16e99200cef8ae03e50f61cfe2ed310eb3384e5a76854b4c07c110ad2",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniClarAnc.gif",
+        "timestamp_utc": "20050112003103",
+        "snapshot_url": "https://web.archive.org/web/20050112003103id_/http://www.zaniratti.it:80/MiniClarAnc.gif",
+        "source": "Wayback",
+        "manifest_sha256": "eac27af16e99200cef8ae03e50f61cfe2ed310eb3384e5a76854b4c07c110ad2"
+      },
+      "aliases": [
+        {
+          "filename": "MiniClarAnc.gif",
+          "original_url": "http://www.zaniratti.it:80/Foto/MiniClarAnc.gif",
+          "timestamp_utc": "20050504105923",
+          "snapshot_url": "https://web.archive.org/web/20050504105923id_/http://www.zaniratti.it:80/Foto/MiniClarAnc.gif",
+          "source": "Wayback",
+          "payload_path": "raw/snapshots/20050504105923/Foto/MiniClarAnc.gif.body",
+          "manifest_sha256": "eac27af16e99200cef8ae03e50f61cfe2ed310eb3384e5a76854b4c07c110ad2"
+        }
+      ],
+      "referenced_by": [
+        {
+          "page": "BRA/AncillaB.htm",
+          "src": "../Foto/MiniClarAnc.gif",
+          "alt": "Mamma Clarice con Ancilla (1912)",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-MiniClarAnc.gif",
+        "/assets/acervo/MiniClarAnc.gif"
+      ]
+    },
+    {
+      "id": "c352c3a41d90064d648e",
+      "title": "MiniCris2003Camino.gif",
+      "original_filename": "MiniCris2003Camino.gif",
+      "path": "/assets/imagens-originais/c352c3a41d90064d648e.gif",
+      "mime_detected": "image/gif",
+      "bytes": 4919,
+      "dimensions_px": [
+        144,
+        100
+      ],
+      "frames": 1,
+      "sha256": "c352c3a41d90064d648e1fe04f246540e7f6f301197eab54e1126fccb37fc0d6",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniCris2003Camino.gif",
+        "timestamp_utc": "20041122072441",
+        "snapshot_url": "https://web.archive.org/web/20041122072441id_/http://www.zaniratti.it:80/MiniCris2003Camino.gif",
+        "source": "Wayback",
+        "manifest_sha256": "c352c3a41d90064d648e1fe04f246540e7f6f301197eab54e1126fccb37fc0d6"
+      },
+      "aliases": [],
+      "referenced_by": [],
+      "published_identical_paths": [
+        "/assets/acervo/MiniCris2003Camino.gif"
+      ]
+    },
+    {
+      "id": "48a09334bd7f1175599a",
+      "title": "MiniCris57.gif",
+      "original_filename": "MiniCris57.gif",
+      "path": "/assets/imagens-originais/48a09334bd7f1175599a.gif",
+      "mime_detected": "image/gif",
+      "bytes": 2298,
+      "dimensions_px": [
+        100,
+        100
+      ],
+      "frames": 1,
+      "sha256": "48a09334bd7f1175599adb15a517e6cb77a46eacb37c82dbc064bb94588c518d",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniCris57.gif",
+        "timestamp_utc": "20041122072828",
+        "snapshot_url": "https://web.archive.org/web/20041122072828id_/http://www.zaniratti.it:80/MiniCris57.gif",
+        "source": "Wayback",
+        "manifest_sha256": "48a09334bd7f1175599adb15a517e6cb77a46eacb37c82dbc064bb94588c518d"
+      },
+      "aliases": [],
+      "referenced_by": [],
+      "published_identical_paths": [
+        "/assets/acervo/MiniCris57.gif"
+      ]
+    },
+    {
+      "id": "b4cfa5f710635997e0bd",
+      "title": "MiniCris71.gif",
+      "original_filename": "MiniCris71.gif",
+      "path": "/assets/imagens-originais/b4cfa5f710635997e0bd.gif",
+      "mime_detected": "image/gif",
+      "bytes": 2110,
+      "dimensions_px": [
+        131,
+        100
+      ],
+      "frames": 1,
+      "sha256": "b4cfa5f710635997e0bd730b1e787ad02841faeae2f875fb4b79e1af4c37ae19",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniCris71.gif",
+        "timestamp_utc": "20041122075402",
+        "snapshot_url": "https://web.archive.org/web/20041122075402id_/http://www.zaniratti.it:80/MiniCris71.gif",
+        "source": "Wayback",
+        "manifest_sha256": "b4cfa5f710635997e0bd730b1e787ad02841faeae2f875fb4b79e1af4c37ae19"
+      },
+      "aliases": [],
+      "referenced_by": [],
+      "published_identical_paths": [
+        "/assets/acervo/MiniCris71.gif"
+      ]
+    },
+    {
+      "id": "ab4acc0f378c6ad7ccfb",
+      "title": "MiniCrisIre85.gif",
+      "original_filename": "MiniCrisIre85.gif",
+      "path": "/assets/imagens-originais/ab4acc0f378c6ad7ccfb.gif",
+      "mime_detected": "image/gif",
+      "bytes": 2854,
+      "dimensions_px": [
+        131,
+        100
+      ],
+      "frames": 1,
+      "sha256": "ab4acc0f378c6ad7ccfb5619d7625f1f0190e4c77b11a47d1b765e71ab42b8e4",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniCrisIre85.gif",
+        "timestamp_utc": "20041122082005",
+        "snapshot_url": "https://web.archive.org/web/20041122082005id_/http://www.zaniratti.it:80/MiniCrisIre85.gif",
+        "source": "Wayback",
+        "manifest_sha256": "ab4acc0f378c6ad7ccfb5619d7625f1f0190e4c77b11a47d1b765e71ab42b8e4"
+      },
+      "aliases": [],
+      "referenced_by": [],
+      "published_identical_paths": [
+        "/assets/acervo/MiniCrisIre85.gif"
+      ]
+    },
+    {
+      "id": "0cbda2752b305ed1568d",
+      "title": "MiniCrisMir04.gif",
+      "original_filename": "MiniCrisMir04.gif",
+      "path": "/assets/imagens-originais/0cbda2752b305ed1568d.gif",
+      "mime_detected": "image/gif",
+      "bytes": 4218,
+      "dimensions_px": [
+        133,
+        100
+      ],
+      "frames": 1,
+      "sha256": "0cbda2752b305ed1568d6a6153cc9cb06c4c07cf1c6c6946f021e13cc83f6280",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniCrisMir04.gif",
+        "timestamp_utc": "20041122045223",
+        "snapshot_url": "https://web.archive.org/web/20041122045223id_/http://www.zaniratti.it:80/MiniCrisMir04.gif",
+        "source": "Wayback",
+        "manifest_sha256": "0cbda2752b305ed1568d6a6153cc9cb06c4c07cf1c6c6946f021e13cc83f6280"
+      },
+      "aliases": [],
+      "referenced_by": [],
+      "published_identical_paths": [
+        "/assets/acervo/MiniCrisMir04.gif"
+      ]
+    },
+    {
+      "id": "b83a52754297ba453a32",
+      "title": "MiniCynCri.gif",
+      "original_filename": "MiniCynCri.gif",
+      "path": "/assets/imagens-originais/b83a52754297ba453a32.gif",
+      "mime_detected": "image/gif",
+      "bytes": 4133,
+      "dimensions_px": [
+        133,
+        100
+      ],
+      "frames": 1,
+      "sha256": "b83a52754297ba453a3257c843edafc3f7e1028a3c946aab76a4ff5da4dc4a7b",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/MiniCynCri.gif",
+        "timestamp_utc": "20050504112512",
+        "snapshot_url": "https://web.archive.org/web/20050504112512id_/http://www.zaniratti.it:80/Foto/MiniCynCri.gif",
+        "source": "Wayback",
+        "manifest_sha256": "b83a52754297ba453a3257c843edafc3f7e1028a3c946aab76a4ff5da4dc4a7b"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/CynthiaB.htm",
+          "src": "../Foto/MiniCynCri.gif",
+          "alt": "Com Cristina Barion, em Sestriere, em 2004.",
+          "title": ""
+        },
+        {
+          "page": "ITA/CynthiaI.htm",
+          "src": "../MiniCynCri.gif",
+          "alt": "Con Cristina Barion, al Sestriere, nel 2004.",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-MiniCynCri.gif"
+      ]
+    },
+    {
+      "id": "1ca735ab3dc3f2eefc6a",
+      "title": "MiniCynEdmIreCri.gif",
+      "original_filename": "MiniCynEdmIreCri.gif",
+      "path": "/assets/imagens-originais/1ca735ab3dc3f2eefc6a.gif",
+      "mime_detected": "image/gif",
+      "bytes": 3607,
+      "dimensions_px": [
+        133,
+        100
+      ],
+      "frames": 1,
+      "sha256": "1ca735ab3dc3f2eefc6abbd85c1b13acff716f3987104152b380b24880cc5cde",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/MiniCynEdmIreCri.gif",
+        "timestamp_utc": "20051004054018",
+        "snapshot_url": "https://web.archive.org/web/20051004054018id_/http://www.zaniratti.it:80/Foto/MiniCynEdmIreCri.gif",
+        "source": "Wayback",
+        "manifest_sha256": "1ca735ab3dc3f2eefc6abbd85c1b13acff716f3987104152b380b24880cc5cde"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/CynthiaB.htm",
+          "src": "../Foto/MiniCynEdmIreCri.gif",
+          "alt": "Cynthia com parentes de Turim, em 2004.",
+          "title": ""
+        },
+        {
+          "page": "ITA/CynthiaI.htm",
+          "src": "../MiniCynEdmIreCri.gif",
+          "alt": "Cynthia con parenti di Torino, nel 2004.",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-MiniCynEdmIreCri.gif"
+      ]
+    },
+    {
+      "id": "94870f3e2d4a3c149fa8",
+      "title": "MiniCynIreCri1.gif",
+      "original_filename": "MiniCynIreCri1.gif",
+      "path": "/assets/imagens-originais/94870f3e2d4a3c149fa8.gif",
+      "mime_detected": "image/gif",
+      "bytes": 3372,
+      "dimensions_px": [
+        128,
+        100
+      ],
+      "frames": 1,
+      "sha256": "94870f3e2d4a3c149fa89510f8db4c85d11342b3ddf7374850ced8a9382e7126",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/MiniCynIreCri1.gif",
+        "timestamp_utc": "20050504121103",
+        "snapshot_url": "https://web.archive.org/web/20050504121103id_/http://www.zaniratti.it:80/Foto/MiniCynIreCri1.gif",
+        "source": "Wayback",
+        "manifest_sha256": "94870f3e2d4a3c149fa89510f8db4c85d11342b3ddf7374850ced8a9382e7126"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/CynthiaB.htm",
+          "src": "../Foto/MiniCynIreCri1.gif",
+          "alt": "No café Fiorio em Turim, em 2004",
+          "title": ""
+        },
+        {
+          "page": "ITA/CynthiaI.htm",
+          "src": "../MiniCynIreCri1.gif",
+          "alt": "Al caffé Florio in Torino, nel 2004",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-MiniCynIreCri1.gif"
+      ]
+    },
+    {
+      "id": "92c220583a7218430143",
+      "title": "MiniCynNanGerFelVin.gif",
+      "original_filename": "MiniCynNanGerFelVin.gif",
+      "path": "/assets/imagens-originais/92c220583a7218430143.gif",
+      "mime_detected": "image/gif",
+      "bytes": 5364,
+      "dimensions_px": [
+        133,
+        100
+      ],
+      "frames": 1,
+      "sha256": "92c220583a7218430143fb2ff9c9625da1d8135a89a6d02abc04090d2cde3fb2",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniCynNanGerFelVin.gif",
+        "timestamp_utc": "20041122070256",
+        "snapshot_url": "https://web.archive.org/web/20041122070256id_/http://www.zaniratti.it:80/MiniCynNanGerFelVin.gif",
+        "source": "Wayback",
+        "manifest_sha256": "92c220583a7218430143fb2ff9c9625da1d8135a89a6d02abc04090d2cde3fb2"
+      },
+      "aliases": [
+        {
+          "filename": "MiniCynNanGerFelVin.gif",
+          "original_url": "http://www.zaniratti.it:80/Foto/MiniCynNanGerFelVin.gif",
+          "timestamp_utc": "20051004080409",
+          "snapshot_url": "https://web.archive.org/web/20051004080409id_/http://www.zaniratti.it:80/Foto/MiniCynNanGerFelVin.gif",
+          "source": "Wayback",
+          "payload_path": "raw/snapshots/20051004080409/Foto/MiniCynNanGerFelVin.gif.body",
+          "manifest_sha256": "92c220583a7218430143fb2ff9c9625da1d8135a89a6d02abc04090d2cde3fb2"
+        }
+      ],
+      "referenced_by": [
+        {
+          "page": "BRA/CynthiaB.htm",
+          "src": "../Foto/MiniCynNanGerFelVin.gif",
+          "alt": "família Geraldo ao restaurante, em Maio 2003",
+          "title": ""
+        },
+        {
+          "page": "BRA/FelipeB.htm",
+          "src": "../MiniCynNanGerFelVin.gif",
+          "alt": "Família do Geraldo ao restaurante, em maio 2003",
+          "title": ""
+        },
+        {
+          "page": "ITA/CynthiaI.htm",
+          "src": "../MiniCynNanGerFelVin.gif",
+          "alt": "Famiglia Geraldo al ristorante, maggio 2003",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-MiniCynNanGerFelVin.gif",
+        "/assets/acervo/MiniCynNanGerFelVin.gif"
+      ]
+    },
+    {
+      "id": "7a5e41f973d9c3d6dfec",
+      "title": "MiniCynNev1.gif",
+      "original_filename": "MiniCynNev1.gif",
+      "path": "/assets/imagens-originais/7a5e41f973d9c3d6dfec.gif",
+      "mime_detected": "image/gif",
+      "bytes": 3817,
+      "dimensions_px": [
+        110,
+        100
+      ],
+      "frames": 1,
+      "sha256": "7a5e41f973d9c3d6dfece08cdf89420afaf3ca31c02b8682dd057e0e89b0610f",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/MiniCynNev1.gif",
+        "timestamp_utc": "20050504131011",
+        "snapshot_url": "https://web.archive.org/web/20050504131011id_/http://www.zaniratti.it:80/Foto/MiniCynNev1.gif",
+        "source": "Wayback",
+        "manifest_sha256": "7a5e41f973d9c3d6dfece08cdf89420afaf3ca31c02b8682dd057e0e89b0610f"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/CynthiaB.htm",
+          "src": "../Foto/MiniCynNev1.gif",
+          "alt": "Sentada na neve, em Sestriere, em 2004.",
+          "title": ""
+        },
+        {
+          "page": "ITA/CynthiaI.htm",
+          "src": "../MiniCynNev1.gif",
+          "alt": "Seduta nella neve, al Sestriere, nel 2004.",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-MiniCynNev1.gif"
+      ]
+    },
+    {
+      "id": "9d5b03a723e2cf1ad8ff",
+      "title": "MiniCynOdi.gif",
+      "original_filename": "MiniCynOdi.gif",
+      "path": "/assets/imagens-originais/9d5b03a723e2cf1ad8ff.gif",
+      "mime_detected": "image/gif",
+      "bytes": 3140,
+      "dimensions_px": [
+        116,
+        100
+      ],
+      "frames": 1,
+      "sha256": "9d5b03a723e2cf1ad8ffd63bb0c760ca5d89f5746c9b256be3f3b257f2826d69",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/MiniCynOdi.gif",
+        "timestamp_utc": "20051004082732",
+        "snapshot_url": "https://web.archive.org/web/20051004082732id_/http://www.zaniratti.it:80/Foto/MiniCynOdi.gif",
+        "source": "Wayback",
+        "manifest_sha256": "9d5b03a723e2cf1ad8ffd63bb0c760ca5d89f5746c9b256be3f3b257f2826d69"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/CynthiaB.htm",
+          "src": "../Foto/MiniCynOdi.gif",
+          "alt": "Com Odilla, em Turim, em 2004",
+          "title": ""
+        },
+        {
+          "page": "ITA/CynthiaI.htm",
+          "src": "../MiniCynOdi.gif",
+          "alt": "Con Odilla, a Torino, nel 2004.",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-MiniCynOdi.gif"
+      ]
+    },
+    {
+      "id": "755bb08430f9fa419568",
+      "title": "MiniCynthia86.gif",
+      "original_filename": "MiniCynthia86.gif",
+      "path": "/assets/imagens-originais/755bb08430f9fa419568.gif",
+      "mime_detected": "image/gif",
+      "bytes": 2933,
+      "dimensions_px": [
+        74,
+        100
+      ],
+      "frames": 1,
+      "sha256": "755bb08430f9fa419568eb105512ac89a50ea2dcdddb999f47e5b1f71ae7e5e7",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniCynthia86.gif",
+        "timestamp_utc": "20041122073248",
+        "snapshot_url": "https://web.archive.org/web/20041122073248id_/http://www.zaniratti.it:80/MiniCynthia86.gif",
+        "source": "Wayback",
+        "manifest_sha256": "755bb08430f9fa419568eb105512ac89a50ea2dcdddb999f47e5b1f71ae7e5e7"
+      },
+      "aliases": [
+        {
+          "filename": "MiniCynthia86.gif",
+          "original_url": "http://www.zaniratti.it:80/Foto/MiniCynthia86.gif",
+          "timestamp_utc": "20051004083510",
+          "snapshot_url": "https://web.archive.org/web/20051004083510id_/http://www.zaniratti.it:80/Foto/MiniCynthia86.gif",
+          "source": "Wayback",
+          "payload_path": "raw/snapshots/20051004083510/Foto/MiniCynthia86.gif.body",
+          "manifest_sha256": "755bb08430f9fa419568eb105512ac89a50ea2dcdddb999f47e5b1f71ae7e5e7"
+        }
+      ],
+      "referenced_by": [
+        {
+          "page": "BRA/CynthiaB.htm",
+          "src": "../Foto/MiniCynthia86.gif",
+          "alt": "Cynthia, 1986",
+          "title": ""
+        },
+        {
+          "page": "ITA/CynthiaI.htm",
+          "src": "../MiniCynthia86.gif",
+          "alt": "Cynthia, 1986",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-MiniCynthia86.gif",
+        "/assets/acervo/MiniCynthia86.gif"
+      ]
+    },
+    {
+      "id": "522dcf1302f9414e6900",
+      "title": "MiniCynthia88.gif",
+      "original_filename": "MiniCynthia88.gif",
+      "path": "/assets/imagens-originais/522dcf1302f9414e6900.gif",
+      "mime_detected": "image/gif",
+      "bytes": 2590,
+      "dimensions_px": [
+        69,
+        100
+      ],
+      "frames": 1,
+      "sha256": "522dcf1302f9414e69004fed577f4c5d49d5e79057c3dac21177da64463e3df6",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniCynthia88.gif",
+        "timestamp_utc": "20041122075807",
+        "snapshot_url": "https://web.archive.org/web/20041122075807id_/http://www.zaniratti.it:80/MiniCynthia88.gif",
+        "source": "Wayback",
+        "manifest_sha256": "522dcf1302f9414e69004fed577f4c5d49d5e79057c3dac21177da64463e3df6"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/CynthiaB.htm",
+          "src": "../Foto/MiniCynthia88.gif",
+          "alt": "Cynthia, prima comunione. 1988",
+          "title": ""
+        },
+        {
+          "page": "ITA/CynthiaI.htm",
+          "src": "../MiniCynthia88.gif",
+          "alt": "Cynthia, prima comunione. 1988",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/MiniCynthia88.gif"
+      ]
+    },
+    {
+      "id": "98691fc4fa9c5141d8c3",
+      "title": "MiniCynTor.gif",
+      "original_filename": "MiniCynTor.gif",
+      "path": "/assets/imagens-originais/98691fc4fa9c5141d8c3.gif",
+      "mime_detected": "image/gif",
+      "bytes": 4311,
+      "dimensions_px": [
+        133,
+        100
+      ],
+      "frames": 1,
+      "sha256": "98691fc4fa9c5141d8c3db11c59021a5644cedbf51a4f2fd62f7800af172f5ea",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/MiniCynTor.gif",
+        "timestamp_utc": "20050504134815",
+        "snapshot_url": "https://web.archive.org/web/20050504134815id_/http://www.zaniratti.it:80/Foto/MiniCynTor.gif",
+        "source": "Wayback",
+        "manifest_sha256": "98691fc4fa9c5141d8c3db11c59021a5644cedbf51a4f2fd62f7800af172f5ea"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/CynthiaB.htm",
+          "src": "../Foto/MiniCynTor.gif",
+          "alt": "Na praza do Castelo, em Turim, em 2004",
+          "title": ""
+        },
+        {
+          "page": "ITA/CynthiaI.htm",
+          "src": "../MiniCynTor.gif",
+          "alt": "In piazza Castello, a Torino,  nel 2004",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-MiniCynTor.gif"
+      ]
+    },
+    {
+      "id": "b45d60944a45a5a236a8",
+      "title": "MiniDante1878m.gif",
+      "original_filename": "MiniDante1878m.gif",
+      "path": "/assets/imagens-originais/b45d60944a45a5a236a8.gif",
+      "mime_detected": "image/gif",
+      "bytes": 2388,
+      "dimensions_px": [
+        66,
+        100
+      ],
+      "frames": 1,
+      "sha256": "b45d60944a45a5a236a872be885b3591ed98d3e1aee2a4c274150b1e1040cf4f",
+      "category": "documento-historico",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniDante1878m.gif",
+        "timestamp_utc": "20041122081508",
+        "snapshot_url": "https://web.archive.org/web/20041122081508id_/http://www.zaniratti.it:80/MiniDante1878m.gif",
+        "source": "Wayback",
+        "manifest_sha256": "b45d60944a45a5a236a872be885b3591ed98d3e1aee2a4c274150b1e1040cf4f"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/Dante1878B.htm",
+          "src": "../Mini/Dante1878m.gif",
+          "alt": "Documento di accompagnamento dell'atto di morte trasmesso da Ferrara a Bondeno.",
+          "title": "",
+          "source_page_capture": "20080415210344"
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/MiniDante1878m.gif"
+      ],
+      "caption": "Documento di accompagnamento dell’atto di morte trasmesso da Ferrara a Bondeno.",
+      "dimensions_note": "A captura preserva apenas miniatura de 66 × 100 px; não foi localizada uma versão em resolução maior. Não houve transcrição."
+    },
+    {
+      "id": "2c6e754f261af62901aa",
+      "title": "MiniDebCynGraViv.gif",
+      "original_filename": "MiniDebCynGraViv.gif",
+      "path": "/assets/imagens-originais/2c6e754f261af62901aa.gif",
+      "mime_detected": "image/gif",
+      "bytes": 5204,
+      "dimensions_px": [
+        133,
+        100
+      ],
+      "frames": 1,
+      "sha256": "2c6e754f261af62901aa6ae16b0e8db200e86928219faaca1aad4278eeaf4111",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniDebCynGraViv.gif",
+        "timestamp_utc": "20041122044557",
+        "snapshot_url": "https://web.archive.org/web/20041122044557id_/http://www.zaniratti.it:80/MiniDebCynGraViv.gif",
+        "source": "Wayback",
+        "manifest_sha256": "2c6e754f261af62901aa6ae16b0e8db200e86928219faaca1aad4278eeaf4111"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/CynthiaB.htm",
+          "src": "../Foto/MiniDebCynGraViv.gif",
+          "alt": "Debora, Cynthia, Graça, Viviane",
+          "title": ""
+        },
+        {
+          "page": "BRA/DeboraB.htm",
+          "src": "../MiniDebCynGraViv.gif",
+          "alt": "Debora, Cynthia, Graça, Viviane",
+          "title": ""
+        },
+        {
+          "page": "ITA/CynthiaI.htm",
+          "src": "../MiniDebCynGraViv.gif",
+          "alt": "Debora, Cynthia, Graça, Viviane",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/MiniDebCynGraViv.gif"
+      ]
+    },
+    {
+      "id": "f83c0e4cad9ac88a0f49",
+      "title": "MiniDeulma1930-49.gif",
+      "original_filename": "MiniDeulma1930-49.gif",
+      "path": "/assets/imagens-originais/f83c0e4cad9ac88a0f49.gif",
+      "mime_detected": "image/gif",
+      "bytes": 2917,
+      "dimensions_px": [
+        92,
+        100
+      ],
+      "frames": 1,
+      "sha256": "f83c0e4cad9ac88a0f4903b62bb7e9b4494dc5dd0b9f555874c4efc34b1c7e26",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniDeulma1930-49.gif",
+        "timestamp_utc": "20041123171234",
+        "snapshot_url": "https://web.archive.org/web/20041123171234id_/http://www.zaniratti.it:80/MiniDeulma1930-49.gif",
+        "source": "Wayback",
+        "manifest_sha256": "f83c0e4cad9ac88a0f4903b62bb7e9b4494dc5dd0b9f555874c4efc34b1c7e26"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/Deulma1930B.htm",
+          "src": "../MiniDeulma1930-49.gif",
+          "alt": "1949",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/MiniDeulma1930-49.gif"
+      ]
+    },
+    {
+      "id": "ee69428a99edd44614a9",
+      "title": "MiniDeulma1930-52.gif",
+      "original_filename": "MiniDeulma1930-52.gif",
+      "path": "/assets/imagens-originais/ee69428a99edd44614a9.gif",
+      "mime_detected": "image/gif",
+      "bytes": 3396,
+      "dimensions_px": [
+        114,
+        100
+      ],
+      "frames": 1,
+      "sha256": "ee69428a99edd44614a90cc6da44db096d39bca25a1571d3bc7fef935e5a2476",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniDeulma1930-52.gif",
+        "timestamp_utc": "20041123171320",
+        "snapshot_url": "https://web.archive.org/web/20041123171320id_/http://www.zaniratti.it:80/MiniDeulma1930-52.gif",
+        "source": "Wayback",
+        "manifest_sha256": "ee69428a99edd44614a90cc6da44db096d39bca25a1571d3bc7fef935e5a2476"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/Deulma1930B.htm",
+          "src": "../MiniDeulma1930-52.gif",
+          "alt": "Deulma e Luigi, 1952",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/MiniDeulma1930-52.gif"
+      ]
+    },
+    {
+      "id": "4b08f9836bc6a93de2d3",
+      "title": "MiniDeulma1930fam.gif",
+      "original_filename": "MiniDeulma1930fam.gif",
+      "path": "/assets/imagens-originais/4b08f9836bc6a93de2d3.gif",
+      "mime_detected": "image/gif",
+      "bytes": 4284,
+      "dimensions_px": [
+        144,
+        100
+      ],
+      "frames": 1,
+      "sha256": "4b08f9836bc6a93de2d3d7f0eb757f8f98f34625cd6b4b93c431eb3cfd106d6e",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniDeulma1930fam.gif",
+        "timestamp_utc": "20041123171753",
+        "snapshot_url": "https://web.archive.org/web/20041123171753id_/http://www.zaniratti.it:80/MiniDeulma1930fam.gif",
+        "source": "Wayback",
+        "manifest_sha256": "4b08f9836bc6a93de2d3d7f0eb757f8f98f34625cd6b4b93c431eb3cfd106d6e"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/Deulma1930B.htm",
+          "src": "../MiniDeulma1930fam.gif",
+          "alt": "Família de Deulma",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/MiniDeulma1930fam.gif"
+      ]
+    },
+    {
+      "id": "686d6e4e2acaabd27097",
+      "title": "MiniDeulma1930po.gif",
+      "original_filename": "MiniDeulma1930po.gif",
+      "path": "/assets/imagens-originais/686d6e4e2acaabd27097.gif",
+      "mime_detected": "image/gif",
+      "bytes": 2591,
+      "dimensions_px": [
+        82,
+        100
+      ],
+      "frames": 1,
+      "sha256": "686d6e4e2acaabd270970dd1e8729932fad9c10e441f55ab8195d96685c8f59b",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniDeulma1930po.gif",
+        "timestamp_utc": "20041123165434",
+        "snapshot_url": "https://web.archive.org/web/20041123165434id_/http://www.zaniratti.it:80/MiniDeulma1930po.gif",
+        "source": "Wayback",
+        "manifest_sha256": "686d6e4e2acaabd270970dd1e8729932fad9c10e441f55ab8195d96685c8f59b"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/Deulma1930B.htm",
+          "src": "../MiniDeulma1930po.gif",
+          "alt": "Viagem de bodas ao rio Po! Em 1953",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/MiniDeulma1930po.gif"
+      ]
+    },
+    {
+      "id": "be52c619d099c44b3b9a",
+      "title": "MiniEdmDeuGerIva.gif",
+      "original_filename": "MiniEdmDeuGerIva.gif",
+      "path": "/assets/imagens-originais/be52c619d099c44b3b9a.gif",
+      "mime_detected": "image/gif",
+      "bytes": 4134,
+      "dimensions_px": [
+        133,
+        100
+      ],
+      "frames": 1,
+      "sha256": "be52c619d099c44b3b9a777a33f955741c695bdce71aa01b3d27d8c619b1d4cf",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniEdmDeuGerIva.gif",
+        "timestamp_utc": "20041123170234",
+        "snapshot_url": "https://web.archive.org/web/20041123170234id_/http://www.zaniratti.it:80/MiniEdmDeuGerIva.gif",
+        "source": "Wayback",
+        "manifest_sha256": "be52c619d099c44b3b9a777a33f955741c695bdce71aa01b3d27d8c619b1d4cf"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/Deulma1930B.htm",
+          "src": "../MiniEdmDeuGerIva.gif",
+          "alt": "Reunião em Asti, maio 2004",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/MiniEdmDeuGerIva.gif"
+      ]
+    },
+    {
+      "id": "0df6e129281b2cfc58c1",
+      "title": "MiniFerraraFE1.gif",
+      "original_filename": "MiniFerraraFE1.gif",
+      "path": "/assets/imagens-originais/0df6e129281b2cfc58c1.gif",
+      "mime_detected": "image/gif",
+      "bytes": 2580,
+      "dimensions_px": [
+        100,
+        66
+      ],
+      "frames": 1,
+      "sha256": "0df6e129281b2cfc58c193c0272553911edac6230f51be6669ea5f0d2be15024",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniFerraraFE1.gif",
+        "timestamp_utc": "20050214223206",
+        "snapshot_url": "https://web.archive.org/web/20050214223206id_/http://www.zaniratti.it:80/MiniFerraraFE1.gif",
+        "source": "Wayback",
+        "manifest_sha256": "0df6e129281b2cfc58c193c0272553911edac6230f51be6669ea5f0d2be15024"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/LuoghiB.htm",
+          "src": "../MiniFerraraFE1.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "ITA/LuoghiI.htm",
+          "src": "../MiniFerraraFE1.gif",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/MiniFerraraFE1.gif"
+      ]
+    },
+    {
+      "id": "ae31b495ea60e98791c5",
+      "title": "Minifotolog4.gif",
+      "original_filename": "Minifotolog4.gif",
+      "path": "/assets/imagens-originais/ae31b495ea60e98791c5.gif",
+      "mime_detected": "image/gif",
+      "bytes": 2989,
+      "dimensions_px": [
+        133,
+        100
+      ],
+      "frames": 1,
+      "sha256": "ae31b495ea60e98791c5fc0196b2a81a73f0540f96b6d6a004b2ae3edcf88927",
+      "category": "decorativa",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/Minifotolog4.gif",
+        "timestamp_utc": "20050504025427",
+        "snapshot_url": "https://web.archive.org/web/20050504025427id_/http://www.zaniratti.it:80/Foto/Minifotolog4.gif",
+        "source": "Wayback",
+        "manifest_sha256": "ae31b495ea60e98791c5fc0196b2a81a73f0540f96b6d6a004b2ae3edcf88927"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/CynthiaB.htm",
+          "src": "../Foto/Minifotolog4.gif",
+          "alt": "Mais fotos estão em seu fotolog: http://www.fotolog.terra.com.br/cpzani",
+          "title": ""
+        },
+        {
+          "page": "ITA/CynthiaI.htm",
+          "src": "../Minifotolog4.gif",
+          "alt": "Molte foto sono nel suo fotolog: http://www.fotolog.terra.com.br/cpzani",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-Minifotolog4.gif"
+      ]
+    },
+    {
+      "id": "805095dc4cc9b466f3ee",
+      "title": "Minifotolog5.gif",
+      "original_filename": "Minifotolog5.gif",
+      "path": "/assets/imagens-originais/805095dc4cc9b466f3ee.gif",
+      "mime_detected": "image/gif",
+      "bytes": 1537,
+      "dimensions_px": [
+        133,
+        100
+      ],
+      "frames": 1,
+      "sha256": "805095dc4cc9b466f3eee19f12e75bda2c5589c1162d5ef17f73200744b75494",
+      "category": "decorativa",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/Minifotolog5.gif",
+        "timestamp_utc": "20050504032235",
+        "snapshot_url": "https://web.archive.org/web/20050504032235id_/http://www.zaniratti.it:80/Foto/Minifotolog5.gif",
+        "source": "Wayback",
+        "manifest_sha256": "805095dc4cc9b466f3eee19f12e75bda2c5589c1162d5ef17f73200744b75494"
+      },
+      "aliases": [],
+      "referenced_by": [],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-Minifotolog5.gif"
+      ]
+    },
+    {
+      "id": "c3f6e179a2d37bac9fb3",
+      "title": "MiniGeraldoFam.gif",
+      "original_filename": "MiniGeraldoFam.gif",
+      "path": "/assets/imagens-originais/c3f6e179a2d37bac9fb3.gif",
+      "mime_detected": "image/gif",
+      "bytes": 7814,
+      "dimensions_px": [
+        207,
+        100
+      ],
+      "frames": 1,
+      "sha256": "c3f6e179a2d37bac9fb3cd288df16d908d98bd29622f22b24428158173d0b0c6",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniGeraldoFam.gif",
+        "timestamp_utc": "20041122070651",
+        "snapshot_url": "https://web.archive.org/web/20041122070651id_/http://www.zaniratti.it:80/MiniGeraldoFam.gif",
+        "source": "Wayback",
+        "manifest_sha256": "c3f6e179a2d37bac9fb3cd288df16d908d98bd29622f22b24428158173d0b0c6"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/CynthiaB.htm",
+          "src": "../Foto/MiniGeraldoFam.gif",
+          "alt": "Família de Geraldo",
+          "title": ""
+        },
+        {
+          "page": "BRA/FelipeB.htm",
+          "src": "../MiniGeraldoFam.gif",
+          "alt": "Família de Geraldo",
+          "title": ""
+        },
+        {
+          "page": "ITA/CynthiaI.htm",
+          "src": "../MiniGeraldoFam.gif",
+          "alt": "Famiglia di Geraldo",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/MiniGeraldoFam.gif"
+      ]
+    },
+    {
+      "id": "7eebc6605065101a6d52",
+      "title": "MiniGerHelAng.gif",
+      "original_filename": "MiniGerHelAng.gif",
+      "path": "/assets/imagens-originais/7eebc6605065101a6d52.gif",
+      "mime_detected": "image/gif",
+      "bytes": 6175,
+      "dimensions_px": [
+        150,
+        100
+      ],
+      "frames": 1,
+      "sha256": "7eebc6605065101a6d52b1f8c0d4c62dbef27aa6c133b1ce414b5de17c7a9f4e",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniGerHelAng.gif",
+        "timestamp_utc": "20041117234745",
+        "snapshot_url": "https://web.archive.org/web/20041117234745id_/http://www.zaniratti.it:80/MiniGerHelAng.gif",
+        "source": "Wayback",
+        "manifest_sha256": "7eebc6605065101a6d52b1f8c0d4c62dbef27aa6c133b1ce414b5de17c7a9f4e"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/AngeloB.htm",
+          "src": "../MiniGerHelAng.gif",
+          "alt": "Geraldo, Helena ed il figlio Angelo",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/MiniGerHelAng.gif"
+      ]
+    },
+    {
+      "id": "e85e35d649752688437a",
+      "title": "MiniGigiDeulma.gif",
+      "original_filename": "MiniGigiDeulma.gif",
+      "path": "/assets/imagens-originais/e85e35d649752688437a.gif",
+      "mime_detected": "image/gif",
+      "bytes": 2763,
+      "dimensions_px": [
+        102,
+        100
+      ],
+      "frames": 1,
+      "sha256": "e85e35d649752688437a8c4d6ca6c6086371bb7169822956f6514480adda105f",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniGigiDeulma.gif",
+        "timestamp_utc": "20041123170548",
+        "snapshot_url": "https://web.archive.org/web/20041123170548id_/http://www.zaniratti.it:80/MiniGigiDeulma.gif",
+        "source": "Wayback",
+        "manifest_sha256": "e85e35d649752688437a8c4d6ca6c6086371bb7169822956f6514480adda105f"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/Deulma1930B.htm",
+          "src": "../MiniGigiDeulma.gif",
+          "alt": "Gigi e Deulma",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/MiniGigiDeulma.gif"
+      ]
+    },
+    {
+      "id": "5689c9fcece4bbf194d8",
+      "title": "MiniGuarapariConLaursen.gif",
+      "original_filename": "MiniGuarapariConLaursen.gif",
+      "path": "/assets/imagens-originais/5689c9fcece4bbf194d8.gif",
+      "mime_detected": "image/gif",
+      "bytes": 6891,
+      "dimensions_px": [
+        177,
+        100
+      ],
+      "frames": 1,
+      "sha256": "5689c9fcece4bbf194d84c2f6047343775fe827b2b1d326a92418346d46778e2",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniGuarapariConLaursen.gif",
+        "timestamp_utc": "20041122102017",
+        "snapshot_url": "https://web.archive.org/web/20041122102017id_/http://www.zaniratti.it:80/MiniGuarapariConLaursen.gif",
+        "source": "Wayback",
+        "manifest_sha256": "5689c9fcece4bbf194d84c2f6047343775fe827b2b1d326a92418346d46778e2"
+      },
+      "aliases": [
+        {
+          "filename": "MiniGuarapariConLaursen.gif",
+          "original_url": "http://www.zaniratti.it:80/Foto/MiniGuarapariConLaursen.gif",
+          "timestamp_utc": "20051004083044",
+          "snapshot_url": "https://web.archive.org/web/20051004083044id_/http://www.zaniratti.it:80/Foto/MiniGuarapariConLaursen.gif",
+          "source": "Wayback",
+          "payload_path": "raw/snapshots/20051004083044/Foto/MiniGuarapariConLaursen.gif.body",
+          "manifest_sha256": "5689c9fcece4bbf194d84c2f6047343775fe827b2b1d326a92418346d46778e2"
+        }
+      ],
+      "referenced_by": [
+        {
+          "page": "BRA/CynthiaB.htm",
+          "src": "../Foto/MiniGuarapariConLaursen.gif",
+          "alt": "Geraldo e Cynthia com os Laursen, família que hospedou a Cynthia em Dinamarca.",
+          "title": ""
+        },
+        {
+          "page": "ITA/CynthiaI.htm",
+          "src": "../MiniGuarapariConLaursen.gif",
+          "alt": "Geraldo e Cynthia con i Laursen, famiglia che ospitò Cynthia in Danimarca.",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-MiniGuarapariConLaursen.gif",
+        "/assets/acervo/MiniGuarapariConLaursen.gif"
+      ]
+    },
+    {
+      "id": "ced205684092c04357f0",
+      "title": "MiniLia-AncilDeulmo49.gif",
+      "original_filename": "MiniLia-AncilDeulmo49.gif",
+      "path": "/assets/imagens-originais/ced205684092c04357f0.gif",
+      "mime_detected": "image/gif",
+      "bytes": 5885,
+      "dimensions_px": [
+        142,
+        100
+      ],
+      "frames": 1,
+      "sha256": "ced205684092c04357f0d31c75bae2aa99c7579b4504c3f0e173a4888d916d72",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniLia-AncilDeulmo49.gif",
+        "timestamp_utc": "20050112040810",
+        "snapshot_url": "https://web.archive.org/web/20050112040810id_/http://www.zaniratti.it:80/MiniLia-AncilDeulmo49.gif",
+        "source": "Wayback",
+        "manifest_sha256": "ced205684092c04357f0d31c75bae2aa99c7579b4504c3f0e173a4888d916d72"
+      },
+      "aliases": [
+        {
+          "filename": "MiniLia-AncilDeulmo49.gif",
+          "original_url": "http://www.zaniratti.it:80/Foto/MiniLia-AncilDeulmo49.gif",
+          "timestamp_utc": "20050503141231",
+          "snapshot_url": "https://web.archive.org/web/20050503141231id_/http://www.zaniratti.it:80/Foto/MiniLia-AncilDeulmo49.gif",
+          "source": "Wayback",
+          "payload_path": "raw/snapshots/20050503141231/Foto/MiniLia-AncilDeulmo49.gif.body",
+          "manifest_sha256": "ced205684092c04357f0d31c75bae2aa99c7579b4504c3f0e173a4888d916d72"
+        }
+      ],
+      "referenced_by": [
+        {
+          "page": "BRA/AncillaB.htm",
+          "src": "../Foto/MiniLia-AncilDeulmo49.gif",
+          "alt": "(1943)",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-MiniLia-AncilDeulmo49.gif",
+        "/assets/acervo/MiniLia-AncilDeulmo49.gif"
+      ]
+    },
+    {
+      "id": "750b4d4f5f2db42f730b",
+      "title": "MiniLourdesT06.gif",
+      "original_filename": "MiniLourdesT06.gif",
+      "path": "/assets/imagens-originais/750b4d4f5f2db42f730b.gif",
+      "mime_detected": "image/gif",
+      "bytes": 5510,
+      "dimensions_px": [
+        130,
+        100
+      ],
+      "frames": 1,
+      "sha256": "750b4d4f5f2db42f730b09a5c7b9c2fc0e6673fb58cf134d4dcd31eb533e6af5",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniLourdesT06.gif",
+        "timestamp_utc": "20041123171542",
+        "snapshot_url": "https://web.archive.org/web/20041123171542id_/http://www.zaniratti.it:80/MiniLourdesT06.gif",
+        "source": "Wayback",
+        "manifest_sha256": "750b4d4f5f2db42f730b09a5c7b9c2fc0e6673fb58cf134d4dcd31eb533e6af5"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/Deulma1930B.htm",
+          "src": "../MiniLourdesT06.gif",
+          "alt": "Lourdes em Asti, com outros quatro Zaniratti: Ivano, Edmondo, Deulma e Giuseppe",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/MiniLourdesT06.gif"
+      ]
+    },
+    {
+      "id": "089d3cae0c4ccd80c07f",
+      "title": "MiniLourdesT13.gif",
+      "original_filename": "MiniLourdesT13.gif",
+      "path": "/assets/imagens-originais/089d3cae0c4ccd80c07f.gif",
+      "mime_detected": "image/gif",
+      "bytes": 4055,
+      "dimensions_px": [
+        121,
+        100
+      ],
+      "frames": 1,
+      "sha256": "089d3cae0c4ccd80c07ffcee6e4364662eb493eb94310ff68d5b9850b582492b",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniLourdesT13.gif",
+        "timestamp_utc": "20041122073826",
+        "snapshot_url": "https://web.archive.org/web/20041122073826id_/http://www.zaniratti.it:80/MiniLourdesT13.gif",
+        "source": "Wayback",
+        "manifest_sha256": "089d3cae0c4ccd80c07ffcee6e4364662eb493eb94310ff68d5b9850b582492b"
+      },
+      "aliases": [],
+      "referenced_by": [],
+      "published_identical_paths": [
+        "/assets/acervo/MiniLourdesT13.gif"
+      ]
+    },
+    {
+      "id": "7c27ea78eba801112d92",
+      "title": "MiniLuCynGerNanFelVin.gif",
+      "original_filename": "MiniLuCynGerNanFelVin.gif",
+      "path": "/assets/imagens-originais/7c27ea78eba801112d92.gif",
+      "mime_detected": "image/gif",
+      "bytes": 4876,
+      "dimensions_px": [
+        133,
+        100
+      ],
+      "frames": 1,
+      "sha256": "7c27ea78eba801112d9294b86d216b773a8f325b7f18d013fe82b720ccddb6c3",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/MiniLuCynGerNanFelVin.gif",
+        "timestamp_utc": "20051004080938",
+        "snapshot_url": "https://web.archive.org/web/20051004080938id_/http://www.zaniratti.it:80/Foto/MiniLuCynGerNanFelVin.gif",
+        "source": "Wayback",
+        "manifest_sha256": "7c27ea78eba801112d9294b86d216b773a8f325b7f18d013fe82b720ccddb6c3"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/CynthiaB.htm",
+          "src": "../Foto/MiniLuCynGerNanFelVin.gif",
+          "alt": "família de Geraldo, em 2003",
+          "title": ""
+        },
+        {
+          "page": "BRA/FelipeB.htm",
+          "src": "../MiniLuCynGerNanFelVin.gif",
+          "alt": "Família do Geraldo, em 2003",
+          "title": ""
+        },
+        {
+          "page": "ITA/CynthiaI.htm",
+          "src": "../MiniLuCynGerNanFelVin.gif",
+          "alt": "Famiglia Geraldo, 2003",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-MiniLuCynGerNanFelVin.gif"
+      ]
+    },
+    {
+      "id": "15171069da658b26efc9",
+      "title": "MiniMarAndrPatr.gif",
+      "original_filename": "MiniMarAndrPatr.gif",
+      "path": "/assets/imagens-originais/15171069da658b26efc9.gif",
+      "mime_detected": "image/gif",
+      "bytes": 4506,
+      "dimensions_px": [
+        133,
+        100
+      ],
+      "frames": 1,
+      "sha256": "15171069da658b26efc99b91ddf36e74d5ca6f2a2955a183f7a835e29f4546c0",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/MiniMarAndrPatr.gif",
+        "timestamp_utc": "20050503162931",
+        "snapshot_url": "https://web.archive.org/web/20050503162931id_/http://www.zaniratti.it:80/Foto/MiniMarAndrPatr.gif",
+        "source": "Wayback",
+        "manifest_sha256": "15171069da658b26efc99b91ddf36e74d5ca6f2a2955a183f7a835e29f4546c0"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/Andrea1973B.htm",
+          "src": "../Foto/MiniMarAndrPatr.gif",
+          "alt": "Maria com as filhas Andrea e Patrícia. Em 2005.",
+          "title": ""
+        },
+        {
+          "page": "ITA/Andrea1973I.htm",
+          "src": "../MiniMarAndrPatr.gif",
+          "alt": "Maria con le figlie Andrea e Patrícia.  2005.",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-MiniMarAndrPatr.gif"
+      ]
+    },
+    {
+      "id": "0864a8daf21c9a35833d",
+      "title": "MiniSalvatonica.gif",
+      "original_filename": "MiniSalvatonica.gif",
+      "path": "/assets/imagens-originais/0864a8daf21c9a35833d.gif",
+      "mime_detected": "image/gif",
+      "bytes": 4726,
+      "dimensions_px": [
+        78,
+        100
+      ],
+      "frames": 1,
+      "sha256": "0864a8daf21c9a35833d8f51c5df5bc772a37beadf84a56ceb18c98b3317801b",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/MiniSalvatonica.gif",
+        "timestamp_utc": "20050504010204",
+        "snapshot_url": "https://web.archive.org/web/20050504010204id_/http://www.zaniratti.it:80/Foto/MiniSalvatonica.gif",
+        "source": "Wayback",
+        "manifest_sha256": "0864a8daf21c9a35833d8f51c5df5bc772a37beadf84a56ceb18c98b3317801b"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "ITA/AlbSBiagioI.htm",
+          "src": "../MiniSalvatonica.gif",
+          "alt": "Nell' agosto del 2004 facemmo una ricerca nella parrocchia di Salvatonica.",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-MiniSalvatonica.gif"
+      ]
+    },
+    {
+      "id": "52498e1ef095e11d36e8",
+      "title": "MiniSanBiagioEXT.gif",
+      "original_filename": "MiniSanBiagioEXT.gif",
+      "path": "/assets/imagens-originais/52498e1ef095e11d36e8.gif",
+      "mime_detected": "image/gif",
+      "bytes": 2670,
+      "dimensions_px": [
+        80,
+        100
+      ],
+      "frames": 1,
+      "sha256": "52498e1ef095e11d36e8956e779c373ff97b73f1b14e35d645d0e2070b23338c",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/MiniSanBiagioEXT.gif",
+        "timestamp_utc": "20050504014558",
+        "snapshot_url": "https://web.archive.org/web/20050504014558id_/http://www.zaniratti.it:80/Foto/MiniSanBiagioEXT.gif",
+        "source": "Wayback",
+        "manifest_sha256": "52498e1ef095e11d36e8956e779c373ff97b73f1b14e35d645d0e2070b23338c"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "ITA/AlbSBiagioI.htm",
+          "src": "../MiniSanBiagioEXT.gif",
+          "alt": "La chiesa di San Biagio",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-MiniSanBiagioEXT.gif"
+      ]
+    },
+    {
+      "id": "0c2fae57ef897eaa803d",
+      "title": "MiniSanBiagioINT.gif",
+      "original_filename": "MiniSanBiagioINT.gif",
+      "path": "/assets/imagens-originais/0c2fae57ef897eaa803d.gif",
+      "mime_detected": "image/gif",
+      "bytes": 3943,
+      "dimensions_px": [
+        92,
+        100
+      ],
+      "frames": 1,
+      "sha256": "0c2fae57ef897eaa803d3690ba37ab21aed49fb28e001244667fcd5b978798fa",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Foto/MiniSanBiagioINT.gif",
+        "timestamp_utc": "20050504022347",
+        "snapshot_url": "https://web.archive.org/web/20050504022347id_/http://www.zaniratti.it:80/Foto/MiniSanBiagioINT.gif",
+        "source": "Wayback",
+        "manifest_sha256": "0c2fae57ef897eaa803d3690ba37ab21aed49fb28e001244667fcd5b978798fa"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "ITA/AlbSBiagioI.htm",
+          "src": "../MiniSanBiagioINT.gif",
+          "alt": "I volumi consultati nella chiesa di San Biagio",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Foto-MiniSanBiagioINT.gif"
+      ]
+    },
+    {
+      "id": "91793948b5e15bc5d0b5",
+      "title": "MiniSebDebViv.gif",
+      "original_filename": "MiniSebDebViv.gif",
+      "path": "/assets/imagens-originais/91793948b5e15bc5d0b5.gif",
+      "mime_detected": "image/gif",
+      "bytes": 6104,
+      "dimensions_px": [
+        168,
+        100
+      ],
+      "frames": 1,
+      "sha256": "91793948b5e15bc5d0b5c90194488dfd1fa9d05a952e0a417a0aec5feaeea21d",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniSebDebViv.gif",
+        "timestamp_utc": "20041122045909",
+        "snapshot_url": "https://web.archive.org/web/20041122045909id_/http://www.zaniratti.it:80/MiniSebDebViv.gif",
+        "source": "Wayback",
+        "manifest_sha256": "91793948b5e15bc5d0b5c90194488dfd1fa9d05a952e0a417a0aec5feaeea21d"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/DeboraB.htm",
+          "src": "../MiniSebDebViv.gif",
+          "alt": "A família de Sebastião",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/MiniSebDebViv.gif"
+      ]
+    },
+    {
+      "id": "4a18a74d60de84845a59",
+      "title": "MiniSebDebViv9.gif",
+      "original_filename": "MiniSebDebViv9.gif",
+      "path": "/assets/imagens-originais/4a18a74d60de84845a59.gif",
+      "mime_detected": "image/gif",
+      "bytes": 5795,
+      "dimensions_px": [
+        159,
+        100
+      ],
+      "frames": 1,
+      "sha256": "4a18a74d60de84845a59bc82552cb70e7ac9b3ed8b5903ef773a36c8bbd730f4",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniSebDebViv9.gif",
+        "timestamp_utc": "20041122070346",
+        "snapshot_url": "https://web.archive.org/web/20041122070346id_/http://www.zaniratti.it:80/MiniSebDebViv9.gif",
+        "source": "Wayback",
+        "manifest_sha256": "4a18a74d60de84845a59bc82552cb70e7ac9b3ed8b5903ef773a36c8bbd730f4"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/DeboraB.htm",
+          "src": "../MiniSebDebViv9.gif",
+          "alt": "A família de Sebastião",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/MiniSebDebViv9.gif"
+      ]
+    },
+    {
+      "id": "f0c40c951abb0a64b52c",
+      "title": "MiniStemmanob.gif",
+      "original_filename": "MiniStemmanob.gif",
+      "path": "/assets/imagens-originais/f0c40c951abb0a64b52c.gif",
+      "mime_detected": "image/gif",
+      "bytes": 2277,
+      "dimensions_px": [
+        66,
+        100
+      ],
+      "frames": 1,
+      "sha256": "f0c40c951abb0a64b52c40d2a2c0c7b205758d0145d418c1bb9e1e49dbafe1ff",
+      "category": "documento-historico",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniStemmanob.gif",
+        "timestamp_utc": "20050215200142",
+        "snapshot_url": "https://web.archive.org/web/20050215200142id_/http://www.zaniratti.it:80/MiniStemmanob.gif",
+        "source": "Wayback",
+        "manifest_sha256": "f0c40c951abb0a64b52c40d2a2c0c7b205758d0145d418c1bb9e1e49dbafe1ff"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "ITA/Origini-I.htm",
+          "src": "../MiniStemmanob.gif",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/MiniStemmanob.gif"
+      ]
+    },
+    {
+      "id": "a11deb2db74b46292aba",
+      "title": "MiniVivAma.gif",
+      "original_filename": "MiniVivAma.gif",
+      "path": "/assets/imagens-originais/a11deb2db74b46292aba.gif",
+      "mime_detected": "image/gif",
+      "bytes": 3967,
+      "dimensions_px": [
+        117,
+        100
+      ],
+      "frames": 1,
+      "sha256": "a11deb2db74b46292aba2d1b629faaee32020966d6df917670115878ca33c518",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniVivAma.gif",
+        "timestamp_utc": "20041102092853",
+        "snapshot_url": "https://web.archive.org/web/20041102092853id_/http://www.zaniratti.it:80/MiniVivAma.gif",
+        "source": "Wayback",
+        "manifest_sha256": "a11deb2db74b46292aba2d1b629faaee32020966d6df917670115878ca33c518"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/AmandaB.htm",
+          "src": "../MiniVivAma.gif",
+          "alt": "Viviane e Amanda",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/MiniVivAma.gif"
+      ]
+    },
+    {
+      "id": "fc933165779dad65f8b8",
+      "title": "MiniViviAma.gif",
+      "original_filename": "MiniViviAma.gif",
+      "path": "/assets/imagens-originais/fc933165779dad65f8b8.gif",
+      "mime_detected": "image/gif",
+      "bytes": 2961,
+      "dimensions_px": [
+        72,
+        100
+      ],
+      "frames": 1,
+      "sha256": "fc933165779dad65f8b8ccb5c5b6c57204bf79284b561578fe56a5f5961ae382",
+      "category": "fotografia",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniViviAma.gif",
+        "timestamp_utc": "20041102100845",
+        "snapshot_url": "https://web.archive.org/web/20041102100845id_/http://www.zaniratti.it:80/MiniViviAma.gif",
+        "source": "Wayback",
+        "manifest_sha256": "fc933165779dad65f8b8ccb5c5b6c57204bf79284b561578fe56a5f5961ae382"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/AmandaB.htm",
+          "src": "../MiniViviAma.gif",
+          "alt": "Viviane e Amanda. 2003.",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/MiniViviAma.gif"
+      ]
+    },
+    {
+      "id": "818c92f2741a64935456",
+      "title": "FerrGiov.gif",
+      "original_filename": "FerrGiov.gif",
+      "path": "/assets/imagens-originais/818c92f2741a64935456.gif",
+      "mime_detected": "image/gif",
+      "bytes": 3035,
+      "dimensions_px": [
+        66,
+        100
+      ],
+      "frames": 1,
+      "sha256": "818c92f2741a649354565a6a70516b8bdaf4ef7a74c6a12eae4967b365cf4679",
+      "category": "imagem-historica",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it/Mini/FerrGiov.gif",
+        "timestamp_utc": "20160417050707",
+        "snapshot_url": "https://web.archive.org/web/20160417050707id_/http://www.zaniratti.it/Mini/FerrGiov.gif",
+        "source": "Wayback",
+        "manifest_sha256": "818c92f2741a649354565a6a70516b8bdaf4ef7a74c6a12eae4967b365cf4679"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "ITA/FerruccioI.htm",
+          "src": "../Mini/FerrGiov.gif",
+          "alt": "Pannello commemorativo di Grandi Automobilisti Toscani.",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Mini-FerrGiov.gif"
+      ]
+    },
+    {
+      "id": "1b5d629075ab35b8172f",
+      "title": "libro.gif",
+      "original_filename": "libro.gif",
+      "path": "/assets/imagens-originais/1b5d629075ab35b8172f.gif",
+      "mime_detected": "image/gif",
+      "bytes": 1029,
+      "dimensions_px": [
+        21,
+        20
+      ],
+      "frames": 1,
+      "sha256": "1b5d629075ab35b8172fac60eddcfba942db478907c5a5358f1851041c84b146",
+      "category": "decorativa",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/libro.gif",
+        "timestamp_utc": "20041207121136",
+        "snapshot_url": "https://web.archive.org/web/20041207121136id_/http://www.zaniratti.it:80/libro.gif",
+        "source": "Wayback",
+        "manifest_sha256": "1b5d629075ab35b8172fac60eddcfba942db478907c5a5358f1851041c84b146"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/LuoghiB.htm",
+          "src": "../libro.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/LuoghiB.htm",
+          "src": "../libro.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/GisellaB.htm",
+          "src": "../libro.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/GisellaB.htm",
+          "src": "../libro.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/GisellaB.htm",
+          "src": "../libro.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "ITA/LuoghiI.htm",
+          "src": "../libro.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "ITA/LuoghiI.htm",
+          "src": "../libro.gif",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/libro.gif"
+      ]
+    },
+    {
+      "id": "d464a9368ece87a7156d",
+      "title": "uconstr3.gif",
+      "original_filename": "uconstr3.gif",
+      "path": "/assets/imagens-originais/d464a9368ece87a7156d.gif",
+      "mime_detected": "image/gif",
+      "bytes": 1043,
+      "dimensions_px": [
+        38,
+        38
+      ],
+      "frames": 1,
+      "sha256": "d464a9368ece87a7156d0ad180c38b6d6e6bfa2c9489edfb8d9391f748cf8576",
+      "category": "decorativa",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/uconstr3.gif",
+        "timestamp_utc": "20041021093939",
+        "snapshot_url": "https://web.archive.org/web/20041021093939id_/http://www.zaniratti.it:80/uconstr3.gif",
+        "source": "Wayback",
+        "manifest_sha256": "d464a9368ece87a7156d0ad180c38b6d6e6bfa2c9489edfb8d9391f748cf8576"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "Murucci/Bem_vindo.htm",
+          "src": "../uconstr3.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "Murucci/Aniversarios.htm",
+          "src": "../uconstr3.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "Esposito/BenvindoE.htm",
+          "src": "../uconstr3.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "Esposito/EncontrosE.htm",
+          "src": "../uconstr3.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "Esposito/AniversariosE.htm",
+          "src": "../uconstr3.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/JoseAugustoB.htm",
+          "src": "../uconstr3.gif",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/uconstr3.gif"
+      ]
+    },
+    {
+      "id": "d2b858b718199e21237c",
+      "title": "brasile.gif",
+      "original_filename": "brasile.gif",
+      "path": "/assets/imagens-originais/d2b858b718199e21237c.gif",
+      "mime_detected": "image/gif",
+      "bytes": 1054,
+      "dimensions_px": [
+        35,
+        25
+      ],
+      "frames": 1,
+      "sha256": "d2b858b718199e21237c9ecf696eb400717256d1a76c575d51cbc57bf924d19d",
+      "category": "mapa-ou-territorio",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/brasile.gif",
+        "timestamp_utc": "20041021100649",
+        "snapshot_url": "https://web.archive.org/web/20041021100649id_/http://www.zaniratti.it:80/brasile.gif",
+        "source": "Wayback",
+        "manifest_sha256": "d2b858b718199e21237c9ecf696eb400717256d1a76c575d51cbc57bf924d19d"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/ForestaAlberiB.htm",
+          "src": "../brasile.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/ForestaB.htm",
+          "src": "../brasile.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/GenealogiaB.htm",
+          "src": "../brasile.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "ITA/SopraI.htm",
+          "src": "../brasile.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "ITA/GenealogiaI.htm",
+          "src": "../brasile.gif",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/brasile.gif"
+      ]
+    },
+    {
+      "id": "efee9e90572d137c0cca",
+      "title": "brazil_b.gif",
+      "original_filename": "brazil_b.gif",
+      "path": "/assets/imagens-originais/efee9e90572d137c0cca.gif",
+      "mime_detected": "image/gif",
+      "bytes": 29711,
+      "dimensions_px": [
+        72,
+        50
+      ],
+      "frames": 15,
+      "sha256": "efee9e90572d137c0cca78e3466228a71c7d273dd1cd2db4ccb40486f2950555",
+      "category": "mapa-ou-territorio",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it/brazil_b.gif",
+        "timestamp_utc": "20150122205008",
+        "snapshot_url": "https://web.archive.org/web/20150122205008id_/http://www.zaniratti.it/brazil_b.gif",
+        "source": "Wayback",
+        "manifest_sha256": "efee9e90572d137c0cca78e3466228a71c7d273dd1cd2db4ccb40486f2950555"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "index.htm",
+          "src": "brazil_b.gif",
+          "alt": "Versão português",
+          "title": ""
+        },
+        {
+          "page": "Murucci/Encontros.htm",
+          "src": "../brazil_b.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "Murucci/Encontros.htm",
+          "src": "../brazil_b.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/IncontriB.htm",
+          "src": "../brazil_b.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/IncontriB.htm",
+          "src": "../brazil_b.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/SopraB.htm",
+          "src": "../brazil_b.gif",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/brazil_b.gif"
+      ]
+    },
+    {
+      "id": "3809a7cdb5785a5d0c2c",
+      "title": "ITALY.gif",
+      "original_filename": "ITALY.gif",
+      "path": "/assets/imagens-originais/3809a7cdb5785a5d0c2c.gif",
+      "mime_detected": "image/gif",
+      "bytes": 198,
+      "dimensions_px": [
+        40,
+        24
+      ],
+      "frames": 1,
+      "sha256": "3809a7cdb5785a5d0c2cf40530f003d0e8c2e913f50363258e5d5a24ca36bc0a",
+      "category": "mapa-ou-territorio",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/ITALY.gif",
+        "timestamp_utc": "20041207113036",
+        "snapshot_url": "https://web.archive.org/web/20041207113036id_/http://www.zaniratti.it:80/ITALY.gif",
+        "source": "Wayback",
+        "manifest_sha256": "3809a7cdb5785a5d0c2cf40530f003d0e8c2e913f50363258e5d5a24ca36bc0a"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/SopraB.htm",
+          "src": "../ITALY.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/ForestaAlberiB.htm",
+          "src": "../ITALY.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/ForestaB.htm",
+          "src": "../ITALY.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/GenealogiaB.htm",
+          "src": "../ITALY.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "ITA/GenealogiaI.htm",
+          "src": "../ITALY.gif",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/ITALY.gif"
+      ]
+    },
+    {
+      "id": "91d48f8e08ee9541e68f",
+      "title": "italy_b.gif",
+      "original_filename": "italy_b.gif",
+      "path": "/assets/imagens-originais/91d48f8e08ee9541e68f.gif",
+      "mime_detected": "image/gif",
+      "bytes": 23563,
+      "dimensions_px": [
+        75,
+        50
+      ],
+      "frames": 15,
+      "sha256": "91d48f8e08ee9541e68f4fa2ce31a4844dd0332abc3a73217d011dc51e497b74",
+      "category": "mapa-ou-territorio",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it/italy_b.gif",
+        "timestamp_utc": "20150122213037",
+        "snapshot_url": "https://web.archive.org/web/20150122213037id_/http://www.zaniratti.it/italy_b.gif",
+        "source": "Wayback",
+        "manifest_sha256": "91d48f8e08ee9541e68f4fa2ce31a4844dd0332abc3a73217d011dc51e497b74"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "index.htm",
+          "src": "italy_b.gif",
+          "alt": "Versione italiana",
+          "title": ""
+        },
+        {
+          "page": "BRA/IncontriB.htm",
+          "src": "../italy_b.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/IncontriB.htm",
+          "src": "../italy_b.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/IncontriB.htm",
+          "src": "../italy_b.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "BRA/IncontriB.htm",
+          "src": "../italy_b.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "ITA/SopraI.htm",
+          "src": "../italy_b.gif",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/italy_b.gif"
+      ]
+    },
+    {
+      "id": "b97da722fdf5178e9cd6",
+      "title": "MiniConfine.gif",
+      "original_filename": "MiniConfine.gif",
+      "path": "/assets/imagens-originais/b97da722fdf5178e9cd6.gif",
+      "mime_detected": "image/gif",
+      "bytes": 2159,
+      "dimensions_px": [
+        100,
+        76
+      ],
+      "frames": 1,
+      "sha256": "b97da722fdf5178e9cd60309792769923089a8627b70c66dcf6bc9bc9c164006",
+      "category": "mapa-ou-territorio",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniConfine.gif",
+        "timestamp_utc": "20041207121415",
+        "snapshot_url": "https://web.archive.org/web/20041207121415id_/http://www.zaniratti.it:80/MiniConfine.gif",
+        "source": "Wayback",
+        "manifest_sha256": "b97da722fdf5178e9cd60309792769923089a8627b70c66dcf6bc9bc9c164006"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/LuoghiB.htm",
+          "src": "../MiniConfine.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "ITA/LuoghiI.htm",
+          "src": "../MiniConfine.gif",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/MiniConfine.gif"
+      ]
+    },
+    {
+      "id": "b01bf12c6639c1c61052",
+      "title": "MiniLuogBR.gif",
+      "original_filename": "MiniLuogBR.gif",
+      "path": "/assets/imagens-originais/b01bf12c6639c1c61052.gif",
+      "mime_detected": "image/gif",
+      "bytes": 2453,
+      "dimensions_px": [
+        99,
+        100
+      ],
+      "frames": 1,
+      "sha256": "b01bf12c6639c1c61052096f7086e05b419f9b7ad52b19f41acd2c0fc61af84c",
+      "category": "mapa-ou-territorio",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniLuogBR.gif",
+        "timestamp_utc": "20041207114234",
+        "snapshot_url": "https://web.archive.org/web/20041207114234id_/http://www.zaniratti.it:80/MiniLuogBR.gif",
+        "source": "Wayback",
+        "manifest_sha256": "b01bf12c6639c1c61052096f7086e05b419f9b7ad52b19f41acd2c0fc61af84c"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/LuoghiB.htm",
+          "src": "../MiniLuogBR.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "ITA/LuoghiI.htm",
+          "src": "../MiniLuogBR.gif",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/MiniLuogBR.gif"
+      ]
+    },
+    {
+      "id": "c8a06872eacf26d38d90",
+      "title": "MiniLuogIT1.gif",
+      "original_filename": "MiniLuogIT1.gif",
+      "path": "/assets/imagens-originais/c8a06872eacf26d38d90.gif",
+      "mime_detected": "image/gif",
+      "bytes": 904,
+      "dimensions_px": [
+        100,
+        73
+      ],
+      "frames": 1,
+      "sha256": "c8a06872eacf26d38d902e9bad947184625a430501987e7b1294a7f78da36c0e",
+      "category": "mapa-ou-territorio",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniLuogIT1.gif",
+        "timestamp_utc": "20041207114212",
+        "snapshot_url": "https://web.archive.org/web/20041207114212id_/http://www.zaniratti.it:80/MiniLuogIT1.gif",
+        "source": "Wayback",
+        "manifest_sha256": "c8a06872eacf26d38d902e9bad947184625a430501987e7b1294a7f78da36c0e"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/LuoghiB.htm",
+          "src": "../MiniLuogIT1.gif",
+          "alt": "Italia",
+          "title": ""
+        },
+        {
+          "page": "ITA/LuoghiI.htm",
+          "src": "../MiniLuogIT1.gif",
+          "alt": "Italia",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/MiniLuogIT1.gif"
+      ]
+    },
+    {
+      "id": "736d1a671d1dfc09c78c",
+      "title": "MiniLuogMN.gif",
+      "original_filename": "MiniLuogMN.gif",
+      "path": "/assets/imagens-originais/736d1a671d1dfc09c78c.gif",
+      "mime_detected": "image/gif",
+      "bytes": 2442,
+      "dimensions_px": [
+        96,
+        100
+      ],
+      "frames": 1,
+      "sha256": "736d1a671d1dfc09c78c816dc3a694b8e2a44ba97bf450a0018bfe368bbf90a7",
+      "category": "mapa-ou-territorio",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/MiniLuogMN.gif",
+        "timestamp_utc": "20041207112546",
+        "snapshot_url": "https://web.archive.org/web/20041207112546id_/http://www.zaniratti.it:80/MiniLuogMN.gif",
+        "source": "Wayback",
+        "manifest_sha256": "736d1a671d1dfc09c78c816dc3a694b8e2a44ba97bf450a0018bfe368bbf90a7"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/LuoghiB.htm",
+          "src": "../MiniLuogMN.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "ITA/LuoghiI.htm",
+          "src": "../MiniLuogMN.gif",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/MiniLuogMN.gif"
+      ]
+    },
+    {
+      "id": "81fe86c6437de9b63417",
+      "title": "Minirocca1.gif",
+      "original_filename": "Minirocca1.gif",
+      "path": "/assets/imagens-originais/81fe86c6437de9b63417.gif",
+      "mime_detected": "image/gif",
+      "bytes": 2325,
+      "dimensions_px": [
+        100,
+        66
+      ],
+      "frames": 1,
+      "sha256": "81fe86c6437de9b63417be8c7514df672699305dec7c93a0d48ee4cf775cee84",
+      "category": "mapa-ou-territorio",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Minirocca1.gif",
+        "timestamp_utc": "20041207112603",
+        "snapshot_url": "https://web.archive.org/web/20041207112603id_/http://www.zaniratti.it:80/Minirocca1.gif",
+        "source": "Wayback",
+        "manifest_sha256": "81fe86c6437de9b63417be8c7514df672699305dec7c93a0d48ee4cf775cee84"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/LuoghiB.htm",
+          "src": "../Minirocca1.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "ITA/LuoghiI.htm",
+          "src": "../Minirocca1.gif",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Minirocca1.gif"
+      ]
+    },
+    {
+      "id": "89f4b706b40567b53eb7",
+      "title": "Minirocca2.gif",
+      "original_filename": "Minirocca2.gif",
+      "path": "/assets/imagens-originais/89f4b706b40567b53eb7.gif",
+      "mime_detected": "image/gif",
+      "bytes": 2380,
+      "dimensions_px": [
+        66,
+        100
+      ],
+      "frames": 1,
+      "sha256": "89f4b706b40567b53eb77754af7601f272373d842ab71adea684a4e9db9c96a9",
+      "category": "mapa-ou-territorio",
+      "provenance": {
+        "original_url": "http://www.zaniratti.it:80/Minirocca2.gif",
+        "timestamp_utc": "20041207112606",
+        "snapshot_url": "https://web.archive.org/web/20041207112606id_/http://www.zaniratti.it:80/Minirocca2.gif",
+        "source": "Wayback",
+        "manifest_sha256": "89f4b706b40567b53eb77754af7601f272373d842ab71adea684a4e9db9c96a9"
+      },
+      "aliases": [],
+      "referenced_by": [
+        {
+          "page": "BRA/LuoghiB.htm",
+          "src": "../Minirocca2.gif",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "page": "ITA/LuoghiI.htm",
+          "src": "../Minirocca2.gif",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "published_identical_paths": [
+        "/assets/acervo/Minirocca2.gif"
+      ]
+    }
+  ]
+}

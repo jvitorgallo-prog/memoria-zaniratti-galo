@@ -1,0 +1,18 @@
+---
+import SiteLayout from '../../../layouts/SiteLayout.astro';
+import PageIntro from '../../../components/PageIntro.astro';
+import audit from '../../../data/recovery-audit.json';
+import { url } from '../../../lib/urls';
+---
+<SiteLayout title="Auditoria da recuperação" active="acervo" description="Comparação do material recuperado com o conteúdo publicado e resultados da nova busca de arquivos.">
+  <PageIntro eyebrow="Preservação e publicação" title="O que foi publicado e o que ainda falta" lede={audit.summary} />
+  <p class="audit-date">Revisão: {audit.date}. O inventário compara os arquivos disponíveis nesta pesquisa; a dimensão completa do site de Edmondo é desconhecida.</p>
+  <section><h2>Comparação com o material disponível</h2><div class="audit-table-wrap"><table><thead><tr><th>Conjunto</th><th>Resultado da comparação</th><th>Limitação</th></tr></thead><tbody>{audit.coverage.map(row => <tr><th scope="row">{row.collection}</th><td>{row.result}</td><td>{row.limitation}</td></tr>)}</tbody></table></div></section>
+  <section><h2>A imagem da lista do Attività</h2><p>{audit.attivita}</p><p>{audit.population_register_warning}</p></section>
+  <section><h2>Documentos e fotografias citados, ainda sem arquivo recuperado</h2><p>Os endereços abaixo aparecem no HTML preservado. A referência demonstra que eram citados pela página; não é prova de um snapshot recuperável da própria imagem. As certidões não foram identificadas como listas de passageiros.</p><ul>{audit.referenced_but_unrecovered.map(item => <li><strong>{item.description}</strong><br /><a href={item.url} target="_blank" rel="noopener noreferrer">{item.url}</a><br /><small>{item.evidence}</small></li>)}</ul></section>
+  <section><h2>Nova rodada nos arquivos da web</h2><p>As respostas foram preservadas no dossiê de pesquisa. Erros de acesso e consultas sem retorno têm alcance limitado: não demonstram a inexistência de uma captura.</p><div class="audit-table-wrap"><table><thead><tr><th>Serviço ou método</th><th>Resultado verificado</th><th>Limite</th></tr></thead><tbody>{audit.services.map(row => <tr><th scope="row">{row.service}</th><td>{row.result}</td><td>{row.limitation}</td></tr>)}</tbody></table></div></section>
+  <section><h2>Conteúdo acrescentado nesta revisão</h2><ul>{audit.additions.map(text => <li>{text}</li>)}</ul><p><a href={url('/pt/acervo/imagens/')}>Abrir a galeria de imagens originais →</a></p><p><a href={url('/pt/fontes/notas-de-leitura/')}>Ler as dez notas complementares →</a></p><p><a href={url('/downloads/auditoria-recuperacao.json')} download>Baixar a auditoria em JSON</a></p></section>
+</SiteLayout>
+<style>
+  section{margin:36px 0;max-width:1150px}h2{font:500 clamp(1.45rem,3vw,1.95rem) var(--atlas-serif,Georgia,serif)}section>p,.audit-date,li{max-width:90ch;line-height:1.75;color:var(--atlas-muted)}.audit-date{font-size:.88rem}.audit-table-wrap{overflow:auto;margin:20px 0}table{width:100%;border-collapse:collapse;font-size:.91rem}th,td{padding:16px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--atlas-line);line-height:1.6}thead th{color:var(--atlas-ink);font-size:.8rem}tbody th{min-width:170px;width:20%;font-weight:650}td{min-width:230px;color:var(--atlas-muted)}li{padding:5px 0}@media(max-width:600px){th,td{padding:12px 9px}tbody th{min-width:135px}td{min-width:200px}}
+</style>

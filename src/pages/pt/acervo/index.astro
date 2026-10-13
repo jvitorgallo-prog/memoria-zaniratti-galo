@@ -18,6 +18,7 @@ const thumb = (item: PublicArchiveItem) => item.public_path && /\.(?:png|jpe?g|w
     <nav class="archive-breadcrumb" aria-label="Caminho de navegação"><a href={url("/pt/")}>Árvore</a><span>/</span><span aria-current="page">Acervo</span></nav>
     <header class="archive-intro"><p class="archive-kicker">Documentos, imagens e páginas de família</p><h1>Acervo</h1><p>Um lugar para ler o material recuperado e encontrar os registros ligados às pessoas e aos lugares da família.</p>
       <div class="archive-summary"><strong>{items.length}</strong><span>itens catalogados</span><strong>{items.filter(available).length}</strong><span>com cópia ou transcrição pública</span></div>
+      <p class="archive-images-link"><a href={url("/pt/acervo/imagens/")}>Abrir a galeria de imagens originais recuperadas →</a></p>
     </header>
     <section class="archive-controls" aria-label="Busca no acervo">
       <label>Buscar no acervo<input type="search" id="archive-search" placeholder="Nome, título ou palavra do texto" /></label>
@@ -126,6 +127,8 @@ const thumb = (item: PublicArchiveItem) => item.public_path && /\.(?:png|jpe?g|w
   .archive-summary { display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px;margin-top:25px;color:#d7e2e9;font-size:.85rem; }
   .archive-summary strong { margin-left:16px;color:white;font:2rem Georgia,serif; }
   .archive-summary strong:first-child { margin-left:0; }
+  .archive-images-link { margin:20px 0 0; }
+  .archive-images-link a { color:#fff; font-weight:700; text-decoration-thickness:1px; text-underline-offset:4px; }
   .archive-controls { display:grid;grid-template-columns:minmax(220px,1.2fr) minmax(150px,.6fr) minmax(210px,.9fr) auto;gap:16px;align-items:end;margin:32px 0 14px; }
   .archive-controls label { display:grid;gap:6px;font-size:.85rem;font-weight:700; }
   .archive-controls input,.archive-controls select { min-height:46px;padding:9px 12px;border:1px solid #bfcbd5;border-radius:7px;background:var(--ar-paper);font:inherit; }

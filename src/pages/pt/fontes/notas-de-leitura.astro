@@ -1,0 +1,21 @@
+---
+import SiteLayout from '../../../layouts/SiteLayout.astro';
+import PageIntro from '../../../components/PageIntro.astro';
+import notes from '../../../data/curated-notes.json';
+import { url } from '../../../lib/urls';
+---
+<SiteLayout title="Notas de leitura das fontes" active="acervo" description="Transcrições visuais de diagramas e notas com a origem e os limites de cada informação.">
+  <PageIntro eyebrow="Leitura das fontes" title="O que os documentos permitem ler" lede="Dez notas complementam o catálogo de pesquisa. Reúnem rótulos dos diagramas, contexto dos lugares e distinções entre ramos, preservando a origem de cada leitura." />
+  <p class="notes-intro">Nomes visíveis em um diagrama não são, por si só, novos vínculos de parentesco. As leituras parciais e as hipóteses permanecem identificadas. Estas notas são complementares aos <a href={url('/pt/fontes/pesquisa-integrada/')}>204 registros da pesquisa</a>.</p>
+  <nav class="notes-nav" aria-label="Nesta página">{notes.map(note => <a href={'#'+note.id}>{note.title}</a>)}</nav>
+  <div class="reading-notes">{notes.map(note => <article id={note.id}>
+    <h2>{note.title}</h2>
+    <p>{note.excerpt}</p>
+    <dl><dt>Origem e localizador</dt><dd>{note.locator}</dd><dt>Estado da leitura</dt><dd>{note.status}</dd><dt>Limite da interpretação</dt><dd>{note.caveat}</dd></dl>
+    <a href={note.url} target="_blank" rel="noopener noreferrer">Consultar a fonte ↗</a>
+  </article>)}</div>
+  <p><a href={url('/pt/acervo/imagens/')}>Ver as imagens originais →</a> · <a href={url('/pt/fontes/auditoria-recuperacao/')}>Consultar a auditoria da recuperação →</a></p>
+</SiteLayout>
+<style>
+  .notes-intro{max-width:80ch;color:var(--atlas-muted);line-height:1.7}.notes-nav{display:grid;gap:9px;max-width:85ch;margin:25px 0 40px}.reading-notes{max-width:95ch}.reading-notes article{padding:28px 0;border-top:1px solid var(--atlas-line);scroll-margin-top:100px}.reading-notes h2{font:500 clamp(1.35rem,3vw,1.8rem) var(--atlas-serif,Georgia,serif);margin:0 0 14px}.reading-notes p,.reading-notes dd{line-height:1.75;overflow-wrap:anywhere}.reading-notes dl{margin:20px 0}.reading-notes dt{font-size:.8rem;font-weight:700;margin-top:14px}.reading-notes dd{margin:3px 0;color:var(--atlas-muted);font-size:.92rem}
+</style>

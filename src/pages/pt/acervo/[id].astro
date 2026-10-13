@@ -3,10 +3,13 @@ import SiteLayout from "../../../layouts/SiteLayout.astro";
 import { publicData as snapshot } from "../../../lib/data";
 import type { PublicArchiveItem } from "../../../lib/data";
 import { url } from "../../../lib/urls";
+import provenanceCorrections from '../../../data/legacy-provenance-corrections.json';
 const items: PublicArchiveItem[] = snapshot.archive_items || [];
 export function getStaticPaths() { return (snapshot.archive_items || []).map((item) => ({ params: { id: item.id }, props: { itemId: item.id } })); }
-const item = items.find((entry) => entry.id === Astro.props.itemId);
-if (!item) throw new Error("Item de acervo sem registro correspondente na projeção pública.");
+const registeredItem = items.find((entry) => entry.id === Astro.props.itemId);
+if (!registeredItem) throw new Error("Item de acervo sem registro correspondente na projeção pública.");
+const correction = provenanceCorrections.find(record => record.public_path === registeredItem.public_path);
+const item = correction ? { ...registeredItem, capture_timestamp_utc: correction.timestamp_utc, capture_url: correction.capture_url } : registeredItem;
 const people = snapshot.people || [];
 const relatedPeople = (item.person_ids || []).map((id) => people.find((person) => person.id === id)).filter((person): person is (typeof people)[number] => Boolean(person));
 const sources = snapshot.sources || [];
@@ -27,6 +30,7 @@ const paragraphs = (item.transcript || "").split(/\n\s*\n/).filter(Boolean);
     <header class="archive-item-heading"><p class="archive-item-kicker">{kindLabel} · {statusText}</p><h1>{item.title}</h1>{item.description && <p>{item.description}</p>}{item.capture_timestamp_utc && <small>Captura: {item.capture_timestamp_utc}</small>}</header>
     <div class="archive-item-layout">
       <div class="archive-item-main">
+        {correction && <aside class="archive-viewer-note"><p>{correction.note}</p><p>SHA-256 do payload bruto: <code style="overflow-wrap:anywhere">{correction.raw_sha256}</code></p><a href={url('/downloads/proveniencia-versoes-html.json')} download>Consultar o registro por versão</a></aside>}
         {publicPath && isImage && <figure class="archive-item-image"><a href={publicPath}><img src={publicPath} alt={item.title} /></a><figcaption>{item.description || item.title}</figcaption></figure>}
         {publicPath && isPdf && <section class="archive-document-viewer"><div class="archive-viewer-bar"><strong>Documento em PDF</strong><span><a href={publicPath} target="_blank" rel="noopener">Abrir PDF ↗</a> · <a href={publicPath} download>Baixar PDF ↓</a></span></div><iframe src={publicPath} title={`Visualizador: ${item.title}`} loading="lazy"></iframe></section>}
         {publicPath && isHtml && <section class="archive-document-viewer"><div class="archive-viewer-bar"><strong>Página recuperada</strong><span><a href={publicPath} target="_blank" rel="noopener">Abrir página ↗</a> · <a href={publicPath} download>Baixar arquivo ↓</a></span></div><iframe src={publicPath} title={`Página recuperada: ${item.title}`} sandbox="" loading="lazy"></iframe><p class="archive-viewer-note">Esta reprodução está isolada para leitura e não executa scripts da página original.</p></section>}

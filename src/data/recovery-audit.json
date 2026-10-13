@@ -1,0 +1,127 @@
+{
+  "date": "13/10/2026",
+  "summary": "A comparação confirmou as cópias disponíveis, mas encontrou informações acessíveis apenas nas leituras das páginas antigas e notas ainda sem exposição completa. Esta revisão reúne as imagens em uma galeria e publica as notas complementares. Recuperação integral do domínio ainda não demonstrada.",
+  "coverage": [
+    {
+      "collection": "Páginas recuperadas do site",
+      "result": "238 HTMs originais recuperados têm versões públicas de leitura. Três HTMLs auxiliares completam o conjunto de 241 interfaces locais.",
+      "limitation": "Versões de leitura reescrevem os links e removem scripts e contatos. Os bytes brutos originais são preservados no dossiê; não são equivalentes às versões públicas."
+    },
+    {
+      "collection": "Imagens originais disponíveis",
+      "result": "116 arquivos históricos correspondem a 106 hashes distintos, todos com cópia byte-idêntica já publicada. A galeria agora reúne os 106 arquivos únicos com as variantes de endereço.",
+      "limitation": "Muitas imagens são miniaturas. Cinco recursos adicionais pertencem ao estacionamento do domínio em 2020 e não integram a galeria genealógica. Não há inventário completo de toda a mídia que o site teve."
+    },
+    {
+      "collection": "Pessoas e parentescos",
+      "result": "507 fichas ou referências, 212 biografias e 403 pares distintos de filiação preferred estão publicados. As cinco contagens familiares revisadas permanecem 13, 4, 5, 10 e 16 filhos.",
+      "limitation": "Uma referência sem biografia não equivale a uma pessoa plenamente identificada. Datas e narrativas presentes nas páginas antigas ainda não foram todas convertidas em eventos estruturados do site ou do GEDCOM."
+    },
+    {
+      "collection": "Pesquisa pública",
+      "result": "204 registros de pesquisa estão publicados com fontes, estados e limites. Dez notas complementares agora têm uma página própria, incluindo leituras parciais dos dois diagramas.",
+      "limitation": "As sínteses públicas não reproduzem todo o diário operacional, respostas de API, OCR bruto e propostas descartadas. Esses materiais permanecem no dossiê de pesquisa."
+    },
+    {
+      "collection": "Documentos fornecidos",
+      "result": "O extrato histórico de casamento e os extratos genealógicos revisados estão no acervo.",
+      "limitation": "As certidões pessoais e o título eleitoral contemporâneos são preservados em arquivo privado; identificadores, assinaturas e endereços pessoais desses documentos não são publicados."
+    },
+    {
+      "collection": "Página ITA/FontiI.htm",
+      "result": "Captura indexada em 21/10/2004, confirmada por CDX e Availability. O corpo de replay preservado retorna HTTP 404; há apenas uma transcrição adicional na base, sem arquivo integral de leitura.",
+      "limitation": "Uma transcrição ou um registro de captura não comprovam a disponibilidade atual do payload integral."
+    },
+    {
+      "collection": "Proveniência das versões HTML",
+      "result": "A referência de FramesxI é exibida conforme a versão utilizada, capturada em 20/03/2005. Um registro complementar também distingue os hashes brutos e derivados de NovitaI.",
+      "limitation": "O inventário anterior enumerava a primeira captura de FramesxI. Nos dois HTMLs, uma reescrita de link para FontiI explicava a diferença entre os arquivos de duas etapas locais; não houve perda de texto nessa transformação."
+    }
+  ],
+  "attivita": "A imagem original da lista nominal do Attività, lembrada pela família, ainda não foi localizada com bytes e proveniência verificáveis. O testemunho familiar sobre Custode Sante e Grandilia permanece registrado; não fixamos uma data exata de chegada a partir dessa lembrança.",
+  "population_register_warning": "As páginas e imagens denominadas Volume VIII referem-se a registros populacionais de Burana. Esse conjunto deve ser investigado, mas não foi identificado como lista de passageiros do navio.",
+  "services": [
+    {
+      "service": "Wayback Machine — CDX amplo",
+      "result": "Nova resposta HTTP 200: 1.203 registros no host www, incluindo 985 HTML, 147 capturas de imagens, 64 revisits e 7 CSS. Comparação sem nova linha de URL/timestamp/digest em relação ao índice anterior.",
+      "limitation": "A enumeração de variantes e os caminhos exatos foram registrados no dossiê. Todas as 111 versões binárias distintas de imagens desse índice têm bytes locais verificados; isso cobre o índice consultado, não toda a mídia que já existiu no domínio."
+    },
+    {
+      "service": "Wayback — Availability e consultas exatas",
+      "result": "Dezessete consultas da API Availability responderam HTTP 200: GeneaA3 e AlbBiagio confirmam os recursos recuperados; FontiI aparece com captura 20041021111233, embora o corpo de replay preservado responda 404. Os outros quatorze alvos não trouxeram snapshot nessa consulta.",
+      "limitation": "Resultado delimitado aos URLs e parâmetros testados; não demonstra inexistência em todas as coleções ou grafias."
+    },
+    {
+      "service": "Common Crawl",
+      "result": "O catálogo atual listou 128 coleções; 27 consultas bem-sucedidas retornaram 32 registros do domínio, sem novas imagens. Um payload WARC foi recuperado por Range/HTTP 206 para a página inicial em 2026, de domínio estacionado. As páginas familiares preservadas de Grandilia e Zenaide citam certidões e fotos ainda sem bytes recuperados.",
+      "limitation": "Muitas consultas retornaram HTTP 503, 502, 504, timeout ou erro 400. Esses estados foram registrados como falhas, não como inexistência de arquivos. Os HTMLs de Grandilia e Zenaide mencionam emigração em 1895 sem identificar o navio."
+    },
+    {
+      "service": "Google e Bing — indexação e imagens",
+      "result": "Novas buscas textuais e de imagens não localizaram uma cópia nominal da lista do Attività ou novas imagens atribuíveis ao domínio.",
+      "limitation": "Consultas diretas forneceram páginas sem resultados úteis ou resultados irrelevantes; snippets e indexação não substituem os arquivos originais."
+    },
+    {
+      "service": "Google — antigo endpoint de cache",
+      "result": "O endpoint testado respondeu HTTP 200 com uma página de busca, sem cópia cacheada do site.",
+      "limitation": "HTTP 200 nesse endpoint não foi apresentado como recuperação de cache."
+    },
+    {
+      "service": "Arquivo.pt",
+      "result": "A frente externa obteve zero resultados nas consultas textuais exatas de ListaB e domínio, com CDX vazio. Outra consulta nesta rodada falhou com HTTP 503.",
+      "limitation": "Negativa restrita às consultas deste serviço, sem extrapolação aos demais arquivos."
+    },
+    {
+      "service": "Memento Time Travel",
+      "result": "Falha de acesso com HTTP 403 do proxy no agregador consultado.",
+      "limitation": "Não foi possível verificar a cobertura; falha não é evidência de ausência."
+    },
+    {
+      "service": "Archive.ph",
+      "result": "A consulta direta retornou HTTP 503/timeout.",
+      "limitation": "Sem conteúdo verificável; não declaramos que o serviço nunca capturou o domínio."
+    },
+    {
+      "service": "Domínio atual",
+      "result": "ListaB em HTTP respondeu 404; home/lista em HTTPS retornaram erro 503 nesta coleta.",
+      "limitation": "Respostas atuais não descrevem o conteúdo histórico nem a cobertura dos arquivos."
+    }
+  ],
+  "additions": [
+    "Galeria dos 106 arquivos de imagem históricos únicos, com arquivo original, captura e SHA-256.",
+    "Dez notas complementares, incluindo rótulos legíveis de GeneaA3 e AlbBiagio, sem inferir parentesco pela posição no diagrama.",
+    "Auditoria pública que distingue leitura de páginas antigas, fichas estruturadas, resumos e arquivos ainda ausentes."
+  ],
+  "referenced_but_unrecovered": [
+    {
+      "url": "http://www.zaniratti.it/Mini/GrandiliaNasc.gif",
+      "description": "Miniatura descrita como certidão de nascimento de Grandilia",
+      "evidence": "HTML Esposito/Grandilia.htm, Common Crawl 20120521025310."
+    },
+    {
+      "url": "http://www.zaniratti.it/Mini/ZenaideNasc.gif",
+      "description": "Miniatura descrita como certidão de nascimento de Zenaide",
+      "evidence": "HTML Murucci/Zenaide1895.htm, Common Crawl 20120521025757."
+    },
+    {
+      "url": "http://www.zaniratti.it/Esposito/Imag/NicGrandCasamento.gif",
+      "description": "Imagem descrita como certidão de casamento original",
+      "evidence": "HTML Esposito/Grandilia.htm, Common Crawl 20120521025310."
+    },
+    {
+      "url": "http://www.zaniratti.it/Esposito/Imag/NicGraCasamento.gif",
+      "description": "Imagem descrita como certidão de casamento",
+      "evidence": "HTML Esposito/Grandilia.htm, Common Crawl 20120521025310."
+    },
+    {
+      "url": "http://www.zaniratti.it/Foto/ZenaideA.jpg",
+      "description": "Referência de fotografia na página de Zenaide",
+      "evidence": "HTML Murucci/Zenaide1895.htm, Common Crawl 20120521025757."
+    },
+    {
+      "url": "http://www.zaniratti.it/Mini/ZenaideFelipe.gif",
+      "description": "Miniatura descrita como Zenaide e marido",
+      "evidence": "HTML Murucci/Zenaide1895.htm, Common Crawl 20120521025757."
+    }
+  ]
+}

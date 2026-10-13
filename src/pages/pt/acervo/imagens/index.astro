@@ -1,0 +1,143 @@
+---
+import SiteLayout from "../../../../layouts/SiteLayout.astro";
+import imageCatalog from "../../../../data/historical-images.json";
+import { url } from "../../../../lib/urls";
+const categoryOrder: Record<string, number> = { 'arvore-genealogica': 0, fotografia: 1, 'fotografia-ou-montagem-original': 1, 'documento-historico': 2, 'mapa-ou-territorio': 3, 'imagem-historica': 4, decorativa: 5 };
+const images = [...imageCatalog].sort((a,b) => (categoryOrder[a.category] ?? 6) - (categoryOrder[b.category] ?? 6) || a.title.localeCompare(b.title, 'pt-BR'));
+
+const categoryNames: Record<string, string> = {
+  fotografia: "Fotografias",
+  "fotografia-ou-montagem-original": "Fotografias e montagens originais",
+  "mapa-ou-territorio": "Mapas e território",
+  "arvore-genealogica": "Diagramas genealógicos",
+  decorativa: "Elementos decorativos",
+  "imagem-historica": "Outras imagens históricas",
+  "documento-historico": "Documentos históricos",
+};
+const categories = [...new Set(images.map((image) => image.category))].sort((a, b) => (categoryNames[a] || a).localeCompare(categoryNames[b] || b, "pt-BR"));
+const categoryLabel = (value: string) => categoryNames[value] || "Imagem histórica";
+const noteFor: Record<string, string> = {
+  "GeneaA3.gif": "curated-genea-a3-literal-map-labels",
+  "AlbBiagio.gif": "curated-alb-biagio-literal-map-labels",
+};
+const formatTimestamp = (value: string) => value.length === 14 ? `${value.slice(0,4)}-${value.slice(4,6)}-${value.slice(6,8)} ${value.slice(8,10)}:${value.slice(10,12)}:${value.slice(12,14)} UTC` : value;
+---
+<SiteLayout active="imagens" title="Galeria de imagens originais" description="Imagens originais recuperadas do site zaniratti.it, com proveniência, data de captura e hash de integridade.">
+  <div class="images-page">
+    <nav class="images-breadcrumb" aria-label="Caminho de navegação"><a href={url("/pt/acervo/")}>Acervo</a><span>/</span><span aria-current="page">Imagens</span></nav>
+    <header class="images-intro">
+      <p class="images-kicker">Material visual preservado</p>
+      <h1>Imagens originais</h1>
+      <p>Galeria dos arquivos de imagem recuperados do site histórico da família. Cada arquivo abre em sua resolução original e vem acompanhado do endereço e da captura de origem.</p>
+      <div class="images-stats"><strong>{images.length}</strong><span>arquivos originais únicos</span><span>·</span><span>SHA-256 verificado</span></div>
+      <p class="images-method">Cópias binárias repetidas foram reunidas por hash. Os nomes e registros de captura alternativos permanecem listados como aliases. As imagens não foram ampliadas nem transcritas.</p>
+      <p class="images-downloads"><a href={url("/downloads/imagens-originais-zaniratti.zip")} download>Baixar os arquivos originais (ZIP)</a><a href={url("/downloads/inventario-imagens-originais.json")} download>Baixar o inventário JSON</a></p>
+    </header>
+    <section class="images-controls" aria-label="Filtros da galeria">
+      <label>Buscar imagem ou arquivo<input id="image-search" type="search" placeholder="Ex.: Ferrara, Anna, GeneaA3" /></label>
+      <label>Categoria<select id="image-category"><option value="">Todas as categorias</option>{categories.map((category) => <option value={category}>{categoryLabel(category)}</option>)}</select></label>
+      <p id="image-count" aria-live="polite">{images.length} imagens</p>
+    </section>
+    <p id="image-empty" class="images-empty" hidden>Nenhuma imagem corresponde a esta busca.</p>
+    <div class="images-grid" id="images-grid">
+      {images.map((image) => {
+        const noteId = noteFor[image.original_filename];
+        const alt = image.referenced_by.find((reference) => reference.alt)?.alt || `Arquivo original ${image.original_filename}`;
+        const searchable = [image.title, image.original_filename, categoryLabel(image.category), ...image.referenced_by.map((reference) => `${reference.page} ${reference.title} ${reference.alt}`)].join(" ").toLocaleLowerCase("pt-BR");
+        return <article class="image-card" data-category={image.category} data-search={searchable}>
+          <a class="image-card-visual" href={url(image.path)} target="_blank" rel="noopener noreferrer" aria-label={`Abrir arquivo original ${image.original_filename}`}>
+            <img src={url(image.path)} alt={alt} loading="lazy" />
+            <span>Abrir original ↗</span>
+          </a>
+          <div class="image-card-copy">
+            <p class="image-category">{categoryLabel(image.category)}</p>
+            <h2>{image.title}</h2>
+            {image.caption && <p class="image-caption">{image.caption}</p>}
+            <p class="image-dimensions">{image.dimensions_px ? `${image.dimensions_px[0]} × ${image.dimensions_px[1]} px` : "Dimensões não disponíveis"} · {image.mime_detected}</p>
+            {image.dimensions_note && <p class="image-limit">{image.dimensions_note}</p>}
+            {noteId && <p class="image-note-link"><a href={url(`/pt/fontes/notas-de-leitura/#${noteId}`)}>Ver nota de leitura dos rótulos →</a></p>}
+            <details>
+              <summary>Proveniência e integridade</summary>
+              <dl>
+                <dt>URL original</dt><dd><a href={image.provenance.original_url} target="_blank" rel="noopener noreferrer">{image.provenance.original_url}</a></dd>
+                <dt>Captura</dt><dd>{formatTimestamp(image.provenance.timestamp_utc)}</dd>
+                <dt>Registro arquivado</dt><dd><a href={image.provenance.snapshot_url} target="_blank" rel="noopener noreferrer">Wayback Machine ↗</a></dd>
+                <dt>SHA-256</dt><dd class="image-hash">{image.sha256}</dd>
+                <dt>Nome original</dt><dd>{image.original_filename}</dd>
+                {image.aliases.length > 0 && <><dt>Outros registros do mesmo arquivo</dt><dd>{image.aliases.map((alias) => <span class="image-alias">{alias.filename} · {formatTimestamp(alias.timestamp_utc)} · <a href={alias.snapshot_url} target="_blank" rel="noopener noreferrer">captura ↗</a></span>)}</dd></>}
+                {image.referenced_by.length > 0 && <><dt>Páginas históricas que a referenciam</dt><dd>{image.referenced_by.slice(0,6).map((reference) => <span class="image-reference">{reference.page}{reference.alt ? ` — ${reference.alt}` : ""}</span>)}</dd></>}
+              </dl>
+            </details>
+          </div>
+        </article>;
+      })}
+    </div>
+    <p class="images-footnote">A comparação local encontrou arquivos byte-idênticos já publicados no acervo. Esta página os reúne em uma galeria com proveniência individual; não indica que toda a mídia histórica do domínio tenha sido recuperada.</p>
+  </div>
+</SiteLayout>
+<script>
+  const search = document.querySelector<HTMLInputElement>("#image-search");
+  const category = document.querySelector<HTMLSelectElement>("#image-category");
+  const cards = [...document.querySelectorAll<HTMLElement>(".image-card")];
+  const count = document.querySelector<HTMLElement>("#image-count");
+  const empty = document.querySelector<HTMLElement>("#image-empty");
+  const normalize = (value: string) => value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase("pt-BR").trim();
+  const update = () => {
+    const query = normalize(search?.value || "");
+    const selected = category?.value || "";
+    let visible = 0;
+    for (const card of cards) {
+      const match = (!query || normalize(card.dataset.search || "").includes(query)) && (!selected || card.dataset.category === selected);
+      card.hidden = !match;
+      if (match) visible++;
+    }
+    if (count) count.textContent = `${visible} ${visible === 1 ? "imagem" : "imagens"}`;
+    if (empty) empty.hidden = visible > 0;
+  };
+  search?.addEventListener("input", update);
+  category?.addEventListener("change", update);
+</script>
+<style>
+  .images-page{--im-ink:#172b3a;--im-muted:#5b6873;--im-line:#d8e0e6;--im-paper:#fffefa;color:var(--im-ink)}
+  .images-breadcrumb{display:flex;gap:9px;margin:4px 0 24px;color:var(--im-muted);font-size:.85rem}
+  .images-breadcrumb a{color:inherit}
+  .images-intro{max-width:900px;padding:0 0 26px;border-bottom:1px solid var(--im-line);color:var(--im-ink)}
+  .images-kicker{margin:0 0 10px;color:var(--atlas-terra);font-size:.76rem;font-weight:750;letter-spacing:.12em;text-transform:uppercase}
+  .images-intro h1{margin:0;color:var(--im-ink);font:500 clamp(2.5rem,6vw,4.3rem) var(--atlas-serif,Georgia,serif);letter-spacing:-.035em}
+  .images-intro>p:not(.images-kicker){max-width:650px;color:var(--im-muted);font-size:1.06rem;line-height:1.7}
+  .images-stats{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 12px;margin-top:18px;color:var(--im-muted);font-size:.9rem}
+  .images-stats strong{color:var(--atlas-terra);font:2rem var(--atlas-serif,Georgia,serif)}
+  .images-method{margin-bottom:0;font-size:.86rem!important}
+  .images-downloads{display:flex;flex-wrap:wrap;gap:10px;margin:19px 0 0}
+  .images-downloads a{display:inline-block;padding:9px 12px;border:1px solid #95acc0;border-radius:4px;color:var(--im-ink);font-size:.85rem;font-weight:700;text-decoration:none}
+  .images-downloads a:hover{background:#18364b0d}
+  .images-controls{display:grid;grid-template-columns:minmax(220px,1fr) minmax(190px,.65fr) auto;gap:16px;align-items:end;margin:30px 0 18px}
+  .images-controls label{display:grid;gap:6px;font-size:.85rem;font-weight:700}
+  .images-controls input,.images-controls select{min-height:45px;padding:9px 12px;border:1px solid #bfcbd5;border-radius:7px;background:var(--im-paper);font:inherit}
+  .images-controls p{margin:0 0 10px;color:var(--im-muted);font-size:.86rem;white-space:nowrap}
+  .images-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;align-items:start}
+  .image-card{min-width:0;overflow:hidden;border:1px solid var(--im-line);border-radius:11px;background:var(--im-paper)}
+  .image-card[hidden]{display:none}
+  .image-card-visual{position:relative;display:grid;place-items:center;height:240px;padding:12px;background:#f2f0eb;text-decoration:none}
+  .image-card-visual img{display:block;max-width:100%;max-height:100%;object-fit:contain}
+  .image-card-visual>span{position:absolute;right:9px;bottom:9px;padding:5px 8px;border-radius:5px;background:#18364be8;color:white;font-size:.76rem}
+  .image-card-copy{padding:15px}
+  .image-category{margin:0 0 5px;color:#426486;font-size:.72rem;font-weight:750;letter-spacing:.08em;text-transform:uppercase}
+  .image-card h2{margin:0;font:600 1.2rem var(--atlas-serif,Georgia,serif);overflow-wrap:anywhere}
+  .image-dimensions{margin:7px 0;color:var(--im-muted);font-size:.82rem}
+  .image-caption{margin:7px 0;color:#465767;font-size:.87rem;line-height:1.55}
+  .image-limit{margin:7px 0;color:#6a4b30;font-size:.8rem;line-height:1.5}
+  .image-note-link{margin:8px 0;font-size:.83rem}
+  .image-card details{margin-top:13px;border-top:1px solid var(--im-line);padding-top:10px}
+  .image-card summary{color:#3458a3;font-size:.84rem;font-weight:700;cursor:pointer}
+  .image-card dl{margin:13px 0 0;font-size:.79rem;line-height:1.55}
+  .image-card dt{margin-top:10px;font-weight:750}
+  .image-card dd{margin:3px 0 0;overflow-wrap:anywhere;color:#465767}
+  .image-card dd a{overflow-wrap:anywhere}
+  .image-hash{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.72rem}
+  .image-alias,.image-reference{display:block;margin:4px 0}
+  .images-empty{padding:25px;text-align:center;color:var(--im-muted)}
+  .images-footnote{max-width:90ch;margin:30px 0 0;color:var(--im-muted);font-size:.86rem;line-height:1.7}
+  @media(max-width:900px){.images-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media(max-width:620px){.images-controls{grid-template-columns:1fr}.images-controls p{margin:0}.images-grid{grid-template-columns:1fr}.image-card-visual{height:260px}}
+</style>

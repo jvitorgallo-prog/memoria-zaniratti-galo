@@ -1,0 +1,189 @@
+[
+  {
+    "id": "curated-territory-santa-clara-1938-1948",
+    "title": "Santa Clara e Varre-Sai: jurisdição histórica",
+    "subject": [
+      "Santa Clara do Carangola",
+      "Santa Clara",
+      "Varre-Sai",
+      "Itaperuna",
+      "Porciúncula"
+    ],
+    "type": "territorial_context",
+    "url": "https://www.ibge.gov.br/biblioteca/visualizacao/dtb/riodejaneiro/itaperuna.pdf",
+    "excerpt": "IBGE registra a incorporação de Santa Clara do Carangola a Itaperuna em 1891–1892, a mudança do nome para Santa Clara em 1938 e a presença de Santa Clara e Varre-Sai nas divisões de Itaperuna de 1939–1948. Porciúncula foi criada em 1947 com distrito Santa Clara.",
+    "status": "contexto territorial confirmado; não é vínculo familiar nem prova de custódia de livros",
+    "caveat": "Usar para pesquisar nomes de distrito/município em cada data; não retroagir município atual em assento antigo.",
+    "locator": "PDF p. 1–2; história municipal do IBGE"
+  },
+  {
+    "id": "curated-gallo-property-1913",
+    "title": "Entrada GALLO de propriedade rural em São José/Varre-Sai",
+    "subject": [
+      "GALLO",
+      "São José",
+      "Varre-Sai"
+    ],
+    "type": "regional_context_unlinked",
+    "url": "https://www.encontro2010.rj.anpuh.org/resources/anais/8/1276702173_ARQUIVO_Ositalianossitiantesnointeriorfluminense-ok.pdf",
+    "excerpt": "A tabela descreve GALLO, 4 alqueires, duas casas, tulha, cafezais e pasto cercado, ano 1913, São José/Varre-Sai.",
+    "status": "sobrenome e propriedade documentados em estudo secundário; pessoa e parentesco não identificados",
+    "caveat": "Não ligar a João Gallo, Zaniratti, Santa Clara ou outro ramo sem fonte nominal adicional. Nota específica de Livro de Notas nº 08, p. 08 é sobre Giuseppe Valli, não sobre essa linha.",
+    "locator": "Tabela 1, PDF p. 3"
+  },
+  {
+    "id": "curated-fazenda-do-ceu-source-route",
+    "title": "Fazenda do Céu: documentação contextual da região",
+    "subject": [
+      "Fazenda do Céu",
+      "Santa Clara",
+      "Porciúncula"
+    ],
+    "type": "private_archive_route",
+    "url": "https://www.historia.uff.br/stricto/td/1197.pdf",
+    "excerpt": "A tese descreve livros contábeis da Fazenda do Céu, Santa Clara/Porciúncula (1929–1934). O artigo de 2011 descreve registros por colono, mês, débitos e créditos e menciona 102 trabalhadores nos livros de 1929–1930.",
+    "status": "fazenda e existência do conjunto documental descritas em fontes acadêmicas; livros privados não consultados aqui",
+    "caveat": "Não há nome Zaniratti/Gallo ligado à propriedade ou aos trabalhadores nas passagens citadas. Não anunciar como fazenda familiar.",
+    "locator": "Tese UFF, lista de fontes, p. 282 impressa / PDF p. 283; comparar artigo ANPUH 2011"
+  },
+  {
+    "id": "curated-murucci-property-context",
+    "title": "Referência Murucci em propriedade de Jacutinga/Varre-Sai",
+    "subject": [
+      "Murucci",
+      "Jacutinga",
+      "Varre-Sai"
+    ],
+    "type": "regional_context_unlinked",
+    "url": "https://www.historia.uff.br/stricto/td/1197.pdf",
+    "excerpt": "A tese lista Murucci em contexto de propriedades de Jacutinga/Varre-Sai.",
+    "status": "contexto regional; sem ligação demonstrada com Filipe Murucci, Zenaide ou Zaniratti",
+    "caveat": "Não inferir parentesco por sobrenome.",
+    "locator": "Tese UFF, tabela de propriedades, p. 160 impressa / PDF p. 161"
+  },
+  {
+    "id": "curated-edmondo-milan-family-testimony",
+    "title": "Edmondo Lorenzo Zaniratti: site histórico e relato familiar",
+    "subject": [
+      "Edmondo Lorenzo Zaniratti",
+      "Milão",
+      "Turim",
+      "Quatrelle",
+      "Felonica"
+    ],
+    "type": "historic_site_and_family_testimony",
+    "url": "https://web.archive.org/web/20090208171413id_/http://www.zaniratti.it:80/BRA/Edmondo1950B.htm",
+    "excerpt": "A página do site identifica Edmondo Lorenzo Zaniratti (1950) como autor e lista Orlando Zaniratti, Odilla Gherlinzoni, irmão Paolo, cônjuge Cristina Barion e filha Irene. O relato familiar o descreve como primo distante que viveu em Milão; a página menciona Quatrelle, Cumiana, Piossasco e Turim.",
+    "status": "forte correspondência entre a referência familiar e o autor do site; cada informação permanece atribuída à fonte que a relata",
+    "caveat": "A página cita a Prefeitura de Felonica e Edmondo como fontes, mas a certidão de nascimento citada não está reproduzida neste item. Milão e Turim/Piossasco vêm de proveniências distintas, sem cronologia estabelecida. Edmondo 1895–1931 é outra pessoa.",
+    "locator": "Página BRA/Edmondo1950B.htm, captura Wayback 2009-02-08 (HTTP 200; a página impressa no site traz data 16-08-2008); também existe cópia Common Crawl CC-MAIN-2012, WARC record 20120521024853. Relato familiar do usuário, 2026-10-13."
+  },
+  {
+    "id": "curated-ferrara-branches-distinct",
+    "title": "Ramos italianos mencionados separadamente",
+    "subject": [
+      "Luigi Zaniratti",
+      "Luigia Medini",
+      "Pasqua Mellara",
+      "Ferrara",
+      "Bondeno"
+    ],
+    "type": "branch_separation",
+    "url": "https://www.bravagentetoscana.com/",
+    "excerpt": "O diretório menciona separadamente Luigi Zaniratti com Luigia Medini (Ferrara) e Luigi com Pasqua Mellara (Bondeno), além de outros ramos.",
+    "status": "ramos apresentados separadamente na fonte; identidade entre dois “Luigi” não estabelecida",
+    "caveat": "Não fundir as entradas por prenome/sobrenome ou proximidade geográfica.",
+    "locator": "Diretório genealógico Brava Gente, edição de 2009 citada nos relatórios de pesquisa"
+  },
+  {
+    "id": "curated-italian-tree-maps",
+    "title": "Mapas separados para ramos italianos e brasileiros",
+    "subject": [
+      "Francesco",
+      "Bondeno",
+      "Giovanni Battista",
+      "Copparo",
+      "Ennio",
+      "Porto Alegre",
+      "Salvatonica",
+      "San Biagio"
+    ],
+    "type": "historic_site",
+    "url": "https://web.archive.org/web/20041025112651id_/http://www.zaniratti.it:80/ITA/ForestaI.htm",
+    "excerpt": "O índice antigo separa árvores de Francesco/San Biagio, Porto Alegre e Giovanni Battista/Copparo. Mapa de Salvatonica/San Biagio guarda a hipótese de parentesco com Francesco como hipótese do autor.",
+    "status": "conteúdo genealógico histórico do site; relações dependem do mapa individual e nem todas as páginas foram recuperadas",
+    "caveat": "Os mapas são recortes de diferentes datas. Não inferir identidade ou parentesco a partir de sobrenomes iguais, nem usar a hipótese do autor como elo confirmado.",
+    "locator": "Índice antigo de árvores, 19-10-2004; mapas preservados em `ITA/AlbSBiagioI.htm`, `BRA/AlberoBondenoB.htm`, `BRA/AlbGiobatB.htm`, `BRA/AlbEnnioB.htm`, `BRA/AlbAlegreB.htm`"
+  },
+  {
+    "id": "curated-genea-a3-literal-map-labels",
+    "title": "Rótulos legíveis no diagrama histórico GeneaA3",
+    "subject": [
+      "Custode Sante",
+      "Francesco",
+      "Luigi",
+      "Pasqua",
+      "Grandilia",
+      "Ulisse",
+      "Zenaide",
+      "Deulmo",
+      "Edmondo",
+      "Ramos de Bondeno"
+    ],
+    "type": "literal_diagram_transcription",
+    "url": "https://web.archive.org/web/20041029160237id_/http://www.zaniratti.it:80/Foto/GeneaA3.gif",
+    "excerpt": "Amostra de rótulos legíveis na imagem (não exaustiva; repetições aparecem no diagrama): Francesco; Luigi; Maria; Carlo; Leonilde; Antonio; Palmira; Sigismondo; Albertina; Gilberto; Nadia; Angelica; Edmondo; Sante; Clarice; Deulma; Deulmo; Leonida; Orlando; Irene; Paolo; Miriam; Mario; Bianca; Emanuela; Anna; Adelina; Dircea; Giovanna; Ermelinda; Agostino; Dante; Pasqua; Aristodemo; Annunziata; Diletta; Enzo; Alvaro; Custode Sante; Ermanno; Ugo; Umberto; Daniele; Grandilia; Ulisse; Ernesto; Zenaide; Dorselina (leitura visual, confiança média); Elpidio; Custódio; Jair; Guanair; Devanir; Devair; Genair; Anair; Sebastião; Creusa; Gerci; Valdemar; Jorge Ailton; Paulo Henrique; Edmar; Helena; Laurides; José Carlos; Laerte; Hilário; Geraldo; Cynthia; Vinicius; Felipe; Débora; Viviane; Ângelo; Amanda; Lourdes; Iolanda; Maria Hilda; Moisés; Ivano; Clara; Etra.",
+    "status": "rótulos nominais visíveis confirmados no bitmap; não convertidos em relações por geometria",
+    "caveat": "A página antiga BRA/AlberoB.htm altera a altura do bitmap para 1061, e as caixas de imagem mapeada não se alinham com vários rótulos na imagem preservada, sinal de edição/escala diferente. Esta transcrição parcial não associa rótulos a hrefs nem confirma dados biográficos. Pequenos nomes/acentos devem permanecer sujeitos a conferência.",
+    "locator": "Foto/GeneaA3.gif, 611×1352; SHA-256 27a3b8087c74cb2d6f1c435fe727d153b9f41dc03d34c102b536cb47486f9fda. Wayback: 2004-10-29 16:02:37 UTC, HTTP 200, image/gif. Leitura visual ampliada e OCR com revisão manual dos rótulos legíveis."
+  },
+  {
+    "id": "curated-alb-biagio-literal-map-labels",
+    "title": "Rótulos legíveis no diagrama histórico AlbBiagio",
+    "subject": [
+      "Giovanni",
+      "Bartolomeo",
+      "Domenica",
+      "Giovanna",
+      "Cattarina",
+      "Angela",
+      "Giuseppe",
+      "Domenico",
+      "Antonio",
+      "Barbara",
+      "Maria",
+      "Vittoria",
+      "Rosa",
+      "Francesco",
+      "Enrica",
+      "Matilde"
+    ],
+    "type": "literal_diagram_transcription",
+    "url": "https://web.archive.org/web/20050902185856id_/http://www.zaniratti.it:80/Foto/AlbBiagio.gif",
+    "excerpt": "Rótulos transcritos: Giovanni; Bartolomeo; 1724; Domenica; Giovanna; Giovanni; Cattarina; Angela; Giovanni; Bartolomeo; Giovanni; Bartolomeo; Rosa; Francesco; Antonio; Enrica; Matilde; Giuseppe; Domenico; Domenica; Antonio; Barbara; Maria; Vittoria.",
+    "status": "rótulos nominais e data visíveis confirmados no bitmap; não convertidos em relações por geometria",
+    "caveat": "A transcrição reflete somente o texto visível. A imagem da rota italiana `/AlbBiagio.gif` é um caminho distinto e não foi localizado; o bitmap recuperado é `Foto/AlbBiagio.gif` usado pela página BRA.",
+    "locator": "Foto/AlbBiagio.gif, 611×400; SHA-256 428d09f388284eb6fc6032f2425a16288575bc550334a3abb211fd6f6bd7c332. Wayback: 2005-09-02 18:58:56 UTC, HTTP 200, image/gif. Leitura visual ampliada e OCR com revisão manual."
+  },
+  {
+    "id": "curated-missing-map-image-payloads",
+    "title": "Diagramas mencionados em páginas recuperadas, payloads de imagem ausentes",
+    "subject": [
+      "Ennio",
+      "Aldo/Adelmo",
+      "Giovanni Battista",
+      "Laiza",
+      "Bondeno",
+      "Porto Alegre",
+      "San Biagio",
+      "Esposito",
+      "Murucci"
+    ],
+    "type": "archive_media_gap",
+    "url": "http://www.zaniratti.it/Foto/AlbEnnio.gif",
+    "excerpt": "O HTML recuperado contém referências a esses diagramas e algumas reescritas locais com datas de replay, mas o payload das imagens não foi localizado nem consta nos inventários locais consultados. O único modo `Foto/AlbBiagio.gif` é outro caminho e tem payload recuperado; não substitui automaticamente `/AlbBiagio.gif`.",
+    "status": "referência de imagem comprovada pelo HTML; conteúdo do mapa indisponível nesta coleta",
+    "caveat": "Os timestamps embutidos em URLs de replay nas páginas não foram tratados como metadados do payload. A consulta da ferramenta web aos endpoints CDX/replay não abriu e o acesso HTTP direto expirou; nenhum snapshot foi alegado sem registro próprio do recurso. As páginas e alvos não devem receber nomes inferidos de filenames.",
+    "locator": "Páginas históricas referenciam: `/Foto/AlbEnnio.gif` (BRA/AlbEnnioB.htm), `/Foto/AlberoAdelmo.gif` (BRA/AlbAdelmoB.htm), `/Foto/AlbGiobat.gif` (BRA/AlbGiobatB.htm), `/Foto/AlberoLaiza.gif` (BRA/AlbLaizaB.htm), `/Foto/AlberoBondeno.gif` (BRA/AlberoBondenoB.htm), `/Foto/Alberoalegre.gif` (BRA/AlbAlegreB.htm), `/AlbBiagio.gif` (ITA/AlbSBiagioI.htm), `/Esposito/Imag/Esposito.gif` e `/Murucci/Immag/Murucci.gif`. Inventário local wayback/Common Crawl/recuperados consultado em 2026-10-13; nenhum registro do payload desses caminhos, nem cópia local encontrada."
+  }
+]

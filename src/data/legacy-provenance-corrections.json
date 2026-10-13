@@ -1,0 +1,49 @@
+[
+  {
+    "legacy_path": "ITA/FramesxI.htm",
+    "public_path": "acervo/site-historico/ITA/FramesxI.html",
+    "timestamp_utc": "20050320055236",
+    "capture_url": "https://web.archive.org/web/20050320055236id_/http://www.zaniratti.it:80/ITA/FramesxI.htm",
+    "raw_sha256": "1c9229dec752ccf9e24b7ac9e3afebcab6ca553eb86ce3d1f332635066a8e9e2",
+    "public_derivative_sha256": "3107b2a0bb1d7e8eb6c47e2f6983e4170f166bf5b2038406c542dc7f7edcfd21",
+    "note": "A data indicada aqui corresponde ao payload utilizado na versão de leitura, não à primeira captura do índice. O hash bruto é distinto do hash da reprodução pública reescrita.",
+    "versions": [
+      {
+        "timestamp_utc": "20041020221923",
+        "capture_url": "https://web.archive.org/web/20041020221923id_/http://www.zaniratti.it:80/ITA/FramesxI.htm",
+        "raw_sha256": "e5b33d8b21fd42391c13bef73946addc4a056b3cbf7ba3e7afdded6793063a1f"
+      },
+      {
+        "timestamp_utc": "20041212191026",
+        "capture_url": "https://web.archive.org/web/20041212191026id_/http://www.zaniratti.it:80/ITA/FramesxI.htm",
+        "raw_sha256": "adae3c673ff507806c4a316f0012a0a1b41e6b5aaffb1fb045e3b5076416ee35"
+      },
+      {
+        "timestamp_utc": "20050214042231",
+        "capture_url": "https://web.archive.org/web/20050214042231id_/http://www.zaniratti.it:80/ITA/FramesxI.htm",
+        "raw_sha256": "a92e3eb9a84c38b2fd26a9f00c8fee4bc3430185bb90fb6f3ad053fae102acd0"
+      },
+      {
+        "timestamp_utc": "20050320055236",
+        "capture_url": "https://web.archive.org/web/20050320055236id_/http://www.zaniratti.it:80/ITA/FramesxI.htm",
+        "raw_sha256": "1c9229dec752ccf9e24b7ac9e3afebcab6ca553eb86ce3d1f332635066a8e9e2"
+      }
+    ]
+  },
+  {
+    "legacy_path": "ITA/NovitaI.htm",
+    "public_path": "acervo/site-historico/ITA/NovitaI.html",
+    "timestamp_utc": "20041025215948",
+    "capture_url": "https://web.archive.org/web/20041025215948id_/http://www.zaniratti.it:80/ITA/NovitaI.htm",
+    "raw_sha256": "63af8a757ed663cc9787bcce44fb9968fd39f578a6564587b1fb1da947c27f7b",
+    "public_derivative_sha256": "e183a53327c5c2522e93b5eef32dda99eee8324a97abeba39b35edf4d1186c9c",
+    "note": "A data indicada aqui corresponde ao payload utilizado na versão de leitura, não à primeira captura do índice. O hash bruto é distinto do hash da reprodução pública reescrita.",
+    "versions": [
+      {
+        "timestamp_utc": "20041025215948",
+        "capture_url": "https://web.archive.org/web/20041025215948id_/http://www.zaniratti.it:80/ITA/NovitaI.htm",
+        "raw_sha256": "63af8a757ed663cc9787bcce44fb9968fd39f578a6564587b1fb1da947c27f7b"
+      }
+    ]
+  }
+]
