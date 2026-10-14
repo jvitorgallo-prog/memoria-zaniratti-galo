@@ -159,6 +159,8 @@ function sanitizeHistoricalHtml(text) {
     .replace(/<embed\b[^>]*\/?>/gi, '')
     .replace(/<style\b[^>]*>[\s\S]*?<\/style\s*>/gi, '')
     .replace(/<!--([\s\S]*?)-->/g, '')
+    // The reader is written as UTF-8, even when the archived HTML declared another charset.
+    .replace(/<meta\b[^>]*>/gi, tag => tag.replace(/charset\s*=\s*(["']?)[\w.-]+/gi, (_match, quote) => `charset=${quote}utf-8`))
     .replace(/\s+on[a-z]+\s*=\s*(?:"[^"]*"|'[^']*'|[^\s>]+)/gi, '')
     .replace(/\s+target\s*=\s*(?:"[^"]*"|'[^']*'|[^\s>]+)/gi, '')
     .replace(/\s+href\s*=\s*(["'])mailto:[\s\S]*?\1/gi, '')
@@ -183,7 +185,7 @@ function htmlText(text) {
     .replace(/\s+/g, ' ').trim();
 }
 
-function rewriteLegacyLinks(html, legacyPath, records) {
+function rewriteLegacyLinks(html, legacyPath, records, availablePaths) {
   const known = new Set(records.map(x => String(x.arquivo_local).replaceAll('\\', '/')));
   const outputPath = original => {
     const ext = path.extname(original).slice(1).toLowerCase();
@@ -201,6 +203,21 @@ function rewriteLegacyLinks(html, legacyPath, records) {
     let resolved;
     let targetUrl;
     try { targetUrl = new URL(targetValue, `http://legacy/${legacyPath}`); resolved = decodeURIComponent(targetUrl.pathname.replace(/^\//, '')); } catch { return ''; }
+    if (/_lacunas\.html$/i.test(resolved)) {
+      const archivedUrl = targetUrl.searchParams.get('url');
+      if (archivedUrl) {
+        try {
+          const archived = new URL(archivedUrl);
+          const archivedHost = /^(?:www\.)?zaniratti\.it$/i.test(archived.hostname);
+          const archivedPath = decodeURIComponent(archived.pathname.replace(/^\//, ''));
+          const archivedTarget = outputPath(archivedPath);
+          if (/^https?:$/i.test(archived.protocol) && archivedHost && availablePaths.has(archivedPath) && known.has(archivedPath) && archivedTarget) {
+            return (path.posix.relative(path.posix.dirname(fromPublic), archivedTarget) || path.posix.basename(archivedTarget)) + archived.hash;
+          }
+        } catch {}
+      }
+      return '#legacy-page-not-recovered';
+    }
     const archiveHost = /^(?:www\.)?zaniratti\.it$/i.test(targetUrl.hostname);
     if (/^https?:$/i.test(targetUrl.protocol) && !archiveHost && targetUrl.hostname !== 'legacy') return targetValue;
     const candidate = outputPath(resolved);
@@ -231,7 +248,13 @@ function rewriteLegacyLinks(html, legacyPath, records) {
       const safePath = originalPath.replace(/[&<>"']/g, '');
       return `<span class="archive-link-missing">[imagem histórica não recuperada${safePath ? `: ${safePath}` : ''}${alt ? ` (${alt})` : ''}]</span>`;
     })
-    .replace(/<a\b([^>]*href\s*=\s*(["'])#legacy-page-not-recovered\2[^>]*)>([\s\S]*?)<\/a>/gi, (_, _attrs, _quote, content) => `${content}<span class="archive-link-missing"> [página não recuperada no acervo]</span>`);
+    .replace(/(<area\b[^>]*?)\s+href\s*=\s*(["'])#legacy-page-not-recovered\2/gi, '$1')
+    .replace(/<a\b([^>]*href\s*=\s*(["'])#legacy-page-not-recovered\2[^>]*)>([\s\S]*?)<\/a>/gi, (_, _attrs, _quote, content) => {
+      const label = htmlText(content);
+      if (/^(?:\.\.\/)*_lacunas\.html\?url=/i.test(label)) return '<span class="archive-link-missing">[página histórica referenciada; cópia não recuperada]</span>';
+      return content + '<span class="archive-link-missing"> [página não recuperada no acervo]</span>';
+    })
+    .replace(/\s(src|href|background)\s*=\s*(["'])#legacy-(?:page|asset)-not-recovered\2/gi, '');
 }
 
 async function prepareLegacy(siteCatalog, siteRoot) {
@@ -254,6 +277,16 @@ async function prepareLegacy(siteCatalog, siteRoot) {
   const assets = [];
   const publicFiles = [];
   const inventoryEntries = [];
+  const availablePaths = new Set();
+  for (const record of records) {
+    const legacyPath = String(record.arquivo_local).replaceAll('\\', '/');
+    if (!['recurso_recuperado','derivado_de_recuperacao'].includes(record.status)) continue;
+    if (legacyPath.startsWith('/') || legacyPath.split('/').includes('..')) continue;
+    try {
+      const bytes = await readFile(path.join(siteRoot, ...legacyPath.split('/')));
+      if (!record.sha256_local || digest(bytes) === record.sha256_local) availablePaths.add(legacyPath);
+    } catch {}
+  }
   for (const record of records) {
     const legacyPath = String(record.arquivo_local).replaceAll('\\', '/');
     if (legacyPath.startsWith('/') || legacyPath.split('/').includes('..')) throw new Error(`Caminho de legado inválido: ${legacyPath}`);
@@ -276,7 +309,7 @@ async function prepareLegacy(siteCatalog, siteRoot) {
     const eligibleLocal = localBytes && ['recurso_recuperado','derivado_de_recuperacao'].includes(record.status);
     const outputPath = ext === 'htm' ? `acervo/site-historico/${legacyPath.replace(/\.htm$/i, '.html')}` : ext === 'html' ? `acervo/site-historico/${legacyPath.replace(/\.html$/i, '.source.html')}` : isImage ? `assets/acervo/${legacyPath.replaceAll('/', '-')}` : null;
     if (eligibleLocal && isHtml) {
-      const sanitized = rewriteLegacyLinks(sanitizeHistoricalHtml(localBytes.toString('utf8')), legacyPath, records);
+      const sanitized = rewriteLegacyLinks(sanitizeHistoricalHtml(localBytes.toString('utf8')), legacyPath, records, availablePaths);
       const titleMatch = sanitized.match(/<title\b[^>]*>([\s\S]*?)<\/title\s*>/i);
       const titleText = titleMatch ? htmlText(titleMatch[1]).replace(/\s+/g, ' ').trim() : '';
       if (titleText && titleText.length <= 140 && !/^(?:Microsoft|Internet Explorer|Page cannot be displayed)$/i.test(titleText)) extractedTitle = titleText;
@@ -374,7 +407,7 @@ async function prepareDocuments(docs) {
   return { archiveItems, assets, publicFiles };
 }
 
-function buildSnapshot(canonical, docs, siteCatalog, assetBytes, legacy, supplemental) {
+function buildSnapshot(canonical, docs, siteCatalog, assetBytes, legacy, supplemental, releaseOptions) {
   if (Object.keys(canonical.pessoas || {}).length !== CORE_PERSON_COUNT) throw new Error('Contagem do núcleo de pessoas mudou; exige revisão editorial.');
   if (canonical.parentescos?.length !== CORE_EDGE_COUNT) throw new Error('Contagem do núcleo de vínculos mudou; exige revisão editorial.');
   if (Object.keys(canonical.familias || {}).length !== CORE_FAMILY_COUNT) throw new Error('Contagem do núcleo de agrupamentos mudou; exige revisão editorial.');
@@ -1067,7 +1100,7 @@ function buildSnapshot(canonical, docs, siteCatalog, assetBytes, legacy, supplem
   }
   const snapshot = {
     schema_version: '1.1.0',
-    release: { id: 'zaniratti-integral-atlas-candidate-2026-10-13', state: 'candidate', generated_at: iso(), content_revision: 'family-atlas-integral-2026-10-13-v2', locale: 'pt', public_changelog: 'Integra as árvores e fichas históricas recuperadas, preservando as identidades e relações com suas fontes.' },
+    release: { id: releaseOptions.id, state: 'candidate', generated_at: iso(), content_revision: releaseOptions.revision, locale: 'pt', public_changelog: releaseOptions.changelog },
     people: people.map(({ _name_source_path, _unlinked, _map_only, ...publicPerson }) => publicPerson), branches: [...branches,...extraBranches], groups, events, assertions, citations, sources, assets: [asset, ...legacy.assets.map(({ source_id, ...publicAsset }) => publicAsset)], legacy_urls: [], biographies, archive_items: legacy.archiveItems,
   };
   return { snapshot, siteRecords: legacy.records };
@@ -1122,19 +1155,21 @@ async function main() {
   for (let i = 2; i < process.argv.length; i += 2) {
     const key = process.argv[i];
     const value = process.argv[i + 1];
-    if (!['--input','--docs','--site-catalog','--site-root','--approve'].includes(key) || !value) throw new Error('Uso: export-public.mjs --input <corpus.json> --docs <catalogo_documental.json> --site-catalog <catalogo_site.json> --site-root <copia-site-historico> [--approve <decisao-editorial.json>]');
-    args.set(key, path.resolve(value));
+    if (!['--input','--docs','--site-catalog','--site-root','--approve','--release-id','--content-revision','--changelog'].includes(key) || !value) throw new Error('Uso: export-public.mjs --input <corpus.json> --docs <catalogo_documental.json> --site-catalog <catalogo_site.json> --site-root <copia-site-historico> [--release-id <id> --content-revision <revision> --changelog <texto>] [--approve <decisao-editorial.json>]');
+    args.set(key, value);
   }
   if (!args.has('--input') || !args.has('--docs') || !args.has('--site-catalog') || !args.has('--site-root')) throw new Error('Informe explicitamente --input, --docs, --site-catalog e --site-root; não há origem padrão.');
   for (const key of ['--input','--docs','--site-catalog','--site-root']) {
-    if (args.get(key).startsWith(`${ROOT}${path.sep}`)) throw new Error(`Entrada ${key} precisa ficar fora do checkout do site.`);
-    const actualPath = await realpath(args.get(key));
+    const requestedPath = path.resolve(args.get(key));
+    if (requestedPath.startsWith(`${ROOT}${path.sep}`)) throw new Error(`Entrada ${key} precisa ficar fora do checkout do site.`);
+    const actualPath = await realpath(requestedPath);
     if (actualPath.startsWith(`${ROOT}${path.sep}`)) throw new Error(`Entrada ${key} resolve para dentro do checkout do site.`);
     args.set(key, actualPath);
   }
   if (args.has('--approve')) {
-    if (args.get('--approve').startsWith(`${ROOT}${path.sep}`)) throw new Error('A decisão editorial deve ficar fora do checkout público.');
-    const approvalPath = await realpath(args.get('--approve'));
+    const requestedPath = path.resolve(args.get('--approve'));
+    if (requestedPath.startsWith(`${ROOT}${path.sep}`)) throw new Error('A decisão editorial deve ficar fora do checkout público.');
+    const approvalPath = await realpath(requestedPath);
     if (approvalPath.startsWith(`${ROOT}${path.sep}`)) throw new Error('A decisão editorial resolve para dentro do checkout público.');
     args.set('--approve', approvalPath);
   }
@@ -1156,7 +1191,13 @@ async function main() {
   legacy.assets.push(...documents.assets);
   legacy.publicFiles.push(...documents.publicFiles);
   legacy.documentAssets = documents.assets;
-  const { snapshot, siteRecords } = buildSnapshot(canonical, docs, siteCatalog, assetBytes, legacy, supplemental);
+  const releaseOptions = {
+    id: args.get('--release-id') || 'zaniratti-integral-atlas-candidate-2026-10-13',
+    revision: args.get('--content-revision') || 'family-atlas-integral-2026-10-13-v2',
+    changelog: args.get('--changelog') || 'Integra as árvores e fichas históricas recuperadas, preservando as identidades e relações com suas fontes.',
+  };
+  if (!/^[a-z0-9][a-z0-9-]{4,99}$/.test(releaseOptions.id) || !/^[a-z0-9][a-z0-9-]{4,99}$/.test(releaseOptions.revision) || releaseOptions.changelog.length > 500) throw new Error('Metadados de release inválidos.');
+  const { snapshot, siteRecords } = buildSnapshot(canonical, docs, siteCatalog, assetBytes, legacy, supplemental, releaseOptions);
   let approvalDecision = null;
   if (args.has('--approve')) {
     const candidatePath = path.join(ROOT, 'content/public/snapshot.json');

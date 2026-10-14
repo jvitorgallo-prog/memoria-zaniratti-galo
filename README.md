@@ -8,9 +8,11 @@ Atlas público para percorrer a árvore, abrir histórias pessoais e consultar d
 
 As fichas pessoais mostram pais, irmãos, cônjuges e filhos, inclusive 13 filhos de Custode, 4 de Valentim, 5 de Reni, 10 de Grandilia e 16 de Zenaide. Menções sem página individual preservada são referências; a contagem não garante que cada menção sem link corresponda a um indivíduo diferente.
 
-O acervo reúne 389 itens; 388 têm arquivo de leitura disponível. Há páginas e imagens do website histórico, 22 PDFs de fontes públicas, o extrato original do casamento de Custode e Ernesta e três extratos genealógicos dos documentos fornecidos. O catálogo de pesquisa torna 204 achados consultáveis por nome, fonte e estado, além de capítulos sobre ramos italianos, Santa Clara, Varre-Sai, fazendas e José Augusto.
+O acervo reúne 389 itens; os 389 têm arquivo de leitura disponível. Há páginas e imagens do website histórico, 22 PDFs de fontes públicas, o extrato original do casamento de Custode e Ernesta e três extratos genealógicos dos documentos fornecidos. O catálogo de pesquisa torna 204 achados consultáveis por nome, fonte e estado, além de capítulos sobre ramos italianos, Santa Clara, Varre-Sai, fazendas e José Augusto.
 
-Foram inventariados 238 arquivos HTM históricos e três interfaces HTML auxiliares da recuperação; 122 fichas contêm tabelas de relações e 11 páginas têm mapas de árvores. Algumas imagens dos diagramas não foram recuperadas. A cobertura total do domínio antigo continua desconhecida.
+Foram inventariados 239 arquivos HTM históricos e três interfaces HTML auxiliares da recuperação; 122 fichas contêm tabelas de relações e 11 páginas têm mapas de árvores. Algumas imagens dos diagramas não foram recuperadas. A cobertura total do domínio antigo continua desconhecida.
+
+A revisão de 14/10/2026 recuperou `ITA/FontiI.htm`, captura de 21/10/2004, com bytes e digest conferidos. A página indica o Registro da População de Bondeno, Volume VIII, família 86; as duas miniaturas e páginas de documentos vinculadas continuam ausentes. Não é uma lista de passageiros do Attività. A galeria em `/pt/acervo/imagens/` reúne 106 imagens históricas únicas e oferece os originais em ZIP; as dez notas complementares e a auditoria estão em `/pt/fontes/`.
 
 Reni aparece conforme a correção familiar; Lourdes Espósito permanece outra pessoa. Relatos familiares e conteúdo do site integram a história com a origem consultável. Não se inferem parentescos, mães, adoções ou componentes de data ausentes.
 
@@ -24,6 +26,7 @@ npm run dev
 npm run validate:public
 npm run test:public
 npm run test:genealogy
+npm run test:images
 npm run release:check
 npm run check
 npm run build

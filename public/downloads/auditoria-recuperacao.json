@@ -1,10 +1,10 @@
 {
-  "date": "13/10/2026",
-  "summary": "A comparação confirmou as cópias disponíveis, mas encontrou informações acessíveis apenas nas leituras das páginas antigas e notas ainda sem exposição completa. Esta revisão reúne as imagens em uma galeria e publica as notas complementares. Recuperação integral do domínio ainda não demonstrada.",
+  "date": "14/10/2026 (coleta iniciada em 13/10/2026)",
+  "summary": "A comparação confirmou as cópias disponíveis e recuperou uma página original adicional, FontiI, de 2004. Esta revisão reúne as imagens em uma galeria, publica notas complementares e distingue as leituras históricas dos dados estruturados. A dimensão completa do domínio ainda é desconhecida.",
   "coverage": [
     {
       "collection": "Páginas recuperadas do site",
-      "result": "238 HTMs originais recuperados têm versões públicas de leitura. Três HTMLs auxiliares completam o conjunto de 241 interfaces locais.",
+      "result": "239 HTMs originais recuperados têm versões públicas de leitura, incluindo FontiI obtida no reteste de 14/10/2026. Três HTMLs auxiliares completam o conjunto de 242 interfaces locais.",
       "limitation": "Versões de leitura reescrevem os links e removem scripts e contatos. Os bytes brutos originais são preservados no dossiê; não são equivalentes às versões públicas."
     },
     {
@@ -29,8 +29,8 @@
     },
     {
       "collection": "Página ITA/FontiI.htm",
-      "result": "Captura indexada em 21/10/2004, confirmada por CDX e Availability. O corpo de replay preservado retorna HTTP 404; há apenas uma transcrição adicional na base, sem arquivo integral de leitura.",
-      "limitation": "Uma transcrição ou um registro de captura não comprovam a disponibilidade atual do payload integral."
+      "result": "HTML original recuperado no reteste: 2.389 bytes; captura de 21/10/2004 às 11:12:33 UTC, HTTP 200. SHA-256 7e1b7c90e62ebf09abb79baa125f58070427de6714e1b0fa512308de21413a56; digest SHA1 confere com o CDX. Leitura pública disponível no acervo.",
+      "limitation": "Um replay antigo retornou erro 404; isso não demonstrava ausência. As duas miniaturas e duas páginas de documentos referenciadas continuam sem arquivo recuperado."
     },
     {
       "collection": "Proveniência das versões HTML",
@@ -48,8 +48,8 @@
     },
     {
       "service": "Wayback — Availability e consultas exatas",
-      "result": "Dezessete consultas da API Availability responderam HTTP 200: GeneaA3 e AlbBiagio confirmam os recursos recuperados; FontiI aparece com captura 20041021111233, embora o corpo de replay preservado responda 404. Os outros quatorze alvos não trouxeram snapshot nessa consulta.",
-      "limitation": "Resultado delimitado aos URLs e parâmetros testados; não demonstra inexistência em todas as coleções ou grafias."
+      "result": "Dezessete consultas da API Availability responderam HTTP 200. GeneaA3, AlbBiagio e FontiI têm captura confirmada; os outros quatorze alvos não trouxeram snapshot nessa consulta. O reteste do replay de FontiI recuperou HTML original com HTTP 200 e digest igual ao CDX.",
+      "limitation": "As versões id_, normal e if_ do reteste responderam 200. O corpo id_ é o original; normal/if_ incluem a interface Wayback. Para as quatro referências de FontiI, quatro CDX exatos e um wildcard não retornaram linhas; Availability de uma miniatura também não trouxe snapshot."
     },
     {
       "service": "Common Crawl",
@@ -90,7 +90,8 @@
   "additions": [
     "Galeria dos 106 arquivos de imagem históricos únicos, com arquivo original, captura e SHA-256.",
     "Dez notas complementares, incluindo rótulos legíveis de GeneaA3 e AlbBiagio, sem inferir parentesco pela posição no diagrama.",
-    "Auditoria pública que distingue leitura de páginas antigas, fichas estruturadas, resumos e arquivos ainda ausentes."
+    "Auditoria pública que distingue leitura de páginas antigas, fichas estruturadas, resumos e arquivos ainda ausentes.",
+    "Página FontiI de 2004 recuperada, com referência explícita ao Registro da População de Bondeno: Volume VIII, família 86. As imagens citadas continuam ausentes e não foram identificadas como lista do Attività."
   ],
   "referenced_but_unrecovered": [
     {
@@ -122,6 +123,26 @@
       "url": "http://www.zaniratti.it/Mini/ZenaideFelipe.gif",
       "description": "Miniatura descrita como Zenaide e marido",
       "evidence": "HTML Murucci/Zenaide1895.htm, Common Crawl 20120521025757."
+    },
+    {
+      "url": "http://www.zaniratti.it/MiniVolVIII1.gif",
+      "description": "Miniatura do registro populacional (primeira referência)",
+      "evidence": "HTML original ITA/FontiI.htm; captura Wayback 20041021111233, digest validado. Consultas exatas desta rodada não retornaram capturas desses alvos."
+    },
+    {
+      "url": "http://www.zaniratti.it/MiniVolVIII2.gif",
+      "description": "Miniatura do registro populacional (segunda referência)",
+      "evidence": "HTML original ITA/FontiI.htm; captura Wayback 20041021111233, digest validado. Consultas exatas desta rodada não retornaram capturas desses alvos."
+    },
+    {
+      "url": "http://www.zaniratti.it/ITA/VolVIIIchiusoI.htm",
+      "description": "Página com o volume fechado",
+      "evidence": "HTML original ITA/FontiI.htm; captura Wayback 20041021111233, digest validado. Consultas exatas desta rodada não retornaram capturas desses alvos."
+    },
+    {
+      "url": "http://www.zaniratti.it/ITA/VolVIIIapertoI.htm",
+      "description": "Página com o volume aberto",
+      "evidence": "HTML original ITA/FontiI.htm; captura Wayback 20041021111233, digest validado. Consultas exatas desta rodada não retornaram capturas desses alvos."
     }
   ]
 }

@@ -15,8 +15,8 @@
       "reference_count": 14,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/AdelinaB.html",
-      "public_sha256": "0926ea349ba3935d599149f6cbc0d0582bcba9e2912fc72143452f19a96f3a1d",
-      "public_bytes": 4732
+      "public_sha256": "cc09ebf96fedba4f762a5008a8d2105d569e7b41a0b23251387b68bf5f540b36",
+      "public_bytes": 4772
     },
     {
       "legacy_path": "BRA/AfonsoB.htm",
@@ -32,8 +32,8 @@
       "reference_count": 3,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/AfonsoB.html",
-      "public_sha256": "b1566283956149de2a20a2522166a9411e87d61a0540bcf07ec1be4b9952ec6f",
-      "public_bytes": 3591
+      "public_sha256": "c73bc027529f84af015220ed6937db63ddfdcc568c9c22d502c40a8736e8516b",
+      "public_bytes": 3911
     },
     {
       "legacy_path": "BRA/AgostinoB.htm",
@@ -49,8 +49,8 @@
       "reference_count": 17,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/AgostinoB.html",
-      "public_sha256": "c73662fd64dcc67935dbcb7741c7cec3e3ef1170b5fb83a39475fb1b70e60e8c",
-      "public_bytes": 3932
+      "public_sha256": "e03d057d9465f0c39585874855fe8282b8e38c2172faa6c68841b0aad5508a1b",
+      "public_bytes": 3972
     },
     {
       "legacy_path": "BRA/AlbAdelmoB.htm",
@@ -66,8 +66,8 @@
       "reference_count": 0,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/AlbAdelmoB.html",
-      "public_sha256": "91525a4924e8db4008309f44937d43a8242152c043499ca09beecaffa9fa338f",
-      "public_bytes": 2593
+      "public_sha256": "54a73e57b54cfb96574aeec06dfefb04eb40592cefae1c4c1b49708777f3caab",
+      "public_bytes": 2284
     },
     {
       "legacy_path": "BRA/AlbAlegreB.htm",
@@ -83,8 +83,8 @@
       "reference_count": 41,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/AlbAlegreB.html",
-      "public_sha256": "80e7ffb55933755d56da4482cd4aaf550968967e1b11465b71925e29836a492f",
-      "public_bytes": 33650
+      "public_sha256": "0b52b4c9ef393ed885013ad7bb8c7d90f64bac005e5cad2cd3abb3e3acb5a90e",
+      "public_bytes": 27294
     },
     {
       "legacy_path": "BRA/AlbEnnioB.htm",
@@ -100,8 +100,8 @@
       "reference_count": 1,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/AlbEnnioB.html",
-      "public_sha256": "faddc225c1b26ffcfa8060b68d63ced06797b2bf7336eeb65e678151e2f8e5b3",
-      "public_bytes": 2790
+      "public_sha256": "91d447f63df93928644b331d02c71265a362600b702d17ee3583d86a98b48d43",
+      "public_bytes": 2435
     },
     {
       "legacy_path": "BRA/AlbGiobatB.htm",
@@ -117,8 +117,8 @@
       "reference_count": 6,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/AlbGiobatB.html",
-      "public_sha256": "43bc75be41d145c815e590e034422ac8e6331060dc7f3b26cf8b371fa4372f88",
-      "public_bytes": 6933
+      "public_sha256": "08aa13221b7852ccafc2adffcacb449b8fa8ebc7f2375c25f04edb9bf1b3f77c",
+      "public_bytes": 5966
     },
     {
       "legacy_path": "BRA/AlbIppolitaB.htm",
@@ -134,8 +134,8 @@
       "reference_count": 1,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/AlbIppolitaB.html",
-      "public_sha256": "32335280903d1b0f20ad7b0e80062f8bb579cea08f738498b79a8f35ff9e14c7",
-      "public_bytes": 1841
+      "public_sha256": "f1c92e7797110d0a11c73f62747997a79d960d862c379a70ced3ed437470f37d",
+      "public_bytes": 1699
     },
     {
       "legacy_path": "BRA/AlbLaizaB.htm",
@@ -151,8 +151,8 @@
       "reference_count": 1,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/AlbLaizaB.html",
-      "public_sha256": "70164b94390d8caa90450cb232b64d2b55ac7d23b4d3e7e5a3e7b68c622f2026",
-      "public_bytes": 5604
+      "public_sha256": "f33d517f3c412b78f9878f17cb63938ec30354b36d09cf81b639ca8438089c73",
+      "public_bytes": 4664
     },
     {
       "legacy_path": "BRA/AlbSBiagioB.htm",
@@ -168,8 +168,8 @@
       "reference_count": 3,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/AlbSBiagioB.html",
-      "public_sha256": "6d2e1e4d83034289b2c6cccd877054968a147f7f605b517b7ef3de1d571edc95",
-      "public_bytes": 6230
+      "public_sha256": "aafa531db033c96b8af5a433306bf1a5297be0d0c6a9121ee3cc28940be5299c",
+      "public_bytes": 6579
     },
     {
       "legacy_path": "BRA/AlberoB.htm",
@@ -185,8 +185,8 @@
       "reference_count": 17,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/AlberoB.html",
-      "public_sha256": "d863d3c623198e07361142955cc6684b82760010c0d5be1ced9d912e4be52936",
-      "public_bytes": 15832
+      "public_sha256": "cab479ad9eaf04d69777a6b451310a4dc53185363f0c7b1d72bcf6c56711b442",
+      "public_bytes": 15708
     },
     {
       "legacy_path": "BRA/AlberoBondenoB.htm",
@@ -202,8 +202,8 @@
       "reference_count": 41,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/AlberoBondenoB.html",
-      "public_sha256": "45ea9b701002eb2b09cbf2fc8ba2e97320963c0a77a5af81568c547eabb0cf6a",
-      "public_bytes": 40893
+      "public_sha256": "c959f4336380dbc677ee667fe9fe64ae62c452cb72702ebd1fc888a909f416d7",
+      "public_bytes": 33404
     },
     {
       "legacy_path": "BRA/AlvaroB.htm",
@@ -219,8 +219,8 @@
       "reference_count": 4,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/AlvaroB.html",
-      "public_sha256": "95bb8b3e846641245cd315397f789c8324796d7b8ec6b2969df107b9ec377967",
-      "public_bytes": 4355
+      "public_sha256": "090943d855eceb2f402e556b30e05a8aeb4d94ae217cd4351d2560a912f2773c",
+      "public_bytes": 4515
     },
     {
       "legacy_path": "BRA/AmandaB.htm",
@@ -236,8 +236,8 @@
       "reference_count": 2,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/AmandaB.html",
-      "public_sha256": "09ee828bf4d8edb51f3e8c798ed2ae0cf3728bad978f300cd4c35793c9c401c9",
-      "public_bytes": 4127
+      "public_sha256": "627681c28a109b1edd38278b61e91f2284595f5ee219489c429783c6e3ef492a",
+      "public_bytes": 4407
     },
     {
       "legacy_path": "BRA/AncillaB.htm",
@@ -253,8 +253,8 @@
       "reference_count": 7,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/AncillaB.html",
-      "public_sha256": "e908a744799c0d267aad341490c5835cb39c1f5cd0273e708a80f0c50d15cddc",
-      "public_bytes": 6862
+      "public_sha256": "1e51940b997179708fb1f7bea7769e8ada7b38c3fcef10a9142ca175726ca589",
+      "public_bytes": 7222
     },
     {
       "legacy_path": "BRA/Anderson1995B.htm",
@@ -270,8 +270,8 @@
       "reference_count": 2,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Anderson1995B.html",
-      "public_sha256": "57b2814e35602fba6ac4dbac6c50bd32ade6b5985c4d6f450e8efb5210ec430e",
-      "public_bytes": 4296
+      "public_sha256": "a49bb832a4247441b0f34cab9bc455165635f8ce6d4e44ccbeb9fceabebc30e7",
+      "public_bytes": 4576
     },
     {
       "legacy_path": "BRA/Andrea1973B.htm",
@@ -287,8 +287,8 @@
       "reference_count": 7,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Andrea1973B.html",
-      "public_sha256": "05530962238de10b8eb85b18c6872000ced55121a9a19c1a57a72ed10811eec2",
-      "public_bytes": 3895
+      "public_sha256": "4cd46979794a6f63b4815e0daf3b7a3a151053b8417899b00182bd80d5561864",
+      "public_bytes": 4055
     },
     {
       "legacy_path": "BRA/Andreza1976B.htm",
@@ -304,8 +304,8 @@
       "reference_count": 4,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Andreza1976B.html",
-      "public_sha256": "72a32ed6bb8ad332ad249fbb99c574091ad26451274c884f975f735547ed4efe",
-      "public_bytes": 4627
+      "public_sha256": "46362e10a36b74194ce66a1339f6a7cb127f5769b5a13bf42440a7abd6ea36e4",
+      "public_bytes": 4787
     },
     {
       "legacy_path": "BRA/AndrezaB.htm",
@@ -338,8 +338,8 @@
       "reference_count": 4,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Angelica1950B.html",
-      "public_sha256": "e342f857ebf669869fb3582a444fd6db3ed46029b999e12da69327ba18e7ed47",
-      "public_bytes": 5278
+      "public_sha256": "e54149853b4fd400e747eb861f5ce470719a62bc0627f759f95d842fbfe251d1",
+      "public_bytes": 5598
     },
     {
       "legacy_path": "BRA/Angelica1961B.htm",
@@ -355,8 +355,8 @@
       "reference_count": 5,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Angelica1961B.html",
-      "public_sha256": "3253cb09a91eda8904a5a60d87f148ad1b5d363505acbbbf61477e510364ffd1",
-      "public_bytes": 4211
+      "public_sha256": "0635f6604d40bb703b3818e495dc018415d570070d3c496f3fdfd78fc0961504",
+      "public_bytes": 4491
     },
     {
       "legacy_path": "BRA/AngeloB.htm",
@@ -372,8 +372,8 @@
       "reference_count": 4,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/AngeloB.html",
-      "public_sha256": "a63e8c3a6d02619374219321afc5dac0d29ff0ee9ef7f45a0aa1cf1bb00f20d9",
-      "public_bytes": 3680
+      "public_sha256": "dd646c5bde68d288d4f07926063858abc5f85728f78cfc183431f762b34db521",
+      "public_bytes": 3920
     },
     {
       "legacy_path": "BRA/AnnaB.htm",
@@ -389,8 +389,8 @@
       "reference_count": 6,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/AnnaB.html",
-      "public_sha256": "9319c5b4eec490fa31d83ff46603329817ee163b16e1367b547a32d33c34676d",
-      "public_bytes": 6194
+      "public_sha256": "fc905b2eeb4dd62a1e70c70a2c8335896852f0b1b10d2d16f19fb5249218ba2f",
+      "public_bytes": 6834
     },
     {
       "legacy_path": "BRA/AnnunziataB.htm",
@@ -406,8 +406,8 @@
       "reference_count": 17,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/AnnunziataB.html",
-      "public_sha256": "a4d84dbc6881b3df580063b02f395f520bf47feac72a5bb870e5bbd959294ac4",
-      "public_bytes": 3655
+      "public_sha256": "71ead10b26f14d84026cbd23836a1b48a315fe32d9f0a59b9a8d81b98bc0f425",
+      "public_bytes": 3695
     },
     {
       "legacy_path": "BRA/Antonio1846B.htm",
@@ -423,8 +423,8 @@
       "reference_count": 18,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Antonio1846B.html",
-      "public_sha256": "d1d51076bca89d04b63cbbc6bfb8a80ab6b8bdd1846a56803b746e0d8b7362ff",
-      "public_bytes": 10467
+      "public_sha256": "f505b617e90752235f7dd38b8548480e005b9d8b78e3600bb2f3ffa06090bbb7",
+      "public_bytes": 10987
     },
     {
       "legacy_path": "BRA/Aresio1968B.htm",
@@ -440,8 +440,8 @@
       "reference_count": 4,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Aresio1968B.html",
-      "public_sha256": "b24abe444972840fa160f376a7551286859a26f19075f1f2caeba255ee4a28f4",
-      "public_bytes": 3857
+      "public_sha256": "3e2e6c2d9eefa7bffce1048a86858e5457f8c61257808950dff1b4624b30bcba",
+      "public_bytes": 4137
     },
     {
       "legacy_path": "BRA/AristodemoB.htm",
@@ -457,8 +457,8 @@
       "reference_count": 17,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/AristodemoB.html",
-      "public_sha256": "29ce039cf5a89b6d43629f1d823e87474631ff827a88e728a2342725a1c64f49",
-      "public_bytes": 5804
+      "public_sha256": "c553ca66b246373913e0e096e9dddfcf711bce68642a148b62e53644cd7ad404",
+      "public_bytes": 6044
     },
     {
       "legacy_path": "BRA/Augusto1877B.htm",
@@ -474,8 +474,8 @@
       "reference_count": 4,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Augusto1877B.html",
-      "public_sha256": "745ec02424e5b49bdacbca1583947bbb4a364f5f5689324dbd9c63fc3524c16a",
-      "public_bytes": 6435
+      "public_sha256": "037273be652a7d0df5380fb65222143cefdb5869af2145c22b0b868dc48bde79",
+      "public_bytes": 6795
     },
     {
       "legacy_path": "BRA/BenvenutoB.htm",
@@ -491,8 +491,8 @@
       "reference_count": 2,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/BenvenutoB.html",
-      "public_sha256": "58600c98571e2ea6bdd34cde066c831a84692e5105df4c2fa358ffea94909402",
-      "public_bytes": 20785
+      "public_sha256": "108e4fefc3c5bed1cbb4cec547e9acbf036f311f5bf3b31daf6117067549486d",
+      "public_bytes": 24745
     },
     {
       "legacy_path": "BRA/BiancaB.htm",
@@ -508,8 +508,8 @@
       "reference_count": 4,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/BiancaB.html",
-      "public_sha256": "35b7b51c924ee07bffd9f5cfb1957dfa26e0de1c89eba542f9c423945ac8f828",
-      "public_bytes": 6284
+      "public_sha256": "5c21d545eb4b3a4da2acde12f16187a6920da642f05cb41cf6bdf7a5de339aef",
+      "public_bytes": 6884
     },
     {
       "legacy_path": "BRA/BonificaBuranaB.htm",
@@ -525,8 +525,8 @@
       "reference_count": 2,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/BonificaBuranaB.html",
-      "public_sha256": "41295f0fe52f4deadc245675c37f50145d15e398739e8024445c55d6a1a53b63",
-      "public_bytes": 14758
+      "public_sha256": "087c2816462c238d1e350d33657f12890e86ea863dd2019a27c0bdae6cfbc56f",
+      "public_bytes": 14798
     },
     {
       "legacy_path": "BRA/BonificheB.htm",
@@ -576,8 +576,8 @@
       "reference_count": 4,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Bruno1994B.html",
-      "public_sha256": "de61908d4df12cb12cdee9bf39502a7eb335e6f9c919fc5036a888d1d378d319",
-      "public_bytes": 3051
+      "public_sha256": "548e5864ec39c2fde0a425aac69a0da9ba9f598a297b3dcc56bb13d64bc78307",
+      "public_bytes": 3131
     },
     {
       "legacy_path": "BRA/BrunoSilvia1996B.htm",
@@ -593,8 +593,8 @@
       "reference_count": 4,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/BrunoSilvia1996B.html",
-      "public_sha256": "3c104888d0f88ada0c678d8042f563cdf43d71995203a52df7d15f3eb1aa7c29",
-      "public_bytes": 3507
+      "public_sha256": "562bf51fe6a2148b86406ef95a9e7dcf6bf9f8c61dcccc9fe3c4649a487ad148",
+      "public_bytes": 3547
     },
     {
       "legacy_path": "BRA/Carlo1876B.htm",
@@ -610,8 +610,8 @@
       "reference_count": 17,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Carlo1876B.html",
-      "public_sha256": "2e66bc52added9f6245a41bca8b9f995a9157ee06ba1ca4e5fcc3b7b24580a62",
-      "public_bytes": 4021
+      "public_sha256": "b6553c84f80d1cb65371d5371514b6aa7f2c8b27ee3b73bfcf044dcfe8078527",
+      "public_bytes": 4061
     },
     {
       "legacy_path": "BRA/CarolineB.htm",
@@ -627,8 +627,8 @@
       "reference_count": 3,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/CarolineB.html",
-      "public_sha256": "dc9162cd81eafa688c8ebc8a21731be8981d412b5c9bb313ec704fbc0af89fee",
-      "public_bytes": 3016
+      "public_sha256": "e791af64b330d5d82559d952796fd8d5d7449f65aa64e38c901c455890b6c8e3",
+      "public_bytes": 3096
     },
     {
       "legacy_path": "BRA/CeniraB.htm",
@@ -644,8 +644,8 @@
       "reference_count": 3,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/CeniraB.html",
-      "public_sha256": "9191652cecc64c01cbec02c329f3fde52a7d32d8090d5e6b6d95f4421b864a63",
-      "public_bytes": 3452
+      "public_sha256": "a04a8af50f04a67464273d60c498b31f8b44070430bbe5911355c625e626b3a2",
+      "public_bytes": 3572
     },
     {
       "legacy_path": "BRA/CompleanniB.htm",
@@ -661,8 +661,8 @@
       "reference_count": 2,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/CompleanniB.html",
-      "public_sha256": "c9118f2f9f4f382ec1b74cffc214405d517d512e9f1aeb5dcb417d1c86d8b108",
-      "public_bytes": 39366
+      "public_sha256": "061b261cc9ffd1141a77df61acdd6bcc296a5dde922d342fa6bb79b4456e84c0",
+      "public_bytes": 43846
     },
     {
       "legacy_path": "BRA/ConceicaodasgracasB.htm",
@@ -678,8 +678,8 @@
       "reference_count": 8,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/ConceicaodasgracasB.html",
-      "public_sha256": "22d85cfb1f2fd294d8958358d581035ca9aa40cffc93d924e6625cac58890d29",
-      "public_bytes": 4143
+      "public_sha256": "1cc31a7eadb48f82a74a1fc40dce62823bbc1942a2ded202e69e979d6f585db0",
+      "public_bytes": 4223
     },
     {
       "legacy_path": "BRA/Cristiano1981B.htm",
@@ -695,8 +695,8 @@
       "reference_count": 3,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Cristiano1981B.html",
-      "public_sha256": "03fa13dae61cd32242d627ed850468a2509bef815fe1f5e8207b19d8a572eb92",
-      "public_bytes": 3656
+      "public_sha256": "16899be2f70118746925af9ec54ed22c75361ef93d1c97835f960480f053e756",
+      "public_bytes": 3856
     },
     {
       "legacy_path": "BRA/CynthiaB.htm",
@@ -712,8 +712,8 @@
       "reference_count": 8,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/CynthiaB.html",
-      "public_sha256": "04a24839c8a146a0fc68cc08c53db371dc168ba006b914023e3effb5cc46c154",
-      "public_bytes": 7485
+      "public_sha256": "e22e98d3cd8b7e48461a0a1aa1c41c1dcad646e57a9fe28378324f8365af4403",
+      "public_bytes": 8205
     },
     {
       "legacy_path": "BRA/Daniele2B.htm",
@@ -729,8 +729,8 @@
       "reference_count": 1,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Daniele2B.html",
-      "public_sha256": "c9225d44231b34883fe0396fa584739b236d85a83ab359152fd4863d8755c241",
-      "public_bytes": 3101
+      "public_sha256": "7784e572deea7fe985d19e7d30d587e72c1a1e5a6011ea177e61498d3e806ce3",
+      "public_bytes": 3221
     },
     {
       "legacy_path": "BRA/Dante1878B.htm",
@@ -746,8 +746,8 @@
       "reference_count": 18,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Dante1878B.html",
-      "public_sha256": "8c9bb1e2b2ca753560182a7c6fafe69bfcb72cf53571821c55d101e78a67d673",
-      "public_bytes": 4558
+      "public_sha256": "fb82229237e1e022e289505930f3e3ce0f84ea37206ab639fc7633760b92781f",
+      "public_bytes": 4638
     },
     {
       "legacy_path": "BRA/DeboraB.htm",
@@ -763,8 +763,8 @@
       "reference_count": 2,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/DeboraB.html",
-      "public_sha256": "e70ac0a62d818d60073dc0ed293511f860af6297308d5b8e9fc0dcfbf65ef9a0",
-      "public_bytes": 4780
+      "public_sha256": "587c93774915a49dc504bb59ccdc2f66a2815ed4ebe7d03acef81548ca6998af",
+      "public_bytes": 5140
     },
     {
       "legacy_path": "BRA/Deulma1930B.htm",
@@ -780,8 +780,8 @@
       "reference_count": 3,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Deulma1930B.html",
-      "public_sha256": "4745a84c891d3dc10db7b74c9f1c5875eb0e3926321c9c4e1bce09d2c6fe18cf",
-      "public_bytes": 6599
+      "public_sha256": "a72434bfd02efb0e05e315da453907ec97bfdfc7c32dd42c8390a2773dee3e93",
+      "public_bytes": 7279
     },
     {
       "legacy_path": "BRA/Diego1985B.htm",
@@ -797,8 +797,8 @@
       "reference_count": 3,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Diego1985B.html",
-      "public_sha256": "51332dc89008263330dc13f6f37b1270c6a94f2a2fb0a8fd037a6b02a81e6fb6",
-      "public_bytes": 4526
+      "public_sha256": "0254b1437bb6491b2c5d461631359d59cd5bca0295cad3d7db663388f8b16278",
+      "public_bytes": 4766
     },
     {
       "legacy_path": "BRA/DilettaB.htm",
@@ -831,8 +831,8 @@
       "reference_count": 2,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/DinaciB.html",
-      "public_sha256": "82d3ccd77ae6f139f9a6c38dd30ebc55bbd8f07375f9a4852734371447177387",
-      "public_bytes": 3228
+      "public_sha256": "7a9ab4ccf9569e24e1fb2f35228a8a9df752b38dd854a091a4be19ed618828a9",
+      "public_bytes": 3308
     },
     {
       "legacy_path": "BRA/DiogoB.htm",
@@ -848,8 +848,8 @@
       "reference_count": 4,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/DiogoB.html",
-      "public_sha256": "ba474f2546c6c94603594a7fca200eebda79ea61f57b2e780f65956536f01ffb",
-      "public_bytes": 3961
+      "public_sha256": "e6b7e7afdbed5a79bd54db4fd1d1d6b5f11a325e302e89ceb9ce163ed22a147e",
+      "public_bytes": 4121
     },
     {
       "legacy_path": "BRA/DirceaB.htm",
@@ -865,8 +865,8 @@
       "reference_count": 17,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/DirceaB.html",
-      "public_sha256": "ec5cf692de6ec9a488a44ac4832b71c51aa5fa9372791a4ef559ae4be30366fb",
-      "public_bytes": 3890
+      "public_sha256": "7a674b2ae002584a09b59d98e9fab2320a956148e0a5bc28ae8e3b9a42a364c4",
+      "public_bytes": 3930
     },
     {
       "legacy_path": "BRA/Edesio1951B.htm",
@@ -882,8 +882,8 @@
       "reference_count": 8,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Edesio1951B.html",
-      "public_sha256": "4ade228817bbb2823567aab4dbc5ef8a2eae7249bca1a8324acfd8b249b49ebd",
-      "public_bytes": 3997
+      "public_sha256": "254a19f33451e58fe9885637e311a37886a1408771085c10b1afeb0e139aea29",
+      "public_bytes": 4037
     },
     {
       "legacy_path": "BRA/Edmondo1950B.htm",
@@ -899,8 +899,8 @@
       "reference_count": 11,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Edmondo1950B.html",
-      "public_sha256": "6bb5e5e3ae904d8cf72e5009a1a5e0c072118a01db79ebbff8b4471a6ee90862",
-      "public_bytes": 8463
+      "public_sha256": "9bd8b71f95a18b8c7604960f5e432664d150e1f6b8c658988b4ff3aa73bdfab3",
+      "public_bytes": 9303
     },
     {
       "legacy_path": "BRA/EdsonB.htm",
@@ -916,8 +916,8 @@
       "reference_count": 9,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/EdsonB.html",
-      "public_sha256": "bdb6a85323abe7d8bf9db554fc5eb8c34908cca60549fa84597476d3187f7138",
-      "public_bytes": 5526
+      "public_sha256": "0f5c3e1ef8acbca2e0656ef0d77db143a94417d9837481296215f960ab582037",
+      "public_bytes": 6126
     },
     {
       "legacy_path": "BRA/EmanuelaB.htm",
@@ -933,8 +933,8 @@
       "reference_count": 5,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/EmanuelaB.html",
-      "public_sha256": "0c98e62263658c855bbdb9cceefb4de53d8c2a9aa3bc8b62f5a3163219dce0cb",
-      "public_bytes": 3773
+      "public_sha256": "4dbcb8667bb5e9438ff83b0b4517f751f7bc3b2d49022f4fd54de3fc3027a5e7",
+      "public_bytes": 3893
     },
     {
       "legacy_path": "BRA/EnzoB.htm",
@@ -950,8 +950,8 @@
       "reference_count": 20,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/EnzoB.html",
-      "public_sha256": "58527af13a52a850f14a42d97c00c0457b6707698fafa9b9847f4e7489383605",
-      "public_bytes": 6118
+      "public_sha256": "19854c3b643d2a9b0a28671cdc904dbd7fa833f67894a6bf2dbd0c7971fcef01",
+      "public_bytes": 6198
     },
     {
       "legacy_path": "BRA/Erica1979B.htm",
@@ -967,8 +967,8 @@
       "reference_count": 3,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Erica1979B.html",
-      "public_sha256": "deb376fd29cb66441498945781e381e9ff865e0eab145fed9d3343dd946f0a37",
-      "public_bytes": 4575
+      "public_sha256": "e7bbf6647b5c2264803f522fddb4c8414ab9a9427a11240f9420a5b334a17882",
+      "public_bytes": 4895
     },
     {
       "legacy_path": "BRA/ErmelindaB.htm",
@@ -984,8 +984,8 @@
       "reference_count": 17,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/ErmelindaB.html",
-      "public_sha256": "7e6463a5c33316f183129fddd2088c7c97bce7dc94eb88160ecab3623ebd0ed5",
-      "public_bytes": 4014
+      "public_sha256": "cecbe704a5498f20dc5821da1113de306d8fde7cd27c68a84077391dfcc6761b",
+      "public_bytes": 4054
     },
     {
       "legacy_path": "BRA/Everton1979B.htm",
@@ -1001,8 +1001,8 @@
       "reference_count": 5,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Everton1979B.html",
-      "public_sha256": "d6618da95e7a9394983af302c56cad9206f7a25b761b2c9d325e74e487848aa9",
-      "public_bytes": 3500
+      "public_sha256": "0f2cb12162c5a35a0f5da9a45f3490dfa0d3cf8c41bef953c4f7b58d9c951b70",
+      "public_bytes": 3700
     },
     {
       "legacy_path": "BRA/FO/Anistia1979B.htm",
@@ -1069,8 +1069,8 @@
       "reference_count": 1,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/FO/Churrasco4B.html",
-      "public_sha256": "d4af40bbe9e567f1aacfcf2756513d7d549f686393152acc1e604f901aed76fa",
-      "public_bytes": 3393
+      "public_sha256": "cfcec211553dcaed549023922dd3ac613fddfed35faf5a7305eb66221bbfea6c",
+      "public_bytes": 3411
     },
     {
       "legacy_path": "BRA/FO/Churrasco6B.htm",
@@ -1086,8 +1086,8 @@
       "reference_count": 1,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/FO/Churrasco6B.html",
-      "public_sha256": "7eea62f8c793589d3aff0663f18b848db930578b9461651523adca87a42293c5",
-      "public_bytes": 2029
+      "public_sha256": "857a77fae16b30340bb168459d6eb8a220370eca4206cdac4c96182c6d63189e",
+      "public_bytes": 2038
     },
     {
       "legacy_path": "BRA/FO/DiogomaeB.htm",
@@ -1222,8 +1222,8 @@
       "reference_count": 2,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/FO/GeraldosB.html",
-      "public_sha256": "a96b8b1887a447218c32f1e0b90c68fded6960f8126a8eac491bcb4c0b23ad96",
-      "public_bytes": 1958
+      "public_sha256": "26f463f0c8b6d5a7e21089f2019182ae072d17276ab479c027863f2b366c6982",
+      "public_bytes": 1961
     },
     {
       "legacy_path": "BRA/FO/GuaEdmCriJosB.htm",
@@ -1239,8 +1239,8 @@
       "reference_count": 1,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/FO/GuaEdmCriJosB.html",
-      "public_sha256": "9f872ba156ffeddc78003373d665bf9cd407fa91d97f0f489dcccf19cdc9541b",
-      "public_bytes": 1721
+      "public_sha256": "7ad328b3a0853d7cd8127e3dcf76aec1f03c3c91620f23e349befad94cc73cd6",
+      "public_bytes": 1724
     },
     {
       "legacy_path": "BRA/FO/Ironita15B.htm",
@@ -1290,8 +1290,8 @@
       "reference_count": 2,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/FO/JCcasamentoB.html",
-      "public_sha256": "daee03e922337500a53786a34d10492a576b2b447e72c752d4ae04a24cdf64be",
-      "public_bytes": 2313
+      "public_sha256": "b582e20b4995e454fab951262f00e664719366837bdda3d783190946f9ebe419",
+      "public_bytes": 2322
     },
     {
       "legacy_path": "BRA/FO/JoVaRaLuJoLuB.htm",
@@ -1307,8 +1307,8 @@
       "reference_count": 4,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/FO/JoVaRaLuJoLuB.html",
-      "public_sha256": "5cd6222e0f81db9073c2153111adcd89c7e0170b8cd271fb08b33972418b5100",
-      "public_bytes": 2153
+      "public_sha256": "dfbc16b1fc43babcd5502f0eb7ea73c0c91fb3c40664266abd5ad3aff16da458",
+      "public_bytes": 2156
     },
     {
       "legacy_path": "BRA/FO/JoseCarlos5B.htm",
@@ -1545,8 +1545,8 @@
       "reference_count": 22,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/FabricioB.html",
-      "public_sha256": "9fc60437afdcf2c85e1f9ba5a5009065b9fac27352f30368d9e9d7792c36c155",
-      "public_bytes": 9797
+      "public_sha256": "49ac39fa454a9c68146777fab5afb02bff6f6177e3c11be9f09235671a63d259",
+      "public_bytes": 10877
     },
     {
       "legacy_path": "BRA/Felipe2004B.htm",
@@ -1579,8 +1579,8 @@
       "reference_count": 1,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/FelipeB.html",
-      "public_sha256": "983817a5bfb64fc29dfcbdc5e00812d9d1327d132ee1826a77f2e76b6b9da444",
-      "public_bytes": 5381
+      "public_sha256": "8aac813116644ebe11b242429f64f13781ee6034a3b82db25c7efdefc5105267",
+      "public_bytes": 5741
     },
     {
       "legacy_path": "BRA/FerruccioB.htm",
@@ -1596,8 +1596,8 @@
       "reference_count": 5,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/FerruccioB.html",
-      "public_sha256": "3402182a32624ee439954797e287c81dd85fca3967d12444462c41242a07572a",
-      "public_bytes": 7034
+      "public_sha256": "195a35ac68f7477689a4eef8994c348f3fd9ec9056a2d7853ce0354d1f4c240d",
+      "public_bytes": 7314
     },
     {
       "legacy_path": "BRA/FlaviodiRadyrB.htm",
@@ -1613,8 +1613,8 @@
       "reference_count": 9,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/FlaviodiRadyrB.html",
-      "public_sha256": "5b8dd04740b3ae310cdc5b62aef3895b8f98e98a6a454b2db3973b0a8093a958",
-      "public_bytes": 3740
+      "public_sha256": "f35c157f2330e5446fd987dd9008ee2ad64cf14bad142e889ef6dc1ffc587dac",
+      "public_bytes": 3780
     },
     {
       "legacy_path": "BRA/FontiB.htm",
@@ -1630,8 +1630,8 @@
       "reference_count": 2,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/FontiB.html",
-      "public_sha256": "c9e0c74cdf8ee00c42c4ce99fec289d169cee5eb3eff5f370c63e223bd8f09f9",
-      "public_bytes": 3162
+      "public_sha256": "25e75d7790de91bb2d8424a30039a1a250f28f23d29974b6da98450a5a03cd4a",
+      "public_bytes": 3242
     },
     {
       "legacy_path": "BRA/ForestaAlberiB.htm",
@@ -1647,8 +1647,8 @@
       "reference_count": 0,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/ForestaAlberiB.html",
-      "public_sha256": "c3b266cbe979769bc982132556245c0e5a4c30d02b068aa8bbfd69ffce5d222c",
-      "public_bytes": 6823
+      "public_sha256": "1e6799754621f1ab866c25a7c978c7cdf9614f88ad1c6cc8af96ff1fa0a10bf7",
+      "public_bytes": 6863
     },
     {
       "legacy_path": "BRA/ForestaB.htm",
@@ -1698,8 +1698,8 @@
       "reference_count": 0,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/FramesxB.html",
-      "public_sha256": "37537f8fd23935ccf87576e5d968d66ea0f307e804f24edc4e75aba78d27793b",
-      "public_bytes": 2835
+      "public_sha256": "74b0ad550d05e26b2ead4e6fbdfceb6bb8f2432b5c48f997152d7b1b918c58de",
+      "public_bytes": 2915
     },
     {
       "legacy_path": "BRA/Franco1920B.htm",
@@ -1715,8 +1715,8 @@
       "reference_count": 5,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Franco1920B.html",
-      "public_sha256": "7808002d988830ae21618bdf5ec67a65da54e331ee3dc16cd3419245879eb2e5",
-      "public_bytes": 4862
+      "public_sha256": "3856a2a83d2577f0e74bcd941139e608918c944408534c637f12cb84a9613b2c",
+      "public_bytes": 4902
     },
     {
       "legacy_path": "BRA/Gabriele1989B.htm",
@@ -1732,8 +1732,8 @@
       "reference_count": 5,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Gabriele1989B.html",
-      "public_sha256": "bc572af49fe81ef868b9472d83fb0d2aeab8d8e7c97bffcd75ab638815ca8ff9",
-      "public_bytes": 3136
+      "public_sha256": "baff234b2ba63f598900ddcb8018547b7167a2383c7e2366acb64e1ecf79a5d5",
+      "public_bytes": 3256
     },
     {
       "legacy_path": "BRA/GeciUlisseB.htm",
@@ -1749,8 +1749,8 @@
       "reference_count": 2,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/GeciUlisseB.html",
-      "public_sha256": "5b9bfa8195b0f4394b5859980e2f793c7dca4a9bb73779b11cf1124ccd6841cc",
-      "public_bytes": 6350
+      "public_sha256": "1fb6d92205475a5e6f0d6100ac7d4986a3a262ceada15d27cd029af213c5982d",
+      "public_bytes": 7070
     },
     {
       "legacy_path": "BRA/GenealogiaB.htm",
@@ -1783,8 +1783,8 @@
       "reference_count": 18,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Geraldo1920B.html",
-      "public_sha256": "ffc92a819143e8756a0af66e66dd892345904f35dc4ce775a348a123ab3f8684",
-      "public_bytes": 8240
+      "public_sha256": "b845cb6397defa2b6a9272ffe441b0f031eeca9539256ec249c39df5864a1df3",
+      "public_bytes": 8280
     },
     {
       "legacy_path": "BRA/GeraldoB.htm",
@@ -1800,8 +1800,8 @@
       "reference_count": 14,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/GeraldoB.html",
-      "public_sha256": "c2af64f23e9c32147e9dc3e4e1a5fb13a96166d7f0ac605b05123b3546a1d5b5",
-      "public_bytes": 8974
+      "public_sha256": "f1a6fe532f11604bb92a4f83f138bfca910780a0a367625b813cdf14d278db01",
+      "public_bytes": 10014
     },
     {
       "legacy_path": "BRA/GilbertoB.htm",
@@ -1817,8 +1817,8 @@
       "reference_count": 5,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/GilbertoB.html",
-      "public_sha256": "b4a24ebd1b5361d7b72c503fcbe6b198ab7f1bfcff729a21dc31e102f9d878a4",
-      "public_bytes": 4985
+      "public_sha256": "62832ef06edc3bcf38ea6c0ac11a0101bf6131dcd898dafb1b1937cc88f5cd7f",
+      "public_bytes": 5265
     },
     {
       "legacy_path": "BRA/GiovaniB.htm",
@@ -1834,8 +1834,8 @@
       "reference_count": 4,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/GiovaniB.html",
-      "public_sha256": "2dcdc0f50c7782297a3d6152f25802f11742db0faa4418f72fef72433c635388",
-      "public_bytes": 3365
+      "public_sha256": "31d0708695da36c6cb68dba8aff0c98c5e4d3c57c7c28843b3c5244e8ef462e2",
+      "public_bytes": 3445
     },
     {
       "legacy_path": "BRA/GiovannaB.htm",
@@ -1851,8 +1851,8 @@
       "reference_count": 17,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/GiovannaB.html",
-      "public_sha256": "9cd3d028ded1be919ee7696bea100bb39df1f22c7fb29052c26b6a68e7772806",
-      "public_bytes": 4246
+      "public_sha256": "ba37a09a90f0164fbe8a85b3079e9c49c8c6d6e40feecd88573ebc89ded95b38",
+      "public_bytes": 4286
     },
     {
       "legacy_path": "BRA/GiovanniAB.htm",
@@ -1885,8 +1885,8 @@
       "reference_count": 4,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/GisellaB.html",
-      "public_sha256": "0c7d2b9792ff5124b11ad3d73f943d90f874bfffe58e415b06f48bc80c43d157",
-      "public_bytes": 11666
+      "public_sha256": "269186d9214c457b074266465d42c70efd69fa2d99c7b4b159bf97dfc8dbc52e",
+      "public_bytes": 12946
     },
     {
       "legacy_path": "BRA/Guilherme2002B.htm",
@@ -1919,8 +1919,8 @@
       "reference_count": 3,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Helio1957B.html",
-      "public_sha256": "a2026e58410ed95ce7e43a4b1eb3f346c20372ad65af74ffb7defe7339832846",
-      "public_bytes": 6635
+      "public_sha256": "10e9bfa7455423e9659267a87cbd5f2ff5405c68d1ff55c45762c92b8883181a",
+      "public_bytes": 7355
     },
     {
       "legacy_path": "BRA/Henrique1935B.htm",
@@ -1936,8 +1936,8 @@
       "reference_count": 11,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Henrique1935B.html",
-      "public_sha256": "10a6c935131c586bfc30cf3871ad26d9691a339aeb0f69dae9c6f7b3070ce826",
-      "public_bytes": 6381
+      "public_sha256": "2e4dbf943018eec07f6b7be9da4cb6959ff60ee48c6b682379a987f28bc7c429",
+      "public_bytes": 6901
     },
     {
       "legacy_path": "BRA/IncontriB.htm",
@@ -1953,8 +1953,8 @@
       "reference_count": 2,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/IncontriB.html",
-      "public_sha256": "daf6357acd2583ea61b48d68c5d34a75700a319c0e46f59e5607fde9fb1a029b",
-      "public_bytes": 4372
+      "public_sha256": "3ada5478a6f486cf8e396e7cae40cc753c48fcd3ac05d93d2dd6564b67eab265",
+      "public_bytes": 4572
     },
     {
       "legacy_path": "BRA/JadirdiRadyrB.htm",
@@ -1970,8 +1970,8 @@
       "reference_count": 9,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/JadirdiRadyrB.html",
-      "public_sha256": "23e8fe9770ba979b1d99aac61afd3101700d786fd4691fb5acc9d44cae640529",
-      "public_bytes": 3749
+      "public_sha256": "1475fe37f3fec956bab3a5b994f6db3993cb19fbd5d8e67c23622d26372ea1ea",
+      "public_bytes": 3789
     },
     {
       "legacy_path": "BRA/Jorge1955B.htm",
@@ -1987,8 +1987,8 @@
       "reference_count": 14,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Jorge1955B.html",
-      "public_sha256": "a84666d21ef91a5137be1696a70005fbc5679d1f51b073e17824c2a541f2138c",
-      "public_bytes": 7742
+      "public_sha256": "241a7d4643bcd4d037a896cdf41263746818c15148bd75282c2878478fd34bb0",
+      "public_bytes": 8262
     },
     {
       "legacy_path": "BRA/Jose1950B.htm",
@@ -2021,8 +2021,8 @@
       "reference_count": 6,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/JoseAntonio1947B.html",
-      "public_sha256": "cf76088c96286895dec8771a9f8e3e5210e59440d69975e1832782e9e44dd94f",
-      "public_bytes": 7176
+      "public_sha256": "5f23bf4a1c73773eaae5cf2e9c8646cb98a1ec5cf65e7235f75d9364e94e6452",
+      "public_bytes": 7456
     },
     {
       "legacy_path": "BRA/JoseAugustoB.htm",
@@ -2055,8 +2055,8 @@
       "reference_count": 6,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/JoseLuizB.html",
-      "public_sha256": "65f73c325ca6877a89315481e7803455840399839f698beb267b637e1deb15a7",
-      "public_bytes": 4743
+      "public_sha256": "a8f7338b6aa0f382314427e006725dceb0231b44fbf4382f27bc4fe2a6a1b8fc",
+      "public_bytes": 4863
     },
     {
       "legacy_path": "BRA/JoseNilton1955B.htm",
@@ -2072,8 +2072,8 @@
       "reference_count": 7,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/JoseNilton1955B.html",
-      "public_sha256": "83e21bba153607cc68c0fd5d4f817725072cf9c544402545d19d2d23d9325a6a",
-      "public_bytes": 4143
+      "public_sha256": "a601f97f0e9925ca60f85221890299c434549c368e189e4e67abebd3a9fdb144",
+      "public_bytes": 4223
     },
     {
       "legacy_path": "BRA/Lidice1946B.htm",
@@ -2089,8 +2089,8 @@
       "reference_count": 7,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Lidice1946B.html",
-      "public_sha256": "00d71427dc7a81c13afad337c6118d549994f96a7562e8660492bc592c2983be",
-      "public_bytes": 5726
+      "public_sha256": "78a2dcc72c5823410572bc3ef7f375688ea06ec2f0d934a27d1d1815c3acaab7",
+      "public_bytes": 5966
     },
     {
       "legacy_path": "BRA/Luigi1883B.htm",
@@ -2106,8 +2106,8 @@
       "reference_count": 15,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Luigi1883B.html",
-      "public_sha256": "3d489cb6f16d0b62b2387dbd2b1cf2780a01a7f45e3cb544ab1fd9ce222af0e0",
-      "public_bytes": 3789
+      "public_sha256": "e04eba62effe599692abd0735c58df167e5f40b4b9ed329f7283222ab8f0716c",
+      "public_bytes": 3829
     },
     {
       "legacy_path": "BRA/LuogBRB.htm",
@@ -2157,8 +2157,8 @@
       "reference_count": 3,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/LuoghiB.html",
-      "public_sha256": "097d9232b6d90c6fcf7687fc57beb279b765acd62b8a404e7d51dd55a858412f",
-      "public_bytes": 7540
+      "public_sha256": "18c7ece74427c0f12e4d456d4e8052c4f13469e1a2d1e470cc30168c36ee8fb1",
+      "public_bytes": 8260
     },
     {
       "legacy_path": "BRA/MariaCristina1996B.htm",
@@ -2191,8 +2191,8 @@
       "reference_count": 8,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/MariaJose1952B.html",
-      "public_sha256": "cb18489daa1153788b7484716df8e91722543dd8f72994ba8c571aa77f5e5a6b",
-      "public_bytes": 4432
+      "public_sha256": "b00ed13a89e007f785596fe7a0bebe3aa62f04bd4ead6be22915e40329e02a83",
+      "public_bytes": 4512
     },
     {
       "legacy_path": "BRA/MariadiRadyrB.htm",
@@ -2208,8 +2208,8 @@
       "reference_count": 9,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/MariadiRadyrB.html",
-      "public_sha256": "a85656e096234343e5a5d6d46c40b3cac5f924e6c19105ba21afbd0b925292d6",
-      "public_bytes": 3741
+      "public_sha256": "b3af86b365c029e5e86b621fb1a232361a5ac2a1bd73ac772f659250e5d7a1c6",
+      "public_bytes": 3781
     },
     {
       "legacy_path": "BRA/Mariana1987B.htm",
@@ -2225,8 +2225,8 @@
       "reference_count": 10,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Mariana1987B.html",
-      "public_sha256": "c06155fa59ce43fe2714ef6f4587bbc68fd36486c44c5fbbaed442d8b5bb3a00",
-      "public_bytes": 5063
+      "public_sha256": "e2ac301313f750a27a458a764804fb4c2dec8927450aea5a2dc2d3fa0ebaadb9",
+      "public_bytes": 5343
     },
     {
       "legacy_path": "BRA/Michele1982B.htm",
@@ -2242,8 +2242,8 @@
       "reference_count": 12,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Michele1982B.html",
-      "public_sha256": "962733a689d66bb2b64c39538e0b8ec50e2c526c11976a32b2cb36115d2817f8",
-      "public_bytes": 4796
+      "public_sha256": "a00a84a4636d525df657829708c3c61772f2550234509288f21d9212f40be2fc",
+      "public_bytes": 5276
     },
     {
       "legacy_path": "BRA/NovitaB.htm",
@@ -2259,8 +2259,8 @@
       "reference_count": 0,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/NovitaB.html",
-      "public_sha256": "e40685d4436539f4c2cbf22f35a4c9896e1e26c6303a01c318998906b168a5fc",
-      "public_bytes": 10952
+      "public_sha256": "d10ea3159678e45aa84814eb4755daafdd20c25fd402b9a018930bfac3eb868a",
+      "public_bytes": 12272
     },
     {
       "legacy_path": "BRA/ObiettiviB.htm",
@@ -2276,8 +2276,8 @@
       "reference_count": 3,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/ObiettiviB.html",
-      "public_sha256": "17ea09d6235251c3bf0c11145b39d910fa09df42f3c1eea22e8e6728395c5e48",
-      "public_bytes": 3452
+      "public_sha256": "21033dcc7d5d9eae7db617fd1d8d22fac00bb9e9ce633be94adedfd53a6e939e",
+      "public_bytes": 3413
     },
     {
       "legacy_path": "BRA/Origini-B.htm",
@@ -2293,8 +2293,8 @@
       "reference_count": 3,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Origini-B.html",
-      "public_sha256": "e3725a1867995101fc5c7302ff75727a1d91c662239c7f92cf0bc88ef273a479",
-      "public_bytes": 9888
+      "public_sha256": "cda1f86b8301b8bd3e74adc831cfa64d0782c98cca1fc775eb26d669e250748c",
+      "public_bytes": 10008
     },
     {
       "legacy_path": "BRA/OriginiAB.htm",
@@ -2310,8 +2310,8 @@
       "reference_count": 1,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/OriginiAB.html",
-      "public_sha256": "3adcd0f3cf7f4d4ed4b22e3112da6021571ac61559ea402aed207d2d08e6f875",
-      "public_bytes": 3725
+      "public_sha256": "1cab6098ef56ac707868308cbd1dd645cc2222a58b45a8a0f5d8771c65e740f3",
+      "public_bytes": 3805
     },
     {
       "legacy_path": "BRA/OriginiEB.htm",
@@ -2344,8 +2344,8 @@
       "reference_count": 17,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/PalmiraB.html",
-      "public_sha256": "03f79168a06a9b4a33f007f2560942917fa9d7a4db6f5448c64a1142ce29aa49",
-      "public_bytes": 4889
+      "public_sha256": "196536a82d2b0cdf8d8cb113532642b8487dbe8a82db2807b6736cb4ca02deb4",
+      "public_bytes": 5009
     },
     {
       "legacy_path": "BRA/PasquaB.htm",
@@ -2361,8 +2361,8 @@
       "reference_count": 17,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/PasquaB.html",
-      "public_sha256": "20666b16d0bee2d5a3bfae3f0d535b63610836f36590425a98744a59cb6a808c",
-      "public_bytes": 4064
+      "public_sha256": "fcd55912aa39497cf11dc0075890e1f4c6d388d94c96434e5b8b37f3f3bbfcd3",
+      "public_bytes": 4144
     },
     {
       "legacy_path": "BRA/Quirino1922B.htm",
@@ -2378,8 +2378,8 @@
       "reference_count": 8,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Quirino1922B.html",
-      "public_sha256": "8b1ec8ff98dd296d520ad482a43d3941784d86e96c2255022ecfde3079c35598",
-      "public_bytes": 4692
+      "public_sha256": "8f42f3c2fd3aa7ef18cf090272fbcf376c08f80118e064c5800d52cf1ed09394",
+      "public_bytes": 5132
     },
     {
       "legacy_path": "BRA/Radyr1912B.htm",
@@ -2395,8 +2395,8 @@
       "reference_count": 10,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Radyr1912B.html",
-      "public_sha256": "3eb0546865201601535ef8cf1f92dd7bc43cae6bc01f588dc8104042a09a8cce",
-      "public_bytes": 9127
+      "public_sha256": "a1587f4a872600b01ef793e4b567b5ecf09e3831ef16cd62610d6a9e1a1307de",
+      "public_bytes": 10127
     },
     {
       "legacy_path": "BRA/RafaelB.htm",
@@ -2429,8 +2429,8 @@
       "reference_count": 7,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Regina1954B.html",
-      "public_sha256": "b4880c53cedcdeb2c4258af095d3875cd800342652874630ecb0d97a81e18cfe",
-      "public_bytes": 6515
+      "public_sha256": "11f14969b5dba8da5abfebfe0e8e9aef28e81ed0d371203f78471b8b84513307",
+      "public_bytes": 6915
     },
     {
       "legacy_path": "BRA/Rosani1973B.htm",
@@ -2446,8 +2446,8 @@
       "reference_count": 8,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Rosani1973B.html",
-      "public_sha256": "c9c1beb498d202b762bde9aeeed99a66e03f696c5932ae689069af1f58b23963",
-      "public_bytes": 4073
+      "public_sha256": "81fb31a8bb58d64d6924a33bece043d83d29b398228dae2661210d708782af1d",
+      "public_bytes": 4113
     },
     {
       "legacy_path": "BRA/SigismondoB.htm",
@@ -2463,8 +2463,8 @@
       "reference_count": 18,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/SigismondoB.html",
-      "public_sha256": "0ee7bab5572f1c6a357404f627b5846362b33202cb2f271db3684ac2c7e0587f",
-      "public_bytes": 8355
+      "public_sha256": "04d47ab0a5b6c7873bffa9742230252451089a02a0e01e3edb6dfa4d852f2758",
+      "public_bytes": 9195
     },
     {
       "legacy_path": "BRA/SilviaHelenaB.htm",
@@ -2514,8 +2514,8 @@
       "reference_count": 6,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/SuelyB.html",
-      "public_sha256": "14e2d3fd61981c7f34296df450af45e2467ec5f19a782ae3e825055d43355a79",
-      "public_bytes": 4558
+      "public_sha256": "7aab8506c84772a80346675a485fc9d52f98aa60ffe1428a0a5dd560df901745",
+      "public_bytes": 4678
     },
     {
       "legacy_path": "BRA/Tiago1982B.htm",
@@ -2531,8 +2531,8 @@
       "reference_count": 5,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Tiago1982B.html",
-      "public_sha256": "b7a8eada2f984c1e8c76df110758c104341be64caa04367dc31a4287beb1c289",
-      "public_bytes": 5769
+      "public_sha256": "260632f257f329f166986c9053045104627bd196cd038233dcb4858d65596a6a",
+      "public_bytes": 6049
     },
     {
       "legacy_path": "BRA/Vanira1948B.htm",
@@ -2548,8 +2548,8 @@
       "reference_count": 11,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Vanira1948B.html",
-      "public_sha256": "7215195832ea80caf2a205f022970b2bd2471bed2fdcf7aa3bd67397e495aef6",
-      "public_bytes": 5442
+      "public_sha256": "c1a02b32ff21e438bc35ace779a693baf82d6da4af9e72868e71b09b2d041fae",
+      "public_bytes": 5642
     },
     {
       "legacy_path": "BRA/Vinicius1993B.htm",
@@ -2565,8 +2565,8 @@
       "reference_count": 6,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Vinicius1993B.html",
-      "public_sha256": "10730c8f97c229ceca45b08cb1791555a4dab41a23d04f8aaec57eb133205226",
-      "public_bytes": 6130
+      "public_sha256": "032108c2e4bf0fdc4868a2ab4ed87b035151571fa24eceb54ae691d5cac873fb",
+      "public_bytes": 6290
     },
     {
       "legacy_path": "BRA/VolVIII8B.htm",
@@ -2582,8 +2582,8 @@
       "reference_count": 3,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/VolVIII8B.html",
-      "public_sha256": "f6a9b15d35170b386536bfa82a715daff5ab8ef29fb2baeef43721f90e2c2926",
-      "public_bytes": 7483
+      "public_sha256": "fa39c70a3f2b9341ba0db56dab89c6146ab07e4c727f070e516f93c56980820a",
+      "public_bytes": 7639
     },
     {
       "legacy_path": "BRA/Waldir1941B.htm",
@@ -2599,8 +2599,8 @@
       "reference_count": 10,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Waldir1941B.html",
-      "public_sha256": "52df0abd9f643b8b1203e7851d5cf2d7520fb4e62fe066ba2cd009f04389ac03",
-      "public_bytes": 5564
+      "public_sha256": "9f9eb3ed279d1ffc47d1c9c45b704693050fad7fe122530f2bbb096845d4d456",
+      "public_bytes": 5884
     },
     {
       "legacy_path": "BRA/Yuri1999B.htm",
@@ -2616,8 +2616,8 @@
       "reference_count": 3,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/Yuri1999B.html",
-      "public_sha256": "d3431b2cdd1f3a23355f0ace9f5617e503c74451355765043b67cc9ab3c86074",
-      "public_bytes": 3596
+      "public_sha256": "45afdb71c984d14891e3f959a00c074cd9550da2b4fcb069dd7e013745f05351",
+      "public_bytes": 3676
     },
     {
       "legacy_path": "BRA/indexB.htm",
@@ -2633,8 +2633,8 @@
       "reference_count": 1,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/BRA/indexB.html",
-      "public_sha256": "94da338aa7663b61c191509de9423b551642bcadcb228bb3a19b4179c4745619",
-      "public_bytes": 781
+      "public_sha256": "c87a977591241b0b81cd56afff91b1626e8d2fa044f0944151e245bb08fb8a3a",
+      "public_bytes": 868
     },
     {
       "legacy_path": "Esposito/AniversariosE.htm",
@@ -2667,8 +2667,8 @@
       "reference_count": 42,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/Esposito/Arvore_Esposito.html",
-      "public_sha256": "9639d77ee8d7c0100a4472b260097cc24a3c62f19aad0e29206f15abbcdde2e6",
-      "public_bytes": 12620
+      "public_sha256": "c0c51eab62e6c8b891e8d60d4f2a909ea142c74e3dcfe76ec2a08c30020a73af",
+      "public_bytes": 10119
     },
     {
       "legacy_path": "Esposito/BenvindoE.htm",
@@ -2701,8 +2701,8 @@
       "reference_count": 41,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/Esposito/BiografiasE.html",
-      "public_sha256": "71a3c1582191e2fbcd1a6d02648ab7454407e8e946e8ed0f559a2e6e8ee6ff08",
-      "public_bytes": 14962
+      "public_sha256": "8887e6f9ec214af13b8453b7f43a43dc311141893197e3297c9c0e489231d4c6",
+      "public_bytes": 16802
     },
     {
       "legacy_path": "Esposito/BrunaSouza.htm",
@@ -3143,8 +3143,8 @@
       "reference_count": 4,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/Esposito/Grandilia.html",
-      "public_sha256": "e3dfcec466fcec0ac476889060164b2e84fcd22cd38fb24d9725021b33c22a9f",
-      "public_bytes": 7963
+      "public_sha256": "0d1ab85a3654ef3e8e6206496b66103335eb02d92f0097fced99c888ee6bcdca",
+      "public_bytes": 9523
     },
     {
       "legacy_path": "Esposito/Isabela1976.htm",
@@ -3160,8 +3160,8 @@
       "reference_count": 27,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/Esposito/Isabela1976.html",
-      "public_sha256": "42f6b642f5fd207937ce065b72e28d76f72cf34cf7fabf2ea2f247679506cec8",
-      "public_bytes": 8613
+      "public_sha256": "f61a3296dd4bb11abe194c5f7781e269250011eee32c099a1ca538f16dc17442",
+      "public_bytes": 8653
     },
     {
       "legacy_path": "Esposito/Jesus1949_Esposito.htm",
@@ -3279,8 +3279,8 @@
       "reference_count": 7,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/Esposito/Orestes1915.html",
-      "public_sha256": "8a1be0a00e5441237f3e63923bdb493ec8e7be539e41924b6d5f74cef48a4f73",
-      "public_bytes": 5621
+      "public_sha256": "0f29ef418185e8bb21ece44c5ca4e6d360058bf2d6e64e4cc796933c12527b4f",
+      "public_bytes": 6061
     },
     {
       "legacy_path": "Esposito/OrestesFilho.htm",
@@ -4248,8 +4248,8 @@
       "reference_count": 2,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/ITA/AfonsoI.html",
-      "public_sha256": "15ad49eb90dbea5db0911d4d7711a727e7feb738be6c960841d2cb3628707e85",
-      "public_bytes": 3152
+      "public_sha256": "2099e880277051e779c098282de81501483bb3e58b04568f74266e608a7c4e9c",
+      "public_bytes": 3312
     },
     {
       "legacy_path": "ITA/AlbSBiagioI.htm",
@@ -4265,8 +4265,8 @@
       "reference_count": 1,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/ITA/AlbSBiagioI.html",
-      "public_sha256": "45028b82c740821f9d33bdd13f61d5e2f26fa554fc6df7ea5c1a867e8bad0ccc",
-      "public_bytes": 6112
+      "public_sha256": "3a16c37a9bc0c9db3d14234c8f84fbb153d963246c5076c5b8c136dba9c53237",
+      "public_bytes": 6501
     },
     {
       "legacy_path": "ITA/AncillaI.htm",
@@ -4282,8 +4282,8 @@
       "reference_count": 3,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/ITA/AncillaI.html",
-      "public_sha256": "57f4ebf95f4f9044c23770111daefc93ce4dc1fc396e66ffc060a76a9a8cc48f",
-      "public_bytes": 6994
+      "public_sha256": "f732269c9d08392e2562f86900e061aa5fcbdc64332edcc35427caed9c52c195",
+      "public_bytes": 7354
     },
     {
       "legacy_path": "ITA/Anderson1995I.htm",
@@ -4299,8 +4299,8 @@
       "reference_count": 0,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/ITA/Anderson1995I.html",
-      "public_sha256": "d2692ff2694467e8fa445ab4190bce5921448ad712f55975987b4fb806ca93d6",
-      "public_bytes": 4461
+      "public_sha256": "b4c23c8e9f68fb1151bf97e6db8d855cdf4ac1a71f0fefae3e754317268137ab",
+      "public_bytes": 4861
     },
     {
       "legacy_path": "ITA/Andrea1973I.htm",
@@ -4316,8 +4316,8 @@
       "reference_count": 3,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/ITA/Andrea1973I.html",
-      "public_sha256": "413f060ddf9d6ac2bd58ef70cc0d2895bb6e4d4ebc6fb2bf64a64dfb43c258fd",
-      "public_bytes": 3974
+      "public_sha256": "c9c5e12bdf3d7d36bef644678eadde6a4420091fc43c56e300cee197246cd82d",
+      "public_bytes": 4334
     },
     {
       "legacy_path": "ITA/BenvenutoI.htm",
@@ -4333,8 +4333,8 @@
       "reference_count": 2,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/ITA/BenvenutoI.html",
-      "public_sha256": "16729e8c5be07c947b13d734a776c4d9bedba92c6da013b1348365b34121cd67",
-      "public_bytes": 8669
+      "public_sha256": "585b352e35073e670f9611eda39a8d69e32825ad9b417b4c9c85ac2bbd340890",
+      "public_bytes": 10109
     },
     {
       "legacy_path": "ITA/Bruno1994I.htm",
@@ -4350,8 +4350,8 @@
       "reference_count": 3,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/ITA/Bruno1994I.html",
-      "public_sha256": "2fa18e3ee7302a11493fad022e3a6dc7c843204c1f1676f9bdc380d7f30f0b63",
-      "public_bytes": 3127
+      "public_sha256": "3303374f26be228ae7d6b2563173282a359117e5c5b43778bf62293f8179d252",
+      "public_bytes": 3287
     },
     {
       "legacy_path": "ITA/CeniraI.htm",
@@ -4367,8 +4367,8 @@
       "reference_count": 2,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/ITA/CeniraI.html",
-      "public_sha256": "b10968588bf2b75bc05e50b658e3b77132bd9cc7e6b67b0bc6f3b7e07bbfcd70",
-      "public_bytes": 3200
+      "public_sha256": "4451a90712a0fbe5517174e9099a93a6d53e12b17e32e3744b2796037b1a1a1c",
+      "public_bytes": 3400
     },
     {
       "legacy_path": "ITA/CompleanniI.htm",
@@ -4384,8 +4384,8 @@
       "reference_count": 3,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/ITA/CompleanniI.html",
-      "public_sha256": "7126ccc30b6e56cb8a98539778da36c61f2062d256d196420b9ae26763d7bdb3",
-      "public_bytes": 19810
+      "public_sha256": "7ec6222b65a55b6b73b6212f05efc6179cd758ee017d6b1c27caaf7cd6923d47",
+      "public_bytes": 22170
     },
     {
       "legacy_path": "ITA/CynthiaI.htm",
@@ -4401,8 +4401,8 @@
       "reference_count": 2,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/ITA/CynthiaI.html",
-      "public_sha256": "d442a0c42fbfb93fd2e1fbb60dc97202bd427f98256ebb93c4e6f039eeb0817e",
-      "public_bytes": 7744
+      "public_sha256": "031bc4aa77b6618b041a4130fa1b876d8cf8297dd578c07048698c34745d8dc4",
+      "public_bytes": 8584
     },
     {
       "legacy_path": "ITA/Daniele2I.htm",
@@ -4418,8 +4418,8 @@
       "reference_count": 2,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/ITA/Daniele2I.html",
-      "public_sha256": "ffedf6242c7cddd38bff73576f89a6f9251cba524c74144d81ee4fd63c1e3f69",
-      "public_bytes": 3298
+      "public_sha256": "5cbc326b82955071a46e3da8800ef527551b64eb1ef5e3e37d3d7d6bdd871a6f",
+      "public_bytes": 3458
     },
     {
       "legacy_path": "ITA/DinaciI.htm",
@@ -4435,8 +4435,8 @@
       "reference_count": 2,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/ITA/DinaciI.html",
-      "public_sha256": "03f67ec7c67ecd66d73c3a7082e6d2b6b2e18d83d05bbce9827feef2c7d417c3",
-      "public_bytes": 3255
+      "public_sha256": "d1e753ec1588663c66cd50338c1ef93efaf5d3b8128082c0b10ff998504a3c7d",
+      "public_bytes": 3415
     },
     {
       "legacy_path": "ITA/FO/Anc43I.htm",
@@ -4486,25 +4486,25 @@
       "reference_count": 1,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/ITA/FerruccioI.html",
-      "public_sha256": "6771e506de25d0544b55eb4d217aa5a8710de4135e48f66dc1c85fc0c8bd0763",
-      "public_bytes": 6805
+      "public_sha256": "73434cb512adb05b62355b98e66776021167a1f64107d88824c258f69c889321",
+      "public_bytes": 7285
     },
     {
       "legacy_path": "ITA/FontiI.htm",
       "format": "htm",
-      "status": "transcricao_adicional_recebida",
+      "status": "recurso_recuperado",
       "mime": "text/html",
-      "bytes": 1961,
-      "origin_sha256": "031099391c056ba26093b38ade50b4e73d01f7634218a2662f773395794dc577",
-      "local_copy_sha256": null,
-      "catalog_hash_matches_local_copy": false,
+      "bytes": 2389,
+      "origin_sha256": "7e1b7c90e62ebf09abb79baa125f58070427de6714e1b0fa512308de21413a56",
+      "local_copy_sha256": "7e1b7c90e62ebf09abb79baa125f58070427de6714e1b0fa512308de21413a56",
+      "catalog_hash_matches_local_copy": true,
       "capture_url": "https://web.archive.org/web/20041021111233id_/http://www.zaniratti.it:80/ITA/FontiI.htm",
       "capture_timestamp_utc": "20041021111233",
       "reference_count": 2,
-      "public_status": "capture_indexed",
-      "public_path": null,
-      "public_sha256": null,
-      "public_bytes": null
+      "public_status": "public_derivative",
+      "public_path": "acervo/site-historico/ITA/FontiI.html",
+      "public_sha256": "724054e8c4353f23506d0ede5d8ff2e903d25647156b3858d64a8e6a2fe3e1f7",
+      "public_bytes": 2455
     },
     {
       "legacy_path": "ITA/ForestaI.htm",
@@ -4520,8 +4520,8 @@
       "reference_count": 2,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/ITA/ForestaI.html",
-      "public_sha256": "b993008066d4e755359e09aaf2a87322e2ad7ef2f8419f942df1ed78bed67f20",
-      "public_bytes": 2200
+      "public_sha256": "32c2560e9fe2811925d3577df36dc4917a2dac8e690c82e8421eaede31da9971",
+      "public_bytes": 2320
     },
     {
       "legacy_path": "ITA/FramesxI.htm",
@@ -4537,8 +4537,8 @@
       "reference_count": 0,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/ITA/FramesxI.html",
-      "public_sha256": "3107b2a0bb1d7e8eb6c47e2f6983e4170f166bf5b2038406c542dc7f7edcfd21",
-      "public_bytes": 2596
+      "public_sha256": "66e90e730db4c5344ef99a00098fe07a708c6e3a46ff0d4eb37cb45e75eddfde",
+      "public_bytes": 2624
     },
     {
       "legacy_path": "ITA/GenealogiaI.htm",
@@ -4588,8 +4588,8 @@
       "reference_count": 2,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/ITA/LuoghiI.html",
-      "public_sha256": "fdb62232a0f521a9318e321251088f99dda8681cf653e8c849b47098735879ed",
-      "public_bytes": 7088
+      "public_sha256": "3caf68876594d966234cb9d65607585275898d2d63e5463999e80f43ce1cb49f",
+      "public_bytes": 7928
     },
     {
       "legacy_path": "ITA/NovitaI.htm",
@@ -4605,8 +4605,8 @@
       "reference_count": 0,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/ITA/NovitaI.html",
-      "public_sha256": "e183a53327c5c2522e93b5eef32dda99eee8324a97abeba39b35edf4d1186c9c",
-      "public_bytes": 9376
+      "public_sha256": "87a4db487b935bf047a2f4bfc80151220dfd65b147a7942e7c86410d1a6f578b",
+      "public_bytes": 10964
     },
     {
       "legacy_path": "ITA/ObiettiviI.htm",
@@ -4622,8 +4622,8 @@
       "reference_count": 2,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/ITA/ObiettiviI.html",
-      "public_sha256": "9d72949d20dbf3582b07dd43db4bf91ae73d7a0f5a723afa20ab0c0965cf4938",
-      "public_bytes": 3123
+      "public_sha256": "176d6617e19e91bf1864eb4459db8a3e1d0ae48b343699978e408cf6ba3e35ff",
+      "public_bytes": 3080
     },
     {
       "legacy_path": "ITA/Origini-I.htm",
@@ -4639,8 +4639,8 @@
       "reference_count": 3,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/ITA/Origini-I.html",
-      "public_sha256": "5218c8df51f0d11be13b113364c7f7df9d1089295db2c421c8798aebcd3d8b87",
-      "public_bytes": 9392
+      "public_sha256": "accc4b020d060861c0f47faeed0dc7ebdb896817b88ef01c865c04c4f0dffa9e",
+      "public_bytes": 9592
     },
     {
       "legacy_path": "ITA/QuatrelleI.htm",
@@ -4656,8 +4656,8 @@
       "reference_count": 1,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/ITA/QuatrelleI.html",
-      "public_sha256": "05abda20448d557050c4e6914f5283f7aac4d8c09fc33d4d3c28ed600b2b4d53",
-      "public_bytes": 11639
+      "public_sha256": "e9277200459032fd0ceac0a9c9ff76c7630090def7d3d728fafa371c450d08b6",
+      "public_bytes": 12079
     },
     {
       "legacy_path": "ITA/SopraI.htm",
@@ -4690,8 +4690,8 @@
       "reference_count": 1,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/ITA/indexI.html",
-      "public_sha256": "e31cf8b59c830804f74cef18533a917899f1f81b3858e4e1140c3a85a4e05931",
-      "public_bytes": 861
+      "public_sha256": "5bb3b3498b554e635ecf5f4c4a96f0599c710538aba92a5da47d7dc543169e62",
+      "public_bytes": 948
     },
     {
       "legacy_path": "ITALY.gif",
@@ -5676,8 +5676,8 @@
       "reference_count": 14,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/Murucci/Arvore_Murucci.html",
-      "public_sha256": "631a517b099c1150a13133bfbfc9450f2627e52c4cbeb83a45962e4e4037543c",
-      "public_bytes": 12982
+      "public_sha256": "d1f7c3971a0e2790debb47b9831dbed0120494125c52a179496a80051f39f95b",
+      "public_bytes": 10398
     },
     {
       "legacy_path": "Murucci/Bem_vindo.htm",
@@ -5710,8 +5710,8 @@
       "reference_count": 3,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/Murucci/BenicioMuruci.html",
-      "public_sha256": "883f859080fa24cd1aebafa83703f5bd7592c3c45d24803367c1b45d19864bea",
-      "public_bytes": 3569
+      "public_sha256": "098518b451fe0f5ba90410887bf90fa73cfa625f055f2ad9005278bf5c78dd4e",
+      "public_bytes": 3609
     },
     {
       "legacy_path": "Murucci/Biografias.htm",
@@ -5727,8 +5727,8 @@
       "reference_count": 13,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/Murucci/Biografias.html",
-      "public_sha256": "42762caf8370889a62cf7ba031c90d7aa0292bbb33b584051266ec47544be91f",
-      "public_bytes": 15114
+      "public_sha256": "b112a4d209f306281bc1de5ad329d5e77e4f1be1e5378feb743c50b149a41816",
+      "public_bytes": 17554
     },
     {
       "legacy_path": "Murucci/Comentarios.htm",
@@ -5778,8 +5778,8 @@
       "reference_count": 1,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/Murucci/FT/2008encontro01.html",
-      "public_sha256": "d15e50af98181c48b3db86c127d0813aba831b1109596baaa4d035a8937f7795",
-      "public_bytes": 2561
+      "public_sha256": "8098a84141352d585e90c2358865191b6a3a7a1ac3c4fbf6a39313f36ddfaf2e",
+      "public_bytes": 2567
     },
     {
       "legacy_path": "Murucci/FT/LucasMatheus.htm",
@@ -5795,8 +5795,8 @@
       "reference_count": 0,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/Murucci/FT/LucasMatheus.html",
-      "public_sha256": "f4dcbf7ee6df9265cc0e85e937f6a009eb71dfde2f68426569dd358c22575d21",
-      "public_bytes": 1666
+      "public_sha256": "f0895e40fb7853dbfbfc670263ecbc9a608f3300b9c34affcdb40096d5b8bcf5",
+      "public_bytes": 1672
     },
     {
       "legacy_path": "Murucci/Felipe1982.htm",
@@ -5812,8 +5812,8 @@
       "reference_count": 5,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/Murucci/Felipe1982.html",
-      "public_sha256": "f4062652b0f840e3342ebc9ca5bc48b53892aa5a77c954984e62bcf67a36966c",
-      "public_bytes": 4229
+      "public_sha256": "64c800600b6f2540a2e5bb332a6f2f80ff4d26eace8717f121568c39abd468ef",
+      "public_bytes": 4269
     },
     {
       "legacy_path": "Murucci/Geone_Muruci.htm",
@@ -5829,8 +5829,8 @@
       "reference_count": 5,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/Murucci/Geone_Muruci.html",
-      "public_sha256": "f5194c1c9ac65c07323e17e370ba303102975aefbcc55d1a7be717d22361551f",
-      "public_bytes": 3773
+      "public_sha256": "9f5d57d75100ba656d5a1461a5aa1adca74be3e58f7616ef088368c3f3373bf4",
+      "public_bytes": 3813
     },
     {
       "legacy_path": "Murucci/Georgia_Muruci.htm",
@@ -5846,8 +5846,8 @@
       "reference_count": 5,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/Murucci/Georgia_Muruci.html",
-      "public_sha256": "b78ff0ac225a0d1715eb9b2882fa6d9f56b2967fe36b43cdc300adcb3ac465a5",
-      "public_bytes": 4374
+      "public_sha256": "e344708a55aed654700d643d07131a12ebacc0c3009bcbcf9a9b0c40db20f160",
+      "public_bytes": 4494
     },
     {
       "legacy_path": "Murucci/Murucci_encontro2.htm",
@@ -5863,8 +5863,8 @@
       "reference_count": 1,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/Murucci/Murucci_encontro2.html",
-      "public_sha256": "ab28819673456b1ed2a06ba1a49ed6f487938ce42d3b9b5a20b46522461298a0",
-      "public_bytes": 3148
+      "public_sha256": "e96d89c41f65289cf9846e9c3966f8845181d537ad53576a0184e9077c8d7668",
+      "public_bytes": 3268
     },
     {
       "legacy_path": "Murucci/Zenaide1895.htm",
@@ -5880,8 +5880,8 @@
       "reference_count": 3,
       "public_status": "public_derivative",
       "public_path": "acervo/site-historico/Murucci/Zenaide1895.html",
-      "public_sha256": "265f78301e829f1131b4fd11ffcb1ae8dd056562d65ad926825c5a9054a47f07",
-      "public_bytes": 8160
+      "public_sha256": "9769bea20fc24c7add8859e89dd60e62627c1c89d8c267fed6909d12ca3f9b82",
+      "public_bytes": 9640
     },
     {
       "legacy_path": "SfondoCieloblu.jpg",

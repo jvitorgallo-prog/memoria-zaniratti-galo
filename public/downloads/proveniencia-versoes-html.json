@@ -5,7 +5,7 @@
     "timestamp_utc": "20050320055236",
     "capture_url": "https://web.archive.org/web/20050320055236id_/http://www.zaniratti.it:80/ITA/FramesxI.htm",
     "raw_sha256": "1c9229dec752ccf9e24b7ac9e3afebcab6ca553eb86ce3d1f332635066a8e9e2",
-    "public_derivative_sha256": "3107b2a0bb1d7e8eb6c47e2f6983e4170f166bf5b2038406c542dc7f7edcfd21",
+    "public_derivative_sha256": "66e90e730db4c5344ef99a00098fe07a708c6e3a46ff0d4eb37cb45e75eddfde",
     "note": "A data indicada aqui corresponde ao payload utilizado na versão de leitura, não à primeira captura do índice. O hash bruto é distinto do hash da reprodução pública reescrita.",
     "versions": [
       {
@@ -36,7 +36,7 @@
     "timestamp_utc": "20041025215948",
     "capture_url": "https://web.archive.org/web/20041025215948id_/http://www.zaniratti.it:80/ITA/NovitaI.htm",
     "raw_sha256": "63af8a757ed663cc9787bcce44fb9968fd39f578a6564587b1fb1da947c27f7b",
-    "public_derivative_sha256": "e183a53327c5c2522e93b5eef32dda99eee8324a97abeba39b35edf4d1186c9c",
+    "public_derivative_sha256": "87a4db487b935bf047a2f4bfc80151220dfd65b147a7942e7c86410d1a6f578b",
     "note": "A data indicada aqui corresponde ao payload utilizado na versão de leitura, não à primeira captura do índice. O hash bruto é distinto do hash da reprodução pública reescrita.",
     "versions": [
       {
